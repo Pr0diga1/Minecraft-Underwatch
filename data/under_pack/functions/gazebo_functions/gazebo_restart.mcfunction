@@ -1,3 +1,8 @@
+#resets dead players
+gamemode adventure @a[tag=gazebo]
+scoreboard players set @a[tag=gazebo] deathTimer 0
+tag @a[tag=gazebo] remove gazebo_dead
+
 #resets the players
 execute as @s run function under_pack:general_functions/general_restart
 
@@ -11,11 +16,23 @@ scoreboard players reset gazebo_red_wins points
 scoreboard players reset gazebo_blue_wins points
 scoreboard players set under active 0
 scoreboard players set gazebo swag 0
+scoreboard players reset gazebo_grace timer
+scoreboard players reset gazebo_overtime timer
+scoreboard players reset gazebo_overtime_toggle swag
+
+#unfill barriers
+fill -1590 57 -577 -1590 61 -570 air
+fill -1673 57 -570 -1673 61 -577 air
 
 #removes the tag from players
 tag @s remove gazebo
+
+#unschedule grace ticks
+schedule clear under_pack:gazebo_functions/gazebo_grace
 
 #removes the bossbars
 bossbar remove count:gazebo
 bossbar remove count:gazebo_blue
 bossbar remove count:gazebo_red
+bossbar remove count:gazebo_grace
+bossbar remove count:gazebo_ot

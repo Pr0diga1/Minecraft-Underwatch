@@ -6,3 +6,8 @@ team modify uRed color red
 team add uBlue
 team modify uBlue friendlyFire false
 team modify uBlue color blue
+
+#add a death objective so deaths can be tracked
+scoreboard objectives add uDeaths deathCount
+#deathtimer
+scoreboard objectives add deathTimer dummy

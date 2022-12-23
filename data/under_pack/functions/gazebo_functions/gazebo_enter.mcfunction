@@ -3,6 +3,9 @@ scoreboard players set @s gazebo 0
 #adds gazebo tag
 tag @s add gazebo
 
+#empty deaths
+scoreboard players set @s uDeaths 0
+
 #says in chat how many people are in the map
 execute as @s run me has joined Gazebo
 scoreboard players add gazebo player_num 1

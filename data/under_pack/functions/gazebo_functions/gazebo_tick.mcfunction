@@ -5,19 +5,70 @@ function under_pack:gazebo_functions/gazebo_point
 #resets the clock if ownership of the point changed
 execute unless score gazeboBuffer team = gazebo team run scoreboard players set gazebo timer 0
 
-#every 1.2 seconds, gives the controlling team 1 more percent
-execute if score gazebo timer matches 24 if score gazebo team matches 0 run scoreboard players add red_gazebo points 1
-execute if score gazebo timer matches 24 if score gazebo team matches 1 run scoreboard players add blue_gazebo points 1
-#resets timer to start another cycle
-execute if score gazebo timer matches 24 run scoreboard players set gazebo timer 0
+#every 1.2 seconds, run the percent add function
+execute if score gazebo timer matches 24 if score gazebo team matches 0 if score red_gazebo points matches ..98 run scoreboard players add red_gazebo points 1
+execute if score gazebo timer matches 24 if score gazebo team matches 1 if score blue_gazebo points matches ..98 run scoreboard players add blue_gazebo points 1
+
+#activate ot when either team hits 99
+execute if score red_gazebo points matches 99 run scoreboard players set gazebo_overtime_toggle swag 1
+execute if score blue_gazebo points matches 99 run scoreboard players set gazebo_overtime_toggle swag 1
+
+#getting the 100th point
+execute if score red_gazebo points matches 99 if score gazebo_overtime timer matches 0 run scoreboard players add red_gazebo points 1
+execute if score blue_gazebo points matches 99 if score gazebo_overtime timer matches 0 run scoreboard players add blue_gazebo points 1
+
+#show the ot bossbar if ot is active
+execute if score gazebo_overtime_toggle swag matches 1 run bossbar set count:gazebo_ot visible true
+execute if score gazebo_overtime_toggle swag matches 0 run bossbar set count:gazebo_ot visible false
 
 #updates bossbars
 execute store result bossbar count:gazebo_blue value run scoreboard players get blue_gazebo points
 execute store result bossbar count:gazebo_red value run scoreboard players get red_gazebo points
+execute store result bossbar count:gazebo_ot value run scoreboard players get gazebo_overtime timer
+
+#overtime naturally deteriorates
+execute if score gazebo_overtime_toggle swag matches 1 if score gazebo_overtime timer matches 1.. run scoreboard players remove gazebo_overtime timer 1
+
+#overtime goes back to full when the team that does not have 99 has a player on the point
+execute if score red_gazebo points matches 99 if score gazebo team matches 0 unless score on_point_gazebo_blue player_num matches 0 run scoreboard players set gazebo_overtime timer 60
+execute if score blue_gazebo points matches 99 if score gazebo team matches 1 unless score on_point_gazebo_red player_num matches 0 run scoreboard players set gazebo_overtime timer 60
+
+#overtime ends and gets set back to 60 when one team has 99 and other has control of the point, whenever the point changes hands for red
+execute if score red_gazebo points matches 99 if score gazebo team matches 1 unless score gazeboBuffer team = gazebo team run scoreboard players set gazebo_overtime_toggle swag 0
+execute if score red_gazebo points matches 99 if score gazebo team matches 1 unless score gazeboBuffer team = gazebo team run scoreboard players set gazebo_overtime timer 60
+#overtime ends and gets set back to 60 when one team has 99 and other has control of the point, whenever the point changes hands for blue
+execute if score blue_gazebo points matches 99 if score gazebo team matches 0 unless score gazeboBuffer team = gazebo team run scoreboard players set gazebo_overtime_toggle swag 0
+execute if score blue_gazebo points matches 99 if score gazebo team matches 0 unless score gazeboBuffer team = gazebo team run scoreboard players set gazebo_overtime timer 60
+
+#resets timer to start another cycle
+execute if score gazebo timer matches 24 run scoreboard players set gazebo timer 0
+
+#ot hitting 0 immediately causes a point refresh event
+execute if score gazebo_overtime timer matches 0 run scoreboard players set gazebo timer 23
 
 #iterates the timer up 1
 scoreboard players add gazebo timer 1
 
-#ends game if a team wins
+#increases the death timer for dead players
+execute as @a[tag=gazebo,tag=gazebo_dead] run scoreboard players add @s deathTimer 1
+#resets players when they have been dead for 10 seconds
+#sets them to adventure
+execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run gamemode adventure @s
+#tp them to their spanws
+execute as @a[tag=gazebo,tag=gazebo_dead,team=uRed] if score @s deathTimer matches 200.. run tp @s -1578 59 -574
+execute as @a[tag=gazebo,tag=gazebo_dead,team=uBlue] if score @s deathTimer matches 200.. run tp @s -1685 59 -573
+#remove dead tag
+execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run tag @s remove gazebo_dead
+#reset their deathtimer
+execute as @a[tag=gazebo] if score @s deathTimer matches 200.. run scoreboard players set @s deathTimer 0
+
+#runs the score tracker if a team wins a round
 execute if score red_gazebo points matches 100 run function under_pack:gazebo_functions/gazebo_tally
 execute if score blue_gazebo points matches 100 run function under_pack:gazebo_functions/gazebo_tally
+
+#resistance in spawns
+execute as @a[team=uRed,x=-1590,y=56,z=-577,dx=14,dz=8,dy=5,tag=gazebo] run effect give @s resistance 1 6 false
+execute as @a[team=uBlue,x=-1673,y=56,z=-570,dx=-14,dz=-8,dy=5,tag=gazebo] run effect give @s resistance 1 6 false
+#cant enter enemy spawns
+execute as @a[team=uBlue,x=-1590,y=56,z=-577,dx=14,dz=8,dy=5,tag=gazebo] at @s run tp @s ~-1 ~ ~
+execute as @a[team=uRed,x=-1673,y=56,z=-570,dx=-14,dz=-8,dy=5,tag=gazebo] at @s run tp @s ~1 ~ ~
