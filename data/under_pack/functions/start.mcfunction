@@ -11,3 +11,15 @@ team modify uBlue color blue
 scoreboard objectives add uDeaths deathCount
 #deathtimer
 scoreboard objectives add deathTimer dummy
+
+#all of the triggers for the classes
+scoreboard objectives add alchemist trigger
+scoreboard objectives add scientist trigger
+scoreboard objectives add lumberjack trigger
+scoreboard objectives add knight trigger
+scoreboard objectives add rogue trigger
+scoreboard objectives add ninja trigger
+scoreboard objectives add archer trigger
+scoreboard objectives add wizard trigger
+scoreboard objectives add engineer trigger
+scoreboard objectives add paladin trigger
