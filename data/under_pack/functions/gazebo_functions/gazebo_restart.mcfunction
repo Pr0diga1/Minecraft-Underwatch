@@ -7,6 +7,8 @@ scoreboard players reset red_gazebo points
 scoreboard players reset blue_gazebo points
 scoreboard players reset cap_gazebo points
 scoreboard players reset gazebo timer
+scoreboard players reset gazebo_red_wins points
+scoreboard players reset gazebo_blue_wins points
 scoreboard players set under active 0
 scoreboard players set gazebo swag 0
 
