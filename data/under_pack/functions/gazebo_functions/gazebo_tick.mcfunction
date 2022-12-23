@@ -15,11 +15,9 @@ execute if score gazebo timer matches 24 run scoreboard players set gazebo timer
 execute store result bossbar count:gazebo_blue value run scoreboard players get blue_gazebo points
 execute store result bossbar count:gazebo_red value run scoreboard players get red_gazebo points
 
-#ends game if a team wins
-execute if score red_gazebo points matches 100 run title @a[tag=gazebo] title {"text":"Red Wins!","color":"red"}
-execute if score red_gazebo points matches 100 as @a[tag=gazebo] run function under_pack:gazebo_functions/gazebo_restart
-execute if score blue_gazebo points matches 100 run title @a[tag=gazebo] title {"text":"Blue Wins!","color":"blue"}
-execute if score blue_gazebo points matches 100 as @a[tag=gazebo] run function under_pack:gazebo_functions/gazebo_restart
-
 #iterates the timer up 1
 scoreboard players add gazebo timer 1
+
+#ends game if a team wins
+execute if score red_gazebo points matches 100 run function under_pack:gazebo_functions/gazebo_tally
+execute if score blue_gazebo points matches 100 run function under_pack:gazebo_functions/gazebo_tally
