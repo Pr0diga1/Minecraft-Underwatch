@@ -10,8 +10,8 @@ execute if score gazebo timer matches 24 if score gazebo team matches 0 if score
 execute if score gazebo timer matches 24 if score gazebo team matches 1 if score blue_gazebo points matches ..98 run scoreboard players add blue_gazebo points 1
 
 #activate ot when either team hits 99
-execute if score red_gazebo points matches 99 run scoreboard players set gazebo_overtime_toggle swag 1
-execute if score blue_gazebo points matches 99 run scoreboard players set gazebo_overtime_toggle swag 1
+execute if score red_gazebo points matches 99 if score gazebo team matches 0 run scoreboard players set gazebo_overtime_toggle swag 1
+execute if score blue_gazebo points matches 99 if score gazebo team matches 1 run scoreboard players set gazebo_overtime_toggle swag 1
 
 #getting the 100th point
 execute if score red_gazebo points matches 99 if score gazebo_overtime timer matches 0 run scoreboard players add red_gazebo points 1
