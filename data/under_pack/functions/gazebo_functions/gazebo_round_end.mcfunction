@@ -1,6 +1,6 @@
 #tp people back to spawns
-tp @a[tag=gazebo,team=uRed] -1578 59 -574
-tp @a[tag=gazebo,team=uBlue] -1685 59 -573
+tp @a[tag=gazebo,team=uRed] -1578 57 -574
+tp @a[tag=gazebo,team=uBlue] -1685 57 -573
 
 #which teams has control of the point, and a buffer so I know when it changes
 scoreboard players set gazebo team -1

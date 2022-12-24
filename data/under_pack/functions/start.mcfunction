@@ -11,12 +11,19 @@ team modify uBlue color blue
 scoreboard objectives add uDeaths deathCount
 #deathtimer
 scoreboard objectives add deathTimer dummy
+scoreboard objectives add deathTimerBuffer dummy
+scoreboard objectives add deathTimerBufferBuffer dummy
 
 #objective to track what class you are
 scoreboard objectives add class dummy
 
 #buffer objective for changing classes
 scoreboard objectives add classCheck dummy
+
+#adds constant and any needed multipliers
+scoreboard objectives add constant dummy
+scoreboard players set TickToSecond constant 20
+scoreboard players set TheNumberTen constant 10
 
 #all of the triggers for the classes
 scoreboard objectives add alchemist trigger

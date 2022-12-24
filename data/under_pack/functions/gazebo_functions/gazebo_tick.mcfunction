@@ -54,12 +54,29 @@ scoreboard players add gazebo timer 1
 
 #increases the death timer for dead players
 execute as @a[tag=gazebo,tag=gazebo_dead] run scoreboard players add @s deathTimer 1
+
+#creates a buffer that stores seconds instead of TickToSecond
+#buffer = deathTimer
+execute as @a[tag=gazebo,tag=gazebo_dead] run scoreboard players operation @s deathTimerBuffer = @s deathTimer
+#buffer converted from ticks to seconds
+execute as @a[tag=gazebo,tag=gazebo_dead] run scoreboard players operation @s deathTimerBuffer /= TickToSecond constant
+#second buffer = first buffer
+execute as @a[tag=gazebo,tag=gazebo_dead] run scoreboard players operation @s deathTimerBufferBuffer = @s deathTimerBuffer 
+#first buffer is now 10
+execute as @a[tag=gazebo,tag=gazebo_dead] run scoreboard players operation @s deathTimerBuffer = TheNumberTen constant
+# 10 - the number of seconds that have past, gives you number of seconds left
+execute as @a[tag=gazebo,tag=gazebo_dead] run scoreboard players operation @s deathTimerBuffer -= @s deathTimerBufferBuffer
+#actionbar for telling players when they will respawn
+execute as @a[tag=gazebo,tag=gazebo_dead] run title @s actionbar ["",{"text":"Respawn in: ","color":"gold"},{"score":{"name":"@s","objective":"deathTimerBuffer"},"color":"red"},{"text":" seconds","color":"gold"}]
+
 #resets players when they have been dead for 10 seconds
 #sets them to adventure
 execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run gamemode adventure @s
 #tp them to their spanws
 execute as @a[tag=gazebo,tag=gazebo_dead,team=uRed] if score @s deathTimer matches 200.. run tp @s -1578 59 -574
 execute as @a[tag=gazebo,tag=gazebo_dead,team=uBlue] if score @s deathTimer matches 200.. run tp @s -1685 59 -573
+#tells them they respawned 
+execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run title @s actionbar {"text":"Respawned","color":"gold"}
 #run the general respawn
 execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run function under_pack:general_functions/general_respawn
 #remove dead tag

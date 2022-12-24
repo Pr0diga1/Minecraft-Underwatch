@@ -56,10 +56,10 @@ execute if score match points matches 1 run tag @a[tag=gazebo] remove t1
 execute if score match points matches 1 run tag @a[tag=gazebo] remove t2
 
 #tps players to their spawns and sets their spawnpoints
-tp @a[tag=gazebo,team=uRed] -1578 59 -574
-tp @a[tag=gazebo,team=uBlue] -1685 59 -573
-spawnpoint @a[tag=gazebo,team=uRed] -1578 59 -574
-spawnpoint @a[tag=gazebo,team=uBlue] -1685 59 -573
+tp @a[tag=gazebo,team=uRed] -1578 57 -574
+tp @a[tag=gazebo,team=uBlue] -1685 57 -573
+spawnpoint @a[tag=gazebo,team=uRed] -1578 57 -574
+spawnpoint @a[tag=gazebo,team=uBlue] -1685 57 -573
 
 #gazebo swag stores if the game is active or not, so it can be known if the tick should be run
 scoreboard players set gazebo swag 1
