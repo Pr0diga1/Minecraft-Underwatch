@@ -4,7 +4,7 @@ scoreboard players set @a[tag=gazebo] deathTimer 0
 tag @a[tag=gazebo] remove gazebo_dead
 
 #resets the players
-execute as @s run function under_pack:general_functions/general_restart
+execute as @a[tag=gazebo] run function under_pack:general_functions/general_restart
 
 #resets all of the variables declared in the start
 scoreboard players reset gazebo team

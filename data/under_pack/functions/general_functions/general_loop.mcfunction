@@ -9,3 +9,7 @@ execute as @e[type=falling_block] run data merge entity @s {Time:5}
 #kills chickens when eggs are thrown. Very important.
 kill @e[type=chicken]
 
+#no natural health regen
+gamerule naturalRegeneration false
+#saturation
+effect give @a saturation 1 255 true

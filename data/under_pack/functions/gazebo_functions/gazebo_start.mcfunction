@@ -8,8 +8,8 @@ execute if score buffer player_num = gazebo player_num run scoreboard players se
 scoreboard players reset buffer player_num
 scoreboard players reset buffer2 player_num
 
-#set people to adventure
-gamemode adventure @a[tag=gazebo]
+#run general start
+execute as @a[tag=gazebo] run function under_pack:general_functions/general_start
 
 #assigns players to teams
 execute if score gazebo player_num matches 20 run team join uBlue @r[tag=gazebo,team=white,limit=10]

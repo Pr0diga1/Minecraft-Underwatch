@@ -1,3 +1,6 @@
+#each player runs their class's tick function as long as they are not respawning or in their spawnpoint
+execute as @a[tag=gazebo] unless entity @s[tag=gazebo_dead] unless entity @s[x=-1590,y=56,z=-577,dx=14,dz=8,dy=5] unless entity @s[x=-1673,y=56,z=-570,dx=-14,dz=-8,dy=5] run function under_pack:general_functions/general_classloop
+
 #sets a buffer to whoever has control of the point
 scoreboard players operation gazeboBuffer team = gazebo team
 #updates the point for the tick
@@ -57,6 +60,8 @@ execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. r
 #tp them to their spanws
 execute as @a[tag=gazebo,tag=gazebo_dead,team=uRed] if score @s deathTimer matches 200.. run tp @s -1578 59 -574
 execute as @a[tag=gazebo,tag=gazebo_dead,team=uBlue] if score @s deathTimer matches 200.. run tp @s -1685 59 -573
+#run the general respawn
+execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run function under_pack:general_functions/general_respawn
 #remove dead tag
 execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run tag @s remove gazebo_dead
 #reset their deathtimer

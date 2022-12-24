@@ -12,6 +12,9 @@ scoreboard objectives add uDeaths deathCount
 #deathtimer
 scoreboard objectives add deathTimer dummy
 
+#objective to track what class you are
+scoreboard objectives add class dummy
+
 #all of the triggers for the classes
 scoreboard objectives add alchemist trigger
 scoreboard objectives add scientist trigger
