@@ -29,3 +29,10 @@ scoreboard objectives add archer trigger
 scoreboard objectives add wizard trigger
 scoreboard objectives add engineer trigger
 scoreboard objectives add paladin trigger
+
+#adds trackers for abilities and ults
+scoreboard objectives add movement dummy
+scoreboard objectives add ability1 dummy
+scoreboard objectives add ability2 dummy
+scoreboard objectives add ability3 dummy
+scoreboard objectives add ult dummy
