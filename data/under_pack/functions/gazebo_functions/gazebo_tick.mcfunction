@@ -77,3 +77,6 @@ execute as @a[team=uBlue,x=-1673,y=56,z=-570,dx=-14,dz=-8,dy=5,tag=gazebo] run e
 #cant enter enemy spawns
 execute as @a[team=uBlue,x=-1590,y=56,z=-577,dx=14,dz=8,dy=5,tag=gazebo] at @s run tp @s ~-1 ~ ~
 execute as @a[team=uRed,x=-1673,y=56,z=-570,dx=-14,dz=-8,dy=5,tag=gazebo] at @s run tp @s ~1 ~ ~
+
+#runs class changing system
+function under_pack:class_functions/ui/checks
