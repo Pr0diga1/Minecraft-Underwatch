@@ -15,6 +15,9 @@ scoreboard objectives add deathTimer dummy
 #objective to track what class you are
 scoreboard objectives add class dummy
 
+#buffer objective for changing classes
+scoreboard objectives add classCheck dummy
+
 #all of the triggers for the classes
 scoreboard objectives add alchemist trigger
 scoreboard objectives add scientist trigger
