@@ -1,3 +1,6 @@
+# Cool message for the player when looking at the chest minecart
+execute as @a[predicate=under_pack:players_changing_classes] run title @s actionbar [{"text": "Ciocie Cioelle Estrella Von Maximus the Third ","color": "#6F59FF","bold": true,"italic": false},{"text": "wishes to grant you power","color": "white","bold": false,"italic": false}]
+
 # Checks players for specific items using /clear
 # if successfull it will give them a specific class
 execute store success score @s classCheck run clear @s barrier{alchemist:1b}
