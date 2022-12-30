@@ -3,6 +3,10 @@ gamemode adventure @a[tag=gazebo]
 scoreboard players set @a[tag=gazebo] deathTimer 0
 tag @a[tag=gazebo] remove gazebo_dead
 
+#resets the players' classes
+execute as @a[tag=gazebo] run function under_pack:general_functions/general_reset
+execute as @a[tag=gazebo] run function under_pack:general_functions/general_unselect
+
 #resets the players
 execute as @a[tag=gazebo] run function under_pack:general_functions/general_restart
 

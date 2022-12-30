@@ -24,6 +24,8 @@ scoreboard objectives add classCheck dummy
 scoreboard objectives add constant dummy
 scoreboard players set TickToSecond constant 20
 scoreboard players set TheNumberTen constant 10
+scoreboard players set everyOther constant 1
+scoreboard players set minusOne constant -1
 
 #all of the triggers for the classes
 scoreboard objectives add alchemist trigger
@@ -69,7 +71,12 @@ scoreboard objectives add lumberjack_ult_charge dummy
 scoreboard objectives add lumberjack_ult_timer dummy 
 scoreboard objectives add vanitykills playerKillCount
 scoreboard objectives add damage minecraft.custom:minecraft.damage_dealt
+
 #ninja
+scoreboard objectives add ninjaHyperventilate dummy
+scoreboard objectives add ninjaMotionX dummy
+scoreboard objectives add ninjaMotionY dummy
+scoreboard objectives add ninjaMotionZ dummy
 
 
 #paladin

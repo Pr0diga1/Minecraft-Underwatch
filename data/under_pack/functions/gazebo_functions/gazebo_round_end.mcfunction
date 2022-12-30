@@ -29,6 +29,13 @@ scoreboard players set @a[tag=gazebo] deathTimer 0
 tag @a[tag=gazebo] remove gazebo_dead
 execute as @a[tag=gazebo] run function under_pack:general_functions/general_respawn
 
+#heal everyone
+effect give @a[tag=gazebo] instant_health 1 100
+
+#reset the player's class
+execute as @a[tag=gazebo] run function under_pack:general_functions/general_reset
+execute as @a[tag=gazebo] run function under_pack:general_functions/general_unselect
+
 #bossbar visibility
 bossbar set count:gazebo visible false
 bossbar set count:gazebo_blue visible false

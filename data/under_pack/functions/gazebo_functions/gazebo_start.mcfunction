@@ -54,6 +54,8 @@ execute if score match points matches 1 as @a[tag=t2,tag=gazebo] run team join u
 #dont need the tags anymore
 execute if score match points matches 1 run tag @a[tag=gazebo] remove t1
 execute if score match points matches 1 run tag @a[tag=gazebo] remove t2
+#dont need match points anymore
+scoreboard players set match points 0
 
 #tps players to their spawns and sets their spawnpoints
 tp @a[tag=gazebo,team=uRed] -1578 57 -574

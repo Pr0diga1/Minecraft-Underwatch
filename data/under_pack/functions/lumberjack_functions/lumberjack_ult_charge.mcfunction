@@ -1,6 +1,6 @@
 #when you get a kill, you get 10 ult charge
 execute if score @s vanitykills matches 1.. run experience add @s 10 levels
-execute if score @s vanitykills matches 1.. run scoreboard players add @s lumerjack_ult_charge 10
+execute if score @s vanitykills matches 1.. run scoreboard players add @s lumberjack_ult_charge 10
 execute if score @s vanitykills matches 1.. run scoreboard players set @s vanitykills 0
 #gives ult charge based on how much damage you deal
 execute if score @s damage matches 1..24 run experience add @s 1 levels
