@@ -43,3 +43,42 @@ scoreboard objectives add ability1 dummy
 scoreboard objectives add ability2 dummy
 scoreboard objectives add ability3 dummy
 scoreboard objectives add ult dummy
+
+#ray casting
+scoreboard objectives add ray_steps dummy
+scoreboard objectives add ray_success dummy
+#class specific scoreboards
+#alc
+
+
+#archer
+
+
+#engineer
+
+
+#knight
+
+
+#lumberjack
+scoreboard objectives add LumberjackMotionX dummy
+scoreboard objectives add LumberjackMotionY dummy
+scoreboard objectives add LumberjackMotionZ dummy
+scoreboard objectives add lumberjack_axe_slam dummy
+scoreboard objectives add lumberjack_ult_charge dummy
+scoreboard objectives add lumberjack_ult_timer dummy 
+scoreboard objectives add vanitykills playerKillCount
+scoreboard objectives add damage minecraft.custom:minecraft.damage_dealt
+#ninja
+
+
+#paladin
+
+
+#rogue
+
+
+#scientist
+
+
+#wizard
