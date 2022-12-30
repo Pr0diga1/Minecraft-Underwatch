@@ -1,5 +1,5 @@
 #cooldown
-scoreboard players set @s ability2 159
+scoreboard players set @s ability1 159
 scoreboard players set @s ability2 139
 scoreboard players set @s ability3 299
 #brass knuckles

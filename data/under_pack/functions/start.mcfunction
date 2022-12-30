@@ -77,7 +77,7 @@ scoreboard objectives add ninjaHyperventilate dummy
 scoreboard objectives add ninjaMotionX dummy
 scoreboard objectives add ninjaMotionY dummy
 scoreboard objectives add ninjaMotionZ dummy
-
+scoreboard objectives add ninjaRay dummy
 
 #paladin
 
