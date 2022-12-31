@@ -17,8 +17,8 @@ execute if entity @s[team=uBlue] if score @s lumberjack_axe_slam matches 1 at @e
 execute if entity @s[team=uRed] if score @s lumberjack_axe_slam matches ..29 at @e[tag=lumber_giant,tag=red,tag=1] run tp @e[tag=lumber_giant,tag=red,tag=1] ~ ~-.6 ~
 execute if entity @s[team=uBlue] if score @s lumberjack_axe_slam matches ..29 at @e[tag=lumber_giant,tag=blue,tag=1] run tp @e[tag=lumber_giant,tag=blue,tag=1] ~ ~-.6 ~
 #puts particles where the axe will fall
-execute if entity @s[team=uRed] at @e[tag=lumber_ult,tag=red,tag=1] run particle minecraft:dust 1 0 0 1 ~ ~ ~ 2 .2 2 0 100 force @a
-execute if entity @s[team=uBlue] at @e[tag=lumber_ult,tag=blue,tag=1] run particle minecraft:dust 1 0 0 1 ~ ~ ~ 2 .2 2 0 100 force @a
+execute if entity @s[team=uRed] at @e[tag=lumber_ult,tag=red,tag=1] run particle minecraft:dust 1 0.769 0 1 ~ ~ ~ 2 .2 2 0 100 force @a
+execute if entity @s[team=uBlue] at @e[tag=lumber_ult,tag=blue,tag=1] run particle minecraft:dust 1 0.769 0 1 ~ ~ ~ 2 .2 2 0 100 force @a
 #give resistance to prevent friendly fire
 execute if entity @s[team=uRed] if score @s lumberjack_axe_slam matches 30 run effect give @a[team=uRed] resistance 1 255 true
 execute if entity @s[team=uBlue] if score @s lumberjack_axe_slam matches 30 run effect give @a[team=uBlue] resistance 1 255 true
