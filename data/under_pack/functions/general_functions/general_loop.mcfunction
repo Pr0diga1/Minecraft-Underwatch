@@ -11,5 +11,9 @@ kill @e[type=chicken]
 
 #no natural health regen
 gamerule naturalRegeneration false
+#no fall damage
+gamerule fallDamage false
+#stop the xp sound
+stopsound @a player entity.player.levelup
 #saturation
 effect give @a saturation 1 255 true

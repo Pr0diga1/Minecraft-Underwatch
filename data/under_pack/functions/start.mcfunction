@@ -20,6 +20,13 @@ scoreboard objectives add class dummy
 #buffer objective for changing classes
 scoreboard objectives add classCheck dummy
 
+#adds levels tracker
+scoreboard objectives add levels xp
+
+#adds constants and modifiers
+scoreboard objectives add constant dummy
+scoreboard objectives add modifier dummy
+
 #adds constant and any needed multipliers
 scoreboard objectives add constant dummy
 scoreboard players set TickToSecond constant 20
@@ -49,6 +56,16 @@ scoreboard objectives add ult dummy
 #ray casting
 scoreboard objectives add ray_steps dummy
 scoreboard objectives add ray_success dummy
+
+#Ult Charging
+scoreboard objectives add ultKills playerKillCount
+scoreboard objectives add ultKillsBuffer dummy
+scoreboard objectives add ultTicks dummy
+scoreboard objectives add ultDamage minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add ultCharge dummy
+scoreboard objectives add ultPercent dummy
+scoreboard objectives add ultPercentBuffer dummy
+
 #class specific scoreboards
 #alc
 
@@ -78,6 +95,8 @@ scoreboard objectives add ninjaMotionX dummy
 scoreboard objectives add ninjaMotionY dummy
 scoreboard objectives add ninjaMotionZ dummy
 scoreboard objectives add ninjaRay dummy
+scoreboard objectives add ninjaUltActive dummy
+scoreboard objectives add ninjaUltTiming dummy
 
 #paladin
 

@@ -1,13 +1,13 @@
 #tallying for the toss 
 execute if score @s ability2 matches ..140 run scoreboard players add @s ability2 1
 #intervals for the toss
-execute if score @s ability2 matches 20 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Arrow Toss","color":"blue"}'},Damage:21,ninjaToss:1b} 1
-execute if score @s ability2 matches 40 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Arrow Toss","color":"blue"}'},Damage:18,ninjaToss:1b} 1
-execute if score @s ability2 matches 60 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Arrow Toss","color":"blue"}'},Damage:14,ninjaToss:1b} 1
-execute if score @s ability2 matches 80 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Arrow Toss","color":"blue"}'},Damage:11,ninjaToss:1b} 1
-execute if score @s ability2 matches 100 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Arrow Toss","color":"blue"}'},Damage:7,ninjaToss:1b} 1
-execute if score @s ability2 matches 120 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Arrow Toss","color":"blue"}'},Damage:4,ninjaToss:1b} 1
-execute if score @s ability2 matches 140 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Arrow Toss","color":"blue"}'},ninjaToss:1b} 1
+execute if score @s ability2 matches 20 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Sherukin Throw","color":"blue"}'},Damage:21,ninjaToss:1b} 1
+execute if score @s ability2 matches 40 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Sherukin Throw","color":"blue"}'},Damage:18,ninjaToss:1b} 1
+execute if score @s ability2 matches 60 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Sherukin Throw","color":"blue"}'},Damage:14,ninjaToss:1b} 1
+execute if score @s ability2 matches 80 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Sherukin Throw","color":"blue"}'},Damage:11,ninjaToss:1b} 1
+execute if score @s ability2 matches 100 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Sherukin Throw","color":"blue"}'},Damage:7,ninjaToss:1b} 1
+execute if score @s ability2 matches 120 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Sherukin Throw","color":"blue"}'},Damage:4,ninjaToss:1b} 1
+execute if score @s ability2 matches 140 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Sherukin Throw","color":"blue"}'},ninjaToss:1b} 1
 
 #tallying for the 1.8
 execute if score @s ability3 matches ..300 if score @s ninjaHyperventilate matches 0 run scoreboard players add @s ability3 1
