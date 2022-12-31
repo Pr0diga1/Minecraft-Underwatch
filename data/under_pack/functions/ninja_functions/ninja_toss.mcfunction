@@ -62,4 +62,4 @@ scoreboard players reset @s reset
 
 #cooldowns
 scoreboard players set @s ability2 0
-item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Arrow Toss","color":"blue"}'},Damage:25,ninjaToss:1b} 1
+item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},Damage:25,ninjaToss:1b} 1

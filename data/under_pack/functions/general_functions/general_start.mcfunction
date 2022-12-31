@@ -9,3 +9,6 @@ tag @s add ungame
 #clear
 effect clear @s
 clear @s
+#removes xp
+experience set @s 0 levels
+experience set @s 0 points

@@ -10,3 +10,7 @@ scoreboard players set @s class 0
 tp @s -50 53 94
 function oneshot_pack:general_functions/get_book
 scoreboard players set @s Reset 0
+
+#removes xp
+experience set @s 0 levels
+experience set @s 0 points

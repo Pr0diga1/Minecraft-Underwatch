@@ -1,3 +1,4 @@
+#carror on a stick detection
 execute as @s[nbt={Inventory:[{Slot:0b,tag:{ninjaDash:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{ninjaDash:1b}}},scores={reset=1..}] if score @s ability1 matches 160.. run function under_pack:ninja_functions/ninja_dash
 execute as @s[nbt={Inventory:[{Slot:1b,tag:{ninjaToss:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{ninjaToss:1b}}},scores={reset=1..}] if score @s ability2 matches 140.. run function under_pack:ninja_functions/ninja_toss
 execute as @s[nbt={Inventory:[{Slot:2b,tag:{ninjaHyperventilate:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{ninjaHyperventilate:1b}}},scores={reset=1..}] if score @s ability3 matches 300.. run function under_pack:ninja_functions/ninja_hyperventilate
@@ -23,6 +24,9 @@ execute if score @s ninjaUltTiming matches 2.. run function under_pack:ninja_fun
 
 #ending the ult
 execute if score @s ninjaUltTiming matches 1 run function under_pack:ninja_functions/ninja_ult_end
+
+#clear helmet
+item replace entity @s armor.head with air
 
 #cooldowns
 function under_pack:ninja_functions/ninja_cooldown

@@ -7,6 +7,11 @@ team add uBlue
 team modify uBlue friendlyFire false
 team modify uBlue color blue
 
+#healthbar tracking
+scoreboard objectives add heart health {"text":"\u2764","color":"#FF0000"}
+scoreboard objectives setdisplay belowName heart
+scoreboard objectives setdisplay list heart
+
 #add a death objective so deaths can be tracked
 scoreboard objectives add uDeaths deathCount
 #deathtimer
@@ -84,8 +89,11 @@ scoreboard objectives add LumberjackMotionX dummy
 scoreboard objectives add LumberjackMotionY dummy
 scoreboard objectives add LumberjackMotionZ dummy
 scoreboard objectives add lumberjack_axe_slam dummy
+scoreboard objectives add lumberjack_axe_slam2 dummy
+scoreboard objectives add lumberjack_axe_slam3 dummy
 scoreboard objectives add lumberjack_ult_charge dummy
 scoreboard objectives add lumberjack_ult_timer dummy 
+scoreboard objectives add lumberjack_ult_casts dummy
 scoreboard objectives add vanitykills playerKillCount
 scoreboard objectives add damage minecraft.custom:minecraft.damage_dealt
 

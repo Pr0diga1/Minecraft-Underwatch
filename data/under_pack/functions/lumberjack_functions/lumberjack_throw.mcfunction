@@ -2,8 +2,8 @@
 execute rotated as @s[team=uRed] positioned 0 0 0 align xyz run summon minecraft:armor_stand ^ ^ ^1 {Invulnerable:1b,NoGravity:1b,Tags:["lumberaim","red"]}
 execute rotated as @s[team=uBlue] positioned 0 0 0 align xyz run summon minecraft:armor_stand ^ ^ ^1 {Invulnerable:1b,NoGravity:1b,Tags:["lumberaim","blue"]}
 #summons an arrow at your face
-execute at @s[team=uRed] run summon minecraft:arrow ~ ~1.5 ~ {Tags:["lumberarrow","red"],CustomName:'{"text":"Axe Throw"}',PierceLevel:10b,damage:5d}
-execute at @s[team=uBlue] run summon minecraft:arrow ~ ~1.5 ~ {Tags:["lumberarrow","blue"],CustomName:'{"text":"Axe Throw"}',PierceLevel:10b,damage:5d}
+execute at @s[team=uRed] run summon minecraft:arrow ~ ~1.5 ~ {Tags:["lumberarrow","red"],CustomName:'{"text":"Axe Throw"}',PierceLevel:10b,damage:5.8d}
+execute at @s[team=uBlue] run summon minecraft:arrow ~ ~1.5 ~ {Tags:["lumberarrow","blue"],CustomName:'{"text":"Axe Throw"}',PierceLevel:10b,damage:5.8d}
 #set the owner of the arrow to the UUID of the player
 execute at @s run data modify entity @e[type=arrow,tag=lumberarrow,limit=1,sort=nearest] Owner set from entity @s UUID
 #summons an armor stand holding an axe so it looks like the throw is an axe

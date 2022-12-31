@@ -1,27 +1,36 @@
-#when you get a kill, you get 10 ult charge
-execute if score @s vanitykills matches 1.. run experience add @s 10 levels
-execute if score @s vanitykills matches 1.. run scoreboard players add @s lumberjack_ult_charge 10
-execute if score @s vanitykills matches 1.. run scoreboard players set @s vanitykills 0
-#gives ult charge based on how much damage you deal
-execute if score @s damage matches 1..24 run experience add @s 1 levels
-execute if score @s damage matches 1..24 run scoreboard players add @s lumberjack_ult_charge 1
-execute if score @s damage matches 25..49 run experience add @s 2 levels
-execute if score @s damage matches 25..49 run scoreboard players add @s lumberjack_ult_charge 2
-execute if score @s damage matches 50..74 run experience add @s 3 levels
-execute if score @s damage matches 50..74 run scoreboard players add @s lumberjack_ult_charge 3
-execute if score @s damage matches 75..100 run experience add @s 4 levels
-execute if score @s damage matches 75..100 run scoreboard players add @s lumberjack_ult_charge 4
-execute if score @s damage matches 100.. run experience add @s 5 levels
-execute if score @s damage matches 100.. run scoreboard players add @s lumberjack_ult_charge 5
-execute if score @s damage matches 1.. run scoreboard players set @s damage 0
-#1 charge every 2.4 seconds 
-scoreboard players add @s lumberjack_ult_timer 1
-execute if score @s lumberjack_ult_timer matches 48.. run experience add @s 1 levels
-execute if score @s lumberjack_ult_timer matches 48.. run scoreboard players add @s lumberjack_ult_charge 1
-execute if score @s lumberjack_ult_timer matches 48.. run scoreboard players set @s lumberjack_ult_timer 0
-#makes sure that ult charge can't go above 100
-execute if score @s lumberjack_ult_charge matches 100.. run scoreboard players set @s lumberjack_ult_charge 100
-execute if score @s lumberjack_ult_charge matches 100.. run experience set @s 100 levels
-#gives you the ult when at 100 charge
-execute if score @s lumberjack_ult_charge matches 100.. run item replace entity @s hotbar.8 with carrot_on_a_stick{display:{Name:'{"text":"Axe Drop","color":"black"}'},lumberdrop:1b} 1
+#adds 1 to ultticks
+scoreboard players add @s ultTicks 1
 
+#sets ult charge to 0 so it can be reavaluated for this tick
+scoreboard players set @s ultCharge 0
+
+#ticks
+scoreboard players operation @s ultCharge += @s ultTicks
+
+#kills
+scoreboard players operation @s ultKillsBuffer = @s ultKills
+scoreboard players operation @s ultKillsBuffer *= lumberjackUltKills modifier
+scoreboard players operation @s ultCharge += @s ultKillsBuffer
+
+#sets the ult percent buffer
+scoreboard players operation @s ultPercentBuffer = @s ultPercent
+
+#set ult percent every tick
+scoreboard players operation @s ultPercent = @s ultCharge
+scoreboard players operation @s ultPercent /= lumberjackUltPercent modifier
+
+#sets the ult percent to however much it has changed
+scoreboard players operation @s ultPercent -= @s ultPercentBuffer
+
+#sets the buffer to whatever the ultPercent actually is
+scoreboard players operation @s ultPercentBuffer += @s ultPercent
+
+#updates levels
+function under_pack:lumberjack_functions/lumberjack_update_ult
+
+#resets ultPercent so the next buffer is accurate
+scoreboard players operation @s ultPercent = @s ultPercentBuffer
+
+#give the carrot on a stick if the ult charge is 100%
+execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{lumberdrop:1b}}]}] if score @s ultPercentBuffer matches 100.. run scoreboard players set @s lumberjack_ult_casts 3
+execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{lumberdrop:1b}}]}] if score @s ultPercentBuffer matches 100.. run item replace entity @s hotbar.8 with carrot_on_a_stick{display:{Name:'{"text":"Axe Drop","color":"black"}'},lumberdrop:1b} 1
