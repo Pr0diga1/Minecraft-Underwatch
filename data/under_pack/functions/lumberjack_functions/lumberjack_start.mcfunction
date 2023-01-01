@@ -23,6 +23,7 @@ scoreboard players set @s ultKillsBuffer 0
 scoreboard players set @s ultTicks 0
 scoreboard players set @s ultDamage 0
 scoreboard players set @s ultCharge 0
+scoreboard players set @s lumberjack_ult_casts 0
 
 #constants for ult charge
 scoreboard players set lumberjackUltKills modifier 600

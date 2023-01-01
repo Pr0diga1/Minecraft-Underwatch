@@ -32,6 +32,9 @@ scoreboard objectives add levels xp
 scoreboard objectives add constant dummy
 scoreboard objectives add modifier dummy
 
+#arrow death timer
+scoreboard objectives add arrowTimer dummy
+
 #adds constant and any needed multipliers
 scoreboard objectives add constant dummy
 scoreboard players set TickToSecond constant 20
@@ -113,6 +116,9 @@ scoreboard objectives add ninjaUltTiming dummy
 
 
 #scientist
-
+scoreboard objectives add scientistDamageReload dummy
+scoreboard objectives add scientistHealingReload dummy
+execute unless entity @e[type=armor_stand,team=uBlue] run summon armor_stand 0 0 0 {UUID:[I;201,201,201,201],Team:"uBlue",NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["alchemistTeam"]}
+execute unless entity @e[type=armor_stand,team=uRed] run summon armor_stand 0 0 0 {UUID:[I;202,202,202,202],Team:"uRed",NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["alchemistTeam"]}
 
 #wizard
