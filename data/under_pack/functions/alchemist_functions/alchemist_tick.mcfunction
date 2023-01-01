@@ -29,20 +29,20 @@ execute unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:splash_potion"}]
 execute if entity @s[tag=reload_main] run scoreboard players add @s ability1 1
 item modify entity @s[tag=reload_main] hotbar.0 under_pack:alchemist/main_cooldown
 execute if score @s ability1 matches 61.. unless entity @s[tag=!reload_main] run item replace entity @s hotbar.0 with air
-execute if score @s ability1 matches 61.. unless entity @s[tag=!reload_main] run summon item ~ ~ ~ {Item:{id:"minecraft:splash_potion",Count:3b,tag:{display:{Name:'{"text":"Acid","color":"#8FC219","bold":true,"italic":false}'},acid:1b,Potion:"minecraft:harming",CustomPotionColor:9421337}}}
+execute if score @s ability1 matches 61.. unless entity @s[tag=!reload_main] run summon item ~ ~ ~ {PickupDelay:0,Item:{id:"minecraft:splash_potion",Count:3b,tag:{display:{Name:'{"text":"Acid","color":"#8FC219","bold":true,"italic":false}'},acid:1b,Potion:"minecraft:harming",CustomPotionColor:9421337}}}
 execute if score @s ability1 matches 61.. unless entity @s[tag=!reload_main] run tag @s remove reload_main
 
 # Reload heal's cooldown
 execute if entity @s[tag=reload_utility] run scoreboard players add @s ability2 1
 item modify entity @s[tag=reload_utility] hotbar.1 under_pack:alchemist/util_cooldown
 execute if score @s ability2 matches 61.. unless entity @s[tag=!reload_utility] run item replace entity @s hotbar.1 with air
-execute if score @s ability2 matches 61.. unless entity @s[tag=!reload_utility] run summon item ~ ~ ~ {Item:{id:"minecraft:splash_potion",Count:3b,tag:{display:{Name:'{"text":"Healing","color":"#C265BC","bold":true,"italic":false}'},healing:1b,Potion:"minecraft:strong_regeneration",CustomPotionColor:12740028}}}
+execute if score @s ability2 matches 61.. unless entity @s[tag=!reload_utility] run summon item ~ ~ ~ {PickupDelay:0,Item:{id:"minecraft:splash_potion",Count:3b,tag:{display:{Name:'{"text":"Healing","color":"#C265BC","bold":true,"italic":false}'},healing:1b,Potion:"minecraft:strong_regeneration",CustomPotionColor:12740028}}}
 execute if score @s ability2 matches 61.. unless entity @s[tag=!reload_utility] run tag @s remove reload_utility
 
 # Telepot's cooldown
 execute if entity @s[tag=telepot_cooldown] run scoreboard players add @s movement 1
 item modify entity @s[tag=telepot_cooldown] hotbar.2 under_pack:alchemist/telepot_cooldown
-execute if score @s movement matches 141.. unless entity @s[tag=!telepot_cooldown] run item replace entity @p hotbar.2 with splash_potion{display:{Name:'{"text":"Telepot","color":"#8753E0","bold":true,"italic":false}'},CustomModelData:1,telepot:1b,CustomPotionColor:16777215} 1
+execute if score @s movement matches 141.. unless entity @s[tag=!telepot_cooldown] run item replace entity @s hotbar.2 with splash_potion{display:{Name:'{"text":"Telepot","color":"#8753E0","bold":true,"italic":false}'},CustomModelData:1,telepot:1b,CustomPotionColor:16777215} 1
 execute if score @s movement matches 141.. unless entity @s[tag=!telepot_cooldown] run tag @s remove telepot_cooldown
 
 
