@@ -115,5 +115,6 @@ scoreboard objectives add ninjaUltTiming dummy
 scoreboard objectives add scientistDamageReload dummy
 scoreboard objectives add scientistHealingReload dummy
 scoreboard objectives add scientistBowFired minecraft.used:minecraft.bow
+scoreboard objectives add scientistBowFired2 minecraft.used:minecraft.bow
 
 #wizard
