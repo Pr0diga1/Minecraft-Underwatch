@@ -1,7 +1,8 @@
 # Tags telepots and assigns a team (so multiple telepots can be around at once)
 execute as @e[type=potion,nbt={Item:{tag:{telepot:1b}}}] run tag @s add telepot
-execute as @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue] if entity @a[sort=nearest,team=uBlue,limit=1,distance=..0.5] at @s run tag @s add uBlue
-execute as @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue] if entity @a[sort=nearest,team=uRed,limit=1,distance=..0.5] at @s run tag @s add uRed
+execute as @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uBlue,limit=1,distance=..0.5] run tag @s add uBlue
+execute as @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uRed,limit=1,distance=..0.5] run tag @s add uRed
+
 execute as @e[type=potion,tag=telepot,tag=uBlue] at @s run tag @a[sort=nearest,limit=1,team=uBlue] add telepot
 execute as @e[type=potion,tag=telepot,tag=uRed] at @s run tag @a[sort=nearest,limit=1,team=uRed] add telepot
 
