@@ -31,6 +31,7 @@ scoreboard objectives add levels xp
 #adds constants and modifiers
 scoreboard objectives add constant dummy
 scoreboard objectives add modifier dummy
+scoreboard objectives add buffer dummy
 
 #arrow death timer
 scoreboard objectives add arrowTimer dummy
