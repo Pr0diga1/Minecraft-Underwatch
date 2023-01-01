@@ -1,19 +1,19 @@
 # Tags telepots and assigns a team (so multiple telepots can be around at once)
 execute as @e[type=potion,nbt={Item:{tag:{telepot:1b}}}] run tag @s add telepot
-execute as @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uBlue,limit=1,distance=..0.5] run tag @s add uBlue
-execute as @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uRed,limit=1,distance=..0.5] run tag @s add uRed
+execute as @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uBlue,limit=1,distance=..2.5] run tag @s add uBlue
+execute as @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uRed,limit=1,distance=..2.5] run tag @s add uRed
 
 execute as @e[type=potion,tag=telepot,tag=uBlue] at @s run tag @a[sort=nearest,limit=1,team=uBlue] add telepot
 execute as @e[type=potion,tag=telepot,tag=uRed] at @s run tag @a[sort=nearest,limit=1,team=uRed] add telepot
 
 # Store's position of telepot
-execute if entity @s[team=uBlue,tag=telepot] store result score xposBlue buffer run data get entity @e[type=potion,tag=telepot,tag=uBlue,limit=1] Pos[0] 100
-execute if entity @s[team=uBlue,tag=telepot] store result score yposBlue buffer run data get entity @e[type=potion,tag=telepot,tag=uBlue,limit=1] Pos[1] 100
-execute if entity @s[team=uBlue,tag=telepot] store result score zposBlue buffer run data get entity @e[type=potion,tag=telepot,tag=uBlue,limit=1] Pos[2] 100
+execute if entity @s[team=uBlue,tag=telepot] if entity @e[type=potion,tag=telepot,tag=uBlue] store result score xposBlue buffer run data get entity @e[type=potion,tag=telepot,tag=uBlue,limit=1] Pos[0] 100
+execute if entity @s[team=uBlue,tag=telepot] if entity @e[type=potion,tag=telepot,tag=uBlue] store result score yposBlue buffer run data get entity @e[type=potion,tag=telepot,tag=uBlue,limit=1] Pos[1] 100
+execute if entity @s[team=uBlue,tag=telepot] if entity @e[type=potion,tag=telepot,tag=uBlue] store result score zposBlue buffer run data get entity @e[type=potion,tag=telepot,tag=uBlue,limit=1] Pos[2] 100
 
-execute if entity @s[team=uRed,tag=telepot] store result score xposRed buffer run data get entity @e[type=potion,tag=telepot,tag=uRed,limit=1] Pos[0] 100
-execute if entity @s[team=uRed,tag=telepot] store result score yposRed buffer run data get entity @e[type=potion,tag=telepot,tag=uRed,limit=1] Pos[1] 100
-execute if entity @s[team=uRed,tag=telepot] store result score zposRed buffer run data get entity @e[type=potion,tag=telepot,tag=uRed,limit=1] Pos[2] 100
+execute if entity @s[team=uRed,tag=telepot] if entity @e[type=potion,tag=telepot,tag=uRed] store result score xposRed buffer run data get entity @e[type=potion,tag=telepot,tag=uRed,limit=1] Pos[0] 100
+execute if entity @s[team=uRed,tag=telepot] if entity @e[type=potion,tag=telepot,tag=uRed] store result score yposRed buffer run data get entity @e[type=potion,tag=telepot,tag=uRed,limit=1] Pos[1] 100
+execute if entity @s[team=uRed,tag=telepot] if entity @e[type=potion,tag=telepot,tag=uRed] store result score zposRed buffer run data get entity @e[type=potion,tag=telepot,tag=uRed,limit=1] Pos[2] 100
 
 # Teleports based on team when pot smashes
 execute if entity @s[team=uBlue,tag=telepot] unless entity @e[type=potion,tag=telepot,tag=uBlue] run function under_pack:alchemist_functions/alchemist_telepot
