@@ -119,7 +119,6 @@ scoreboard objectives add ninjaUltTiming dummy
 #scientist
 scoreboard objectives add scientistDamageReload dummy
 scoreboard objectives add scientistHealingReload dummy
-execute unless entity @e[type=armor_stand,team=uBlue] run summon armor_stand 0 0 0 {UUID:[I;201,201,201,201],Team:"uBlue",NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["alchemistTeam"]}
-execute unless entity @e[type=armor_stand,team=uRed] run summon armor_stand 0 0 0 {UUID:[I;202,202,202,202],Team:"uRed",NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Tags:["alchemistTeam"]}
+scoreboard objectives add scientistBowFired minecraft.used:minecraft.bow
 
 #wizard

@@ -1,5 +1,5 @@
 #update thing's durability
-item modify entity @s hotbar.0 under_pack:updamage
+item modify entity @s hotbar.0 under_pack:scientist/default_arrows
 
 #iterate the timer
 scoreboard players remove @s scientistDamageReload 1
