@@ -14,11 +14,14 @@ item replace entity @s hotbar.1 with tipped_arrow{display:{Name:'{"text":"Healin
 item replace entity @s hotbar.2 with tipped_arrow{display:{Name:'{"text":"Movement Dart","color":"dark_green"}'},scientistMovement:1b,CustomPotionEffects:[{Id:1,Amplifier:4b,Duration:40},{Id:8,Amplifier:4b,Duration:40}],CustomPotionColor:2327040} 1
 #lightning dart
 item replace entity @s hotbar.3 with tipped_arrow{display:{Name:'{"text":"Electric Dart","color":"white"}'},scientistLightning:1b,CustomPotionColor:16777215} 1
+#Punch bow
+item replace entity @s hotbar.4 with carrot_on_a_stick{display:{Name:'{"text":"Rocket Dart","color":"gold"}',Lore:['{"text":"Right Click to strap a rocket motor on your next dart"}']},scientistPunch:1b} 1
+
 
 #set things to 0
 scoreboard players set @s scientistDamageReload 0
 scoreboard players set @s scientistHealingReload 0
 scoreboard players set @s ability1 0
 scoreboard players set @s ability2 0
-scoreboard players set @s ability3 0
-scoreboard players set @s scientistBowFired 0
+scoreboard players set @s ability3 199
+scoreboard players set @s scientistBowFired 2
