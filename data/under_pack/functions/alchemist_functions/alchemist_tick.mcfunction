@@ -19,9 +19,6 @@ execute if entity @s[team=uRed,tag=telepot] if entity @e[type=potion,tag=telepot
 execute if entity @s[team=uBlue,tag=telepot] unless entity @e[type=potion,tag=telepot,tag=uBlue] run function under_pack:alchemist_functions/alchemist_telepot
 execute if entity @s[team=uRed,tag=telepot] unless entity @e[type=potion,tag=telepot,tag=uRed] run function under_pack:alchemist_functions/alchemist_telepot
 
-# Death check
-execute if entity @s[scores={uDeaths=1..}] run function under_pack:alchemist_functions/alchemist_respawn
-
 # Cooldown checks
 execute unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:splash_potion"}]}] if entity @s[tag=!reload_main] run function under_pack:alchemist_functions/alchemist_reload_main
 execute unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:splash_potion"}]}] if entity @s[tag=!reload_utility] run function under_pack:alchemist_functions/alchemist_reload_utility
