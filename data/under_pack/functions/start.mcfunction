@@ -86,7 +86,7 @@ scoreboard objectives add ultPercentBuffer dummy
 
 
 #knight
-
+scoreboard objectives add blockIsActive dummy
 
 #lumberjack
 scoreboard objectives add LumberjackMotionX dummy
@@ -95,11 +95,6 @@ scoreboard objectives add LumberjackMotionZ dummy
 scoreboard objectives add lumberjack_axe_slam dummy
 scoreboard objectives add lumberjack_axe_slam2 dummy
 scoreboard objectives add lumberjack_axe_slam3 dummy
-scoreboard objectives add lumberjack_ult_charge dummy
-scoreboard objectives add lumberjack_ult_timer dummy 
-scoreboard objectives add lumberjack_ult_casts dummy
-scoreboard objectives add vanitykills playerKillCount
-scoreboard objectives add damage minecraft.custom:minecraft.damage_dealt
 
 #ninja
 scoreboard objectives add ninjaHyperventilate dummy

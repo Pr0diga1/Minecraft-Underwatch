@@ -1,5 +1,8 @@
 #carrot on stick listening
+execute as @s[nbt={Inventory:[{Slot:4b,tag:{scientistPunch:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{scientistPunch:1b}}},scores={reset=1..}] if score @s ability3 matches 200.. run function under_pack:scientist_functions/scientist_punch
 
+#reset reset
+scoreboard players reset @s reset
 
 #damage arrow reload
 execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{scientistDamage:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:0b}]}] run scoreboard players set @s scientistDamageReload 25
@@ -60,4 +63,8 @@ execute as @e[type=marker,tag=sciLightningRed] unless entity @e[type=arrow,tag=s
 execute as @e[type=marker,tag=sciLightningBlue] unless entity @e[type=arrow,tag=sciBolt,tag=blue] at @s run summon lightning_bolt ~ ~ ~
 execute as @e[type=marker,tag=sciLightningBlue] unless entity @e[type=arrow,tag=sciBolt,tag=blue] at @s run kill @s
 
+#if punch isn't active run the cooldown
+execute if score @s scientistBowFired matches 2.. if score @s ability3 matches ..199 run function under_pack:scientist_functions/scientist_punch_cooldown
+
 #give normal bow
+execute if score @s scientistBowFired matches 1 run function under_pack:scientist_functions/scientist_punch_end
