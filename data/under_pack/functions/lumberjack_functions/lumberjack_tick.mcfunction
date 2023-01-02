@@ -12,8 +12,8 @@ execute as @e[tag=lumberarrow,tag=blue] store result entity @s Motion[0] double 
 execute as @e[tag=lumberarrow,tag=blue] store result entity @s Motion[1] double 0.0015 run scoreboard players get @s LumberjackMotionY
 execute as @e[tag=lumberarrow,tag=blue] store result entity @s Motion[2] double 0.0015 run scoreboard players get @s LumberjackMotionZ
 #jump cooldown
-execute if score @s movement matches ..120 run scoreboard players add @s movement 1
-execute if score @s movement matches 120 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Strong Jump","color":"blue"}'},lumberjump:1b} 1
+execute if score @s movement matches ..80 run scoreboard players add @s movement 1
+execute if score @s movement matches 80 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Strong Jump","color":"blue"}'},lumberjump:1b} 1
 #throw cooldown
 execute if score @s ability1 matches ..200 run scoreboard players add @s ability1 1
 execute if score @s ability1 matches 200 run item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"Axe Throw","color":"green"}'},lumberthrow:1b} 1

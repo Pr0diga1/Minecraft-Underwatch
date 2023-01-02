@@ -87,6 +87,7 @@ scoreboard objectives add ultPercentBuffer dummy
 
 #knight
 scoreboard objectives add blockIsActive dummy
+scoreboard objectives add knightbomb dummy
 
 #lumberjack
 scoreboard objectives add LumberjackMotionX dummy

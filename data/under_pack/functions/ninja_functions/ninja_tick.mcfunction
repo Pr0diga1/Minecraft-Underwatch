@@ -25,8 +25,5 @@ execute if score @s ninjaUltTiming matches 2.. run function under_pack:ninja_fun
 #ending the ult
 execute if score @s ninjaUltTiming matches 1 run function under_pack:ninja_functions/ninja_ult_end
 
-#clear helmet
-item replace entity @s armor.head with air
-
 #cooldowns
 function under_pack:ninja_functions/ninja_cooldown

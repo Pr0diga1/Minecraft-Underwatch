@@ -6,9 +6,9 @@ item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"S
 #Hyperventilate
 item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"Brass Knuckles","color":"gold"}',Lore:['{"text":"Right Click to hyperventilate"}']},ninjaHyperventilate:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2,Operation:0,UUID:[I;-313458390,-1808840175,-1185663256,636532485],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2,Operation:0,UUID:[I;971141352,1171998355,-1798810994,-675089356],Slot:"mainhand"}]} 1
 #armor
-item replace entity @s armor.feet with iron_boots{Unbreakable:true,Enchantments:[{id:"minecraft:feather_falling",lvl:255s}]}
 item replace entity @s armor.legs with iron_leggings{Unbreakable:true}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:true}
+item replace entity @s armor.head with leather_helmet{Unbreakable:true}
 
 #cooldown
 scoreboard players set @s ability1 159
