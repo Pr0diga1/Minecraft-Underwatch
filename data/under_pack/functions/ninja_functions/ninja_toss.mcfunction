@@ -23,6 +23,9 @@ execute at @s run data modify entity @e[type=arrow,limit=1,sort=nearest,tag=ninj
 execute at @s run data modify entity @e[type=arrow,limit=1,sort=nearest,tag=ninjaArrow2] Owner set from entity @s UUID
 execute at @s run data modify entity @e[type=arrow,limit=1,sort=nearest,tag=ninjaArrow3] Owner set from entity @s UUID
 
+#playsound
+execute at @s run playsound minecraft:entity.villager.work_fletcher master @a ~ ~ ~ 5 2
+
 #get the scoreboard to use for velo
 
 #red
@@ -62,4 +65,4 @@ scoreboard players reset @s reset
 
 #cooldowns
 scoreboard players set @s ability2 0
-item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},Damage:25,ninjaToss:1b} 1
+item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:2670002,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},Damage:25,ninjaToss:1b} 1

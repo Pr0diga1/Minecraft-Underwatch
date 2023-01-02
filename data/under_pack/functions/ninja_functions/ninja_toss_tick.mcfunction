@@ -23,3 +23,8 @@ execute as @e[tag=ninjaArrow2,tag=blue] store result entity @s Motion[2] double 
 execute as @e[tag=ninjaArrow3,tag=blue] store result entity @s Motion[0] double 0.0015 run scoreboard players get @s ninjaMotionX
 execute as @e[tag=ninjaArrow3,tag=blue] store result entity @s Motion[1] double 0.0015 run scoreboard players get @s ninjaMotionY
 execute as @e[tag=ninjaArrow3,tag=blue] store result entity @s Motion[2] double 0.0015 run scoreboard players get @s ninjaMotionZ
+
+#particles
+execute at @e[type=arrow,tag=ninjaArrow1] run particle witch ~ ~ ~ 0 0 0 0 1
+execute at @e[type=arrow,tag=ninjaArrow2] run particle witch ~ ~ ~ 0 0 0 0 1
+execute at @e[type=arrow,tag=ninjaArrow3] run particle witch ~ ~ ~ 0 0 0 0 1
