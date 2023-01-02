@@ -1,5 +1,5 @@
 #summon new arrow
-execute at @s run summon arrow ~ ~ ~ {crit:0b,Color:2327041,damage:0.01d,Tags:["SciMove"],CustomPotionEffects:[{Id:1,Amplifier:4b,Duration:40},{Id:8,Amplifier:4b,Duration:40}]}
+execute at @s run summon arrow ~ ~ ~ {crit:0b,Color:2327041,damage:0.01d,Tags:["SciMove"],CustomPotionEffects:[{Id:1,Amplifier:5b,Duration:45},{Id:8,Amplifier:5b,Duration:45}]}
 #set its motion
 execute at @s run data modify entity @e[type=arrow,tag=SciMove,limit=1,sort=nearest] Motion set from entity @s Motion
 #set its owner

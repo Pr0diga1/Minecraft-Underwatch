@@ -1,7 +1,7 @@
 #reset the bow fired
 scoreboard players set @s scientistBowFired 0
 #give punch bow
-item replace entity @s weapon.offhand with bow{Unbreakable:1b,Enchantments:[{id:"minecraft:punch",lvl:3s}]}
+item replace entity @s weapon.offhand with bow{Unbreakable:1b,Enchantments:[{id:"minecraft:punch",lvl:4s}]}
 
 #give new carrot on stick
 item replace entity @s hotbar.4 with carrot_on_a_stick{display:{Name:'{"text":"Rocket Dart","color":"gold"}',Lore:['{"text":"Right Click to strap a rocket motor on your next dart"}']},Damage:25,scientistPunch:1b} 1

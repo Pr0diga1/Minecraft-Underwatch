@@ -26,7 +26,7 @@ execute unless entity @s[nbt={Inventory:[{Slot:3b,tag:{scientistLightning:1b}}]}
 execute if score @s ability2 matches 1.. run function under_pack:scientist_functions/scientist_reload_lightning
 
 #remove damage from damage arrows
-execute as @e[type=arrow,nbt={Color:0}] run data merge entity @s {damage:0.01d,crit:0b}
+execute as @e[type=arrow,nbt={Color:0}] run data merge entity @s {damage:0.01d}
 
 #give healing arrows the correct team tags
 execute as @e[type=arrow,nbt={Color:16768256}] at @s if entity @a[distance=..4,scores={class=9,scientistBowFired2=1..},team=uRed] run tag @s add red

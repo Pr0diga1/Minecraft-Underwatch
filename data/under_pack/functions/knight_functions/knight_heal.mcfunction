@@ -5,5 +5,5 @@ execute at @s run particle minecraft:dust 0.953 0.431 1 1 ~ ~ ~ .5 1 .5 .1 100 f
 
 execute at @s run playsound minecraft:entity.allay.ambient_without_item master @a[distance=..8]
 scoreboard players set @s movement 0
-item replace entity @s hotbar.1 with glistering_melon_slice 13
+item replace entity @s hotbar.1 with glistering_melon_slice 17
 
