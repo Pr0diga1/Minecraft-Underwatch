@@ -25,8 +25,8 @@ scoreboard players reset gazebo_overtime timer
 scoreboard players reset gazebo_overtime_toggle swag
 
 #unfill barriers
-fill -1590 57 -577 -1590 61 -570 air
-fill -1673 57 -570 -1673 61 -577 air
+fill 617 43 -12 617 49 -5 air
+fill 534 43 -5 534 48 -12 air
 
 #removes the tag from players
 tag @s remove gazebo

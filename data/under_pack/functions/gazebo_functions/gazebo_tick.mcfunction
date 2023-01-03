@@ -1,5 +1,5 @@
 #each player runs their class's tick function as long as they are not respawning or in their spawnpoint
-execute as @a[tag=gazebo] unless entity @s[tag=gazebo_dead] unless entity @s[x=-1590,y=56,z=-577,dx=14,dz=8,dy=5] unless entity @s[x=-1673,y=56,z=-570,dx=-14,dz=-8,dy=5] run function under_pack:general_functions/general_classloop
+execute as @a[tag=gazebo] unless entity @s[tag=gazebo_dead] unless entity @s[x=617,y=43,z=-12,dx=14,dz=8,dy=5] unless entity @s[x=533,y=43,z=-5,dx=-14,dz=-8,dy=5] run function under_pack:general_functions/general_classloop
 
 #sets a buffer to whoever has control of the point
 scoreboard players operation gazeboBuffer team = gazebo team
@@ -18,7 +18,7 @@ execute if score blue_gazebo points matches 99 if score gazebo team matches 1 ru
 
 #getting the 100th point
 execute if score red_gazebo points matches 99 if score gazebo_overtime timer matches 0 if score gazebo team matches 0 run scoreboard players add red_gazebo points 1
-execute if score blue_gazebo points matches 99 if score gazebo_overtime timer matches 0 if score gazebo team matches 0 run scoreboard players add blue_gazebo points 1
+execute if score blue_gazebo points matches 99 if score gazebo_overtime timer matches 0 if score gazebo team matches 1 run scoreboard players add blue_gazebo points 1
 
 #show the ot bossbar if ot is active
 execute if score gazebo_overtime_toggle swag matches 1 run bossbar set count:gazebo_ot visible true
@@ -73,8 +73,8 @@ execute as @a[tag=gazebo,tag=gazebo_dead] run title @s actionbar ["",{"text":"Re
 #sets them to adventure
 execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run gamemode adventure @s
 #tp them to their spanws
-execute as @a[tag=gazebo,tag=gazebo_dead,team=uRed] if score @s deathTimer matches 200.. run tp @s -1578 59 -574
-execute as @a[tag=gazebo,tag=gazebo_dead,team=uBlue] if score @s deathTimer matches 200.. run tp @s -1685 59 -573
+execute as @a[tag=gazebo,tag=gazebo_dead,team=uRed] if score @s deathTimer matches 200.. run tp @s 629 43 -9
+execute as @a[tag=gazebo,tag=gazebo_dead,team=uBlue] if score @s deathTimer matches 200.. run tp @s 522 43 -8
 #tells them they respawned 
 execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run title @s actionbar {"text":"Respawned","color":"gold"}
 #run the general respawn
@@ -89,11 +89,11 @@ execute if score red_gazebo points matches 100 run function under_pack:gazebo_fu
 execute if score blue_gazebo points matches 100 run function under_pack:gazebo_functions/gazebo_tally
 
 #resistance in spawns
-execute as @a[team=uRed,x=-1590,y=56,z=-577,dx=14,dz=8,dy=5,tag=gazebo] run effect give @s resistance 1 6 false
-execute as @a[team=uBlue,x=-1673,y=56,z=-570,dx=-14,dz=-8,dy=5,tag=gazebo] run effect give @s resistance 1 6 false
+execute as @a[team=uRed,x=617,y=43,z=-12,dx=14,dz=8,dy=5,tag=gazebo] run effect give @s resistance 1 6 false
+execute as @a[team=uBlue,x=533,y=43,z=-5,dx=-14,dz=-8,dy=5,tag=gazebo] run effect give @s resistance 1 6 false
 #cant enter enemy spawns
-execute as @a[team=uBlue,x=-1590,y=56,z=-577,dx=14,dz=8,dy=5,tag=gazebo] at @s run tp @s ~-1 ~ ~
-execute as @a[team=uRed,x=-1673,y=56,z=-570,dx=-14,dz=-8,dy=5,tag=gazebo] at @s run tp @s ~1 ~ ~
+execute as @a[team=uBlue,x=617,y=43,z=-12,dx=14,dz=8,dy=5,tag=gazebo] at @s run tp @s ~-1 ~ ~
+execute as @a[team=uRed,x=533,y=43,z=-5,dx=-14,dz=-8,dy=5,tag=gazebo] at @s run tp @s ~1 ~ ~
 
 #runs class changing system
 function under_pack:class_functions/ui/checks

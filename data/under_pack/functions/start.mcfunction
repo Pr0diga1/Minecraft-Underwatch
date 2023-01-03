@@ -6,6 +6,10 @@ team modify uRed color red
 team add uBlue
 team modify uBlue friendlyFire false
 team modify uBlue color blue
+#white team
+team add white
+team modify white friendlyFire false
+team modify white color white
 
 #healthbar tracking
 scoreboard objectives add heart health {"text":"\u2764","color":"#FF0000"}
@@ -18,6 +22,26 @@ scoreboard objectives add uDeaths deathCount
 scoreboard objectives add deathTimer dummy
 scoreboard objectives add deathTimerBuffer dummy
 scoreboard objectives add deathTimerBufferBuffer dummy
+
+#add gazebo as a trigger
+scoreboard objectives add gazebo trigger
+
+#add playernum
+scoreboard objectives add player_num dummy
+#add buffer
+scoreboard objectives add buffer dummy
+
+#add points
+scoreboard objectives add points dummy
+#add timer
+scoreboard objectives add timer dummy
+#add swag
+scoreboard objectives add swag dummy
+#add team
+scoreboard objectives add team dummy
+
+#kills
+scoreboard objectives add Kills playerKillCount
 
 #objective to track what class you are
 scoreboard objectives add class dummy
@@ -35,6 +59,12 @@ scoreboard objectives add buffer dummy
 
 #arrow death timer
 scoreboard objectives add arrowTimer dummy
+
+#add the reset
+scoreboard objectives add reset minecraft.used:minecraft.carrot_on_a_stick
+
+#trigger Reset
+scoreboard objectives add Reset trigger
 
 #adds constant and any needed multipliers
 scoreboard objectives add constant dummy

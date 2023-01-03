@@ -58,10 +58,10 @@ execute if score match points matches 1 run tag @a[tag=gazebo] remove t2
 scoreboard players set match points 0
 
 #tps players to their spawns and sets their spawnpoints
-tp @a[tag=gazebo,team=uRed] -1578 57 -574
-tp @a[tag=gazebo,team=uBlue] -1685 57 -573
-spawnpoint @a[tag=gazebo,team=uRed] -1578 57 -574
-spawnpoint @a[tag=gazebo,team=uBlue] -1685 57 -573
+tp @a[tag=gazebo,team=uRed] 629 43 -9
+tp @a[tag=gazebo,team=uBlue] 522 43 -8
+spawnpoint @a[tag=gazebo,team=uRed] 629 43 -9
+spawnpoint @a[tag=gazebo,team=uBlue] 522 43 -8
 
 #gazebo swag stores if the game is active or not, so it can be known if the tick should be run
 scoreboard players set gazebo swag 1
@@ -88,8 +88,8 @@ scoreboard players set gazebo_overtime timer 60
 scoreboard players set gazebo_overtime_toggle swag 0
 
 #fill barriers to lock teams in their spawns
-fill -1590 57 -577 -1590 61 -570 barrier
-fill -1673 57 -570 -1673 61 -577 barrier
+fill 617 43 -12 617 49 -5 barrier
+fill 534 43 -5 534 48 -12 barrier
 
 #schedule the first grace tick
 schedule function under_pack:gazebo_functions/gazebo_grace 1t

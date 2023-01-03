@@ -1,6 +1,6 @@
 #remove barriers
-execute if score gazebo_grace timer matches 0 run fill -1590 57 -577 -1590 61 -570 air
-execute if score gazebo_grace timer matches 0 run fill -1673 57 -570 -1673 61 -577 air
+execute if score gazebo_grace timer matches 0 run fill 617 43 -12 617 49 -5 air
+execute if score gazebo_grace timer matches 0 run fill 534 43 -5 534 48 -12 air
 
 #handle bossbar visibility
 execute if score gazebo_grace timer matches 0 run bossbar set count:gazebo visible true
