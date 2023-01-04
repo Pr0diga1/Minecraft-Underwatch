@@ -57,6 +57,11 @@ execute if score match points matches 1 run tag @a[tag=gazebo] remove t2
 #dont need match points anymore
 scoreboard players set match points 0
 
+## REMOVE
+
+#scoreboard players set false points 0
+#execute as Prodigal_ run team join uRed
+
 #tps players to their spawns and sets their spawnpoints
 tp @a[tag=gazebo,team=uRed] 629 43 -9
 tp @a[tag=gazebo,team=uBlue] 522 43 -8
@@ -135,6 +140,9 @@ bossbar set count:gazebo visible false
 bossbar set count:gazebo_blue visible false
 bossbar set count:gazebo_red visible false
 bossbar set count:gazebo_ot visible false
+
+
+
 
 #the actual process of aborting the game if we need to do that
 execute if score false points matches 1 run function under_pack:gazebo_functions/gazebo_restart

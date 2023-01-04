@@ -5,7 +5,7 @@ item replace entity @s hotbar.0 with iron_axe{Damage:13,display:{Name:'{"text":"
 #jump
 item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Strong Jump","color":"blue"}'},lumberjump:1b} 1
 #throw
-item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"Axe Throw","color":"green"}'},lumberthrow:1b} 1
+item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"Axe Sweep","color":"green"}'},lumberthrow:1b} 1
 #ult
 #armor
 item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantments:[{id:"minecraft:feather_falling",lvl:255s}]}

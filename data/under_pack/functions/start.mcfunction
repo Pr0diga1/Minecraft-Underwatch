@@ -126,6 +126,8 @@ scoreboard objectives add LumberjackMotionZ dummy
 scoreboard objectives add lumberjack_axe_slam dummy
 scoreboard objectives add lumberjack_axe_slam2 dummy
 scoreboard objectives add lumberjack_axe_slam3 dummy
+scoreboard objectives add lumberjack_ult_casts dummy
+scoreboard objectives add lumberjack_sweep dummy
 
 #ninja
 scoreboard objectives add ninjaHyperventilate dummy
@@ -147,5 +149,6 @@ scoreboard objectives add scientistDamageReload dummy
 scoreboard objectives add scientistHealingReload dummy
 scoreboard objectives add scientistBowFired minecraft.used:minecraft.bow
 scoreboard objectives add scientistBowFired2 minecraft.used:minecraft.bow
+scoreboard objectives add hitByFreeze dummy
 
 #wizard

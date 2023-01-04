@@ -1,5 +1,5 @@
 #carrot on stick listening
-execute as @s[nbt={Inventory:[{Slot:4b,tag:{scientistPunch:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{scientistPunch:1b}}},scores={reset=1..}] if score @s ability3 matches 200.. run function under_pack:scientist_functions/scientist_punch
+execute as @s[nbt={Inventory:[{Slot:3b,tag:{scientistPunch:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{scientistPunch:1b}}},scores={reset=1..}] if score @s ability3 matches 200.. run function under_pack:scientist_functions/scientist_punch
 execute as @s[nbt={Inventory:[{Slot:8b,tag:{scientistSmoke:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{scientistSmoke:1b}}},scores={reset=1..}] run function under_pack:scientist_functions/scientist_ult
 
 #reset reset
@@ -15,18 +15,32 @@ execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{scientistHealing:1b}}]}] 
 execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{scientistHealing:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:1b}]}] run item replace entity @s hotbar.1 with leather_chestplate{Damage:80}
 execute if score @s scientistHealingReload matches 1.. run function under_pack:scientist_functions/scientist_reload_healing
 
-#movement arrow reload
-execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistMovement:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:2b}]}] run scoreboard players set @s ability1 180
-execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistMovement:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:2b}]}] run item replace entity @s hotbar.2 with leather_chestplate{Damage:80}
-execute if score @s ability1 matches 1.. run function under_pack:scientist_functions/scientist_reload_movement
-
 #lightning
-execute unless entity @s[nbt={Inventory:[{Slot:3b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:3b}]}] run scoreboard players set @s ability2 240
-execute unless entity @s[nbt={Inventory:[{Slot:3b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:3b}]}] run item replace entity @s hotbar.3 with leather_chestplate{Damage:80}
+execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:2b}]}] run scoreboard players set @s ability2 240
+execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:2b}]}] run item replace entity @s hotbar.2 with leather_chestplate{Damage:80}
 execute if score @s ability2 matches 1.. run function under_pack:scientist_functions/scientist_reload_lightning
 
 #remove damage from damage arrows
 execute as @e[type=arrow,nbt={Color:0}] run data merge entity @s {damage:0.01d}
+
+#handles noting which players have luck
+execute as @a[team=uRed,nbt={ActiveEffects:[{Id:26,Amplifier:1b,Duration:1}]}] run scoreboard players set @s hitByFreeze 50
+execute as @a[team=uBlue,nbt={ActiveEffects:[{Id:26,Amplifier:1b,Duration:1}]}] run scoreboard players set @s hitByFreeze 50
+
+#players who just got luck get a marker
+execute as @a[team=uRed,scores={hitByFreeze=50}] at @s run summon marker ~ ~ ~ {Tags:["sciFreeze","red"]}
+execute as @a[team=uBlue,scores={hitByFreeze=50}] at @s run summon marker ~ ~ ~ {Tags:["sciFreeze","blue"]}
+
+#players who are frozen get tp'd
+execute as @a[team=uRed,scores={hitByFreeze=1..}] at @s run tp @s @e[type=marker,tag=sciFreeze,tag=red,limit=1,sort=nearest]
+execute as @a[team=uBlue,scores={hitByFreeze=1..}] at @s run tp @s @e[type=marker,tag=sciFreeze,tag=blue,limit=1,sort=nearest]
+
+#players who are no longer frozen have their armor stand killed
+execute as @a[team=uRed,scores={hitByFreeze=0}] run kill @e[type=marker,tag=sciFreeze,tag=red]
+execute as @a[team=uBlue,scores={hitByFreeze=0}] run kill @e[type=marker,tag=sciFreeze,tag=blue]
+
+#iterate hitByFreeze down 1
+execute as @a[scores={hitByFreeze=1..}] run scoreboard players remove @s hitByFreeze 1
 
 #give healing arrows the correct team tags
 execute as @e[type=arrow,nbt={Color:16768256}] at @s if entity @a[distance=..4,scores={class=9,scientistBowFired2=1..},team=uRed] run tag @s add red
