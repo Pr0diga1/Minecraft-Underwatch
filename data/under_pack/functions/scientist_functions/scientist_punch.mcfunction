@@ -3,8 +3,8 @@ scoreboard players set @s scientistBowFired 0
 #give punch bow
 item replace entity @s weapon.offhand with bow{Unbreakable:1b,Enchantments:[{id:"minecraft:punch",lvl:4s}]}
 
-#give new carrot on stick
-item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"Rocket Dart","color":"gold"}',Lore:['{"text":"Right Click to strap a rocket motor on your next dart"}']},Damage:25,scientistPunch:1b} 1
+#give arrow
+item replace entity @s hotbar.3 with tipped_arrow{display:{Name:'{"text":"Rocket Dart","color":"light_purple"}'},scientistRocket:1b,CustomPotionEffects:[{Id:25,Amplifier:4b,Duration:30}],CustomPotionColor:16711910} 1
 
 #cooldown goes to 0
 scoreboard players set @s ability3 0

@@ -16,8 +16,8 @@ item replace entity @s hotbar.2 with tipped_arrow{display:{Name:'{"text":"Electr
 item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"Rocket Dart","color":"gold"}',Lore:['{"text":"Right Click to strap a rocket motor on your next dart"}']},scientistPunch:1b} 1
 
 #scientist
-item replace entity @s armor.feet with golden_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:2s}]}
-item replace entity @s armor.legs with iron_leggings{Unbreakable:1b}
+item replace entity @s armor.feet with golden_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:1s}]}
+item replace entity @s armor.legs with golden_leggings{Unbreakable:1b}
 item replace entity @s armor.chest with diamond_chestplate{Unbreakable:1b}
 
 #set things to 0

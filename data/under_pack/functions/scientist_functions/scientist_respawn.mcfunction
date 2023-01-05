@@ -20,3 +20,7 @@ scoreboard players set @s ability1 0
 scoreboard players set @s ability2 0
 scoreboard players set @s ability3 199
 scoreboard players set @s scientistBowFired 2
+
+#unfreeze people
+execute as @s[team=uBlue] as @a[team=uRed] run scoreboard players set @s hitByFreeze 0
+execute as @s[team=uRed] as @a[team=uBlue] run scoreboard players set @s hitByFreeze 0

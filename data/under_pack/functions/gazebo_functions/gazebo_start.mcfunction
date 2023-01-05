@@ -59,8 +59,8 @@ scoreboard players set match points 0
 
 ## REMOVE
 
-#scoreboard players set false points 0
-#execute as Prodigal_ run team join uRed
+execute if entity @s[tag=playSolo] run scoreboard players set false points 0
+execute if entity @s[tag=playSolo] run team join uRed
 
 #tps players to their spawns and sets their spawnpoints
 tp @a[tag=gazebo,team=uRed] 629 43 -9
@@ -141,7 +141,8 @@ bossbar set count:gazebo_blue visible false
 bossbar set count:gazebo_red visible false
 bossbar set count:gazebo_ot visible false
 
-
+#remove playsolo
+tag @s remove playSolo
 
 
 #the actual process of aborting the game if we need to do that

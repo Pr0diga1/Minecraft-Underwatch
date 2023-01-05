@@ -9,6 +9,7 @@ team join white @s
 scoreboard players set @s class 0
 tp @s -26 46 24
 scoreboard players set @s Reset 0
+scoreboard players set @s hitByFreeze 0
 
 #removes xp
 experience set @s 0 levels

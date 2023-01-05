@@ -21,26 +21,18 @@ execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}
 execute if score @s ability2 matches 1.. run function under_pack:scientist_functions/scientist_reload_lightning
 
 #remove damage from damage arrows
-execute as @e[type=arrow,nbt={Color:0}] run data merge entity @s {damage:0.01d}
+execute as @e[type=arrow,nbt={Color:0}] run data merge entity @s {damage:0.01d,crit:0b}
 
 #handles noting which players have luck
-execute as @a[team=uRed,nbt={ActiveEffects:[{Id:26,Amplifier:1b,Duration:1}]}] run scoreboard players set @s hitByFreeze 50
-execute as @a[team=uBlue,nbt={ActiveEffects:[{Id:26,Amplifier:1b,Duration:1}]}] run scoreboard players set @s hitByFreeze 50
+execute as @a[team=uRed,nbt={ActiveEffects:[{Id:26,Amplifier:1b,Duration:1}]}] run scoreboard players set @s hitByFreeze 35
+execute as @a[team=uBlue,nbt={ActiveEffects:[{Id:26,Amplifier:1b,Duration:1}]}] run scoreboard players set @s hitByFreeze 35
 
-#players who just got luck get a marker
-execute as @a[team=uRed,scores={hitByFreeze=50}] at @s run summon marker ~ ~ ~ {Tags:["sciFreeze","red"]}
-execute as @a[team=uBlue,scores={hitByFreeze=50}] at @s run summon marker ~ ~ ~ {Tags:["sciFreeze","blue"]}
+#run the freeze tick
+execute if entity @a[scores={hitByFreeze=1..},limit=1] run schedule function under_pack:scientist_functions/scientist_tick_freeze 1t
 
-#players who are frozen get tp'd
-execute as @a[team=uRed,scores={hitByFreeze=1..}] at @s run tp @s @e[type=marker,tag=sciFreeze,tag=red,limit=1,sort=nearest]
-execute as @a[team=uBlue,scores={hitByFreeze=1..}] at @s run tp @s @e[type=marker,tag=sciFreeze,tag=blue,limit=1,sort=nearest]
-
-#players who are no longer frozen have their armor stand killed
-execute as @a[team=uRed,scores={hitByFreeze=0}] run kill @e[type=marker,tag=sciFreeze,tag=red]
-execute as @a[team=uBlue,scores={hitByFreeze=0}] run kill @e[type=marker,tag=sciFreeze,tag=blue]
-
-#iterate hitByFreeze down 1
-execute as @a[scores={hitByFreeze=1..}] run scoreboard players remove @s hitByFreeze 1
+#clear the freeze armor stands
+execute unless entity @a[team=uRed,scores={hitByFreeze=1..}] run kill @e[type=marker,tag=sciFreeze,tag=red]
+execute unless entity @a[team=uBlue,scores={hitByFreeze=1..}] run kill @e[type=marker,tag=sciFreeze,tag=blue]
 
 #give healing arrows the correct team tags
 execute as @e[type=arrow,nbt={Color:16768256}] at @s if entity @a[distance=..4,scores={class=9,scientistBowFired2=1..},team=uRed] run tag @s add red
@@ -48,11 +40,10 @@ execute as @e[type=arrow,nbt={Color:16768256}] at @s if entity @a[distance=..4,s
 #replace healing arrows
 execute as @e[type=arrow,nbt={Color:16768256}] run function under_pack:scientist_functions/scientist_clone_healing
 
-#give team tags to movement arrows
-execute as @e[type=arrow,nbt={Color:2327040}] at @s if entity @a[distance=..4,scores={class=9,scientistBowFired2=1..},team=uRed] run tag @s add red
-execute as @e[type=arrow,nbt={Color:2327040}] at @s if entity @a[distance=..4,scores={class=9,scientistBowFired2=1..},team=uBlue] run tag @s add blue
-#replace movement arrows
-execute as @e[type=arrow,nbt={Color:2327040}] run function under_pack:scientist_functions/scientist_clone_movement
+#replace rocket arrows
+execute as @e[type=arrow,nbt={Color:16711910}] run function under_pack:scientist_functions/scientist_clone_movement
+#rocket arrow particles
+execute at @e[type=arrow,tag=sciMove] run particle dragon_breath ~ ~ ~ 0 0 0 0 1
 
 #give team tags to lightning arrows
 execute as @e[type=arrow,nbt={Color:16777215}] at @s if entity @a[distance=..4,scores={class=9,scientistBowFired2=1..},team=uRed] run tag @s add red

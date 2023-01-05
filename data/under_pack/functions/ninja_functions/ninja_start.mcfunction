@@ -10,6 +10,9 @@ item replace entity @s armor.legs with iron_leggings{Unbreakable:true}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:true}
 item replace entity @s armor.head with leather_helmet{Unbreakable:true}
 
+#hyperventilate
+scoreboard players set @s ninjaHyperventilate 0
+
 #cooldown
 scoreboard players set @s ability1 159
 scoreboard players set @s ability2 139

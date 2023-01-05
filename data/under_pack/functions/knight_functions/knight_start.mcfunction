@@ -1,3 +1,5 @@
+clear @s
+
 #sword/block
 item replace entity @s hotbar.0 with ender_eye{display:{Name:'{"text":"Knightly Sword","color":"white"}',Lore:['{"text":"Only given to those worthy"}']},HideFlags:6,Unbreakable:1b,knightsword:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:5,Operation:0,UUID:[I;-1659789565,1414549155,-1199815574,-438496725]},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3.0,Operation:0,UUID:[I;957298814,-795131512,-2008112315,-1424705865]}]} 2
 #self heal
