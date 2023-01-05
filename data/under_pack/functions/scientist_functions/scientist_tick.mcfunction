@@ -24,8 +24,8 @@ execute if score @s ability2 matches 1.. run function under_pack:scientist_funct
 execute as @e[type=arrow,nbt={Color:0}] run data merge entity @s {damage:0.01d,crit:0b}
 
 #handles noting which players have luck
-execute as @a[team=uRed,nbt={ActiveEffects:[{Id:26,Amplifier:1b,Duration:1}]}] run scoreboard players set @s hitByFreeze 35
-execute as @a[team=uBlue,nbt={ActiveEffects:[{Id:26,Amplifier:1b,Duration:1}]}] run scoreboard players set @s hitByFreeze 35
+execute as @a[team=uRed,nbt={ActiveEffects:[{Id:26,Amplifier:1b,Duration:1}]}] run scoreboard players set @s hitByFreeze 25
+execute as @a[team=uBlue,nbt={ActiveEffects:[{Id:26,Amplifier:1b,Duration:1}]}] run scoreboard players set @s hitByFreeze 25
 
 #run the freeze tick
 execute if entity @a[scores={hitByFreeze=1..},limit=1] run schedule function under_pack:scientist_functions/scientist_tick_freeze 1t

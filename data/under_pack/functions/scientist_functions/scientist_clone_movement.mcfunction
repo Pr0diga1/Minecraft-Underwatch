@@ -1,8 +1,8 @@
 #summon new arrow
 execute at @s run summon arrow ~ ~ ~ {crit:0b,Color:-1,damage:1.5d,Tags:["sciMove"],CustomPotionEffects:[{Id:25,Amplifier:4b,Duration:30}]}
 #set its motion
-execute at @s run data modify entity @e[type=arrow,tag=SciMove,limit=1,sort=nearest] Motion set from entity @s Motion
-
+execute at @s run data modify entity @e[type=arrow,tag=sciMove,limit=1,sort=nearest] Motion set from entity @s Motion
+execute at @s run data modify entity @e[type=arrow,tag=sciMove,limit=1,sort=nearest] Owner set from entity @s Owner
 #double all motion stats
 #x
 execute store result score sciRocket buffer run data get entity @s Motion[0] 1000
