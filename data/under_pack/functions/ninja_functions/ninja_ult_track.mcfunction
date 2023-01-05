@@ -29,4 +29,4 @@ function under_pack:ninja_functions/ninja_update_ult
 scoreboard players operation @s ultPercent = @s ultPercentBuffer
 
 #give the carrot on a stick if the ult charge is 100%
-execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{ninjaUlt:1b}}]}] if score @s ultPercentBuffer matches 100.. run item replace entity @s hotbar.8 with carrot_on_a_stick{CustomModelData:2670004,display:{Name:'{"text":"Frenzy","color":"purple"}'},ninjaUlt:1b} 1
+execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{ninjaUlt:1b}}]}] if score @s ultPercentBuffer matches 100.. run item replace entity @s hotbar.8 with carrot_on_a_stick{CustomModelData:26,display:{Name:'{"text":"Frenzy","color":"purple"}'},ninjaUlt:1b} 1
