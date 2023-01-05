@@ -28,5 +28,5 @@ scoreboard players set @s lumberjack_ult_casts 0
 #constants for ult charge
 scoreboard players set lumberjackUltKills modifier 600
 #ULT PERCENT IS ULT GOAL /100
-scoreboard players set lumberjackUltPercent modifier 30
+scoreboard players set lumberjackUltPercent modifier 35
 #goal is 3000
