@@ -6,6 +6,10 @@ item replace entity @s hotbar.1 with splash_potion{display:{Name:'{"text":"Heali
 # Telepot
 item replace entity @s hotbar.2 with splash_potion{display:{Name:'{"text":"Telepot","color":"#8753E0","bold":true,"italic":false}'},CustomModelData:1,telepot:1b,CustomPotionColor:16777215} 1
 
+item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantments:[{id:"minecraft:feather_falling",lvl:255s}]}
+item replace entity @s armor.legs with leather_leggings{Unbreakable:true}
+item replace entity @s armor.chest with chainmail_chestplate{Unbreakable:true}
+
 
 
 # Reset death scoreboard
