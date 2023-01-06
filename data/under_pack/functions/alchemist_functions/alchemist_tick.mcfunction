@@ -24,7 +24,7 @@ execute as @e[type=potion,tag=healing,tag=!uRed,tag=!uBlue] at @s if entity @a[s
 execute if entity @e[type=potion,tag=healing,tag=uBlue] run function under_pack:alchemist_functions/alchemist_healing_tick_blue
 execute if entity @e[type=potion,tag=healing,tag=uRed] run function under_pack:alchemist_functions/alchemist_healing_tick_red
 # Checks for landing
-execute if entity @s[tag=telepot] unless entity @e[type=potion,tag=healing] run function under_pack:alchemist_functions/alchemist_heal
+execute if entity @s[tag=healing] unless entity @e[type=potion,tag=healing] run function under_pack:alchemist_functions/alchemist_heal
 # Runs the healer's tick
 execute as @e[tag=healing,type=marker] at @s run function under_pack:alchemist_functions/healer_tick
 

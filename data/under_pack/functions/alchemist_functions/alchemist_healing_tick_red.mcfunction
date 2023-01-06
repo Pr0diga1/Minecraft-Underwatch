@@ -2,6 +2,3 @@
 execute if entity @e[type=potion,tag=telepot,tag=uRed] store result score xposRedH buffer run data get entity @e[type=potion,tag=telepot,tag=uRed,limit=1] Pos[0] 100
 execute if entity @e[type=potion,tag=telepot,tag=uRed] store result score yposRedH buffer run data get entity @e[type=potion,tag=telepot,tag=uRed,limit=1] Pos[1] 100
 execute if entity @e[type=potion,tag=telepot,tag=uRed] store result score zposRedH buffer run data get entity @e[type=potion,tag=telepot,tag=uRed,limit=1] Pos[2] 100
-
-# Teleports based on team when pot smashes
-execute unless entity @e[type=potion,tag=telepot,tag=uRed] run function under_pack:alchemist_functions/alchemist_telepot
