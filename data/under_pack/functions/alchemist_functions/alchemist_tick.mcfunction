@@ -20,6 +20,9 @@ execute if entity @s[team=uRed,tag=telepot] run function under_pack:alchemist_fu
 execute as @e[type=potion,nbt={Item:{tag:{healing:1b}}}] run tag @s add healing
 execute as @e[type=potion,tag=healing,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uBlue,limit=1,distance=..2.5] run tag @s add uBlue
 execute as @e[type=potion,tag=healing,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uRed,limit=1,distance=..2.5] run tag @s add uRed
+# Tags healing user user
+execute as @e[type=potion,tag=healing,tag=uBlue] at @s run tag @a[sort=nearest,limit=1,team=uBlue] add healing
+execute as @e[type=potion,tag=healing,tag=uRed] at @s run tag @a[sort=nearest,limit=1,team=uRed] add healing
 # Runs tick
 execute if entity @e[type=potion,tag=healing,tag=uBlue] run function under_pack:alchemist_functions/alchemist_healing_tick_blue
 execute if entity @e[type=potion,tag=healing,tag=uRed] run function under_pack:alchemist_functions/alchemist_healing_tick_red
