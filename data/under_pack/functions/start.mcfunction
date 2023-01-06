@@ -107,7 +107,8 @@ scoreboard objectives add ultPercentBuffer dummy
 
 #class specific scoreboards
 #alc
-
+scoreboard objectives add alchemistUltActive dummy
+scoreboard objectives add alchemistUltTiming dummy
 
 #archer
 
