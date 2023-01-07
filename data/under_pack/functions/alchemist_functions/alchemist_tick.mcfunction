@@ -58,7 +58,7 @@ execute if score @s movement matches 141.. unless entity @s[tag=!telepot_cooldow
 execute if score @s movement matches 141.. unless entity @s[tag=!telepot_cooldown] run tag @s remove telepot_cooldown
 # Speed's cooldown
 execute if entity @s[tag=speed_cooldown] run scoreboard players add @s ability3 1
-item modify entity @s[tag=speed_cooldown] hotbar.2 under_pack:alchemist/speed_cooldown
+item modify entity @s[tag=speed_cooldown] hotbar.3 under_pack:alchemist/speed_cooldown
 execute if score @s ability3 matches 241.. unless entity @s[tag=!speed_cooldown] run item replace entity @s hotbar.3 with potion{display:{Name:'{"text":"Speed Juice","color":"#47C8FF","bold":true,"italic":false}'},speed:1b,CustomPotionEffects:[{Id:1,Amplifier:1b,Duration:120}],CustomPotionColor:4704511} 1
 execute if score @s ability3 matches 241.. unless entity @s[tag=!speed_cooldown] run tag @s remove speed_cooldown
 
