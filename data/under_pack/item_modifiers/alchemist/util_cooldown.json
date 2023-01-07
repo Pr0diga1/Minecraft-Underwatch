@@ -1,7 +1,7 @@
 [
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:19}",
+		"tag": "{CustomModelData:28}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -14,7 +14,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:20}",
+		"tag": "{CustomModelData:29}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -27,7 +27,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:21}",
+		"tag": "{CustomModelData:30}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -40,7 +40,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:22}",
+		"tag": "{CustomModelData:31}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -53,7 +53,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:23}",
+		"tag": "{CustomModelData:32}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -66,7 +66,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:24}",
+		"tag": "{CustomModelData:33}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -79,7 +79,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:25}",
+		"tag": "{CustomModelData:34}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -92,7 +92,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:26}",
+		"tag": "{CustomModelData:35}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -105,7 +105,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:27}",
+		"tag": "{CustomModelData:36}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -118,7 +118,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:28}",
+		"tag": "{CustomModelData:37}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -131,7 +131,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:29}",
+		"tag": "{CustomModelData:38}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
