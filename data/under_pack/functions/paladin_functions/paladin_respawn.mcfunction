@@ -8,7 +8,7 @@ item replace entity @s weapon.offhand with shield{display:{Name:'{"text":"Piece 
 item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Bubble Wand","color":"blue"}'},paladinBubble:1b} 1
 
 #absorption
-item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"Scream Loudly","color":"light_purple"}'},paladinScream:1b} 1
+item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"Fard","color":"#5E4C2C"}'},paladinScream:1b} 1
 
 
 #ability cooldowns

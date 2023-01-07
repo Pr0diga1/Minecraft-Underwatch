@@ -1,5 +1,7 @@
-#blocks
+#playsound
+playsound block.amethyst_block.step master @a
 
+#blocks
 #player level
 summon falling_block ~3 ~ ~-1 {BlockState:{Name:"minecraft:light_blue_stained_glass"},NoGravity:1b,Silent:1b,Time:500,DropItem:0b,HurtEntities:0b}
 summon falling_block ~3 ~ ~ {BlockState:{Name:"minecraft:light_blue_stained_glass"},NoGravity:1b,Silent:1b,Time:500,DropItem:0b,HurtEntities:0b}
