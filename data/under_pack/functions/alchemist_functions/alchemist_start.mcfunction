@@ -16,6 +16,15 @@ item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantmen
 item replace entity @s armor.legs with leather_leggings{Unbreakable:true}
 item replace entity @s armor.chest with chainmail_chestplate{Unbreakable:true}
 
+scoreboard players set @s movement 141
+scoreboard players set @s ability1 41
+scoreboard players set @s ability2 121
+scoreboard players set @s ability3 241
+execute as @s[team=uRed] run kill @e[type=potion,tag=telepot,tag=uRed]
+execute as @s[team=uBlue] run kill @e[type=potion,tag=telepot,tag=uBlue]
+tag @s remove telepot
+tag @s remove healing
+
 ## Ult stuff
 #ult charge
 scoreboard players set @s ultKills 0
@@ -23,6 +32,10 @@ scoreboard players set @s ultKillsBuffer 0
 scoreboard players set @s ultTicks 0
 scoreboard players set @s ultDamage 0
 scoreboard players set @s ultCharge 0
+
+#removes xp
+experience set @s 0 levels
+experience set @s 0 points
 
 #ult
 scoreboard players set @s alchemistUltActive 0
