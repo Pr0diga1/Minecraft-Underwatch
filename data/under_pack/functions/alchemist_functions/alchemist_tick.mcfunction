@@ -1,7 +1,8 @@
 # Keeps spare potions out of the inventory
-clear @s[tag=reload_main] splash_potion{tag:{acid:1b}}
-clear @s[tag=reload_util] splash_potion{tag:{healing:1b}}
-clear @s[tag=telepot_cooldown] splash_potion{tag:{telepot:1b}}
+clear @s[tag=reload_main] splash_potion{acid:1b}
+clear @s[tag=reload_util] splash_potion{healing:1b}
+clear @s[tag=telepot_cooldown] splash_potion{telepot:1b}
+clear @s[tag=speed_cooldown] splash_potion{speed:1b}
 
 ## Telepot stuff
 # Assigns stuff
@@ -36,6 +37,8 @@ execute as @e[tag=healing,type=marker] at @s run function under_pack:alchemist_f
 execute unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:splash_potion"}]}] if entity @s[tag=!reload_main] run function under_pack:alchemist_functions/alchemist_reload_main
 execute unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:splash_potion"}]}] if entity @s[tag=!reload_utility] run function under_pack:alchemist_functions/alchemist_reload_utility
 execute unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:splash_potion"}]}] if entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/alchemist_telepot_cooldown
+execute unless entity @s[nbt={Inventory:[{Slot:3b,id:"minecraft:potion"}]}] if entity @s[tag=!speed_cooldown] run function under_pack:alchemist_functions/alchemist_speed_cooldown
+
 # Reload main's cooldown
 execute if entity @s[tag=reload_main] run scoreboard players add @s ability1 1
 item modify entity @s[tag=reload_main] hotbar.0 under_pack:alchemist/main_cooldown
@@ -53,16 +56,21 @@ execute if entity @s[tag=telepot_cooldown] run scoreboard players add @s movemen
 item modify entity @s[tag=telepot_cooldown] hotbar.2 under_pack:alchemist/telepot_cooldown
 execute if score @s movement matches 141.. unless entity @s[tag=!telepot_cooldown] run item replace entity @s hotbar.2 with splash_potion{display:{Name:'{"text":"Telepot","color":"#8753E0","bold":true,"italic":false}'},CustomModelData:1,telepot:1b,CustomPotionColor:16777215} 1
 execute if score @s movement matches 141.. unless entity @s[tag=!telepot_cooldown] run tag @s remove telepot_cooldown
+# Speed's cooldown
+execute if entity @s[tag=speed_cooldown] run scoreboard players add @s ability3 1
+item modify entity @s[tag=speed_cooldown] hotbar.2 under_pack:alchemist/speed_cooldown
+execute if score @s ability3 matches 241.. unless entity @s[tag=!speed_cooldown] run item replace entity @s hotbar.3 with potion{display:{Name:'{"text":"Speed Juice","color":"#47C8FF","bold":true,"italic":false}'},speed:1b,CustomPotionEffects:[{Id:1,Amplifier:0b,Duration:6}],CustomPotionColor:4704511} 1
+execute if score @s ability3 matches 241.. unless entity @s[tag=!speed_cooldown] run tag @s remove speed_cooldown
 
 ## Ult commands
 # Ult tracking
 execute if score @s alchemistUltActive matches 0 run function under_pack:alchemist_functions/alchemist_ult_track
-
 # Ult activation
 execute as @s[nbt={Inventory:[{Slot:8b,tag:{alchemistUlt:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{alchemistUlt:1b}}},scores={reset=1..}] run function under_pack:alchemist_functions/alchemist_ult
-
+# Ult tick
 
 # Ending ult
+
 
 # Reset reset
 scoreboard players set @s reset 0

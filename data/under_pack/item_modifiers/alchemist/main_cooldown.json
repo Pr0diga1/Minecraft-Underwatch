@@ -11,5 +11,31 @@
 				}
 			}
 		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{CustomModelData:5}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 21
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{CustomModelData:6}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 31
+				}
+			}
+		]
 	}
 ]
