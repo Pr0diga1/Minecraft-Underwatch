@@ -65,12 +65,20 @@ execute if score @s ability3 matches 241.. unless entity @s[tag=!speed_cooldown]
 ## Ult commands
 # Ult tracking
 execute if score @s alchemistUltActive matches 0 run function under_pack:alchemist_functions/alchemist_ult_track
-# Ult activation
-execute as @s[nbt={Inventory:[{Slot:8b,tag:{alchemistUlt:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{alchemistUlt:1b}}},scores={reset=1..}] run function under_pack:alchemist_functions/alchemist_ult
-# Ult tick
-
-# Ending ult
-
+# Ult assigns stuff
+execute as @e[type=potion,nbt={Item:{tag:{alchUlt:1b}}}] run tag @s add mustard_gas
+execute as @e[type=potion,tag=mustard_gas,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uBlue,limit=1,distance=..2.5] run tag @s add uBlue
+execute as @e[type=potion,tag=mustard_gas,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uRed,limit=1,distance=..2.5] run tag @s add uRed
+# Ult find player
+execute as @e[type=potion,tag=mustard_gas,tag=uBlue] at @s run tag @a[sort=nearest,limit=1,team=uBlue] add mustard_gas
+execute as @e[type=potion,tag=mustard_gas,tag=uRed] at @s run tag @a[sort=nearest,limit=1,team=uRed] add mustard_gas
+# Runs ult tick
+execute if entity @e[type=potion,tag=mustard_gas,tag=uBlue] run function under_pack:alchemist_functions/alchemist_ult_tick_blue
+execute if entity @e[type=potion,tag=mustard_gas,tag=uRed] run function under_pack:alchemist_functions/alchemist_ult_tick_red
+# Checks for ult landing
+execute if entity @s[tag=mustard_gas] unless entity @e[type=potion,tag=mustard_gas] run function under_pack:alchemist_functions/alchemist_ult
+# Ult potion tick
+execute as @e[tag=mustard_gas,type=marker] at @s run function under_pack:alchemist_functions/ult_tick
 
 # Reset reset
 scoreboard players set @s reset 0

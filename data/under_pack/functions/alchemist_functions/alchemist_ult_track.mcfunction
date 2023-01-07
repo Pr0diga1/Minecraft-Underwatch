@@ -29,4 +29,4 @@ function under_pack:alchemist_functions/alchemist_update_ult
 scoreboard players operation @s ultPercent = @s ultPercentBuffer
 
 #give the carrot on a stick if the ult charge is 100%
-execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{alchemistUlt:1b}}]}] if score @s ultPercentBuffer matches 100.. run item replace entity @p hotbar.8 with carrot_on_a_stick{CustomModelData:33,display:{Name:'{"text":"Mustard Gas","color":"#3B7D1A"}'},alchemistUlt:1b} 1
+execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{alchemistUlt:1b}}]}] if score @s ultPercentBuffer matches 100.. run item replace entity @p hotbar.8 with splash_potion{display:{Name:'{"text":"Mustard Gas","color":"#C7AB20"}'},CustomModelData:33,alchUlt:1b,CustomPotionColor:13085472} 1
