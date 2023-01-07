@@ -2,8 +2,8 @@
 scoreboard players add @s ability3 1
 
 # Give regen
-execute if entity @s[tag=uBlue] run effect give @a[team=uBlue,distance=..4,predicate=!under_pack:alch_regen_check] regeneration 2 3 true
-execute if entity @s[tag=uRed] run effect give @a[team=uRed,distance=..4,predicate=!under_pack:alch_regen_check] regeneration 2 3 true
+execute if entity @s[tag=uBlue] run effect give @a[team=uBlue,distance=..4,predicate=!under_pack:alch_regen_check] regeneration 2 1 true
+execute if entity @s[tag=uRed] run effect give @a[team=uRed,distance=..4,predicate=!under_pack:alch_regen_check] regeneration 2 1 true
 
 # Particle
 particle ambient_entity_effect ~ ~ ~ 4 0.2 4 0 10 normal
