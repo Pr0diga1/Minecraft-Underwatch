@@ -91,6 +91,7 @@ scoreboard objectives add movement dummy
 scoreboard objectives add ability1 dummy
 scoreboard objectives add ability2 dummy
 scoreboard objectives add ability3 dummy
+scoreboard objectives add ability4 dummy
 scoreboard objectives add ult dummy
 
 #ray casting
@@ -116,7 +117,8 @@ scoreboard objectives add alchemistUltTimingBuffer dummy
 
 
 #engineer
-
+scoreboard objectives add engineer_wd dummy
+scoreboard objectives add engineer_ult dummy
 
 #knight
 scoreboard objectives add blockIsActive dummy
