@@ -39,9 +39,9 @@ execute unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:splash_potion"}]
 # Reload main's cooldown
 execute if entity @s[tag=reload_main] run scoreboard players add @s ability1 1
 item modify entity @s[tag=reload_main] hotbar.0 under_pack:alchemist/main_cooldown
-execute if score @s ability1 matches 21.. unless entity @s[tag=!reload_main] run item replace entity @s hotbar.0 with air
-execute if score @s ability1 matches 21.. unless entity @s[tag=!reload_main] run item replace entity @s hotbar.0 with splash_potion{display:{Name:'{"text":"Acid","color":"#8FC219","bold":true,"italic":false}'},acid:1b,Enchantments:[{}],Potion:"minecraft:harming",CustomPotionColor:9421337} 1
-execute if score @s ability1 matches 21.. unless entity @s[tag=!reload_main] run tag @s remove reload_main
+execute if score @s ability1 matches 41.. unless entity @s[tag=!reload_main] run item replace entity @s hotbar.0 with air
+execute if score @s ability1 matches 41.. unless entity @s[tag=!reload_main] run item replace entity @s hotbar.0 with splash_potion{display:{Name:'{"text":"Acid","color":"#8FC219","bold":true,"italic":false}'},acid:1b,Enchantments:[{}],Potion:"minecraft:harming",CustomPotionColor:9421337} 1
+execute if score @s ability1 matches 41.. unless entity @s[tag=!reload_main] run tag @s remove reload_main
 # Reload heal's cooldown
 execute if entity @s[tag=reload_utility] run scoreboard players add @s ability2 1
 item modify entity @s[tag=reload_utility] hotbar.1 under_pack:alchemist/util_cooldown
