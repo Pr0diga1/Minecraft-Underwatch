@@ -28,3 +28,18 @@ execute if score @s ability2 matches 80 run item replace entity @s hotbar.2 with
 execute if score @s ability2 matches 60 run item replace entity @s hotbar.2 with carrot_on_a_stick{Damage:19,display:{Name:'{"text":"Fard","color":"#5E4C2C"}'},paladinScream:1b} 1
 execute if score @s ability2 matches 40 run item replace entity @s hotbar.2 with carrot_on_a_stick{Damage:21,display:{Name:'{"text":"Fard","color":"#5E4C2C"}'},paladinScream:1b} 1
 execute if score @s ability2 matches 20 run item replace entity @s hotbar.2 with carrot_on_a_stick{Damage:24,display:{Name:'{"text":"Fard","color":"#5E4C2C"}'},paladinScream:1b} 1
+
+
+
+#iterate movement
+execute if score @s movement matches 1.. run scoreboard players remove @s movement 1
+#movement intervals
+execute if score @s movement matches 140 run item replace entity @s weapon.offhand with oak_planks 7
+execute if score @s movement matches 120 run item replace entity @s weapon.offhand with oak_planks 6
+execute if score @s movement matches 100 run item replace entity @s weapon.offhand with oak_planks 5
+execute if score @s movement matches 80 run item replace entity @s weapon.offhand with oak_planks 4
+execute if score @s movement matches 60 run item replace entity @s weapon.offhand with oak_planks 3
+execute if score @s movement matches 40 run item replace entity @s weapon.offhand with oak_planks 2
+execute if score @s movement matches 20 run item replace entity @s weapon.offhand with oak_planks 1
+execute if score @s movement matches 1 run scoreboard players set @s shieldDelay 0
+execute if score @s movement matches 1 run item replace entity @s weapon.offhand with shield{display:{Name:'{"text":"Piece of Driftwood"}'},HideFlags:1,Damage:336} 1

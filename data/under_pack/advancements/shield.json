@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "shield": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:shield"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "under_pack:paladin_functions/paladin_shield"
+    }
+  }

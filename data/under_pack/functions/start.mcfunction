@@ -70,6 +70,7 @@ scoreboard objectives add Reset trigger
 scoreboard objectives add constant dummy
 scoreboard players set TickToSecond constant 20
 scoreboard players set TheNumberTen constant 10
+scoreboard players set TheNumberFive constant 5
 scoreboard players set everyOther constant 1
 scoreboard players set minusOne constant -1
 
@@ -140,7 +141,12 @@ scoreboard objectives add ninjaUltActive dummy
 scoreboard objectives add ninjaUltTiming dummy
 
 #paladin
-
+scoreboard objectives add paladinIsBlocking dummy
+scoreboard objectives add shieldDelay dummy
+scoreboard objectives add shieldStatus dummy
+scoreboard objectives add paladinUltActive dummy
+scoreboard objectives add paladinUltTiming dummy
+scoreboard objectives add paladinUltTimingBuffer dummy
 
 #rogue
 
