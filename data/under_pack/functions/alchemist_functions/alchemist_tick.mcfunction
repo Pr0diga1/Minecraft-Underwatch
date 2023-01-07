@@ -57,5 +57,14 @@ execute if score @s movement matches 141.. unless entity @s[tag=!telepot_cooldow
 ## Ult commands
 # Ult tracking
 execute if score @s alchemistUltActive matches 0 run function under_pack:alchemist_functions/alchemist_ult_track
+
+# Ult activation
+execute as @s[nbt={Inventory:[{Slot:8b,tag:{alchemistUlt:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{alchemistUlt:1b}}},scores={reset=1..}] run function under_pack:alchemist_functions/alchemist_ult
+
+
 # Ending ult
-execute unless entity @s[nbt={Inventory:[{Slot:8b,id:"minecraft:potion",tag:{alchemistUlt:1b}}]}] if entity @s[tag=ulting] run function under_pack:alchemist_functions/ult_end
+
+# Reset reset
+scoreboard players set @s reset 0
+# Add to tick tracker
+scoreboard players add @s ultTicks 1
