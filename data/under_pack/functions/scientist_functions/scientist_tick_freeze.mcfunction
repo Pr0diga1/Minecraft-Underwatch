@@ -5,17 +5,9 @@ execute as @a[scores={hitByFreeze=25}] run title @s title {"text":"Electricuted!
 execute as @a[team=uRed,scores={hitByFreeze=25}] at @s run summon marker ~ ~ ~ {Tags:["sciFreeze","red"]}
 execute as @a[team=uBlue,scores={hitByFreeze=25}] at @s run summon marker ~ ~ ~ {Tags:["sciFreeze","blue"]}
 
-#players who just got luck get a facing marker
-execute as @a[team=uRed,scores={hitByFreeze=25}] at @s run summon marker ^ ^ ^100 {Tags:["sciFreezeLook","red"]}
-execute as @a[team=uBlue,scores={hitByFreeze=25}] at @s run summon marker ^ ^ ^100 {Tags:["sciFreezeLook","blue"]}
-
-#change markers direction
-execute if entity @a[team=uRed,scores={hitByFreeze=25}] as @e[type=marker,tag=sciFreeze,tag=red] at @s run tp @s ~ ~ ~ facing entity @e[type=marker,tag=sciFreezeLook,tag=red,limit=1,sort=nearest]
-execute if entity @a[team=uBlue,scores={hitByFreeze=25}] as @e[type=marker,tag=sciFreeze,tag=blue] at @s run tp @s ~ ~ ~ facing entity @e[type=marker,tag=sciFreezeLook,tag=blue,limit=1,sort=nearest]
-
 #players who are frozen get tp'd
-execute as @a[team=uRed,scores={hitByFreeze=1..}] run tp @s @e[type=marker,tag=sciFreeze,tag=red,limit=1,sort=nearest]
-execute as @a[team=uBlue,scores={hitByFreeze=1..}] run tp @s @e[type=marker,tag=sciFreeze,tag=blue,limit=1,sort=nearest]
+execute as @a[team=uRed,scores={hitByFreeze=1..}] at @e[type=marker,tag=sciFreeze,tag=red,limit=1,sort=nearest] run tp @s ~ ~ ~
+execute as @a[team=uBlue,scores={hitByFreeze=1..}] at @e[type=marker,tag=sciFreeze,tag=blue,limit=1,sort=nearest] run tp @s ~ ~ ~
 
 #particles
 execute at @a[scores={hitByFreeze=1..}] run particle minecraft:electric_spark ~ ~.7 ~ .3 .5 .3 .001 30 force @a
