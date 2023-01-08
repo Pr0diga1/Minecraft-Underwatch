@@ -7,7 +7,7 @@ execute if entity @e[nbt={Item:{tag:{enginedrug:1b,red:1b}}}] unless entity @e[t
 tp @e[type=marker,tag=enginetrack,tag=red] @e[type=snowball,limit=1,sort=nearest,nbt={Item:{tag:{enginedrug:1b,red:1b}}}]
 
 #give healing to everyone near a marker if its snowball is not there
-execute as @e[type=marker,tag=enginetrack,tag=red] unless entity @e[type=snowball,nbt={Item:{tag:{enginedrug:1b,red:1b}}}] at @s positioned ~-1 ~-1 ~-1 run effect give @a[dx=1,dy=2,dz=1,team=uRed] instant_health
+execute as @e[type=marker,tag=enginetrack,tag=red] unless entity @e[type=snowball,nbt={Item:{tag:{enginedrug:1b,red:1b}}}] at @s positioned ~-1.5 ~-1 ~-1.5 run effect give @a[dx=1.5,dy=2,dz=1.5,team=uRed] instant_health
 execute as @e[type=marker,tag=enginetrack,tag=red] unless entity @e[type=snowball,nbt={Item:{tag:{enginedrug:1b,red:1b}}}] at @s run kill @s
 
 #blue
@@ -18,7 +18,7 @@ execute if entity @e[nbt={Item:{tag:{enginedrug:1b,blue:1b}}}] unless entity @e[
 tp @e[type=marker,tag=enginetrack,tag=blue] @e[type=snowball,limit=1,sort=nearest,nbt={Item:{tag:{enginedrug:1b,blue:1b}}}]
 
 #give healing to everyone near a marker if its snowball is not there
-execute as @e[type=marker,tag=enginetrack,tag=blue] unless entity @e[type=snowball,nbt={Item:{tag:{enginedrug:1b,blue:1b}}}] at @s positioned ~-1 ~-1 ~-1 run effect give @a[dx=1,dy=2,dz=1,team=uBlue] instant_health
+execute as @e[type=marker,tag=enginetrack,tag=blue] unless entity @e[type=snowball,nbt={Item:{tag:{enginedrug:1b,blue:1b}}}] at @s positioned ~-1.5 ~-1 ~-1.5 run effect give @a[dx=1.5,dy=2,dz=1.5,team=uBlue] instant_health
 execute as @e[type=marker,tag=enginetrack,tag=blue] unless entity @e[type=snowball,nbt={Item:{tag:{enginedrug:1b,blue:1b}}}] at @s run kill @s
 
 
