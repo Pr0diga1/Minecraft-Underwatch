@@ -33,4 +33,4 @@ scoreboard players operation @s ultPercent = @s ultPercentBuffer
 
 #give the carrot on a stick if the ult charge is 100%
 execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{lumberdrop:1b}}]}] if score @s ultPercentBuffer matches 100.. run scoreboard players set @s lumberjack_ult_casts 3
-execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{lumberdrop:1b}}]}] if score @s ultPercentBuffer matches 100.. run item replace entity @s hotbar.8 with carrot_on_a_stick{display:{Name:'{"text":"Axe Drop","color":"black"}'},lumberdrop:1b} 1
+execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{lumberdrop:1b}}]}] if score @s ultPercentBuffer matches 100.. run item replace entity @s hotbar.8 with carrot_on_a_stick{CustomModelData:29,display:{Name:'{"text":"Axe Drop","color":"black"}'},lumberdrop:1b} 1

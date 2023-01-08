@@ -23,10 +23,10 @@ execute if entity @s[team=uBlue] if score @s lumberjack_sweep matches 1.. run sc
 
 #jump cooldown
 execute if score @s movement matches ..80 run scoreboard players add @s movement 1
-execute if score @s movement matches 80 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Strong Jump","color":"blue"}'},lumberjump:1b} 1
+execute if score @s movement matches 80 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:27,display:{Name:'{"text":"Strong Jump","color":"blue"}'},lumberjump:1b} 1
 #throw cooldown
 execute if score @s ability1 matches ..200 run scoreboard players add @s ability1 1
-execute if score @s ability1 matches 200 run item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"Axe Sweep","color":"green"}'},lumberthrow:1b} 1
+execute if score @s ability1 matches 200 run item replace entity @s hotbar.2 with carrot_on_a_stick{CustomModelData:28,display:{Name:'{"text":"Axe Sweep","color":"green"}'},lumberthrow:1b} 1
 #makes the ult function run every tick while it is active
 execute if score @s lumberjack_axe_slam matches 1..41 as @s run function under_pack:lumberjack_functions/lumberjack_ult
 execute if score @s lumberjack_axe_slam2 matches 1..41 as @s run function under_pack:lumberjack_functions/lumberjack_ult2
