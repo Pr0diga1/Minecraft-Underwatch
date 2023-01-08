@@ -9,7 +9,7 @@ item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"A
 #ult
 #armor
 item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantments:[{id:"minecraft:feather_falling",lvl:255s}]}
-item replace entity @s armor.legs with leather_leggings{Unbreakable:true,Enchantments:[{id:"minecraft:protection",lvl:2s}]}
+item replace entity @s armor.legs with leather_leggings{Unbreakable:true}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:true}
 
 
