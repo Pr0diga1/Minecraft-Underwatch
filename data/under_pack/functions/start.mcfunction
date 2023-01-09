@@ -78,13 +78,13 @@ scoreboard players set minusOne constant -1
 scoreboard objectives add alchemist trigger
 scoreboard objectives add scientist trigger
 scoreboard objectives add lumberjack trigger
-scoreboard objectives add knight trigger
 scoreboard objectives add rogue trigger
 scoreboard objectives add ninja trigger
 scoreboard objectives add archer trigger
 scoreboard objectives add wizard trigger
 scoreboard objectives add engineer trigger
 scoreboard objectives add paladin trigger
+scoreboard objectives add bulwark trigger
 
 #adds trackers for abilities and ults
 scoreboard objectives add movement dummy

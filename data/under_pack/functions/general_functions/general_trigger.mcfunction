@@ -11,14 +11,14 @@ execute as @a[scores={archer=1..}] at @s run function under_pack:archer_function
 scoreboard players enable @a archer
 execute as @a[scores={engineer=1..}] at @s run function under_pack:engineer_functions/engineer_trigger
 scoreboard players enable @a engineer
-execute as @a[scores={knight=1..}] at @s run function under_pack:knight_functions/knight_trigger
-scoreboard players enable @a knight
+execute as @a[scores={paladin=1..}] at @s run function under_pack:knight_functions/knight_trigger
+scoreboard players enable @a paladin
 execute as @a[scores={lumberjack=1..}] at @s run function under_pack:lumberjack_functions/lumberjack_trigger
 scoreboard players enable @a lumberjack
 execute as @a[scores={ninja=1..}] at @s run function under_pack:ninja_functions/ninja_trigger
 scoreboard players enable @a ninja
-execute as @a[scores={paladin=1..}] at @s run function under_pack:paladin_functions/paladin_trigger
-scoreboard players enable @a paladin
+execute as @a[scores={bulwark=1..}] at @s run function under_pack:paladin_functions/paladin_trigger
+scoreboard players enable @a bulwark
 execute as @a[scores={rogue=1..}] at @s run function under_pack:rogue_functions/rogue_trigger
 scoreboard players enable @a rogue
 execute as @a[scores={scientist=1..}] at @s run function under_pack:scientist_functions/scientist_trigger
