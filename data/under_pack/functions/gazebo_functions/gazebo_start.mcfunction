@@ -59,8 +59,8 @@ scoreboard players set match points 0
 
 ## REMOVE
 
-execute if entity @s[tag=playSolo] run scoreboard players set false points 0
-execute if entity @s[tag=playSolo] run team join uRed
+execute as @a[tag=red] run team join uRed
+execute as @a[tag=blue] run team join uBlue
 
 #tps players to their spawns and sets their spawnpoints
 tp @a[tag=gazebo,team=uRed] 629 43 -9

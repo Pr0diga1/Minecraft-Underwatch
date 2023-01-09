@@ -13,7 +13,7 @@ item replace entity @s hotbar.3 with potion{display:{Name:'{"text":"Speed Juice"
 
 # Armor
 item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantments:[{id:"minecraft:feather_falling",lvl:255s}]}
-item replace entity @s armor.legs with iron_leggings{Unbreakable:true}
+item replace entity @s armor.legs with chainmail_leggings{Unbreakable:true}
 item replace entity @s armor.chest with chainmail_chestplate{Unbreakable:true}
 
 scoreboard players set @s movement 141
