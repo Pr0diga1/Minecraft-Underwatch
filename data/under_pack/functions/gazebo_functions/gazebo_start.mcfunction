@@ -57,8 +57,8 @@ execute if score match points matches 1 run tag @a[tag=gazebo] remove t2
 #dont need match points anymore
 scoreboard players set match points 0
 
-## REMOVE
-
+#set the deathbuffer
+scoreboard players set DeathBuffer constant 14
 
 #tps players to their spawns and sets their spawnpoints
 tp @a[tag=gazebo,team=uRed] 629 43 -9
@@ -138,9 +138,6 @@ bossbar set count:gazebo visible false
 bossbar set count:gazebo_blue visible false
 bossbar set count:gazebo_red visible false
 bossbar set count:gazebo_ot visible false
-
-#remove playsolo
-tag @s remove playSolo
 
 
 #the actual process of aborting the game if we need to do that

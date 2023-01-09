@@ -11,6 +11,15 @@ team add white
 team modify white friendlyFire false
 team modify white color white
 
+#adds the red temp team
+team add redTemp
+team modify redTemp friendlyFire false
+team modify redTemp color red
+#adds the blue teamp team
+team add blueTemp
+team modify blueTemp friendlyFire false
+team modify blueTemp color blue
+
 #healthbar tracking
 scoreboard objectives add heart health {"text":"\u2764","color":"#FF0000"}
 scoreboard objectives setdisplay belowName heart

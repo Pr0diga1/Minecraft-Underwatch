@@ -11,7 +11,7 @@ execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with snowba
 item replace entity @s armor.head with chainmail_helmet{Unbreakable:1b}
 item replace entity @s armor.chest with diamond_chestplate{Unbreakable:1b}
 item replace entity @s armor.legs with iron_leggings{Unbreakable:1b}
-item replace entity @s armor.feet with iron_boots{Unbreakable:1b}
+item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s}]}
 
 #removes xp
 experience set @s 0 levels

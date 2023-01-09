@@ -11,8 +11,9 @@ item replace entity @s hotbar.4 with carrot_on_a_stick{display:{Name:'{"text":"W
 #wall
 item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"Cardboard and Duct Tape","color":"gold"}'},enginewall:1b} 1
 #armor
-item replace entity @s armor.chest with golden_chestplate{Unbreakable:1b}
+item replace entity @s armor.chest with leather_chestplate{Unbreakable:1b}
 item replace entity @s armor.legs with diamond_leggings{Unbreakable:1b}
+item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s}]}
 
 scoreboard players set @s ability1 119
 scoreboard players set @s ability2 0

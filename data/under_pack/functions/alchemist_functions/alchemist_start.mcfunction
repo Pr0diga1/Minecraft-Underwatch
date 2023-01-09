@@ -12,7 +12,7 @@ item replace entity @s hotbar.2 with splash_potion{display:{Name:'{"text":"Telep
 item replace entity @s hotbar.3 with potion{display:{Name:'{"text":"Speed Juice","color":"#47C8FF","bold":true,"italic":false}'},CustomModelData:4,speed:1b,CustomPotionEffects:[{Id:1,Amplifier:1b,Duration:120}],CustomPotionColor:16777215} 1
 
 # Armor
-item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantments:[{id:"minecraft:feather_falling",lvl:255s}]}
+item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantments:[{id:"minecraft:depth_strider",lvl:2s}]}
 item replace entity @s armor.legs with chainmail_leggings{Unbreakable:true}
 item replace entity @s armor.chest with chainmail_chestplate{Unbreakable:true}
 

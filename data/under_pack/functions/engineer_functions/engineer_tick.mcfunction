@@ -10,7 +10,7 @@ execute if score @s ability3 matches 181 if entity @s[nbt={Inventory:[{Slot:3b,t
 
 #WD-40
 execute if score @s ability4 matches 221 if entity @s[nbt={Inventory:[{Slot:4b,tag:{engineslip:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{engineslip:1b}}},scores={reset=1..}] as @s run function under_pack:engineer_functions/engineer_slip
-execute if score @s engineer_wd matches 1..5 run scoreboard players remove @s engineer_wd 1
+execute if score @s engineer_wd matches 1..4 run scoreboard players remove @s engineer_wd 1
 execute if score @s engineer_wd matches 1 run effect clear @a speed
 
 #crossbow cooldown

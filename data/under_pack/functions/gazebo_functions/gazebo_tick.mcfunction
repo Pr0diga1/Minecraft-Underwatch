@@ -63,7 +63,7 @@ execute as @a[tag=gazebo,tag=gazebo_dead] run scoreboard players operation @s de
 #second buffer = first buffer
 execute as @a[tag=gazebo,tag=gazebo_dead] run scoreboard players operation @s deathTimerBufferBuffer = @s deathTimerBuffer 
 #first buffer is now 10
-execute as @a[tag=gazebo,tag=gazebo_dead] run scoreboard players operation @s deathTimerBuffer = TheNumberTen constant
+execute as @a[tag=gazebo,tag=gazebo_dead] run scoreboard players operation @s deathTimerBuffer = DeathBuffer constant
 # 10 - the number of seconds that have past, gives you number of seconds left
 execute as @a[tag=gazebo,tag=gazebo_dead] run scoreboard players operation @s deathTimerBuffer -= @s deathTimerBufferBuffer
 #actionbar for telling players when they will respawn
@@ -71,18 +71,18 @@ execute as @a[tag=gazebo,tag=gazebo_dead] run title @s actionbar ["",{"text":"Re
 
 #resets players when they have been dead for 10 seconds
 #sets them to adventure
-execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run gamemode adventure @s
+execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 280.. run gamemode adventure @s
 #tp them to their spanws
-execute as @a[tag=gazebo,tag=gazebo_dead,team=uRed] if score @s deathTimer matches 200.. run tp @s 629 43 -9
-execute as @a[tag=gazebo,tag=gazebo_dead,team=uBlue] if score @s deathTimer matches 200.. run tp @s 522 43 -8
+execute as @a[tag=gazebo,tag=gazebo_dead,team=uRed] if score @s deathTimer matches 280.. run tp @s 629 43 -9
+execute as @a[tag=gazebo,tag=gazebo_dead,team=uBlue] if score @s deathTimer matches 280.. run tp @s 522 43 -8
 #tells them they respawned 
-execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run title @s actionbar {"text":"Respawned","color":"gold"}
+execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 280.. run title @s actionbar {"text":"Respawned","color":"gold"}
 #run the general respawn
-execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run function under_pack:general_functions/general_respawn
+execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 280.. run function under_pack:general_functions/general_respawn
 #remove dead tag
-execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 200.. run tag @s remove gazebo_dead
+execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 280.. run tag @s remove gazebo_dead
 #reset their deathtimer
-execute as @a[tag=gazebo] if score @s deathTimer matches 200.. run scoreboard players set @s deathTimer 0
+execute as @a[tag=gazebo] if score @s deathTimer matches 280.. run scoreboard players set @s deathTimer 0
 
 #runs the score tracker if a team wins a round
 execute if score red_gazebo points matches 100 run function under_pack:gazebo_functions/gazebo_tally
@@ -91,6 +91,9 @@ execute if score blue_gazebo points matches 100 run function under_pack:gazebo_f
 #resistance in spawns
 execute as @a[team=uRed,x=617,y=43,z=-12,dx=14,dz=8,dy=5,tag=gazebo] run effect give @s resistance 1 6 false
 execute as @a[team=uBlue,x=533,y=43,z=-5,dx=-14,dz=-8,dy=5,tag=gazebo] run effect give @s resistance 1 6 false
+#healing in spawns
+execute as @a[team=uRed,x=617,y=43,z=-12,dx=14,dz=8,dy=5,tag=gazebo] run effect give @s instant_health
+execute as @a[team=uBlue,x=533,y=43,z=-5,dx=-14,dz=-8,dy=5,tag=gazebo] run effect give @s instant_health
 #cant enter enemy spawns
 execute as @a[team=uBlue,x=617,y=43,z=-12,dx=14,dz=8,dy=5,tag=gazebo] at @s run tp @s ~-1 ~ ~
 execute as @a[team=uRed,x=533,y=43,z=-5,dx=-14,dz=-8,dy=5,tag=gazebo] at @s run tp @s ~1 ~ ~

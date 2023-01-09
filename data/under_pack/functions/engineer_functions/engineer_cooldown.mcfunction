@@ -5,9 +5,9 @@ execute if score @s ability1 matches 80 run item replace entity @s hotbar.1 with
 execute if score @s ability1 matches 100 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 1
 
 execute if score @s ability2 matches 1 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"3","color":"gold"}]
-execute if score @s ability2 matches 17 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"2","color":"gold"}]
-execute if score @s ability2 matches 34 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"1","color":"gold"}]
-execute if score @s ability2 matches 49 run title @s actionbar ["",{"text":" "}]
+execute if score @s ability2 matches 20 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"2","color":"gold"}]
+execute if score @s ability2 matches 40 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"1","color":"gold"}]
+execute if score @s ability2 matches 59 run title @s actionbar ["",{"text":" "}]
 
 execute if score @s ability3 matches 20 run item replace entity @s hotbar.3 with light_blue_stained_glass{display:{Name:'{"text":"Wall on Cooldown"}'}} 8
 execute if score @s ability3 matches 40 run item replace entity @s hotbar.3 with light_blue_stained_glass{display:{Name:'{"text":"Wall on Cooldown"}'}} 7
