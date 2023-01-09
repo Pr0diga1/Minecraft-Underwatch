@@ -36,5 +36,5 @@ scoreboard players set @s ultCharge 0
 #constants for ult charge
 scoreboard players set engineerUltKills modifier 600
 #ULT PERCENT IS ULT GOAL /100
-scoreboard players set engineerUltPercent modifier 50
-#goal is 4500
+scoreboard players set engineerUltPercent modifier 42
+#goal is 4200
