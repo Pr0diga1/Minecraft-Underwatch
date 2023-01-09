@@ -89,18 +89,5 @@
 				}
 			}
 		]
-	},
-    {
-		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:27}",
-		"conditions": [
-			{
-				"condition": "minecraft:entity_scores",
-				"entity": "this",
-				"scores": {
-					"ability3": 241
-				}
-			}
-		]
 	}
 ]
