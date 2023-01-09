@@ -59,8 +59,6 @@ scoreboard players set match points 0
 
 ## REMOVE
 
-execute as @a[tag=red] run team join uRed
-execute as @a[tag=blue] run team join uBlue
 
 #tps players to their spawns and sets their spawnpoints
 tp @a[tag=gazebo,team=uRed] 629 43 -9

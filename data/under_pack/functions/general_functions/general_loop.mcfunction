@@ -4,6 +4,9 @@ execute if score gazebo swag matches 1 run function under_pack:gazebo_functions/
 #if someone has a death, run the death function
 execute as @a if score @s uDeaths matches 1.. run function under_pack:general_functions/general_death
 
+#silly blocks
+execute as @e[type=falling_block] run data merge entity @s {Motion:[0.0,0.0,0.0]}
+
 #kill the arrows
 kill @e[type=arrow,scores={arrowTimer=1..}]
 execute as @e[type=arrow,nbt={inGround:1b}] run scoreboard players add @s arrowTimer 1
