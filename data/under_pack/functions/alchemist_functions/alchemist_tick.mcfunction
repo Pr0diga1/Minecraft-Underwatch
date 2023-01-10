@@ -2,13 +2,15 @@
 clear @s[tag=reload_main] splash_potion{acid:1b}
 clear @s[tag=reload_util] splash_potion{healing:1b}
 clear @s[tag=telepot_cooldown] splash_potion{telepot:1b}
-clear @s[tag=speed_cooldown] splash_potion{speed:1b}
+
+# Gives perma speed
+effect give @s speed 5 1 false
 
 ## Telepot stuff
 # Assigns stuff
 execute as @e[type=potion,nbt={Item:{tag:{telepot:1b}}}] run tag @s add telepot
-execute as @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uBlue,limit=1,distance=..2.5] run tag @s add uBlue
-execute as @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uRed,limit=1,distance=..2.5] run tag @s add uRed
+execute if entity @s[team=uBlue] run tag @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uBlue
+execute if entity @s[team=uRed] run tag @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uRed
 # Tags telepot user
 execute as @e[type=potion,tag=telepot,tag=uBlue] at @s run tag @a[sort=nearest,limit=1,team=uBlue] add telepot
 execute as @e[type=potion,tag=telepot,tag=uRed] at @s run tag @a[sort=nearest,limit=1,team=uRed] add telepot
@@ -19,8 +21,8 @@ execute if entity @s[team=uRed,tag=telepot] run function under_pack:alchemist_fu
 ## Healing pot stuff
 # Assigns stuff
 execute as @e[type=potion,nbt={Item:{tag:{healing:1b}}}] run tag @s add healing
-execute as @e[type=potion,tag=healing,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uBlue,limit=1,distance=..2.5] run tag @s add uBlue
-execute as @e[type=potion,tag=healing,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uRed,limit=1,distance=..2.5] run tag @s add uRed
+execute if entity @s[team=uBlue] run tag @e[type=potion,tag=healing,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uBlue
+execute if entity @s[team=uRed] run tag @e[type=potion,tag=healing,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uRed
 # Tags healing user user
 execute as @e[type=potion,tag=healing,tag=uBlue] at @s run tag @a[sort=nearest,limit=1,team=uBlue] add healing
 execute as @e[type=potion,tag=healing,tag=uRed] at @s run tag @a[sort=nearest,limit=1,team=uRed] add healing
@@ -37,7 +39,6 @@ execute as @e[tag=healing,type=marker] at @s run function under_pack:alchemist_f
 execute unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:splash_potion"}]}] if entity @s[tag=!reload_main] run function under_pack:alchemist_functions/alchemist_reload_main
 execute unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:splash_potion"}]}] if entity @s[tag=!reload_utility] run function under_pack:alchemist_functions/alchemist_reload_utility
 execute unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:splash_potion"}]}] if entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/alchemist_telepot_cooldown
-execute unless entity @s[nbt={Inventory:[{Slot:3b,id:"minecraft:potion"}]}] if entity @s[tag=!speed_cooldown] run function under_pack:alchemist_functions/alchemist_speed_cooldown
 
 # Reload main's cooldown
 execute if entity @s[tag=reload_main] run scoreboard players add @s ability1 1
@@ -54,21 +55,16 @@ execute if score @s ability2 matches 121.. unless entity @s[tag=!reload_utility]
 # Telepot's cooldown
 execute if entity @s[tag=telepot_cooldown] run scoreboard players add @s movement 1
 item modify entity @s[tag=telepot_cooldown] hotbar.2 under_pack:alchemist/telepot_cooldown
-execute if score @s movement matches 141.. unless entity @s[tag=!telepot_cooldown] run item replace entity @s hotbar.2 with splash_potion{display:{Name:'{"text":"Telepot","color":"#8753E0","bold":true,"italic":false}'},CustomModelData:1,telepot:1b,CustomPotionColor:16777215} 1
-execute if score @s movement matches 141.. unless entity @s[tag=!telepot_cooldown] run tag @s remove telepot_cooldown
-# Speed's cooldown
-execute if entity @s[tag=speed_cooldown] run scoreboard players add @s ability3 1
-item modify entity @s[tag=speed_cooldown] hotbar.3 under_pack:alchemist/speed_cooldown
-execute if score @s ability3 matches 241.. unless entity @s[tag=!speed_cooldown] run item replace entity @s hotbar.3 with potion{display:{Name:'{"text":"Speed Juice","color":"#47C8FF","bold":true,"italic":false}'},CustomModelData:4,speed:1b,CustomPotionEffects:[{Id:1,Amplifier:1b,Duration:120}],CustomPotionColor:16777215} 1
-execute if score @s ability3 matches 241.. unless entity @s[tag=!speed_cooldown] run tag @s remove speed_cooldown
+execute if score @s movement matches 101.. unless entity @s[tag=!telepot_cooldown] run item replace entity @s hotbar.2 with splash_potion{display:{Name:'{"text":"Telepot","color":"#8753E0","bold":true,"italic":false}'},CustomModelData:1,telepot:1b,CustomPotionColor:16777215} 1
+execute if score @s movement matches 101.. unless entity @s[tag=!telepot_cooldown] run tag @s remove telepot_cooldown
 
 ## Ult commands
 # Ult tracking
 execute if score @s alchemistUltActive matches 0 run function under_pack:alchemist_functions/alchemist_ult_track
 # Ult assigns stuff
 execute as @e[type=potion,nbt={Item:{tag:{alchUlt:1b}}}] run tag @s add mustard_gas
-execute as @e[type=potion,tag=mustard_gas,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uBlue,limit=1,distance=..2.5] run tag @s add uBlue
-execute as @e[type=potion,tag=mustard_gas,tag=!uRed,tag=!uBlue] at @s if entity @a[sort=nearest,team=uRed,limit=1,distance=..2.5] run tag @s add uRed
+execute if entity @s[team=uBlue] run tag @e[type=potion,tag=mustard_gas,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uBlue
+execute if entity @s[team=uRed] run tag @e[type=potion,tag=mustard_gas,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uRed
 # Ult find player
 execute as @e[type=potion,tag=mustard_gas,tag=uBlue] at @s run tag @a[sort=nearest,limit=1,team=uBlue] add mustard_gas
 execute as @e[type=potion,tag=mustard_gas,tag=uRed] at @s run tag @a[sort=nearest,limit=1,team=uRed] add mustard_gas
