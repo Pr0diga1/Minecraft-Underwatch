@@ -1,59 +1,46 @@
 [
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:11}",
+		"tag": "{CustomModelData:20}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 13
+					"movement": 91
 				}
 			}
 		]
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:12}",
+		"tag": "{CustomModelData:21}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 25
+					"movement": 81
 				}
 			}
 		]
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:13}",
+		"tag": "{CustomModelData:22}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 37
+					"movement": 71
 				}
 			}
 		]
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:14}",
-		"conditions": [
-			{
-				"condition": "minecraft:entity_scores",
-				"entity": "this",
-				"scores": {
-					"movement": 49
-				}
-			}
-		]
-	},
-    {
-		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:15}",
+		"tag": "{CustomModelData:23}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -66,39 +53,65 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:16}",
+		"tag": "{CustomModelData:24}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 73
+					"movement": 51
 				}
 			}
 		]
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:17}",
+		"tag": "{CustomModelData:25}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 85
+					"movement": 41
 				}
 			}
 		]
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:18}",
+		"tag": "{CustomModelData:26}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 97
+					"movement": 31
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_nbt",
+		"tag": "{CustomModelData:7}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 21
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_nbt",
+		"tag": "{CustomModelData:8}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 11
 				}
 			}
 		]

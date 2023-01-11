@@ -161,7 +161,10 @@ scoreboard objectives add paladinUltTiming dummy
 scoreboard objectives add paladinUltTimingBuffer dummy
 
 #rogue
-
+scoreboard objectives add damageTaken minecraft.custom:minecraft.damage_taken
+scoreboard objectives add rogueUltActive dummy
+scoreboard objectives add rogueUltTiming dummy
+scoreboard objectives add rogueUltTimingBuffer dummy
 
 #scientist
 scoreboard objectives add scientistDamageReload dummy
