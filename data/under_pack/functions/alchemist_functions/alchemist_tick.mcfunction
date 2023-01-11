@@ -4,7 +4,7 @@ clear @s[tag=reload_util] splash_potion{healing:1b}
 clear @s[tag=telepot_cooldown] splash_potion{telepot:1b}
 
 # Gives perma speed
-effect give @s speed 5 1 true
+effect give @s speed 5 0 true
 
 ## Telepot stuff
 # Assigns stuff
