@@ -7,7 +7,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 191
+					"ability2": 191
 				}
 			}
 		]
@@ -20,7 +20,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 171
+					"ability2": 171
 				}
 			}
 		]
@@ -33,7 +33,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 151
+					"ability2": 151
 				}
 			}
 		]
@@ -46,7 +46,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 131
+					"ability2": 131
 				}
 			}
 		]
@@ -59,7 +59,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 111
+					"ability2": 111
 				}
 			}
 		]
@@ -72,7 +72,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 91
+					"ability2": 91
 				}
 			}
 		]
@@ -85,7 +85,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 71
+					"ability2": 71
 				}
 			}
 		]
@@ -98,7 +98,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 51
+					"ability2": 51
 				}
 			}
 		]
@@ -111,7 +111,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 31
+					"ability2": 31
 				}
 			}
 		]
@@ -124,7 +124,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"movement": 11
+					"ability2": 11
 				}
 			}
 		]

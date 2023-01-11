@@ -2,6 +2,9 @@
 item replace entity @s hotbar.2 with barrier{CustomModelData:9}
 scoreboard players set @s ability2 201
 
+# Resets reset
+scoreboard players reset @s reset
+
 # Find players to blind
 execute if entity @s[team=uBlue] run summon marker ^ ^ ^0.75 {Tags:["uBlue","pocket_sand"]}
 execute if entity @s[team=uRed] run summon marker ^ ^ ^0.75 {Tags:["uRed","pocket_sand"]}
