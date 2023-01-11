@@ -1,5 +1,5 @@
 #carrot on stick detection
-#execute if entity @s[nbt={Inventory:[{Slot:1b,tag:{paladinBubble:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{paladinBubble:1b}}},scores={reset=1..}] if score @s ability1 matches 180.. at @s run function under_pack:paladin_functions/paladin_bubble
+execute if entity @s[nbt={Inventory:[{Slot:1b,tag:{paladinBubble:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{paladinBubble:1b}}},scores={reset=1..}] if score @s ability1 matches 340.. at @s run function under_pack:paladin_functions/paladin_bubble
 execute if entity @s[nbt={Inventory:[{Slot:2b,tag:{paladinScream:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{paladinScream:1b}}},scores={reset=1..}] if score @s ability2 matches 240.. at @s run function under_pack:paladin_functions/paladin_scream
 execute if entity @s[nbt={Inventory:[{Slot:8b,tag:{paladinUlt:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{paladinUlt:1b}}},scores={reset=1..}] run function under_pack:paladin_functions/paladin_ult
 
@@ -11,19 +11,18 @@ execute unless entity @s[nbt={Inventory:[{id:"minecraft:shield"},{Slot:-106b}]}]
 
 #shield delay
 execute if score @s paladinIsBlocking matches 1 run scoreboard players set @s shieldDelay 60
-execute if score @s paladinIsBlocking matches 1 if score @s shieldStatus matches 0 run scoreboard players set @s shieldDelay 100
 
 #run shield delay down
 execute if entity @s[scores={paladinIsBlocking=0,shieldDelay=1..}] run scoreboard players remove @s shieldDelay 1
 
 #shield is not blocking logic
-execute if entity @s[scores={paladinIsBlocking=0,shieldStatus=..399,shieldDelay=0,movement=0}] run scoreboard players add @s shieldStatus 1
+execute if entity @s[scores={paladinIsBlocking=0,shieldStatus=..249,shieldDelay=0,movement=0}] run scoreboard players add @s shieldStatus 1
 
 #give new shield at 1
 execute if score @s shieldStatus matches 1 if score @s paladinIsBlocking matches 0 run item replace entity @s weapon.offhand with shield{display:{Name:'{"text":"Piece of Driftwood"}'},HideFlags:1,Unbreakable:1b} 1
 
 #actionbar
-title @s actionbar ["",{"score":{"name":"@s","objective":"shieldStatus"},"color":"dark_red"},{"text":"/400","color":"dark_blue"}]
+title @s actionbar ["",{"score":{"name":"@s","objective":"shieldStatus"},"color":"dark_red"},{"text":"/250","color":"dark_blue"}]
 
 #cooldowns
 function under_pack:paladin_functions/paladin_cooldown

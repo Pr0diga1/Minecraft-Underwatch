@@ -12,8 +12,8 @@ item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"F
 
 
 #ability cooldowns
-scoreboard players set @s shieldStatus 400
+scoreboard players set @s shieldStatus 250
 scoreboard players set @s shieldDelay 0
 scoreboard players set @s movement 0
-scoreboard players set @s ability1 179
+scoreboard players set @s ability1 359
 scoreboard players set @s ability2 239

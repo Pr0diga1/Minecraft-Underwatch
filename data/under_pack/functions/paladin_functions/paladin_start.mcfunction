@@ -12,17 +12,17 @@ item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"B
 item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"Fard","color":"#5E4C2C"}'},paladinScream:1b} 1
 
 #armor
-item replace entity @s armor.head with iron_helmet{Unbreakable:1b}
+item replace entity @s armor.head with leather_helmet{Unbreakable:1b}
 item replace entity @s armor.chest with diamond_chestplate{Unbreakable:1b}
 item replace entity @s armor.legs with diamond_leggings{Unbreakable:1b}
 item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s}]}
 
 #ability cooldowns
-scoreboard players set @s shieldStatus 400
+scoreboard players set @s shieldStatus 250
 scoreboard players set @s shieldDelay 0
 scoreboard players set @s paladinIsBlocking 0
 scoreboard players set @s movement 0
-scoreboard players set @s ability1 179
+scoreboard players set @s ability1 359
 scoreboard players set @s ability2 239
 
 #removes xp
