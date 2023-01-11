@@ -4,6 +4,9 @@ tag @s add cloaked
 # Makes sword invisible
 item modify entity @s hotbar.0 under_pack:rogue/cloak_sword
 
+# Resets reset
+scoreboard players reset @s reset
+
 # Sets up forced exit scores
 scoreboard players set @s ultDamage 0
 scoreboard players set @s damageTaken 0
