@@ -80,6 +80,8 @@ scoreboard objectives add constant dummy
 scoreboard players set TickToSecond constant 20
 scoreboard players set TheNumberTen constant 10
 scoreboard players set TheNumberFive constant 5
+scoreboard players set TheNumberThree constant 3
+scoreboard players set TheNumberTwo constant 2
 scoreboard players set everyOther constant 1
 scoreboard players set minusOne constant -1
 
@@ -145,6 +147,7 @@ scoreboard objectives add lumberjack_sweep dummy
 
 #ninja
 scoreboard objectives add ninjaHyperventilate dummy
+scoreboard objectives add ninjaHyperventilateBuffer dummy
 scoreboard objectives add ninjaMotionX dummy
 scoreboard objectives add ninjaMotionY dummy
 scoreboard objectives add ninjaMotionZ dummy

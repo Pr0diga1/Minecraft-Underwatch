@@ -1,8 +1,8 @@
 #if it hits a block, indicate so
 execute unless block ~ ~ ~ #under_pack:non_solid run scoreboard players set hit ninjaRay 1
 #if it hits a player, run a function as that player
-execute if score hit ninjaRay matches 0 if entity @s[team=uBlue] positioned ~-0.15 ~-0.3 ~-0.15 as @a[tag=!dashing,dx=0,sort=nearest,team=uRed,tag=!ninjaHit] at @s positioned ~-0.85 ~-0.7 ~-0.85 if entity @s[dx=0] run function under_pack:ninja_functions/ninja_hitbydash
-execute if score hit ninjaRay matches 0 if entity @s[team=uRed] positioned ~-0.15 ~-0.3 ~-0.15 as @a[tag=!dashing,dx=0,sort=nearest,team=uBlue,tag=!ninjaHit] at @s positioned ~-0.85 ~-0.7 ~-0.85 if entity @s[dx=0] run function under_pack:ninja_functions/ninja_hitbydash
+execute if score hit ninjaRay matches 0 if entity @s[team=uBlue] positioned ~-0.35 ~-.8 ~-0.35 as @a[tag=!dashing,dx=0,sort=nearest,team=uRed,tag=!ninjaHit] at @s positioned ~-0.65 ~-.8 ~-0.65 if entity @s[dx=0] run function under_pack:ninja_functions/ninja_hitbydash
+execute if score hit ninjaRay matches 0 if entity @s[team=uRed] positioned ~-0.35 ~-.8 ~-0.35 as @a[tag=!dashing,dx=0,sort=nearest,team=uBlue,tag=!ninjaHit] at @s positioned ~-0.65 ~-.8 ~-0.65 if entity @s[dx=0] run function under_pack:ninja_functions/ninja_hitbydash
 #add 1 to the distance
 scoreboard players add distance ninjaRay 1
 #particles
