@@ -40,5 +40,5 @@ scoreboard players set @s alchemistUltTiming 0
 #constants for ult charge
 scoreboard players set alchemistUltKills modifier 600
 #ULT PERCENT IS ULT GOAL /100
-scoreboard players set alchemistUltPercent modifier 40
-#goal is 4500
+scoreboard players set alchemistUltPercent modifier 30
+#goal is 3000
