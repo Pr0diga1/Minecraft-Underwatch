@@ -12,5 +12,5 @@ scoreboard players add gazebo player_num 1
 tellraw @a ["",{"text":"The amount of people in Gazebo is: ","color":"blue"},{"score":{"name":"gazebo","objective":"player_num"},"color":"blue"}]
 
 #tps player to lobby and clears them
-tp @s 625 43 -17
+tp @s 575 64 -40
 clear @s
