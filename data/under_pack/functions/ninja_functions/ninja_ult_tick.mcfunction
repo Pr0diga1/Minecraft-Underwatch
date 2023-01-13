@@ -3,7 +3,7 @@ execute at @s run particle minecraft:smoke ~ ~1 ~ .3 .8 .3 0 10 force @a
 execute at @s run particle minecraft:dust 1 0 1 1 ~ ~1 ~ .3 .8 .3 0 8 force @a
 
 #dash cooldown
-execute if score @s ability1 matches ..138 run scoreboard players set @s ability1 139
+execute if score @s ability1 matches ..130 run scoreboard players set @s ability1 130
 #removing ult countdown
 scoreboard players remove @s ninjaUltTiming 1
 
