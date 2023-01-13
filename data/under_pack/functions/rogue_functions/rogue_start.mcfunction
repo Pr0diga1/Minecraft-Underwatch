@@ -18,12 +18,12 @@ scoreboard players set @s ultCharge 0
 experience set @s 0 levels
 experience set @s 0 points
 # Ult on scores
-scoreboard players set @s alchemistUltActive 0
-scoreboard players set @s alchemistUltTiming 0
+scoreboard players set @s rogueUltActive 0
+scoreboard players set @s rogueUltTiming 0
 
 ## Ult Config
 # Constants for ult charge
-scoreboard players set alchemistUltKills modifier 600
+scoreboard players set rogueUltKills modifier 600
 # ULT PERCENT IS ULT GOAL /100
-scoreboard players set alchemistUltPercent modifier 50
+scoreboard players set rogueUltPercent modifier 50
 #goal is 5000
