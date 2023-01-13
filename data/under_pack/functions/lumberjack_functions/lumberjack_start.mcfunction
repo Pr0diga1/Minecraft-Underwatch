@@ -1,7 +1,7 @@
 clear @s
 tag @s add lumberjack
 #axe
-item replace entity @s hotbar.0 with iron_axe{Damage:13,display:{Name:'{"text":"Trusty Axe","color":"dark_gray","bold":true}',Lore:['{"text":"Passed down for generations","color":"dark_purple"}']},HideFlags:6,Unbreakable:1b,Enchantments:[{}]} 1
+item replace entity @s hotbar.0 with iron_axe{display:{Name:'{"text":"Trusty Axe","color":"dark_gray","bold":true}',Lore:['{"text":"Passed down for generations","color":"dark_purple"}']},HideFlags:6,Unbreakable:1b,Enchantments:[{}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:7,Operation:0,UUID:[I;1390847632,-154906748,-1806990999,-38848052],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3.1,Operation:0,UUID:[I;-271274356,1948926639,-1328866864,113192164],Slot:"mainhand"}]} 1
 #jump
 item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:27,display:{Name:'{"text":"Strong Jump","color":"blue"}'},lumberjump:1b} 1
 #throw
