@@ -9,9 +9,6 @@ execute as @s[nbt={Inventory:[{Slot:2b,tag:{pocketSand:1b}}],SelectedItem:{id:"m
 
 ## Cloak tick
 execute if entity @s[tag=cloaked] run function under_pack:rogue_functions/cloak
-execute if entity @s[tag=assasin] run effect give @s strength 5 0 false
-# Damaging check
-execute if entity @s[tag=assasin] as @s[scores={ultDamage=1..}] run function under_pack:rogue_functions/cloak_boost_end
 
 ## Cooldowns
 execute if entity @s[scores={ability1=1..}] run function under_pack:rogue_functions/cloak_cooldown
