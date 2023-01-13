@@ -104,3 +104,5 @@ execute if score @s scientistBowFired matches 1 run function under_pack:scientis
 
 #reset the bow fired objective
 scoreboard players set @s scientistBowFired2 0
+
+#double jump
