@@ -11,3 +11,7 @@ scoreboard players set @s rogueUltTimingBuffer 0
 #removes xp
 experience set @s 0 levels
 experience set @s 0 points
+
+# Remove various tags and items
+tag @s remove executing
+item replace entity @s hotbar.8 with air

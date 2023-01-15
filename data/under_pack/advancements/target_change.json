@@ -1,0 +1,23 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "hitTarget": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:player",
+                    "nbt": "{Tags:[\"the_target\"]}"
+                },
+                "damage": {
+                    "dealt": {
+                        "min": 1,
+                        "max": 1000
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "under_pack:rogue_functions/target_change"
+    }
+}

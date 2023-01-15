@@ -12,7 +12,7 @@ execute if entity @s[tag=cloaked] run function under_pack:rogue_functions/cloak
 execute if entity @s[scores={ability1=1..}] run function under_pack:rogue_functions/cloak_cooldown
 execute if entity @s[scores={ability2=1..}] run function under_pack:rogue_functions/pocket_sand_cooldown
 
-## Ult mechanics
+## Ult first phase
 # Track ult
 execute if score @s rogueUltActive matches 0 run function under_pack:rogue_functions/ult_track
 # Add to tick tracker
@@ -25,3 +25,7 @@ execute unless entity @s[tag=executing] if entity @s[scores={rogueUltActive=1..}
 execute unless entity @s[tag=executing] if entity @s[scores={rogueUltActive=1..},team=uRed] as @e[type=marker,tag=rogueUlt,tag=uRed] at @s run function under_pack:rogue_functions/ult_tick_red
 # Keeps rogue in place
 execute unless entity @s[tag=executing] if entity @s[scores={rogueUltActive=1..}] rotated as @s at @e[tag=tp_to,limit=1,sort=nearest] run tp @s ~ ~ ~
+
+## Ult second phase
+# Tp to current target
+execute if entity @s[tag=executing] run function under_pack:rogue_functions/ult_tick
