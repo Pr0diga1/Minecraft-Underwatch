@@ -27,9 +27,9 @@ execute as @e[type=marker,tag=enginetrack,tag=blue] unless entity @e[type=snowba
 
 #cooldown (scoreboard objectives add ability2 dummy)
 execute if entity @s[nbt=!{Inventory:[{id:"minecraft:snowball",Count:3b,Slot:2b,tag:{enginedrug:1b}}]}] run scoreboard players add @s ability2 1
-execute if entity @s[team=uRed] if score @s ability2 matches 60 run give @s snowball{display:{Name:'{"text":"Ibuprofen","color":"blue"}'},enginedrug:1b,red:1b} 1
-execute if entity @s[team=uBlue] if score @s ability2 matches 60 run give @s snowball{display:{Name:'{"text":"Ibuprofen","color":"blue"}'},enginedrug:1b,blue:1b} 1
-execute if score @s ability2 matches 60.. run scoreboard players set @s ability2 0
+execute if entity @s[team=uRed] if score @s ability2 matches 70 run give @s snowball{display:{Name:'{"text":"Ibuprofen","color":"blue"}'},enginedrug:1b,red:1b} 1
+execute if entity @s[team=uBlue] if score @s ability2 matches 70 run give @s snowball{display:{Name:'{"text":"Ibuprofen","color":"blue"}'},enginedrug:1b,blue:1b} 1
+execute if score @s ability2 matches 70.. run scoreboard players set @s ability2 0
 execute unless entity @s[nbt={Inventory:[{id:"minecraft:snowball",Slot:2b,tag:{enginedrug:1b}}]}] run clear @s snowball{enginedrug:1b}
 
 
