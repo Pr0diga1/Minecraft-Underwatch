@@ -21,6 +21,10 @@ experience set @s 0 points
 scoreboard players set @s rogueUltActive 0
 scoreboard players set @s rogueUltTiming 0
 
+# Ability scores
+scoreboard players set @s ability1 0
+scoreboard players set @s ability2 0
+
 ## Ult Config
 # Constants for ult charge
 scoreboard players set rogueUltKills modifier 600
