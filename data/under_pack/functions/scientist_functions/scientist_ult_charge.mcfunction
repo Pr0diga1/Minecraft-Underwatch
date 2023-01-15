@@ -32,4 +32,4 @@ function under_pack:scientist_functions/scientist_ult_update
 scoreboard players operation @s ultPercent = @s ultPercentBuffer
 
 #give the carrot on a stick if the ult charge is 100%
-execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{scientistSmoke:1b}}]}] if score @s ultPercentBuffer matches 100.. run item replace entity @s hotbar.8 with carrot_on_a_stick{display:{Name:'{"text":"Reveal Arrow","color":"dark_blue"}'},scientistSmoke:1b} 1
+execute unless entity @s[nbt={Inventory:[{Slot:8b,tag:{scientistSmoke:1b}}]}] if score @s ultPercentBuffer matches 100.. run item replace entity @s hotbar.8 with carrot_on_a_stick{CustomModelData:45,display:{Name:'{"text":"Reveal Arrow","color":"dark_blue"}'},scientistSmoke:1b} 1
