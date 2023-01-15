@@ -1,9 +1,6 @@
 # Tags for the cloak tick
 tag @s add cloaked
 
-# Makes sword invisible
-item modify entity @s hotbar.0 under_pack:rogue/cloak_sword
-
 # Resets reset
 scoreboard players reset @s reset
 

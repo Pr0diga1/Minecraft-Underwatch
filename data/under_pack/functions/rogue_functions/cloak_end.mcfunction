@@ -2,9 +2,6 @@
 effect clear @s
 tag @s remove cloaked
 
-# Makes sword unvisible
-item modify entity @s hotbar.0 under_pack:rogue/uncloak_sword
-
 # Resets reset
 scoreboard players reset @s reset
 
