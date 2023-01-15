@@ -77,6 +77,7 @@
 	  "minecraft:powered_rail",
 	  "minecraft:redstone_wire",
 	  "minecraft:redstone_torch",
-	  "minecraft:tall_seagrass"
+	  "minecraft:tall_seagrass",
+	  "minecraft:lily_pad"
 	]
   }

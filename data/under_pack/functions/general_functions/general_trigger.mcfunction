@@ -1,8 +1,16 @@
 #puts people who run /trigger gazebo in the gazebo lobby and resets /trigger
 execute as @a[scores={gazebo=1..}] at @s run function under_pack:gazebo_functions/gazebo_enter
 scoreboard players enable @a gazebo
+
+
 execute as @a[scores={Reset=1..}] at @s run function under_pack:general_functions/general_restart
 scoreboard players enable @a Reset
+execute as @a[scores={red=1..}] at @s run function under_pack:trigger_functions/red
+scoreboard players enable @a red
+execute as @a[scores={blue=1..}] at @s run function under_pack:trigger_functions/blue
+scoreboard players enable @a blue
+execute as @a[scores={leave=1..}] at @s run function under_pack:trigger_functions/leave
+scoreboard players enable @a leave
 
 #trigger commands for each of the classes
 execute as @a[scores={alchemist=1..}] at @s run function under_pack:alchemist_functions/alchemist_trigger

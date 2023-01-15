@@ -75,6 +75,10 @@ scoreboard objectives add reset minecraft.used:minecraft.carrot_on_a_stick
 #trigger Reset
 scoreboard objectives add Reset trigger
 
+#teams triggers
+scoreboard objectives add red trigger
+scoreboard objectives add blue trigger
+
 #adds constant and any needed multipliers
 scoreboard objectives add constant dummy
 scoreboard players set TickToSecond constant 20
@@ -172,6 +176,7 @@ scoreboard objectives add rogueUltTimingBuffer dummy
 #scientist
 scoreboard objectives add scientistDamageReload dummy
 scoreboard objectives add scientistHealingReload dummy
+scoreboard objectives add scientistJump dummy
 scoreboard objectives add scientistBowFired minecraft.used:minecraft.bow
 scoreboard objectives add scientistBowFired2 minecraft.used:minecraft.bow
 scoreboard objectives add hitByFreeze dummy

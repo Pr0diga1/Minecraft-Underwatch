@@ -1,6 +1,6 @@
 clear @s
 #paladin gets a stick
-item replace entity @s hotbar.0 with stick{display:{Name:'{"text":"Large Rock","color":"dark_gray","bold":true}'},Enchantments:[{id:"minecraft:knockback",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2,Operation:0,UUID:[I;665914782,1842694179,-1861744682,1507667590],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2,Operation:0,UUID:[I;848726694,1228753155,-2020300593,95512569],Slot:"mainhand"}]} 1
+item replace entity @s hotbar.0 with stick{display:{Name:'{"text":"Large Rock","color":"dark_gray","bold":true}'},Enchantments:[{id:"minecraft:knockback",lvl:1s}],AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2,Operation:0,UUID:[I;665914782,1842694179,-1861744682,1507667590],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:1.5d,Operation:0,UUID:[I;848726694,1228753155,-2020300593,95512569],Slot:"mainhand"}]} 1
 
 #paladin gets a shield
 item replace entity @s weapon.offhand with shield{display:{Name:'{"text":"Piece of Driftwood"}'},HideFlags:1,Unbreakable:1b} 1
