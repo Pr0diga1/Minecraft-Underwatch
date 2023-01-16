@@ -9,7 +9,7 @@ execute as @s[team=uBlue] at @s run effect give @a[team=uRed,distance=..3] poiso
 playsound entity.ghast.scream master @a ~ ~ ~ 1 0.5
 
 #particles
-particle dust 0.447 0.361 0.227 1 ~ ~ ~ 1.4 1 1.4 0 2000
+particle dust 0.447 0.361 0.227 1 ~ ~ ~ 1.4 1 1.4 0 500
 
 #reset
 scoreboard players reset @s reset

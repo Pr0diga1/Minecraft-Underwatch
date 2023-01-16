@@ -112,7 +112,7 @@ execute as @s[nbt={FallFlying:1b}] run scoreboard players set @s scientistJump 1
 #perform the jump itself
 execute as @s[scores={scientistJump=1}] run effect give @s levitation 1 38 true
 execute at @s[scores={scientistJump=1}] run playsound entity.ender_dragon.shoot master @a
-execute at @s[scores={scientistJump=1..}] anchored feet run particle flame ~ ~ ~ .1 .1 .1 0.1 5
+execute at @s[scores={scientistJump=1..}] anchored feet run particle flame ~ ~ ~ .1 .1 .1 0.1 5 force
 
 #clear the elytra
 execute as @s[scores={scientistJump=1}] run item replace entity @s armor.chest with leather_chestplate{display:{Name:'{"text":"Jetpack"}',color:16777215},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;1859217092,-39565814,-1219173781,-1415052210],Slot:"chest"}]} 1

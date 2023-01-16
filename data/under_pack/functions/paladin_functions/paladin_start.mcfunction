@@ -18,7 +18,7 @@ item replace entity @s armor.legs with diamond_leggings{Unbreakable:1b}
 item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s}]}
 
 #ability cooldowns
-scoreboard players set @s shieldStatus 250
+scoreboard players set @s shieldStatus 160
 scoreboard players set @s shieldDelay 0
 scoreboard players set @s paladinIsBlocking 0
 scoreboard players set @s movement 0

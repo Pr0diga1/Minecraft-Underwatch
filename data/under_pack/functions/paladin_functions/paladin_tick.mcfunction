@@ -16,13 +16,13 @@ execute if score @s paladinIsBlocking matches 1 run scoreboard players set @s sh
 execute if entity @s[scores={paladinIsBlocking=0,shieldDelay=1..}] run scoreboard players remove @s shieldDelay 1
 
 #shield is not blocking logic
-execute if entity @s[scores={paladinIsBlocking=0,shieldStatus=..249,shieldDelay=0,movement=0}] run scoreboard players add @s shieldStatus 1
+execute if entity @s[scores={paladinIsBlocking=0,shieldStatus=..159,shieldDelay=0,movement=0}] run scoreboard players add @s shieldStatus 1
 
 #give new shield at 1
 execute if score @s shieldStatus matches 1 if score @s paladinIsBlocking matches 0 run item replace entity @s weapon.offhand with shield{display:{Name:'{"text":"Piece of Driftwood"}'},HideFlags:1,Unbreakable:1b} 1
 
 #actionbar
-title @s actionbar ["",{"score":{"name":"@s","objective":"shieldStatus"},"color":"dark_red"},{"text":"/250","color":"dark_blue"}]
+title @s actionbar ["",{"score":{"name":"@s","objective":"shieldStatus"},"color":"dark_red"},{"text":"/160","color":"dark_blue"}]
 
 #cooldowns
 function under_pack:paladin_functions/paladin_cooldown
