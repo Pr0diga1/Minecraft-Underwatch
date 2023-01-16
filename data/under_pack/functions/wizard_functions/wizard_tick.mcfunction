@@ -1,5 +1,8 @@
 #detect carrot on stick
-execute as @s[nbt={Inventory:[{Slot:1b,tag:{wizardFireball:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardFireball:1b}}},scores={reset=1..,movement=200..}] run function under_pack:wizard_functions/wizard_fireball
+
+#detect snowball
+execute as @s[team=uRed] if entity @e[type=snowball,nbt={Item:{tag:{wizardFireball:1b,red:1b}}}] at @s run function under_pack:wizard_functions/wizard_fireball_red
+execute as @s[team=uBlue] if entity @e[type=snowball,nbt={Item:{tag:{wizardFireball:1b,blue:1b}}}] at @s run function under_pack:wizard_functions/wizard_fireball_blue
 
 #reset reset
 scoreboard players reset @s reset
@@ -12,4 +15,4 @@ execute as @e[type=fireball,tag=!fireballMoved,tag=redWizardFireball] at @s rota
 execute as @e[type=fireball,tag=!fireballMoved,tag=blueWizardFireball] at @s rotated as @p[team=uBlue] run function under_pack:wizard_functions/wizard_fireball_velo
 
 #run the cooldown
-function under_pack:wizard_functions/wizard_cooldown
+#function under_pack:wizard_functions/wizard_cooldown
