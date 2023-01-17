@@ -10,3 +10,5 @@ item replace entity @s hotbar.8 with carrot_on_a_stick{display:{Name:'{"text":"E
 
 # Summon place to be tp'd to
 summon marker ~ ~ ~ {Tags:["tp_to"]}
+
+scoreboard players reset @s reset
