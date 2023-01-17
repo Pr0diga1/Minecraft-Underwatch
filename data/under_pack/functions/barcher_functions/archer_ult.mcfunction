@@ -10,8 +10,8 @@ scoreboard players set @s ultCharge 0
 experience set @s 0 levels
 experience set @s 0 points
 
-scoreboard players set @s archerultactive 160
+scoreboard players set @s archerultactive 100
 
-title @s actionbar ["",{"text":"Machine Gun: ","color":"black"},{"text":"8","color":"blue"}] 
+title @s actionbar ["",{"text":"Machine Gun: ","color":"black"},{"text":"5","color":"blue"}] 
 
 

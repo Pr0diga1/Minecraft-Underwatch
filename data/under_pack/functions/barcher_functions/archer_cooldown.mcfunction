@@ -15,6 +15,4 @@ execute if score @s archerultactive matches 20 run title @s actionbar ["",{"text
 execute if score @s archerultactive matches 40 run title @s actionbar ["",{"text":"Machine Gun: ","color":"black"},{"text":"2","color":"blue"}]
 execute if score @s archerultactive matches 60 run title @s actionbar ["",{"text":"Machine Gun: ","color":"black"},{"text":"3","color":"blue"}]
 execute if score @s archerultactive matches 80 run title @s actionbar ["",{"text":"Machine Gun: ","color":"black"},{"text":"4","color":"blue"}]
-execute if score @s archerultactive matches 100 run title @s actionbar ["",{"text":"Machine Gun: ","color":"black"},{"text":"5","color":"blue"}]
-execute if score @s archerultactive matches 120 run title @s actionbar ["",{"text":"Machine Gun: ","color":"black"},{"text":"6","color":"blue"}]
-execute if score @s archerultactive matches 140 run title @s actionbar ["",{"text":"Machine Gun: ","color":"black"},{"text":"7","color":"blue"}]
+

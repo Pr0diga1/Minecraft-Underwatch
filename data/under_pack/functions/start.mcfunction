@@ -129,7 +129,7 @@ scoreboard objectives add alchemistUltTiming dummy
 scoreboard objectives add alchemistUltTimingBuffer dummy
 
 #archer
-
+scoreboard objectives add archerultactive dummy
 
 #engineer
 scoreboard objectives add engineer_wd dummy
