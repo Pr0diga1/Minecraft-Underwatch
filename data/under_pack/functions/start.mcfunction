@@ -48,6 +48,8 @@ scoreboard objectives add timer dummy
 scoreboard objectives add swag dummy
 #add team
 scoreboard objectives add team dummy
+#add matchmake
+scoreboard objectives add matchmake dummy
 
 #kills
 scoreboard objectives add Kills playerKillCount
@@ -182,3 +184,4 @@ scoreboard objectives add scientistBowFired2 minecraft.used:minecraft.bow
 scoreboard objectives add hitByFreeze dummy
 
 #wizard
+scoreboard objectives add wizardCrossbow minecraft.used:minecraft.crossbow

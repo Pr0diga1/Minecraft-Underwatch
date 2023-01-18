@@ -1,12 +1,5 @@
-#creates a buffer of everyone in gazebo with a team tag
-execute store result score buffer player_num if entity @a[tag=gazebo,tag=t1]
-execute store result score buffer2 player_num if entity @a[tag=gazebo,tag=t2]
-scoreboard players operation buffer player_num += buffer2 player_num
-#if the buffer equals the amount of people with the gazebo tag, match is set to 1
-execute if score buffer player_num = gazebo player_num run scoreboard players set match points 1
-#reset the buffers as they are no longer needed
-scoreboard players reset buffer player_num
-scoreboard players reset buffer2 player_num
+#if there is even a single person in gazebo without a set team, do not matchmake
+execute unless entity @a[tag=gazebo,tag=!t1,tag=!t2] run scoreboard players set true matchmake 1
 
 #run general start
 execute as @a[tag=gazebo] run function under_pack:general_functions/general_start
@@ -34,28 +27,22 @@ execute if score gazebo player_num matches 2 run team join uBlue @r[tag=gazebo,t
 execute if score gazebo player_num matches 2 run team join uRed @r[tag=gazebo,team=white,limit=1]
 
 #cancel match with an odd number of players
-execute if score gazebo player_num matches 21.. run scoreboard players set false points 1
-execute if score gazebo player_num matches 19 run scoreboard players set false points 1
-execute if score gazebo player_num matches 17 run scoreboard players set false points 1
-execute if score gazebo player_num matches 15 run scoreboard players set false points 1
-execute if score gazebo player_num matches 13 run scoreboard players set false points 1
-execute if score gazebo player_num matches 11 run scoreboard players set false points 1
-execute if score gazebo player_num matches 9 run scoreboard players set false points 1
-execute if score gazebo player_num matches 7 run scoreboard players set false points 1
-execute if score gazebo player_num matches 5 run scoreboard players set false points 1
-execute if score gazebo player_num matches 3 run scoreboard players set false points 1
-execute if score gazebo player_num matches ..1 run scoreboard players set false points 1
+scoreboard players operation gazeboBuffer player_num = gazebo player_num
+scoreboard players operation gazeboBuffer player_num %= TheNumberTwo constant
+execute if score gazebo player_num matches 21.. run scoreboard players set cancel matchmake 1
+execute if score gazeboBuffer player_num matches 1 run scoreboard players set cancel matchmake 1
+execute if score gazebo player_num matches ..1 run scoreboard players set cancel matchmake 1
 
 #do not abort the game if we are doing custom teams
-execute if score match points matches 1 run scoreboard players set false points 0
+execute if score true matchmake matches 1 run scoreboard players set cancel matchmake 0
 #set players to their custom teams
-execute if score match points matches 1 as @a[tag=t1,tag=gazebo] run team join uRed
-execute if score match points matches 1 as @a[tag=t2,tag=gazebo] run team join uBlue
-#dont need the tags anymore
-execute if score match points matches 1 run tag @a[tag=gazebo] remove t1
-execute if score match points matches 1 run tag @a[tag=gazebo] remove t2
-#dont need match points anymore
-scoreboard players set match points 0
+execute if score true matchmake matches 1 as @a[tag=t1,tag=gazebo] run team join uRed
+execute if score true matchmake matches 1 as @a[tag=t2,tag=gazebo] run team join uBlue
+#dont need true matchmake anymore
+scoreboard players set true matchmake 0
+
+#lose the set team tags
+execute as @a[tag=gazebo] run function under_pack:trigger_functions/leave
 
 #set the deathbuffer
 scoreboard players set DeathBuffer constant 14
@@ -141,6 +128,6 @@ bossbar set count:gazebo_ot visible false
 
 
 #the actual process of aborting the game if we need to do that
-execute if score false points matches 1 run function under_pack:gazebo_functions/gazebo_restart
-execute if score false points matches 1 run tell @s monkey
-scoreboard players set false points 0
+execute if score cancel matchmake matches 1 as @a[tag=gazebo] run function under_pack:gazebo_functions/gazebo_restart
+execute if score cancel matchmake matches 1 as @a[tag=gazebo] run tell @s monkey
+scoreboard players set cancel matchmake 0

@@ -1,5 +1,5 @@
 
-item replace entity @s hotbar.8 with tipped_arrow{CustomModelData:3,display:{Name:'{"text":"Sonar Arrow","color":"dark_blue"}'},scientistLightning:1b,CustomPotionColor:16777215} 1
+item replace entity @s hotbar.8 with tipped_arrow{CustomModelData:3,display:{Name:'{"text":"Sonar Arrow","color":"dark_blue"}'},scientistLightning:1b,CustomPotionColor:13311} 1
 
 #removes xp
 experience set @s 0 levels

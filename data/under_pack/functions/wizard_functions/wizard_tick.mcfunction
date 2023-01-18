@@ -1,3 +1,7 @@
+#detect when crossbows are shot
+execute if score @s wizardCrossbow matches 1.. run function under_pack:wizard_functions/wizard_check
+scoreboard players set @s wizardCrossbow 0
+
 #detect carrot on stick
 
 #detect snowball
@@ -15,4 +19,4 @@ execute as @e[type=fireball,tag=!fireballMoved,tag=redWizardFireball] at @s rota
 execute as @e[type=fireball,tag=!fireballMoved,tag=blueWizardFireball] at @s rotated as @p[team=uBlue] run function under_pack:wizard_functions/wizard_fireball_velo
 
 #run the cooldown
-#function under_pack:wizard_functions/wizard_cooldown
+function under_pack:wizard_functions/wizard_cooldown
