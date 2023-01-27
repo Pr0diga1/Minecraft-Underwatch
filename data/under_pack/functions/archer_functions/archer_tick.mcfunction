@@ -16,7 +16,8 @@ execute as @e[nbt={Color:16719871}] run data merge entity @s {damage:1.3d}
 execute as @e[nbt={Color:16719871}] run function under_pack:archer_functions/archer_light_speed
 
 #grapple
-execute as @s at @s run function under_pack:archer_functions/archer_grapple
+execute as @s[team=uRed] at @s run function under_pack:archer_functions/archer_grapple_red
+execute as @s[team=uBlue] at @s run function under_pack:archer_functions/archer_grapple_blue
 #grapple cooldown
 execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{archergrapple:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:lead"},{Slot:2b}]}] run scoreboard players set @s ability3 0
 execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{archergrapple:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:lead"},{Slot:2b}]}] run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 12

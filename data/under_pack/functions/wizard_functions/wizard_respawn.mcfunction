@@ -4,15 +4,15 @@ item replace entity @s[team=uBlue] hotbar.1 with snowball{display:{Name:'{"text"
 
 #multishot
 #expecto homoconversus
-item replace entity @s hotbar.2 with crossbow{display:{Name:'[{"text":"Expecto ","color":"light_purple"},{"text":"h","color":"red"},{"text":"o","color":"gold"},{"text":"m","color":"yellow"},{"text":"o","color":"green"},{"text":"c","color":"dark_aqua"},{"text":"o","color":"blue"},{"text":"n","color":"dark_purple"},{"text":"v","color":"red"},{"text":"e","color":"gold"},{"text":"r","color":"yellow"},{"text":"s","color":"green"},{"text":"u","color":"dark_aqua"},{"text":"s","color":"blue"}]'},ChargedProjectiles:[{id:"minecraft:firework_rocket",Count:1b},{id:"minecraft:firework_rocket",Count:1b},{id:"minecraft:firework_rocket",Count:1b}],Charged:1b,Unbreakable:1b} 1
+item replace entity @s hotbar.2 with crossbow{display:{Name:'[{"text":"Expecto ","color":"light_purple"},{"text":"h","color":"red"},{"text":"o","color":"gold"},{"text":"m","color":"yellow"},{"text":"o","color":"green"},{"text":"c","color":"dark_aqua"},{"text":"o","color":"blue"},{"text":"n","color":"dark_purple"},{"text":"v","color":"red"},{"text":"e","color":"gold"},{"text":"r","color":"yellow"},{"text":"s","color":"green"},{"text":"u","color":"dark_aqua"},{"text":"s","color":"blue"}]'},Unbreakable:1b,ChargedProjectiles:[{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:1,Colors:[I;16711680]},{Type:1,Colors:[I;16768256]},{Type:1,Colors:[I;4521728]},{Type:1,Colors:[I;255]},{Type:1,Colors:[I;16711918]}]}}},{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:1,Colors:[I;16711680]},{Type:1,Colors:[I;16768256]},{Type:1,Colors:[I;4521728]},{Type:1,Colors:[I;255]},{Type:1,Colors:[I;16711918]}]}}},{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Explosions:[{Type:1,Colors:[I;16711680]},{Type:1,Colors:[I;16768256]},{Type:1,Colors:[I;4521728]},{Type:1,Colors:[I;255]},{Type:1,Colors:[I;16711918]}]}}}],Charged:1b} 1
 
 #evoker fang shot
 #the claws of rach'ivalishize
-item replace entity @s hotbar.3 with crossbow{display:{Name:'{"text":"The Claws of Rach\'ivalishize","color":"dark_green"}'},Unbreakable:1b,ChargedProjectiles:[{id:"minecraft:firework_rocket",Count:1b},{},{}],Charged:1b} 1
+item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"The Claws of Rach\'ivalishize","color":"dark_green"}'},Unbreakable:1b,wizardClaws:1b} 1
 
 #healing shot
 #incolumitas
-item replace entity @s hotbar.4 with crossbow{display:{Name:'{"text":"Incolumitas","color":"yellow"}'},Unbreakable:1b,ChargedProjectiles:[{id:"minecraft:firework_rocket",Count:1b},{},{}],Charged:1b} 1
+item replace entity @s hotbar.4 with crossbow{display:{Name:'{"text":"Incolumitas","color":"yellow"}'},Unbreakable:1b,ChargedProjectiles:[{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:2b,Explosions:[{Type:1,Trail:1b,Colors:[I;16776960]}]}}},{},{}],Charged:1b} 1
 
 #ability cooldowns
 scoreboard players set @s movement 0

@@ -3,6 +3,10 @@ execute if score @s wizardCrossbow matches 1.. run function under_pack:wizard_fu
 scoreboard players set @s wizardCrossbow 0
 
 #detect carrot on stick
+execute as @s[nbt={Inventory:[{Slot:3b,tag:{wizardClaws:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardClaws:1b}}},scores={reset=1..}] if score @s ability2 matches 300.. at @s anchored feet positioned ^ ^ ^ anchored feet run function under_pack:wizard_functions/wizard_claws
+
+#detect healing firework
+function under_pack:wizard_functions/wizard_heal_tick
 
 #detect snowball
 execute as @s[team=uRed] if entity @e[type=snowball,nbt={Item:{tag:{wizardFireball:1b,red:1b}}}] at @s run function under_pack:wizard_functions/wizard_fireball_red
@@ -12,7 +16,7 @@ execute as @s[team=uBlue] if entity @e[type=snowball,nbt={Item:{tag:{wizardFireb
 scoreboard players reset @s reset
 
 #replace the firework
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:firework_rocket"},{Slot:-106b}]}] run item replace entity @s weapon.offhand with firework_rocket{display:{Name:'{"text":"Abyssal Voidwrath","color":"black","bold":true,"italic":true,"underlined":true}',Lore:['{"text":"imbued with the power of the abyss"}']},Fireworks:{Flight:1b,Explosions:[{Type:2,Flicker:1b,Colors:[I;0,0]}]}} 1
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:firework_rocket"},{Slot:-106b}]}] run item replace entity @s weapon.offhand with firework_rocket{display:{Name:'{"text":"Abyssal Voidwrath","color":"black","bold":true,"italic":true,"underlined":true}',Lore:['{"text":"imbued with the power of the abyss"}']},Fireworks:{Flight:1b,Explosions:[{Type:2,Flicker:1b,Colors:[I;0]},{Type:2,Flicker:1b,Colors:[I;0]}]}} 1
 
 #fireball set its velo
 execute as @e[type=fireball,tag=!fireballMoved,tag=redWizardFireball] at @s rotated as @p[team=uRed] run function under_pack:wizard_functions/wizard_fireball_velo

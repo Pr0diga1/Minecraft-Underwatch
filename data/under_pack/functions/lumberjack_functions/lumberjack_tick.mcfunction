@@ -13,7 +13,7 @@ execute if entity @s[team=uRed] if score @s lumberjack_sweep matches 1 run kill 
 execute if entity @s[team=uRed] if score @s lumberjack_sweep matches 1.. run scoreboard players remove @s lumberjack_sweep 1
 
 execute if entity @s[team=uBlue] if score @s lumberjack_sweep matches 1..12 as @e[tag=lumberaxemove,tag=blue] at @s run tp @s ^ ^ ^.5
-execute if entity @s[team=uBlue] at @e[tag=lumberaxemove,tag=blue] as @a[distance=..2,tag=!arrowed,team=!uBlue] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:1.9d,Motion:[0.0,-5.0,0.0],Tags:["lumbersweeparrow","blue"]}
+execute if entity @s[team=uBlue] at @e[tag=lumberaxemove,tag=blue] as @a[distance=..2,tag=!arrowed,team=!uBlue] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:1.6d,Motion:[0.0,-5.0,0.0],Tags:["lumbersweeparrow","blue"]}
 execute if entity @s[team=uBlue] at @e[tag=lumberaxemove,tag=blue] as @a[distance=..2] run tag @s add arrowed
 execute if entity @s[team=uBlue] at @e[tag=lumberaxemove,tag=blue] as @a[distance=2..] run tag @s remove arrowed
 execute if entity @s[team=uBlue] at @s run data modify entity @e[limit=1,sort=nearest,tag=lumbersweeparrow,tag=blue] Owner set from entity @s UUID

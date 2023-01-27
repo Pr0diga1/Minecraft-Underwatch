@@ -1,6 +1,10 @@
 #each player runs their class's tick function as long as they are not respawning or in their spawnpoint
 execute as @a[tag=gazebo] unless entity @s[tag=gazebo_dead] unless entity @s[x=617,y=43,z=-12,dx=14,dz=8,dy=5] unless entity @s[x=533,y=43,z=-5,dx=-14,dz=-8,dy=5] run function under_pack:general_functions/general_classloop
 
+#is a player on point
+execute as @a[tag=gazebo] if entity @s[x=571,y=43,z=-13,dx=9,dy=2,dz=9,tag=gazebo,gamemode=adventure] run scoreboard players set @s onPoint 1
+execute as @a[tag=gazebo] unless entity @s[x=571,y=43,z=-13,dx=9,dy=2,dz=9,tag=gazebo,gamemode=adventure] run scoreboard players set @s onPoint 0
+
 #sets a buffer to whoever has control of the point
 scoreboard players operation gazeboBuffer team = gazebo team
 #updates the point for the tick

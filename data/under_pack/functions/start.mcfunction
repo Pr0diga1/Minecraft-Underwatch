@@ -71,6 +71,9 @@ scoreboard objectives add buffer dummy
 #arrow death timer
 scoreboard objectives add arrowTimer dummy
 
+#Is player on point
+scoreboard objectives add onPoint dummy
+
 #add the reset
 scoreboard objectives add reset minecraft.used:minecraft.carrot_on_a_stick
 
@@ -88,6 +91,7 @@ scoreboard players set TheNumberTen constant 10
 scoreboard players set TheNumberFive constant 5
 scoreboard players set TheNumberThree constant 3
 scoreboard players set TheNumberTwo constant 2
+scoreboard players set TheNumberZero constant 0
 scoreboard players set everyOther constant 1
 scoreboard players set minusOne constant -1
 
@@ -185,3 +189,5 @@ scoreboard objectives add hitByFreeze dummy
 
 #wizard
 scoreboard objectives add wizardCrossbow minecraft.used:minecraft.crossbow
+scoreboard objectives add wizardDistance dummy
+scoreboard objectives add wizardHit dummy
