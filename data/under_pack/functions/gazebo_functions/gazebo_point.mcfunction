@@ -1,6 +1,6 @@
 #finds the amount of players on the point for each team and stores it
-execute store result score on_point_gazebo_red player_num if entity @a[x=571,y=43,z=-13,dx=9,dy=2,dz=9,team=uRed,tag=gazebo,gamemode=adventure]
-execute store result score on_point_gazebo_blue player_num if entity @a[x=571,y=43,z=-13,dx=9,dy=2,dz=9,team=uBlue,tag=gazebo,gamemode=adventure]
+execute store result score on_point_gazebo_red player_num if entity @a[x=571,y=43,z=-13,dx=9,dy=2,dz=9,team=uRed,tag=gazebo,gamemode=adventure,scores={cantCap=0}]
+execute store result score on_point_gazebo_blue player_num if entity @a[x=571,y=43,z=-13,dx=9,dy=2,dz=9,team=uBlue,tag=gazebo,gamemode=adventure,scores={cantCap=0}]
 
 #if blue team is on the point and red team isn't, update the point's value
 #if a blue person, but not a red one is on the point and the point is at 1, just set it to zero

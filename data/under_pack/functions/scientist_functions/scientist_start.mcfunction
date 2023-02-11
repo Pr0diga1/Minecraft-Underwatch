@@ -31,6 +31,5 @@ scoreboard players set @s scientistBowFired 2
 scoreboard players set @s scientistBowFired2 0
 
 
-#removes xp
-experience set @s 0 levels
-experience set @s 0 points
+#run the class select
+function under_pack:general_functions/general_character_select

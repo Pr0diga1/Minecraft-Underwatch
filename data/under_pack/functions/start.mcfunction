@@ -73,6 +73,7 @@ scoreboard objectives add arrowTimer dummy
 
 #Is player on point
 scoreboard objectives add onPoint dummy
+scoreboard objectives add cantCap dummy
 
 #add the reset
 scoreboard objectives add reset minecraft.used:minecraft.carrot_on_a_stick

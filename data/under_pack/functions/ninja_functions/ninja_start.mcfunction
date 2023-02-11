@@ -18,6 +18,6 @@ scoreboard players set @s ability1 159
 scoreboard players set @s ability2 139
 scoreboard players set @s ability3 299
 
-#removes xp
-experience set @s 0 levels
-experience set @s 0 points
+
+#run the class select
+function under_pack:general_functions/general_character_select

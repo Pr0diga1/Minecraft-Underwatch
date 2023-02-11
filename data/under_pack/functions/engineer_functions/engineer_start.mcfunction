@@ -23,6 +23,6 @@ scoreboard players set @s engineer_ult 0
 
 #makes sure that the ult can activate
 scoreboard players set @s engineer_ult 0
-#removes xp
-experience set @s 0 levels
-experience set @s 0 points
+
+#run the class select
+function under_pack:general_functions/general_character_select
