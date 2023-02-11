@@ -12,6 +12,6 @@ item replace entity @s armor.chest with diamond_chestplate{Unbreakable:1b}
 item replace entity @s armor.legs with iron_leggings{Unbreakable:1b}
 item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s}]}
 
-#removes xp
-experience set @s 0 levels
-experience set @s 0 points
+
+#run the class select
+function under_pack:general_functions/general_character_select

@@ -12,7 +12,5 @@ item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantmen
 item replace entity @s armor.legs with leather_leggings{Unbreakable:true}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:true}
 
-
-#removes xp
-experience set @s 0 levels
-experience set @s 0 points
+#run the class select
+function under_pack:general_functions/general_character_select

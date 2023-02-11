@@ -13,3 +13,6 @@ item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"F
 scoreboard players set @s ability1 0
 scoreboard players set @s ability2 0
 scoreboard players set @s ability3 0
+
+#run the class select
+function under_pack:general_functions/general_character_select

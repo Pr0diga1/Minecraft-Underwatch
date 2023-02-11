@@ -8,6 +8,6 @@ item replace entity @s armor.feet with leather_boots{Unbreakable:1b}
 item replace entity @s armor.legs with leather_leggings{Unbreakable:1b}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:1b}
 
-#removes xp
-experience set @s 0 levels
-experience set @s 0 points
+
+#run the class select
+function under_pack:general_functions/general_character_select
