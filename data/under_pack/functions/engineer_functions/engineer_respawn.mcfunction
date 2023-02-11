@@ -18,3 +18,10 @@ execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with snowba
 item replace entity @s hotbar.4 with carrot_on_a_stick{display:{Name:'{"text":"WD-40","color":"dark_blue"}'},engineslip:1b} 1
 #wall
 item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"Cardboard and Duct Tape","color":"gold"}'},enginewall:1b} 1
+#capacitor
+scoreboard players set @s engineercap 0
+execute if entity @s[team=uRed] run kill @e[tag=enginecap,tag=red]
+execute if entity @s[team=uRed] run tag @a[team=uBlue] remove capped
+
+execute if entity @s[team=uBlue] run kill @e[tag=enginecap,tag=blue]
+execute if entity @s[team=uBlue] run tag @a[team=uRed] remove capped
