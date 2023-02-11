@@ -57,26 +57,3 @@ execute if entity @s[tag=telepot_cooldown] run scoreboard players add @s movemen
 item modify entity @s[tag=telepot_cooldown] hotbar.2 under_pack:alchemist/telepot_cooldown
 execute if score @s movement matches 101.. unless entity @s[tag=!telepot_cooldown] run item replace entity @s hotbar.2 with splash_potion{display:{Name:'{"text":"Telepot","color":"#8753E0","bold":true,"italic":false}'},CustomModelData:1,telepot:1b,CustomPotionColor:16777215} 1
 execute if score @s movement matches 101.. unless entity @s[tag=!telepot_cooldown] run tag @s remove telepot_cooldown
-
-## Ult commands
-# Ult tracking
-execute if score @s alchemistUltActive matches 0 run function under_pack:alchemist_functions/alchemist_ult_track
-# Ult assigns stuff
-execute as @e[type=potion,nbt={Item:{tag:{alchUlt:1b}}}] run tag @s add mustard_gas
-execute if entity @s[team=uBlue] run tag @e[type=potion,tag=mustard_gas,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uBlue
-execute if entity @s[team=uRed] run tag @e[type=potion,tag=mustard_gas,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uRed
-# Ult find player
-execute as @e[type=potion,tag=mustard_gas,tag=uBlue] at @s run tag @a[sort=nearest,limit=1,team=uBlue] add mustard_gas
-execute as @e[type=potion,tag=mustard_gas,tag=uRed] at @s run tag @a[sort=nearest,limit=1,team=uRed] add mustard_gas
-# Runs ult tick
-execute if entity @e[type=potion,tag=mustard_gas,tag=uBlue] run function under_pack:alchemist_functions/alchemist_ult_tick_blue
-execute if entity @e[type=potion,tag=mustard_gas,tag=uRed] run function under_pack:alchemist_functions/alchemist_ult_tick_red
-# Checks for ult landing
-execute if entity @s[tag=mustard_gas] unless entity @e[type=potion,tag=mustard_gas] run function under_pack:alchemist_functions/alchemist_ult
-# Ult potion tick
-execute as @e[tag=mustard_gas,type=marker] at @s run function under_pack:alchemist_functions/ult_tick
-
-# Reset reset
-scoreboard players set @s reset 0
-# Add to tick tracker
-scoreboard players add @s ultTicks 1

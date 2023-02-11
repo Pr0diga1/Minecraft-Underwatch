@@ -20,25 +20,3 @@ execute as @s[team=uRed] run kill @e[type=potion,tag=telepot,tag=uRed]
 execute as @s[team=uBlue] run kill @e[type=potion,tag=telepot,tag=uBlue]
 tag @s remove telepot
 tag @s remove healing
-
-## Ult stuff
-#ult charge
-scoreboard players set @s ultKills 0
-scoreboard players set @s ultKillsBuffer 0
-scoreboard players set @s ultTicks 0
-scoreboard players set @s ultDamage 0
-scoreboard players set @s ultCharge 0
-
-#removes xp
-experience set @s 0 levels
-experience set @s 0 points
-
-#ult
-scoreboard players set @s alchemistUltActive 0
-scoreboard players set @s alchemistUltTiming 0
-
-#constants for ult charge
-scoreboard players set alchemistUltKills modifier 600
-#ULT PERCENT IS ULT GOAL /100
-scoreboard players set alchemistUltPercent modifier 40
-#goal is 3000
