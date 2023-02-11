@@ -6,28 +6,10 @@ item replace entity @s hotbar.0 with netherite_sword{display:{Name:'{"text":"Net
 item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Invisibility Cloak","color":"#555755","bold":true,"italic":false}'},Unbreakable:1b,CustomModelData:30,cloak:1b} 1
 # Pocket sand
 item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"Pocket Sand","color":"#A8A85D","bold":true,"italic":false}'},Unbreakable:1b,CustomModelData:31,pocketSand:1b} 1
+# Swap
 
-## Ult stuff
-# Ult charge
-scoreboard players set @s ultKills 0
-scoreboard players set @s ultKillsBuffer 0
-scoreboard players set @s ultTicks 0
-scoreboard players set @s ultDamage 0
-scoreboard players set @s ultCharge 0
-# Removes xp
-experience set @s 0 levels
-experience set @s 0 points
-# Ult on scores
-scoreboard players set @s rogueUltActive 0
-scoreboard players set @s rogueUltTiming 0
 
 # Ability scores
 scoreboard players set @s ability1 0
 scoreboard players set @s ability2 0
-
-## Ult Config
-# Constants for ult charge
-scoreboard players set rogueUltKills modifier 600
-# ULT PERCENT IS ULT GOAL /100
-scoreboard players set rogueUltPercent modifier 50
-#goal is 5000
+scoreboard players set @s ability3 0
