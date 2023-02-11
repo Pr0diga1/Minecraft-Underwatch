@@ -7,7 +7,7 @@ item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"I
 # Pocket sand
 item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"Pocket Sand","color":"#A8A85D","bold":true,"italic":false}'},Unbreakable:1b,CustomModelData:31,pocketSand:1b} 1
 # Swap
-
+item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"Friend Swap","color":"dark_purple","bold":true,"italic":false}'},Unbreakable:1b,CustomModelData:26,swap:1b} 1
 
 # Ability scores
 scoreboard players set @s ability1 0

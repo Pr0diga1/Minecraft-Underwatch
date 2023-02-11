@@ -1,7 +1,7 @@
 [
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:40}",
+		"tag": "{CustomModelData:49}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -14,7 +14,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:41}",
+		"tag": "{CustomModelData:50}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -27,7 +27,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:42}",
+		"tag": "{CustomModelData:51}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -40,7 +40,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:43}",
+		"tag": "{CustomModelData:52}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -53,7 +53,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:44}",
+		"tag": "{CustomModelData:53}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -66,7 +66,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:45}",
+		"tag": "{CustomModelData:54}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -79,7 +79,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:46}",
+		"tag": "{CustomModelData:55}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -92,7 +92,7 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:47}",
+		"tag": "{CustomModelData:56}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
@@ -105,13 +105,26 @@
 	},
     {
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:48}",
+		"tag": "{CustomModelData:57}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
 					"ability2": 31
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_nbt",
+		"tag": "{CustomModelData:58}",
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 11
 				}
 			}
 		]
