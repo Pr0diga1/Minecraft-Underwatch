@@ -24,18 +24,7 @@ execute if score @s ability4 matches ..220 run scoreboard players add @s ability
 execute if score @s ability4 matches 220 run item replace entity @s hotbar.4 with carrot_on_a_stick{display:{Name:'{"text":"WD-40","color":"dark_blue"}'},engineslip:1b} 1
 
 function under_pack:engineer_functions/engineer_cooldown
-
-#ult detection
-execute if entity @s[team=uRed] if entity @e[nbt={Item:{tag:{enginegrav:1b,red:1b}}}] run function under_pack:engineer_functions/engineer_ult
-execute if entity @s[team=uRed] if entity @e[tag=enginehole,tag=red] unless entity @e[nbt={Item:{tag:{enginegrav:1b,red:1b}}}] run function under_pack:engineer_functions/engineer_ult
-
-execute if entity @s[team=uBlue] if entity @e[nbt={Item:{tag:{enginegrav:1b,blue:1b}}}] run function under_pack:engineer_functions/engineer_ult
-execute if entity @s[team=uBlue] if entity @e[tag=enginehole,tag=blue] unless entity @e[nbt={Item:{tag:{enginegrav:1b,blue:1b}}}] run function under_pack:engineer_functions/engineer_ult
-
 #set arrow damage
 execute as @e[type=arrow,nbt={Color:16777001}] run data merge entity @s {damage:1.50d}
 
 scoreboard players reset @s reset
-
-scoreboard players add @s ultTicks 1
-function under_pack:engineer_functions/engineer_ult_track

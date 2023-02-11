@@ -1,5 +1,3 @@
-#ult carrot detection
-execute if entity @s[nbt={Inventory:[{Slot:8b,tag:{archerult:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{archerult:1b}}},scores={reset=1..}] run function under_pack:archer_functions/archer_ult
 #heavy arrow reload
 execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{archerheavy:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:chainmail_chestplate"},{Slot:0b}]}] run scoreboard players set @s ability1 25
 execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{archerheavy:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:chainmail_chestplate"},{Slot:0b}]}] run item replace entity @s hotbar.0 with chainmail_chestplate{Damage:240}
@@ -23,13 +21,5 @@ execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{archergrapple:1b}}]}] unl
 execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{archergrapple:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:lead"},{Slot:2b}]}] run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 12
 execute if score @s ability3 matches ..240 run scoreboard players add @s ability3 1
 execute if score @s ability3 matches 240 run item replace entity @s hotbar.2 with tipped_arrow{display:{Name:'{"text":"Grapple Shot","color":"#009900","bold":true}'},archergrapple:1b,CustomPotionColor:39168,Potion:"minecraft:empty"} 1
-
-#ult
-execute if score @s archerultactive matches 1..100 run item replace entity @s hotbar.8 with crossbow{display:{Name:'{"text":"Machine Gun","color":"black"}'},HideFlags:5,Unbreakable:1b,Enchantments:[{id:"minecraft:quick_charge",lvl:10s}],ChargedProjectiles:[{id:"minecraft:arrow",Count:1b},{},{}],Charged:1b} 1
-execute if score @s archerultactive matches 1 run item replace entity @s hotbar.8 with air
-execute if score @s archerultactive matches 1..100 run scoreboard players remove @s archerultactive 1
-
-function under_pack:archer_functions/archer_ult_charge
-scoreboard players add @s ultTicks 1
 
 function under_pack:archer_functions/archer_cooldown

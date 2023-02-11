@@ -11,15 +11,3 @@ item replace entity @s armor.chest with iron_chestplate{Unbreakable:1b}
 #removes xp
 experience set @s 0 levels
 experience set @s 0 points
-
-#ult charge
-scoreboard players set @s ultKills 0
-scoreboard players set @s ultKillsBuffer 0
-scoreboard players set @s ultTicks 0
-scoreboard players set @s ultDamage 0
-scoreboard players set @s ultCharge 0
-#constants for ult charge
-scoreboard players set archerUltKills modifier 600
-#ULT PERCENT IS ULT GOAL /100
-scoreboard players set archerUltPercent modifier 45
-#goal is 4500

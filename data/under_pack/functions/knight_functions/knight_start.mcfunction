@@ -15,16 +15,3 @@ item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{
 #removes xp
 experience set @s 0 levels
 experience set @s 0 points
-
-#ult charge
-scoreboard players set @s ultKills 0
-scoreboard players set @s ultKillsBuffer 0
-scoreboard players set @s ultTicks 0
-scoreboard players set @s ultDamage 0
-scoreboard players set @s ultCharge 0
-
-#constants for ult charge
-scoreboard players set knightUltKills modifier 600
-#ULT PERCENT IS ULT GOAL /100
-scoreboard players set knightUltPercent modifier 45
- 

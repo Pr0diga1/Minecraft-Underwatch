@@ -27,15 +27,5 @@ title @s actionbar ["",{"score":{"name":"@s","objective":"shieldStatus"},"color"
 #cooldowns
 function under_pack:paladin_functions/paladin_cooldown
 
-#ult
-execute if score @s paladinUltActive matches 1 run scoreboard players remove @s paladinUltTiming 1
-scoreboard players operation @s paladinUltTimingBuffer = @s paladinUltTiming
-scoreboard players operation @s paladinUltTimingBuffer %= TheNumberFive constant
-
-execute if score @s paladinUltActive matches 1 if score @s paladinUltTimingBuffer matches 0 at @s run function under_pack:paladin_functions/paladin_ult_tick
-
-#ult charge
-execute if score @s paladinUltActive matches 0 run function under_pack:paladin_functions/paladin_ult_charge
-
 #is player blocking for the next tick
 scoreboard players set @s paladinIsBlocking 0

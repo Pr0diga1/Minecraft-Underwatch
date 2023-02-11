@@ -28,20 +28,3 @@ scoreboard players set @s ability2 239
 #removes xp
 experience set @s 0 levels
 experience set @s 0 points
-
-#ult charge
-scoreboard players set @s ultKills 0
-scoreboard players set @s ultKillsBuffer 0
-scoreboard players set @s ultTicks 0
-scoreboard players set @s ultDamage 0
-scoreboard players set @s ultCharge 0
-
-#ult
-scoreboard players set @s paladinUltActive 0
-scoreboard players set @s paladinUltTiming 0
-
-#constants for ult charge
-scoreboard players set paladinUltKills modifier 800
-#ULT PERCENT IS ULT GOAL /100
-scoreboard players set paladinUltPercent modifier 40
-#goal is 4500

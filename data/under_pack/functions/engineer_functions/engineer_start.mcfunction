@@ -26,16 +26,3 @@ scoreboard players set @s engineer_ult 0
 #removes xp
 experience set @s 0 levels
 experience set @s 0 points
-
-#ult charge
-scoreboard players set @s ultKills 0
-scoreboard players set @s ultKillsBuffer 0
-scoreboard players set @s ultTicks 0
-scoreboard players set @s ultDamage 0
-scoreboard players set @s ultCharge 0
-
-#constants for ult charge
-scoreboard players set engineerUltKills modifier 800
-#ULT PERCENT IS ULT GOAL /100
-scoreboard players set engineerUltPercent modifier 42
-#goal is 4200
