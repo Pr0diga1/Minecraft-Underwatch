@@ -30,3 +30,4 @@ execute if score @s ability4 matches 180 run item replace entity @s hotbar.4 wit
 execute if score @s ability4 matches 200 run item replace entity @s hotbar.4 with tube_coral{display:{Name:'{"text":"WD-40 on Cooldown"}'}} 1
 
 
+#who ever coded this is stupid
