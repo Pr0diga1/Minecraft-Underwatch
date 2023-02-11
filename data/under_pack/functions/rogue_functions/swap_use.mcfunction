@@ -20,3 +20,5 @@ execute if entity @s[team=uBlue] run tag @a[tag=target,team=uRed] remove target
 # Cooldown init
 item replace entity @s hotbar.3 with barrier{CustomModelData:9}
 scoreboard players set @s ability3 201
+
+scoreboard players reset @s reset
