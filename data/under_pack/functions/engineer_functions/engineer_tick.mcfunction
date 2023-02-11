@@ -23,6 +23,19 @@ execute if score @s ability3 matches 180 run item replace entity @s hotbar.3 wit
 execute if score @s ability4 matches ..220 run scoreboard players add @s ability4 1 
 execute if score @s ability4 matches 220 run item replace entity @s hotbar.4 with carrot_on_a_stick{display:{Name:'{"text":"WD-40","color":"dark_blue"}'},engineslip:1b} 1
 
+#capicitor chestpate
+#capicitor damage tracking
+execute if score @s engineerdamage matches 1..20 run scoreboard players add @s engineercap 7
+execute if score @s engineerdamage matches 21..40 run scoreboard players add @s engineercap 14
+execute if score @s engineerdamage matches 41..59 run scoreboard players add @s engineercap 17
+execute if score @s engineerdamage matches 60.. run scoreboard players add @s engineercap 20
+scoreboard players set @s engineerdamage 0
+
+execute if score @s engineercap matches 100 as @s run function under_pack:engineer_functions/engineer_capacitor
+
+#capcitor explotion tick
+
+
 function under_pack:engineer_functions/engineer_cooldown
 #set arrow damage
 execute as @e[type=arrow,nbt={Color:16777001}] run data merge entity @s {damage:1.50d}

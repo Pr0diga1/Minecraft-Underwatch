@@ -140,6 +140,8 @@ scoreboard objectives add archerultactive dummy
 #engineer
 scoreboard objectives add engineer_wd dummy
 scoreboard objectives add engineer_ult dummy
+scoreboard objectives add engineerdamage minecraft.custom:damage_dealt
+scoreboard objectives add engineercap dummy
 
 #knight
 scoreboard objectives add blockIsActive dummy
