@@ -20,7 +20,7 @@ item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"T
 
 #healing shot
 #incolumitas
-item replace entity @s hotbar.4 with crossbow{display:{Name:'{"text":"Incolumitas","color":"yellow"}'},Unbreakable:1b,ChargedProjectiles:[{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:2b,Explosions:[{Type:1,Trail:1b,Colors:[I;16776960]}]}}},{},{}],Charged:1b} 1
+#item replace entity @s hotbar.4 with crossbow{display:{Name:'{"text":"Incolumitas","color":"yellow"}'},Unbreakable:1b,ChargedProjectiles:[{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:2b,Explosions:[{Type:1,Trail:1b,Colors:[I;16776960]}]}}},{},{}],Charged:1b} 1
 
 #armor
 item replace entity @s armor.head with leather_helmet{display:{color:16777215},Unbreakable:1b} 1

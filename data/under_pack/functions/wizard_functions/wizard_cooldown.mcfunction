@@ -22,4 +22,4 @@ execute if score @s ability2 matches 300 run item replace entity @s hotbar.3 wit
 
 #healing
 execute if score @s ability3 matches ..180 run scoreboard players add @s ability3 1
-execute if score @s ability3 matches 180 run item replace entity @s hotbar.4 with crossbow{display:{Name:'{"text":"Incolumitas","color":"yellow"}'},Unbreakable:1b,ChargedProjectiles:[{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:2b,Explosions:[{Type:1,Trail:1b,Colors:[I;16776960]}]}}},{},{}],Charged:1b} 1
+#execute if score @s ability3 matches 180 run item replace entity @s hotbar.4 with crossbow{display:{Name:'{"text":"Incolumitas","color":"yellow"}'},Unbreakable:1b,ChargedProjectiles:[{id:"minecraft:firework_rocket",Count:1b,tag:{Fireworks:{Flight:2b,Explosions:[{Type:1,Trail:1b,Colors:[I;16776960]}]}}},{},{}],Charged:1b} 1
