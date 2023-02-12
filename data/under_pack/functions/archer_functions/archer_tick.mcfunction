@@ -1,5 +1,5 @@
 #carrot on stick
-execute as @s[nbt={Inventory:[{Slot:2b,tag:{archerBackstep:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{archerBackstep:1b}}},scores={reset=1..}] if score @s ability3 matches 160.. run function under_pack:archer_functions/archer_backstep
+execute as @s[nbt={Inventory:[{Slot:2b,tag:{archerBackstep:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{archerBackstep:1b}}},scores={reset=1..}] if score @s ability3 matches 140.. run function under_pack:archer_functions/archer_backstep
 
 #heavy arrow reload
 execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{archerheavy:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:chainmail_chestplate"},{Slot:0b}]}] run scoreboard players set @s ability1 60
