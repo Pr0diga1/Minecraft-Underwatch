@@ -22,3 +22,8 @@ execute as @a[tag=t1,tag=!ungame] run team join redTemp
 execute as @a[tag=t2,tag=!ungame] run team join blueTemp
 effect give @a[team=redTemp] glowing 1
 effect give @a[team=blueTemp] glowing 1
+
+#join gazebo button
+execute as @a unless entity @s[tag=gazebo] run item replace entity @s hotbar.8 with carrot_on_a_stick{display:{Name:'{"text":"Gazebo Join Button"}'},gazebobutton:1b} 1
+execute as @a if entity @s[nbt={Inventory:[{Slot:8b,tag:{gazebobutton:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{gazebobutton:1b}}},scores={reset=1..}] run trigger gazebo
+scoreboard players set @s reset 0

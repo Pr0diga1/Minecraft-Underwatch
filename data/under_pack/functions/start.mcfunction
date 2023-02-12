@@ -144,6 +144,7 @@ scoreboard objectives add engineer_wd dummy
 scoreboard objectives add engineer_ult dummy
 scoreboard objectives add engineerdamage minecraft.custom:damage_dealt
 scoreboard objectives add engineercap dummy
+scoreboard objectives add engineertimer dummy
 
 #knight
 scoreboard objectives add blockIsActive dummy
