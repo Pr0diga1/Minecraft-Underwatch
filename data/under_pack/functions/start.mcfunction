@@ -137,6 +137,7 @@ scoreboard objectives add alchemistUltTimingBuffer dummy
 
 #archer
 scoreboard objectives add archerultactive dummy
+scoreboard objectives add archerRay dummy
 
 #engineer
 scoreboard objectives add engineer_wd dummy
