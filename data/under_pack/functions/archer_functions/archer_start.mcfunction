@@ -11,7 +11,7 @@ item replace entity @s armor.chest with iron_chestplate{Unbreakable:1b}
 
 scoreboard players set @s ability1 1
 scoreboard players set @s ability2 1
-scoreboard players set @s ability3 159
+scoreboard players set @s ability3 139
 
 #run the class select
 function under_pack:general_functions/general_character_select
