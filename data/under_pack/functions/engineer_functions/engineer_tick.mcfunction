@@ -30,11 +30,18 @@ execute if score @s engineerdamage matches 21..40 run scoreboard players add @s 
 execute if score @s engineerdamage matches 41..59 run scoreboard players add @s engineercap 17
 execute if score @s engineerdamage matches 60.. run scoreboard players add @s engineercap 20
 scoreboard players set @s engineerdamage 0
+execute if score @s engineercap matches 100.. as @s[scores={engineercap=100..}] at @s run function under_pack:engineer_functions/engineer_capacitor
+#capacitor explotion tick
+#execute if score @s movement matches 1..10 as @a[tag=capped] at @s run tp @s @e[tag=enginecap,sort=nearest,limit=1]
+execute if score @s[team=uRed] movement matches 1..10 as @e[tag=enginecap,tag=red] at @s run tp @a[tag=capped,limit=1,sort=nearest,team=uBlue] ~ ~ ~
+execute if score @s[team=uRed] movement matches 1..10 run scoreboard players remove @s movement 1
+execute if score @s[team=uRed] movement matches 0 run kill @e[tag=enginecap,tag=red]
+execute if score @s[team=uRed] movement matches 0 run tag @a[team=uBlue] remove capped
 
-execute if score @s engineercap matches 100 as @s run function under_pack:engineer_functions/engineer_capacitor
-
-#capcitor explotion tick
-
+execute if score @s[team=uBlue] movement matches 1..10 as @e[tag=enginecap,tag=blue] at @s run tp @a[tag=capped,limit=1,sort=nearest,team=uRed] ~ ~ ~
+execute if score @s[team=uBlue] movement matches 1..10 run scoreboard players remove @s movement 1
+execute if score @s[team=uBlue] movement matches 0 run kill @e[tag=enginecap,tag=blue]
+execute if score @s[team=uBlue] movement matches 0 run tag @a[team=uRed] remove capped
 
 function under_pack:engineer_functions/engineer_cooldown
 #set arrow damage
