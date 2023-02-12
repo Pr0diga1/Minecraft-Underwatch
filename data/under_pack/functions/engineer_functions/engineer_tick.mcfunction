@@ -29,7 +29,10 @@ execute if score @s engineerdamage matches 1..20 run scoreboard players add @s e
 execute if score @s engineerdamage matches 21..40 run scoreboard players add @s engineercap 14
 execute if score @s engineerdamage matches 41..59 run scoreboard players add @s engineercap 17
 execute if score @s engineerdamage matches 60.. run scoreboard players add @s engineercap 20
+execute if score @s engineerdamage matches 1.. run scoreboard players set @s engineertimer 200
 scoreboard players set @s engineerdamage 0
+execute if score @s engineertimer matches 1..200 run scoreboard players remove @s engineertimer 1
+execute if score @s engineertimer matches 0 if score @s engineercap matches 1.. run scoreboard players remove @s engineercap 1
 execute if score @s engineercap matches 100.. as @s[scores={engineercap=100..}] at @s run function under_pack:engineer_functions/engineer_capacitor
 #capacitor explotion tick
 #execute if score @s movement matches 1..10 as @a[tag=capped] at @s run tp @s @e[tag=enginecap,sort=nearest,limit=1]

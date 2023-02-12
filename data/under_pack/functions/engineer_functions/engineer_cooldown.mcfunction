@@ -30,4 +30,8 @@ execute if score @s ability4 matches 160 run item replace entity @s hotbar.4 wit
 execute if score @s ability4 matches 180 run item replace entity @s hotbar.4 with tube_coral{display:{Name:'{"text":"WD-40 on Cooldown"}'}} 2
 execute if score @s ability4 matches 200 run item replace entity @s hotbar.4 with tube_coral{display:{Name:'{"text":"WD-40 on Cooldown"}'}} 1
 
-
+execute if score @s engineercap matches 0..19 run item replace entity @s armor.chest with leather_chestplate{display:{color:16777215},Unbreakable:1b}
+execute if score @s engineercap matches 20..39 run item replace entity @s armor.chest with leather_chestplate{display:{color:9877247},Unbreakable:1b}
+execute if score @s engineercap matches 40..59 run item replace entity @s armor.chest with leather_chestplate{display:{color:7373823},Unbreakable:1b}
+execute if score @s engineercap matches 60..79 run item replace entity @s armor.chest with leather_chestplate{display:{color:3367935},Unbreakable:1b}
+execute if score @s engineercap matches 80.. run item replace entity @s armor.chest with leather_chestplate{display:{color:526591},Unbreakable:1b}
