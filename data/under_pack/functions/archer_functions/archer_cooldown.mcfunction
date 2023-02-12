@@ -1,18 +1,14 @@
-execute if score @s ability3 matches 20 run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 11
-execute if score @s ability3 matches 40 run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 10
-execute if score @s ability3 matches 60 run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 9
-execute if score @s ability3 matches 80 run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 8
-execute if score @s ability3 matches 100 run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 7
-execute if score @s ability3 matches 120 run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 6
-execute if score @s ability3 matches 140 run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 5
-execute if score @s ability3 matches 160 run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 4
-execute if score @s ability3 matches 180 run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 3
-execute if score @s ability3 matches 200 run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 2
-execute if score @s ability3 matches 220 run item replace entity @s hotbar.2 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 1
+#tallying for the Backstep
+execute if score @s ability3 matches ..160 run scoreboard players add @s ability3 1
+#intervals for the Backstep
+execute if score @s ability3 matches 0..1 run title @s actionbar ["",{"text":"Backstep available in: ","color":"dark_green"},{"text":"8","color":"gold"}]
+execute if score @s ability3 matches 20 run title @s actionbar ["",{"text":"Backstep available in: ","color":"dark_green"},{"text":"7","color":"gold"}]
+execute if score @s ability3 matches 40 run title @s actionbar ["",{"text":"Backstep available in: ","color":"dark_green"},{"text":"6","color":"gold"}]
+execute if score @s ability3 matches 60 run title @s actionbar ["",{"text":"Backstep available in: ","color":"dark_green"},{"text":"5","color":"gold"}]
+execute if score @s ability3 matches 80 run title @s actionbar ["",{"text":"Backstep available in: ","color":"dark_green"},{"text":"4","color":"gold"}]
+execute if score @s ability3 matches 100 run title @s actionbar ["",{"text":"Backstep available in: ","color":"dark_green"},{"text":"3","color":"gold"}]
+execute if score @s ability3 matches 120 run title @s actionbar ["",{"text":"Backstep available in: ","color":"dark_green"},{"text":"2","color":"gold"}]
+execute if score @s ability3 matches 140 run title @s actionbar ["",{"text":"Backstep available in: ","color":"dark_green"},{"text":"1","color":"gold"}]
+execute if score @s ability3 matches 160.. run title @s actionbar ["",{"text":"Backstep available ","color":"dark_green"},{"text":"now","color":"gold"}]
 
-execute if score @s archerultactive matches 1 run title @s actionbar ["",{"text":" ","color":"black"}] 
-execute if score @s archerultactive matches 20 run title @s actionbar ["",{"text":"Machine Gun: ","color":"black"},{"text":"1","color":"blue"}]
-execute if score @s archerultactive matches 40 run title @s actionbar ["",{"text":"Machine Gun: ","color":"black"},{"text":"2","color":"blue"}]
-execute if score @s archerultactive matches 60 run title @s actionbar ["",{"text":"Machine Gun: ","color":"black"},{"text":"3","color":"blue"}]
-execute if score @s archerultactive matches 80 run title @s actionbar ["",{"text":"Machine Gun: ","color":"black"},{"text":"4","color":"blue"}]
-
+execute if score @s ability3 matches 160 run item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"Backstep","color":"green"}'},archerBackstep:1b} 1
