@@ -30,8 +30,8 @@ execute as @s[team=uRed] as @e[type=marker,tag=redWizardSpellSmall] at @s run fu
 execute as @s[team=uBlue] as @e[type=marker,tag=blueWizardSpellSmall] at @s run function under_pack:wizard_functions/wizard_spell_small_tick
 
 #counts down for people who have been hit by spells
-execute as @s[team=uRed] run scoreboard players remove @a[scores={wizardBlueHit=1..}] wizardBlueHit 1
-execute as @s[team=uBlue] run scoreboard players remove @a[scores={wizardRedHit=1..}] wizardRedHit 1
+execute as @s[team=uBlue] run scoreboard players remove @a[scores={wizardBlueHit=1..}] wizardBlueHit 1
+execute as @s[team=uRed] run scoreboard players remove @a[scores={wizardRedHit=1..}] wizardRedHit 1
 
 #run the cooldown
 function under_pack:wizard_functions/wizard_cooldown

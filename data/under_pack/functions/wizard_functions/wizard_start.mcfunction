@@ -35,9 +35,5 @@ scoreboard players set @s wizardCrossbow 0
 #run the class select
 function under_pack:general_functions/general_character_select
 
-#reset the hit cooldown so players are eligible to be hit by spells
-scoreboard players set @a wizardRedHit 0
-scoreboard players set @a wizardBlueHit 0
-
 experience set @s 100 levels
 experience set @s 742 points
