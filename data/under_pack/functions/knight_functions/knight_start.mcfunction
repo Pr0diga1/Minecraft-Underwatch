@@ -1,7 +1,7 @@
 clear @s
 
 #sword/block
-item replace entity @s hotbar.0 with ender_eye{display:{Name:'{"text":"Reliquary Blade","color":"white"}',Lore:['{"text":"Only given to those worthy"}']},HideFlags:6,Unbreakable:1b,knightsword:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4.25,Operation:0,UUID:[I;-1659789565,1414549155,-1199815574,-438496725]},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3.2,Operation:0,UUID:[I;957298814,-795131512,-2008112315,-1424705865]}],CustomModelData:1} 2
+item replace entity @s hotbar.0 with ender_eye{display:{Name:'{"text":"Knightly Sword","color":"white"}',Lore:['{"text":"Only given to those worthy"}']},HideFlags:5,knightsword:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;1830644796,1135495493,-1953374725,900861682],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.9,Operation:0,UUID:[I;1787687604,386813173,-1856770668,-2070457650],Slot:"mainhand"}]} 1
 #self heal
 item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Selfish Prayer","color":"gold"}'},knightheal:1b,CustomModelData:44} 1
 #grenade
