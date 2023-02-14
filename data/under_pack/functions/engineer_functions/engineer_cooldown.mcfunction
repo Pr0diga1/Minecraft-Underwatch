@@ -4,11 +4,11 @@ execute if score @s ability1 matches 60 run item replace entity @s hotbar.1 with
 execute if score @s ability1 matches 80 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 2
 execute if score @s ability1 matches 100 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 1
 
-execute if score @s ability2 matches 0 run title @s actionbar ["",{"text":"Charge: ","color":"dark_red"},{"score":{"name":"@s","objective":"engineercap"},"color":"blue"}]
-execute if score @s ability2 matches 1..17 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"3","color":"gold"},{"text":"         Charge: ","color":"dark_red"},{"score":{"name":"@s","objective":"engineercap"},"color":"blue"}]
-execute if score @s ability2 matches 18..37 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"2","color":"gold"},{"text":"        Charge: ","color":"dark_red"},{"score":{"name":"@s","objective":"engineercap"},"color":"blue"}]
-execute if score @s ability2 matches 38..55 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"1","color":"gold"},{"text":"        Charge: ","color":"dark_red"},{"score":{"name":"@s","objective":"engineercap"},"color":"blue"}]
-execute if score @s ability2 matches 56 run title @s actionbar ["",{"text":"New Heal in: ","color":"blue"},{"text":"0","color":"gold"},{"text":"        Charge: ","color":"dark_red"},{"score":{"name":"@s","objective":"engineercap"},"color":"blue"}]
+execute if score @s ability2 matches 1..17 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"3","color":"gold"}]
+execute if score @s ability2 matches 18..37 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"2","color":"gold"}]
+execute if score @s ability2 matches 38..55 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"1","color":"gold"}]
+execute if score @s ability2 matches 56 run title @s actionbar ["",{"text":"New Heal in: ","color":"blue"},{"text":"0","color":"gold"}]
+execute if score @s ability2 matches 69 run title @s actionbar [{"text":"   "}]
 
 execute if score @s ability3 matches 20 run item replace entity @s hotbar.3 with light_blue_stained_glass{display:{Name:'{"text":"Wall on Cooldown"}'}} 8
 execute if score @s ability3 matches 40 run item replace entity @s hotbar.3 with light_blue_stained_glass{display:{Name:'{"text":"Wall on Cooldown"}'}} 7
@@ -35,3 +35,4 @@ execute if score @s engineercap matches 20..39 run item replace entity @s armor.
 execute if score @s engineercap matches 40..59 run item replace entity @s armor.chest with leather_chestplate{display:{color:7373823},Unbreakable:1b}
 execute if score @s engineercap matches 60..79 run item replace entity @s armor.chest with leather_chestplate{display:{color:3367935},Unbreakable:1b}
 execute if score @s engineercap matches 80.. run item replace entity @s armor.chest with leather_chestplate{display:{color:526591},Unbreakable:1b}
+execute if score @s engineercap matches 100.. run item replace entity @s armor.chest with leather_chestplate{display:{color:129},Unbreakable:1b}

@@ -25,15 +25,28 @@ execute if score @s ability4 matches 220 run item replace entity @s hotbar.4 wit
 
 #capicitor chestpate
 #capicitor damage tracking
-execute if score @s engineerdamage matches 1..20 run scoreboard players add @s engineercap 7
-execute if score @s engineerdamage matches 21..40 run scoreboard players add @s engineercap 14
-execute if score @s engineerdamage matches 41..59 run scoreboard players add @s engineercap 17
-execute if score @s engineerdamage matches 60.. run scoreboard players add @s engineercap 20
+execute unless score @s engineercap matches 100.. if score @s engineerdamage matches 1..20 run scoreboard players add @s engineercap 7
+execute unless score @s engineercap matches 100.. if score @s engineerdamage matches 21..40 run scoreboard players add @s engineercap 14
+execute unless score @s engineercap matches 100.. if score @s engineerdamage matches 41..59 run scoreboard players add @s engineercap 17
+execute unless score @s engineercap matches 100.. if score @s engineerdamage matches 60.. run scoreboard players add @s engineercap 20
+
+execute unless score @s engineercap matches 100.. if score @s engineerdamage matches 1..20 run experience add @s 7 levels
+execute unless score @s engineercap matches 100.. if score @s engineerdamage matches 21..40 run experience add @s 14 levels
+execute unless score @s engineercap matches 100.. if score @s engineerdamage matches 41..59 run experience add @s 17 levels
+execute unless score @s engineercap matches 100.. if score @s engineerdamage matches 60.. run experience add @s 20 levels
+
+execute if score @s engineercap matches 100 as @a[scores={engineercap=100}] run item replace entity @s hotbar.0 with iron_pickaxe{display:{Name:'{"text":"Squeeky Hammer","color":"light_purple","bold":true}',Lore:['{"text":"Purchased for a very reasonable price"}']},HideFlags:7,Tags:["enginepick"],Unbreakable:1b,Enchantments:[{}],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:3,Operation:0,UUID:[I;-1035938018,-874035943,-1955986239,264483589]},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.7,Operation:0,UUID:[I;-137348685,1976257155,-1258099771,939362343]}]} 1
+execute if score @s engineercap matches 100 if score @s engineerdamage matches 1.. as @a[scores={engineercap=100}] run function under_pack:engineer_functions/engineer_capacitor
+
+execute if score @s engineercap matches 101.. run experience set @s 100 levels
+execute if score @s engineercap matches 101.. run scoreboard players set @s engineercap 100
+
 execute if score @s engineerdamage matches 1.. run scoreboard players set @s engineertimer 200
 scoreboard players set @s engineerdamage 0
+
 execute if score @s engineertimer matches 1..200 run scoreboard players remove @s engineertimer 1
 execute if score @s engineertimer matches 0 if score @s engineercap matches 1.. run scoreboard players remove @s engineercap 1
-execute if score @s engineercap matches 100.. as @s[scores={engineercap=100..}] at @s run function under_pack:engineer_functions/engineer_capacitor
+execute if score @s engineertimer matches 0 if score @s engineercap matches 0.. run experience add @s -1 levels
 #capacitor explotion tick
 #execute if score @s movement matches 1..10 as @a[tag=capped] at @s run tp @s @e[tag=enginecap,sort=nearest,limit=1]
 execute if score @s[team=uRed] movement matches 1..10 as @e[tag=enginecap,tag=red] at @s run tp @a[tag=capped,limit=1,sort=nearest,team=uBlue] ~ ~ ~
