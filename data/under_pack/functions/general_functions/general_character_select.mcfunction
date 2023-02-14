@@ -2,5 +2,9 @@
 experience set @s 0 levels
 experience set @s 0 points
 
+#reset the hit cooldown so players are eligible to be hit by spells
+scoreboard players set @a wizardRedHit 0
+scoreboard players set @a wizardBlueHit 0
+
 #can cap on points
 scoreboard players set @s cantCap 0
