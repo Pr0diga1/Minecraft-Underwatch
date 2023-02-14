@@ -16,11 +16,6 @@ scoreboard players operation WizardFireballX2 buffer -= WizardFireballX1 buffer
 scoreboard players operation WizardFireballY2 buffer -= WizardFireballY1 buffer 
 scoreboard players operation WizardFireballZ2 buffer -= WizardFireballZ1 buffer 
 
-#set the new motion
-execute store result entity @s Motion[0] double 0.0002 run scoreboard players get WizardFireballX2 buffer
-execute store result entity @s Motion[1] double 0.0002 run scoreboard players get WizardFireballY2 buffer
-execute store result entity @s Motion[2] double 0.0002 run scoreboard players get WizardFireballZ2 buffer
-
 #set the new power
 execute store result entity @s power[0] double 0.0002 run scoreboard players get WizardFireballX2 buffer
 execute store result entity @s power[1] double 0.0002 run scoreboard players get WizardFireballY2 buffer

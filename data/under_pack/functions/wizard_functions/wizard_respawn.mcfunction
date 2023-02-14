@@ -18,4 +18,7 @@ item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"T
 scoreboard players set @s movement 0
 scoreboard players set @s ability1 299
 scoreboard players set @s ability2 299
-scoreboard players set @s ability3 179
+scoreboard players set @s ability3 50
+
+experience set @s 100 levels
+experience set @s 742 points

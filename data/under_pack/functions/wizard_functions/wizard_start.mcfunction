@@ -1,10 +1,7 @@
 clear @s
 
-#give the fireworks in offhand, there will always be one
-item replace entity @s weapon.offhand with firework_rocket{display:{Name:'{"text":"Abyssal Voidwrath","color":"black","bold":true,"italic":true,"underlined":true}',Lore:['{"text":"imbued with the power of the abyss"}']},Fireworks:{Flight:1b,Explosions:[{Type:2,Flicker:1b,Colors:[I;0]},{Type:2,Flicker:1b,Colors:[I;0]}]}} 1
-
 #give the crossbow
-item replace entity @s hotbar.0 with crossbow{Unbreakable:1b,display:{Name:'{"text":"Agicmay Andway","color":"light_purple","bold":true,"italic":true}',Lore:['{"text":"Crafted from the tree of Lofaktar"}']}} 1
+item replace entity @s hotbar.0 with carrot_on_a_stick{display:{Name:'{"text":"Agicmay Andway","color":"light_purple","bold":true,"italic":true}',Lore:['{"text":"Crafted from the tree of Lofaktar"}']},wizardWand:1b} 1
 
 #fireball
 item replace entity @s[team=uRed] hotbar.1 with snowball{display:{Name:'{"text":"Ignis Sphaerus","color":"gold","bold":true,"italic":true,"underlined":true}',Lore:['{"text":"It\'s wizard time"}']},wizardFireball:1b,red:1b} 3
@@ -32,8 +29,15 @@ item replace entity @s armor.feet with leather_boots{display:{color:16777215},Un
 scoreboard players set @s movement 0
 scoreboard players set @s ability1 299
 scoreboard players set @s ability2 299
-scoreboard players set @s ability3 179
+scoreboard players set @s ability3 50
 
 scoreboard players set @s wizardCrossbow 0
 #run the class select
 function under_pack:general_functions/general_character_select
+
+#reset the hit cooldown so players are eligible to be hit by spells
+scoreboard players set @a wizardRedHit 0
+scoreboard players set @a wizardBlueHit 0
+
+experience set @s 100 levels
+experience set @s 742 points
