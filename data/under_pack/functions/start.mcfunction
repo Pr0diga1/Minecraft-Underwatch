@@ -196,3 +196,5 @@ scoreboard objectives add hitByFreeze dummy
 scoreboard objectives add wizardCrossbow minecraft.used:minecraft.crossbow
 scoreboard objectives add wizardDistance dummy
 scoreboard objectives add wizardHit dummy
+scoreboard objectives add wizardRedHit dummy
+scoreboard objectives add wizardBlueHit dummy

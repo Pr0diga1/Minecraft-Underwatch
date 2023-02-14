@@ -6,4 +6,4 @@ scoreboard players add @s wizardDistance 1
 execute as @s[team=uRed] run summon evoker_fangs ~ ~ ~ {Tags:["red"]}
 execute as @s[team=uBlue] run summon evoker_fangs ~ ~ ~ {Tags:["blue"]}
 #rerun
-execute if score @s wizardHit matches 0 if score @s wizardDistance matches ..15 positioned ^ ^ ^1 run function under_pack:wizard_functions/wizard_claws_ray
+execute if score @s wizardHit matches 0 if score @s wizardDistance matches ..10 positioned ^ ^ ^1.2 run function under_pack:wizard_functions/wizard_claws_ray
