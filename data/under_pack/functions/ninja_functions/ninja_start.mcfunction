@@ -8,7 +8,7 @@ item replace entity @s hotbar.2 with carrot_on_a_stick{CustomModelData:25,displa
 #armor
 item replace entity @s armor.legs with iron_leggings{Unbreakable:true}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:true}
-item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantments:[{id:"minecraft:depth_strider",lvl:2s}]}
+item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
 
 #hyperventilate
 scoreboard players set @s ninjaHyperventilate 0

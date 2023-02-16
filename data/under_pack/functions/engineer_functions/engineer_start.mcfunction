@@ -13,7 +13,7 @@ item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"C
 #armor
 item replace entity @s armor.chest with leather_chestplate{display:{color:16777215},Unbreakable:1b}
 item replace entity @s armor.legs with diamond_leggings{Unbreakable:1b}
-item replace entity @s armor.feet with leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s}]}
+item replace entity @s armor.feet with leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
 
 scoreboard players set @s ability1 119
 scoreboard players set @s ability2 0

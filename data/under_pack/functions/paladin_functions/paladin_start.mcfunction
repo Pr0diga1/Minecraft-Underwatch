@@ -15,7 +15,7 @@ item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"F
 item replace entity @s armor.head with leather_helmet{Unbreakable:1b}
 item replace entity @s armor.chest with diamond_chestplate{Unbreakable:1b}
 item replace entity @s armor.legs with diamond_leggings{Unbreakable:1b}
-item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s}]}
+item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
 
 #ability cooldowns
 scoreboard players set @s shieldStatus 160

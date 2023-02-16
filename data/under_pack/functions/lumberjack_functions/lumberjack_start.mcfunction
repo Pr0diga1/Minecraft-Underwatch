@@ -8,7 +8,7 @@ item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:27,displa
 item replace entity @s hotbar.2 with carrot_on_a_stick{CustomModelData:28,display:{Name:'{"text":"Axe Sweep","color":"green"}'},lumberthrow:1b} 1
 #ult
 #armor
-item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantments:[{id:"minecraft:depth_strider",lvl:2s}]}
+item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
 item replace entity @s armor.legs with leather_leggings{Unbreakable:true}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:true}
 

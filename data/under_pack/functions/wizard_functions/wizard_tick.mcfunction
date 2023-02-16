@@ -1,6 +1,7 @@
 #detect carrot on stick
 execute as @s[nbt={Inventory:[{Slot:0b,tag:{wizardWand:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardWand:1b}}},scores={reset=1..}] if score @s ability3 matches 50.. run function under_pack:wizard_functions/wizard_spell
 execute as @s[nbt={Inventory:[{Slot:3b,tag:{wizardClaws:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardClaws:1b}}},scores={reset=1..}] if score @s ability2 matches 300.. at @s anchored feet positioned ^ ^ ^ anchored feet run function under_pack:wizard_functions/wizard_claws
+execute as @s[nbt={Inventory:[{Slot:2b,tag:{wizardGay:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardGay:1b}}},scores={reset=1..}] if score @s ability1 matches 300.. at @s anchored feet positioned ^ ^ ^ anchored feet run function under_pack:wizard_functions/wizard_rainbow
 
 #detection for the split
 execute as @s[team=uRed,nbt={Inventory:[{Slot:0b,tag:{wizardWand:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardWand:1b}}},scores={reset=1..}] as @e[type=marker,tag=redWizardSpell] at @s run function under_pack:wizard_functions/wizard_spell_split_red

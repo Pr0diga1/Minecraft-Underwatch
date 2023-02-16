@@ -16,7 +16,7 @@ item replace entity @s hotbar.2 with tipped_arrow{CustomModelData:2,display:{Nam
 item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"Rocket Dart","color":"gold"}',Lore:['{"text":"Right Click to strap a rocket motor on your next dart"}']},scientistPunch:1b,CustomModelData:32} 1
 
 #scientist
-item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:depth_strider",lvl:2s}]}
+item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
 item replace entity @s armor.legs with diamond_leggings{Unbreakable:1b}
 item replace entity @s armor.head with diamond_helmet{Unbreakable:1b}
 item replace entity @s armor.chest with leather_chestplate{display:{Name:'{"text":"Jetpack"}',color:16777215},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;1859217092,-39565814,-1219173781,-1415052210],Slot:"chest"}]} 1

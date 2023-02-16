@@ -5,7 +5,7 @@ scoreboard players add @s wizardDistance 1
 tp @s ^ ^ ^0.3
 
 #particle
-particle dust 0.314 0.725 1 1 ~ ~ ~ 0 0 0 0 3
+particle dust 0.749 0.561 0.925 1 ~ ~ ~ 0 0 0 0 3
 
 #kill the marker if its in a block or has existed for 4 seconds
 execute unless block ~ ~ ~ #under_pack:non_solid run kill @s
