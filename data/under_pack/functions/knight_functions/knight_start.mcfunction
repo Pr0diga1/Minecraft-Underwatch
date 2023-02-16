@@ -8,7 +8,7 @@ item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"S
 execute if entity @s[team=uRed] run item replace entity @s hotbar.2 with snowball{display:{Name:'{"text":"Holy Hand Grenade","color":"dark_green"}'},knightbomb:1b,red:1b,CustomModelData:1} 1
 execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with snowball{display:{Name:'{"text":"Holy Hand Grenade","color":"dark_green"}'},knightbomb:1b,blue:1b,CustomModelData:1} 1
 #armor
-item replace entity @s armor.chest with chainmail_chestplate{HideFlags:2,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:8,Operation:0,UUID:[I;-1728819482,-1676000605,-1806744958,-439757376]}]} 1
+item replace entity @s armor.chest with chainmail_chestplate{HideFlags:2,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:12,Operation:0,UUID:[I;-1728819482,-1676000605,-1806744958,-439757376]}]} 1
 item replace entity @s armor.legs with iron_leggings{Unbreakable:1b}
 item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
 
