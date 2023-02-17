@@ -1,5 +1,6 @@
 # Mark rouge's pos
 summon marker ~ ~ ~ {Tags:["teleport"]}
+tp @e[tag=teleport] ^ ^ ^
 
 # Teleport to the target
 execute if entity @s[team=uBlue] run teleport @s @a[tag=target,team=uBlue,limit=1]
