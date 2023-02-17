@@ -1,11 +1,11 @@
-execute if entity @s[team=uRed] anchored eyes positioned ^ ^ ^ run summon marker ~ ~ ~ {Tags:["uRed","swap"]}
-execute if entity @s[team=uBlue] anchored eyes positioned ^ ^ ^ run summon marker ~ ~ ~ {Tags:["uBlue","swap"]}
-
 scoreboard players set hit buffer 0
 scoreboard players set distance buffer 0
 
 tag @s add swap
+function under_pack:rogue_functions/raycast
+execute at @a[tag=target] run particle dust 0 0 1 1 ~ ~3 ~ 0.3 0 0.3 0 20 force @s
+
 execute as @a[tag=swap] run say hi
-execute as @e[type=marker,tag=swap] at @s run function under_pack:rogue_functions/raycast
+execute as @a[tag=target] run say hi
 
 scoreboard players reset @s reset
