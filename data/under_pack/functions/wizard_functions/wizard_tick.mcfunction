@@ -40,7 +40,11 @@ execute as @s[team=uBlue] as @e[type=marker,tag=blueWizardRainbow] at @s run fun
 execute as @s[team=uBlue] run scoreboard players remove @a[scores={wizardBlueHit=1..}] wizardBlueHit 1
 execute as @s[team=uRed] run scoreboard players remove @a[scores={wizardRedHit=1..}] wizardRedHit 1
 
+#wizard curse logic
+execute if score @s wizardCurse matches 1 run function under_pack:wizard_functions/wizard_homing_target
 
+
+scoreboard players operation @s wizardCurseBuffer = @s wizardCurse
 
 #run the cooldown
 function under_pack:wizard_functions/wizard_cooldown

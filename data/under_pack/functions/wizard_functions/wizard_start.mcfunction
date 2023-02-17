@@ -32,7 +32,9 @@ scoreboard players set @s ability2 299
 scoreboard players set @s ability3 50
 scoreboard players set @s ability4 199
 
-scoreboard players set @s wizardCrossbow 0
+scoreboard players set @s wizardCurseBuffer 0
+scoreboard players set @s wizardCurse 0
+
 #run the class select
 function under_pack:general_functions/general_character_select
 
