@@ -2,8 +2,8 @@
 summon marker ~ ~ ~ {Tags:["teleport"]}
 
 # Teleport to the target
-execute if entity @s[team=uBlue] run teleport @a[tag=target,team=uBlue]
-execute if entity @s[team=uRed] run teleport @a[tag=target,team=uRed]
+execute if entity @s[team=uBlue] run teleport @s @a[tag=target,team=uBlue,limit=1]
+execute if entity @s[team=uRed] run teleport @s @a[tag=target,team=uRed,limit=1]
 
 # Teleport target to where rouge is
 execute if entity @s[team=uBlue] run teleport @a[tag=target,team=uBlue] @e[tag=teleport,limit=1]
