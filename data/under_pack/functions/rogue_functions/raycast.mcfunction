@@ -12,8 +12,6 @@ execute if entity @s[team=uBlue] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,tea
 execute if entity @s[team=uBlue] if entity @a[tag=target,team=uBlue] run item modify entity @s hotbar.3 under_pack:rogue/swap_target
 execute if entity @s[team=uRed] if entity @a[tag=target,team=uRed] run item modify entity @s hotbar.3 under_pack:rogue/swap_target
 
-say it ran
-
 #rerun command
 execute if entity @s[team=uBlue] if score hit buffer matches 0 unless entity @a[tag=target,team=uBlue] if score distance buffer matches ..180 positioned ^ ^ ^.5 run function under_pack:rogue_functions/raycast
 execute if entity @s[team=uRed] if score hit buffer matches 0 unless entity @a[tag=target,team=uRed] if score distance buffer matches ..180 positioned ^ ^ ^.5 run function under_pack:rogue_functions/raycast
