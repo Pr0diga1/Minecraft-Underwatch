@@ -2,7 +2,7 @@
 scoreboard players add @s wizardDistance 1
 
 #move the marker
-tp @s ^ ^ ^0.3
+tp @s ^ ^ ^0.35
 
 #particle
 particle dust 0.749 0.561 0.925 1 ~ ~ ~ 0 0 0 0 3 force
