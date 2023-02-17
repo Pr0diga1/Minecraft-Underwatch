@@ -13,10 +13,12 @@ execute if entity @s[tag=uRed] as @a[tag=target,team=uRed] run item modify entit
 # Kill self if target found or inside a block
 execute unless block ~ ~ ~ #non_solid run tag @a[tag=swap] remove swap
 execute unless block ~ ~ ~ #non_solid run kill @s
+execute as @a[tag=swap] run say hi
 execute as @s[tag=uBlue] if entity @a[tag=target,team=uBlue] run tag @a[tag=swap,team=uBlue] remove swap
 execute as @s[tag=uRed] if entity @a[tag=target,team=uRed] run tag @a[tag=swap,team=uBlue] remove swap
 execute as @s[tag=uBlue] if entity @a[tag=target,team=uBlue] run kill @s
 execute as @s[tag=uRed] if entity @a[tag=target,team=uRed] run kill @s
+execute as @a[tag=swap] run say hi
 
 # Teleport
 tp ^ ^ ^1
