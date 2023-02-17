@@ -11,8 +11,8 @@ execute if entity @s[tag=uBlue] as @a[tag=target,team=uBlue] run item modify ent
 execute if entity @s[tag=uRed] as @a[tag=target,team=uRed] run item modify entity @s hotbar.3 under_pack:rogue/swap_target
 
 # Kill self if target found or inside a block
-execute unless block ~ ~ ~ #non_solid run tag @a[tag=swap] remove swap
-execute unless block ~ ~ ~ #non_solid run kill @s
+execute unless block ~ ~ ~ #under_pack:non_solid run tag @a[tag=swap] remove swap
+execute unless block ~ ~ ~ #under_pack:non_solid run kill @s
 execute as @a[tag=swap] run say hi
 execute as @s[tag=uBlue] if entity @a[tag=target,team=uBlue] run tag @a[tag=swap,team=uBlue] remove swap
 execute as @s[tag=uRed] if entity @a[tag=target,team=uRed] run tag @a[tag=swap,team=uBlue] remove swap
@@ -33,8 +33,8 @@ execute if entity @s[tag=uBlue] as @a[tag=target,team=uBlue] run item modify ent
 execute if entity @s[tag=uRed] as @a[tag=target,team=uRed] run item modify entity @s hotbar.3 under_pack:rogue/swap_target
 
 # Kill self if target found or inside a block
-execute unless block ~ ~ ~ #non_solid run tag @a[tag=swap] remove swap
-execute unless block ~ ~ ~ #non_solid run kill @s
+execute unless block ~ ~ ~ #under_pack:non_solid run tag @a[tag=swap] remove swap
+execute unless block ~ ~ ~ #under_pack:non_solid run kill @s
 execute as @s[tag=uBlue] if entity @a[tag=target,team=uBlue] run tag @a[tag=swap,team=uBlue] remove swap
 execute as @s[tag=uRed] if entity @a[tag=target,team=uRed] run tag @a[tag=swap,team=uBlue] remove swap
 execute as @s[tag=uBlue] if entity @a[tag=target,team=uBlue] run kill @s
@@ -53,8 +53,8 @@ execute if entity @s[tag=uBlue] as @a[tag=target,team=uBlue] run item modify ent
 execute if entity @s[tag=uRed] as @a[tag=target,team=uRed] run item modify entity @s hotbar.3 under_pack:rogue/swap_target
 
 # Kill self if target found or inside a block
-execute unless block ~ ~ ~ #non_solid run tag @a[tag=swap] remove swap
-execute unless block ~ ~ ~ #non_solid run kill @s
+execute unless block ~ ~ ~ #under_pack:non_solid run tag @a[tag=swap] remove swap
+execute unless block ~ ~ ~ #under_pack:non_solid run kill @s
 execute as @s[tag=uBlue] if entity @a[tag=target,team=uBlue] run tag @a[tag=swap,team=uBlue] remove swap
 execute as @s[tag=uRed] if entity @a[tag=target,team=uRed] run tag @a[tag=swap,team=uBlue] remove swap
 execute as @s[tag=uBlue] if entity @a[tag=target,team=uBlue] run kill @s
@@ -73,8 +73,8 @@ execute if entity @s[tag=uBlue] as @a[tag=target,team=uBlue] run item modify ent
 execute if entity @s[tag=uRed] as @a[tag=target,team=uRed] run item modify entity @s hotbar.3 under_pack:rogue/swap_target
 
 # Kill self if target found or inside a block
-execute unless block ~ ~ ~ #non_solid run tag @a[tag=swap] remove swap
-execute unless block ~ ~ ~ #non_solid run kill @s
+execute unless block ~ ~ ~ #under_pack:non_solid run tag @a[tag=swap] remove swap
+execute unless block ~ ~ ~ #under_pack:non_solid run kill @s
 execute as @s[tag=uBlue] if entity @a[tag=target,team=uBlue] run tag @a[tag=swap,team=uBlue] remove swap
 execute as @s[tag=uRed] if entity @a[tag=target,team=uRed] run tag @a[tag=swap,team=uBlue] remove swap
 execute as @s[tag=uBlue] if entity @a[tag=target,team=uBlue] run kill @s
