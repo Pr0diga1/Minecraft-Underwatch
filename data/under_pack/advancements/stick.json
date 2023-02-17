@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "shield": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:warped_fungus_on_a_stick"
+            ]
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "under_pack:wizard_functions/wizard_homing"
+    }
+  }

@@ -1,7 +1,5 @@
-kill @e[type=eye_of_ender]
 stopsound @a * minecraft:entity.ender_eye.launch
 stopsound @a * minecraft:entity.ender_eye.death
-advancement revoke @s only under_pack:eye
 execute if score @s class matches 4 run effect give @s resistance 1 2 true
 execute at @s run particle minecraft:glow ~ ~.7 ~ .3 .5 .3 .001 10 force @a
 

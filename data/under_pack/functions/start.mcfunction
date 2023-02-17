@@ -193,7 +193,8 @@ scoreboard objectives add scientistBowFired2 minecraft.used:minecraft.bow
 scoreboard objectives add hitByFreeze dummy
 
 #wizard
-scoreboard objectives add wizardCrossbow minecraft.used:minecraft.crossbow
+scoreboard objectives add wizardCurse dummy
+scoreboard objectives add wizardCurseBuffer dummy
 scoreboard objectives add wizardDistance dummy
 scoreboard objectives add wizardHit dummy
 scoreboard objectives add wizardRedHit dummy

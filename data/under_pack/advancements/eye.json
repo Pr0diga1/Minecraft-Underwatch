@@ -12,7 +12,7 @@
     }
   },
   "rewards": {
-    "function": "under_pack:knight_functions/knight_block"
+    "function": "under_pack:general_functions/general_eye"
   }
 }
 
