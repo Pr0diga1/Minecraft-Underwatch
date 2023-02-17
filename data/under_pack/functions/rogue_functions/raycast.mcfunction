@@ -1,5 +1,6 @@
 # Teleport
 tp ^ ^ ^1
+execute as @a[tag=swap] run say hi
 
 # Find target
 execute if entity @s[tag=uBlue] run tag @a[team=uBlue,limit=1,sort=nearest,distance=..2,tag=!swap] add target
@@ -19,6 +20,7 @@ execute as @s[tag=uRed] if entity @a[tag=target,team=uRed] run kill @s
 
 # Teleport
 tp ^ ^ ^1
+execute as @a[tag=swap] run say hi
 
 # Find target
 execute if entity @s[tag=uBlue] run tag @a[team=uBlue,limit=1,sort=nearest,distance=..2,tag=!swap] add target
@@ -38,6 +40,7 @@ execute as @s[tag=uRed] if entity @a[tag=target,team=uRed] run kill @s
 
 # Teleport
 tp ^ ^ ^1
+execute as @a[tag=swap] run say hi
 
 # Find target
 execute if entity @s[tag=uBlue] run tag @a[team=uBlue,limit=1,sort=nearest,distance=..2,tag=!swap] add target
@@ -57,6 +60,7 @@ execute as @s[tag=uRed] if entity @a[tag=target,team=uRed] run kill @s
 
 # Teleport
 tp ^ ^ ^1
+execute as @a[tag=swap] run say hi
 
 # Find target
 execute if entity @s[tag=uBlue] run tag @a[team=uBlue,limit=1,sort=nearest,distance=..2,tag=!swap] add target
