@@ -51,18 +51,11 @@ execute if score @s ability2 matches 260 run item replace entity @s hotbar.3 wit
 execute if score @s ability2 matches 280 run item replace entity @s hotbar.3 with dead_brain_coral 1
 
 #curse
-execute if score @s ability4 matches ..199 run scoreboard players add @s ability4 1
-execute if score @s ability4 matches 200 run item replace entity @s hotbar.4 with ender_eye{display:{Name:'[{"text":"fgh","color":"black","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true},{"text":"Curse","color":"black","bold":true,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"fgh","bold":false,"italic":false,"strikethrough":false,"obfuscated":true}]'}} 1
-execute if score @s ability4 matches 0..1 run item replace entity @s hotbar.4 with dead_brain_coral 10
-execute if score @s ability4 matches 20 run item replace entity @s hotbar.4 with dead_brain_coral 9
-execute if score @s ability4 matches 40 run item replace entity @s hotbar.4 with dead_brain_coral 8
-execute if score @s ability4 matches 60 run item replace entity @s hotbar.4 with dead_brain_coral 7
-execute if score @s ability4 matches 80 run item replace entity @s hotbar.4 with dead_brain_coral 6
-execute if score @s ability4 matches 100 run item replace entity @s hotbar.4 with dead_brain_coral 5
-execute if score @s ability4 matches 120 run item replace entity @s hotbar.4 with dead_brain_coral 4
-execute if score @s ability4 matches 140 run item replace entity @s hotbar.4 with dead_brain_coral 3
-execute if score @s ability4 matches 160 run item replace entity @s hotbar.4 with dead_brain_coral 2
-execute if score @s ability4 matches 180 run item replace entity @s hotbar.4 with dead_brain_coral 1
+execute if score @s ability4 matches ..59 run scoreboard players add @s ability4 1
+execute if score @s ability4 matches 60 run item replace entity @s hotbar.4 with ender_eye{display:{Name:'[{"text":"fgh","color":"black","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true},{"text":"Curse","color":"black","bold":true,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"fgh","bold":false,"italic":false,"strikethrough":false,"obfuscated":true}]'}} 1
+execute if score @s ability4 matches 0..1 run item replace entity @s hotbar.4 with wither_skeleton_skull 3
+execute if score @s ability4 matches 20 run item replace entity @s hotbar.4 with wither_skeleton_skull 2
+execute if score @s ability4 matches 40 run item replace entity @s hotbar.4 with wither_skeleton_skull 1
 
 #ability3
 execute as @s[team=uRed] if score @s ability3 matches ..49 unless entity @e[type=marker,tag=redWizardSpell] run scoreboard players add @s ability3 2
