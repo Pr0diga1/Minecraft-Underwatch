@@ -9,4 +9,4 @@ execute if entity @s[team=uRed] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team
 execute if entity @s[team=uBlue] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uRed,limit=1,sort=nearest] run tag @s add blueWizardTarget
 
 #rerun command
-execute if score hit wizardCurse matches 0 if score distance wizardCurse matches ..180 positioned ^ ^ ^.5 run function under_pack:wizard_functions/wizard_homing_ray
+execute if score hit wizardCurse matches 0 unless entity @a[tag=redWizardTarget] unless entity @a[tag=blueWizardTarget] if score distance wizardCurse matches ..180 positioned ^ ^ ^.5 run function under_pack:wizard_functions/wizard_homing_ray
