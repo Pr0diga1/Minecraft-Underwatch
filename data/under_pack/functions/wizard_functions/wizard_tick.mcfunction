@@ -41,9 +41,11 @@ execute as @s[team=uBlue] run scoreboard players remove @a[scores={wizardBlueHit
 execute as @s[team=uRed] run scoreboard players remove @a[scores={wizardRedHit=1..}] wizardRedHit 1
 
 #wizard curse logic
-execute if score @s wizardCurse matches 1 run function under_pack:wizard_functions/wizard_homing_target
+execute if score @s wizardCurse matches 1 at @s anchored eyes positioned ^ ^ ^ anchored feet run function under_pack:wizard_functions/wizard_homing_target
 
+execute if score @s wizardCurse matches 1.. if score @s wizardCurseBuffer = @s wizardCurse run function under_pack:wizard_functions/wizard_homing_released
 
+#set the buffer for next tick
 scoreboard players operation @s wizardCurseBuffer = @s wizardCurse
 
 #run the cooldown
