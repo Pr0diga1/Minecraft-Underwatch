@@ -1,1 +1,0 @@
-execute as @a[team=uRed] at @s run kill @e[type=evoker_fangs,tag=red,distance=..1.2]

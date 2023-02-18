@@ -107,6 +107,7 @@ scoreboard objectives add wizard trigger
 scoreboard objectives add engineer trigger
 scoreboard objectives add paladin trigger
 scoreboard objectives add bulwark trigger
+scoreboard objectives add mermaid trigger
 
 #adds trackers for abilities and ults
 scoreboard objectives add movement dummy
