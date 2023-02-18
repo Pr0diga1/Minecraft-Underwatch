@@ -16,7 +16,7 @@ execute if entity @s[team=uRed] at @a[tag=target,team=uRed] run kill @e[tag=tele
 
 # Untag target
 execute if entity @s[team=uBlue] run tag @a[tag=target,team=uBlue] remove target
-execute if entity @s[team=uBlue] run tag @a[tag=target,team=uRed] remove target
+execute if entity @s[team=uRed] run tag @a[tag=target,team=uRed] remove target
 
 # Cooldown init
 item replace entity @s hotbar.3 with barrier{CustomModelData:9}
