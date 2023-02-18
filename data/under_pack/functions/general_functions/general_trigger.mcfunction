@@ -1,7 +1,8 @@
 #puts people who run /trigger gazebo in the gazebo lobby and resets /trigger
 execute as @a[scores={gazebo=1..}] at @s run function under_pack:gazebo_functions/gazebo_enter
 scoreboard players enable @a gazebo
-
+execute as @a[scores={park=1..}] at @s run function under_pack:park_functions/park_enter
+scoreboard players enable @a park
 
 execute as @a[scores={Reset=1..}] at @s run function under_pack:general_functions/general_restart
 scoreboard players enable @a Reset
