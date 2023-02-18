@@ -8,3 +8,4 @@ execute as @s[scores={class=7}] run function under_pack:paladin_functions/paladi
 execute as @s[scores={class=8}] run function under_pack:rogue_functions/rogue_reset
 execute as @s[scores={class=9}] run function under_pack:scientist_functions/scientist_reset
 execute as @s[scores={class=10}] run function under_pack:wizard_functions/wizard_reset
+execute as @s[scores={class=11}] run function under_pack:mermaid_functions/mermaid_reset
