@@ -48,5 +48,8 @@ execute if score @s wizardCurse matches 1.. if score @s wizardCurseBuffer = @s w
 #set the buffer for next tick
 scoreboard players operation @s wizardCurseBuffer = @s wizardCurse
 
+execute if entity @s[team=uRed] as @a[nbt={ActiveEffects:[{Id:25,Amplifier:0b,Duration:199}]},team=uBlue] run function under_pack:wizard_functions/wizard_homing_hit
+execute if entity @s[team=uBlue] as @a[nbt={ActiveEffects:[{Id:25,Amplifier:0b,Duration:199}]},team=uRed] run function under_pack:wizard_functions/wizard_homing_hit
+
 #run the cooldown
 function under_pack:wizard_functions/wizard_cooldown
