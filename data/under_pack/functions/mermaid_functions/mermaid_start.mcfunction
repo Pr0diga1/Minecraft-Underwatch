@@ -1,0 +1,2 @@
+clear @s
+item replace entity @s hotbar.0 with trident{display:{Name:'{"text":"Poseidon\'s Back Scratcher","color":"blue"}'},HideFlags:4,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3,Operation:0,UUID:[I;-1506563190,401687741,-1460360327,-268238986],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:9,Operation:0,UUID:[I;79580379,-1903935077,-1275222226,-997440825],Slot:"mainhand"}]} 1
