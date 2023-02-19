@@ -7,7 +7,8 @@ scoreboard players set @a wizardRedHit 0
 scoreboard players set @a wizardBlueHit 0
 
 #do damage and health to clear extra hearts
-effect give @s instant_damage 1 1
+execute as @s[scores={heart=13..20}] run effect give @s instant_damage 1 1
+execute as @s[scores={heart=21..}] run effect give @s instant_damage 1 2
 effect give @s regeneration 2 50 true
 
 #can cap on points

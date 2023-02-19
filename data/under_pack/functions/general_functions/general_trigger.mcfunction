@@ -36,3 +36,5 @@ execute as @a[scores={wizard=1..}] at @s run function under_pack:wizard_function
 scoreboard players enable @a wizard
 execute as @a[scores={mermaid=1..}] at @s run function under_pack:mermaid_functions/mermaid_trigger
 scoreboard players enable @a mermaid
+execute as @a[scores={elemental=1..}] at @s run function under_pack:elemental_functions/elemental_trigger
+scoreboard players enable @a elemental

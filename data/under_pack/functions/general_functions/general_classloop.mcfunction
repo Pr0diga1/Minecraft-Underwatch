@@ -9,3 +9,4 @@ execute as @s[scores={class=8}] at @s run function under_pack:rogue_functions/ro
 execute as @s[scores={class=9}] run function under_pack:scientist_functions/scientist_tick
 execute as @s[scores={class=10}] run function under_pack:wizard_functions/wizard_tick
 execute as @s[scores={class=11}] run function under_pack:mermaid_functions/mermaid_tick
+execute as @s[scores={class=12}] run function under_pack:elemental_functions/elemental_tick
