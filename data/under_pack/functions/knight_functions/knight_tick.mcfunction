@@ -20,6 +20,6 @@ kill @e[type=eye_of_ender]
 execute if score @s blockIsActive matches 0.. run scoreboard players remove @s blockIsActive 1
 execute if score @s blockIsActive matches 0 run function under_pack:knight_functions/knight_block_end
 
-item replace entity @s hotbar.0 with ender_eye{display:{Name:'{"text":"Reliquary Blade","color":"white"}',Lore:['{"text":"Only given to those worthy"}']},HideFlags:5,knightsword:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;1830644796,1135495493,-1953374725,900861682],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.9,Operation:0,UUID:[I;1787687604,386813173,-1856770668,-2070457650],Slot:"mainhand"}]} 1
+item replace entity @s hotbar.0 with ender_eye{CustomModelData:1,display:{Name:'{"text":"Reliquary Blade","color":"white"}',Lore:['{"text":"Only given to those worthy"}']},HideFlags:5,knightsword:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:4,Operation:0,UUID:[I;1830644796,1135495493,-1953374725,900861682],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.9,Operation:0,UUID:[I;1787687604,386813173,-1856770668,-2070457650],Slot:"mainhand"}]} 1
 
 
