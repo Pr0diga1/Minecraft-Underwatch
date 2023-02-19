@@ -91,7 +91,7 @@ bossbar set count:park value 160
 bossbar add count:park_unlock "Point will Unlock"
 bossbar set count:park_unlock color white
 bossbar set count:park_unlock style progress
-bossbar set count:park_unlock max 500
+bossbar set count:park_unlock max 1000
 bossbar set count:park_unlock players @a[tag=park]
 bossbar set count:park_unlock value 0
 
