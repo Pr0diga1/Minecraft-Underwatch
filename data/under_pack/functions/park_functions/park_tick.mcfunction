@@ -6,17 +6,18 @@ execute as @a[tag=park] if entity @s[x=571,y=43,z=-13,dx=9,dy=2,dz=9,tag=park,ga
 execute as @a[tag=park] unless entity @s[x=571,y=43,z=-13,dx=9,dy=2,dz=9,tag=park,gamemode=adventure] run scoreboard players set @s onPoint 0
 
 #lower the unlock timer when the game is active
-execute if score park_grace timer matches ..0 if score park_unlock points matches ..499 run scoreboard players add park_unlock points 1
+execute if score park_grace timer matches ..0 if score park_unlock points matches ..999 run scoreboard players add park_unlock points 1
 
 #when the point is unlocked
-execute if score park_unlock points matches 499 run bossbar set count:park_unlock visible false
-execute if score park_unlock points matches 499 run bossbar set count:park visible true
+execute if score park_unlock points matches 999 run bossbar set count:park_unlock visible false
+execute if score park_unlock points matches 999 run bossbar set count:park visible true
+execute if score park_unlock points matches 999 run title @a title {"text":"point unlocked"}
 
 #update bossbar
 execute store result bossbar count:park_unlock value run scoreboard players get park_unlock points
 
 #updates the point for the tick
-execute if score park_unlock points matches 500.. run function under_pack:park_functions/park_point
+execute if score park_unlock points matches 1000.. run function under_pack:park_functions/park_point
 
 #actionbar for telling players when they will respawn
 execute as @a[tag=park,tag=park_dead] run title @s actionbar {"text":"You died!","color":"gold"}

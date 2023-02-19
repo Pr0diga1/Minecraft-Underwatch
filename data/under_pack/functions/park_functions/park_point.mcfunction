@@ -15,5 +15,9 @@ execute if score cap_park points matches 0 run scoreboard players set park_winni
 #bar is red team's if bar hits 320
 execute if score cap_park points matches 320 run scoreboard players set park_winning team 0
 
+#change bossbar color
+execute if score cap_park points matches 159 run bossbar set count:park color blue
+execute if score cap_park points matches 161 run bossbar set count:park color red
+
 #updates the bossbar
 execute store result bossbar count:park value run scoreboard players get cap_park points
