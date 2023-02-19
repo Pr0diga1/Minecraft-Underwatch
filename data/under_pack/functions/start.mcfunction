@@ -32,6 +32,10 @@ scoreboard objectives add deathTimer dummy
 scoreboard objectives add deathTimerBuffer dummy
 scoreboard objectives add deathTimerBufferBuffer dummy
 
+#locking
+scoreboard objectives add locked1 dummy
+scoreboard objectives add locked2 dummy
+
 #add gazebo as a trigger
 scoreboard objectives add gazebo trigger
 

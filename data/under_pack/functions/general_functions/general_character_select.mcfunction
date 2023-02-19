@@ -6,5 +6,9 @@ experience set @s 0 points
 scoreboard players set @a wizardRedHit 0
 scoreboard players set @a wizardBlueHit 0
 
+#do damage and health to clear extra hearts
+effect give @s instant_damage 1 1
+effect give @s regeneration 2 50 true
+
 #can cap on points
 scoreboard players set @s cantCap 0
