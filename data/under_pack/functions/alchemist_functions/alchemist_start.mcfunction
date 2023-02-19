@@ -21,5 +21,11 @@ execute as @s[team=uBlue] run kill @e[type=potion,tag=telepot,tag=uBlue]
 tag @s remove telepot
 tag @s remove healing
 
+#clean swap tags
+execute as @s[team=uRed] run tag @s remove swap
+execute as @s[team=uRed] run tag @s remove swap
+execute as @s[team=uBlue] run tag @s remove swap
+execute as @s[team=uBlue] run tag @s remove swap
+
 #run the class select
 function under_pack:general_functions/general_character_select
