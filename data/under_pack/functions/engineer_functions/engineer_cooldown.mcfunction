@@ -1,8 +1,11 @@
-execute if score @s ability1 matches 20 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 5
-execute if score @s ability1 matches 40 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 4
-execute if score @s ability1 matches 60 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 3
-execute if score @s ability1 matches 80 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 2
-execute if score @s ability1 matches 100 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 1
+execute if score @s ability1 matches 20 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 8
+execute if score @s ability1 matches 40 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 7
+execute if score @s ability1 matches 60 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 6
+execute if score @s ability1 matches 80 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 5
+execute if score @s ability1 matches 100 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 4
+execute if score @s ability1 matches 120 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 3
+execute if score @s ability1 matches 140 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 2
+execute if score @s ability1 matches 160 run item replace entity @s hotbar.1 with arrow{display:{Name:'{"text":"Nerf Bow on Cooldown"}'}} 1
 
 execute if score @s ability2 matches 1..17 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"3","color":"gold"}]
 execute if score @s ability2 matches 18..37 run title @s actionbar ["",{"text":"New Heal In: ","color":"blue"},{"text":"2","color":"gold"}]

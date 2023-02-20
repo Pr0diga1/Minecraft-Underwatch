@@ -204,3 +204,12 @@ scoreboard objectives add wizardDistance dummy
 scoreboard objectives add wizardHit dummy
 scoreboard objectives add wizardRedHit dummy
 scoreboard objectives add wizardBlueHit dummy
+
+#elemental
+scoreboard objectives add elementalBar dummy
+scoreboard objectives add elementalBarBuffer dummy
+scoreboard objectives add elementalBarTimer dummy
+scoreboard objectives add elementalFireTimer dummy
+scoreboard objectives add elementalWindTimer dummy
+scoreboard objectives add elementalWaterState dummy
+scoreboard objectives add elementalEarthTimer dummy

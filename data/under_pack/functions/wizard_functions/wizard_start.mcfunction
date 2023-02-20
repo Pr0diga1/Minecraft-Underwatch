@@ -24,6 +24,9 @@ item replace entity @s armor.chest with leather_chestplate{display:{color:167772
 item replace entity @s armor.legs with leather_leggings{display:{color:16777215},Unbreakable:1b} 1
 item replace entity @s armor.feet with leather_boots{display:{color:16777215},Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]} 1
 
+#clean arrows
+kill @e[type=arrow,tag=wizardSmallSpellArrow]
+kill @e[type=arrow,tag=wizardBigSpellArrow]
 
 #ability cooldowns
 scoreboard players set @s movement 0

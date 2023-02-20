@@ -15,7 +15,7 @@ item replace entity @s armor.chest with leather_chestplate{display:{color:167772
 item replace entity @s armor.legs with diamond_leggings{Unbreakable:1b}
 item replace entity @s armor.feet with leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
 
-scoreboard players set @s ability1 119
+scoreboard players set @s ability1 179
 scoreboard players set @s ability2 0
 scoreboard players set @s ability3 179
 scoreboard players set @s ability4 219

@@ -1,6 +1,5 @@
 #if there is even a single person in gazebo without a set team, do not matchmake
 execute unless entity @a[tag=gazebo,tag=!t1,tag=!t2] run scoreboard players set true matchmake 1
-tellraw @a ["","The game will matchmake: ",{"score":{"name":"true","objective":"matchmake"}}]
 
 #run general start
 execute as @a[tag=gazebo] run function under_pack:general_functions/general_start
@@ -41,8 +40,6 @@ execute if score true matchmake matches 1 as @a[tag=t1,tag=gazebo] run team join
 execute if score true matchmake matches 1 as @a[tag=t2,tag=gazebo] run team join uBlue
 #dont need true matchmake anymore
 scoreboard players set true matchmake 0
-
-tellraw @a ["","The game will cancel: ",{"score":{"name":"cancel","objective":"matchmake"}}]
 
 #lose the set team tags
 execute as @a[tag=gazebo] run function under_pack:trigger_functions/leave
