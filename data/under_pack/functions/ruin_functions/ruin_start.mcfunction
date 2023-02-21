@@ -45,6 +45,7 @@ scoreboard players set true matchmake 0
 execute as @a[tag=ruin] run function under_pack:trigger_functions/leave
 
 #tps players to their spawns and sets their spawnpoints
+##Isaac
 tp @a[tag=ruin,team=uRed] 629 43 -9
 tp @a[tag=ruin,team=uBlue] 522 43 -8
 spawnpoint @a[tag=ruin,team=uRed] 629 43 -9
@@ -67,6 +68,7 @@ scoreboard players set ruin_unlock points 0
 scoreboard players set ruin_winning team -1
 
 #fill barriers to lock teams in their spawns
+##Isaac
 fill 617 43 -12 617 49 -5 barrier
 fill 534 43 -5 534 48 -12 barrier
 

@@ -1,4 +1,5 @@
 #tp people back to spawns
+##Isaac
 tp @a[tag=ruin,team=uRed] 629 43 -9
 tp @a[tag=ruin,team=uBlue] 522 43 -8
 
@@ -12,6 +13,7 @@ scoreboard players set ruin_grace timer 400
 scoreboard players set ruin_unlock points 0
 
 #fill barriers to lock teams in their spawns
+##Isaac
 fill 617 43 -12 617 49 -5 barrier
 fill 534 43 -5 534 48 -12 barrier
 

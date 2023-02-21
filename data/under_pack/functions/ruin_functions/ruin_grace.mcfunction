@@ -1,4 +1,5 @@
 #remove barriers
+## ISAAC
 execute if score ruin_grace timer matches 0 run fill 617 43 -12 617 49 -5 air
 execute if score ruin_grace timer matches 0 run fill 534 43 -5 534 48 -12 air
 
