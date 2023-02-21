@@ -200,3 +200,10 @@ scoreboard objectives add wizardDistance dummy
 scoreboard objectives add wizardHit dummy
 scoreboard objectives add wizardRedHit dummy
 scoreboard objectives add wizardBlueHit dummy
+
+#mermaid
+scoreboard objectives add mermaidRay dummy
+scoreboard objectives add mermaidmist dummy
+scoreboard objectives add mermaidmistbuffer dummy
+
+
