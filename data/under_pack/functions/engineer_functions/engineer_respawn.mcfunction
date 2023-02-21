@@ -1,4 +1,4 @@
-scoreboard players set @s ability1 119
+scoreboard players set @s ability1 179
 scoreboard players set @s ability2 0
 scoreboard players set @s ability3 179
 scoreboard players set @s ability4 219

@@ -20,3 +20,6 @@ execute as @s[team=uRed] run kill @e[type=potion,tag=telepot,tag=uRed]
 execute as @s[team=uBlue] run kill @e[type=potion,tag=telepot,tag=uBlue]
 tag @s remove telepot
 tag @s remove healing
+
+#run the class select
+function under_pack:general_functions/general_character_select

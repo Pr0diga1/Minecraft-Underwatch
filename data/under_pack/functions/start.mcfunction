@@ -32,6 +32,10 @@ scoreboard objectives add deathTimer dummy
 scoreboard objectives add deathTimerBuffer dummy
 scoreboard objectives add deathTimerBufferBuffer dummy
 
+#locking
+scoreboard objectives add locked1 dummy
+scoreboard objectives add locked2 dummy
+
 #add gazebo as a trigger
 scoreboard objectives add gazebo trigger
 
@@ -200,6 +204,15 @@ scoreboard objectives add wizardDistance dummy
 scoreboard objectives add wizardHit dummy
 scoreboard objectives add wizardRedHit dummy
 scoreboard objectives add wizardBlueHit dummy
+
+#elemental
+scoreboard objectives add elementalBar dummy
+scoreboard objectives add elementalBarBuffer dummy
+scoreboard objectives add elementalBarTimer dummy
+scoreboard objectives add elementalFireTimer dummy
+scoreboard objectives add elementalWindTimer dummy
+scoreboard objectives add elementalWaterState dummy
+scoreboard objectives add elementalEarthTimer dummy
 
 #mermaid
 scoreboard objectives add mermaidRay dummy

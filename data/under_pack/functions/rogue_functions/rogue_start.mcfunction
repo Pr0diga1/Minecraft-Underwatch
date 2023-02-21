@@ -14,5 +14,11 @@ scoreboard players set @s ability1 0
 scoreboard players set @s ability2 0
 scoreboard players set @s ability3 0
 
+#clean swap tags
+execute as @s[team=uRed] run tag @s remove swap
+execute as @s[team=uRed] run tag @s remove target
+execute as @s[team=uBlue] run tag @s remove swap
+execute as @s[team=uBlue] run tag @s remove target
+
 #run the class select
 function under_pack:general_functions/general_character_select

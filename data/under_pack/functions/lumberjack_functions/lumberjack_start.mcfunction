@@ -12,5 +12,8 @@ item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantmen
 item replace entity @s armor.legs with leather_leggings{Unbreakable:true}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:true}
 
+#clean arrows
+kill @e[type=arrow,tag=lumbersweeparrow]
+
 #run the class select
 function under_pack:general_functions/general_character_select
