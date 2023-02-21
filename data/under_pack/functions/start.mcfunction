@@ -213,3 +213,10 @@ scoreboard objectives add elementalFireTimer dummy
 scoreboard objectives add elementalWindTimer dummy
 scoreboard objectives add elementalWaterState dummy
 scoreboard objectives add elementalEarthTimer dummy
+
+#mermaid
+scoreboard objectives add mermaidRay dummy
+scoreboard objectives add mermaidmist dummy
+scoreboard objectives add mermaidmistbuffer dummy
+
+
