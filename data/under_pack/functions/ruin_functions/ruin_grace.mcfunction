@@ -1,6 +1,10 @@
 #remove barriers
-execute if score ruin_grace timer matches 0 run fill 617 43 -12 617 49 -5 air
-execute if score ruin_grace timer matches 0 run fill 534 43 -5 534 48 -12 air
+execute if score ruin_grace timer matches 0 run fill 18 91 574 26 98 582 air
+execute if score ruin_grace timer matches 0 run fill 18 98 528 26 91 520 air
+
+#tps players to playing field
+execute if score ruin_grace timer matches 0 run tp @a[tag=ruin,team=uRed] 22 68 524
+execute if score ruin_grace timer matches 0 run tp @a[tag=ruin,team=uBlue] 22 68 578
 
 #handle bossbar visibility
 execute if score ruin_grace timer matches 0 run bossbar set count:ruin_unlock visible true

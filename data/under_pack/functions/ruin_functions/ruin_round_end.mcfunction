@@ -1,6 +1,6 @@
 #tp people back to spawns
-tp @a[tag=ruin,team=uRed] 629 43 -9
-tp @a[tag=ruin,team=uBlue] 522 43 -8
+tp @a[tag=ruin,team=uRed] 22 93 524
+tp @a[tag=ruin,team=uBlue] 22 93 578
 
 #which teams has control of the point, and a buffer so I know when it changes
 scoreboard players set ruin_winning team -1
@@ -12,8 +12,7 @@ scoreboard players set ruin_grace timer 400
 scoreboard players set ruin_unlock points 0
 
 #fill barriers to lock teams in their spawns
-fill 617 43 -12 617 49 -5 barrier
-fill 534 43 -5 534 48 -12 barrier
+function under_pack:ruin_functions/ruin_start_fills
 
 #resets dead players
 gamemode adventure @a[tag=ruin]
