@@ -26,6 +26,7 @@ scoreboard players reset RED pointscapped
 scoreboard players reset BLUE pointscapped
 
 #unfill barriers
+## ISAAC
 fill 617 43 -12 617 49 -5 air
 fill 534 43 -5 534 48 -12 air
 
