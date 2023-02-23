@@ -12,5 +12,5 @@ scoreboard players add ruin player_num 1
 tellraw @a ["",{"text":"The amount of people in ruin is: ","color":"blue"},{"score":{"name":"ruin","objective":"player_num"},"color":"blue"}]
 
 #tps player to lobby and clears them
-tp @s 8 69 558
+tp @s 7 74 713
 clear @s
