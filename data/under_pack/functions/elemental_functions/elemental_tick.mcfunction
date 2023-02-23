@@ -6,6 +6,12 @@ execute as @s[nbt={Inventory:[{Slot:3b,tag:{elementalEarth:1b}}],SelectedItem:{i
 
 scoreboard players reset @s reset
 
+#fire tick stuff
+scoreboard players operation @s elementalFireBuffer = @s elementalFireTimer
+scoreboard players set @s elementalFireTimer 0
+execute as @s[team=uRed] as @a[team=uBlue,scores={elementalFireHit=3..}] run function under_pack:elemental_functions/elemental_fire_hit
+execute as @s[team=uBlue] as @a[team=uRed,scores={elementalFireHit=3..}] run function under_pack:elemental_functions/elemental_fire_hit
+
 #wind tick stuff
 execute if score @s elementalWindTimer matches 1.. run scoreboard players remove @s elementalWindTimer 1
 execute if score @s elementalWindTimer matches 48 run effect clear @s levitation
@@ -14,12 +20,16 @@ execute if score @s elementalWindTimer matches 1 run item replace entity @s armo
 #water tick stuff
 execute as @s[team=uRed] if score @s elementalWaterState matches 1 at @s at @e[type=marker,tag=redElementalWater,limit=1,sort=nearest] run function under_pack:elemental_functions/elemental_water_tick
 execute as @s[team=uBlue] if score @s elementalWaterState matches 1 at @s at @e[type=marker,tag=blueElementalWater,limit=1,sort=nearest] run function under_pack:elemental_functions/elemental_water_tick
+execute as @s[team=uRed] as @a[team=uRed,scores={elementalWaterHit=4..}] run function under_pack:elemental_functions/elemental_water_heal
+execute as @s[team=uBlue] as @a[team=uBlue,scores={elementalWaterHit=4..}] run function under_pack:elemental_functions/elemental_water_heal
 
 #earth block levitation
 execute as @s[team=uRed,scores={elementalEarthTimer=1..}] at @s as @e[type=armor_stand,tag=redElementalEarth,limit=1,sort=nearest] at @s run tp @s ~ ~.2 ~
 execute as @s[team=uBlue,scores={elementalEarthTimer=1..}] at @s as @e[type=armor_stand,tag=blueElementalEarth,limit=1,sort=nearest] at @s run tp @s ~ ~.2 ~
 execute as @s[scores={elementalEarthTimer=1..}] run scoreboard players remove @s elementalEarthTimer 1
 execute as @s[scores={elementalEarthTimer=0}] at @s run function under_pack:elemental_functions/elemental_earth_toss
+execute as @e[type=armor_stand,tag=redElementalEart,nbt={OnGround:1b}] run kill @s
+execute as @e[type=armor_stand,tag=blueElementalEart,nbt={OnGround:1b}] run kill @s
 
 #giving energy back
 #buffer timing

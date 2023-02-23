@@ -10,6 +10,10 @@ item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"E
 scoreboard players set @s elementalBar 740
 scoreboard players set @s elementalBarBuffer 740
 scoreboard players set @s elementalWaterState 0
+execute as @s[team=uRed] run scoreboard players set @a[team=uBlue] elementalFireHit 0
+execute as @s[team=uBlue] run scoreboard players set @a[team=uRed] elementalFireHit 0
+execute as @s[team=uRed] run scoreboard players set @a[team=uRed] elementalWaterHit 0
+execute as @s[team=uBlue] run scoreboard players set @a[team=uBlue] elementalWaterHit 0
 
 #clean tags
 tag @s remove elementalLocked
