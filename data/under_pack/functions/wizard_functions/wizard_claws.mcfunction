@@ -23,4 +23,3 @@ execute as @e[type=evoker_fangs,tag=red] at @s run data modify entity @s Owner s
 execute as @e[type=evoker_fangs,tag=blue] at @s run data modify entity @s Owner set from entity @a[team=uBlue,scores={class=10},limit=1,sort=nearest] UUID
 
 scoreboard players set @s ability2 0
-item replace entity @s hotbar.3 with air
