@@ -1,6 +1,8 @@
 #setup
 scoreboard players set hit elementalFireTimer 0
 scoreboard players set distance elementalFireTimer 0
+#clear tag
+tag @a remove elementalHit
 #raycast
 function under_pack:elemental_functions/elemental_fire_ray
 #sound
