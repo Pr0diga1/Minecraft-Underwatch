@@ -15,7 +15,7 @@ scoreboard players reset cap_city points
 scoreboard players reset city_red_wins points
 scoreboard players reset city_blue_wins points
 scoreboard players set under active 0
-scoreboard players set city swag 0
+scoreboard players set cityDM swag 0
 scoreboard players reset city_grace timer
 scoreboard players reset city_unlock points
 scoreboard players reset city_winning points

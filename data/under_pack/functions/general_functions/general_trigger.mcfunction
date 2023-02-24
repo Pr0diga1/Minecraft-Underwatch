@@ -5,6 +5,10 @@ execute as @a[scores={park=1..}] at @s run function under_pack:park_functions/pa
 scoreboard players enable @a park
 execute as @a[scores={ruin=1..}] at @s run function under_pack:ruin_functions/ruin_enter
 scoreboard players enable @a ruin
+execute as @a[scores={res=1..}] at @s run function under_pack:res_functions/res_enter
+scoreboard players enable @a res
+execute as @a[scores={city=1..}] at @s run function under_pack:city_functions/city_enter
+scoreboard players enable @a city
 
 execute as @a[scores={Reset=1..}] at @s run function under_pack:general_functions/general_restart
 scoreboard players enable @a Reset

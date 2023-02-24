@@ -67,8 +67,8 @@ scoreboard players set res_unlock points 0
 scoreboard players set res_winning team -1
 
 #fill barriers to lock teams in their spawns
-##fill 617 43 -12 617 49 -5 barrier
-##fill 534 43 -5 534 48 -12 barrier
+fill -581 85 -481 -578 87 -481 barrier replace air
+fill -569 85 -563 -566 87 -563 barrier replace air
 
 #schedule the first grace tick
 schedule function under_pack:res_functions/res_grace 1t

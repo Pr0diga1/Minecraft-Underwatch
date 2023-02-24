@@ -51,7 +51,7 @@ execute as @a[tag=city] run function under_pack:trigger_functions/leave
 ##spawnpoint @a[tag=city,team=uBlue] 522 43 -8
 
 #city swag stores if the game is active or not, so it can be known if the tick should be run
-scoreboard players set city swag 1
+scoreboard players set cityDM swag 1
 #what is the status of the point, used for how long it takes to uncap it
 scoreboard players set cap_city points 160
 #a game of undercraft is active so do not run the normal oneshot code
