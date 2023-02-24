@@ -62,3 +62,4 @@ execute as @s[team=uRed] if score @s ability3 matches ..49 unless entity @e[type
 execute as @s[team=uRed] if score @s ability3 matches ..47 unless entity @e[type=marker,tag=redWizardSpell] run experience add @s 32 points
 execute as @s[team=uBlue] if score @s ability3 matches ..49 unless entity @e[type=marker,tag=blueWizardSpell] run scoreboard players add @s ability3 2
 execute as @s[team=uBlue] if score @s ability3 matches ..47 unless entity @e[type=marker,tag=blueWizardSpell] run experience add @s 32 points
+execute if score @s ability3 matches 50.. run item modify entity @s hotbar.0 under_pack:wizard/main_complete

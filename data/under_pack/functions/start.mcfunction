@@ -112,6 +112,13 @@ scoreboard objectives add engineer trigger
 scoreboard objectives add paladin trigger
 scoreboard objectives add bulwark trigger
 scoreboard objectives add mermaid trigger
+scoreboard objectives add elemental trigger
+
+#map triggers
+scoreboard objectives add gazebo trigger
+scoreboard objectives add park trigger
+scoreboard objectives add ruin trigger
+scoreboard objectives add res trigger
 
 #adds trackers for abilities and ults
 scoreboard objectives add movement dummy
@@ -210,8 +217,11 @@ scoreboard objectives add elementalBar dummy
 scoreboard objectives add elementalBarBuffer dummy
 scoreboard objectives add elementalBarTimer dummy
 scoreboard objectives add elementalFireTimer dummy
+scoreboard objectives add elementalFireBuffer dummy
+scoreboard objectives add elementalFireHit dummy
 scoreboard objectives add elementalWindTimer dummy
 scoreboard objectives add elementalWaterState dummy
+scoreboard objectives add elementalWaterHit dummy
 scoreboard objectives add elementalEarthTimer dummy
 
 #mermaid
