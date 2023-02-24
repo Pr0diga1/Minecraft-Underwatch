@@ -54,7 +54,7 @@ scoreboard players set DeathBuffer constant 14
 ##spawnpoint @a[tag=city,team=uBlue] 522 43 -8
 
 #city swag stores if the game is active or not, so it can be known if the tick should be run
-scoreboard players set city swag 1
+scoreboard players set cityPOINT swag 1
 #which teams has control of the point, and a buffer so I know when it changes
 scoreboard players set city team -1
 scoreboard players set cityBuffer team -1

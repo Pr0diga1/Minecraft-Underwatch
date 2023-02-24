@@ -12,5 +12,5 @@ scoreboard players add res player_num 1
 tellraw @a ["",{"text":"The amount of people in res is: ","color":"blue"},{"score":{"name":"res","objective":"player_num"},"color":"blue"}]
 
 #tps player to lobby and clears them
-##tp @s 625 43 -25
+tp @s -598 113 -495
 clear @s

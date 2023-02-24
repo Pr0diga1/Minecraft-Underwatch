@@ -114,11 +114,17 @@ scoreboard objectives add bulwark trigger
 scoreboard objectives add mermaid trigger
 scoreboard objectives add elemental trigger
 
+#various triggers
+scoreboard objectives add red trigger
+scoreboard objectives add blue trigger
+scoreboard objectives add leave trigger
+
 #map triggers
 scoreboard objectives add gazebo trigger
 scoreboard objectives add park trigger
 scoreboard objectives add ruin trigger
 scoreboard objectives add res trigger
+scoreboard objectives add city trigger
 
 #adds trackers for abilities and ults
 scoreboard objectives add movement dummy

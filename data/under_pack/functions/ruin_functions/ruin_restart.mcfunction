@@ -26,7 +26,6 @@ scoreboard players reset RED pointscapped
 scoreboard players reset BLUE pointscapped
 
 #unfill barriers
-## ISAAC
 fill 18 91 574 26 98 582 air
 fill 18 98 528 26 91 520 air
 #removes the tag from players
