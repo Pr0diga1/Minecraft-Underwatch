@@ -66,9 +66,6 @@ scoreboard players set ruin_unlock points 0
 #which team wins
 scoreboard players set ruin_winning team -1
 
-#fill barriers to lock teams in their spawns
-function under_pack:ruin_functions/ruin_start_fills
-
 #schedule the first grace tick
 schedule function under_pack:ruin_functions/ruin_grace 1t
 
@@ -105,3 +102,6 @@ scoreboard objectives setdisplay sidebar pointscapped
 execute if score cancel matchmake matches 1 as @a[tag=ruin] run tell @s monkey
 execute if score cancel matchmake matches 1 as @a[tag=ruin] run function under_pack:ruin_functions/ruin_restart
 scoreboard players set cancel matchmake 0
+
+#fill barriers to lock teams in their spawns
+function under_pack:ruin_functions/ruin_start_fills
