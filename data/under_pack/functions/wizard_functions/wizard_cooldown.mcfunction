@@ -33,22 +33,22 @@ execute if score @s ability1 matches 280 run item replace entity @s hotbar.2 wit
 
 #claws
 execute if score @s ability2 matches ..299 run scoreboard players add @s ability2 1
-execute if score @s ability2 matches 300 run item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"The Claws of Rach\'ivalishize","color":"dark_green"}'},Unbreakable:1b,wizardClaws:1b} 1
-execute if score @s ability2 matches 0..1 run item replace entity @s hotbar.3 with dead_brain_coral 15
-execute if score @s ability2 matches 20 run item replace entity @s hotbar.3 with dead_brain_coral 14
-execute if score @s ability2 matches 40 run item replace entity @s hotbar.3 with dead_brain_coral 13
-execute if score @s ability2 matches 60 run item replace entity @s hotbar.3 with dead_brain_coral 12
-execute if score @s ability2 matches 80 run item replace entity @s hotbar.3 with dead_brain_coral 11
-execute if score @s ability2 matches 100 run item replace entity @s hotbar.3 with dead_brain_coral 10
-execute if score @s ability2 matches 120 run item replace entity @s hotbar.3 with dead_brain_coral 9
-execute if score @s ability2 matches 140 run item replace entity @s hotbar.3 with dead_brain_coral 8
-execute if score @s ability2 matches 160 run item replace entity @s hotbar.3 with dead_brain_coral 7
-execute if score @s ability2 matches 180 run item replace entity @s hotbar.3 with dead_brain_coral 6
-execute if score @s ability2 matches 200 run item replace entity @s hotbar.3 with dead_brain_coral 5
-execute if score @s ability2 matches 220 run item replace entity @s hotbar.3 with dead_brain_coral 4
-execute if score @s ability2 matches 240 run item replace entity @s hotbar.3 with dead_brain_coral 3
-execute if score @s ability2 matches 260 run item replace entity @s hotbar.3 with dead_brain_coral 2
-execute if score @s ability2 matches 280 run item replace entity @s hotbar.3 with dead_brain_coral 1
+execute if score @s ability2 matches 300 run item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"The Claws of Rach\'ivalishize","color":"dark_green"}'},Unbreakable:1b,wizardClaws:1b,CustomModelData:47} 1
+execute if score @s ability2 matches 0..1 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 15
+execute if score @s ability2 matches 20 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 14
+execute if score @s ability2 matches 40 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 13
+execute if score @s ability2 matches 60 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 12
+execute if score @s ability2 matches 80 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 11
+execute if score @s ability2 matches 100 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 10
+execute if score @s ability2 matches 120 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 9
+execute if score @s ability2 matches 140 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 8
+execute if score @s ability2 matches 160 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 7
+execute if score @s ability2 matches 180 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 6
+execute if score @s ability2 matches 200 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 5
+execute if score @s ability2 matches 220 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 4
+execute if score @s ability2 matches 240 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 3
+execute if score @s ability2 matches 260 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 2
+execute if score @s ability2 matches 280 run item replace entity @s hotbar.3 with carrot_on_a_stick{CustomModelData:48} 1
 
 #curse
 execute if score @s ability4 matches ..59 run scoreboard players add @s ability4 1
