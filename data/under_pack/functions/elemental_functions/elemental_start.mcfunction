@@ -16,7 +16,7 @@ execute as @s[team=uRed] run scoreboard players set @a[team=uRed] elementalWater
 execute as @s[team=uBlue] run scoreboard players set @a[team=uBlue] elementalWaterHit 0
 
 #constants
-scoreboard players set ElementalWaterTiming constant 10
+scoreboard players set ElementalWaterTiming constant 8
 scoreboard players set ElementalFireTiming constant 5
 
 #clean tags

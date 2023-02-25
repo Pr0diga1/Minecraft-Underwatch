@@ -12,5 +12,5 @@ scoreboard players add city player_num 1
 tellraw @a ["",{"text":"The amount of people in city is: ","color":"blue"},{"score":{"name":"city","objective":"player_num"},"color":"blue"}]
 
 #tps player to lobby and clears them
-##tp @s 625 43 -25
+tp @s 45 96 -1074
 clear @s

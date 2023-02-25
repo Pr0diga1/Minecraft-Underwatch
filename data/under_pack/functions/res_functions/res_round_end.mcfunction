@@ -1,6 +1,6 @@
 #tp people back to spawns
-##tp @a[tag=res,team=uRed] 629 43 -9
-##tp @a[tag=res,team=uBlue] 522 43 -8
+tp @a[tag=res,team=uRed] -568 85 -569
+tp @a[tag=res,team=uBlue] -579 85 -478
 
 #which teams has control of the point, and a buffer so I know when it changes
 scoreboard players set res_winning team -1

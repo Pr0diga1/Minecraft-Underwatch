@@ -1,5 +1,5 @@
 #each player runs their class's tick function as long as they are not respawning or in their spawnpoint
-execute as @a[tag=res] unless entity @s[tag=res_dead] unless entity @s[x=617,y=43,z=-12,dx=14,dz=8,dy=5] unless entity @s[x=533,y=43,z=-5,dx=-14,dz=-8,dy=5] run function under_pack:general_functions/general_classloop
+execute as @a[tag=res] unless entity @s[tag=res_dead] run function under_pack:general_functions/general_classloop
 
 #lower the unlock timer when the game is active
 execute if score res_grace timer matches ..0 if score res_unlock points matches ..999 run scoreboard players add res_unlock points 1
