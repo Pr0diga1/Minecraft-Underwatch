@@ -45,8 +45,8 @@ scoreboard players set true matchmake 0
 execute as @a[tag=ruin] run function under_pack:trigger_functions/leave
 
 #tps players to their spawns and sets their spawnpoints
-tp @a[tag=ruin,team=uRed] 22 93 524
-tp @a[tag=ruin,team=uBlue] 22 93 578
+tp @a[tag=ruin,team=uRed] 22 93.5 524
+tp @a[tag=ruin,team=uBlue] 22 93.5 578
 spawnpoint @a[tag=ruin,team=uRed] 22 68 524
 spawnpoint @a[tag=ruin,team=uBlue] 22 68 578
 
@@ -104,4 +104,4 @@ execute if score cancel matchmake matches 1 as @a[tag=ruin] run function under_p
 scoreboard players set cancel matchmake 0
 
 #fill barriers to lock teams in their spawns
-function under_pack:ruin_functions/ruin_start_fills
+schedule function under_pack:ruin_functions/ruin_start_fills 1t
