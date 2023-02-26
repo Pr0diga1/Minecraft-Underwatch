@@ -25,8 +25,9 @@ scoreboard players reset city_overtime timer
 scoreboard players reset city_overtime_toggle swag
 
 #unfill barriers
-##fill 617 43 -12 617 49 -5 air
-##fill 534 43 -5 534 48 -12 air
+fill 76 55 -1113 77 56 -1113 air
+fill 24 54 -1039 23 55 -1039 air
+fill 9 54 -1037 9 55 -1037 air
 
 #removes the tag from players
 tag @s remove city
