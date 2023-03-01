@@ -32,8 +32,6 @@ execute as @s[team=uRed,scores={elementalEarthTimer=1..}] at @s as @e[type=armor
 execute as @s[team=uBlue,scores={elementalEarthTimer=1..}] at @s as @e[type=armor_stand,tag=blueElementalEarth,limit=1,sort=nearest] at @s run tp @s ~ ~.2 ~
 execute as @s[scores={elementalEarthTimer=-5..}] run scoreboard players remove @s elementalEarthTimer 1
 execute as @s[scores={elementalEarthTimer=0}] at @s run function under_pack:elemental_functions/elemental_earth_toss
-execute as @e[type=armor_stand,tag=redElementalEarth,nbt={OnGround:1b}] run kill @s
-execute as @e[type=armor_stand,tag=blueElementalEarth,nbt={OnGround:1b}] run kill @s
 
 #giving energy back
 #buffer timing
@@ -43,8 +41,8 @@ execute if score @s elementalBarTimer matches ..10 unless score @s elementalBarB
 execute if score @s elementalBarTimer matches 1.. run scoreboard players remove @s elementalBarTimer 1
 execute if score @s[tag=elementalLocked] elementalBarTimer matches 0 run tag @s remove elementalLocked
 #giving points
-execute if score @s elementalBarTimer matches 0 if score @s elementalBar matches ..737 run scoreboard players add @s elementalBar 3
-execute if score @s elementalBarTimer matches 0 if score @s elementalBar matches 738..739 run scoreboard players set @s elementalBar 740
+execute if score @s elementalBarTimer matches 0 if score @s elementalBar matches ..736 run scoreboard players add @s elementalBar 4
+execute if score @s elementalBarTimer matches 0 if score @s elementalBar matches 737..739 run scoreboard players set @s elementalBar 740
 
 #xp bar logic
 scoreboard players operation @s elementalBarBuffer -= @s elementalBar

@@ -71,6 +71,7 @@ scoreboard objectives add levels xp
 scoreboard objectives add constant dummy
 scoreboard objectives add modifier dummy
 scoreboard objectives add buffer dummy
+scoreboard objectives add num dummy
 
 #arrow death timer
 scoreboard objectives add arrowTimer dummy
@@ -99,6 +100,7 @@ scoreboard players set TheNumberTwo constant 2
 scoreboard players set TheNumberZero constant 0
 scoreboard players set everyOther constant 1
 scoreboard players set minusOne constant -1
+scoreboard players set 4 num 4
 
 #all of the triggers for the classes
 scoreboard objectives add alchemist trigger
