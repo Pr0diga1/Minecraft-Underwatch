@@ -4,13 +4,13 @@ execute if entity @s[nbt={Inventory:[{Slot:1b,tag:{knightheal:1b}}],SelectedItem
 function under_pack:knight_functions/knight_cooldown
 #heal cooldown
 execute if score @s movement matches ..320 run scoreboard players add @s movement 1
-execute if score @s movement matches 320 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Selfish Prayer","color":"gold"}'},knightheal:1b} 1
+execute if score @s movement matches 320 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:44,display:{Name:'{"text":"Selfish Prayer","color":"gold"}'},knightheal:1b} 1
 #bomb!!!!!!!
 function under_pack:knight_functions/knight_bomb
 #bomb cooldown
 execute if score @s ability1 matches ..180 run scoreboard players add @s ability1 1
-execute if entity @s[team=uRed] if score @s ability1 matches 180 run item replace entity @s hotbar.2 with snowball{display:{Name:'{"text":"Holy Hand Grenade","color":"dark_green"}'},knightbomb:1b,red:1b} 1
-execute if entity @s[team=uBlue] if score @s ability1 matches 180 run item replace entity @s hotbar.2 with snowball{display:{Name:'{"text":"Holy Hand Grenade","color":"dark_green"}'},knightbomb:1b,blue:1b} 1
+execute if entity @s[team=uRed] if score @s ability1 matches 180 run item replace entity @s hotbar.2 with snowball{CustomModelData:1,display:{Name:'{"text":"Holy Hand Grenade","color":"dark_green"}'},knightbomb:1b,red:1b} 1
+execute if entity @s[team=uBlue] if score @s ability1 matches 180 run item replace entity @s hotbar.2 with snowball{CustomModelData:1,display:{Name:'{"text":"Holy Hand Grenade","color":"dark_green"}'},knightbomb:1b,blue:1b} 1
 #stopsounds for the block
 stopsound @a * minecraft:entity.ender_eye.launch
 stopsound @a * minecraft:entity.ender_eye.death

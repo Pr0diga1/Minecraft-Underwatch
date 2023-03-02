@@ -1,10 +1,10 @@
 #finds the amount of players on the point for each team and stores it
-##execute store result score on_point_res_red player_num if entity @a[x=571,y=43,z=-13,dx=9,dy=2,dz=9,team=uRed,tag=res,gamemode=adventure,scores={cantCap=0}]
-##execute store result score on_point_res_blue player_num if entity @a[x=571,y=43,z=-13,dx=9,dy=2,dz=9,team=uBlue,tag=res,gamemode=adventure,scores={cantCap=0}]
+execute store result score on_point_res_red player_num if entity @a[x=-569,y=75,z=-512,dx=-9,dy=2,dz=-9,team=uRed,tag=res,gamemode=adventure,scores={cantCap=0}]
+execute store result score on_point_res_blue player_num if entity @a[x=-569,y=75,z=-512,dx=-9,dy=2,dz=-9,team=uBlue,tag=res,gamemode=adventure,scores={cantCap=0}]
 
 #is a player on point
-##execute as @a[tag=res] if entity @s[x=19,y=68,z=547,dx=6,dy=2,dz=8,tag=res,gamemode=adventure] run scoreboard players set @s onPoint 1
-##execute as @a[tag=res] unless entity @s[x=19,y=68,z=547,dx=6,dy=2,dz=8,tag=res,gamemode=adventure] run scoreboard players set @s onPoint 0
+execute as @a[tag=res] if entity @s[x=-569,y=75,z=-512,dx=-9,dy=2,dz=-9,tag=res,gamemode=adventure] run scoreboard players set @s onPoint 1
+execute as @a[tag=res] unless entity @s[x=-569,y=75,z=-512,dx=-9,dy=2,dz=-9,tag=res,gamemode=adventure] run scoreboard players set @s onPoint 0
 
 #if blue team is on the point and red team isn't, update the point's value
 #removes 2 w/ one or more players on the point

@@ -45,10 +45,10 @@ scoreboard players set true matchmake 0
 execute as @a[tag=res] run function under_pack:trigger_functions/leave
 
 #tps players to their spawns and sets their spawnpoints
-##tp @a[tag=res,team=uRed] 629 43 -9
-##tp @a[tag=res,team=uBlue] 522 43 -8
-##spawnpoint @a[tag=res,team=uRed] 629 43 -9
-##spawnpoint @a[tag=res,team=uBlue] 522 43 -8
+tp @a[tag=res,team=uRed] -568 85 -569
+tp @a[tag=res,team=uBlue] -579 85 -478
+spawnpoint @a[tag=res,team=uRed] -568 85 -569
+spawnpoint @a[tag=res,team=uBlue] -579 85 -478
 
 #res swag stores if the game is active or not, so it can be known if the tick should be run
 scoreboard players set res swag 1

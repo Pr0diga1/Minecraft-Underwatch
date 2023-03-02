@@ -1,6 +1,6 @@
 [
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:48}"
+		"tag": "{CustomModelData:1}"
 	}
 ]

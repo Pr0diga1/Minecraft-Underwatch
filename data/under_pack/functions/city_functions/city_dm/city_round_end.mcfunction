@@ -1,6 +1,6 @@
 #tp people back to spawns
-##tp @a[tag=city,team=uRed] 629 43 -9
-##tp @a[tag=city,team=uBlue] 522 43 -8
+tp @a[tag=city,team=uRed] 15 54 -1036
+tp @a[tag=city,team=uBlue] 77 55 -1118
 
 #which teams has control of the point, and a buffer so I know when it changes
 scoreboard players set city_winning team -1
@@ -12,8 +12,9 @@ scoreboard players set city_grace timer 400
 scoreboard players set city_unlock points 0
 
 #fill barriers to lock teams in their spawns
-##fill 617 43 -12 617 49 -5 barrier
-##fill 534 43 -5 534 48 -12 barrier
+fill 76 55 -1113 77 56 -1113 barrier
+fill 24 54 -1039 23 55 -1039 barrier
+fill 9 54 -1037 9 55 -1037 barrier
 
 #resets dead players
 gamemode adventure @a[tag=city]

@@ -1,10 +1,6 @@
 #each player runs their class's tick function as long as they are not respawning or in their spawnpoint
 execute as @a[tag=city] unless entity @s[tag=city_dead] run function under_pack:general_functions/general_classloop
 
-#is a player on point
-##execute as @a[tag=city] if entity @s[x=571,y=43,z=-13,dx=9,dy=2,dz=9,tag=city,gamemode=adventure] run scoreboard players set @s onPoint 1
-##execute as @a[tag=city] unless entity @s[x=571,y=43,z=-13,dx=9,dy=2,dz=9,tag=city,gamemode=adventure] run scoreboard players set @s onPoint 0
-
 #sets a buffer to whoever has control of the point
 scoreboard players operation cityBuffer team = city team
 #updates the point for the tick
@@ -77,8 +73,8 @@ execute as @a[tag=city,tag=city_dead] run title @s actionbar ["",{"text":"Respaw
 #sets them to adventure
 execute as @a[tag=city,tag=city_dead] if score @s deathTimer matches 280.. run gamemode adventure @s
 #tp them to their spanws
-##execute as @a[tag=city,tag=city_dead,team=uRed] if score @s deathTimer matches 280.. run tp @s 629 43 -9
-##execute as @a[tag=city,tag=city_dead,team=uBlue] if score @s deathTimer matches 280.. run tp @s 522 43 -8
+execute as @a[tag=city,tag=city_dead,team=uRed] if score @s deathTimer matches 280.. run tp @s 15 54 -1036
+execute as @a[tag=city,tag=city_dead,team=uBlue] if score @s deathTimer matches 280.. run tp @s 77 55 -1118
 #tells them they respawned 
 execute as @a[tag=city,tag=city_dead] if score @s deathTimer matches 280.. run title @s actionbar {"text":"Respawned","color":"gold"}
 #run the general respawn
@@ -93,14 +89,15 @@ execute if score red_city points matches 100 run function under_pack:city_functi
 execute if score blue_city points matches 100 run function under_pack:city_functions/city_point/city_tally
 
 #resistance in spawns
-##execute as @a[team=uRed,x=617,y=43,z=-12,dx=14,dz=8,dy=5,tag=city] run effect give @s resistance 1 6 false
-##execute as @a[team=uBlue,x=533,y=43,z=-5,dx=-14,dz=-8,dy=5,tag=city] run effect give @s resistance 1 6 false
+execute as @a[team=uRed,x=10,y=54,z=-1038,dx=15,dz=6,dy=3,tag=city] run effect give @s resistance 1 6 false
+execute as @a[team=uBlue,x=75,y=55,z=-1122,dx=8,dz=8,dy=4,tag=city] run effect give @s resistance 1 6 false
 #healing in spawns
-##execute as @a[team=uRed,x=617,y=43,z=-12,dx=14,dz=8,dy=5,tag=city] run effect give @s instant_health
-##execute as @a[team=uBlue,x=533,y=43,z=-5,dx=-14,dz=-8,dy=5,tag=city] run effect give @s instant_health
+execute as @a[team=uRed,x=10,y=54,z=-1038,dx=15,dz=6,dy=3,tag=city] run effect give @s instant_health
+execute as @a[team=uBlue,x=75,y=55,z=-1122,dx=8,dz=8,dy=4,tag=city] run effect give @s instant_health
 #cant enter enemy spawns
-##execute as @a[team=uBlue,x=617,y=43,z=-12,dx=14,dz=8,dy=5,tag=city] at @s run tp @s ~-1 ~ ~
-##execute as @a[team=uRed,x=533,y=43,z=-5,dx=-14,dz=-8,dy=5,tag=city] at @s run tp @s ~1 ~ ~
+execute as @a[team=uBlue,x=9,y=54,z=-1038,dx=4,dz=3,dy=2,tag=city] at @s run tp @s ~-1 ~ ~
+execute as @a[team=uBlue,x=25,y=54,z=-1039,dx=-3,dz=10,dy=4,tag=city] at @s run tp @s ~ ~ ~-1
+execute as @a[team=uRed,x=75,y=55,z=-1122,dx=8,dz=8,dy=4,tag=city] at @s run tp @s ~ ~ ~1
 
 #runs class changing system
 function under_pack:class_functions/ui/checks

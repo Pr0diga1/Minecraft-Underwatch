@@ -1,6 +1,7 @@
 #remove barriers
-#execute if score city_grace timer matches 0 run fill 617 43 -12 617 49 -5 air
-#execute if score city_grace timer matches 0 run fill 534 43 -5 534 48 -12 air
+execute if score city_grace timer matches 0 run fill 76 55 -1113 77 56 -1113 air
+execute if score city_grace timer matches 0 run fill 24 54 -1039 23 55 -1039 air
+execute if score city_grace timer matches 0 run fill 9 54 -1037 9 55 -1037 air
 
 #handle bossbar visibility
 execute if score city_grace timer matches 0 run bossbar set count:city visible true
