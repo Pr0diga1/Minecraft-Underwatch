@@ -28,6 +28,7 @@ scoreboard players reset BLUE pointscapped
 #unfill barriers
 fill 18 91 574 26 98 582 air
 fill 18 98 528 26 91 520 air
+fill 25 96 551 19 92 551 air
 #removes the tag from players
 tag @s remove ruin
 

@@ -95,3 +95,5 @@ setblock 24 95 578 birch_wall_sign[facing=west]{Text2:'{"text":"Ninja","clickEve
 setblock 24 95 579 birch_wall_sign[facing=west]{Text2:'{"text":"Paladin","clickEvent":{"action":"run_command","value":"/trigger paladin"}}'} replace
 setblock 24 95 580 birch_wall_sign[facing=west]{Text2:'{"text":"Rogue","clickEvent":{"action":"run_command","value":"/trigger rogue"}}'} replace
 setblock 24 94 576 birch_wall_sign[facing=west]{Text2:'{"text":"Wizard","clickEvent":{"action":"run_command","value":"/trigger wizard"}}'} replace
+
+fill 25 96 551 19 92 551 minecraft:polished_andesite
