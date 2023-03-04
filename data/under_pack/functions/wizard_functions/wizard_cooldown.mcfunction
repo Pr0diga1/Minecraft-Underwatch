@@ -15,21 +15,21 @@ execute if score @s movement matches 99 run title @s actionbar ["",{"text":" "}]
 #rainbow
 execute if score @s ability1 matches ..299 run scoreboard players add @s ability1 1
 execute if score @s ability1 matches 300 run item replace entity @s hotbar.2 with carrot_on_a_stick{CustomModelData:48,display:{Name:'[{"text":"E","color":"red"},{"text":"x","color":"gold"},{"text":"p","color":"yellow"},{"text":"e","color":"green"},{"text":"c","color":"dark_aqua"},{"text":"t","color":"blue"},{"text":"o ","color":"dark_purple"},{"text":"h","color":"red"},{"text":"o","color":"gold"},{"text":"m","color":"yellow"},{"text":"o","color":"green"},{"text":"c","color":"dark_aqua"},{"text":"o","color":"blue"},{"text":"n","color":"dark_purple"},{"text":"v","color":"red"},{"text":"e","color":"gold"},{"text":"r","color":"yellow"},{"text":"s","color":"green"},{"text":"u","color":"dark_aqua"},{"text":"s","color":"blue"}]'},Unbreakable:1b,wizardGay:1b} 1
-execute if score @s ability1 matches 0..1 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:1} 1
-execute if score @s ability1 matches 20 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:2} 1
-execute if score @s ability1 matches 40 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:3} 1
-execute if score @s ability1 matches 60 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:4} 1
-execute if score @s ability1 matches 80 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:5} 1
-execute if score @s ability1 matches 100 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:6} 1
-execute if score @s ability1 matches 120 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:7} 1
-execute if score @s ability1 matches 140 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:8} 1
-execute if score @s ability1 matches 160 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:9} 1
-execute if score @s ability1 matches 180 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:10} 1
-execute if score @s ability1 matches 200 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:11} 1
-execute if score @s ability1 matches 220 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:12} 1
-execute if score @s ability1 matches 240 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:13} 1
-execute if score @s ability1 matches 260 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:14} 1
-execute if score @s ability1 matches 280 run item replace entity @s hotbar.2 with bookshelf{CustomModelData:15} 1
+execute if score @s ability1 matches 0..1 run item replace entity @s hotbar.2 with carrot{CustomModelData:1} 1
+execute if score @s ability1 matches 20 run item replace entity @s hotbar.2 with carrot{CustomModelData:2} 1
+execute if score @s ability1 matches 40 run item replace entity @s hotbar.2 with carrot{CustomModelData:3} 1
+execute if score @s ability1 matches 60 run item replace entity @s hotbar.2 with carrot{CustomModelData:4} 1
+execute if score @s ability1 matches 80 run item replace entity @s hotbar.2 with carrot{CustomModelData:5} 1
+execute if score @s ability1 matches 100 run item replace entity @s hotbar.2 with carrot{CustomModelData:6} 1
+execute if score @s ability1 matches 120 run item replace entity @s hotbar.2 with carrot{CustomModelData:7} 1
+execute if score @s ability1 matches 140 run item replace entity @s hotbar.2 with carrot{CustomModelData:8} 1
+execute if score @s ability1 matches 160 run item replace entity @s hotbar.2 with carrot{CustomModelData:9} 1
+execute if score @s ability1 matches 180 run item replace entity @s hotbar.2 with carrot{CustomModelData:10} 1
+execute if score @s ability1 matches 200 run item replace entity @s hotbar.2 with carrot{CustomModelData:11} 1
+execute if score @s ability1 matches 220 run item replace entity @s hotbar.2 with carrot{CustomModelData:12} 1
+execute if score @s ability1 matches 240 run item replace entity @s hotbar.2 with carrot{CustomModelData:13} 1
+execute if score @s ability1 matches 260 run item replace entity @s hotbar.2 with carrot{CustomModelData:14} 1
+execute if score @s ability1 matches 280 run item replace entity @s hotbar.2 with carrot{CustomModelData:15} 1
 
 #claws
 execute if score @s ability2 matches ..299 run scoreboard players add @s ability2 1
