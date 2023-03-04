@@ -1,6 +1,7 @@
 #remove barriers
 execute if score ruin_grace timer matches 0 run fill 18 91 574 26 98 582 air
 execute if score ruin_grace timer matches 0 run fill 18 98 528 26 91 520 air
+execute if score ruin_grace timer matches 0 run fill 25 96 551 19 92 551 air
 
 #tps players to playing field
 execute if score ruin_grace timer matches 0 as @a[tag=ruin,team=uRed] at @s run tp @s ~ ~-24.8 ~1
