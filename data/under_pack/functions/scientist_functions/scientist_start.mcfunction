@@ -5,7 +5,7 @@ execute as @s[team=uRed] run tag @s add red
 execute as @s[team=uBlue] run tag @s add blue
 
 #bow into offhand
-item replace entity @s weapon.offhand with bow{Unbreakable:1b}
+item replace entity @s weapon.offhand with bow{CustomModelData:1,Unbreakable:1b}
 #damage arrows
 item replace entity @s hotbar.0 with tipped_arrow{CustomModelData:3,display:{Name:'{"text":"Damage Dart","color":"dark_red"}'},scientistDamage:1b,CustomPotionEffects:[{Id:20,Amplifier:3b,Duration:40,ShowParticles:0b}],CustomPotionColor:0} 4
 #healing arrows
