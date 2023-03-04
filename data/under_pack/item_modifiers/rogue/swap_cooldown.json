@@ -1,26 +1,13 @@
 [
 	{
 		"function": "minecraft:set_nbt",
-		"tag": "{CustomModelData:49}",
-		"conditions": [
-			{
-				"condition": "minecraft:entity_scores",
-				"entity": "this",
-				"scores": {
-					"ability2": 191
-				}
-			}
-		]
-	},
-    {
-		"function": "minecraft:set_nbt",
 		"tag": "{CustomModelData:50}",
 		"conditions": [
 			{
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability2": 171
+					"ability2": 181
 				}
 			}
 		]
@@ -33,7 +20,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability2": 151
+					"ability2": 161
 				}
 			}
 		]
@@ -46,7 +33,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability2": 131
+					"ability2": 141
 				}
 			}
 		]
@@ -59,7 +46,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability2": 111
+					"ability2": 121
 				}
 			}
 		]
@@ -72,7 +59,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability2": 91
+					"ability2": 101
 				}
 			}
 		]
@@ -85,7 +72,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability2": 71
+					"ability2": 81
 				}
 			}
 		]
@@ -98,7 +85,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability2": 51
+					"ability2": 61
 				}
 			}
 		]
@@ -111,7 +98,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability2": 31
+					"ability2": 41
 				}
 			}
 		]
@@ -124,7 +111,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability2": 11
+					"ability2": 21
 				}
 			}
 		]
