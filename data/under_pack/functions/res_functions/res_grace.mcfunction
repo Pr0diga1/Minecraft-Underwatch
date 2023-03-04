@@ -1,6 +1,6 @@
 #remove barriers
 execute if score res_grace timer matches 0 run fill -581 85 -481 -578 87 -481 air replace barrier
-execute if score res_grace timer matches 0 run fill -569 85 -563 -566 87 -563 air replace barrier
+execute if score res_grace timer matches 0 run fill -566 85 -561 -569 87 -561 air replace barrier
 
 #handle bossbar visibility
 execute if score res_grace timer matches 0 run bossbar set count:res_unlock visible true

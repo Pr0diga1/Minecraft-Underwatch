@@ -27,7 +27,7 @@ scoreboard players reset BLUE pointscapped
 
 #unfill barriers
 fill -581 85 -481 -578 87 -481 air replace barrier
-fill -569 85 -563 -566 87 -563 air replace barrier
+fill -566 85 -561 -569 87 -561 air replace barrier
 
 #removes the tag from players
 tag @s remove res

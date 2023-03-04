@@ -30,8 +30,14 @@ execute as @s[team=uBlue] as @a[team=uBlue] if score @s elementalWaterHit = Elem
 #earth block levitation
 execute as @s[team=uRed,scores={elementalEarthTimer=1..}] at @s as @e[type=armor_stand,tag=redElementalEarth,limit=1,sort=nearest] at @s run tp @s ~ ~.2 ~
 execute as @s[team=uBlue,scores={elementalEarthTimer=1..}] at @s as @e[type=armor_stand,tag=blueElementalEarth,limit=1,sort=nearest] at @s run tp @s ~ ~.2 ~
+
+
 execute as @s[scores={elementalEarthTimer=-5..}] run scoreboard players remove @s elementalEarthTimer 1
+
+
 execute as @s[scores={elementalEarthTimer=0}] at @s run function under_pack:elemental_functions/elemental_earth_toss
+execute as @s[scores={elementalEarthTimer=..0},team=uRed] at @e[type=armor_stand,tag=redElementalEarth,limit=1,sort=nearest] run function under_pack:elemental_functions/elemental_earth_tick
+execute as @s[scores={elementalEarthTimer=..0},team=uBlue] at @e[type=armor_stand,tag=blueElementalEarth,limit=1,sort=nearest] run function under_pack:elemental_functions/elemental_earth_tick
 
 #giving energy back
 #buffer timing
