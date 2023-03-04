@@ -53,9 +53,9 @@ execute if score @s ability2 matches 280 run item replace entity @s hotbar.3 wit
 #curse
 execute if score @s ability4 matches ..59 run scoreboard players add @s ability4 1
 execute if score @s ability4 matches 60 run item replace entity @s hotbar.4 with ender_eye{CustomModelData:2,display:{Name:'[{"text":"fgh","color":"black","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":true},{"text":"Curse","color":"black","bold":true,"italic":true,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"fgh","bold":false,"italic":false,"strikethrough":false,"obfuscated":true}]'}} 1
-execute if score @s ability4 matches 0..1 run item replace entity @s hotbar.4 with wither_skeleton_skull{CustomModelData:1} 3
-execute if score @s ability4 matches 20 run item replace entity @s hotbar.4 with wither_skeleton_skull{CustomModelData:2} 2
-execute if score @s ability4 matches 40 run item replace entity @s hotbar.4 with wither_skeleton_skull{CustomModelData:3} 1
+execute if score @s ability4 matches 0..1 run item replace entity @s hotbar.4 with carrot{CustomModelData:16} 3
+execute if score @s ability4 matches 20 run item replace entity @s hotbar.4 with carrot{CustomModelData:17} 2
+execute if score @s ability4 matches 40 run item replace entity @s hotbar.4 with carrot{CustomModelData:18} 1
 
 #ability3
 execute as @s[team=uRed] if score @s ability3 matches ..49 unless entity @e[type=marker,tag=redWizardSpell] run scoreboard players add @s ability3 2
