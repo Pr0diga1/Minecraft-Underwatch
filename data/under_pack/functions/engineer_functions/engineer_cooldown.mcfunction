@@ -22,16 +22,16 @@ execute if score @s ability3 matches 120 run item replace entity @s hotbar.3 wit
 execute if score @s ability3 matches 140 run item replace entity @s hotbar.3 with barrier{CustomModelData:66,display:{Name:'{"text":"Wall on Cooldown"}'}} 1
 execute if score @s ability3 matches 160 run item replace entity @s hotbar.3 with barrier{CustomModelData:67,display:{Name:'{"text":"Wall on Cooldown"}'}} 1
 
-execute if score @s ability4 matches 20 run item replace entity @s hotbar.4 with tube_coral{CustomModelData:1,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 10
-execute if score @s ability4 matches 40 run item replace entity @s hotbar.4 with tube_coral{CustomModelData:2,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 9
-execute if score @s ability4 matches 60 run item replace entity @s hotbar.4 with tube_coral{CustomModelData:3,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 8
-execute if score @s ability4 matches 80 run item replace entity @s hotbar.4 with tube_coral{CustomModelData:4,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 7
-execute if score @s ability4 matches 100 run item replace entity @s hotbar.4 with tube_coral{CustomModelData:5,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 6
-execute if score @s ability4 matches 120 run item replace entity @s hotbar.4 with tube_coral{CustomModelData:6,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 5
-execute if score @s ability4 matches 140 run item replace entity @s hotbar.4 with tube_coral{CustomModelData:7,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 4
-execute if score @s ability4 matches 160 run item replace entity @s hotbar.4 with tube_coral{CustomModelData:8,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 3
-execute if score @s ability4 matches 180 run item replace entity @s hotbar.4 with tube_coral{CustomModelData:9,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 2
-execute if score @s ability4 matches 200 run item replace entity @s hotbar.4 with tube_coral{CustomModelData:10,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 1
+execute if score @s ability4 matches 20 run item replace entity @s hotbar.4 with potato{CustomModelData:1,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 10
+execute if score @s ability4 matches 40 run item replace entity @s hotbar.4 with potato{CustomModelData:2,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 9
+execute if score @s ability4 matches 60 run item replace entity @s hotbar.4 with potato{CustomModelData:3,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 8
+execute if score @s ability4 matches 80 run item replace entity @s hotbar.4 with potato{CustomModelData:4,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 7
+execute if score @s ability4 matches 100 run item replace entity @s hotbar.4 with potato{CustomModelData:5,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 6
+execute if score @s ability4 matches 120 run item replace entity @s hotbar.4 with potato{CustomModelData:6,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 5
+execute if score @s ability4 matches 140 run item replace entity @s hotbar.4 with potato{CustomModelData:7,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 4
+execute if score @s ability4 matches 160 run item replace entity @s hotbar.4 with potato{CustomModelData:8,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 3
+execute if score @s ability4 matches 180 run item replace entity @s hotbar.4 with potato{CustomModelData:9,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 2
+execute if score @s ability4 matches 200 run item replace entity @s hotbar.4 with potato{CustomModelData:10,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 1
 
 execute if score @s engineercap matches 0..19 run item replace entity @s armor.chest with leather_chestplate{display:{color:16777215},Unbreakable:1b}
 execute if score @s engineercap matches 20..39 run item replace entity @s armor.chest with leather_chestplate{display:{color:9877247},Unbreakable:1b}
