@@ -42,5 +42,7 @@ execute as @a[scores={wizard=1..}] at @s run function under_pack:wizard_function
 scoreboard players enable @a wizard
 execute as @a[scores={mermaid=1..}] at @s run function under_pack:mermaid_functions/mermaid_trigger
 scoreboard players enable @a mermaid
-execute as @a[scores={elemental=1..}] at @s run function under_pack:elemental_functions/elemental_trigger
-scoreboard players enable @a elemental
+execute as @a[scores={dark_soul=1..}] at @s run function under_pack:elemental_functions/elemental_trigger
+scoreboard players enable @a dark_soul
+execute as @a[scores={dark_soul=1..}] at @s run function under_pack:dark_soul_functions/trigger
+scoreboard players enable @a dark_soul
