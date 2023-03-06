@@ -239,3 +239,4 @@ scoreboard objectives add mermaidmist dummy
 scoreboard objectives add mermaidmistbuffer dummy
 
 #dark soul
+scoreboard objectives add slamTimer dummy
