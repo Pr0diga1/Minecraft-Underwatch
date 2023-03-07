@@ -231,6 +231,7 @@ scoreboard objectives add elementalWindTimer dummy
 scoreboard objectives add elementalWaterState dummy
 scoreboard objectives add elementalWaterHit dummy
 scoreboard objectives add elementalEarthTimer dummy
+scoreboard objectives add elementalDistance dummy
 
 #mermaid
 scoreboard objectives add mermaidRay dummy
