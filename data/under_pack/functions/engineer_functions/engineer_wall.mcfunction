@@ -13,4 +13,4 @@ execute as @e[tag=enginewalltrack] at @s run summon falling_block ^-1 ^2 ^1 {Blo
 kill @e[tag=enginewalltrack]
 
 scoreboard players set @s ability3 0
-item replace entity @s hotbar.3 with light_blue_stained_glass 9
+item replace entity @s hotbar.3 with barrier{CustomModelData:60,display:{Name:'{"text":"Wall on Cooldown"}'}} 1

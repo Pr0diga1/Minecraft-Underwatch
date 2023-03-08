@@ -6,7 +6,7 @@ item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:24,displa
 #Hyperventilate
 item replace entity @s hotbar.2 with carrot_on_a_stick{CustomModelData:25,display:{Name:'{"text":"Brass Knuckles","color":"gold"}',Lore:['{"text":"Right Click to hyperventilate"}']},ninjaHyperventilate:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2,Operation:0,UUID:[I;-313458390,-1808840175,-1185663256,636532485],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2,Operation:0,UUID:[I;971141352,1171998355,-1798810994,-675089356],Slot:"mainhand"}]} 1
 #armor
-item replace entity @s armor.legs with iron_leggings{Unbreakable:true}
+item replace entity @s armor.legs with golden_leggings{Unbreakable:true}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:true}
 item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
 

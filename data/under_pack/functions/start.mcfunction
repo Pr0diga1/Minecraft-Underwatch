@@ -114,7 +114,8 @@ scoreboard objectives add engineer trigger
 scoreboard objectives add paladin trigger
 scoreboard objectives add bulwark trigger
 scoreboard objectives add mermaid trigger
-scoreboard objectives add elemental trigger
+scoreboard objectives add dark_soul trigger
+scoreboard objectives add dark_soul trigger
 
 #various triggers
 scoreboard objectives add red trigger
@@ -231,10 +232,12 @@ scoreboard objectives add elementalWindTimer dummy
 scoreboard objectives add elementalWaterState dummy
 scoreboard objectives add elementalWaterHit dummy
 scoreboard objectives add elementalEarthTimer dummy
+scoreboard objectives add elementalDistance dummy
 
 #mermaid
 scoreboard objectives add mermaidRay dummy
 scoreboard objectives add mermaidmist dummy
 scoreboard objectives add mermaidmistbuffer dummy
 
-
+#dark soul
+scoreboard objectives add slamTimer dummy

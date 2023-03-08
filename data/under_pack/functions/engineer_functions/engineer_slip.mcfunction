@@ -7,4 +7,4 @@ execute at @s run effect give @s speed 1 50 true
 scoreboard players set @s engineer_wd 4
 
 scoreboard players set @s ability4 0
-item replace entity @s hotbar.4 with tube_coral{display:{Name:'{"text":"WD-40 on Cooldown"}'}} 11 
+item replace entity @s hotbar.4 with potato{CustomModelData:1,display:{Name:'{"text":"WD-40 on Cooldown"}'}} 1 

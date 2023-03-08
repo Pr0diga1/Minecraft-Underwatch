@@ -1,5 +1,5 @@
 #tp people back to spawns
-tp @a[tag=res,team=uRed] -568 85 -569
+tp @a[tag=res,team=uRed] -568 85 -565
 tp @a[tag=res,team=uBlue] -579 85 -478
 
 #which teams has control of the point, and a buffer so I know when it changes
@@ -13,7 +13,7 @@ scoreboard players set res_unlock points 0
 
 #fill barriers to lock teams in their spawns
 fill -581 85 -481 -578 87 -481 barrier replace air
-fill -569 85 -563 -566 87 -563 barrier replace air
+fill -566 85 -561 -569 87 -561 barrier replace air
 
 #resets dead players
 gamemode adventure @a[tag=res]

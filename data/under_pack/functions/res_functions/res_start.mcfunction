@@ -45,9 +45,9 @@ scoreboard players set true matchmake 0
 execute as @a[tag=res] run function under_pack:trigger_functions/leave
 
 #tps players to their spawns and sets their spawnpoints
-tp @a[tag=res,team=uRed] -568 85 -569
+tp @a[tag=res,team=uRed] -568 85 -565
 tp @a[tag=res,team=uBlue] -579 85 -478
-spawnpoint @a[tag=res,team=uRed] -568 85 -569
+spawnpoint @a[tag=res,team=uRed] -568 85 -565
 spawnpoint @a[tag=res,team=uBlue] -579 85 -478
 
 #res swag stores if the game is active or not, so it can be known if the tick should be run
@@ -68,7 +68,7 @@ scoreboard players set res_winning team -1
 
 #fill barriers to lock teams in their spawns
 fill -581 85 -481 -578 87 -481 barrier replace air
-fill -569 85 -563 -566 87 -563 barrier replace air
+fill -566 85 -561 -569 87 -561 barrier replace air
 
 #schedule the first grace tick
 schedule function under_pack:res_functions/res_grace 1t
