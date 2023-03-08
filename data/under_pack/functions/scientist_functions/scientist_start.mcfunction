@@ -14,7 +14,8 @@ item replace entity @s hotbar.1 with tipped_arrow{display:{Name:'{"text":"Healin
 item replace entity @s hotbar.2 with tipped_arrow{CustomModelData:2,display:{Name:'{"text":"Electric Dart","color":"white"}'},scientistLightning:1b,CustomPotionEffects:[{Id:26,Amplifier:1b,Duration:1}],CustomPotionColor:16777215} 1
 #Punch bow
 item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"Rocket Dart","color":"gold"}',Lore:['{"text":"Right Click to strap a rocket motor on your next dart"}']},scientistPunch:1b,CustomModelData:32} 1
-
+#grapple
+item replace entity @s hotbar.4 with tipped_arrow{display:{Name:'{"text":"Grapple","color":"green"}'},HideFlags:3,CustomPotionColor:2193419,scientistgrapple:1b} 1
 #scientist
 item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
 item replace entity @s armor.legs with diamond_leggings{Unbreakable:1b}
@@ -27,6 +28,7 @@ scoreboard players set @s scientistHealingReload 0
 scoreboard players set @s ability1 0
 scoreboard players set @s ability2 0
 scoreboard players set @s ability3 199
+scoreboard players set @s ability4 239
 scoreboard players set @s scientistBowFired 2
 scoreboard players set @s scientistBowFired2 0
 

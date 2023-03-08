@@ -97,3 +97,15 @@ execute as @s[scores={scientistJump=1..}] run scoreboard players add @s scientis
 
 #give elytra again
 execute as @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:102b}],OnGround:1b}] run item replace entity @s armor.chest with elytra{Unbreakable:1b} 1
+
+#grapple
+#grapple
+execute as @s[team=uRed] at @s run function under_pack:scientist_functions/scientist_grapple_red
+execute as @s[team=uBlue] at @s run function under_pack:scientist_functions/scientist_grapple_blue
+#grapple cooldown
+execute unless entity @s[nbt={Inventory:[{Slot:4b,tag:{scientistgrapple:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:lead"},{Slot:4b}]}] run scoreboard players set @s ability4 0
+execute unless entity @s[nbt={Inventory:[{Slot:4b,tag:{scientistgrapple:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:lead"},{Slot:4b}]}] run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 12
+execute if score @s ability4 matches ..240 run scoreboard players add @s ability4 1
+execute if score @s ability4 matches 240 run item replace entity @s hotbar.4 with tipped_arrow{display:{Name:'{"text":"Grapple Shot","color":"#009900","bold":true}'},scientistgrapple:1b,CustomPotionColor:2193419,Potion:"minecraft:empty"} 1
+
+execute if score @s ability4 matches 1.. run function under_pack:scientist_functions/scientist_grapple_reload

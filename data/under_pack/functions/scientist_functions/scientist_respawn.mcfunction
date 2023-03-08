@@ -19,6 +19,7 @@ scoreboard players set @s scientistHealingReload 0
 scoreboard players set @s ability1 0
 scoreboard players set @s ability2 0
 scoreboard players set @s ability3 199
+scoreboard players set @s ability4 239
 scoreboard players set @s scientistBowFired 2
 
 #unfreeze people
