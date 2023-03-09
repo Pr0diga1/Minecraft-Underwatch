@@ -15,7 +15,8 @@ item replace entity @s hotbar.2 with tipped_arrow{CustomModelData:2,display:{Nam
 #Punch bow
 item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"Rocket Dart","color":"gold"}',Lore:['{"text":"Right Click to strap a rocket motor on your next dart"}']},scientistPunch:1b,CustomModelData:32} 1
 #grapple
-item replace entity @s hotbar.4 with tipped_arrow{display:{Name:'{"text":"Grapple","color":"green"}'},HideFlags:3,CustomPotionColor:2193419,scientistgrapple:1b} 1
+execute if entity @s[team=uRed] run item replace entity @s hotbar.4 with tipped_arrow{display:{Name:'{"text":"Grapple","color":"green"}'},HideFlags:3,CustomPotionColor:2193419,scientistgrapple:1b} 1
+execute if entity @s[team=uBlue] run item replace entity @s hotbar.4 with tipped_arrow{display:{Name:'{"text":"Grapple","color":"green"}'},HideFlags:3,CustomPotionColor:2193418,scientistgrapple:1b} 1
 #scientist
 item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
 item replace entity @s armor.legs with diamond_leggings{Unbreakable:1b}

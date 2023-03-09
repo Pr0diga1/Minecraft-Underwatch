@@ -100,12 +100,21 @@ execute as @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:102b}],O
 
 #grapple
 #grapple
-execute as @s[team=uRed] at @s run function under_pack:scientist_functions/scientist_grapple_red
-execute as @s[team=uBlue] at @s run function under_pack:scientist_functions/scientist_grapple_blue
+execute if entity @e[nbt={Color:2193419}] unless entity @e[tag=archertrack,tag=red] as @s[team=uRed] at @s run function under_pack:scientist_functions/scientist_grapple_red
+execute if entity @e[tag=archertrack,tag=red] unless entity @e[nbt={Color:2193419}] as @s[team=uRed] at @s run function under_pack:scientist_functions/scientist_grapple_red
+
+execute if entity @e[nbt={Color:2193418}] unless entity @e[tag=archertrack,tag=blue] as @s[team=uBlue] at @s run function under_pack:scientist_functions/scientist_grapple_blue
+execute if entity @e[tag=archertrack,tag=blue] unless entity @e[nbt={Color:2193418}] as @s[team=uBlue] at @s run function under_pack:scientist_functions/scientist_grapple_blue
+
+kill @e[type=item,nbt={Item:{id:"minecraft:lead"}}]
+
 #grapple cooldown
 execute unless entity @s[nbt={Inventory:[{Slot:4b,tag:{scientistgrapple:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:lead"},{Slot:4b}]}] run scoreboard players set @s ability4 0
 execute unless entity @s[nbt={Inventory:[{Slot:4b,tag:{scientistgrapple:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:lead"},{Slot:4b}]}] run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 12
 execute if score @s ability4 matches ..240 run scoreboard players add @s ability4 1
-execute if score @s ability4 matches 240 run item replace entity @s hotbar.4 with tipped_arrow{display:{Name:'{"text":"Grapple Shot","color":"#009900","bold":true}'},scientistgrapple:1b,CustomPotionColor:2193419,Potion:"minecraft:empty"} 1
+
+execute if score @s[team=uRed] ability4 matches 240 run item replace entity @s hotbar.4 with tipped_arrow{display:{Name:'{"text":"Grapple Shot","color":"#009900","bold":true}'},scientistgrapple:1b,CustomPotionColor:2193419,Potion:"minecraft:empty"} 1
+execute if score @s[team=uBlue] ability4 matches 240 run item replace entity @s hotbar.4 with tipped_arrow{display:{Name:'{"text":"Grapple Shot","color":"#009900","bold":true}'},scientistgrapple:1b,CustomPotionColor:2193418,Potion:"minecraft:empty"} 1
+
 
 execute if score @s ability4 matches 1.. run function under_pack:scientist_functions/scientist_grapple_reload
