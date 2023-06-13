@@ -5,18 +5,18 @@ execute as @s[nbt={Inventory:[{Slot:3b,tag:{scientistPunch:1b}}],SelectedItem:{i
 scoreboard players reset @s reset
 
 #damage arrow reload
-execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{scientistDamage:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:0b}]}] run scoreboard players set @s scientistDamageReload 25
-execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{scientistDamage:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:0b}]}] run item replace entity @s hotbar.0 with leather_chestplate{display:{color:16777215},CustomModelData:1,Damage:80}
+execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{scientistDamage:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:0b}]}] run scoreboard players set @s scientistDamageReload 25
+execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{scientistDamage:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:0b}]}] run item replace entity @s hotbar.0 with wooden_axe{display:{color:16777215},CustomModelData:1,Damage:80}
 execute if score @s scientistDamageReload matches 1.. run function under_pack:scientist_functions/scientist_reload_damage
 
 #healing arrow reload
-execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{scientistHealing:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:1b}]}] run scoreboard players set @s scientistHealingReload 25
-execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{scientistHealing:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:1b}]}] run item replace entity @s hotbar.1 with leather_chestplate{display:{color:16777215},CustomModelData:1,Damage:80}
+execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{scientistHealing:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:1b}]}] run scoreboard players set @s scientistHealingReload 25
+execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{scientistHealing:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:1b}]}] run item replace entity @s hotbar.1 with wooden_axe{display:{color:16777215},CustomModelData:1,Damage:80}
 execute if score @s scientistHealingReload matches 1.. run function under_pack:scientist_functions/scientist_reload_healing
 
 #lightning
-execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:2b}]}] run scoreboard players set @s ability2 240
-execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:2b}]}] run item replace entity @s hotbar.2 with leather_chestplate{display:{color:16777215},CustomModelData:1,Damage:80}
+execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:2b}]}] run scoreboard players set @s ability2 240
+execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:2b}]}] run item replace entity @s hotbar.2 with wooden_axe{display:{color:16777215},CustomModelData:1,Damage:80}
 execute if score @s ability2 matches 1.. run function under_pack:scientist_functions/scientist_reload_lightning
 
 #remove damage from damage arrows
@@ -76,27 +76,7 @@ execute if score @s scientistBowFired matches 1 run function under_pack:scientis
 #reset the bow fired objective
 scoreboard players set @s scientistBowFired2 0
 
-#double jump
-#set the jump to 1 if the character has jumped
-execute as @s[nbt={FallFlying:1b}] run scoreboard players set @s scientistJump 1
 
-#perform the jump itself
-execute as @s[scores={scientistJump=1}] run effect give @s levitation 1 38 true
-execute at @s[scores={scientistJump=1}] run playsound entity.ender_dragon.shoot master @a
-execute at @s[scores={scientistJump=1..}] anchored feet run particle flame ~ ~ ~ .1 .1 .1 0.1 5 force
-
-#clear the elytra
-execute as @s[scores={scientistJump=1}] run item replace entity @s armor.chest with leather_chestplate{display:{Name:'{"text":"Jetpack"}',color:16777215},Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;1859217092,-39565814,-1219173781,-1415052210],Slot:"chest"}]} 1
-
-#clear the levitation and reset scijump
-execute as @s[scores={scientistJump=4}] run effect clear @s levitation
-execute as @s[scores={scientistJump=4}] run scoreboard players set @s scientistJump 0
-
-#iterate sciJump
-execute as @s[scores={scientistJump=1..}] run scoreboard players add @s scientistJump 1
-
-#give elytra again
-execute as @s[nbt={Inventory:[{id:"minecraft:leather_chestplate"},{Slot:102b}],OnGround:1b}] run item replace entity @s armor.chest with elytra{Unbreakable:1b} 1
 
 #grapple
 #grapple
