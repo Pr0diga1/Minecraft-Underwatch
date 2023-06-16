@@ -9,6 +9,7 @@ scoreboard players set @s ability1 0
 item replace entity @s armor.legs with diamond_leggings
 item replace entity @s armor.feet with diamond_boots
 
+function under_pack:general_functions/general_character_select
 function under_pack:mermaid_functions/mermaid_respawn
 
 
