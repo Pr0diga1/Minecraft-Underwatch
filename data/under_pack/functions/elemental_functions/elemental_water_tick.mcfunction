@@ -1,6 +1,6 @@
 #cost
-execute if score @s elementalBar matches 3.. run scoreboard players remove @s elementalBar 3
-execute if score @s elementalBar matches ..2 run scoreboard players set @s elementalBar 0
+execute if score @s elementalBar matches 2.. run scoreboard players remove @s elementalBar 2
+execute if score @s elementalBar matches ..1 run scoreboard players set @s elementalBar 0
 
 execute as @s[team=uRed] run scoreboard players add @a[team=uRed,distance=..3] elementalWaterHit 1
 execute as @s[team=uBlue] run scoreboard players add @a[team=uBlue,distance=..3] elementalWaterHit 1

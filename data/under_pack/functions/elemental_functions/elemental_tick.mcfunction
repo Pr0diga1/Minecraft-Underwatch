@@ -55,14 +55,11 @@ execute as @s[team=uBlue] as @a[team=uRed,scores={elementalEarthTimer=1}] at @s 
 
 #giving energy back
 #buffer timing
-execute if score @s[tag=!elementalLocked] elementalBar matches 0 run scoreboard players set @s elementalBarTimer 41
-execute if score @s[tag=!elementalLocked] elementalBar matches 0 run tag @s add elementalLocked
-execute if score @s elementalBarTimer matches ..10 unless score @s elementalBarBuffer = @s elementalBar run scoreboard players set @s elementalBarTimer 11
+execute if score @s elementalBarTimer matches ..5 unless score @s elementalBarBuffer = @s elementalBar run scoreboard players set @s elementalBarTimer 6
 execute if score @s elementalBarTimer matches 1.. run scoreboard players remove @s elementalBarTimer 1
-execute if score @s[tag=elementalLocked] elementalBarTimer matches 0 run tag @s remove elementalLocked
 #giving points
-execute if score @s elementalBarTimer matches 0 if score @s elementalBar matches ..736 run scoreboard players add @s elementalBar 4
-execute if score @s elementalBarTimer matches 0 if score @s elementalBar matches 737..739 run scoreboard players set @s elementalBar 740
+execute if score @s elementalBarTimer matches 0 if score @s elementalBar matches ..735 run scoreboard players add @s elementalBar 5
+execute if score @s elementalBarTimer matches 0 if score @s elementalBar matches 736..739 run scoreboard players set @s elementalBar 740
 
 #xp bar logic
 scoreboard players operation @s elementalBarBuffer -= @s elementalBar

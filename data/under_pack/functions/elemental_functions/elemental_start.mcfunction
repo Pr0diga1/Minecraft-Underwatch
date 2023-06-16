@@ -7,9 +7,9 @@ item replace entity @s hotbar.2 with carrot_on_a_stick{display:{Name:'{"text":"W
 item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"Earth","color":"gray"}'},elementalEarth:1b} 1
 
 #armor
-item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
+item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:blast_protection",lvl:13s},{id:"minecraft:depth_strider",lvl:2s}],AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:6,Operation:0,UUID:[I;1476701744,775112152,-1608003582,548882086],Slot:"feet"}]}
 item replace entity @s armor.legs with diamond_leggings{Unbreakable:1b}
-item replace entity @s armor.head with leather_helmet{display:{color:16711680},Unbreakable:1b}
+item replace entity @s armor.head with chainmail_helmet{Unbreakable:1b}
 
 #variables
 scoreboard players set @s elementalBar 740
@@ -23,15 +23,12 @@ execute as @s[team=uRed] run scoreboard players set @a[team=uRed] elementalEarth
 execute as @s[team=uBlue] run scoreboard players set @a[team=uBlue] elementalEarthTimer 0
 
 #constants
-scoreboard players set ElementalWaterTiming constant 8
+scoreboard players set ElementalWaterTiming constant 7
 scoreboard players set ElementalFireTiming constant 5
 
 #clean spare arrows
 kill @e[type=arrow,tag=ElementalFireArrow]
 kill @e[type=arrow,tag=elementalEarthArrow]
-
-#clean tags
-tag @s remove elementalLocked
 
 #clean markers
 execute as @s[team=uRed] run kill @e[type=marker,tag=redElementalWater]
