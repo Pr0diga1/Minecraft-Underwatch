@@ -238,6 +238,7 @@ scoreboard objectives add elementalDistance dummy
 scoreboard objectives add mermaidRay dummy
 scoreboard objectives add mermaidmist dummy
 scoreboard objectives add mermaidmistbuffer dummy
+scoreboard objectives add mermaidtide dummy
 
 #dark soul
 scoreboard objectives add slamTimer dummy
