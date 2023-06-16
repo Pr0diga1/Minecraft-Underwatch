@@ -1,23 +1,27 @@
-#carrot on stick listening
-execute as @s[nbt={Inventory:[{Slot:3b,tag:{scientistPunch:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{scientistPunch:1b}}},scores={reset=1..}] if score @s ability3 matches 200.. run function under_pack:scientist_functions/scientist_punch
 
 #reset reset
 scoreboard players reset @s reset
 
 #damage arrow reload
 execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{scientistDamage:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:0b}]}] run scoreboard players set @s scientistDamageReload 25
-execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{scientistDamage:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:0b}]}] run item replace entity @s hotbar.0 with wooden_axe{display:{color:16777215},CustomModelData:1,Damage:80}
+execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{scientistDamage:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:0b}]}] run item replace entity @s hotbar.0 with wooden_axe{display:{color:16777215},CustomModelData:1,Damage:60}
 execute if score @s scientistDamageReload matches 1.. run function under_pack:scientist_functions/scientist_reload_damage
 
 #healing arrow reload
 execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{scientistHealing:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:1b}]}] run scoreboard players set @s scientistHealingReload 25
-execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{scientistHealing:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:1b}]}] run item replace entity @s hotbar.1 with wooden_axe{display:{color:16777215},CustomModelData:1,Damage:80}
+execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{scientistHealing:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:1b}]}] run item replace entity @s hotbar.1 with wooden_axe{display:{color:16777215},CustomModelData:1,Damage:60}
 execute if score @s scientistHealingReload matches 1.. run function under_pack:scientist_functions/scientist_reload_healing
 
 #lightning
 execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:2b}]}] run scoreboard players set @s ability2 240
-execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:2b}]}] run item replace entity @s hotbar.2 with wooden_axe{display:{color:16777215},CustomModelData:1,Damage:80}
+execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:2b}]}] run item replace entity @s hotbar.2 with wooden_axe{display:{color:16777215},CustomModelData:1,Damage:60}
 execute if score @s ability2 matches 1.. run function under_pack:scientist_functions/scientist_reload_lightning
+
+#rocket reload
+execute unless entity @s[nbt={Inventory:[{Slot:3b,tag:{scientistRocket:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:3b}]}] run scoreboard players set @s ability3 240
+execute unless entity @s[nbt={Inventory:[{Slot:3b,tag:{scientistRocket:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:wooden_axe"},{Slot:3b}]}] run item replace entity @s hotbar.3 with wooden_axe{display:{color:16777215},CustomModelData:1,Damage:60}
+execute if score @s ability3 matches 1.. run function under_pack:scientist_functions/scientist_reload_rocket
+
 
 #remove damage from damage arrows
 execute as @e[type=arrow,nbt={Color:0}] run data merge entity @s {damage:0.01d,crit:0b}
@@ -68,33 +72,5 @@ execute as @e[type=marker,tag=sciLightningRed] unless entity @e[type=arrow,tag=s
 execute as @e[type=marker,tag=sciLightningBlue] unless entity @e[type=arrow,tag=sciBolt,tag=blue] at @s run summon lightning_bolt ~ ~ ~
 execute as @e[type=marker,tag=sciLightningBlue] unless entity @e[type=arrow,tag=sciBolt,tag=blue] at @s run kill @s
 
-#if punch isn't active run the cooldown
-execute if score @s scientistBowFired matches 2.. if score @s ability3 matches ..199 run function under_pack:scientist_functions/scientist_punch_cooldown
-#give normal bow
-execute if score @s scientistBowFired matches 1 run function under_pack:scientist_functions/scientist_punch_end
-
 #reset the bow fired objective
 scoreboard players set @s scientistBowFired2 0
-
-
-
-#grapple
-#grapple
-execute if entity @e[nbt={Color:2193419}] unless entity @e[tag=archertrack,tag=red] as @s[team=uRed] at @s run function under_pack:scientist_functions/scientist_grapple_red
-execute if entity @e[tag=archertrack,tag=red] unless entity @e[nbt={Color:2193419}] as @s[team=uRed] at @s run function under_pack:scientist_functions/scientist_grapple_red
-
-execute if entity @e[nbt={Color:2193418}] unless entity @e[tag=archertrack,tag=blue] as @s[team=uBlue] at @s run function under_pack:scientist_functions/scientist_grapple_blue
-execute if entity @e[tag=archertrack,tag=blue] unless entity @e[nbt={Color:2193418}] as @s[team=uBlue] at @s run function under_pack:scientist_functions/scientist_grapple_blue
-
-kill @e[type=item,nbt={Item:{id:"minecraft:lead"}}]
-
-#grapple cooldown
-execute unless entity @s[nbt={Inventory:[{Slot:4b,tag:{scientistgrapple:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:lead"},{Slot:4b}]}] run scoreboard players set @s ability4 0
-execute unless entity @s[nbt={Inventory:[{Slot:4b,tag:{scientistgrapple:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:lead"},{Slot:4b}]}] run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 12
-execute if score @s ability4 matches ..240 run scoreboard players add @s ability4 1
-
-execute if score @s[team=uRed] ability4 matches 240 run item replace entity @s hotbar.4 with tipped_arrow{display:{Name:'{"text":"Grapple Shot","color":"#009900","bold":true}'},scientistgrapple:1b,CustomPotionColor:2193419,Potion:"minecraft:empty"} 1
-execute if score @s[team=uBlue] ability4 matches 240 run item replace entity @s hotbar.4 with tipped_arrow{display:{Name:'{"text":"Grapple Shot","color":"#009900","bold":true}'},scientistgrapple:1b,CustomPotionColor:2193418,Potion:"minecraft:empty"} 1
-
-
-execute if score @s ability4 matches 1.. run function under_pack:scientist_functions/scientist_grapple_reload
