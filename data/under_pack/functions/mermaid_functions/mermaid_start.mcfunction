@@ -12,6 +12,7 @@ item replace entity @s armor.feet with diamond_boots
 function under_pack:general_functions/general_character_select
 function under_pack:mermaid_functions/mermaid_respawn
 
+scoreboard players set mermaidHealingConstant constant 5
 
-
-
+execute as @s[team=uRed] run scoreboard players set @a[team=uRed] mermaidheal 1
+execute as @s[team=uBlue] run scoreboard players set @a[team=uBlue] mermaidheal 1
