@@ -1,3 +1,5 @@
+#carrot detection
+execute if entity @s[nbt={Inventory:[{Slot:0b,tag:{mermaidburst:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{mermaidburst:1b}}},scores={reset=1..}] as @s run function under_pack:mermaid_functions/mermaid_burst
 #mist tick
 execute if score @s mermaidmistbuffer matches 1.. run scoreboard players remove @s mermaidmistbuffer 1
 execute if score @s mermaidmistbuffer matches 0 unless score @s mermaidmist matches 74.. run scoreboard players add @s mermaidmist 1
@@ -37,3 +39,5 @@ execute as @s[team=uRed] as @a[team=uRed,scores={mermaidtoggle=0..}] run scorebo
 
 execute as @s[team=uBlue] as @a[team=uBlue,scores={mermaidtoggle=0}] run effect clear @s regeneration
 execute as @s[team=uBlue] as @a[team=uBlue,scores={mermaidtoggle=0..}] run scoreboard players remove @s mermaidtoggle 1
+
+scoreboard players reset @s reset
