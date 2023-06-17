@@ -8,9 +8,7 @@ item replace entity @s hotbar.1 with tipped_arrow{CustomModelData:4,display:{Nam
 #lightning dart
 item replace entity @s hotbar.2 with tipped_arrow{CustomModelData:2,display:{Name:'{"text":"Electric Dart","color":"white"}'},scientistLightning:1b,CustomPotionEffects:[{Id:26,Amplifier:1b,Duration:1}],CustomPotionColor:16777215} 1
 #Punch bow
-item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"Rocket Dart","color":"gold"}',Lore:['{"text":"Right Click to strap a rocket motor on your next dart"}']},scientistPunch:1b,CustomModelData:32} 1
-#clear ult
-item replace entity @s hotbar.8 with air
+item replace entity @s hotbar.3 with tipped_arrow{CustomModelData:1,display:{Name:'{"text":"Rocket Dart","color":"light_purple"}'},scientistRocket:1b,CustomPotionEffects:[{Id:25,Amplifier:4b,Duration:30}],CustomPotionColor:16711910} 1
 
 
 #set things to 0
@@ -18,8 +16,7 @@ scoreboard players set @s scientistDamageReload 0
 scoreboard players set @s scientistHealingReload 0
 scoreboard players set @s ability1 0
 scoreboard players set @s ability2 0
-scoreboard players set @s ability3 199
-scoreboard players set @s ability4 239
+scoreboard players set @s ability3 0
 scoreboard players set @s scientistBowFired 2
 
 #unfreeze people
