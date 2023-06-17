@@ -12,7 +12,7 @@ scoreboard players set @s lumberjack_sweep 13
 execute at @s run playsound minecraft:entity.player.attack.sweep master @a ~ ~ ~ 8 1
 
 scoreboard players set @s ability1 0
-item replace entity @s hotbar.2 with stone_axe{CustomModelData:1} 1
+item replace entity @s hotbar.2 with iron_ingot{CustomModelData:1} 10
 #reset looking storage
 scoreboard players reset @s reset
 playsound minecraft:item.axe.wax_off master @a ~5 ~5 ~5 4 1
