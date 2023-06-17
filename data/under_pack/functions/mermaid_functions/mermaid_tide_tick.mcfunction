@@ -9,7 +9,7 @@ execute at @e[tag=mermaidtrack,tag=red] run effect clear @a[distance=3..5,team=u
 execute at @e[tag=mermaidtrack,tag=red] run effect clear @a[distance=3..5,team=uBlue] jump_boost
 
 #blue
-execute if entity @s[team=Blue] if score @s mermaidtide matches 0 run kill @e[tag=mermaidtrack,tag=blue]
+execute if entity @s[team=uBlue] if score @s mermaidtide matches 0 run kill @e[tag=mermaidtrack,tag=blue]
 
 execute at @e[tag=mermaidtrack,tag=blue] run effect give @a[distance=..3,team=uRed] slowness 1 3 true
 execute at @e[tag=mermaidtrack,tag=blue] run effect give @a[distance=..3,team=uRed] jump_boost 1 128 true

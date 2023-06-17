@@ -10,7 +10,7 @@ item replace entity @s hotbar.2 with splash_potion{display:{Name:'{"text":"Telep
 
 # Armor
 item replace entity @s armor.feet with leather_boots{Unbreakable:true,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
-item replace entity @s armor.legs with chainmail_leggings{Unbreakable:true,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:-4,Operation:0,UUID:[I;-1728819482,-1676000605,-1806744958,-439757376]}]}
+item replace entity @s armor.legs with chainmail_leggings{Unbreakable:true,}
 item replace entity @s armor.chest with chainmail_chestplate{Unbreakable:true}
 
 scoreboard players set @s movement 141

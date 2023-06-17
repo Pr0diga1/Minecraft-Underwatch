@@ -20,6 +20,8 @@ execute if entity @s[team=uBlue] if score @s lumberjack_sweep matches 1 run kill
 execute if entity @s[team=uBlue] if score @s lumberjack_sweep matches 1 run kill @e[type=armor_stand,tag=lumberaxestill,tag=blue]
 execute if entity @s[team=uBlue] if score @s lumberjack_sweep matches 1.. run scoreboard players remove @s lumberjack_sweep 1
 
+scoreboard players reset @s reset
+
 #jump cooldown
 execute if score @s movement matches ..80 run scoreboard players add @s movement 1
 execute if score @s movement matches 80 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:27,display:{Name:'{"text":"Strong Jump","color":"blue"}'},lumberjump:1b} 1
