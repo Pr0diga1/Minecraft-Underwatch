@@ -239,6 +239,9 @@ scoreboard objectives add mermaidRay dummy
 scoreboard objectives add mermaidmist dummy
 scoreboard objectives add mermaidmistbuffer dummy
 scoreboard objectives add mermaidtide dummy
+scoreboard objectives add mermaidheal dummy
+scoreboard objectives add mermaidtoggle dummy
+scoreboard objectives add mermaiddamage minecraft.custom:minecraft.damage_dealt
 
 #dark soul
 scoreboard objectives add slamTimer dummy
