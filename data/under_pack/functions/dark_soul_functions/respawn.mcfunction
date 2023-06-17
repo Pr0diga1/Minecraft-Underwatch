@@ -11,6 +11,6 @@ item replace entity @s hotbar.0 with carrot_on_a_stick{display:{Name:'{"text":"C
 
 
 # Armor
-item replace entity @s armor.feet with leather_boots{display:{color:15128132},Unbreakable:true,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
+item replace entity @s armor.feet with leather_boots{display:{color:15128132},Unbreakable:true,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:8s}]}
 item replace entity @s armor.legs with leather_leggings{display:{color:15128132},Unbreakable:true,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:16,Operation:0,UUID:[I;-1728819482,-1676000605,-1806744958,-439757376]}]}
 item replace entity @s armor.chest with leather_chestplate{display:{color:15128132},Unbreakable:true}

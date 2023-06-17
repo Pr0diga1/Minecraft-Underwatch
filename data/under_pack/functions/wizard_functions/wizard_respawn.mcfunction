@@ -1,6 +1,9 @@
+#give the crossbow
+item replace entity @s[team=uRed] hotbar.0 with carrot_on_a_stick{CustomModelData:45,display:{Name:'{"text":"Agicmay Andway","color":"light_purple","bold":true,"italic":true}',Lore:['{"text":"Crafted from the tree of Lofaktar"}']},wizardWand:1b,red:1b} 1
+item replace entity @s[team=uBlue] hotbar.0 with carrot_on_a_stick{CustomModelData:45,display:{Name:'{"text":"Agicmay Andway","color":"light_purple","bold":true,"italic":true}',Lore:['{"text":"Crafted from the tree of Lofaktar"}']},wizardWand:1b,blue:1b} 1
+
 #fireball
-item replace entity @s[team=uRed] hotbar.1 with snowball{CustomModelData:2,display:{Name:'{"text":"Ignis Sphaerus","color":"gold","bold":true,"italic":true,"underlined":true}',Lore:['{"text":"It\'s wizard time"}']},wizardFireball:1b,red:1b} 3
-item replace entity @s[team=uBlue] hotbar.1 with snowball{CustomModelData:2,display:{Name:'{"text":"Ignis Sphaerus","color":"gold","bold":true,"italic":true,"underlined":true}',Lore:['{"text":"It\'s wizard time"}']},wizardFireball:1b,blue:1b} 3
+item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Fireball","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1
 
 #multishot
 #expecto homoconversus
@@ -15,6 +18,7 @@ item replace entity @s hotbar.4 with ender_eye{CustomModelData:2,display:{Name:'
 
 #ability cooldowns
 scoreboard players set @s movement 0
+scoreboard players set @s wizardFireball 3
 scoreboard players set @s ability1 299
 scoreboard players set @s ability2 299
 scoreboard players set @s ability3 50

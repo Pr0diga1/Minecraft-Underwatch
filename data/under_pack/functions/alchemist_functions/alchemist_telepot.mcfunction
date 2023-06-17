@@ -15,6 +15,8 @@ execute if entity @s[team=uRed] store result entity @e[tag=telepot,type=marker,l
 execute if entity @s[team=uBlue] at @e[tag=telepot,type=marker,limit=1,tag=uBlue] run teleport @s ~ ~ ~
 execute if entity @s[team=uRed] at @e[tag=telepot,type=marker,limit=1,tag=uRed] run teleport @s ~ ~ ~
 
+execute at @e[tag=telepot,type=marker,limit=1] run particle minecraft:dragon_breath ~ ~.3 ~ .3 .3 .3 .2 100 force @a
+
 # Kill thingy
 kill @e[tag=telepot,type=marker,limit=1,sort=nearest]
 

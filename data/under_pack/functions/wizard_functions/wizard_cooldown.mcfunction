@@ -1,16 +1,17 @@
 #fireball giving
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:snowball",Count:3b},{Slot:1b}]}] run scoreboard players add @s movement 1
-execute if score @s[team=uRed] movement matches 100 run give @s snowball{display:{Name:'{"text":"Ignis Sphaerus","color":"gold","bold":true,"italic":true,"underlined":true}',Lore:['{"text":"It\'s wizard time"}']},wizardFireball:1b,red:1b,CustomModelData:2} 
-execute if score @s[team=uBlue] movement matches 100 run give @s snowball{display:{Name:'{"text":"Ignis Sphaerus","color":"gold","bold":true,"italic":true,"underlined":true}',Lore:['{"text":"It\'s wizard time"}']},wizardFireball:1b,blue:1b,CustomModelData:2}
+execute if score @s wizardFireball matches ..2 run scoreboard players add @s movement 1
+execute if score @s[team=uRed] movement matches 100 run scoreboard players add @s wizardFireball 1
 execute if score @s movement matches 100.. run scoreboard players set @s movement 0
 
 #fireball actionbars
-execute if score @s movement matches 1 run title @s actionbar ["",{"text":"Ignis Sorcery Rechanneling: ","color":"gold"},{"text":"5","color":"red"}]
-execute if score @s movement matches 20 run title @s actionbar ["",{"text":"Ignis Sorcery Rechanneling: ","color":"gold"},{"text":"4","color":"red"}]
-execute if score @s movement matches 40 run title @s actionbar ["",{"text":"Ignis Sorcery Rechanneling: ","color":"gold"},{"text":"3","color":"red"}]
-execute if score @s movement matches 60 run title @s actionbar ["",{"text":"Ignis Sorcery Rechanneling: ","color":"gold"},{"text":"2","color":"red"}]
-execute if score @s movement matches 80 run title @s actionbar ["",{"text":"Ignis Sorcery Rechanneling: ","color":"gold"},{"text":"1","color":"red"}]
-execute if score @s movement matches 99 run title @s actionbar ["",{"text":" "}]
+#execute if score @s movement matches 1 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Casts Charged          ","color": "gold"},{"text":"Ignis Sorcery Rechanneling: ","color":"gold"},{"text":"5","color":"red"}]
+#execute if score @s movement matches 20 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Casts Charged          ","color": "gold"},{"text":"Ignis Sorcery Rechanneling: ","color":"gold"},{"text":"4","color":"red"}]
+#execute if score @s movement matches 40 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Casts Charged          ","color": "gold"},{"text":"Ignis Sorcery Rechanneling: ","color":"gold"},{"text":"3","color":"red"}]
+#execute if score @s movement matches 60 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Casts Charged          ","color": "gold"},{"text":"Ignis Sorcery Rechanneling: ","color":"gold"},{"text":"2","color":"red"}]
+#execute if score @s movement matches 80 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Casts Charged          ","color": "gold"},{"text":"Ignis Sorcery Rechanneling: ","color":"gold"},{"text":"1","color":"red"}]
+#execute if score @s movement matches 99 run title @s actionbar ["",{"text":" "}]
+execute if score @s wizardFireball matches 1 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Cast Charged","color": "gold"}]
+execute unless score @s wizardFireball matches 1 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Casts Charged","color": "gold"}]
 
 #rainbow
 execute if score @s ability1 matches ..299 run scoreboard players add @s ability1 1
