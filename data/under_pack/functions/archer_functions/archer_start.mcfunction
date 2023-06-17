@@ -5,7 +5,7 @@ item replace entity @s hotbar.1 with tipped_arrow{display:{Name:'{"text":"Light 
 #Backstep
 item replace entity @s hotbar.2 with carrot_on_a_stick{CustomModelData:50,display:{Name:'{"text":"Backstep","color":"green"}'},archerBackstep:1b} 1
 
-item replace entity @s armor.feet with leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:13s}]}
+item replace entity @s armor.feet with leather_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:8s}]}
 item replace entity @s armor.legs with leather_leggings{Unbreakable:1b}
 item replace entity @s armor.chest with iron_chestplate{Unbreakable:1b}
 

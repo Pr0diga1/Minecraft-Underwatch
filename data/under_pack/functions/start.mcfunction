@@ -220,6 +220,7 @@ scoreboard objectives add wizardDistance dummy
 scoreboard objectives add wizardHit dummy
 scoreboard objectives add wizardRedHit dummy
 scoreboard objectives add wizardBlueHit dummy
+scoreboard objectives add wizardFireball dummy
 
 #elemental
 scoreboard objectives add elementalBar dummy
