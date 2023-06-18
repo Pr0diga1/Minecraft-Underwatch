@@ -43,6 +43,10 @@ execute as @s[team=uRed] as @a[team=uRed,scores={mermaidtoggle=0..}] run scorebo
 execute as @s[team=uBlue] as @a[team=uBlue,scores={mermaidtoggle=0}] run effect clear @s regeneration
 execute as @s[team=uBlue] as @a[team=uBlue,scores={mermaidtoggle=0..}] run scoreboard players remove @s mermaidtoggle 1
 
+#send people down
+execute as @s[team=uRed] as @a[tag=intideblue,nbt={OnGround:0b}] at @s run function under_pack:mermaid_functions/mermaid_drop_start
+execute as @s[team=uBlue] as @a[tag=intidered,nbt={OnGround:0b}] at @s run function under_pack:mermaid_functions/mermaid_drop_start
+
 #burst hit count
 execute if score @s mermaiddamage matches 1.. if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{mermaidburst:1b}}}] run scoreboard players add @s mermaidburst 1
 scoreboard players set @s mermaiddamage 0
