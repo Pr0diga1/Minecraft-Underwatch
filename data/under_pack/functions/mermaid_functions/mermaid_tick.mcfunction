@@ -1,5 +1,5 @@
 #carrot detection
-execute if score @s mermaidburst matches 3.. if entity @s[nbt={Inventory:[{Slot:0b,tag:{mermaidburst:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{mermaidburst:1b}}},scores={reset=1..}] as @s run function under_pack:mermaid_functions/mermaid_burst
+execute as @s if score @s mermaidburst matches 3.. if entity @s[nbt={Inventory:[{Slot:0b,tag:{mermaidburst:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{mermaidburst:1b}}},scores={reset=1..}] as @s run function under_pack:mermaid_functions/mermaid_burst
 #mist tick
 execute if score @s mermaidmistbuffer matches 1.. run scoreboard players remove @s mermaidmistbuffer 1
 execute if score @s mermaidmistbuffer matches 0 unless score @s mermaidmist matches 74.. run scoreboard players add @s mermaidmist 1
