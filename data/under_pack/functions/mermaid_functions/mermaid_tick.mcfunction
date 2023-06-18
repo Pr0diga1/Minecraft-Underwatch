@@ -5,7 +5,7 @@ execute if score @s mermaidmistbuffer matches 1.. run scoreboard players remove 
 execute if score @s mermaidmistbuffer matches 0 unless score @s mermaidmist matches 74.. run scoreboard players add @s mermaidmist 1
 execute if score @s mermaidmistbuffer matches 0 unless score @s mermaidmist matches 74.. run experience add @s 10
 execute if score @s mermaidmist matches 74 run experience set @s 741 points
-item replace entity @s hotbar.1 with ender_eye{mermaidmist:1b,display:{Name:'{"text":"Nautical Mist","color":"dark_blue"}'}} 2
+item replace entity @s hotbar.1 with ender_eye{mermaidmist:1b,display:{Name:'{"text":"Nautical Mist","color":"dark_blue"}'}} 1
 #potion tick
 execute if entity @s[team=uRed] if entity @e[limit=1,sort=nearest,nbt={Item:{tag:{mermaidpotion:1b,red:1b}}}] unless entity @e[limit=1,sort=nearest,tag=mermaidtrack,type=marker,tag=red] run function under_pack:mermaid_functions/mermaid_tide_throw
 execute if entity @s[team=uRed] if entity @e[limit=1,sort=nearest,tag=mermaidtrack,type=marker,tag=red] unless entity @e[limit=1,sort=nearest,nbt={Item:{tag:{mermaidpotion:1b,red:1b}}}] run function under_pack:mermaid_functions/mermaid_tide_tick
@@ -41,7 +41,7 @@ execute as @s[team=uBlue] as @a[team=uBlue,scores={mermaidtoggle=0}] run effect 
 execute as @s[team=uBlue] as @a[team=uBlue,scores={mermaidtoggle=0..}] run scoreboard players remove @s mermaidtoggle 1
 
 #burst hit count
-execute if score @s mermaiddamage matches 1.. run scoreboard players add @s mermaidburst 1
+execute if score @s mermaiddamage matches 1.. if entity @s[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{mermaidburst:1b}}}] run scoreboard players add @s mermaidburst 1
 scoreboard players set @s mermaiddamage 0
 
 scoreboard players reset @s reset
