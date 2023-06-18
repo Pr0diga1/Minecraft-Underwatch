@@ -10,6 +10,9 @@ item replace entity @s hotbar.1 with ender_eye{mermaidmist:1b,display:{Name:'{"t
 execute if entity @s[team=uRed] if entity @e[limit=1,sort=nearest,nbt={Item:{tag:{mermaidpotion:1b,red:1b}}}] unless entity @e[limit=1,sort=nearest,tag=mermaidtrack,type=marker,tag=red] run function under_pack:mermaid_functions/mermaid_tide_throw
 execute if entity @s[team=uRed] if entity @e[limit=1,sort=nearest,tag=mermaidtrack,type=marker,tag=red] unless entity @e[limit=1,sort=nearest,nbt={Item:{tag:{mermaidpotion:1b,red:1b}}}] run function under_pack:mermaid_functions/mermaid_tide_tick
 
+execute unless entity @e[tag=mermaidtrack,tag=blue] run tag @a[team=uRed] remove intidered
+execute unless entity @e[tag=mermaidtrack,tag=red] run tag @a[team=uBlue] remove intideblue
+
 execute if entity @s[team=uBlue] if entity @e[limit=1,sort=nearest,nbt={Item:{tag:{mermaidpotion:1b,blue:1b}}}] unless entity @e[limit=1,sort=nearest,tag=mermaidtrack,type=marker,tag=blue] run function under_pack:mermaid_functions/mermaid_tide_throw
 execute if entity @s[team=uBlue] if entity @e[limit=1,sort=nearest,tag=mermaidtrack,type=marker,tag=blue] unless entity @e[limit=1,sort=nearest,nbt={Item:{tag:{mermaidpotion:1b,blue:1b}}}] run function under_pack:mermaid_functions/mermaid_tide_tick
 #potion cooldow
