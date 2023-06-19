@@ -221,6 +221,10 @@ scoreboard objectives add wizardHit dummy
 scoreboard objectives add wizardRedHit dummy
 scoreboard objectives add wizardBlueHit dummy
 scoreboard objectives add wizardFireball dummy
+scoreboard objectives add wizardMotionX dummy
+scoreboard objectives add wizardMotionY dummy
+scoreboard objectives add wizardMotionZ dummy
+scoreboard objectives add wizardtime dummy
 
 #elemental
 scoreboard objectives add elementalBar dummy
