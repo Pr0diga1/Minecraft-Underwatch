@@ -1,6 +1,6 @@
 #fireball giving
 execute if score @s wizardFireball matches ..2 run scoreboard players add @s movement 1
-execute if score @s[team=uRed] movement matches 100 run scoreboard players add @s wizardFireball 1
+execute if score @s movement matches 100 run scoreboard players add @s wizardFireball 1
 execute if score @s movement matches 100.. run scoreboard players set @s movement 0
 
 #fireball actionbars
