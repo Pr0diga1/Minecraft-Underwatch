@@ -1,8 +1,5 @@
 #tide pool
-execute if score @s ability1 matches 299 run item replace entity @s hotbar.2 with heart_of_the_sea{display:{Name:'{"text":"Tide Pool on Cooldown"}'}} 15
-execute if score @s ability1 matches 280 run item replace entity @s hotbar.2 with heart_of_the_sea{display:{Name:'{"text":"Tide Pool on Cooldown"}'}} 14
-execute if score @s ability1 matches 260 run item replace entity @s hotbar.2 with heart_of_the_sea{display:{Name:'{"text":"Tide Pool on Cooldown"}'}} 13
-execute if score @s ability1 matches 240 run item replace entity @s hotbar.2 with heart_of_the_sea{display:{Name:'{"text":"Tide Pool on Cooldown"}'}} 12
+execute if score @s ability1 matches 239 run item replace entity @s hotbar.2 with heart_of_the_sea{display:{Name:'{"text":"Tide Pool on Cooldown"}'}} 12
 execute if score @s ability1 matches 220 run item replace entity @s hotbar.2 with heart_of_the_sea{display:{Name:'{"text":"Tide Pool on Cooldown"}'}} 11
 execute if score @s ability1 matches 200 run item replace entity @s hotbar.2 with heart_of_the_sea{display:{Name:'{"text":"Tide Pool on Cooldown"}'}} 10
 execute if score @s ability1 matches 180 run item replace entity @s hotbar.2 with heart_of_the_sea{display:{Name:'{"text":"Tide Pool on Cooldown"}'}} 9
