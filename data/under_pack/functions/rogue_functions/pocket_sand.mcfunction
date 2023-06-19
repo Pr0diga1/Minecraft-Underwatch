@@ -10,8 +10,8 @@ execute if entity @s[team=uBlue] run summon marker ^ ^1 ^1.5 {Tags:["uBlue","poc
 execute if entity @s[team=uRed] run summon marker ^ ^1 ^1.5 {Tags:["uRed","pocket_sand"]}
 
 # Blind em
-execute if entity @s[team=uBlue] positioned as @e[type=marker,tag=pocket_sand,tag=uBlue] run effect give @a[distance=..2.5,team=uRed] blindness 4 0 true
-execute if entity @s[team=uRed] positioned as @e[type=marker,tag=pocket_sand,tag=uRed] run effect give @a[distance=..2.5,team=uBlue] blindness 4 0 true
+execute if entity @s[team=uBlue] positioned as @e[type=marker,tag=pocket_sand,tag=uBlue] run function under_pack:rogue_functions/hit_sand_blue
+execute if entity @s[team=uRed] positioned as @e[type=marker,tag=pocket_sand,tag=uRed] run function under_pack:rogue_functions/hit_sand_red
 
 # Kill marker
 execute if entity @s[team=uBlue] run kill @e[type=marker,tag=pocket_sand,tag=uBlue]
