@@ -2,7 +2,7 @@
 execute as @s[nbt={Inventory:[{Slot:0b,tag:{wizardWand:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardWand:1b}}},scores={reset=1..}] if score @s ability3 matches 50.. run function under_pack:wizard_functions/wizard_spell
 execute as @s[nbt={Inventory:[{Slot:3b,tag:{wizardClaws:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardClaws:1b}}},scores={reset=1..}] if score @s ability2 matches 300.. run function under_pack:wizard_functions/wizard_claws
 execute as @s[nbt={Inventory:[{Slot:2b,tag:{wizardGay:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardGay:1b}}},scores={reset=1..}] if score @s ability1 matches 300.. run function under_pack:wizard_functions/wizard_rainbow
-execute as @s[nbt={Inventory:[{Slot:1b,tag:{wizardFire:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardFire:1b}}},scores={reset=1..}] if score @s ability4 matches 300.. run function under_pack:wizard_functions/wizard_ride
+execute as @s[nbt={Inventory:[{Slot:1b,tag:{wizardFire:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardFire:1b}}},scores={reset=1..}] if score @s ability5 matches 300.. run function under_pack:wizard_functions/wizard_ride
 
 #detection for the split
 execute as @s[team=uRed,nbt={Inventory:[{Slot:0b,tag:{wizardWand:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardWand:1b}}},scores={reset=1..}] as @e[type=marker,tag=redWizardSpell] at @s run function under_pack:wizard_functions/wizard_spell_split_red
@@ -25,6 +25,7 @@ execute if entity @s[team=uBlue] run ride @s mount @e[tag=wizardball,tag=blue,li
 #fire explotion tick
 execute if score @s wizardtime matches 1.. run scoreboard players remove @s wizardtime 1
 execute if entity @s[team=uRed] if entity @e[tag=wizardball,tag=red] run scoreboard players set @s wizardtime 3
+execute if entity @s[team=uBlue] if entity @e[tag=wizardball,tag=blue] run scoreboard players set @s wizardtime 3
 execute if entity @s[team=uRed] at @s if score @s wizardtime matches 1 run summon fireball ~ ~2.5 ~ {Tags:["wizardboom","red"],ExplosionPower:3b,power:[0.0,-5.0,0.0]}
 execute if entity @s[team=uBlue] at @s if score @s wizardtime matches 1 run summon fireball ~ ~2.5 ~ {Tags:["wizardboom","blue"],ExplosionPower:3b,power:[0.0,-5.0,0.0]}
 execute if entity @s[team=uRed] run data modify entity @e[tag=wizardboom,tag=red,limit=1] Owner set from entity @s UUID

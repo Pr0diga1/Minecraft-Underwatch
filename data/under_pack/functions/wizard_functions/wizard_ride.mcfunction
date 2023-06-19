@@ -14,7 +14,9 @@ execute at @s[team=uBlue] positioned ~ ~1.5 ~ as @e[distance=..1,tag=blue,tag=wi
 execute at @s[team=uBlue] positioned ~ ~1.5 ~ as @e[distance=..1,tag=blue,tag=wizardball] positioned 0 0 0 store result score @s wizardMotionZ run data get entity @e[tag=wizardtrack,limit=1,tag=blue] Pos[2] 1000
 
 kill @e[tag=wizardtrack]
+scoreboard players set @s ability5 0
 
 schedule function under_pack:wizard_functions/wizard_ride_velo 1t
+
 #reset
 scoreboard players reset @s reset
