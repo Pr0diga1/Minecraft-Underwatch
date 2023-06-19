@@ -18,6 +18,10 @@ execute as @s[team=uBlue,scores={wizardFireball=..0}] if entity @e[type=item,nbt
 #reset reset
 scoreboard players reset @s reset
 
+#fireball set its velo
+execute as @e[type=fireball,tag=!fireballMoved,tag=redWizardFireball] at @s rotated as @p[team=uRed] run function under_pack:wizard_functions/wizard_fireball_velo
+execute as @e[type=fireball,tag=!fireballMoved,tag=blueWizardFireball] at @s rotated as @p[team=uBlue] run function under_pack:wizard_functions/wizard_fireball_velo
+
 #fireball riding
 execute if entity @s[team=uRed] run ride @s mount @e[tag=wizardball,tag=red,limit=1] 
 execute if entity @s[team=uBlue] run ride @s mount @e[tag=wizardball,tag=blue,limit=1] 
