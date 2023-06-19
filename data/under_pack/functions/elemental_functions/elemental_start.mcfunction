@@ -24,7 +24,7 @@ execute as @s[team=uBlue] run scoreboard players set @a[team=uBlue] elementalEar
 
 #constants
 scoreboard players set ElementalWaterTiming constant 7
-scoreboard players set ElementalFireTiming constant 5
+scoreboard players set ElementalFireTiming constant 7
 
 #clean spare arrows
 kill @e[type=arrow,tag=ElementalFireArrow]
