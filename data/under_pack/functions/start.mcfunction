@@ -93,6 +93,7 @@ scoreboard objectives add blue trigger
 #adds constant and any needed multipliers
 scoreboard objectives add constant dummy
 scoreboard players set TickToSecond constant 20
+scoreboard players set OneHundred constant 100
 scoreboard players set TheNumberTen constant 10
 scoreboard players set TheNumberFive constant 5
 scoreboard players set TheNumberThree constant 3
