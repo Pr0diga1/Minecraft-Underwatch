@@ -2,8 +2,8 @@
 execute rotated as @s[team=uRed] positioned 0 0 0 align xyz run summon minecraft:marker ^ ^ ^1 {NoGravity:1b,Tags:["wizardtrack","red"]}
 execute rotated as @s[team=uBlue] positioned 0 0 0 align xyz run summon minecraft:marker ^ ^ ^1 {NoGravity:1b,Tags:["wizardtrack","blue"]}
 
-execute at @s[team=uRed] anchored eyes run summon snowball ^ ^ ^0.5 {Tags:["wizardball","red"],Item:{id:"minecraft:blaze_rod",Count:1b}}
-execute at @s[team=uBlue] anchored eyes run summon snowball ^ ^ ^0.5 {Tags:["wizardball","blue"],Item:{id:"minecraft:blaze_rod",Count:1b}}
+execute at @s[team=uRed] anchored eyes run summon snowball ^ ^ ^0.5 {Tags:["wizardball","red"],Item:{id:"minecraft:fire_charge",Count:1b}}
+execute at @s[team=uBlue] anchored eyes run summon snowball ^ ^ ^0.5 {Tags:["wizardball","blue"],Item:{id:"minecraft:fire_charge",Count:1b}}
 
 execute at @s[team=uRed] positioned ~ ~1.5 ~ as @e[distance=..1,tag=red,tag=wizardball] positioned 0 0 0 store result score @s wizardMotionX run data get entity @e[tag=wizardtrack,limit=1,tag=red] Pos[0] 1000
 execute at @s[team=uRed] positioned ~ ~1.5 ~ as @e[distance=..1,tag=red,tag=wizardball] positioned 0 0 0 store result score @s wizardMotionY run data get entity @e[tag=wizardtrack,limit=1,tag=red] Pos[1] 1000

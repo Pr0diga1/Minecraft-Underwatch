@@ -7,7 +7,7 @@ execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with splash
 scoreboard players set @s ability1 0
 
 item replace entity @s armor.legs with diamond_leggings{Unbreakable:1b}
-item replace entity @s armor.feet with diamond_boots{Unbreakable:true,Enchantments:[{id:"minecraft:depth_strider",lvl:5s},{id:"minecraft:blast_protection",lvl:8s}]}
+item replace entity @s armor.feet with diamond_boots{Unbreakable:true,Enchantments:[{id:"minecraft:depth_strider",lvl:10s},{id:"minecraft:blast_protection",lvl:8s}]}
 
 function under_pack:general_functions/general_character_select
 function under_pack:mermaid_functions/mermaid_respawn
