@@ -2,17 +2,17 @@
 tag @s remove lumberDrop
 
 #damage
-execute as @s[team=uRed] as @a[team=uBlue,distance=..1.25] run damage @s 11 player_attack by @a[scores={class=5},limit=1,team=uRed]
-execute as @s[team=uRed] as @a[team=uBlue,distance=1.251..2.5] run damage @s 7 player_attack by @a[scores={class=5},limit=1,team=uRed]
-execute as @s[team=uBlue] as @a[team=uRed,distance=..1.25] run damage @s 11 player_attack by @a[scores={class=5},limit=1,team=uBlue]
-execute as @s[team=uBlue] as @a[team=uRed,distance=1.251..2.5] run damage @s 7 player_attack by @a[scores={class=5},limit=1,team=uBlue]
+execute as @s[team=uRed] as @a[team=uBlue,distance=..1.5] run damage @s 11 player_attack by @a[scores={class=5},limit=1,team=uRed]
+execute as @s[team=uRed] as @a[team=uBlue,distance=1.501..3] run damage @s 7 player_attack by @a[scores={class=5},limit=1,team=uRed]
+execute as @s[team=uBlue] as @a[team=uRed,distance=..1.5] run damage @s 11 player_attack by @a[scores={class=5},limit=1,team=uBlue]
+execute as @s[team=uBlue] as @a[team=uRed,distance=1.501..3] run damage @s 7 player_attack by @a[scores={class=5},limit=1,team=uBlue]
 
 #sound
 execute at @s run playsound entity.player.attack.crit master @a ~ ~ ~ 100 0.3
 stopsound @a master item.elytra.flying
 
 #particles
-particle block grass_block ~0.000 ~0.250 ~3.000 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~0.000 ~0.50 ~3.000 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~0.062 ~0.492 ~2.936 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~0.124 ~0.374 ~2.747 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~0.185 ~0.072 ~2.440 0.1 0.1 0.1 0 1 force @a
@@ -33,7 +33,7 @@ particle block grass_block ~1.029 ~0.175 ~-2.637 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.087 ~0.000 ~-2.359 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.144 ~0.197 ~-1.986 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.201 ~0.472 ~-1.535 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~1.258 ~0.417 ~-1.026 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~1.58 ~0.417 ~-1.026 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.314 ~0.113 ~-0.484 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.369 ~0.013 ~0.069 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.424 ~0.265 ~0.607 0.1 0.1 0.1 0 1 force @a
@@ -44,7 +44,7 @@ particle block grass_block ~1.636 ~0.043 ~2.188 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.688 ~0.332 ~2.363 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.738 ~0.499 ~2.432 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.788 ~0.296 ~2.396 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~1.838 ~0.024 ~2.259 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~1.838 ~0.024 ~2.59 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.886 ~0.088 ~2.030 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.934 ~0.393 ~1.723 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.980 ~0.485 ~1.353 0.1 0.1 0.1 0 1 force @a
@@ -61,7 +61,7 @@ particle block grass_block ~2.400 ~0.406 ~-1.779 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.436 ~0.101 ~-1.749 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.472 ~0.018 ~-1.644 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.506 ~0.280 ~-1.475 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~2.540 ~0.498 ~-1.252 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~2.540 ~0.498 ~-1.52 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.572 ~0.347 ~-0.989 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.603 ~0.052 ~-0.701 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.633 ~0.051 ~-0.402 0.1 0.1 0.1 0 1 force @a
@@ -98,7 +98,7 @@ particle block grass_block ~2.979 ~0.416 ~0.134 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.971 ~0.473 ~0.075 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.962 ~0.198 ~-0.012 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.951 ~0.000 ~-0.124 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~2.940 ~0.174 ~-0.254 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~2.940 ~0.174 ~-0.54 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.927 ~0.461 ~-0.396 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.913 ~0.434 ~-0.540 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.897 ~0.134 ~-0.678 0.1 0.1 0.1 0 1 force @a
@@ -112,12 +112,12 @@ particle block grass_block ~2.755 ~0.309 ~-0.713 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.730 ~0.500 ~-0.527 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.704 ~0.319 ~-0.299 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.677 ~0.036 ~-0.035 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~2.648 ~0.071 ~0.253 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~2.648 ~0.071 ~0.53 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.618 ~0.373 ~0.552 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.588 ~0.492 ~0.847 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~2.556 ~0.252 ~1.125 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~2.556 ~0.52 ~1.15 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.523 ~0.009 ~1.370 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~2.489 ~0.125 ~1.567 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~2.489 ~0.15 ~1.567 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.454 ~0.427 ~1.705 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.418 ~0.466 ~1.773 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.381 ~0.184 ~1.765 0.1 0.1 0.1 0 1 force @a
@@ -127,7 +127,7 @@ particle block grass_block ~2.264 ~0.468 ~1.261 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.223 ~0.424 ~0.947 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.181 ~0.121 ~0.576 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.138 ~0.010 ~0.162 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~2.094 ~0.256 ~-0.276 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~2.094 ~0.56 ~-0.276 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.049 ~0.493 ~-0.720 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~2.004 ~0.369 ~-1.149 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~1.957 ~0.068 ~-1.544 0.1 0.1 0.1 0 1 force @a
@@ -214,10 +214,10 @@ particle block grass_block ~-2.418 ~0.470 ~1.773 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.454 ~0.193 ~1.705 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.489 ~0.000 ~1.567 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.523 ~0.179 ~1.370 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~-2.556 ~0.464 ~1.125 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~-2.556 ~0.464 ~1.15 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.588 ~0.430 ~0.847 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.618 ~0.129 ~0.552 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~-2.648 ~0.008 ~0.253 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~-2.648 ~0.008 ~0.53 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.677 ~0.247 ~-0.035 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.704 ~0.491 ~-0.299 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.730 ~0.377 ~-0.527 0.1 0.1 0.1 0 1 force @a
@@ -231,7 +231,7 @@ particle block grass_block ~-2.880 ~0.075 ~-0.799 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.897 ~0.378 ~-0.678 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.913 ~0.491 ~-0.540 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.927 ~0.246 ~-0.396 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~-2.940 ~0.007 ~-0.254 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~-2.940 ~0.007 ~-0.54 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.951 ~0.130 ~-0.124 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.962 ~0.431 ~-0.012 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.971 ~0.463 ~0.075 0.1 0.1 0.1 0 1 force @a
@@ -268,7 +268,7 @@ particle block grass_block ~-2.662 ~0.104 ~-0.107 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.633 ~0.016 ~-0.402 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.603 ~0.276 ~-0.701 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.572 ~0.497 ~-0.989 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~-2.540 ~0.350 ~-1.252 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~-2.540 ~0.350 ~-1.52 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.506 ~0.054 ~-1.475 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.472 ~0.049 ~-1.644 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-2.436 ~0.343 ~-1.749 0.1 0.1 0.1 0 1 force @a
@@ -285,7 +285,7 @@ particle block grass_block ~-2.026 ~0.450 ~0.938 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-1.980 ~0.446 ~1.353 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-1.934 ~0.150 ~1.723 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-1.886 ~0.003 ~2.030 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~-1.838 ~0.223 ~2.259 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~-1.838 ~0.223 ~2.59 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-1.788 ~0.483 ~2.396 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-1.738 ~0.397 ~2.432 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-1.688 ~0.092 ~2.363 0.1 0.1 0.1 0 1 force @a
@@ -296,7 +296,7 @@ particle block grass_block ~-1.478 ~0.336 ~1.107 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-1.424 ~0.045 ~0.607 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-1.369 ~0.059 ~0.069 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-1.314 ~0.356 ~-0.484 0.1 0.1 0.1 0 1 force @a
-particle block grass_block ~-1.258 ~0.496 ~-1.026 0.1 0.1 0.1 0 1 force @a
+particle block grass_block ~-1.58 ~0.496 ~-1.026 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-1.201 ~0.270 ~-1.535 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-1.144 ~0.014 ~-1.986 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-1.087 ~0.109 ~-2.359 0.1 0.1 0.1 0 1 force @a
@@ -317,7 +317,7 @@ particle block grass_block ~-0.247 ~0.029 ~2.031 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-0.185 ~0.306 ~2.440 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-0.124 ~0.500 ~2.747 0.1 0.1 0.1 0 1 force @a
 particle block grass_block ~-0.062 ~0.322 ~2.936 0.1 0.1 0.1 0 1 force @a
-particle block stone ~0.000 ~0.250 ~3.000 0.1 0.1 0.1 0 1 force @a
+particle block stone ~0.000 ~0.50 ~3.000 0.1 0.1 0.1 0 1 force @a
 particle block stone ~0.062 ~0.492 ~2.936 0.1 0.1 0.1 0 1 force @a
 particle block stone ~0.124 ~0.374 ~2.747 0.1 0.1 0.1 0 1 force @a
 particle block stone ~0.185 ~0.072 ~2.440 0.1 0.1 0.1 0 1 force @a
@@ -338,7 +338,7 @@ particle block stone ~1.029 ~0.175 ~-2.637 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.087 ~0.000 ~-2.359 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.144 ~0.197 ~-1.986 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.201 ~0.472 ~-1.535 0.1 0.1 0.1 0 1 force @a
-particle block stone ~1.258 ~0.417 ~-1.026 0.1 0.1 0.1 0 1 force @a
+particle block stone ~1.58 ~0.417 ~-1.026 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.314 ~0.113 ~-0.484 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.369 ~0.013 ~0.069 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.424 ~0.265 ~0.607 0.1 0.1 0.1 0 1 force @a
@@ -349,7 +349,7 @@ particle block stone ~1.636 ~0.043 ~2.188 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.688 ~0.332 ~2.363 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.738 ~0.499 ~2.432 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.788 ~0.296 ~2.396 0.1 0.1 0.1 0 1 force @a
-particle block stone ~1.838 ~0.024 ~2.259 0.1 0.1 0.1 0 1 force @a
+particle block stone ~1.838 ~0.024 ~2.59 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.886 ~0.088 ~2.030 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.934 ~0.393 ~1.723 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.980 ~0.485 ~1.353 0.1 0.1 0.1 0 1 force @a
@@ -366,7 +366,7 @@ particle block stone ~2.400 ~0.406 ~-1.779 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.436 ~0.101 ~-1.749 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.472 ~0.018 ~-1.644 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.506 ~0.280 ~-1.475 0.1 0.1 0.1 0 1 force @a
-particle block stone ~2.540 ~0.498 ~-1.252 0.1 0.1 0.1 0 1 force @a
+particle block stone ~2.540 ~0.498 ~-1.52 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.572 ~0.347 ~-0.989 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.603 ~0.052 ~-0.701 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.633 ~0.051 ~-0.402 0.1 0.1 0.1 0 1 force @a
@@ -403,7 +403,7 @@ particle block stone ~2.979 ~0.416 ~0.134 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.971 ~0.473 ~0.075 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.962 ~0.198 ~-0.012 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.951 ~0.000 ~-0.124 0.1 0.1 0.1 0 1 force @a
-particle block stone ~2.940 ~0.174 ~-0.254 0.1 0.1 0.1 0 1 force @a
+particle block stone ~2.940 ~0.174 ~-0.54 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.927 ~0.461 ~-0.396 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.913 ~0.434 ~-0.540 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.897 ~0.134 ~-0.678 0.1 0.1 0.1 0 1 force @a
@@ -417,12 +417,12 @@ particle block stone ~2.755 ~0.309 ~-0.713 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.730 ~0.500 ~-0.527 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.704 ~0.319 ~-0.299 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.677 ~0.036 ~-0.035 0.1 0.1 0.1 0 1 force @a
-particle block stone ~2.648 ~0.071 ~0.253 0.1 0.1 0.1 0 1 force @a
+particle block stone ~2.648 ~0.071 ~0.53 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.618 ~0.373 ~0.552 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.588 ~0.492 ~0.847 0.1 0.1 0.1 0 1 force @a
-particle block stone ~2.556 ~0.252 ~1.125 0.1 0.1 0.1 0 1 force @a
+particle block stone ~2.556 ~0.52 ~1.15 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.523 ~0.009 ~1.370 0.1 0.1 0.1 0 1 force @a
-particle block stone ~2.489 ~0.125 ~1.567 0.1 0.1 0.1 0 1 force @a
+particle block stone ~2.489 ~0.15 ~1.567 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.454 ~0.427 ~1.705 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.418 ~0.466 ~1.773 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.381 ~0.184 ~1.765 0.1 0.1 0.1 0 1 force @a
@@ -432,7 +432,7 @@ particle block stone ~2.264 ~0.468 ~1.261 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.223 ~0.424 ~0.947 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.181 ~0.121 ~0.576 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.138 ~0.010 ~0.162 0.1 0.1 0.1 0 1 force @a
-particle block stone ~2.094 ~0.256 ~-0.276 0.1 0.1 0.1 0 1 force @a
+particle block stone ~2.094 ~0.56 ~-0.276 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.049 ~0.493 ~-0.720 0.1 0.1 0.1 0 1 force @a
 particle block stone ~2.004 ~0.369 ~-1.149 0.1 0.1 0.1 0 1 force @a
 particle block stone ~1.957 ~0.068 ~-1.544 0.1 0.1 0.1 0 1 force @a
@@ -519,10 +519,10 @@ particle block stone ~-2.418 ~0.470 ~1.773 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.454 ~0.193 ~1.705 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.489 ~0.000 ~1.567 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.523 ~0.179 ~1.370 0.1 0.1 0.1 0 1 force @a
-particle block stone ~-2.556 ~0.464 ~1.125 0.1 0.1 0.1 0 1 force @a
+particle block stone ~-2.556 ~0.464 ~1.15 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.588 ~0.430 ~0.847 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.618 ~0.129 ~0.552 0.1 0.1 0.1 0 1 force @a
-particle block stone ~-2.648 ~0.008 ~0.253 0.1 0.1 0.1 0 1 force @a
+particle block stone ~-2.648 ~0.008 ~0.53 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.677 ~0.247 ~-0.035 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.704 ~0.491 ~-0.299 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.730 ~0.377 ~-0.527 0.1 0.1 0.1 0 1 force @a
@@ -536,7 +536,7 @@ particle block stone ~-2.880 ~0.075 ~-0.799 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.897 ~0.378 ~-0.678 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.913 ~0.491 ~-0.540 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.927 ~0.246 ~-0.396 0.1 0.1 0.1 0 1 force @a
-particle block stone ~-2.940 ~0.007 ~-0.254 0.1 0.1 0.1 0 1 force @a
+particle block stone ~-2.940 ~0.007 ~-0.54 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.951 ~0.130 ~-0.124 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.962 ~0.431 ~-0.012 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.971 ~0.463 ~0.075 0.1 0.1 0.1 0 1 force @a
@@ -573,7 +573,7 @@ particle block stone ~-2.662 ~0.104 ~-0.107 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.633 ~0.016 ~-0.402 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.603 ~0.276 ~-0.701 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.572 ~0.497 ~-0.989 0.1 0.1 0.1 0 1 force @a
-particle block stone ~-2.540 ~0.350 ~-1.252 0.1 0.1 0.1 0 1 force @a
+particle block stone ~-2.540 ~0.350 ~-1.52 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.506 ~0.054 ~-1.475 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.472 ~0.049 ~-1.644 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-2.436 ~0.343 ~-1.749 0.1 0.1 0.1 0 1 force @a
@@ -590,7 +590,7 @@ particle block stone ~-2.026 ~0.450 ~0.938 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-1.980 ~0.446 ~1.353 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-1.934 ~0.150 ~1.723 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-1.886 ~0.003 ~2.030 0.1 0.1 0.1 0 1 force @a
-particle block stone ~-1.838 ~0.223 ~2.259 0.1 0.1 0.1 0 1 force @a
+particle block stone ~-1.838 ~0.223 ~2.59 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-1.788 ~0.483 ~2.396 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-1.738 ~0.397 ~2.432 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-1.688 ~0.092 ~2.363 0.1 0.1 0.1 0 1 force @a
@@ -601,7 +601,7 @@ particle block stone ~-1.478 ~0.336 ~1.107 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-1.424 ~0.045 ~0.607 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-1.369 ~0.059 ~0.069 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-1.314 ~0.356 ~-0.484 0.1 0.1 0.1 0 1 force @a
-particle block stone ~-1.258 ~0.496 ~-1.026 0.1 0.1 0.1 0 1 force @a
+particle block stone ~-1.58 ~0.496 ~-1.026 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-1.201 ~0.270 ~-1.535 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-1.144 ~0.014 ~-1.986 0.1 0.1 0.1 0 1 force @a
 particle block stone ~-1.087 ~0.109 ~-2.359 0.1 0.1 0.1 0 1 force @a
