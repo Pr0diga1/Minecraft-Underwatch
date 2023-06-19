@@ -4,3 +4,5 @@ execute if entity @s[team=uBlue] run kill @e[type=armor_stand,tag=lumberaxemove,
 execute if entity @s[team=uBlue] run kill @e[type=armor_stand,tag=lumberaxestill,tag=blue]
 execute if entity @s[team=uRed] run kill @e[type=armor_stand,tag=lumberaxemove,tag=red]
 execute if entity @s[team=uRed] run kill @e[type=armor_stand,tag=lumberaxestill,tag=red]
+
+scoreboard players set @s ability1 199

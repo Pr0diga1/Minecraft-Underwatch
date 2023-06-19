@@ -6,16 +6,16 @@ execute if score @s[tag=redWizardRainbow] wizardDistance matches ..40 as @a[team
 execute if score @s[tag=blueWizardRainbow] wizardDistance matches ..40 as @a[team=uRed,distance=..3] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:1.2d,Motion:[0.0,-5.0,0.0],Tags:["blueWizardArrow"]}
 
 
-execute if score @s[tag=redWizardRainbow] wizardDistance matches 41..80 as @a[team=uBlue,distance=..2] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:2.1d,Motion:[0.0,-5.0,0.0],Tags:["redWizardArrow"]}
-execute if score @s[tag=redWizardRainbow] wizardDistance matches 41..80 as @a[team=uBlue,distance=2..4] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:1.5d,Motion:[0.0,-5.0,0.0],Tags:["redWizardArrow"]}
-execute if score @s[tag=blueWizardRainbow] wizardDistance matches 41..80 as @a[team=uRed,distance=..2] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:2.1d,Motion:[0.0,-5.0,0.0],Tags:["blueWizardArrow"]}
-execute if score @s[tag=blueWizardRainbow] wizardDistance matches 41..80 as @a[team=uRed,distance=2..4] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:1.5d,Motion:[0.0,-5.0,0.0],Tags:["blueWizardArrow"]}
+execute if score @s[tag=redWizardRainbow] wizardDistance matches 41..80 as @a[team=uBlue,distance=..2] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:2.3d,Motion:[0.0,-5.0,0.0],Tags:["redWizardArrow"]}
+execute if score @s[tag=redWizardRainbow] wizardDistance matches 41..80 as @a[team=uBlue,distance=2..4] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:1.7d,Motion:[0.0,-5.0,0.0],Tags:["redWizardArrow"]}
+execute if score @s[tag=blueWizardRainbow] wizardDistance matches 41..80 as @a[team=uRed,distance=..2] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:2.3d,Motion:[0.0,-5.0,0.0],Tags:["blueWizardArrow"]}
+execute if score @s[tag=blueWizardRainbow] wizardDistance matches 41..80 as @a[team=uRed,distance=2..4] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:1.7d,Motion:[0.0,-5.0,0.0],Tags:["blueWizardArrow"]}
 
 
-execute if score @s[tag=redWizardRainbow] wizardDistance matches 81.. as @a[team=uBlue,distance=..3] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:2.6d,Motion:[0.0,-5.0,0.0],Tags:["redWizardArrow"]}
-execute if score @s[tag=redWizardRainbow] wizardDistance matches 81.. as @a[team=uBlue,distance=3..5] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:1.8d,Motion:[0.0,-5.0,0.0],Tags:["redWizardArrow"]}
-execute if score @s[tag=blueWizardRainbow] wizardDistance matches 81.. as @a[team=uRed,distance=..3] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:2.6d,Motion:[0.0,-5.0,0.0],Tags:["blueWizardArrow"]}
-execute if score @s[tag=blueWizardRainbow] wizardDistance matches 81.. as @a[team=uRed,distance=3..5] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:1.8d,Motion:[0.0,-5.0,0.0],Tags:["blueWizardArrow"]}
+execute if score @s[tag=redWizardRainbow] wizardDistance matches 81.. as @a[team=uBlue,distance=..3] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:3.3d,Motion:[0.0,-5.0,0.0],Tags:["redWizardArrow"]}
+execute if score @s[tag=redWizardRainbow] wizardDistance matches 81.. as @a[team=uBlue,distance=3..5] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:2.4d,Motion:[0.0,-5.0,0.0],Tags:["redWizardArrow"]}
+execute if score @s[tag=blueWizardRainbow] wizardDistance matches 81.. as @a[team=uRed,distance=..3] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:3.3d,Motion:[0.0,-5.0,0.0],Tags:["blueWizardArrow"]}
+execute if score @s[tag=blueWizardRainbow] wizardDistance matches 81.. as @a[team=uRed,distance=3..5] at @s run summon arrow ~ ~3 ~ {NoGravity:1b,damage:2.4d,Motion:[0.0,-5.0,0.0],Tags:["blueWizardArrow"]}
 
 
 #set the arrow owner

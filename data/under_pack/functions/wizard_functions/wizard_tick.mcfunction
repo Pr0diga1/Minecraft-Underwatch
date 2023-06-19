@@ -22,20 +22,6 @@ scoreboard players reset @s reset
 execute as @e[type=fireball,tag=!fireballMoved,tag=redWizardFireball] at @s rotated as @p[team=uRed] run function under_pack:wizard_functions/wizard_fireball_velo
 execute as @e[type=fireball,tag=!fireballMoved,tag=blueWizardFireball] at @s rotated as @p[team=uBlue] run function under_pack:wizard_functions/wizard_fireball_velo
 
-#fireball riding
-execute if entity @s[team=uRed] run ride @s mount @e[tag=wizardball,tag=red,limit=1] 
-execute if entity @s[team=uBlue] run ride @s mount @e[tag=wizardball,tag=blue,limit=1] 
-
-#fire explotion tick
-execute if score @s wizardtime matches 1.. run scoreboard players remove @s wizardtime 1
-execute if entity @s[team=uRed] if entity @e[tag=wizardball,tag=red] run scoreboard players set @s wizardtime 3
-execute if entity @s[team=uBlue] if entity @e[tag=wizardball,tag=blue] run scoreboard players set @s wizardtime 3
-execute if entity @s[team=uRed] at @s if score @s wizardtime matches 1 run summon fireball ~ ~2.5 ~ {Tags:["wizardboom","red"],ExplosionPower:3b,power:[0.0,-5.0,0.0]}
-execute if entity @s[team=uBlue] at @s if score @s wizardtime matches 1 run summon fireball ~ ~2.5 ~ {Tags:["wizardboom","blue"],ExplosionPower:3b,power:[0.0,-5.0,0.0]}
-execute if entity @s[team=uRed] run data modify entity @e[tag=wizardboom,tag=red,limit=1] Owner set from entity @s UUID
-execute if entity @s[team=uBlue] run data modify entity @e[tag=wizardboom,tag=blue,limit=1] Owner set from entity @s UUID
-execute at @e[tag=wizardball] run particle minecraft:flame ~ ~ ~ .2 .2 .2 0 3 force
-
 #move the spells 3 times per tick
 execute as @s[team=uRed] as @e[type=marker,tag=redWizardSpell] at @s run function under_pack:wizard_functions/wizard_spell_big_tick
 execute as @s[team=uBlue] as @e[type=marker,tag=blueWizardSpell] at @s run function under_pack:wizard_functions/wizard_spell_big_tick

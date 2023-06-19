@@ -82,4 +82,4 @@ execute if score @s ability5 matches 220 run item replace entity @s hotbar.1 wit
 execute if score @s ability5 matches 240 run item replace entity @s hotbar.1 with fire_charge 3
 execute if score @s ability5 matches 260 run item replace entity @s hotbar.1 with fire_charge 2
 execute if score @s ability5 matches 280 run item replace entity @s hotbar.1 with fire_charge 1
-execute if score @s ability5 matches 300 run item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Fireball","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1
+execute if score @s ability5 matches 300 run item replace entity @s hotbar.1 with ender_eye{display:{Name:'{"text":"Fireball","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1

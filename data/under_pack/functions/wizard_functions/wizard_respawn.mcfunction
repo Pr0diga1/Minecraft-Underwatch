@@ -3,7 +3,7 @@ item replace entity @s[team=uRed] hotbar.0 with carrot_on_a_stick{CustomModelDat
 item replace entity @s[team=uBlue] hotbar.0 with carrot_on_a_stick{CustomModelData:45,display:{Name:'{"text":"Agicmay Andway","color":"light_purple","bold":true,"italic":true}',Lore:['{"text":"Crafted from the tree of Lofaktar"}']},wizardWand:1b,blue:1b} 1
 
 #fireball
-item replace entity @s hotbar.1 with carrot_on_a_stick{display:{Name:'{"text":"Fireball","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1
+item replace entity @s hotbar.1 with ender_eye{display:{Name:'{"text":"Fireball","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1
 
 #multishot
 #expecto homoconversus
