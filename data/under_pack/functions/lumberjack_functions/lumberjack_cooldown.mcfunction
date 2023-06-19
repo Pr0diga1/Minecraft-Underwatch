@@ -1,14 +1,16 @@
 #jump cooldown indications
-execute if score @s movement matches 20 run item replace entity @s hotbar.1 with iron_boots{CustomModelData:2,display:{Name:'{"text":"Jump on Cooldown"}'}} 1
-execute if score @s movement matches 40 run item replace entity @s hotbar.1 with iron_boots{CustomModelData:3,display:{Name:'{"text":"Jump on Cooldown"}'}} 1
-execute if score @s movement matches 60 run item replace entity @s hotbar.1 with iron_boots{CustomModelData:4,display:{Name:'{"text":"Jump on Cooldown"}'}} 1
+execute if score @s movement matches 20 run item replace entity @s hotbar.1 with potato{CustomModelData:2,display:{Name:'{"text":"Jump on Cooldown"}'}} 1
+execute if score @s movement matches 40 run item replace entity @s hotbar.1 with potato{CustomModelData:3,display:{Name:'{"text":"Jump on Cooldown"}'}} 1
+execute if score @s movement matches 60 run item replace entity @s hotbar.1 with potato{CustomModelData:4,display:{Name:'{"text":"Jump on Cooldown"}'}} 1
 #Sweep cooldown indications
-execute if score @s ability1 matches 20 run item replace entity @s hotbar.2 with iron_ingot{CustomModelData:2,display:{Name:'{"text":"Sweep on Cooldown"}'}} 9
-execute if score @s ability1 matches 40 run item replace entity @s hotbar.2 with iron_ingot{CustomModelData:3,display:{Name:'{"text":"Sweep on Cooldown"}'}} 8
-execute if score @s ability1 matches 60 run item replace entity @s hotbar.2 with iron_ingot{CustomModelData:4,display:{Name:'{"text":"Sweep on Cooldown"}'}} 7
-execute if score @s ability1 matches 80 run item replace entity @s hotbar.2 with iron_ingot{CustomModelData:5,display:{Name:'{"text":"Sweep on Cooldown"}'}} 6
-execute if score @s ability1 matches 100 run item replace entity @s hotbar.2 with iron_ingot{CustomModelData:6,display:{Name:'{"text":"Sweep on Cooldown"}'}} 5
-execute if score @s ability1 matches 120 run item replace entity @s hotbar.2 with iron_ingot{CustomModelData:7,display:{Name:'{"text":"Sweep on Cooldown"}'}} 4
-execute if score @s ability1 matches 140 run item replace entity @s hotbar.2 with iron_ingot{CustomModelData:8,display:{Name:'{"text":"Sweep on Cooldown"}'}} 3
-execute if score @s ability1 matches 160 run item replace entity @s hotbar.2 with iron_ingot{CustomModelData:9,display:{Name:'{"text":"Sweep on Cooldown"}'}} 2
-execute if score @s ability1 matches 180 run item replace entity @s hotbar.2 with iron_ingot{CustomModelData:10,display:{Name:'{"text":"Sweep on Cooldown"}'}} 1
+execute if score @s ability1 matches 2 run title @s actionbar ["",{"text":"Can I Axe You A Question? will be ready in: ","color": "dark_green"},{"text": "10","color": "dark_gray"}]
+execute if score @s ability1 matches 20 run title @s actionbar ["",{"text":"Can I Axe You A Question? will be ready in: ","color": "dark_green"},{"text": "9","color": "dark_gray"}]
+execute if score @s ability1 matches 40 run title @s actionbar ["",{"text":"Can I Axe You A Question? will be ready in: ","color": "dark_green"},{"text": "8","color": "dark_gray"}]
+execute if score @s ability1 matches 60 run title @s actionbar ["",{"text":"Can I Axe You A Question? will be ready in: ","color": "dark_green"},{"text": "7","color": "dark_gray"}]
+execute if score @s ability1 matches 80 run title @s actionbar ["",{"text":"Can I Axe You A Question? will be ready in: ","color": "dark_green"},{"text": "6","color": "dark_gray"}]
+execute if score @s ability1 matches 100 run title @s actionbar ["",{"text":"Can I Axe You A Question? will be ready in: ","color": "dark_green"},{"text": "5","color": "dark_gray"}]
+execute if score @s ability1 matches 120 run title @s actionbar ["",{"text":"Can I Axe You A Question? will be ready in: ","color": "dark_green"},{"text": "4","color": "dark_gray"}]
+execute if score @s ability1 matches 140 run title @s actionbar ["",{"text":"Can I Axe You A Question? will be ready in: ","color": "dark_green"},{"text": "3","color": "dark_gray"}]
+execute if score @s ability1 matches 160 run title @s actionbar ["",{"text":"Can I Axe You A Question? will be ready in: ","color": "dark_green"},{"text": "2","color": "dark_gray"}]
+execute if score @s ability1 matches 180 run title @s actionbar ["",{"text":"Can I Axe You A Question? will be ready in: ","color": "dark_green"},{"text": "1","color": "dark_gray"}]
+execute if score @s ability1 matches 199.. run title @s actionbar ["",{"text":"Can I Axe You A Question? is ready ","color": "dark_green"},{"text": "now","color": "dark_gray"}]
