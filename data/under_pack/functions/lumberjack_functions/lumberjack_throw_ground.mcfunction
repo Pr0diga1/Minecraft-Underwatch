@@ -8,7 +8,7 @@ execute as @s[team=uBlue] as @a[team=uRed,distance=..1.5] run damage @s 11 playe
 execute as @s[team=uBlue] as @a[team=uRed,distance=1.501..3] run damage @s 7 player_attack by @a[scores={class=5},limit=1,team=uBlue]
 
 #sound
-execute at @s run playsound entity.player.attack.crit master @a ~ ~ ~ 100 0.3
+execute at @s run playsound entity.player.attack.crit master @a ~ ~ ~
 stopsound @a master item.elytra.flying
 
 #particles
