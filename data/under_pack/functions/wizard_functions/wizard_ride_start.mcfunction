@@ -6,3 +6,5 @@ execute at @s[team=uBlue] run summon chicken ~ ~ ~ {NoGravity:1b,Silent:1b,Invul
 #summon the markers
 execute at @s[team=uRed] run summon marker ~ ~ ~ {Tags:["redWizardMark"]}
 execute at @s[team=uBlue] run summon marker ~ ~ ~ {Tags:["blueWizardMark"]}
+#effect
+effect give @s resistance 2 6 true

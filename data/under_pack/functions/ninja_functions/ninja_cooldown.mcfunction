@@ -1,13 +1,15 @@
 #tallying for the toss 
-execute if score @s ability2 matches ..140 run scoreboard players add @s ability2 1
+execute if score @s ability2 matches ..180 run scoreboard players add @s ability2 1
 #intervals for the toss
 execute if score @s ability2 matches 20 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:2,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
 execute if score @s ability2 matches 40 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:3,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
-execute if score @s ability2 matches 60 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:4,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
-execute if score @s ability2 matches 80 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:5,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
-execute if score @s ability2 matches 100 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:6,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
-execute if score @s ability2 matches 120 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:7,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
-execute if score @s ability2 matches 140 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:24,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
+execute if score @s ability2 matches 60 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:3,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
+execute if score @s ability2 matches 80 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:4,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
+execute if score @s ability2 matches 100 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:5,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
+execute if score @s ability2 matches 120 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:5,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
+execute if score @s ability2 matches 140 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:6,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
+execute if score @s ability2 matches 160 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:7,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
+execute if score @s ability2 matches 180 run item replace entity @s hotbar.1 with carrot_on_a_stick{CustomModelData:24,display:{Name:'{"text":"Shuriken Throw","color":"blue"}'},ninjaToss:1b} 1
 
 #tallying for the 1.8
 execute if score @s ability3 matches ..300 if score @s ninjaHyperventilate matches 0 run scoreboard players add @s ability3 1
@@ -29,14 +31,28 @@ execute if score @s ability3 matches 280 run item replace entity @s hotbar.2 wit
 execute if score @s ability3 matches 300 run item replace entity @s hotbar.2 with carrot_on_a_stick{CustomModelData:25,display:{Name:'{"text":"Brass Knuckles","color":"gold"}',Lore:['{"text":"Right Click to hyperventilate"}']},ninjaHyperventilate:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2,Operation:0,UUID:[I;-1720202667,-1900395342,-1354315421,-1721737083],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2,Operation:0,UUID:[I;1437762905,795430736,-1620033804,-281481686],Slot:"mainhand"}]} 1
 
 #tallying for the dash
-execute if score @s ability1 matches ..160 run scoreboard players add @s ability1 1
+execute if score @s ability1 matches ..199 run scoreboard players add @s ability1 1
 #intervals for the dash
-execute if score @s ability1 matches 0..1 run title @s actionbar ["",{"text":"Dash available in: ","color":"dark_purple"},{"text":"8","color":"blue"}]
-execute if score @s ability1 matches 20 run title @s actionbar ["",{"text":"Dash available in: ","color":"dark_purple"},{"text":"7","color":"blue"}]
-execute if score @s ability1 matches 40 run title @s actionbar ["",{"text":"Dash available in: ","color":"dark_purple"},{"text":"6","color":"blue"}]
-execute if score @s ability1 matches 60 run title @s actionbar ["",{"text":"Dash available in: ","color":"dark_purple"},{"text":"5","color":"blue"}]
-execute if score @s ability1 matches 80 run title @s actionbar ["",{"text":"Dash available in: ","color":"dark_purple"},{"text":"4","color":"blue"}]
-execute if score @s ability1 matches 100 run title @s actionbar ["",{"text":"Dash available in: ","color":"dark_purple"},{"text":"3","color":"blue"}]
-execute if score @s ability1 matches 120 run title @s actionbar ["",{"text":"Dash available in: ","color":"dark_purple"},{"text":"2","color":"blue"}]
-execute if score @s ability1 matches 140 run title @s actionbar ["",{"text":"Dash available in: ","color":"dark_purple"},{"text":"1","color":"blue"}]
-execute if score @s ability1 matches 160.. run title @s actionbar ["",{"text":"Dash available ","color":"dark_purple"},{"text":"now","color":"blue"}]
+execute if score @s ability1 matches 0..1 run title @s actionbar ["",{"text":"Dash recharging","color":"dark_purple"}]
+execute if score @s ability1 matches 20 run title @s actionbar ["",{"text":"Dash recharging","color":"dark_purple"}]
+execute if score @s ability1 matches 40 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"0%","color":"blue"}]
+execute if score @s ability1 matches 48 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"5%","color":"blue"}]
+execute if score @s ability1 matches 56 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"10%","color":"blue"}]
+execute if score @s ability1 matches 64 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"15%","color":"blue"}]
+execute if score @s ability1 matches 72 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"20%","color":"blue"}]
+execute if score @s ability1 matches 80 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"25%","color":"blue"}]
+execute if score @s ability1 matches 88 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"30%","color":"blue"}]
+execute if score @s ability1 matches 96 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"35%","color":"blue"}]
+execute if score @s ability1 matches 104 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"40%","color":"blue"}]
+execute if score @s ability1 matches 112 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"45%","color":"blue"}]
+execute if score @s ability1 matches 120 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"50%","color":"blue"}]
+execute if score @s ability1 matches 128 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"55%","color":"blue"}]
+execute if score @s ability1 matches 136 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"60%","color":"blue"}]
+execute if score @s ability1 matches 144 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"65%","color":"blue"}]
+execute if score @s ability1 matches 152 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"70%","color":"blue"}]
+execute if score @s ability1 matches 160 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"75%","color":"blue"}]
+execute if score @s ability1 matches 168 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"80%","color":"blue"}]
+execute if score @s ability1 matches 176 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"85%","color":"blue"}]
+execute if score @s ability1 matches 184 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"90%","color":"blue"}]
+execute if score @s ability1 matches 192 run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"95%","color":"blue"}]
+execute if score @s ability1 matches 200.. run title @s actionbar ["",{"text":"Dash ","color":"dark_purple"},{"text":"fully charged","color":"blue"}]

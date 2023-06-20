@@ -91,7 +91,6 @@ scoreboard objectives add red trigger
 scoreboard objectives add blue trigger
 
 #adds constant and any needed multipliers
-scoreboard objectives add constant dummy
 scoreboard players set TickToSecond constant 20
 scoreboard players set OneHundred constant 100
 scoreboard players set TheNumberTen constant 10
@@ -102,6 +101,7 @@ scoreboard players set TheNumberZero constant 0
 scoreboard players set everyOther constant 1
 scoreboard players set minusOne constant -1
 scoreboard players set 4 num 4
+scoreboard players set 40 num 40
 
 #all of the triggers for the classes
 scoreboard objectives add alchemist trigger
