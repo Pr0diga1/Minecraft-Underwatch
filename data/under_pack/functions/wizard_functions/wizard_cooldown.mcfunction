@@ -10,8 +10,8 @@ execute if score @s movement matches 100.. run scoreboard players set @s movemen
 #execute if score @s movement matches 60 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Casts Charged          ","color": "gold"},{"text":"Ignis Sorcery Rechanneling: ","color":"gold"},{"text":"2","color":"red"}]
 #execute if score @s movement matches 80 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Casts Charged          ","color": "gold"},{"text":"Ignis Sorcery Rechanneling: ","color":"gold"},{"text":"1","color":"red"}]
 #execute if score @s movement matches 99 run title @s actionbar ["",{"text":" "}]
-execute if score @s wizardFireball matches 1 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Cast Charged","color": "gold"}]
-execute unless score @s wizardFireball matches 1 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Casts Charged","color": "gold"}]
+execute if score @s wizardFireball matches 1 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Cast Charged  ","color": "gold"},{"score":{"name":"@s","objective":"movement"}, "color":"dark_blue"},{"text":"/100","color": "dark_green"}]
+execute unless score @s wizardFireball matches 1 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Casts Charged  ","color": "gold"},{"score":{"name":"@s","objective":"movement"}, "color":"dark_blue"},{"text":"/100","color": "dark_green"}]
 
 #rainbow
 execute if score @s ability1 matches ..299 run scoreboard players add @s ability1 1
@@ -64,19 +64,3 @@ execute as @s[team=uRed] if score @s ability3 matches ..47 unless entity @e[type
 execute as @s[team=uBlue] if score @s ability3 matches ..49 unless entity @e[type=marker,tag=blueWizardSpell] run scoreboard players add @s ability3 2
 execute as @s[team=uBlue] if score @s ability3 matches ..47 unless entity @e[type=marker,tag=blueWizardSpell] run experience add @s 32 points
 execute if score @s ability3 matches 50.. run item modify entity @s hotbar.0 under_pack:wizard/main_complete
-
-#fireball
-execute if score @s ability5 matches ..239 run scoreboard players add @s ability5 1
-execute if score @s ability5 matches 1 run item replace entity @s hotbar.1 with fire_charge{display:{Name:'{"text":"Fireball on Cooldown"}'}} 12
-execute if score @s ability5 matches 20 run item replace entity @s hotbar.1 with fire_charge{display:{Name:'{"text":"Fireball on Cooldown"}'}} 11
-execute if score @s ability5 matches 40 run item replace entity @s hotbar.1 with fire_charge{display:{Name:'{"text":"Fireball on Cooldown"}'}} 10
-execute if score @s ability5 matches 60 run item replace entity @s hotbar.1 with fire_charge{display:{Name:'{"text":"Fireball on Cooldown"}'}} 9
-execute if score @s ability5 matches 80 run item replace entity @s hotbar.1 with fire_charge{display:{Name:'{"text":"Fireball on Cooldown"}'}} 8
-execute if score @s ability5 matches 100 run item replace entity @s hotbar.1 with fire_charge{display:{Name:'{"text":"Fireball on Cooldown"}'}} 7
-execute if score @s ability5 matches 120 run item replace entity @s hotbar.1 with fire_charge{display:{Name:'{"text":"Fireball on Cooldown"}'}} 6
-execute if score @s ability5 matches 140 run item replace entity @s hotbar.1 with fire_charge{display:{Name:'{"text":"Fireball on Cooldown"}'}} 5
-execute if score @s ability5 matches 160 run item replace entity @s hotbar.1 with fire_charge{display:{Name:'{"text":"Fireball on Cooldown"}'}} 4
-execute if score @s ability5 matches 180 run item replace entity @s hotbar.1 with fire_charge{display:{Name:'{"text":"Fireball on Cooldown"}'}} 3
-execute if score @s ability5 matches 200 run item replace entity @s hotbar.1 with fire_charge{display:{Name:'{"text":"Fireball on Cooldown"}'}} 2
-execute if score @s ability5 matches 220 run item replace entity @s hotbar.1 with fire_charge{display:{Name:'{"text":"Fireball on Cooldown"}'}} 1
-execute if score @s ability5 matches 240 run item replace entity @s hotbar.1 with ender_eye{display:{Name:'{"text":"Become Fire","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1
