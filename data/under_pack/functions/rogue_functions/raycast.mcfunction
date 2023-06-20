@@ -9,8 +9,8 @@ execute if entity @s[team=uRed] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team
 execute if entity @s[team=uBlue] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uBlue,limit=1,sort=nearest,tag=!swap] run tag @s add target
 
 # detect for this
-execute if entity @s[team=uBlue] if entity @a[tag=target,team=uBlue] run item modify entity @s hotbar.3 under_pack:rogue/swap_target
-execute if entity @s[team=uRed] if entity @a[tag=target,team=uRed] run item modify entity @s hotbar.3 under_pack:rogue/swap_target
+execute if entity @s[team=uBlue] if entity @a[tag=target,team=uBlue] run item modify entity @s hotbar.4 under_pack:rogue/swap_target
+execute if entity @s[team=uRed] if entity @a[tag=target,team=uRed] run item modify entity @s hotbar.4 under_pack:rogue/swap_target
 execute if entity @s[team=uBlue] if entity @a[tag=target,team=uBlue] run tag @s remove swap
 execute if entity @s[team=uRed] if entity @a[tag=target,team=uRed] run tag @s remove swap
 
