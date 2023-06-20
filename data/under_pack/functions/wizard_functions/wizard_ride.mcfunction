@@ -2,7 +2,7 @@
 execute if score @s wizardRide matches 0 run function under_pack:wizard_functions/wizard_ride_start
 
 #iterate rider timer
-scoreboard players add @s wizardRideTimer 1
+scoreboard players remove @s ability5 1
 
 #ride the chicken
 execute at @s[team=uRed] run ride @s mount @e[type=chicken,tag=redWizardRiden,limit=1,sort=nearest]
@@ -48,8 +48,6 @@ execute at @s[team=uBlue] store result entity @e[type=chicken,tag=blueWizardRide
 execute at @s[team=uBlue] store result entity @e[type=chicken,tag=blueWizardRiden,limit=1,sort=nearest] Motion[2] double 0.0008 run scoreboard players get WizardRideZ2 buffer
 ##Chicken Velo end
 
-#end the ability after 5 seconds
-execute if score @s wizardRideTimer matches 30.. run function under_pack:wizard_functions/wizard_ride_stop
 
 #set wizardRide to 2 to indicate that the ride is ongoing
 scoreboard players set @s wizardRide 2
