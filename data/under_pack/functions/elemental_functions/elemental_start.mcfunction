@@ -34,6 +34,8 @@ kill @e[type=arrow,tag=elementalEarthArrow]
 execute as @s[team=uRed] run kill @e[type=marker,tag=redElementalWater]
 execute as @s[team=uBlue] run kill @e[type=marker,tag=blueElementalWater]
 kill @e[type=marker,tag=elementalStun]
+execute as @s[team=uRed] run kill @e[type=block_display,tag=redElementalEarth]
+execute as @s[team=uBlue] run kill @e[type=block_display,tag=blueElementalEarth]
 
 #run the class select
 function under_pack:general_functions/general_character_select

@@ -5,7 +5,7 @@ item replace entity @s[team=uRed] hotbar.0 with carrot_on_a_stick{CustomModelDat
 item replace entity @s[team=uBlue] hotbar.0 with carrot_on_a_stick{CustomModelData:45,display:{Name:'{"text":"Agicmay Andway","color":"light_purple","bold":true,"italic":true}',Lore:['{"text":"Crafted from the tree of Lofaktar"}']},wizardWand:1b,blue:1b} 1
 
 #fireball
-item replace entity @s hotbar.1 with ender_eye{display:{Name:'{"text":"Fireball","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1
+item replace entity @s hotbar.1 with ender_eye{display:{Name:'{"text":"Become Fire","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1
 
 #multishot
 #expecto homoconversus
@@ -27,6 +27,13 @@ item replace entity @s armor.feet with leather_boots{display:{color:16777215},Un
 #clean arrows
 kill @e[type=arrow,tag=wizardSmallSpellArrow]
 kill @e[type=arrow,tag=wizardBigSpellArrow]
+
+#ride resetting
+execute as @s[team=uRed] run tp @e[type=chicken,tag=redWizardRiden] 0 -64 0
+execute as @s[team=uBlue] run tp @e[type=chicken,tag=blueWizardRiden] 0 -64 0
+execute as @s[team=uRed] run kill @e[type=marker,tag=redWizardMark]
+execute as @s[team=uBlue] run kill @e[type=marker,tag=blueWizardMark]
+scoreboard players set @s wizardRideTimer 0
 
 #ability cooldowns
 scoreboard players set @s movement 0

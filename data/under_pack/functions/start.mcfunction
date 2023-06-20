@@ -226,6 +226,8 @@ scoreboard objectives add wizardMotionX dummy
 scoreboard objectives add wizardMotionY dummy
 scoreboard objectives add wizardMotionZ dummy
 scoreboard objectives add wizardtime dummy
+scoreboard objectives add wizardRide dummy
+scoreboard objectives add wizardRideTimer dummy
 
 #elemental
 scoreboard objectives add elementalBar dummy

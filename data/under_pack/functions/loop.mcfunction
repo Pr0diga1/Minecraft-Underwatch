@@ -3,3 +3,8 @@ function under_pack:general_functions/general_trigger
 
 #Only runs the loop code when a match of this gamemode type is active
 function under_pack:general_functions/general_loop
+
+#cant drop items
+#execute as @e[type=item] at @s on origin run data modify entity @e[type=item,sort=nearest,limit=1] Owner set from entity @s UUID
+#execute as @e[type=item] run data modify entity @s PickupDelay set value 0s
+#execute as @e[type=item] at @s on origin run tp @e[type=item,sort=nearest,limit=1] @s
