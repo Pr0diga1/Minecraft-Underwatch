@@ -1,7 +1,7 @@
 #jump cooldown indications
-execute if score @s movement matches 20 run item replace entity @s hotbar.1 with potato{CustomModelData:2,display:{Name:'{"text":"Jump on Cooldown"}'}} 1
-execute if score @s movement matches 40 run item replace entity @s hotbar.1 with potato{CustomModelData:3,display:{Name:'{"text":"Jump on Cooldown"}'}} 1
-execute if score @s movement matches 60 run item replace entity @s hotbar.1 with potato{CustomModelData:4,display:{Name:'{"text":"Jump on Cooldown"}'}} 1
+execute if score @s movement matches 20 run item replace entity @s hotbar.1 with potato{CustomModelData:11,display:{Name:'{"text":"Jump on Cooldown"}'}} 3
+execute if score @s movement matches 40 run item replace entity @s hotbar.1 with potato{CustomModelData:11,display:{Name:'{"text":"Jump on Cooldown"}'}} 2
+execute if score @s movement matches 60 run item replace entity @s hotbar.1 with potato{CustomModelData:11,display:{Name:'{"text":"Jump on Cooldown"}'}} 1
 #Sweep cooldown indications
 execute if score @s ability1 matches 2 run title @s actionbar ["",{"text":"Can I Axe You A Question? will be ready in: ","color": "dark_green"},{"text": "10","color": "dark_gray"}]
 execute if score @s ability1 matches 20 run title @s actionbar ["",{"text":"Can I Axe You A Question? will be ready in: ","color": "dark_green"},{"text": "9","color": "dark_gray"}]
