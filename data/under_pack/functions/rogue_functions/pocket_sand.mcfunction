@@ -1,5 +1,5 @@
 # Cooldown init
-item replace entity @s hotbar.2 with barrier{CustomModelData:9}
+item replace entity @s hotbar.3 with barrier{CustomModelData:9}
 scoreboard players set @s ability2 201
 
 # Resets reset
