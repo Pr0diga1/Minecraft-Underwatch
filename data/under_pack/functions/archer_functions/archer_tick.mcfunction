@@ -12,14 +12,14 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:tipped_arrow",Count:1b,tag:{Cus
 
 #heavy arrow reload
 execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{archerheavy:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:0b}]}] run scoreboard players set @s ability1 60
-execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{archerheavy:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:0b}]}] run item replace entity @s hotbar.0 with shears{CustomModelData:1,Damage:238}
+execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{archerheavy:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:0b}]}] run item replace entity @s hotbar.0 with shears{display:{Name:'{"text":"Heavy Dart Reloading"}'},CustomModelData:1,Damage:238}
 execute if score @s ability1 matches 1.. run function under_pack:archer_functions/archer_heavy_reload
 #heavy arrow damage
 execute as @e[nbt={Color:16711680}] run data merge entity @s {damage:2.2d}
 
 #light arrow reload
 execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{archerlight:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:1b}]}] run scoreboard players set @s ability2 60
-execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{archerlight:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:1b}]}] run item replace entity @s hotbar.1 with shears{CustomModelData:1,Damage:238}
+execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{archerlight:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:1b}]}] run item replace entity @s hotbar.1 with shears{display:{Name:'{"text":"Light Dart Reloading"}'},CustomModelData:1,Damage:238}
 execute if score @s ability2 matches 1.. run function under_pack:archer_functions/archer_light_reload
 #light arrow damage
 execute as @e[nbt={Color:16719871}] run data merge entity @s {damage:0.7d}

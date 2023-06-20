@@ -4,22 +4,22 @@ scoreboard players reset @s reset
 
 #damage arrow reload
 execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{scientistDamage:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:0b}]}] run scoreboard players set @s scientistDamageReload 25
-execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{scientistDamage:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:0b}]}] run item replace entity @s hotbar.0 with shears{display:{color:16777215},CustomModelData:1,Damage:238}
+execute unless entity @s[nbt={Inventory:[{Slot:0b,tag:{scientistDamage:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:0b}]}] run item replace entity @s hotbar.0 with shears{display:{Name:'{"text":"Damage Dart Reloading"}'},CustomModelData:2,Damage:238}
 execute if score @s scientistDamageReload matches 1.. run function under_pack:scientist_functions/scientist_reload_damage
 
 #healing arrow reload
 execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{scientistHealing:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:1b}]}] run scoreboard players set @s scientistHealingReload 25
-execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{scientistHealing:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:1b}]}] run item replace entity @s hotbar.1 with shears{display:{color:16777215},CustomModelData:1,Damage:238}
+execute unless entity @s[nbt={Inventory:[{Slot:1b,tag:{scientistHealing:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:1b}]}] run item replace entity @s hotbar.1 with shears{display:{Name:'{"text":"Healing Dart Reloading"}'},CustomModelData:2,Damage:238}
 execute if score @s scientistHealingReload matches 1.. run function under_pack:scientist_functions/scientist_reload_healing
 
 #lightning
 execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:2b}]}] run scoreboard players set @s ability2 240
-execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:2b}]}] run item replace entity @s hotbar.2 with shears{display:{color:16777215},CustomModelData:1,Damage:238}
+execute unless entity @s[nbt={Inventory:[{Slot:2b,tag:{scientistLightning:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:2b}]}] run item replace entity @s hotbar.2 with shears{display:{Name:'{"text":"Electric Dart Reloading"}'},CustomModelData:2,Damage:238}
 execute if score @s ability2 matches 1.. run function under_pack:scientist_functions/scientist_reload_lightning
 
 #rocket reload
 execute unless entity @s[nbt={Inventory:[{Slot:3b,tag:{scientistRocket:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:3b}]}] run scoreboard players set @s ability3 240
-execute unless entity @s[nbt={Inventory:[{Slot:3b,tag:{scientistRocket:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:3b}]}] run item replace entity @s hotbar.3 with shears{display:{color:16777215},CustomModelData:1,Damage:238}
+execute unless entity @s[nbt={Inventory:[{Slot:3b,tag:{scientistRocket:1b}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:3b}]}] run item replace entity @s hotbar.3 with shears{display:{Name:'{"text":"Rocket Dart Reloading"}'},CustomModelData:2,Damage:238}
 execute if score @s ability3 matches 1.. run function under_pack:scientist_functions/scientist_reload_rocket
 
 
