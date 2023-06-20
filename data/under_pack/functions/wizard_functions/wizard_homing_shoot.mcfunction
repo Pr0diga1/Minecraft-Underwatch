@@ -13,7 +13,7 @@ execute at @s[team=uBlue] as @e[type=shulker_bullet,tag=blueWizardShell] run dat
 execute at @s[team=uBlue] as @e[type=shulker_bullet,tag=blueWizardShell] run data modify entity @s Target set from entity @a[tag=blueWizardTarget,limit=1,sort=nearest] UUID
 
 #playsound
-execute at @s run playsound minecraft:entity.pillager.celebrate master @a ~ ~ ~ 10 1.4
+execute at @s run playsound minecraft:entity.witch.celebrate master @a ~ ~ ~ 10 1.7
 
 #replace the inventory slot
 item replace entity @s hotbar.4 with air

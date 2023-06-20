@@ -66,20 +66,17 @@ execute as @s[team=uBlue] if score @s ability3 matches ..47 unless entity @e[typ
 execute if score @s ability3 matches 50.. run item modify entity @s hotbar.0 under_pack:wizard/main_complete
 
 #fireball
-execute if score @s ability5 matches 0..299 run scoreboard players add @s ability5 1
-execute if score @s ability5 matches 1 run item replace entity @s hotbar.1 with fire_charge 15
-execute if score @s ability5 matches 20 run item replace entity @s hotbar.1 with fire_charge 14
-execute if score @s ability5 matches 40 run item replace entity @s hotbar.1 with fire_charge 13
-execute if score @s ability5 matches 60 run item replace entity @s hotbar.1 with fire_charge 12
-execute if score @s ability5 matches 80 run item replace entity @s hotbar.1 with fire_charge 11
-execute if score @s ability5 matches 100 run item replace entity @s hotbar.1 with fire_charge 10
-execute if score @s ability5 matches 120 run item replace entity @s hotbar.1 with fire_charge 9
-execute if score @s ability5 matches 140 run item replace entity @s hotbar.1 with fire_charge 8
-execute if score @s ability5 matches 160 run item replace entity @s hotbar.1 with fire_charge 7
-execute if score @s ability5 matches 180 run item replace entity @s hotbar.1 with fire_charge 6
-execute if score @s ability5 matches 200 run item replace entity @s hotbar.1 with fire_charge 5
-execute if score @s ability5 matches 220 run item replace entity @s hotbar.1 with fire_charge 4
-execute if score @s ability5 matches 240 run item replace entity @s hotbar.1 with fire_charge 3
-execute if score @s ability5 matches 260 run item replace entity @s hotbar.1 with fire_charge 2
-execute if score @s ability5 matches 280 run item replace entity @s hotbar.1 with fire_charge 1
-execute if score @s ability5 matches 300 run item replace entity @s hotbar.1 with ender_eye{display:{Name:'{"text":"Fireball","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1
+execute if score @s ability5 matches ..239 run scoreboard players add @s ability5 1
+execute if score @s ability5 matches 1 run item replace entity @s hotbar.1 with fire_charge 12
+execute if score @s ability5 matches 20 run item replace entity @s hotbar.1 with fire_charge 11
+execute if score @s ability5 matches 40 run item replace entity @s hotbar.1 with fire_charge 10
+execute if score @s ability5 matches 60 run item replace entity @s hotbar.1 with fire_charge 9
+execute if score @s ability5 matches 80 run item replace entity @s hotbar.1 with fire_charge 8
+execute if score @s ability5 matches 100 run item replace entity @s hotbar.1 with fire_charge 7
+execute if score @s ability5 matches 120 run item replace entity @s hotbar.1 with fire_charge 6
+execute if score @s ability5 matches 140 run item replace entity @s hotbar.1 with fire_charge 5
+execute if score @s ability5 matches 160 run item replace entity @s hotbar.1 with fire_charge 4
+execute if score @s ability5 matches 180 run item replace entity @s hotbar.1 with fire_charge 3
+execute if score @s ability5 matches 200 run item replace entity @s hotbar.1 with fire_charge 2
+execute if score @s ability5 matches 220 run item replace entity @s hotbar.1 with fire_charge 1
+execute if score @s ability5 matches 240 run item replace entity @s hotbar.1 with ender_eye{display:{Name:'{"text":"Become Fire","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1

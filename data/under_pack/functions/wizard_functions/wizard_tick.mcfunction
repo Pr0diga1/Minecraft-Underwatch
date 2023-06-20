@@ -2,7 +2,6 @@
 execute as @s[nbt={Inventory:[{Slot:0b,tag:{wizardWand:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardWand:1b}}},scores={reset=1..}] if score @s ability3 matches 50.. run function under_pack:wizard_functions/wizard_spell
 execute as @s[nbt={Inventory:[{Slot:3b,tag:{wizardClaws:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardClaws:1b}}},scores={reset=1..}] if score @s ability2 matches 300.. run function under_pack:wizard_functions/wizard_claws
 execute as @s[nbt={Inventory:[{Slot:2b,tag:{wizardGay:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardGay:1b}}},scores={reset=1..}] if score @s ability1 matches 300.. run function under_pack:wizard_functions/wizard_rainbow
-execute as @s[nbt={Inventory:[{Slot:1b,tag:{wizardFire:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardFire:1b}}},scores={reset=1..}] if score @s ability5 matches 300.. run function under_pack:wizard_functions/wizard_ride
 
 #detection for the split
 execute as @s[team=uRed,nbt={Inventory:[{Slot:0b,tag:{wizardWand:1b}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{wizardWand:1b}}},scores={reset=1..}] as @e[type=marker,tag=redWizardSpell] at @s run function under_pack:wizard_functions/wizard_spell_split_red
@@ -52,8 +51,13 @@ execute if score @s wizardCurse matches 1.. if score @s wizardCurseBuffer = @s w
 #set the buffer for next tick
 scoreboard players operation @s wizardCurseBuffer = @s wizardCurse
 
+#detect if players were hit by the curse!
 execute if entity @s[team=uRed] as @a[nbt={ActiveEffects:[{Id:25,Amplifier:0b,Duration:199}]},team=uBlue] run function under_pack:wizard_functions/wizard_homing_hit
 execute if entity @s[team=uBlue] as @a[nbt={ActiveEffects:[{Id:25,Amplifier:0b,Duration:199}]},team=uRed] run function under_pack:wizard_functions/wizard_homing_hit
+
+#detect if ride was run for the final tick
+execute if score @s wizardRide matches 1 run function under_pack:wizard_functions/wizard_ride_stop
+execute if score @s wizardRide matches 1.. run scoreboard players remove @s wizardRide 1
 
 #run the cooldown
 function under_pack:wizard_functions/wizard_cooldown
