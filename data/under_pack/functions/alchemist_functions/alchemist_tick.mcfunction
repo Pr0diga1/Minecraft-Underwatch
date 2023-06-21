@@ -7,6 +7,21 @@ clear @s[tag=telepot_cooldown] splash_potion{telepot:1b}
 effect give @s speed 5 0 true
 effect give @s weakness 5 10 true
 
+## Acid Stuff
+# Assigns stuff
+execute as @e[type=potion,nbt={Item:{tag:{acid:1b}}}] run tag @s add acid
+execute if entity @s[team=uBlue] run tag @e[type=potion,tag=acid,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uBlue
+execute if entity @s[team=uRed] run tag @e[type=potion,tag=acid,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uRed
+# Tags acid user
+execute as @e[type=potion,tag=acid,tag=uBlue] at @s run tag @a[sort=nearest,limit=1,team=uBlue] add acid
+execute as @e[type=potion,tag=acid,tag=uRed] at @s run tag @a[sort=nearest,limit=1,team=uRed] add acid
+# Runs tick
+execute if entity @e[type=potion,tag=acid,tag=uBlue] run function under_pack:alchemist_functions/alchemist_acid_tick_blue
+execute if entity @e[type=potion,tag=acid,tag=uRed] run function under_pack:alchemist_functions/alchemist_acid_tick_red
+# Checks for landing
+execute if entity @s[tag=acid] unless entity @e[type=potion,tag=acid] run function under_pack:alchemist_functions/alchemist_acid
+
+
 ## Telepot stuff
 # Assigns stuff
 execute as @e[type=potion,tag=!telepot,nbt={Item:{tag:{telepot:1b}}}] run function under_pack:alchemist_functions/alchemist_velo
@@ -25,7 +40,7 @@ execute if entity @s[team=uRed,tag=telepot] run function under_pack:alchemist_fu
 execute as @e[type=potion,nbt={Item:{tag:{healing:1b}}}] run tag @s add healing
 execute if entity @s[team=uBlue] run tag @e[type=potion,tag=healing,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uBlue
 execute if entity @s[team=uRed] run tag @e[type=potion,tag=healing,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uRed
-# Tags healing user user
+# Tags healing user
 execute as @e[type=potion,tag=healing,tag=uBlue] at @s run tag @a[sort=nearest,limit=1,team=uBlue] add healing
 execute as @e[type=potion,tag=healing,tag=uRed] at @s run tag @a[sort=nearest,limit=1,team=uRed] add healing
 # Runs tick
@@ -38,16 +53,15 @@ execute as @e[tag=healing,type=marker] at @s run function under_pack:alchemist_f
 
 ## Cooldowns
 # Cooldown checks
-execute unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:splash_potion"}]}] if entity @s[tag=!reload_main] run function under_pack:alchemist_functions/alchemist_reload_main
+execute unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:splash_potion",Count:2b}]}] if entity @s[tag=!reload_main] run function under_pack:alchemist_functions/alchemist_reload_main
 execute unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:splash_potion"}]}] if entity @s[tag=!reload_utility] run function under_pack:alchemist_functions/alchemist_reload_utility
 execute unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:splash_potion"}]}] if entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/alchemist_telepot_cooldown
 
 # Reload main's cooldown
-execute if entity @s[tag=reload_main] run scoreboard players add @s ability1 1
-item modify entity @s[tag=reload_main] hotbar.0 under_pack:alchemist/main_cooldown
-execute if score @s ability1 matches 41.. unless entity @s[tag=!reload_main] run item replace entity @s hotbar.0 with air
-execute if score @s ability1 matches 41.. unless entity @s[tag=!reload_main] run item replace entity @s hotbar.0 with splash_potion{display:{Name:'{"text":"Acid","color":"#8FC219","bold":true,"italic":false}'},CustomModelData:2,acid:1b,Enchantments:[{}],Potion:"minecraft:harming",CustomPotionColor:16777215} 1
-execute if score @s ability1 matches 41.. unless entity @s[tag=!reload_main] run tag @s remove reload_main
+execute if entity @s[tag=reload_main] run scoreboard players remove @s ability1 1
+execute if score @s ability1 matches ..1 unless entity @s[tag=!reload_main,nbt={Inventory:[{Slot:0b,id:"minecraft:splash_potion"}]}] run item replace entity @s hotbar.0 with splash_potion{display:{Name:'{"text":"Acid","color":"#8FC219","bold":true,"italic":false}'},CustomModelData:2,acid:1b,Enchantments:[{}],Potion:"minecraft:harming",CustomPotionColor:16777215} 1
+execute if score @s ability1 matches ..1 unless entity @s[tag=!reload_main,nbt=!{Inventory:[{Slot:0b,id:"minecraft:splash_potion"}]}] run item modify entity @s hotbar.0 under_pack:alchemist/acid_count
+execute if score @s ability1 matches ..1 unless entity @s[tag=!reload_main] run tag @s remove reload_main
 # Reload heal's cooldown
 execute if entity @s[tag=reload_utility] run scoreboard players add @s ability2 1
 item modify entity @s[tag=reload_utility] hotbar.1 under_pack:alchemist/util_cooldown
