@@ -30,6 +30,8 @@ scoreboard players set ElementalFireTiming constant 7
 kill @e[type=arrow,tag=ElementalFireArrow]
 kill @e[type=arrow,tag=elementalEarthArrow]
 
+scoreboard players set @s elementalBarTimer 0
+
 #clean markers
 execute as @s[team=uRed] run kill @e[type=marker,tag=redElementalWater]
 execute as @s[team=uBlue] run kill @e[type=marker,tag=blueElementalWater]

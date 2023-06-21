@@ -14,6 +14,13 @@ execute as @s[team=uBlue,scores={wizardFireball=1..}] if entity @e[type=item,nbt
 execute as @s[team=uRed,scores={wizardFireball=..0}] if entity @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{wizardWand:1b,red:1b}}}] at @s run function under_pack:wizard_functions/wizard_fireball_bugfix
 execute as @s[team=uBlue,scores={wizardFireball=..0}] if entity @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{wizardWand:1b,blue:1b}}}] at @s run function under_pack:wizard_functions/wizard_fireball_bugfix
 
+#fireball
+execute as @s[team=uRed] as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",Count:1b,tag:{wizardFire:1b}}}] at @s on origin as @s[scores={wizardFireball=1..}] run function under_pack:wizard_functions/wizard_fireball_red
+execute as @s[team=uBlue] as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",Count:1b,tag:{wizardFire:1b}}}] at @s on origin as @s[scores={wizardFireball=1..}] run function under_pack:wizard_functions/wizard_fireball_blue
+execute as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",Count:1b,tag:{wizardFire:1b}}}] at @s on origin run give @s ender_eye{display:{Name:'{"text":"Become Fire","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1
+execute as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",Count:1b,tag:{wizardFire:1b}}}] run kill @s
+
+
 #reset reset
 scoreboard players reset @s reset
 
