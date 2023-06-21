@@ -18,4 +18,4 @@ item replace entity @s hotbar.3 with carrot_on_a_stick{display:{Name:'{"text":"P
 # Swap
 item replace entity @s hotbar.4 with carrot_on_a_stick{display:{Name:'{"text":"Friend Swap","color":"dark_purple","bold":true,"italic":false}'},Unbreakable:1b,CustomModelData:26,swap:1b} 1
 # Armor
-item replace entity @s armor.feet with netherite_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:blast_protection",lvl:8s},{id:"minecraft:depth_strider",lvl:2s}]} 1
+item replace entity @s armor.feet with netherite_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:blast_protection",lvl:8s},{id:"minecraft:depth_strider",lvl:2s}],AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:0,Operation:0,UUID:[I;-1963828120,1181893995,-1192928214,-390992891]},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:0,Operation:0,UUID:[I;1235388029,2112048997,-1701415462,-634174779]}]} 1
