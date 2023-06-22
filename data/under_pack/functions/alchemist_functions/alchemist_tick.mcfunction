@@ -59,9 +59,7 @@ execute unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:splash_potion"}]
 
 # Reload main's cooldown
 execute if entity @s[tag=reload_main] run scoreboard players remove @s ability1 1
-execute if score @s ability1 matches ..1 unless entity @s[tag=!reload_main,nbt={Inventory:[{Slot:0b,id:"minecraft:splash_potion"}]}] run item replace entity @s hotbar.0 with splash_potion{display:{Name:'{"text":"Acid","color":"#8FC219","bold":true,"italic":false}'},CustomModelData:2,acid:1b,Enchantments:[{}],Potion:"minecraft:harming",CustomPotionColor:16777215} 1
-execute if score @s ability1 matches ..1 unless entity @s[tag=!reload_main,nbt=!{Inventory:[{Slot:0b,id:"minecraft:splash_potion"}]}] run item modify entity @s hotbar.0 under_pack:alchemist/acid_count
-execute if score @s ability1 matches ..1 unless entity @s[tag=!reload_main] run tag @s remove reload_main
+execute if score @s ability1 matches ..1 unless entity @s[tag=!reload_main] run function under_pack:alchemist_functions/acid_cooldown
 # Reload heal's cooldown
 execute if entity @s[tag=reload_utility] run scoreboard players add @s ability2 1
 item modify entity @s[tag=reload_utility] hotbar.1 under_pack:alchemist/util_cooldown
