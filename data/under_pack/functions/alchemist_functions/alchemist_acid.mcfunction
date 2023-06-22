@@ -12,12 +12,12 @@ execute if entity @s[team=uRed] store result entity @e[tag=acid,type=marker,limi
 execute if entity @s[team=uRed] store result entity @e[tag=acid,type=marker,limit=1,tag=uRed] Pos[2] double 0.01 run scoreboard players get zposRedA buffer
 
 # Deal Damage
-execute if entity @s[tag=uBlue] run damage @a[team=uRed,distance=1.1..1.9] 2 magic by @e[type=minecraft:potion,limit=1,sort=nearest] from @s
-execute if entity @s[tag=uRed] run damage @a[team=uBlue,distance=1.1..1.9] 2 magic by @e[type=minecraft:potion,limit=1,sort=nearest] from @s
-execute if entity @s[tag=uBlue] run damage @a[team=uRed,distance=0.3..1] 3 magic by @e[type=minecraft:potion,limit=1,sort=nearest] from @s
-execute if entity @s[tag=uRed] run damage @a[team=uBlue,distance=0.3..1] 3 magic by @e[type=minecraft:potion,limit=1,sort=nearest] from @s
-execute if entity @s[tag=uBlue] run damage @a[team=uRed,distance=..0.2] 4 magic by @e[type=minecraft:potion,limit=1,sort=nearest] from @s
-execute if entity @s[tag=uRed] run damage @a[team=uBlue,distance=..0.2] 4 magic by @e[type=minecraft:potion,limit=1,sort=nearest] from @s
+execute at @e[type=marker,tag=acid,tag=uBlue] if entity @s[team=uBlue] run damage @a[team=uRed,distance=1.1..1.9] 2 magic by @e[type=minecraft:potion,limit=1,sort=nearest] from @s
+execute at @e[type=marker,tag=acid,tag=uRed] if entity @s[team=uRed] run damage @a[team=uBlue,distance=1.1..1.9] 2 magic by @e[type=minecraft:potion,limit=1,sort=nearest] from @s
+execute at @e[type=marker,tag=acid,tag=uBlue] if entity @s[team=uBlue] run damage @a[team=uRed,distance=0.3..1] 3 magic by @e[type=minecraft:potion,limit=1,sort=nearest] from @s
+execute at @e[type=marker,tag=acid,tag=uRed] if entity @s[team=uRed] run damage @a[team=uBlue,distance=0.3..1] 3 magic by @e[type=minecraft:potion,limit=1,sort=nearest] from @s
+execute at @e[type=marker,tag=acid,tag=uBlue] if entity @s[team=uBlue] run damage @a[team=uRed,distance=..0.2] 4 magic by @e[type=minecraft:potion,limit=1,sort=nearest] from @s
+execute at @e[type=marker,tag=acid,tag=uRed] if entity @s[team=uRed] run damage @a[team=uBlue,distance=..0.2] 4 magic by @e[type=minecraft:potion,limit=1,sort=nearest] from @s
 
 
 # Kill Marker
