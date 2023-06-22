@@ -1,5 +1,4 @@
 # Keeps spare potions out of the inventory
-clear @s[tag=reload_main] splash_potion{acid:1b}
 clear @s[tag=reload_util] splash_potion{healing:1b}
 clear @s[tag=telepot_cooldown] splash_potion{telepot:1b}
 
