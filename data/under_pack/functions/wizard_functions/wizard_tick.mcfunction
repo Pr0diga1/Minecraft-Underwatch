@@ -20,6 +20,9 @@ execute as @s[team=uBlue] as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",Co
 execute as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",Count:1b,tag:{wizardFire:1b}}}] at @s on origin run give @s ender_eye{display:{Name:'{"text":"Become Fire","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1
 execute as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",Count:1b,tag:{wizardFire:1b}}}] run kill @s
 
+execute as @s[team=uRed,nbt={Inventory:[{id:"minecraft:air"},{Slot:0b}]}] run item replace entity @s hotbar.0 with carrot_on_a_stick{CustomModelData:45,display:{Name:'{"text":"Agicmay Andway","color":"light_purple","bold":true,"italic":true}',Lore:['{"text":"Crafted from the tree of Lofaktar"}']},wizardWand:1b,red:1b} 1
+execute as @s[team=uBlue,nbt={Inventory:[{id:"minecraft:air"},{Slot:0b}]}] run item replace entity @s hotbar.0 with carrot_on_a_stick{CustomModelData:45,display:{Name:'{"text":"Agicmay Andway","color":"light_purple","bold":true,"italic":true}',Lore:['{"text":"Crafted from the tree of Lofaktar"}']},wizardWand:1b,blue:1b} 1
+execute as @s[nbt={Inventory:[{id:"minecraft:air"},{Slot:1b}]}] run item replace entity @s hotbar.1 with ender_eye{display:{Name:'{"text":"Become Fire","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1
 
 #reset reset
 scoreboard players reset @s reset
