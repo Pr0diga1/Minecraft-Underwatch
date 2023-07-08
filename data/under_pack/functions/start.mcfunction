@@ -174,6 +174,8 @@ scoreboard objectives add engineerTurretDuration dummy
 scoreboard objectives add engineerTurretDurationBuffer dummy
 scoreboard objectives add engineerTurretEye dummy
 scoreboard objectives add engineerTurretEyeBuffer dummy
+scoreboard objectives add engineerViagraTimer dummy
+scoreboard objectives add engineerViagraBuffer dummy
 
 #knight
 scoreboard objectives add blockIsActive dummy
@@ -263,3 +265,5 @@ scoreboard objectives add mermaidburst dummy
 
 #dark soul
 scoreboard objectives add slamTimer dummy
+scoreboard objectives add darkEye dummy
+scoreboard objectives add darkEyeBuffer dummy

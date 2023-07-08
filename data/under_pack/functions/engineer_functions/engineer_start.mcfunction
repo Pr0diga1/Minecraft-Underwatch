@@ -20,7 +20,7 @@ scoreboard players set @s ability1 179
 scoreboard players set @s ability2 0
 scoreboard players set @s ability3 179
 scoreboard players set @s ability4 219
-
+scoreboard players set @s ability5 199
 scoreboard players set @s ability7 99
 
 experience set @s 100 levels
@@ -28,6 +28,9 @@ experience set @s 742 points
 
 execute as @s[team=uRed] run kill @e[type=marker,tag=redEngineerTurret]
 execute as @s[team=uBlue] run kill @e[type=marker,tag=blueEngineerTurret]
+
+execute as @s[team=uRed] run tag @a remove redViagraTarget
+execute as @s[team=uBlue] run tag @a remove blueViagraTarget
 
 #run the class select
 function under_pack:general_functions/general_character_select
