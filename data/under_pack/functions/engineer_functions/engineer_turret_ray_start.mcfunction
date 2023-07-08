@@ -1,0 +1,3 @@
+scoreboard players set hit engineerTurretEye 0
+scoreboard players set distance engineerTurretEye 0
+function under_pack:engineer_functions/engineer_turret_ray

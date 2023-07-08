@@ -23,13 +23,16 @@ execute as @e[type=marker,tag=enginetrack,tag=blue] unless entity @e[type=snowba
 execute as @e[type=marker,tag=enginetrack,tag=blue] unless entity @e[type=snowball,nbt={Item:{tag:{enginedrug:1b,blue:1b}}}] at @s run function under_pack:engineer_functions/engineer_particle
 execute as @e[type=marker,tag=enginetrack,tag=blue] unless entity @e[type=snowball,nbt={Item:{tag:{enginedrug:1b,blue:1b}}}] at @s run kill @s
 
-
+#xp bar
+execute if entity @s[nbt=!{Inventory:[{id:"minecraft:snowball",Count:1b,Slot:2b,tag:{enginedrug:1b}}]}] if score @s ability2 matches 0 run experience set @s 100 levels
+execute if entity @s[nbt=!{Inventory:[{id:"minecraft:snowball",Count:1b,Slot:2b,tag:{enginedrug:1b}}]}] if score @s ability2 matches 0 run experience set @s 0 points
 
 #cooldown (scoreboard objectives add ability2 dummy)
-execute if entity @s[nbt=!{Inventory:[{id:"minecraft:snowball",Count:3b,Slot:2b,tag:{enginedrug:1b}}]}] run scoreboard players add @s ability2 1
-execute if entity @s[team=uRed] if score @s ability2 matches 70 run give @s snowball{CustomModelData:3,display:{Name:'{"text":"5000mg of Ibuprofen","color":"blue"}'},enginedrug:1b,red:1b} 1
-execute if entity @s[team=uBlue] if score @s ability2 matches 70 run give @s snowball{CustomModelData:3,display:{Name:'{"text":"5000mg of Ibuprofen","color":"blue"}'},enginedrug:1b,blue:1b} 1
-execute if score @s ability2 matches 70.. run scoreboard players set @s ability2 0
+execute if entity @s[nbt=!{Inventory:[{id:"minecraft:snowball",Count:1b,Slot:2b,tag:{enginedrug:1b}}]}] run scoreboard players add @s ability2 1
+execute if entity @s[nbt=!{Inventory:[{id:"minecraft:snowball",Count:1b,Slot:2b,tag:{enginedrug:1b}}]}] if score @s ability1 matches 1.. run experience add @s 12 points
+execute if entity @s[team=uRed] if score @s ability2 matches 61 run item replace entity @s hotbar.2 with snowball{CustomModelData:3,display:{Name:'{"text":"5000mg of Ibuprofen","color":"blue"}'},enginedrug:1b,red:1b} 1
+execute if entity @s[team=uBlue] if score @s ability2 matches 61 run item replace entity @s hotbar.2 with snowball{CustomModelData:3,display:{Name:'{"text":"5000mg of Ibuprofen","color":"blue"}'},enginedrug:1b,blue:1b} 1
+execute if score @s ability2 matches 61.. run scoreboard players set @s ability2 0
 execute unless entity @s[nbt={Inventory:[{id:"minecraft:snowball",Slot:2b,tag:{enginedrug:1b}}]}] run clear @s snowball{enginedrug:1b}
 
 

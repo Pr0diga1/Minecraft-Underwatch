@@ -55,7 +55,7 @@ execute as @s[team=uBlue] as @a[team=uRed,scores={elementalEarthTimer=1}] at @s 
 
 #giving energy back
 #buffer timing
-execute if score @s elementalBarTimer matches ..5 unless score @s elementalBarBuffer = @s elementalBar run scoreboard players set @s elementalBarTimer 6
+execute if score @s elementalBarTimer matches ..12 unless score @s elementalBarBuffer = @s elementalBar run scoreboard players set @s elementalBarTimer 13
 execute if score @s elementalBarTimer matches 1.. run scoreboard players remove @s elementalBarTimer 1
 #giving points
 execute if score @s elementalBarTimer matches 0 if score @s elementalBar matches ..735 run scoreboard players add @s elementalBar 5

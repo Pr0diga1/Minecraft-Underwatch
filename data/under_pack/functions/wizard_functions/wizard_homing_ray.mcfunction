@@ -16,5 +16,5 @@ execute as @s[team=uRed] if entity @a[tag=redWizardTarget] at @s run playsound e
 execute as @s[team=uBlue] if entity @a[tag=blueWizardTarget] at @s run playsound entity.arrow.hit_player master @s
 
 #rerun command
-execute as @s[team=uRed] if score hit wizardCurse matches 0 unless entity @a[tag=redWizardTarget] if score distance wizardCurse matches ..180 positioned ^ ^ ^.5 run function under_pack:wizard_functions/wizard_homing_ray
-execute as @s[team=uBlue] if score hit wizardCurse matches 0 unless entity @a[tag=blueWizardTarget] if score distance wizardCurse matches ..180 positioned ^ ^ ^.5 run function under_pack:wizard_functions/wizard_homing_ray
+execute as @s[team=uRed] if score hit wizardCurse matches 0 unless entity @a[tag=redWizardTarget] if score distance wizardCurse matches ..100 positioned ^ ^ ^.5 run function under_pack:wizard_functions/wizard_homing_ray
+execute as @s[team=uBlue] if score hit wizardCurse matches 0 unless entity @a[tag=blueWizardTarget] if score distance wizardCurse matches ..100 positioned ^ ^ ^.5 run function under_pack:wizard_functions/wizard_homing_ray

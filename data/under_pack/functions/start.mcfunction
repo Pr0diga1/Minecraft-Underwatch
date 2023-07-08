@@ -115,7 +115,7 @@ scoreboard objectives add engineer trigger
 scoreboard objectives add paladin trigger
 scoreboard objectives add bulwark trigger
 scoreboard objectives add mermaid trigger
-scoreboard objectives add dark_soul trigger
+scoreboard objectives add elemental trigger
 scoreboard objectives add dark_soul trigger
 
 #various triggers
@@ -136,7 +136,10 @@ scoreboard objectives add ability1 dummy
 scoreboard objectives add ability2 dummy
 scoreboard objectives add ability3 dummy
 scoreboard objectives add ability4 dummy
-scoreboard objectives add ult dummy
+scoreboard objectives add ability5 dummy
+scoreboard objectives add ability6 dummy
+scoreboard objectives add ability7 dummy
+scoreboard objectives add ability8 dummy
 
 #ray casting
 scoreboard objectives add ray_steps dummy
@@ -167,6 +170,12 @@ scoreboard objectives add engineer_ult dummy
 scoreboard objectives add engineerdamage minecraft.custom:damage_dealt
 scoreboard objectives add engineercap dummy
 scoreboard objectives add engineertimer dummy
+scoreboard objectives add engineerTurretDuration dummy
+scoreboard objectives add engineerTurretDurationBuffer dummy
+scoreboard objectives add engineerTurretEye dummy
+scoreboard objectives add engineerTurretEyeBuffer dummy
+scoreboard objectives add engineerViagraTimer dummy
+scoreboard objectives add engineerViagraBuffer dummy
 
 #knight
 scoreboard objectives add blockIsActive dummy
@@ -256,3 +265,5 @@ scoreboard objectives add mermaidburst dummy
 
 #dark soul
 scoreboard objectives add slamTimer dummy
+scoreboard objectives add darkEye dummy
+scoreboard objectives add darkEyeBuffer dummy

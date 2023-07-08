@@ -69,5 +69,14 @@ execute if entity @s[team=uBlue] as @a[nbt={ActiveEffects:[{Id:25,Amplifier:0b,D
 execute if score @s wizardRide matches 1 run function under_pack:wizard_functions/wizard_ride_stop
 execute if score @s wizardRide matches 1.. run scoreboard players remove @s wizardRide 1
 
+#give wand and fire
+#give the crossbow
+item replace entity @s[team=uRed,nbt={Inventory:[{id:"minecraft:air"},{Slot:0b}]}] hotbar.0 with carrot_on_a_stick{CustomModelData:45,display:{Name:'{"text":"Agicmay Andway","color":"light_purple","bold":true,"italic":true}',Lore:['{"text":"Crafted from the tree of Lofaktar"}']},wizardWand:1b,red:1b} 1
+item replace entity @s[team=uBlue,nbt={Inventory:[{id:"minecraft:air"},{Slot:0b}]}] hotbar.0 with carrot_on_a_stick{CustomModelData:45,display:{Name:'{"text":"Agicmay Andway","color":"light_purple","bold":true,"italic":true}',Lore:['{"text":"Crafted from the tree of Lofaktar"}']},wizardWand:1b,blue:1b} 1
+
+#fireball
+item replace entity @s[nbt={Inventory:[{id:"minecraft:air"},{Slot:1b}]}] hotbar.1 with ender_eye{display:{Name:'{"text":"Become Fire","color":"gold","bold":true,"italic":true}',Lore:['{"text":"\'fireball\' - Pitbull"}']},wizardFire:1b} 1
+
+
 #run the cooldown
 function under_pack:wizard_functions/wizard_cooldown
