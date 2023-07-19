@@ -9,17 +9,17 @@ effect give @s weakness 5 10 true
 ## Acid Stuff
 # Assigns stuff
 execute as @e[type=potion,nbt={Item:{tag:{acid:1b}}}] run tag @s add acid
-execute if entity @s[team=uBlue] run tag @e[type=potion,tag=acid,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uBlue
-execute if entity @s[team=uRed] run tag @e[type=potion,tag=acid,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uRed
+execute as @e[type=potion,tag=acid,tag=!uRed,tag=!uBlue] on origin if entity @s[team=uBlue] at @s run tag @e[type=potion,tag=acid,tag=!uRed,tag=!uBlue,limit=1,sort=nearest] add uBlue
+execute as @e[type=potion,tag=acid,tag=!uRed,tag=!uBlue] on origin if entity @s[team=uRed] at @s run tag @e[type=potion,tag=acid,tag=!uRed,tag=!uBlue,limit=1,sort=nearest] add uRed
 # Tags acid user
-execute as @e[type=potion,tag=acid,tag=uBlue] at @s run tag @a[sort=nearest,limit=1,team=uBlue] add acid
-execute as @e[type=potion,tag=acid,tag=uRed] at @s run tag @a[sort=nearest,limit=1,team=uRed] add acid
+execute as @e[type=potion,tag=acid,tag=uBlue] on origin run tag @s add acid
+execute as @e[type=potion,tag=acid,tag=uRed] on origin run tag @s add acid
 # Runs tick
-execute if entity @e[type=potion,tag=acid,tag=uBlue] run function under_pack:alchemist_functions/alchemist_acid_tick_blue
-execute if entity @e[type=potion,tag=acid,tag=uRed] run function under_pack:alchemist_functions/alchemist_acid_tick_red
+execute as @s[team=uBlue] if entity @e[type=potion,tag=acid,tag=uBlue] run function under_pack:alchemist_functions/alchemist_acid_tick_blue
+execute as @s[team=uRed] if entity @e[type=potion,tag=acid,tag=uRed] run function under_pack:alchemist_functions/alchemist_acid_tick_red
 # Checks for landing
-execute if entity @s[tag=acid] unless entity @e[type=potion,tag=acid] run function under_pack:alchemist_functions/alchemist_acid
-
+execute if entity @s[tag=acid,team=uRed] unless entity @e[type=potion,tag=acid,tag=uRed] run function under_pack:alchemist_functions/alchemist_acid
+execute if entity @s[tag=acid,team=uBlue] unless entity @e[type=potion,tag=acid,tag=uBlue] run function under_pack:alchemist_functions/alchemist_acid
 
 ## Telepot stuff
 # Assigns stuff
