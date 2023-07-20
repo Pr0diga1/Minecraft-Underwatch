@@ -5,6 +5,7 @@ scoreboard players set @s ability4 219
 scoreboard players set @s engineer_ult 0
 tag @a remove graved
 kill @e[tag=enginehole]
+function under_pack:engineer_functions/engineer_turret_hit
 
 kill @e[tag=enginetrack] 
 kill @e[nbt={Item:{tag:{enginedrug:1b}}}]
