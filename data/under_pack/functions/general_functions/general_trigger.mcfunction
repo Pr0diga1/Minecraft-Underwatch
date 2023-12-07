@@ -46,3 +46,5 @@ execute as @a[scores={elemental=1..}] at @s run function under_pack:elemental_fu
 scoreboard players enable @a elemental
 execute as @a[scores={dark_soul=1..}] at @s run function under_pack:dark_soul_functions/trigger
 scoreboard players enable @a dark_soul
+execute as @a[scores={gun_man=1..}] at @s run function under_pack:gun_man_functions/gun_trigger
+scoreboard players enable @a gun_man

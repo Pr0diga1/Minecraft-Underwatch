@@ -11,3 +11,4 @@ execute as @s[scores={class=10}] run function under_pack:wizard_functions/wizard
 execute as @s[scores={class=11}] run function under_pack:mermaid_functions/mermaid_reset
 execute as @s[scores={class=12}] run function under_pack:elemental_functions/elemental_reset
 execute as @s[scores={class=13}] at @s run function under_pack:dark_soul_functions/reset
+execute as @s[scores={class=14}] at @s run function under_pack:gun_man_functions/gun_reset
