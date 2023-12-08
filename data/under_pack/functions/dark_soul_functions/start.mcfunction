@@ -5,7 +5,6 @@ clear @s
 item replace entity @s hotbar.0 with carrot_on_a_stick{display:{Name:'{"text":"Chaos Zweihänder","color":"#FF4912","bold":true,"italic":false,"underlined":true}'},Unbreakable:1b,CustomModelData:51,zwei:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:5,Operation:0,UUID:[I;440549188,-1922806094,-1556991015,440606285],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3,Operation:0,UUID:[I;1207194066,-738309455,-1712229264,-1185358023],Slot:"mainhand"}]} 1
 
 # Abilities
-item replace entity @s hotbar.1 with ender_eye{display:{Name:'{"text":"Chaos Zweihänder","color":"#FF4912","bold":true,"italic":false,"underlined":true}'},Unbreakable:1b,CustomModelData:51,zwei:1,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:5,Operation:0,UUID:[I;440549188,-1922806094,-1556991015,440606285],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3,Operation:0,UUID:[I;1207194066,-738309455,-1712229264,-1185358023],Slot:"mainhand"}]} 2
 
 
 # Armor
