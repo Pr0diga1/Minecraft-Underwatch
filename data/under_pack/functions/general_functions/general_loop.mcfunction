@@ -35,3 +35,5 @@ execute as @a[tag=t1,tag=!ungame] run team join redTemp
 execute as @a[tag=t2,tag=!ungame] run team join blueTemp
 effect give @a[team=redTemp] glowing 1
 effect give @a[team=blueTemp] glowing 1
+
+
