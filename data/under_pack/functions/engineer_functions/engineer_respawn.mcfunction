@@ -2,10 +2,14 @@ scoreboard players set @s ability1 179
 scoreboard players set @s ability2 0
 scoreboard players set @s ability3 179
 scoreboard players set @s ability4 219
+
+scoreboard players set @s ability7 299
 scoreboard players set @s engineer_ult 0
 tag @a remove graved
 kill @e[tag=enginehole]
-function under_pack:engineer_functions/engineer_turret_hit
+
+function under_pack:engineer_functions/engineer_turret_destroy
+scoreboard players set @s engineerTurretDuration 0
 
 kill @e[tag=enginetrack] 
 kill @e[nbt={Item:{tag:{enginedrug:1b}}}]
