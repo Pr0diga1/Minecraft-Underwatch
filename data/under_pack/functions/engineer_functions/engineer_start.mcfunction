@@ -21,7 +21,7 @@ scoreboard players set @s ability2 0
 scoreboard players set @s ability3 179
 scoreboard players set @s ability4 219
 scoreboard players set @s ability5 199
-scoreboard players set @s ability7 99
+scoreboard players set @s ability7 299
 
 experience set @s 100 levels
 experience set @s 742 points

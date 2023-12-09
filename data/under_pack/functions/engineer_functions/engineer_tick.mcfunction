@@ -11,13 +11,13 @@ item replace entity @s[scores={ability5=200..}] hotbar.3 with ender_eye{CustomMo
 #wall
 item replace entity @s hotbar.4 with ender_eye{CustomModelData:43,display:{Name:'{"text":"Wall","color":"gray"}'},enginewall:1b} 2
 #turret
-item replace entity @s[scores={ability7=100..}] hotbar.6 with ender_eye{CustomModelData:43,display:{Name:'{"text":"Turret","color":"dark_red"}'},enginedrug:1b} 2
+item replace entity @s[scores={ability7=300..}] hotbar.6 with ender_eye{CustomModelData:43,display:{Name:'{"text":"Turret","color":"dark_red"}'},enginedrug:1b} 2
 
 
 #turret stuff
 #summon the turret
-execute as @s[team=uRed,scores={engineerTurretEye=91..}] if score @s engineerTurretEye = @s engineerTurretEyeBuffer if entity @e[type=marker,tag=redEngineerTurret] run function under_pack:engineer_functions/engineer_turret_build
-execute as @s[team=uBlue,scores={engineerTurretEye=91..}] if score @s engineerTurretEye = @s engineerTurretEyeBuffer if entity @e[type=marker,tag=blueEngineerTurret] run function under_pack:engineer_functions/engineer_turret_build
+execute as @s[team=uRed,scores={engineerTurretEye=73..}] if score @s engineerTurretEye = @s engineerTurretEyeBuffer if entity @e[type=marker,tag=redEngineerTurret] run function under_pack:engineer_functions/engineer_turret_build
+execute as @s[team=uBlue,scores={engineerTurretEye=73..}] if score @s engineerTurretEye = @s engineerTurretEyeBuffer if entity @e[type=marker,tag=blueEngineerTurret] run function under_pack:engineer_functions/engineer_turret_build
 
 #if the character stopped holding right click, reset the timer
 execute if score @s[team=uRed] engineerTurretEye = @s engineerTurretEyeBuffer if score @s engineerTurretEye matches 1.. run kill @e[type=marker,tag=redEngineerTurret]
