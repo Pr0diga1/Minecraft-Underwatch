@@ -117,7 +117,7 @@ scoreboard objectives add bulwark trigger
 scoreboard objectives add mermaid trigger
 scoreboard objectives add elemental trigger
 scoreboard objectives add dark_soul trigger
-scoreboard objectives add gen_man trigger
+scoreboard objectives add gun_man trigger
 
 #various triggers
 scoreboard objectives add red trigger
