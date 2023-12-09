@@ -9,4 +9,4 @@ execute as @s[scores={class=10}] run function under_pack:wizard_functions/wizard
 execute as @s[scores={class=11}] run function under_pack:mermaid_functions/mermaid_mist
 execute as @s[scores={class=12}] run function under_pack:elemental_functions/elemental_fire_held
 execute as @s[scores={class=13}] run function under_pack:dark_soul_functions/eye
-execute as @s[scores={class=14}] if score @s gun_ar_cd matches 0 run function under_pack:gun_man_functions/gun_ar
+execute as @s[scores={class=14}] if score @s ability1 matches 0 run function under_pack:gun_man_functions/gun_ar
