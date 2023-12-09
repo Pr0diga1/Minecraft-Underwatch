@@ -1,1 +1,0 @@
-scoreboard players add @a[tag=slam,team=uBlue] slamTimer 1

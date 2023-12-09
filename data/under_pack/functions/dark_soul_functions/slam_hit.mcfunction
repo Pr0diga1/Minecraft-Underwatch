@@ -1,2 +1,0 @@
-execute positioned ^-0.5 ^1 ^0.5 as @e[dx=2,dy=2,dz=2,type=minecraft:armor_stand] run tag @s add damaged
-execute positioned ^-0.5 ^1 ^1.5 as @e[dx=2,dy=2,dz=2,type=minecraft:armor_stand] run tag @s add damaged

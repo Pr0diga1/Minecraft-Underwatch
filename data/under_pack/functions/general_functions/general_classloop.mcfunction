@@ -11,3 +11,4 @@ execute as @s[scores={class=10}] run function under_pack:wizard_functions/wizard
 execute as @s[scores={class=11}] run function under_pack:mermaid_functions/mermaid_tick
 execute as @s[scores={class=12}] run function under_pack:elemental_functions/elemental_tick
 execute as @s[scores={class=13}] at @s run function under_pack:dark_soul_functions/tick
+execute as @s[scores={class=14}] run function under_pack:gun_man_functions/gun_tick
