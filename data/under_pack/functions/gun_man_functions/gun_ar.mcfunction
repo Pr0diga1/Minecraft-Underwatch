@@ -4,4 +4,4 @@ execute if score @s ability1 matches 0 anchored eyes run function under_pack:gun
 playsound entity.firework_rocket.large_blast master @s ~ ~ ~ 
 execute at @s run tp @s ~ ~ ~ ~ ~-2.7
 scoreboard players set @s ability1 7 
- 
+scoreboard players add @s ability8 20
