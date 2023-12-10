@@ -4,7 +4,7 @@ gamemode adventure @s
 spawnpoint @s 57 147 7
 scoreboard players reset @s Kills
 effect clear @s
-effect give @s minecraft:saturation 99999 255 true
+effect give @s minecraft:saturation infinite 255 true
 execute as @s[scores={heart=13..20}] run effect give @s instant_damage 1 1
 execute as @s[scores={heart=21..}] run effect give @s instant_damage 1 2
 effect give @s regeneration 2 50
