@@ -24,7 +24,7 @@ execute if entity @s[tag=acid,team=uBlue] unless entity @e[type=potion,tag=acid,
 ## Telepot stuff
 # Assigns stuff
 execute as @e[type=potion,tag=!telepot,nbt={Item:{tag:{telepot:1b}}}] run function under_pack:alchemist_functions/alchemist_velo
-execute as @e[type=potion,nbt={Item:{tag:{telepot:1b}}}] run tag @s add telepot
+execute as @e[type=potion,tag=!telepot,nbt={Item:{tag:{telepot:1b}}}] run tag @s add telepot
 execute if entity @s[team=uBlue] run tag @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uBlue
 execute if entity @s[team=uRed] run tag @e[type=potion,tag=telepot,tag=!uRed,tag=!uBlue,limit=1,distance=..2.5,sort=nearest] add uRed
 # Tags telepot user
