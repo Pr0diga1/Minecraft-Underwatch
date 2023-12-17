@@ -17,9 +17,9 @@ scoreboard players operation GunManNadeY2 buffer -= GunManNadeY1 buffer
 scoreboard players operation GunManNadeZ2 buffer -= GunManNadeZ1 buffer 
 
 #set the new power
-execute store result entity @e[type=armor_stand,tag=gun_man_snowball,limit=1,sort=nearest] Motion[0] double 0.001 run scoreboard players get GunManNadeX2 buffer
-execute store result entity @e[type=armor_stand,tag=gun_man_snowball,limit=1,sort=nearest] Motion[1] double 0.001 run scoreboard players get GunManNadeY2 buffer
-execute store result entity @e[type=armor_stand,tag=gun_man_snowball,limit=1,sort=nearest] Motion[2] double 0.001 run scoreboard players get GunManNadeZ2 buffer
+execute store result entity @e[type=armor_stand,tag=gun_man_nade,limit=1,sort=nearest] Motion[0] double 0.001 run scoreboard players get GunManNadeX2 buffer
+execute store result entity @e[type=armor_stand,tag=gun_man_nade,limit=1,sort=nearest] Motion[1] double 0.001 run scoreboard players get GunManNadeY2 buffer
+execute store result entity @e[type=armor_stand,tag=gun_man_nade,limit=1,sort=nearest] Motion[2] double 0.001 run scoreboard players get GunManNadeZ2 buffer
 
 #set the owner
 #execute as @s[tag=redGunManNade] run data modify entity @s Owner set from entity @p[team=uRed] UUID
