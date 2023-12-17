@@ -21,6 +21,10 @@ execute store result entity @e[type=armor_stand,tag=gun_man_nade,limit=1,sort=ne
 execute store result entity @e[type=armor_stand,tag=gun_man_nade,limit=1,sort=nearest] Motion[1] double 0.001 run scoreboard players get GunManNadeY2 buffer
 execute store result entity @e[type=armor_stand,tag=gun_man_nade,limit=1,sort=nearest] Motion[2] double 0.001 run scoreboard players get GunManNadeZ2 buffer
 
+#detecting the player
+execute if entity @s[team=uRed] positioned ~-.5 ~-.5 ~-.5 as @a[dx=0,team=uBlue] at @s positioned ~-.5 ~-.5 ~-.5 if entity @s[type=armor_stand,tag=gun_man_nade,dx=0] run function under_pack:gun_man_functions/gun_grenade_hit
+execute if entity @s[team=uBlue] positioned ~-.5 ~-.5 ~-.5 as @a[dx=0,team=uRed] at @s positioned ~-.5 ~-.5 ~-.5 if entity @s[type=armor_stand,tag=gun_man_nade,dx=0] run function under_pack:gun_man_functions/gun_grenade_hit
+
 #set the owner
 #execute as @s[tag=redGunManNade] run data modify entity @s Owner set from entity @p[team=uRed] UUID
 #execute as @s[tag=blueGunManNade] run data modify entity @s Owner set from entity @p[team=uBlue] UUID
