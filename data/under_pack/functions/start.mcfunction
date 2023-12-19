@@ -74,7 +74,7 @@ scoreboard objectives add buffer dummy
 scoreboard objectives add num dummy
 
 # Adds debug scoreboard
-scoreboard players set debug buffer 0
+#scoreboard players set debug buffer 0
 
 #arrow death timer
 scoreboard objectives add arrowTimer dummy
