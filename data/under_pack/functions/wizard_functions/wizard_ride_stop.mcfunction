@@ -1,7 +1,5 @@
 #reset the ability 
 scoreboard players set @s ability5 0
-#clear resistance
-effect clear @s resistance
 #dismount
 ride @s dismount
 #kill chicken
