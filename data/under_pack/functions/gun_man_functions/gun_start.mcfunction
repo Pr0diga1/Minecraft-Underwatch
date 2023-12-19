@@ -5,7 +5,7 @@ item replace entity @s hotbar.2 with carrot_on_a_stick{CustomModelData:52,displa
 item replace entity @s armor.head with iron_helmet{HideFlags:2,Unbreakable:1b} 1
 item replace entity @s armor.chest with iron_chestplate{HideFlags:2,Unbreakable:1b} 1
 item replace entity @s armor.legs with iron_leggings{Unbreakable:1b}
-item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:projectile_protection",lvl:8s}]}
+item replace entity @s armor.feet with iron_boots{Unbreakable:1b,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},]}
 tag @s add gun
 scoreboard players set @s ability1 0
 scoreboard players set @s ability2 0
