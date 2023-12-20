@@ -28,4 +28,4 @@ execute as @s at @s run schedule function under_pack:gun_man_functions/gun_grena
 #execute as @s[tag=redGunManNade] run data modify entity @s Owner set from entity @p[team=uRed] UUID
 #execute as @s[tag=blueGunManNade] run data modify entity @s Owner set from entity @p[team=uBlue] UUID
 
-#only runs once
+
