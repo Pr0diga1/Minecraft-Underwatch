@@ -24,8 +24,6 @@ execute store result entity @e[type=armor_stand,tag=gun_man_nade,limit=1,sort=ne
 #detecting the player
 execute as @s at @s run schedule function under_pack:gun_man_functions/gun_grenade_hit 1s
 
-#set the owner
-#execute as @s[tag=redGunManNade] run data modify entity @s Owner set from entity @p[team=uRed] UUID
-#execute as @s[tag=blueGunManNade] run data modify entity @s Owner set from entity @p[team=uBlue] UUID
+
 
 
