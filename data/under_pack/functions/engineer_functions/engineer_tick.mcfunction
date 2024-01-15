@@ -5,6 +5,10 @@ execute if score @s ability1 matches 181 if entity @s[nbt=!{Inventory:[{id:"mine
 function under_pack:engineer_functions/engineer_heal
 kill @e[type=item,nbt={Item:{id:"minecraft:snowball",Count:1b,tag:{enginedrug:1b}}}]
 
+#wrench
+execute if entity @s[nbt={Inventory:[{Slot:1b,tag:{engineerwrench:1b}}],SelectedItem:{id:"minecraft:shears",tag:{engineerwrench:1b}}}] run function under_pack:engineer_functions/engineer_wrench
+#scoreboard players set @a engineer_damage_taken 0
+
 #eyes
 #viagra
 item replace entity @s[scores={ability5=200..}] hotbar.3 with ender_eye{CustomModelData:43,display:{Name:'{"text":"Viagra","color":"dark_red"}'},enginedrug:1b} 2
@@ -12,7 +16,6 @@ item replace entity @s[scores={ability5=200..}] hotbar.3 with ender_eye{CustomMo
 item replace entity @s hotbar.4 with ender_eye{CustomModelData:43,display:{Name:'{"text":"Wall","color":"gray"}'},enginewall:1b} 2
 #turret
 item replace entity @s[scores={ability7=300..}] hotbar.6 with ender_eye{CustomModelData:43,display:{Name:'{"text":"Turret","color":"dark_red"}'},enginedrug:1b} 2
-
 
 #turret stuff
 #summon the turret

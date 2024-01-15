@@ -5,7 +5,7 @@
 			{
 				"attribute": "minecraft:generic.attack_damage",
 				"name": "",
-				"amount": 3,
+				"amount": 0.5,
 				"operation": "addition",
 				"slot": "mainhand"
 			}
@@ -15,21 +15,18 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability1": {
-						"min": 180,
-						"max": 270
-					}
+					"ability1": 2
 				}
 			}
 		]
 	},
-	{
+    {
 		"function": "minecraft:set_attributes",
 		"modifiers": [
 			{
 				"attribute": "minecraft:generic.attack_damage",
 				"name": "",
-				"amount": 3.5,
+				"amount": 0.5,
 				"operation": "addition",
 				"slot": "mainhand"
 			}
@@ -39,21 +36,18 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability1": {
-						"min": 90,
-						"max": 179
-					}
+					"ability1": 4
 				}
 			}
 		]
 	},
-	{
+    {
 		"function": "minecraft:set_attributes",
 		"modifiers": [
 			{
 				"attribute": "minecraft:generic.attack_damage",
 				"name": "",
-				"amount": 4,
+				"amount": 1,
 				"operation": "addition",
 				"slot": "mainhand"
 			}
@@ -63,21 +57,18 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability1": {
-						"min": 45,
-						"max": 89
-					}
+					"ability1": 7
 				}
 			}
 		]
 	},
-	{
+    {
 		"function": "minecraft:set_attributes",
 		"modifiers": [
 			{
 				"attribute": "minecraft:generic.attack_damage",
 				"name": "",
-				"amount": 6,
+				"amount": 1,
 				"operation": "addition",
 				"slot": "mainhand"
 			}
@@ -87,10 +78,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability1": {
-						"min": 1,
-						"max": 44
-					}
+					"ability1": 10
 				}
 			}
 		]

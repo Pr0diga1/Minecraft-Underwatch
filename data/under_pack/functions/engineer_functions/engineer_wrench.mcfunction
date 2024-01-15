@@ -1,0 +1,1 @@
+execute if entity @s[team=uRed] store success e

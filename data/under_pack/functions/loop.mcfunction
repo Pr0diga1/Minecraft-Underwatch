@@ -11,4 +11,4 @@ function under_pack:general_functions/general_loop
 
 # Debug mode (for testing on singleplayer.)
 # (I dont want to deal with the implications on multyplayer or in the actual architecture of the server)
-execute if score debug buffer matches 1 as @a run function under_pack:general_functions/general_classloop
+execute if score debug buffer matches 1 as @a run function debug:ticks/tick
