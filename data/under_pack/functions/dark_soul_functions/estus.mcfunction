@@ -1,2 +1,2 @@
-effect give @s regeneration 10 2 true
+effect give @s regeneration 15 3 true
 clear @s ender_eye{estus:1b} 1
