@@ -7,6 +7,7 @@ item replace entity @s hotbar.0 with carrot_on_a_stick{display:{Name:'{"text":"C
 # Abilities
 scoreboard players set @s ability1 0
 scoreboard players set @s ultKills 0
+item replace entity @s hotbar.1 with ender_eye{display:{Name:'{"text":"Estus Flask","color":"gold","bold":true,"italic":false}'},CustomModelData:6,estus:1b} 3
 
 # Armor
 item replace entity @s armor.feet with leather_boots{display:{color:15128132},Unbreakable:true,Enchantments:[{id:"minecraft:depth_strider",lvl:2s},{id:"minecraft:blast_protection",lvl:8s}]}
