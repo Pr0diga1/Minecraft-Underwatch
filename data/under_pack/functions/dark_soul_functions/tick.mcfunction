@@ -4,3 +4,4 @@ execute if score @s ultKills matches 1.. run function under_pack:dark_soul_funct
 
 # Use humanity
 execute if score @s ability2 matches 1.. run scoreboard players remove @s ability2 1
+execute if score @s ability3 matches 1.. run scoreboard players remove @s ability3 1
