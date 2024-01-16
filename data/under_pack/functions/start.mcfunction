@@ -170,7 +170,7 @@ scoreboard objectives add archerRay dummy
 
 #engineer
 scoreboard objectives add engineer_wd dummy
-scoreboard objectives add engineer_ult dummy
+scoreboard objectives add engineer_udlt dummy
 scoreboard objectives add engineerdamage minecraft.custom:damage_dealt
 scoreboard objectives add engineercap dummy
 scoreboard objectives add engineertimer dummy
@@ -180,6 +180,7 @@ scoreboard objectives add engineerTurretEye dummy
 scoreboard objectives add engineerTurretEyeBuffer dummy
 scoreboard objectives add engineerViagraTimer dummy
 scoreboard objectives add engineerViagraBuffer dummy
+scoreboard objectives add engineer_damage_taken minecraft.custom:minecraft.damage_taken
 
 #knight
 scoreboard objectives add blockIsActive dummy

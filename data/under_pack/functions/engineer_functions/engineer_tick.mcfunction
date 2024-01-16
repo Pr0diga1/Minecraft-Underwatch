@@ -6,8 +6,7 @@ function under_pack:engineer_functions/engineer_heal
 kill @e[type=item,nbt={Item:{id:"minecraft:snowball",Count:1b,tag:{enginedrug:1b}}}]
 
 #wrench
-execute if entity @s[nbt={Inventory:[{Slot:1b,tag:{engineerwrench:1b}}],SelectedItem:{id:"minecraft:shears",tag:{engineerwrench:1b}}}] run function under_pack:engineer_functions/engineer_wrench
-#scoreboard players set @a engineer_damage_taken 0
+execute if score @s ability2 matches 1..80 run scoreboard players remove @s ability2 1
 
 #eyes
 #viagra

@@ -2,7 +2,7 @@ clear @s
 #pickaxe
 item replace entity @s hotbar.0 with iron_pickaxe{CustomModelData:1,display:{Name:'{"text":"Squeeky Hammer","color":"light_purple","bold":true}',Lore:['{"text":"Purchased for a very reasonable price"}']},HideFlags:5,Unbreakable:1b,Tags:["enginepick"],AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:2.5,Operation:0,UUID:[I;-525436241,-377207569,-1460662685,-121992275],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.7,Operation:0,UUID:[I;1987559778,1654670374,-1615110215,1839676688],Slot:"mainhand"}]} 1
 #wrench
-item replace entity @s hotbar.1 with shears{display:{Name:'{"text":"Wrench","color":"gray","bold":true}'},engineerwrench:1b} 1
+item replace entity @s hotbar.1 with shears{display:{Name:'{"text":"Wrench","color":"gray","bold":true}'},wrench:1b} 1
 #healies
 execute if entity @s[team=uRed] run item replace entity @s hotbar.2 with snowball{CustomModelData:3,display:{Name:'{"text":"5000mg of Ibuprofen","color":"blue"}'},enginedrug:1b,red:1b} 1
 execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with snowball{CustomModelData:3,display:{Name:'{"text":"5000mg of Ibuprofen","color":"blue"}'},enginedrug:1b,blue:1b} 1

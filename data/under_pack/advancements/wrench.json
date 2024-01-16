@@ -1,0 +1,25 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "damage": {
+            "source_entity": {
+              "equipment": {
+                "mainhand": {
+                  "count": {
+                    "min": 1
+                  },
+                  "nbt": "{wrench:true}"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "under_pack:engineer_functions/engineer_wrench"
+    }
+  }
+  
