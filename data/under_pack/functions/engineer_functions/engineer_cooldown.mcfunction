@@ -1,9 +1,9 @@
 #wrench ability 2
-execute if score @s ability2 matches 80 run item replace entity @s hotbar.1 with iron_ingot 4
-execute if score @s ability2 matches 60 run item replace entity @s hotbar.1 with iron_ingot 3
-execute if score @s ability2 matches 40 run item replace entity @s hotbar.1 with iron_ingot 2
-execute if score @s ability2 matches 20 run item replace entity @s hotbar.1 with iron_ingot 1
-execute if score @s ability2 matches 0 run item replace entity @s hotbar.1 with shears{display:{Name:'{"text":"Wrench","color":"gray","bold":true}'},wrench:1b} 1
+execute if score @s ability3 matches 80 run item replace entity @s hotbar.1 with iron_ingot 4
+execute if score @s ability3 matches 60 run item replace entity @s hotbar.1 with iron_ingot 3
+execute if score @s ability3 matches 40 run item replace entity @s hotbar.1 with iron_ingot 2
+execute if score @s ability3 matches 20 run item replace entity @s hotbar.1 with iron_ingot 1
+execute if score @s ability3 matches 0 run item replace entity @s hotbar.1 with shears{display:{Name:'{"text":"Wrench","color":"gray","bold":true}'},wrench:1b} 1
 
 #viagra ability5
 execute if score @s ability5 matches 0 run item replace entity @s hotbar.3 with potato 10

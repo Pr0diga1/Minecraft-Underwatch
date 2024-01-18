@@ -180,6 +180,7 @@ scoreboard objectives add engineerTurretEye dummy
 scoreboard objectives add engineerTurretEyeBuffer dummy
 scoreboard objectives add engineerViagraTimer dummy
 scoreboard objectives add engineerViagraBuffer dummy
+scoreboard objectives add engineerWallEye dummy
 scoreboard objectives add engineer_damage_taken minecraft.custom:minecraft.damage_taken
 
 #knight
