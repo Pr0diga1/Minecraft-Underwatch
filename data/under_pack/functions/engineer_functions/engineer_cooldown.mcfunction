@@ -1,4 +1,13 @@
-#wrench ability 2
+#wall ability 1
+execute if score @s ability1 matches 120 run item replace entity @s hotbar.4 with iron_block 6
+execute if score @s ability1 matches 100 run item replace entity @s hotbar.4 with iron_block 5
+execute if score @s ability1 matches 80 run item replace entity @s hotbar.4 with iron_block 4
+execute if score @s ability1 matches 60 run item replace entity @s hotbar.4 with iron_block 3
+execute if score @s ability1 matches 40 run item replace entity @s hotbar.4 with iron_block 2
+execute if score @s ability1 matches 20 run item replace entity @s hotbar.4 with iron_block 1
+execute if score @s ability1 matches 1 run scoreboard players set @s engineerWallBuffer -1
+
+#wrench ability 3
 execute if score @s ability3 matches 80 run item replace entity @s hotbar.1 with iron_ingot 4
 execute if score @s ability3 matches 60 run item replace entity @s hotbar.1 with iron_ingot 3
 execute if score @s ability3 matches 40 run item replace entity @s hotbar.1 with iron_ingot 2

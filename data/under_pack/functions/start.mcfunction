@@ -170,7 +170,7 @@ scoreboard objectives add archerRay dummy
 
 #engineer
 scoreboard objectives add engineer_wd dummy
-scoreboard objectives add engineer_udlt dummy
+scoreboard objectives add engineerWallBuffer dummy
 scoreboard objectives add engineerdamage minecraft.custom:damage_dealt
 scoreboard objectives add engineercap dummy
 scoreboard objectives add engineertimer dummy
