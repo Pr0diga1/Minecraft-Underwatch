@@ -1,2 +1,2 @@
-scoreboard players set @s ability1 21
+scoreboard players set @s ability1 41
 tag @s add reload_main
