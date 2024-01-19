@@ -3,7 +3,7 @@ function under_pack:engineer_functions/engineer_heal
 kill @e[type=item,nbt={Item:{id:"minecraft:snowball",Count:1b,tag:{enginedrug:1b}}}]
 
 #wrench
-execute if score @s ability3 matches 1..81 run scoreboard players remove @s ability3 1
+execute if score @s ability3 matches 1..161 run scoreboard players remove @s ability3 1
 
 #eyes
 #viagra
