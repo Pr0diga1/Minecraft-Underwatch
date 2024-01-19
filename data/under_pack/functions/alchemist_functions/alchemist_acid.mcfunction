@@ -14,10 +14,10 @@ execute if entity @s[team=uRed] store result entity @e[tag=acid,type=marker,limi
 # Deal Damage
 execute at @e[type=marker,tag=acid,tag=uBlue] if entity @s[team=uBlue] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=uRed,dx=1] run damage @s 5 magic by @a[scores={class=1},team=uBlue,limit=1]
 execute at @e[type=marker,tag=acid,tag=uRed] if entity @s[team=uRed] positioned ~-0.5 ~-0.5 ~-0.5 as @a[team=uBlue,dx=1] run damage @s 5 magic by @a[scores={class=1},team=uRed,limit=1]
-execute at @e[type=marker,tag=acid,tag=uBlue] if entity @s[team=uBlue] positioned ~-1.5 ~-0.5 ~-1.5 as @a[team=uRed,dx=3,dy=3,dz=3] run damage @s 4 magic by @a[scores={class=1},team=uBlue,limit=1]
-execute at @e[type=marker,tag=acid,tag=uRed] if entity @s[team=uRed] positioned ~-1.5 ~-0.5 ~-1.5 as @a[team=uBlue,dx=3,dy=3,dz=3] run damage @s 4 magic by @a[scores={class=1},team=uRed,limit=1]
-execute at @e[type=marker,tag=acid,tag=uBlue] if entity @s[team=uBlue] positioned ~-2 ~-0.5 ~-2 as @a[team=uRed,dx=4,dy=4,dz=4] run damage @s 3 magic by @a[scores={class=1},team=uBlue,limit=1]
-execute at @e[type=marker,tag=acid,tag=uRed] if entity @s[team=uRed] positioned ~-2 ~-0.5 ~-2 as @a[team=uBlue,dx=4,dy=4,dz=4] run damage @s 3 magic by @a[scores={class=1},team=uRed,limit=1]
+execute at @e[type=marker,tag=acid,tag=uBlue] if entity @s[team=uBlue] positioned ~-1.5 ~-0.5 ~-1.5 as @a[team=uRed,dx=3,dy=3,dz=3] run damage @s 3 magic by @a[scores={class=1},team=uBlue,limit=1]
+execute at @e[type=marker,tag=acid,tag=uRed] if entity @s[team=uRed] positioned ~-1.5 ~-0.5 ~-1.5 as @a[team=uBlue,dx=3,dy=3,dz=3] run damage @s 3 magic by @a[scores={class=1},team=uRed,limit=1]
+execute at @e[type=marker,tag=acid,tag=uBlue] if entity @s[team=uBlue] positioned ~-2 ~-0.5 ~-2 as @a[team=uRed,dx=4,dy=4,dz=4] run damage @s 1 magic by @a[scores={class=1},team=uBlue,limit=1]
+execute at @e[type=marker,tag=acid,tag=uRed] if entity @s[team=uRed] positioned ~-2 ~-0.5 ~-2 as @a[team=uBlue,dx=4,dy=4,dz=4] run damage @s 1 magic by @a[scores={class=1},team=uRed,limit=1]
 
 
 execute at @e[type=marker,tag=acid,tag=uBlue] if entity @s[team=uBlue] run particle dust 0 1 0 1 ~ ~.2 ~ .23 .05 .23 1 15 force @a 
