@@ -121,6 +121,7 @@ scoreboard objectives add mermaid trigger
 scoreboard objectives add elemental trigger
 scoreboard objectives add dark_soul trigger
 scoreboard objectives add gun_man trigger
+scoreboard objectives add cyborg trigger
 
 #various triggers
 scoreboard objectives add red trigger
@@ -268,6 +269,10 @@ scoreboard objectives add mermaidtoggle dummy
 scoreboard objectives add mermaiddamage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add mermaidDetect dummy
 scoreboard objectives add mermaidburst dummy
+
+#cyborg
+scoreboard objectives add cyborgcap dummy
+scoreboard objectives add cyborgtimer dummy
 
 #dark soul
 scoreboard objectives add slamTimer dummy

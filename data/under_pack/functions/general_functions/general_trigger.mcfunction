@@ -48,3 +48,5 @@ execute as @a[scores={dark_soul=1..}] at @s run function under_pack:dark_soul_fu
 scoreboard players enable @a dark_soul
 execute as @a[scores={gun_man=1..}] at @s run function under_pack:gun_man_functions/gun_trigger
 scoreboard players enable @a gun_man
+execute as @a[scores={cyborg=1..}] at @s run function under_pack:cyborg_functions/cyborg_trigger
+scoreboard players enable @a cyborg
