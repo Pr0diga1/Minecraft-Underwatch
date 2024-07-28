@@ -1,0 +1,32 @@
+{
+	"description": "Chaos Flame",
+	"supported_items": "#minecraft:enchantable/sword",
+	"weight": 1,
+	"max_level": 3,
+	"min_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 0,
+	"slots": [
+		"mainhand"
+	],
+	"effects": {
+		"minecraft:damage": [
+			{
+				"effect": {
+					"type": "minecraft:add",
+					"value": {
+						"type": "linear",
+						"base": 1,
+						"per_level_above_first": 1
+					}
+				}
+			}
+		]
+	}
+}

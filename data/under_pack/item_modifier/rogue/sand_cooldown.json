@@ -1,0 +1,119 @@
+[
+	{
+		"function": "minecraft:set_custom_model_data",
+		"value": 40,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 191
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 41,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 171
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 42,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 151
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 43,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 131
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 44,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 111
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 45,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 91
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 46,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 71
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 47,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 51
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 48,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 31
+				}
+			}
+		]
+	}
+]

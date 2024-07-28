@@ -1,0 +1,41 @@
+[
+	{
+		"function": "minecraft:set_custom_model_data",
+		"value": 4,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 11
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_custom_model_data",
+		"value": 5,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 21
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_custom_model_data",
+		"value": 6,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 31
+				}
+			}
+		]
+	}
+]

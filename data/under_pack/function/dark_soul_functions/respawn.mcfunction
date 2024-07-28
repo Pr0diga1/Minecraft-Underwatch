@@ -1,0 +1,18 @@
+## Player reset
+clear @s
+# Reset death scoreboard
+scoreboard players reset @a uDeaths
+
+## Main weapon
+item replace entity @s hotbar.0 with iron_sword[custom_name='{"bold":true,"color":"#FF4912","italic":false,"text":"Chaos Zweihänder","underlined":true}',unbreakable={},custom_model_data=1,custom_data={zwei:1b},attribute_modifiers=[{id:"armor",type:"generic.attack_damage",amount:3,operation:"add_value",slot:"mainhand"},{id:"armor",type:"generic.attack_speed",amount:-2.7,operation:"add_value",slot:"mainhand"}]] 1
+item replace entity @s hotbar.1 with dragon_head[custom_name='{"bold":true,"color":"dark_red","italic":false,"text":"Dark Hand"}',unbreakable={show_in_tooltip:false},custom_model_data=231,custom_data={darkHand:1b},enchantments={levels:{"under_pack:dark_hand":1}},attribute_modifiers=[{id:"attack_damage",type:"generic.attack_damage",amount:3,operation:"add_value",slot:"any"},{id:"entity_interaction_range",type:"player.entity_interaction_range",amount:-1,operation:"add_value",slot:"any"}]] 1
+
+# Abilities
+scoreboard players set @s ability1 0
+scoreboard players set @s ultKills 0
+item replace entity @s hotbar.1 with ender_eye[custom_name='{"bold":true,"color":"gold","italic":false,"text":"Estus Flask"}',custom_model_data=6,custom_data={estus:1b}] 5
+
+# Armor
+item replace entity @s armor.feet with leather_boots[enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}},dyed_color=15128132] 1
+item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:false},attribute_modifiers=[{id:"armor",type:"generic.max_health",amount:12,operation:"add_value"}],dyed_color=15128132] 1
+item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},dyed_color=15128132]

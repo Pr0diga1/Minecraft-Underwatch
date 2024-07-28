@@ -1,0 +1,16 @@
+clear @s
+item replace entity @s weapon.offhand with bow[custom_name='{"color":"blue","text":"Cool Bow"}',lore=['"it\'s so cool!"'],unbreakable={show_in_tooltip:false}] 1
+
+item replace entity @s hotbar.0 with tipped_arrow[custom_name='{"text":"Heavy Arrow","color":"dark_red","bold":true}',custom_data={archerheavy:1b},potion_contents={custom_color:16711680}] 3
+item replace entity @s hotbar.1 with tipped_arrow[custom_name='{"text":"Light Arrow","color":"#FF1FFF","bold":true}',custom_data={archerlight:1b},potion_contents={custom_color:16719871}] 3
+
+item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
+item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:false}]
+item replace entity @s armor.chest with iron_chestplate[unbreakable={show_in_tooltip:false}]
+
+scoreboard players set @s ability1 1
+scoreboard players set @s ability2 1
+scoreboard players set @s ability3 139
+
+#run the class select
+function under_pack:general_functions/general_character_select

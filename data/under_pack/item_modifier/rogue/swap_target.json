@@ -1,0 +1,13 @@
+[
+	{
+		"function": "minecraft:set_components",
+		"components": {
+			"minecraft:custom_data": "{swap:2b}",
+			"minecraft:custom_model_data": 29
+		}
+	},
+	{
+		"function": "minecraft:set_name",
+		"name": "Teleport Swap"
+	}
+]

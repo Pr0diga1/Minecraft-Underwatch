@@ -1,0 +1,106 @@
+[
+	{
+		"function": "minecraft:set_custom_model_data",
+		"value": 20,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 91
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 21,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 81
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 22,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 71
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 23,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 61
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 24,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 51
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 25,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 41
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 26,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 31
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_custom_model_data",
+		"value": 7,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 21
+				}
+			}
+		]
+	}
+]
