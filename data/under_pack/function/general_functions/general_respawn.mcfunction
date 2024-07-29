@@ -12,3 +12,4 @@ execute as @s[scores={class=11}] run function under_pack:mermaid_functions/merma
 execute as @s[scores={class=12}] run function under_pack:elemental_functions/elemental_respawn
 execute as @s[scores={class=13}] at @s run function under_pack:dark_soul_functions/respawn
 execute as @s[scores={class=14}] at @s run function under_pack:gun_man_functions/gun_respawn
+execute as @s[scores={class=15}] run function under_pack:cyborg_functions/cyborg_respawn
