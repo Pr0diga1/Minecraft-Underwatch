@@ -25,7 +25,7 @@ execute as @s[team=uBlue,nbt={Inventory:[{id:"minecraft:air"},{Slot:0b}]}] run i
 execute as @s[nbt={Inventory:[{id:"minecraft:air"},{Slot:1b}]}] run item replace entity @s hotbar.1 with ender_eye[custom_name='{"bold":true,"color":"gold","italic":true,"text":"Become Fire"}',lore=['"\'fireball\' - Pitbull"'],custom_data={wizardFire:1b}] 1
 
 #reset reset
-#scoreboard players reset @s reset
+scoreboard players reset @s reset
 
 #fireball set its velo
 execute as @e[type=fireball,tag=!fireballMoved,tag=redWizardFireball] at @s rotated as @p[team=uRed] run function under_pack:wizard_functions/wizard_fireball_velo
