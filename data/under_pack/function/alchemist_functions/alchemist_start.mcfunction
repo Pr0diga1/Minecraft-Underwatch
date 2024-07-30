@@ -9,7 +9,7 @@ item replace entity @s hotbar.1 with lingering_potion[custom_name='{"bold":true,
 item replace entity @s hotbar.2 with lingering_potion[custom_name='{"bold":true,"color":"#8753E0","italic":false,"text":"Telepot"}',custom_model_data=1,custom_data={telepot:1b},potion_contents={custom_color:8328897,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:121,show_particles:0b,show_icon:0b}]}] 1
 
 # Armor
-item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
+item replace entity @s armor.feet with leather_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
 item replace entity @s armor.legs with chainmail_leggings[unbreakable={show_in_tooltip:false}] 1
 item replace entity @s armor.chest with chainmail_chestplate[unbreakable={show_in_tooltip:false}] 1
 
