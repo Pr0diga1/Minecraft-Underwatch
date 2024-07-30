@@ -22,7 +22,7 @@ item replace entity @s hotbar.4 with ender_eye[custom_name='[{"bold":false,"colo
 item replace entity @s armor.head with leather_helmet[unbreakable={show_in_tooltip:false},dyed_color=16777215] 1
 item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},dyed_color=16777215] 1
 item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:false},dyed_color=16777215] 1
-item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}},dyed_color=16777215] 1
+item replace entity @s armor.feet with leather_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}},dyed_color=16777215] 1
 
 #clean arrows
 kill @e[type=arrow,tag=wizardSmallSpellArrow]

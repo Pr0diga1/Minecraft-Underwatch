@@ -7,7 +7,7 @@ item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name='{"bold":true
 item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"color":"blue","text":"Strong Jump"}',custom_model_data=27,custom_data={lumberjump:1b}] 1
 
 #armor
-item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
+item replace entity @s armor.feet with leather_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
 item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:false}]
 item replace entity @s armor.chest with iron_chestplate[unbreakable={show_in_tooltip:false}]
 

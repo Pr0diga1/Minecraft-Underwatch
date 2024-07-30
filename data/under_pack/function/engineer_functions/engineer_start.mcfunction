@@ -22,7 +22,7 @@ item replace entity @s hotbar.6 with ender_eye[custom_name='{"color":"dark_red",
 #armor
 item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},dyed_color=16777215] 1
 item replace entity @s armor.legs with diamond_leggings[unbreakable={show_in_tooltip:false}]
-item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}},attribute_modifiers=[{id:"armor",type:"generic.max_health",amount:-4,operation:"add_value",slot:"feet"}]] 1
+item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}},attribute_modifiers=[{id:"armor",type:"generic.max_health",amount:-4,operation:"add_value",slot:"feet"},{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}]] 1
 scoreboard players set @s ability1 179
 scoreboard players set @s ability2 0
 scoreboard players set @s ability3 179

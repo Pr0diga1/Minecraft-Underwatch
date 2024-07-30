@@ -4,7 +4,7 @@ item replace entity @s weapon.offhand with bow[custom_name='{"color":"blue","tex
 item replace entity @s hotbar.0 with tipped_arrow[custom_name='{"text":"Heavy Arrow","color":"dark_red","bold":true}',custom_data={archerheavy:1b},potion_contents={custom_color:16711680}] 3
 item replace entity @s hotbar.1 with tipped_arrow[custom_name='{"text":"Light Arrow","color":"#FF1FFF","bold":true}',custom_data={archerlight:1b},potion_contents={custom_color:16719871}] 3
 
-item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
+item replace entity @s armor.feet with leather_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
 item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:false}]
 item replace entity @s armor.chest with iron_chestplate[unbreakable={show_in_tooltip:false}]
 
