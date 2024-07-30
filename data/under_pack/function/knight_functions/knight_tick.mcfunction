@@ -7,11 +7,11 @@ execute if score @s movement matches ..320 run scoreboard players add @s movemen
 execute if score @s movement matches 320 run item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"color":"gold","text":"Selfish Prayer"}',custom_model_data=44,custom_data={knightheal:1b}] 1
 
 #bomb!!!!!!!
-function under_pack:knight_functions/knight_bomb
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:wind_charge",count:1,components:{"minecraft:custom_data":{knightbomb:1b}}}}] run scoreboard players set @s ability1 0
+
 #bomb cooldown
 execute if score @s ability1 matches ..180 run scoreboard players add @s ability1 1
-execute if entity @s[team=uRed] if score @s ability1 matches 180 run item replace entity @s hotbar.2 with snowball[custom_name='{"color":"dark_green","text":"Holy Hand Grenade"}',custom_model_data=1,custom_data={knightbomb:1b,red:1b}] 1
-execute if entity @s[team=uBlue] if score @s ability1 matches 180 run item replace entity @s hotbar.2 with snowball[custom_name='{"color":"dark_green","text":"Holy Hand Grenade"}',custom_model_data=1,custom_data={knightbomb:1b,blue:1b}] 1
+execute if score @s ability1 matches 180 run item replace entity @s hotbar.2 with wind_charge[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:1,operation:"add_value"}],custom_name='{"color":"dark_green","text":"Holy Hand Grenade"}',custom_model_data=1,custom_data={knightbomb:1b}] 2
 
 #stopsounds for the block
 stopsound @a * minecraft:entity.ender_eye.launch
