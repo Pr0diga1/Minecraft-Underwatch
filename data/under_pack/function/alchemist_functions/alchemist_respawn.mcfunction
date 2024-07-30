@@ -10,10 +10,11 @@ tag @s remove telepot
 tag @s remove healing
 
 ## Main weapon
-item replace entity @s hotbar.0 with splash_potion[max_stack_size=2,custom_name='{"bold":true,"color":"#8FC219","italic":false,"text":"Acid"}',custom_model_data=2,custom_data={acid:1b},potion_contents={custom_color:16777215}] 2
-item replace entity @s hotbar.1 with splash_potion[custom_name='{"bold":true,"color":"#BF5DC2","italic":false,"text":"Healing Solution"}',custom_model_data=3,custom_data={healing:1b},potion_contents={custom_color:16777215}] 1
+item replace entity @s hotbar.0 with lingering_potion[max_stack_size=2,custom_name='{"bold":true,"color":"#8FC219","italic":false,"text":"Acid"}',custom_model_data=2,custom_data={acid:1b},potion_contents={custom_color:10670895,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:123,show_particles:0b,show_icon:0b}]}] 2
+item replace entity @s hotbar.1 with lingering_potion[custom_name='{"bold":true,"color":"#BF5DC2","italic":false,"text":"Healing Solution"}',custom_model_data=3,custom_data={healing:1b},potion_contents={custom_color:16740073,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:122,show_particles:0b,show_icon:0b}]}] 1
 # Telepot
-item replace entity @s hotbar.2 with splash_potion[custom_name='{"bold":true,"color":"#8753E0","italic":false,"text":"Telepot"}',custom_model_data=1,custom_data={telepot:1b},potion_contents={custom_color:16777215}] 1
+item replace entity @s hotbar.2 with lingering_potion[custom_name='{"bold":true,"color":"#8753E0","italic":false,"text":"Telepot"}',custom_model_data=1,custom_data={telepot:1b},potion_contents={custom_color:8328897,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:121,show_particles:0b,show_icon:0b}]}] 1
+
 # Armor
 item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
 item replace entity @s armor.legs with chainmail_leggings[unbreakable={show_in_tooltip:false}] 1
