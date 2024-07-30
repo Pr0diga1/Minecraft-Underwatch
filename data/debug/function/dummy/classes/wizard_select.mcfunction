@@ -1,0 +1,4 @@
+item replace entity @n[type=husk] armor.head with leather_helmet[unbreakable={show_in_tooltip:false},dyed_color=16777215,enchantments={levels:{"debug:dummy_enchant":1},show_in_tooltip:false}] 1
+item replace entity @n[type=husk] armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},dyed_color=16777215] 1
+item replace entity @n[type=husk] armor.legs with leather_leggings[unbreakable={show_in_tooltip:false},dyed_color=16777215] 1
+item replace entity @n[type=husk] armor.feet with leather_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}},dyed_color=16777215] 1

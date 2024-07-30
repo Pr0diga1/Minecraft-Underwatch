@@ -1,6 +1,6 @@
 {
 	"description": "test",
-	"supported_items": "#minecraft:enchantable/chest_armor",
+	"supported_items": "#minecraft:enchantable/head_armor",
 	"weight": 1,
 	"max_level": 1,
 	"min_cost": {
@@ -20,7 +20,7 @@
 				"affected": "victim",
 				"effect": {
 					"type": "minecraft:run_function",
-					"function": "debug:dummy"
+					"function": "debug:dummy/dummy"
 				}
 			}
 		]

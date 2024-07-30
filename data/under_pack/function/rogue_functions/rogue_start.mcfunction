@@ -10,8 +10,6 @@ item replace entity @s hotbar.2 with crossbow[custom_name='{"bold":true,"color":
 item replace entity @s hotbar.3 with carrot_on_a_stick[custom_name='{"bold":true,"color":"#A8A85D","italic":false,"text":"Pocket Sand"}',unbreakable={show_in_tooltip:false},custom_model_data=31,custom_data={pocketSand:1b}] 1
 # Swap
 item replace entity @s hotbar.4 with carrot_on_a_stick[custom_name='{"bold":true,"color":"dark_purple","italic":false,"text":"Friend Swap"}',unbreakable={show_in_tooltip:false},custom_model_data=26,custom_data={swap:1b}] 1
-# Armor
-item replace entity @s armor.feet with netherite_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}},attribute_modifiers=[{id:"armor",type:"generic.armor",amount:0,operation:"add_value"},{id:"armor",type:"generic.armor_toughness",amount:0,operation:"add_value"},{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}]] 1
 
 # Ability scores
 scoreboard players set @s ability1 0
