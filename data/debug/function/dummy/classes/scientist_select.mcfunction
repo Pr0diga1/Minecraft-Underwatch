@@ -1,0 +1,4 @@
+item replace entity @n[type=husk] armor.feet with iron_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:protection":2,"minecraft:depth_strider":2}}] 1
+item replace entity @n[type=husk] armor.legs with diamond_leggings[unbreakable={show_in_tooltip:false}] 1
+item replace entity @n[type=husk] armor.head with diamond_helmet[unbreakable={show_in_tooltip:false},enchantments={levels:{"debug:dummy_enchant":1},show_in_tooltip:false}]
+item replace entity @n[type=husk] armor.chest with leather_chestplate[custom_name='"Jetpack"',unbreakable={show_in_tooltip:false},attribute_modifiers=[{id:"armor",type:"generic.armor",amount:0,operation:"add_value",slot:"chest"}],dyed_color=16777215] 1
