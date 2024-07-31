@@ -1,7 +1,7 @@
 clear @s
 
 #sword/block
-item replace entity @s hotbar.0 with ender_eye[custom_name='{"color":"white","text":"Reliquary Blade"}',lore=['"Only given to those worthy"'],custom_model_data=1,custom_data={knightsword:1b},attribute_modifiers=[{id:"armor",type:"generic.attack_damage",amount:3.3,operation:"add_value",slot:"mainhand"},{id:"armor",type:"generic.attack_speed",amount:-3.2,operation:"add_value",slot:"mainhand"}]] 1
+item replace entity @s hotbar.0 with ender_eye[custom_name='{"color":"white","text":"Reliquary Blade"}',lore=['"Only given to those worthy"'],custom_model_data=1,custom_data={knightsword:1b},attribute_modifiers=[{id:"damage",type:"generic.attack_damage",amount:3,operation:"add_value",slot:"mainhand"},{id:"speed",type:"generic.attack_speed",amount:-3.5,operation:"add_value",slot:"mainhand"}]] 1
 
 #self heal
 item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"color":"gold","text":"Selfish Prayer"}',custom_model_data=44,custom_data={knightheal:1b}] 1

@@ -1,3 +1,5 @@
+#cooldown
+function under_pack:mermaid_functions/mermaid_cooldown
 #carrot detection
 execute as @s if score @s mermaidburst matches 3.. if entity @s[nbt={Inventory:[{Slot:0b,components:{"minecraft:custom_data":{mermaidburst:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{mermaidburst:1b}}}},scores={reset=1..}] as @s run function under_pack:mermaid_functions/mermaid_burst
 #mist tick
@@ -7,21 +9,25 @@ execute if score @s mermaidmistbuffer matches 0 unless score @s mermaidmist matc
 execute if score @s mermaidmist matches 74 run experience set @s 741 points
 item replace entity @s hotbar.1 with ender_eye[custom_name='{"color":"dark_blue","text":"Nautical Mist"}',custom_data={mermaidmist:1b}] 1
 
-#potion tick
-execute if entity @s[team=uRed] if entity @e[limit=1,sort=nearest,nbt={Item:{tag:{mermaidpotion:1b,red:1b}}}] unless entity @e[limit=1,sort=nearest,tag=mermaidtrack,type=marker,tag=red] run function under_pack:mermaid_functions/mermaid_tide_throw
-execute if entity @s[team=uRed] if entity @e[limit=1,sort=nearest,tag=mermaidtrack,type=marker,tag=red] unless entity @e[limit=1,sort=nearest,nbt={Item:{tag:{mermaidpotion:1b,red:1b}}}] run function under_pack:mermaid_functions/mermaid_tide_tick
+##new tide stuffs
+#red detect pot/spin the blues
+execute if entity @s[team=uRed] as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366143}}] at @s run summon marker ~ ~ ~ {Tags:["mermaidtide","red"]}
+execute as @e[tag=mermaidtide,tag=red] at @s as @a[distance=..3,team=uBlue] at @s run tp @s ~ ~ ~ ~-5 ~
 
-execute unless entity @e[tag=mermaidtrack,tag=blue] run tag @a[team=uRed] remove intidered
-execute unless entity @e[tag=mermaidtrack,tag=red] run tag @a[team=uBlue] remove intideblue
+#blue detect pot/spin the reds
+execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366143}}] if entity @s[team=uBlue] at @s run summon marker ~ ~ ~ {Tags:["mermaidtide","blue"]}
+execute as @e[tag=mermaidtide,tag=blue] at @s as @a[distance=..3,team=uRed] at @s run tp @s ~ ~ ~ ~-5 ~
 
-execute if entity @s[team=uBlue] if entity @e[limit=1,sort=nearest,nbt={Item:{tag:{mermaidpotion:1b,blue:1b}}}] unless entity @e[limit=1,sort=nearest,tag=mermaidtrack,type=marker,tag=blue] run function under_pack:mermaid_functions/mermaid_tide_throw
-execute if entity @s[team=uBlue] if entity @e[limit=1,sort=nearest,tag=mermaidtrack,type=marker,tag=blue] unless entity @e[limit=1,sort=nearest,nbt={Item:{tag:{mermaidpotion:1b,blue:1b}}}] run function under_pack:mermaid_functions/mermaid_tide_tick
-#potion cooldow
-execute if score @s ability1 matches 1..300 run scoreboard players remove @s ability1 1
-execute if entity @s[team=uRed] if score @s ability1 matches 0 run item replace entity @s hotbar.2 with splash_potion[custom_name='{"color":"gray","text":"Tide Pool"}',lore=['"Slows Enemies"'],hide_additional_tooltip={},custom_data={mermaidpotion:1b,red:1b},potion_contents={custom_color:1591008}] 1
-execute if entity @s[team=uBlue] if score @s ability1 matches 0 run item replace entity @s hotbar.2 with splash_potion[custom_name='{"color":"gray","text":"Tide Pool"}',lore=['"Slows Enemies"'],hide_additional_tooltip={},custom_data={mermaidpotion:1b,blue:1b},potion_contents={custom_color:1591008}] 1
-function under_pack:mermaid_functions/mermaid_cooldown
+#counting how many ticks the marker has been alive in order to kill it
+execute if entity @e[tag=mermaidtide] run function under_pack:mermaid_functions/mermaid_tide
 
+#particles
+execute at @e[tag=mermaidtide] positioned ~ ~-.15 ~ run function under_pack:mermaid_functions/mermaid_particle
+
+#kills the area effect cloud becuase before it detects and spawns a marker this makes it replace
+execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366143}}] run kill @s
+
+##mist stuffs 
 #detect when mist usage was stopped
 execute if score @s mermaidDetect matches 1.. run scoreboard players remove @s mermaidDetect 1
 execute if score @s[team=uRed] mermaidDetect matches 1 run scoreboard players set @a[team=uRed] mermaidheal 1
