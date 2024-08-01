@@ -273,6 +273,9 @@ scoreboard objectives add mermaidburst dummy
 #cyborg
 scoreboard objectives add cyborgcap dummy
 scoreboard objectives add cyborgtimer dummy
+scoreboard objectives add cyborgeat dummy
+scoreboard objectives add cyborghand dummy
+scoreboard objectives add cyborghp dummy
 
 #dark soul
 scoreboard objectives add slamTimer dummy

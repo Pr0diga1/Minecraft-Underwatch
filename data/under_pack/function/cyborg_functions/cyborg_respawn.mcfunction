@@ -1,2 +1,4 @@
 experience set @s 0 levels
-say aaaaaaggg
+scoreboard players set @s cyborghand 1
+scoreboard players set @s cyborghp 1
+scoreboard players set @s cyborgeat 1
