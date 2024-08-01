@@ -19,8 +19,8 @@ execute if entity @s[team=uBlue] as @e[type=area_effect_cloud,nbt={potion_conten
 execute as @e[tag=mermaidtide,tag=blue] at @s as @a[distance=..3,team=uRed] at @s run tp @s ~ ~ ~ ~-5 ~
 
 #counting how many ticks the marker has been alive in order to kill it
-execute if entity @s[team=uRed] if entity @e[tag=mermaidtide,tag=red] run function under_pack:mermaid_functions/mermaid_tide
-execute if entity @s[team=uBlue] if entity @e[tag=mermaidtide,tag=blue] run function under_pack:mermaid_functions/mermaid_tide
+execute if entity @s[team=uRed] if entity @e[tag=mermaidtide,tag=red] run function under_pack:mermaid_functions/mermaid_tide_red
+execute if entity @s[team=uBlue] if entity @e[tag=mermaidtide,tag=blue] run function under_pack:mermaid_functions/mermaid_tide_blue
 
 #particles
 execute at @e[tag=mermaidtide] positioned ~ ~-.15 ~ run function under_pack:mermaid_functions/mermaid_particle
