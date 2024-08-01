@@ -58,19 +58,19 @@ execute as @e[type=arrow,nbt={item:{components:{"minecraft:potion_contents":{cus
 kill @e[type=arrow,tag=sciBolt,nbt={inGround:1b}]
 
 #tp markers to arrows every tick
-tp @e[type=marker,tag=sciLightningRed] @e[type=arrow,tag=sciBolt,tag=red,limit=1,sort=nearest]
-tp @e[type=marker,tag=sciLightningBlue] @e[type=arrow,tag=sciBolt,tag=blue,limit=1,sort=nearest]
+tp @e[type=marker,tag=sciLightningRed] @e[type=arrow,tag=sciBoltl,tag=red,limit=1,sort=nearest]
+tp @e[type=marker,tag=sciLightningBlue] @e[type=arrow,tag=sciBoltl,tag=blue,limit=1,sort=nearest]
 
 #arrow particles
 execute at @e[type=arrow,tag=sciBolt] run particle electric_spark ~ ~ ~ 0.1 0.1 0.1 0 6
 
 #summon a lightning bolt on a marker if its arrow is not there
 #red
-execute as @e[type=marker,tag=sciLightningRed] unless entity @e[type=arrow,tag=sciBolt,tag=red] at @s run summon lightning_bolt ~ ~ ~
-execute as @e[type=marker,tag=sciLightningRed] unless entity @e[type=arrow,tag=sciBolt,tag=red] at @s run kill @s
+execute as @e[type=marker,tag=sciLightningRed] unless entity @e[type=arrow,tag=sciBoltl,tag=red] at @s run summon lightning_bolt ~ ~ ~
+execute as @e[type=marker,tag=sciLightningRed] unless entity @e[type=arrow,tag=sciBoltl,tag=red] at @s run kill @s
 #blue
-execute as @e[type=marker,tag=sciLightningBlue] unless entity @e[type=arrow,tag=sciBolt,tag=blue] at @s run summon lightning_bolt ~ ~ ~
-execute as @e[type=marker,tag=sciLightningBlue] unless entity @e[type=arrow,tag=sciBolt,tag=blue] at @s run kill @s
+execute as @e[type=marker,tag=sciLightningBlue] unless entity @e[type=arrow,tag=sciBoltl,tag=blue] at @s run summon lightning_bolt ~ ~ ~
+execute as @e[type=marker,tag=sciLightningBlue] unless entity @e[type=arrow,tag=sciBoltl,tag=blue] at @s run kill @s
 
 #reset the bow fired objective
 scoreboard players set @s scientistBowFired2 0

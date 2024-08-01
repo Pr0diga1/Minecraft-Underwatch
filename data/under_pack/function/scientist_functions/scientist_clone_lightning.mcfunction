@@ -10,10 +10,10 @@ execute at @s[tag=red] run summon arrow ~ ~ ~ {damage:2d,crit:0b,Tags:["sciBoltl
 execute as @e[type=arrow,tag=sciBolt] run data merge entity @s {Color:-1}
 #set its motion
 
-execute at @s run data modify entity @e[type=arrow,tag=sciBolt,limit=1,sort=nearest] Motion set from entity @s Motion
+execute at @s run data modify entity @e[type=arrow,tag=sciBoltl,limit=1,sort=nearest] Motion set from entity @s Motion
 
 #set its owner
-execute at @s run data modify entity @e[type=arrow,tag=sciBolt,limit=1,sort=nearest] Owner set from entity @s Owner
+execute at @s run data modify entity @e[type=arrow,tag=sciBoltl,limit=1,sort=nearest] Owner set from entity @s Owner
 
 #create a marker that will follow the arrow
 execute if entity @s[tag=red] at @s run summon marker ~ ~ ~ {Tags:["sciLightningRed"]} 
