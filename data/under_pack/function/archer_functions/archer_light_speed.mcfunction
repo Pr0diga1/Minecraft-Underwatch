@@ -9,3 +9,4 @@ execute store result score archerlightz buffer run data get entity @s Motion[2] 
 execute at @s store result entity @s Motion[2] double 0.002 run scoreboard players get archerlightz buffer
 
 data merge entity @s {item:{components:{"minecraft:custom_data":{archerlight:2b}}}}
+data merge entity @s {damage:0.6d}
