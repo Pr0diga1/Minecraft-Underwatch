@@ -15,7 +15,7 @@ execute if entity @s[team=uRed] as @e[type=area_effect_cloud,nbt={potion_content
 execute as @e[tag=mermaidtide,tag=red] at @s as @a[distance=..3,team=uBlue] at @s run tp @s ~ ~ ~ ~-5 ~
 
 #blue detect pot/spin the reds
-execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366144}}] if entity @s[team=uBlue] at @s run summon marker ~ ~ ~ {Tags:["mermaidtide","blue"]}
+execute if entity @s[team=uBlue] as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366144}}] at @s run summon marker ~ ~ ~ {Tags:["mermaidtide","blue"]}
 execute as @e[tag=mermaidtide,tag=blue] at @s as @a[distance=..3,team=uRed] at @s run tp @s ~ ~ ~ ~-5 ~
 
 #counting how many ticks the marker has been alive in order to kill it
@@ -26,6 +26,7 @@ execute at @e[tag=mermaidtide] positioned ~ ~-.15 ~ run function under_pack:merm
 
 #kills the area effect cloud becuase before it detects and spawns a marker this makes it replace
 execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366143}}] run kill @s
+execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366144}}] run kill @s
 
 ##mist stuffs 
 #detect when mist usage was stopped
