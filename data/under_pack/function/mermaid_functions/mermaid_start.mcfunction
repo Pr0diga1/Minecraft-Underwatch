@@ -3,7 +3,7 @@ item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name='{"color":"bl
 item replace entity @s hotbar.1 with ender_eye[custom_name='{"color":"dark_blue","text":"Nautical Mist"}',custom_data={mermaidmist:1b}] 1
 
 execute if entity @s[team=uRed] run item replace entity @s hotbar.2 with lingering_potion[custom_name='{"color":"blue","text":"Tide Pool"}',custom_data={mermaidtide:1b},potion_contents={custom_color:3366143,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:1}]}] 1
-execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with lingering_potion[custom_name='{"color":"blue","text":"Tide Pool"}',custom_data={mermaidtide:1b},potion_contents={custom_color:3366143,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:1}]}] 1 
+execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with lingering_potion[custom_name='{"color":"blue","text":"Tide Pool"}',custom_data={mermaidtide:1b},potion_contents={custom_color:3366144,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:1}]}] 1 
 
 scoreboard players set @s ability1 0
 
