@@ -1,0 +1,1 @@
+execute as @s[nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_data":{elementalWind:1b}}}]},scores={reset=1..}] if score @s elementalBar matches 300.. run function under_pack:elemental_functions/elemental_wind

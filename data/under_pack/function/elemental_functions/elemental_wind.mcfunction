@@ -6,3 +6,4 @@ scoreboard players set @s elementalWindTimer 51
 scoreboard players remove @s elementalBar 300
 #give the elytra
 item replace entity @s armor.chest with elytra[unbreakable={show_in_tooltip:false}] 1
+scoreboard players reset @s reset
