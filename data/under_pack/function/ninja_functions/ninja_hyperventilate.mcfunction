@@ -14,4 +14,4 @@ effect give @s speed 3 1 false
 scoreboard players reset @s reset
 
 #cooldowns
-scoreboard players set @s ability3 0
+scoreboard players set @s ability3 300

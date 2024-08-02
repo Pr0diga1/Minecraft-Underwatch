@@ -64,5 +64,5 @@ kill @e[tag=ninjaStand3]
 scoreboard players reset @s reset
 
 #cooldowns
-scoreboard players set @s ability2 0
-item replace entity @s hotbar.1 with potato[custom_name='{"color":"blue","text":"Shuriken Throw"}',unbreakable={},custom_model_data=15,custom_data={ninjaToss:1b}] 9
+scoreboard players set @s ability2 180
+item replace entity @s hotbar.1 with barrier[custom_name='{"color":"blue","text":"Shuriken Throw"}',unbreakable={},custom_model_data=15,custom_data={ninjaToss:1b}] 9

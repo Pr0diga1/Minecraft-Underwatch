@@ -10,4 +10,5 @@ execute at @s anchored eyes positioned ^ ^ ^ anchored feet run function under_pa
 scoreboard players reset @s reset
 
 #cooldowns
+scoreboard players reset @s ninjadashbufferbuffer
 scoreboard players set @s ability1 0

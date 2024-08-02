@@ -1,0 +1,2 @@
+$execute if entity @s[team=uRed] run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"$(red)%","color":"blue"}]
+$execute if entity @s[team=uBlue] run title @s actionbar ["",{"text":"Dash: ","color":"dark_purple"},{"text":"$(blue)%","color":"blue"}]

@@ -103,6 +103,7 @@ scoreboard players set TheNumberTwo constant 2
 scoreboard players set TheNumberZero constant 0
 scoreboard players set everyOther constant 1
 scoreboard players set minusOne constant -1
+scoreboard players set 8 constant 8
 scoreboard players set 4 num 4
 scoreboard players set 40 num 40
 
@@ -207,6 +208,8 @@ scoreboard objectives add ninjaMotionZ dummy
 scoreboard objectives add ninjaRay dummy
 scoreboard objectives add ninjaUltActive dummy
 scoreboard objectives add ninjaUltTiming dummy
+scoreboard objectives add ninjadashbuffer dummy
+scoreboard objectives add ninjadashbufferbuffer dummy
 
 #paladin
 scoreboard objectives add paladinIsBlocking dummy
