@@ -7,7 +7,7 @@ item replace entity @s hotbar.0 with ender_eye[custom_name='{"color":"white","te
 item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"color":"gold","text":"Selfish Prayer"}',custom_model_data=44,custom_data={knightheal:1b}] 1
 
 #grenade
-item replace entity @s hotbar.2 with wind_charge[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:1,operation:"add_value"}],custom_name='{"color":"dark_green","text":"Holy Hand Grenade"}',custom_model_data=1,custom_data={knightbomb:1b}] 2
+item replace entity @s hotbar.2 with wind_charge[custom_name='{"color":"dark_green","text":"Holy Hand Grenade"}',custom_model_data=1,custom_data={knightbomb:1b}] 2
 
 #armor
 item replace entity @s armor.chest with chainmail_chestplate[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{id:"armor",type:"generic.max_health",amount:12,operation:"add_value"}],show_in_tooltip:false}] 1

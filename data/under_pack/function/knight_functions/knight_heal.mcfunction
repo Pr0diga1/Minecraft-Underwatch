@@ -4,6 +4,6 @@ effect give @s minecraft:regeneration 3 3 true
 execute at @s run particle minecraft:dust{color:[0.953,0.431,1.0],scale:1} ~ ~ ~ .5 1 .5 .1 100 force @a
 
 execute at @s run playsound minecraft:entity.allay.ambient_without_item master @a[distance=..8]
-scoreboard players set @s movement 0
-item replace entity @s hotbar.1 with glistering_melon_slice[custom_model_data=1] 17
+scoreboard players set @s movement 320
+item replace entity @s hotbar.1 with barrier[custom_name='"Heal on Cooldown"',custom_model_data=1] 16
 
