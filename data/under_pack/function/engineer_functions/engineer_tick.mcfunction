@@ -50,6 +50,13 @@ execute if score @s[team=uBlue] engineerTurretDuration matches 1.. run function 
 execute as @s[team=uRed] as @a[team=uRed,predicate=under_pack:engi_speed_check] at @s run particle dust{color:[1,0,0],scale:1} ~ ~1 ~ 0.3 0.6 0.3 0 12 force @s
 execute as @s[team=uBlue] as @a[team=uBlue,predicate=under_pack:engi_speed_check] at @s run particle dust{color:[1,0,0],scale:1} ~ ~1 ~ 0.3 0.6 0.3 0 12 force @s
 
+#runs the magnet tick
+execute if entity @s[team=uRed] if entity @a[team=uBlue,tag=magneticred] if score red engineermagnet matches 2.. run function under_pack:engineer_functions/engineer_magnet_tick_red
+execute if entity @s[team=uBlue] if entity @a[team=uRed,tag=magneticblue] if score blue engineermagnet matches 2.. run function under_pack:engineer_functions/engineer_magnet_tick_blue
+
+#magnet reset detection
+execute if entity @s[nbt={Inventory:[{Slot:7b,components:{"minecraft:custom_data":{enginemag:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{enginemag:1b}}}},scores={reset=1..}] as @s run function under_pack:engineer_functions/engineer_magnet_reset
+
 function under_pack:engineer_functions/engineer_cooldown
 
 #set arrow damage

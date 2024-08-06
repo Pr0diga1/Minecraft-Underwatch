@@ -1,0 +1,5 @@
+damage @s 8 player_attack by @a[team=uRed,scores={class=3},limit=1]
+tag @s remove magneticred
+scoreboard players reset red engineermagnet
+scoreboard players set @a[team=uRed,scores={class=3},limit=1] ability4 200
+item replace entity @a[team=uRed,scores={class=3},limit=1] hotbar.7 with barrier 10

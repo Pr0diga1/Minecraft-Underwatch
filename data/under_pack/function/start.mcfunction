@@ -184,6 +184,7 @@ scoreboard objectives add engineerViagraTimer dummy
 scoreboard objectives add engineerViagraBuffer dummy
 scoreboard objectives add engineerWallEye dummy
 scoreboard objectives add engineer_damage_taken minecraft.custom:minecraft.damage_taken
+scoreboard objectives add engineermagnet dummy
 
 #knight
 scoreboard objectives add blockIsActive dummy

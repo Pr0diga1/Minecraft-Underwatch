@@ -19,6 +19,9 @@ item replace entity @s hotbar.4 with ender_eye[custom_name='{"color":"gray","tex
 #turret
 item replace entity @s hotbar.6 with ender_eye[custom_name='{"color":"dark_red","text":"Turret"}',custom_model_data=43,custom_data={enginedrug:1b}] 2
 
+#magnet
+item replace entity @s hotbar.7 with carrot_on_a_stick[custom_name='{"color":"red","text":"Magnet"}',custom_model_data=43,custom_data={enginemag:1b}]
+
 #armor
 item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},dyed_color=16777215] 1
 item replace entity @s armor.legs with diamond_leggings[unbreakable={show_in_tooltip:false}]

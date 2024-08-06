@@ -22,3 +22,8 @@ item replace entity @s hotbar.0 with iron_pickaxe[custom_name='{"bold":true,"col
 execute if entity @s[team=uRed] run item replace entity @s hotbar.2 with snowball[custom_name='{"color":"blue","text":"5000mg of Ibuprofen"}',custom_model_data=3,custom_data={enginedrug:1b,red:1b}] 1
 execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with snowball[custom_name='{"color":"blue","text":"5000mg of Ibuprofen"}',custom_model_data=3,custom_data={enginedrug:1b,blue:1b}] 1
 
+#magnet tags reset
+execute if entity @s[team=uRed] run tag @a[team=uBlue] remove magneticred
+execute if entity @s[team=uBlue] run tag @a[team=uRed] remove magneticblue
+execute if entity @s[team=uRed] run scoreboard players reset red engineermagnet 
+execute if entity @s[team=uBlue] run scoreboard players reset blue engineermagnet 

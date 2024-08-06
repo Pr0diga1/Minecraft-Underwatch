@@ -31,7 +31,10 @@ execute if score @s ability5 matches 160 run item replace entity @s hotbar.3 wit
 execute if score @s ability5 matches 180 run item replace entity @s hotbar.3 with potato 1
 execute if score @s ability5 matches ..199 run scoreboard players add @s ability5 1
 
-#wall ability6
+#magnet ability4
+item modify entity @s hotbar.7 under_pack:engineer/manget
+execute if score @s ability4 matches 1 run item replace entity @s hotbar.7 with carrot_on_a_stick[custom_name='{"color":"red","text":"Magnet"}',custom_model_data=43,custom_data={enginemag:1b}]
+execute if score @s ability4 matches 1.. run scoreboard players remove @s ability4 1
 
 #turret ability7
 execute if score @s ability7 matches 0 run item replace entity @s hotbar.6 with potato 15
