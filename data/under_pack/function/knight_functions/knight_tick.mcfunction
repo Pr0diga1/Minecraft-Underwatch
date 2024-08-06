@@ -22,5 +22,5 @@ kill @e[type=eye_of_ender]
 execute if score @s blockIsActive matches 0.. run scoreboard players remove @s blockIsActive 1
 execute if score @s blockIsActive matches 0 run function under_pack:knight_functions/knight_block_end
 
-execute if score @s blockIsActive matches -1..0 run item replace entity @s hotbar.0 with ender_eye[custom_name='{"color":"white","text":"Reliquary Blade"}',lore=['"Only given to those worthy"'],custom_model_data=1,custom_data={knightsword:1b},attribute_modifiers=[{id:"armor",type:"generic.attack_damage",amount:4,operation:"add_value",slot:"mainhand"},{id:"armor",type:"generic.attack_speed",amount:-2.9,operation:"add_value",slot:"mainhand"}]] 1
+execute if score @s blockIsActive matches -1..0 run item replace entity @s hotbar.0 with ender_eye[custom_name='{"color":"white","text":"Reliquary Blade"}',lore=['"Only given to those worthy"'],custom_model_data=1,custom_data={knightsword:1b},attribute_modifiers=[{id:"armor",type:"generic.attack_damage",amount:3,operation:"add_value",slot:"mainhand"},{id:"armor",type:"generic.attack_speed",amount:-2.9,operation:"add_value",slot:"mainhand"}]] 1
 

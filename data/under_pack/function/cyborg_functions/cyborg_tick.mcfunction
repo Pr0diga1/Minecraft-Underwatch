@@ -18,7 +18,7 @@ execute if score @s cyborgeat matches 1.. run effect clear @s saturation
 execute if score @s cyborgeat matches 1.. run scoreboard players remove @s cyborgeat 1
 
 #weaknessings
-execute if score @s cyborghand matches 1 run item replace entity @s hotbar.0 with iron_block[custom_name='{"bold":true,"color":"dark_gray","text":"Metal Hand"}',custom_data={Tags:["cyborgsword"]},attribute_modifiers=[{id:"damage",type:"generic.attack_damage",amount:3.5,operation:"add_value"},{id:"armor",type:"generic.attack_speed",amount:-3.5,operation:"add_value"}]] 1
+execute if score @s cyborghand matches 1 run item replace entity @s hotbar.0 with iron_block[custom_name='{"bold":true,"color":"dark_gray","text":"Metal Hand"}',custom_data={Tags:["cyborgsword"]},attribute_modifiers=[{id:"damage",type:"generic.attack_damage",amount:3.7,operation:"add_value"},{id:"armor",type:"generic.attack_speed",amount:-3.2,operation:"add_value"}]] 1
 execute if score @s cyborghand matches 1.. run scoreboard players remove @s cyborghand 1
 
 #lower caps
