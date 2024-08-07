@@ -1,7 +1,7 @@
 
 #red
 #create a marker that will follow the snowball
-execute if entity @e[nbt={Item:{components:{"minecraft:custom_data":{enginedrug:1b,red:1b}}}}] unless entity @e[tag=enginetrack,tag=red] at @e[nbt={Item:{tag:{enginedrug:1b,red:1b}}}] run summon marker ~ ~ ~ {Tags:["enginetrack","red"]} 
+execute if entity @e[nbt={Item:{components:{"minecraft:custom_data":{enginedrug:1b,red:1b}}}}] unless entity @e[tag=enginetrack,tag=red] at @e[nbt={Item:{components:{"minecraft:custom_data":{enginedrug:1b,red:1b}}}}] run summon marker ~ ~ ~ {Tags:["enginetrack","red"]} 
 
 #tp markers to snowballs every tick
 tp @e[type=marker,tag=enginetrack,tag=red] @e[type=snowball,limit=1,sort=nearest,nbt={Item:{components:{"minecraft:custom_data":{enginedrug:1b,red:1b}}}}]

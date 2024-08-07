@@ -3,7 +3,7 @@ scoreboard players set @s engineerTurretDuration 150
 #reset turreteye so the marker doesnt get exploded
 scoreboard players set @s engineerTurretEye 0
 #reset the ability cooldown
-scoreboard players set @s ability7 0
+scoreboard players set @s ability7 300
 
 #make the turret
 execute as @e[type=marker,tag=redEngineerTurret] at @s positioned ~-.25 ~ ~-.25 run tp @s ~ ~ ~

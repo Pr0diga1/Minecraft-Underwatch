@@ -5,7 +5,7 @@ scoreboard players set @s engineerWallBuffer 2
 execute if score @s[team=uBlue] engineerWallEye matches 2 at @s run summon marker ^ ^ ^2 {Tags:["enginewall","blue"]}
 execute if score @s[team=uRed] engineerWallEye matches 2 at @s run summon marker ^ ^ ^2 {Tags:["enginewall","red"]}
 execute if score @s[team=uBlue] engineerWallEye matches 2 at @s run data modify entity @e[tag=enginewall,limit=1,sort=nearest,tag=blue] Rotation set from entity @s Rotation
-execute if score @s[team=uBlue] engineerWallEye matches 2 at @s run data modify entity @e[tag=enginewall,limit=1,sort=nearest,tag=red] Rotation set from entity @s Rotation
+execute if score @s[team=uRed] engineerWallEye matches 2 at @s run data modify entity @e[tag=enginewall,limit=1,sort=nearest,tag=red] Rotation set from entity @s Rotation
 
 #wall blue
 execute if score @s[team=uBlue] engineerWallEye matches 2 at @e[tag=enginewall,type=marker,limit=1,sort=nearest,tag=blue] run summon falling_block ^-1 ^2 ^ {BlockState:{Name:"minecraft:iron_block"},NoGravity:1b,Time:520,Tags:["enginewall"],DropItem:0b,HurtEntities:0b}

@@ -1,9 +1,9 @@
-scoreboard players set @s ability1 0
+scoreboard players set @s ability1 1
 scoreboard players set @s ability2 0
-scoreboard players set @s ability3 0
-scoreboard players set @s ability4 219
+scoreboard players set @s ability3 1
+scoreboard players set @s ability4 1
+scoreboard players set @s ability7 1
 
-scoreboard players set @s ability7 299
 tag @a remove graved
 kill @e[tag=enginehole]
 
