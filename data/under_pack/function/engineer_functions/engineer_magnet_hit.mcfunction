@@ -1,4 +1,3 @@
-advancement revoke @s only under_pack:magnet
 tag @s[team=uRed] add magneticblue
 tag @s[team=uBlue] add magneticred
 execute if entity @s[team=uRed] run scoreboard players add blue engineermagnet 1
