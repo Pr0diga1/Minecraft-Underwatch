@@ -1,4 +1,4 @@
 execute as @a[tag=magneticblue,limit=1,sort=nearest] facing entity @a[tag=magneticblue,limit=1,sort=furthest] feet at @s run tp @s ^ ^ ^1
 execute as @a[tag=magneticblue,limit=1,sort=furthest] facing entity @a[tag=magneticblue,limit=1,sort=nearest] feet at @s run tp @s ^ ^ ^1
-execute as @a[tag=magneticblue,limit=1,sort=furthest] at @s if entity @a[tag=magneticblue,limit=1,sort=nearest,distance=..1] run function under_pack:engineer_functions/engineer_magnet_clash_blue
-execute as @a[tag=magneticblue,limit=1,sort=nearest] at @s if entity @a[tag=magneticblue,limit=1,sort=furthest,distance=..1] run function under_pack:engineer_functions/engineer_magnet_clash_blue
+execute as @a[tag=magneticblue,limit=1,sort=furthest] at @s if entity @a[tag=magneticblue,limit=1,sort=furthest,dx=0] run function under_pack:engineer_functions/engineer_magnet_clash_blue
+execute as @a[tag=magneticblue,limit=1,sort=nearest] at @s if entity @a[tag=magneticblue,limit=1,sort=nearest,dx=0] run function under_pack:engineer_functions/engineer_magnet_clash_blue
