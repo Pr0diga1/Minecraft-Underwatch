@@ -27,12 +27,12 @@ item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_
 item replace entity @s armor.legs with diamond_leggings[unbreakable={show_in_tooltip:false}]
 item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}},attribute_modifiers=[{id:"armor",type:"generic.max_health",amount:-4,operation:"add_value",slot:"feet"},{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}]] 1
 
-scoreboard players set @s ability1 179
+scoreboard players set @s ability1 1
 scoreboard players set @s ability2 0
-scoreboard players set @s ability3 179
-scoreboard players set @s ability4 219
-scoreboard players set @s ability5 199
-scoreboard players set @s ability7 299
+scoreboard players set @s ability3 1
+scoreboard players set @s ability5 1
+scoreboard players set @s ability4 1
+scoreboard players set @s ability7 1
 
 experience set @s 100 levels
 experience set @s 742 points
