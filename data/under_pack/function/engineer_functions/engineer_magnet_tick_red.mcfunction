@@ -1,4 +1,4 @@
-execute as @a[tag=magneticred,limit=1,sort=nearest] facing entity @a[tag=magneticred,limit=1,sort=furthest] feet at @s run tp @s ^ ^ ^1
-execute as @a[tag=magneticred,limit=1,sort=furthest] facing entity @a[tag=magneticred,limit=1,sort=nearest] feet at @s run tp @s ^ ^ ^1
-execute as @a[tag=magneticred,limit=1,sort=furthest] at @s if entity @a[tag=magneticred,limit=1,sort=furthest,dx=0] run function under_pack:engineer_functions/engineer_magnet_clash_red
-execute as @a[tag=magneticred,limit=1,sort=nearest] at @s if entity @a[tag=magneticred,limit=1,sort=nearest,dx=0] run function under_pack:engineer_functions/engineer_magnet_clash_red
+execute as @a[tag=magneticred,limit=1,sort=nearest] at @s facing entity @a[tag=magneticred,limit=1,sort=furthest] feet run tp @s ^ ^ ^1
+execute as @a[tag=magneticred,limit=1,sort=furthest] at @s facing entity @a[tag=magneticred,limit=1,sort=nearest] feet run tp @s ^ ^ ^1
+execute as @a[tag=magneticred,limit=1,sort=furthest] at @s if entity @a[tag=magneticred,limit=1,sort=furthest,distance=..1] run function under_pack:engineer_functions/engineer_magnet_clash_red
+execute as @a[tag=magneticred,limit=1,sort=nearest] at @s if entity @a[tag=magneticred,limit=1,sort=nearest,distance=..1] run function under_pack:engineer_functions/engineer_magnet_clash_red
