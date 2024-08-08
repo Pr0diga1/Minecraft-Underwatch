@@ -17,8 +17,8 @@ scoreboard players set @s ninjaHyperventilate 0
 
 #cooldown
 scoreboard players set @s ability1 199
-scoreboard players set @s ability2 179
-scoreboard players set @s ability3 299
+scoreboard players set @s ability2 1
+scoreboard players set @s ability3 1
 
 tag @a remove dashing
 tag @s remove ninjaDashResist
