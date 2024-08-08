@@ -7,13 +7,9 @@ execute as @s[nbt={Inventory:[{Slot:2b,components:{"minecraft:custom_data":{ninj
 
 #reset reset
 scoreboard players set @s reset 0
-#add to tick tracker
-scoreboard players add @s ultTicks 1
 
-#arrow velo setting
-execute as @e[tag=ninjaArrow1,type=arrow] run function under_pack:ninja_functions/ninja_toss_tick
-execute as @e[tag=ninjaArrow2,type=arrow] run function under_pack:ninja_functions/ninja_toss_tick
-execute as @e[tag=ninjaArrow3,type=arrow] run function under_pack:ninja_functions/ninja_toss_tick
+execute as @e[type=arrow,tag=!tossMoved,tag=nared] at @s rotated as @a[team=uRed,scores={class=6},limit=1,sort=nearest] run function under_pack:ninja_functions/ninja_toss_velo
+execute as @e[type=arrow,tag=!tossMoved,tag=nablue] at @s rotated as @a[team=uBlue,scores={class=6},limit=1,sort=nearest] run function under_pack:ninja_functions/ninja_toss_velo
 
 #hyperventilate ability1
 execute if score @s ninjaHyperventilate matches 1.. run function under_pack:ninja_functions/ninja_hyperventilate_tick
