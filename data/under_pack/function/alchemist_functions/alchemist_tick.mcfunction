@@ -14,7 +14,7 @@ execute as @e[tag=healing,type=marker] at @s run function under_pack:alchemist_f
 
 ## Cooldowns
 # Cooldown checks
-execute unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:lingering_potion",Count:2b}]}] if entity @s[tag=!reload_main] run function under_pack:alchemist_functions/alchemist_reload_main
+execute unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:lingering_potion",count:2}]}] if entity @s[tag=!reload_main] run function under_pack:alchemist_functions/alchemist_reload_main
 execute unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:lingering_potion"}]}] if entity @s[tag=!reload_utility] run function under_pack:alchemist_functions/alchemist_reload_utility
 execute unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:lingering_potion"}]}] if entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/alchemist_telepot_cooldown
 # Reload main's cooldown
