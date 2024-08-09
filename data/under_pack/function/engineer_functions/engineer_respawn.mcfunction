@@ -8,7 +8,6 @@ scoreboard players set @s ability7 1
 tag @a remove graved
 kill @e[tag=enginehole]
 
-function under_pack:engineer_functions/engineer_turret_destroy
 scoreboard players set @s engineerTurretDuration 0
 
 kill @e[tag=enginetrack] 

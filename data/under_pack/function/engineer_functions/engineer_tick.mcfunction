@@ -56,6 +56,8 @@ execute if entity @s[team=uBlue] if entity @a[team=uRed,tag=magneticblue] if sco
 
 #magnet reset detection
 execute if entity @s[nbt={Inventory:[{Slot:7b,components:{"minecraft:custom_data":{enginemag:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{enginemag:1b}}}},scores={reset=1..}] as @s run function under_pack:engineer_functions/engineer_magnet_reset
+execute if entity @s[team=uRed] if entity @a[team=uBlue,gamemode=spectator,tag=magneticred] run function under_pack:engineer_functions/engineer_magnet_reset
+execute if entity @s[team=uBlue] if entity @a[team=uRed,gamemode=spectator,tag=magneticblue] run function under_pack:engineer_functions/engineer_magnet_reset
 
 function under_pack:engineer_functions/engineer_cooldown
 
