@@ -1,12 +1,12 @@
 #healies
 #function under_pack:engineer_functions/engineer_heal
-execute if entity @e[nbt={Item:{components:{"minecraft:custom_data":{enginedrug:1b,red:1b}}}}] run function under_pack:engineer_functions/engineer_heal_red
-execute if entity @e[nbt={Item:{components:{"minecraft:custom_data":{enginedrug:1b,blue:1b}}}}] run function under_pack:engineer_functions/engineer_heal_blue
+execute as @s[team=uRed] if entity @e[nbt={Item:{components:{"minecraft:custom_data":{enginedrug:1b,red:1b}}}}] run function under_pack:engineer_functions/engineer_heal_red
+execute as @s[team=uBlue] if entity @e[nbt={Item:{components:{"minecraft:custom_data":{enginedrug:1b,blue:1b}}}}] run function under_pack:engineer_functions/engineer_heal_blue
 
 execute if score @s engineerhealbuffer matches 1.. run scoreboard players remove @s engineerhealbuffer 1
 
-execute if score @s[team=uRed] engineerhealbuffer matches 1 run function under_pack:engineer_functions/engineer_heal_burst_red with storage engineer red
-execute if score @s[team=uBlue] engineerhealbuffer matches 1 run function under_pack:engineer_functions/engineer_heal_burst_blue with storage engineer blue
+execute as @s[team=uRed] if score @s engineerhealbuffer matches 1 run function under_pack:engineer_functions/engineer_heal_burst_red with storage engineer red
+execute as @s[team=uBlue] if score @s engineerhealbuffer matches 1 run function under_pack:engineer_functions/engineer_heal_burst_blue with storage engineer blue
 
 kill @e[type=item,nbt={Item:{id:"minecraft:snowball",count:1,components:{"minecraft:custom_data":{enginedrug:1b}}}}]
 experience set @s 100 levels
