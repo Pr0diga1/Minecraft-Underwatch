@@ -8,7 +8,6 @@ execute if score @s engineerhealbuffer matches 1.. run scoreboard players remove
 execute as @s[team=uRed] if score @s engineerhealbuffer matches 1 run function under_pack:engineer_functions/engineer_heal_burst_red with storage engineer red
 execute as @s[team=uBlue] if score @s engineerhealbuffer matches 1 run function under_pack:engineer_functions/engineer_heal_burst_blue with storage engineer blue
 
-kill @e[type=item,nbt={Item:{id:"minecraft:snowball",count:1,components:{"minecraft:custom_data":{enginedrug:1b}}}}]
 experience set @s 100 levels
 
 #eyes
