@@ -1,7 +1,6 @@
 #detect carrot on stick
 execute as @s[nbt={Inventory:[{Slot:0b,components:{"minecraft:custom_data":{wizardWand:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{wizardWand:1b}}}},scores={reset=1..}] if score @s ability3 matches 50.. run function under_pack:wizard_functions/wizard_spell
-execute as @s[nbt={Inventory:[{Slot:3b,components:{"minecraft:custom_data":{wizardClaws:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{wizardClaws:1b}}}},scores={reset=1..}] if score @s ability2 matches 300.. run function under_pack:wizard_functions/wizard_claws
-execute as @s[nbt={Inventory:[{Slot:2b,components:{"minecraft:custom_data":{wizardGay:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{wizardGay:1b}}}},scores={reset=1..}] if score @s ability1 matches 300.. run function under_pack:wizard_functions/wizard_rainbow
+execute as @s[nbt={Inventory:[{Slot:2b,components:{"minecraft:custom_data":{wizardClaws:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{wizardClaws:1b}}}},scores={reset=1..}] if score @s ability2 matches 0 run function under_pack:wizard_functions/wizard_claws
 
 #detection for the split
 execute as @s[team=uRed,nbt={Inventory:[{Slot:0b,components:{"minecraft:custom_data":{wizardWand:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{wizardWand:1b}}}},scores={reset=1..}] as @e[type=marker,tag=redWizardSpell] at @s run function under_pack:wizard_functions/wizard_spell_split_red
@@ -44,10 +43,6 @@ execute as @s[team=uBlue] as @e[type=marker,tag=blueWizardSpell] at @s run funct
 #move the little spells once per tick
 execute as @s[team=uRed] as @e[type=marker,tag=redWizardSpellSmall] at @s run function under_pack:wizard_functions/wizard_spell_small_tick
 execute as @s[team=uBlue] as @e[type=marker,tag=blueWizardSpellSmall] at @s run function under_pack:wizard_functions/wizard_spell_small_tick
-
-#move the rainbow spells once per tick
-execute as @s[team=uRed] as @e[type=marker,tag=redWizardRainbow] at @s run function under_pack:wizard_functions/wizard_rainbow_tick
-execute as @s[team=uBlue] as @e[type=marker,tag=blueWizardRainbow] at @s run function under_pack:wizard_functions/wizard_rainbow_tick
 
 #counts down for people who have been hit by spells
 execute as @s[team=uBlue] run scoreboard players remove @a[scores={wizardBlueHit=1..}] wizardBlueHit 1

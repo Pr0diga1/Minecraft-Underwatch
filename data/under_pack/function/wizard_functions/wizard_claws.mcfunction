@@ -22,4 +22,5 @@ kill @e[type=marker,tag=wizardClaw]
 execute as @e[type=evoker_fangs,tag=red] at @s run data modify entity @s Owner set from entity @a[team=uRed,scores={class=10},limit=1,sort=nearest] UUID
 execute as @e[type=evoker_fangs,tag=blue] at @s run data modify entity @s Owner set from entity @a[team=uBlue,scores={class=10},limit=1,sort=nearest] UUID
 
-scoreboard players set @s ability2 0
+scoreboard players set @s ability2 300
+item replace entity @s hotbar.2 with barrier[custom_name='"Claws of Rach\'ivalishize on Cooldown"',custom_model_data=59] 15

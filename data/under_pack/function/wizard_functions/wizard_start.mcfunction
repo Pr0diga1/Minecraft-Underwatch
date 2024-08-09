@@ -7,16 +7,12 @@ item replace entity @s[team=uBlue] hotbar.0 with carrot_on_a_stick[custom_name='
 #fireball
 item replace entity @s hotbar.1 with ender_eye[custom_name='{"bold":true,"color":"gold","italic":true,"text":"Become Fire"}',lore=['"\'fireball\' - Pitbull"'],custom_data={wizardFire:1b}] 1
 
-#multishot
-#expecto homoconversus
-item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name='[{"color":"red","text":"E"},{"color":"gold","text":"x"},{"color":"yellow","text":"p"},{"color":"green","text":"e"},{"color":"dark_aqua","text":"c"},{"color":"blue","text":"t"},{"color":"dark_purple","text":"o "},{"color":"red","text":"h"},{"color":"gold","text":"o"},{"color":"yellow","text":"m"},{"color":"green","text":"o"},{"color":"dark_aqua","text":"c"},{"color":"blue","text":"o"},{"color":"dark_purple","text":"n"},{"color":"red","text":"v"},{"color":"gold","text":"e"},{"color":"yellow","text":"r"},{"color":"green","text":"s"},{"color":"dark_aqua","text":"u"},{"color":"blue","text":"s"}]',unbreakable={},custom_model_data=48,custom_data={wizardGay:1b}] 1
-
 #evoker fang shot
 #the claws of rach'ivalishize
-item replace entity @s hotbar.3 with carrot_on_a_stick[custom_name='{"color":"dark_green","text":"The Claws of Rach\'ivalishize"}',unbreakable={},custom_model_data=47,custom_data={wizardClaws:1b}] 1
+item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name='{"color":"dark_green","text":"The Claws of Rach\'ivalishize"}',unbreakable={},custom_model_data=47,custom_data={wizardClaws:1b}] 1
 
 #curse
-item replace entity @s hotbar.4 with ender_eye[custom_name='[{"bold":false,"color":"black","italic":false,"obfuscated":true,"strikethrough":false,"text":"fgh","underlined":false},{"bold":true,"color":"black","italic":true,"obfuscated":false,"strikethrough":false,"text":"Curse","underlined":false},{"bold":false,"italic":false,"obfuscated":true,"strikethrough":false,"text":"fgh"}]',custom_model_data=2] 1
+item replace entity @s hotbar.3 with ender_eye[custom_name='[{"bold":false,"color":"black","italic":false,"obfuscated":true,"strikethrough":false,"text":"fgh","underlined":false},{"bold":true,"color":"black","italic":true,"obfuscated":false,"strikethrough":false,"text":"Curse","underlined":false},{"bold":false,"italic":false,"obfuscated":true,"strikethrough":false,"text":"fgh"}]',custom_model_data=2] 1
 
 #armor
 item replace entity @s armor.head with leather_helmet[unbreakable={show_in_tooltip:false},dyed_color=16777215] 1

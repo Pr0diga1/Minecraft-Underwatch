@@ -20,7 +20,7 @@ item replace entity @s hotbar.4 with ender_eye[custom_name='[{"bold":false,"colo
 scoreboard players set @s movement 0
 scoreboard players set @s wizardFireball 3
 scoreboard players set @s ability1 299
-scoreboard players set @s ability2 299
+scoreboard players set @s ability2 1
 scoreboard players set @s ability3 50
 scoreboard players set @s ability4 59
 scoreboard players set @s ability5 0
