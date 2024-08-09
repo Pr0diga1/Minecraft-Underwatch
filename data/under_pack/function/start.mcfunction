@@ -103,6 +103,7 @@ scoreboard players set TheNumberTwo constant 2
 scoreboard players set TheNumberZero constant 0
 scoreboard players set everyOther constant 1
 scoreboard players set minusOne constant -1
+scoreboard players set 1 constant 1
 scoreboard players set 8 constant 8
 scoreboard players set 4 num 4
 scoreboard players set 40 num 40
@@ -278,9 +279,9 @@ scoreboard objectives add mermaidburst dummy
 #cyborg
 scoreboard objectives add cyborgcap dummy
 scoreboard objectives add cyborgtimer dummy
-scoreboard objectives add cyborgeat dummy
-scoreboard objectives add cyborghand dummy
+scoreboard objectives add cyborgsizebuffer dummy
 scoreboard objectives add cyborghp dummy
+scoreboard objectives add cyborgsize dummy
 
 #dark soul
 scoreboard objectives add slamTimer dummy
