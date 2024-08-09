@@ -17,7 +17,7 @@ item replace entity @s hotbar.3 with ender_eye[custom_name='{"color":"dark_red",
 item replace entity @s hotbar.4 with ender_eye[custom_name='{"color":"gray","text":"Wall"}',custom_model_data=43,custom_data={enginewall:1b}] 2
 
 #turret
-item replace entity @s hotbar.6 with ender_eye[custom_name='{"color":"dark_red","text":"Turret"}',custom_model_data=43,custom_data={enginedrug:1b}] 2
+item replace entity @s hotbar.6 with ender_eye[custom_name='{"color":"dark_red","text":"Thingamabob"}',custom_model_data=43,custom_data={engineburst:1b}] 2
 
 #magnet
 item replace entity @s hotbar.7 with carrot_on_a_stick[custom_name='{"color":"red","text":"Magnet"}',custom_model_data=43,custom_data={enginemag:1b}]
