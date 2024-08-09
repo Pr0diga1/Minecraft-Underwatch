@@ -2,10 +2,10 @@
 tag @s remove lumberDrop
 
 #damage
-execute as @s[team=uRed] as @a[team=uBlue,distance=..1.5] run damage @s 11 player_attack by @a[scores={class=5},limit=1,team=uRed]
-execute as @s[team=uRed] as @a[team=uBlue,distance=1.501..3] run damage @s 7 player_attack by @a[scores={class=5},limit=1,team=uRed]
-execute as @s[team=uBlue] as @a[team=uRed,distance=..1.5] run damage @s 11 player_attack by @a[scores={class=5},limit=1,team=uBlue]
-execute as @s[team=uBlue] as @a[team=uRed,distance=1.501..3] run damage @s 7 player_attack by @a[scores={class=5},limit=1,team=uBlue]
+execute as @s[team=uRed] as @a[team=uBlue,distance=..1.5] run damage @s 12 player_attack by @a[scores={class=5},limit=1,team=uRed]
+execute as @s[team=uRed] as @a[team=uBlue,distance=1.501..3] run damage @s 8 player_attack by @a[scores={class=5},limit=1,team=uRed]
+execute as @s[team=uBlue] as @a[team=uRed,distance=..1.5] run damage @s 12 player_attack by @a[scores={class=5},limit=1,team=uBlue]
+execute as @s[team=uBlue] as @a[team=uRed,distance=1.501..3] run damage @s 8 player_attack by @a[scores={class=5},limit=1,team=uBlue]
 
 #sound
 execute at @s run playsound entity.player.attack.crit master @a ~ ~ ~
