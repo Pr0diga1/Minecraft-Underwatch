@@ -1,5 +1,5 @@
 #each player runs their class's tick function as long as they are not respawning or in their spawnpoint
-execute as @a[tag=gazebo] unless entity @s[tag=gazebo_dead] unless entity @s[x=617,y=43,z=-12,dx=14,dz=8,dy=5] unless entity @s[x=533,y=43,z=-5,dx=-14,dz=-8,dy=5] run function under_pack:general_functions/general_classloop
+execute as @a[tag=gazebo] unless entity @s[tag=gazebo_dead] run function under_pack:general_functions/general_classloop
 
 #is a player on point
 execute as @a[tag=gazebo] if entity @s[x=571,y=43,z=-13,dx=9,dy=2,dz=9,tag=gazebo,gamemode=adventure] run scoreboard players set @s onPoint 1
@@ -75,18 +75,18 @@ execute as @a[tag=gazebo,tag=gazebo_dead] run title @s actionbar ["",{"text":"Re
 
 #resets players when they have been dead for 10 seconds
 #sets them to adventure
-execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 280.. run gamemode adventure @s
+execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 240.. run gamemode adventure @s
 #tp them to their spanws
-execute as @a[tag=gazebo,tag=gazebo_dead,team=uRed] if score @s deathTimer matches 280.. run tp @s 629 43 -9
-execute as @a[tag=gazebo,tag=gazebo_dead,team=uBlue] if score @s deathTimer matches 280.. run tp @s 522 43 -8
+execute as @a[tag=gazebo,tag=gazebo_dead,team=uRed] if score @s deathTimer matches 240.. run tp @s 629 43 -9
+execute as @a[tag=gazebo,tag=gazebo_dead,team=uBlue] if score @s deathTimer matches 240.. run tp @s 522 43 -8
 #tells them they respawned 
-execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 280.. run title @s actionbar {"text":"Respawned","color":"gold"}
+execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 240.. run title @s actionbar {"text":"Respawned","color":"gold"}
 #run the general respawn
-execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 280.. run function under_pack:general_functions/general_respawn
+execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 240.. run function under_pack:general_functions/general_respawn
 #remove dead tag
-execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 280.. run tag @s remove gazebo_dead
+execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 240.. run tag @s remove gazebo_dead
 #reset their deathtimer
-execute as @a[tag=gazebo] if score @s deathTimer matches 280.. run scoreboard players set @s deathTimer 0
+execute as @a[tag=gazebo] if score @s deathTimer matches 240.. run scoreboard players set @s deathTimer 0
 
 #runs the score tracker if a team wins a round
 execute if score red_gazebo points matches 100 run function under_pack:gazebo_functions/gazebo_tally

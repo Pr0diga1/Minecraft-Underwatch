@@ -50,8 +50,8 @@ scoreboard players set DeathBuffer constant 14
 #tps players to their spawns and sets their spawnpoints
 tp @a[tag=gazebo,team=uRed] 629 43 -9
 tp @a[tag=gazebo,team=uBlue] 522 43 -8
-spawnpoint @a[tag=gazebo,team=uRed] 629 43 -9
-spawnpoint @a[tag=gazebo,team=uBlue] 522 43 -8
+spawnpoint @a[tag=gazebo,team=uRed] 658 43 -9
+spawnpoint @a[tag=gazebo,team=uBlue] 493 43 -8
 
 #gazebo swag stores if the game is active or not, so it can be known if the tick should be run
 scoreboard players set gazebo swag 1
