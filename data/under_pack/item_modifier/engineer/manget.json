@@ -1,5 +1,70 @@
 [
+	{
+		"function": "minecraft:set_count",
+		"count": 14,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 279
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_count",
+		"count": 13,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 259
+				}
+			}
+		]
+	},
     {
+		"function": "minecraft:set_count",
+		"count": 12,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 239
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 11,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 219
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 10,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability1": 199
+				}
+			}
+		]
+	},
+	{
 		"function": "minecraft:set_count",
 		"count": 9,
 		"conditions": [

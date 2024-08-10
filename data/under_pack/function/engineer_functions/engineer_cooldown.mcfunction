@@ -16,7 +16,7 @@ execute if score @s ability3 matches 1 run item replace entity @s hotbar.1 with 
 execute if score @s ability3 matches 1..161 run scoreboard players remove @s ability3 1
 
 #viagra ability5
-execute if score @s ability5 matches 200 run item replace entity @s hotbar.3 with potato 10
+execute if score @s ability5 matches 200 run item replace entity @s hotbar.3 with barrier[custom_name='{"text":"Viagra on cooldown"}'] 10
 item modify entity @s hotbar.3 under_pack:engineer/viagra
 execute if score @s ability5 matches 1.. run scoreboard players remove @s ability5 1
 
