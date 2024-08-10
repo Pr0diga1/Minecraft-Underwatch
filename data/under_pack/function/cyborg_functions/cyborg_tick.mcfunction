@@ -13,7 +13,6 @@ execute if score @s cyborgsizebuffer matches 1.. run scoreboard players remove @
 execute if score @s cyborgsizebuffer matches 0 if score @s cyborgsize matches ..99 run function under_pack:cyborg_functions/cyborg_size_reset
 
 #haytchpeeings
-execute if score @s cyborghp matches 1 run attribute @s generic.max_health base set 20
 execute if score @s cyborghp matches 1 run attribute @s generic.attack_damage base set 1
 execute if score @s cyborghp matches 1.. run scoreboard players remove @s cyborghp 1
 
