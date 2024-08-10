@@ -10,7 +10,7 @@ item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"color":"go
 item replace entity @s hotbar.2 with wind_charge[custom_name='{"color":"dark_green","text":"Holy Hand Grenade"}',custom_model_data=1,custom_data={knightbomb:1b}] 1
 
 #armor
-item replace entity @s armor.chest with chainmail_chestplate[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{id:"armor",type:"generic.max_health",amount:12,operation:"add_value"}],show_in_tooltip:false}] 1
+item replace entity @s armor.chest with chainmail_chestplate[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{id:"armor",type:"generic.max_health",amount:10,operation:"add_value"}],show_in_tooltip:false}] 1
 item replace entity @s armor.legs with iron_leggings[unbreakable={show_in_tooltip:false},attribute_modifiers=[{id:"scale",type:"generic.scale",amount:0.3,operation:"add_value",slot:"any"}]]
 item replace entity @s armor.feet with iron_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
 

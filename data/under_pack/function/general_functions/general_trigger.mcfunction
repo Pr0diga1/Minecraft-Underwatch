@@ -18,6 +18,8 @@ execute as @a[scores={blue=1..}] at @s run function under_pack:trigger_functions
 scoreboard players enable @a blue
 execute as @a[scores={leave=1..}] at @s run function under_pack:trigger_functions/leave
 scoreboard players enable @a leave
+execute as @a[scores={book=1..}] at @s run function under_pack:general_functions/general_getbook
+scoreboard players enable @a book
 
 #trigger commands for each of the classes
 execute as @a[scores={alchemist=1..}] at @s run function under_pack:alchemist_functions/alchemist_trigger
