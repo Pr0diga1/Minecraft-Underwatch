@@ -52,3 +52,5 @@ execute as @a[scores={gun_man=1..}] at @s run function under_pack:gun_man_functi
 scoreboard players enable @a gun_man
 execute as @a[scores={cyborg=1..}] at @s run function under_pack:cyborg_functions/cyborg_trigger
 scoreboard players enable @a cyborg
+execute as @a[scores={microwave=1..}] at @s run function under_pack:microwave_functions/trigger
+scoreboard players enable @a microwave

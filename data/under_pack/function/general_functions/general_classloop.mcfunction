@@ -13,3 +13,4 @@ execute as @s[scores={class=12}] run function under_pack:elemental_functions/ele
 execute as @s[scores={class=13}] at @s run function under_pack:dark_soul_functions/tick
 execute as @s[scores={class=14}] run function under_pack:gun_man_functions/gun_tick
 execute as @s[scores={class=15}] run function under_pack:cyborg_functions/cyborg_tick
+execute as @s[scores={class=16}] at @s run function under_pack:microwave_functions/tick
