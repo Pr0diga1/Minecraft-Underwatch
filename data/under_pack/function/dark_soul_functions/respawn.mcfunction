@@ -15,6 +15,6 @@ experience set @s 0 levels
 item replace entity @s hotbar.2 with ender_eye[custom_name='{"bold":true,"color":"gold","italic":false,"text":"Estus Flask"}',custom_model_data=6,custom_data={estus:1b}] 5
 
 # Armor
-item replace entity @s armor.feet with leather_boots[enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}},attribute_modifiers=[{id:"armor",type:"generic.armor",amount:8,operation:"add_value"}],dyed_color=15128132] 1
+item replace entity @s armor.feet with leather_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}},attribute_modifiers=[{id:"armor",type:"generic.armor",amount:8,operation:"add_value"}],dyed_color=15128132] 1
 item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:false},attribute_modifiers=[{id:"armor",type:"generic.max_health",amount:4,operation:"add_value"}],dyed_color=15128132] 1
 item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},attribute_modifiers=[{id:"scale",type:"generic.scale",amount:0.3,operation:"add_value",slot:"any"}],dyed_color=15128132] 1

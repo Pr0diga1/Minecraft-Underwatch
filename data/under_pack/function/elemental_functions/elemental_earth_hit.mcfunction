@@ -1,6 +1,6 @@
 #kill the armor stand
-execute at @s[team=uRed] run kill @e[type=armor_stand,limit=1,sort=nearest,tag=blueElementalEarth]
-execute at @s[team=uBlue] run kill @e[type=armor_stand,limit=1,sort=nearest,tag=redElementalEarth]
+execute at @s[team=uRed] run kill @e[type=block_display,limit=1,sort=nearest,tag=blueElementalEarth]
+execute at @s[team=uBlue] run kill @e[type=block_display,limit=1,sort=nearest,tag=redElementalEarth]
 #start the timer
 scoreboard players set @s elementalEarthTimer 9
 
@@ -13,3 +13,5 @@ execute at @s run summon marker ~ ~ ~ {Tags:["elementalStun"]}
 execute at @s run particle dust{color:[0.4,0.4,0.4],scale:1} ~ ~ ~ 0.4 1 0.4 0 500 force
 #title
 title @s title {"text": "Stunned!","color": "gray"}
+
+item modify entity @s hotbar.3 under_pack:elemental/endglint
