@@ -2,7 +2,7 @@
 scoreboard players add @s elementalDistance 1
 
 #move the marker
-tp @s ^ ^ ^0.25
+tp @s ^ ^ ^0.15
 
 #kill the marker if its in a block or has existed for 4 seconds
 execute unless block ~ ~1.62 ~ #under_pack:non_solid run kill @s
