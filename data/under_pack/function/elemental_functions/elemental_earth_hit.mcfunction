@@ -13,5 +13,3 @@ execute at @s run summon marker ~ ~ ~ {Tags:["elementalStun"]}
 execute at @s run particle dust{color:[0.4,0.4,0.4],scale:1} ~ ~ ~ 0.4 1 0.4 0 500 force
 #title
 title @s title {"text": "Stunned!","color": "gray"}
-
-item modify entity @s hotbar.3 under_pack:elemental/endglint

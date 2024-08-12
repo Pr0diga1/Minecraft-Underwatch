@@ -7,5 +7,3 @@ scoreboard players remove @s elementalBar 300
 #give the elytra
 item replace entity @s armor.chest with elytra[unbreakable={show_in_tooltip:false}] 1
 scoreboard players reset @s reset
-
-item modify entity @s hotbar.1 under_pack:elemental/startglitnt
