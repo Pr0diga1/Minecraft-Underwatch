@@ -1,8 +1,8 @@
 #summon new arrow
-execute at @s[tag=blue] run summon arrow ~ ~ ~ {damage:2d,crit:0b,Tags:["sciBoltl","blue"],item:{id:"minecraft:tipped_arrow",components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:luck",amplifier:1b,duration:2,show_particles:0b}]}}}}
+execute at @s[tag=blue] run summon arrow ~ ~ ~ {damage:0.7d,crit:0b,Tags:["sciBoltl","blue"],item:{id:"minecraft:tipped_arrow",components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:luck",amplifier:1b,duration:2,show_particles:0b}]}}}}
 
 #summon arrow ~ ~ ~ {crit:0b,damage:2d,Tags:["sciBolt","blue"],CustomPotionEffects:[{Id:26,Amplifier:1b,Duration:2}]}
-execute at @s[tag=red] run summon arrow ~ ~ ~ {damage:2d,crit:0b,Tags:["sciBoltl","red"],item:{id:"minecraft:tipped_arrow",components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:luck",amplifier:1b,duration:2,show_particles:0b}]}}}}
+execute at @s[tag=red] run summon arrow ~ ~ ~ {damage:0.7d,crit:0b,Tags:["sciBoltl","red"],item:{id:"minecraft:tipped_arrow",components:{"minecraft:potion_contents":{custom_effects:[{id:"minecraft:luck",amplifier:1b,duration:2,show_particles:0b}]}}}}
 #summon arrow ~ ~ ~ {crit:0b,damage:2d,Tags:["sciBolt","red"],CustomPotionEffects:[{Id:26,Amplifier:1b,Duration:2}]}
 
 
