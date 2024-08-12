@@ -192,6 +192,7 @@ scoreboard objectives add engineerWallEye dummy
 scoreboard objectives add engineer_damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add engineermagnet dummy
 scoreboard objectives add engineerhealbuffer dummy
+scoreboard objectives add engineermagtimer dummy
 
 #knight
 scoreboard objectives add blockIsActive dummy
