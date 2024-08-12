@@ -6,7 +6,7 @@ execute if score hit mermaidRay matches 0 if entity @s[team=uRed] positioned ~ ~
 #add 1 to the distance
 scoreboard players add distance mermaidRay 1
 #particles
-execute if block ~ ~ ~ #under_pack:non_solid run particle bubble_pop ^ ^-.5 ^ 0.15 0.05 0.15 0 1
+execute if block ~ ~ ~ #under_pack:non_solid run particle bubble_pop ^ ^-.8 ^ 0.15 0.05 0.15 0 1
 
 #teleport
 
