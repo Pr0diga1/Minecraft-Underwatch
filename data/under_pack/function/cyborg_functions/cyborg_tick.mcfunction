@@ -18,9 +18,9 @@ execute if score @s cyborghp matches 1.. run scoreboard players remove @s cyborg
 
 #lower caps
 execute if score @s cyborgcap matches 1.. run scoreboard players add @s cyborgtimer 1
-execute if score @s cyborgtimer matches 7.. run scoreboard players remove @s cyborgcap 1
-execute if score @s cyborgtimer matches 7.. run experience add @s -1 levels
-execute if score @s cyborgtimer matches 7.. run scoreboard players set @s cyborgtimer 0
+execute if score @s cyborgtimer matches 6.. run scoreboard players remove @s cyborgcap 1
+execute if score @s cyborgtimer matches 6.. run experience add @s -1 levels
+execute if score @s cyborgtimer matches 6.. run scoreboard players set @s cyborgtimer 0
 
 
 scoreboard players reset @s reset
