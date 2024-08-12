@@ -1,7 +1,4 @@
 ## Passive abilities
-# Perma speed
-effect give @s speed 5 0 true
-
 #reset rogue capping for the tick
 scoreboard players set @s cantCap 0
 
