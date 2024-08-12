@@ -2,6 +2,8 @@
 function under_pack:mermaid_functions/mermaid_cooldown
 #carrot detection
 execute as @s if score @s mermaidburst matches 3.. if entity @s[nbt={Inventory:[{Slot:0b,components:{"minecraft:custom_data":{mermaidburst:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{mermaidburst:1b}}}},scores={reset=1..}] as @s run function under_pack:mermaid_functions/mermaid_burst
+execute if entity @s[nbt={Inventory:[{Slot:3b,components:{"minecraft:custom_data":{mermaiddive:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{mermaiddive:1b}}}},scores={reset=1..}] as @s run function under_pack:mermaid_functions/mermaid_dive
+
 #mist tick
 execute if score @s mermaidmistbuffer matches 1.. run scoreboard players remove @s mermaidmistbuffer 1
 execute if score @s mermaidmistbuffer matches 0 unless score @s mermaidmist matches 74.. run scoreboard players add @s mermaidmist 1
@@ -28,6 +30,12 @@ execute at @e[tag=mermaidtide] positioned ~ ~-.15 ~ run function under_pack:merm
 #kills the area effect cloud becuase before it detects and spawns a marker this makes it replace
 execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366143}}] run kill @s
 execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366144}}] run kill @s
+
+##diving
+execute at @s if score @s mermaiddive matches 1 run function under_pack:mermaid_functions/mermaid_undive
+execute if score @s mermaiddive matches 1.. run item modify entity @s hotbar.3 under_pack:mermaid/diving
+execute if score @s mermaiddive matches 1.. run scoreboard players remove @s mermaiddive 1
+execute at @s if score @s mermaiddive matches 1.. run particle minecraft:rain ~ ~ ~ .5 .5 .5 5 30
 
 ##mist stuffs 
 #detect when mist usage was stopped

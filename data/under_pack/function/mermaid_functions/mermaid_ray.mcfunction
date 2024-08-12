@@ -11,4 +11,4 @@ execute if block ~ ~ ~ #under_pack:non_solid run particle bubble_pop ^ ^-.5 ^ 0.
 #teleport
 
 #rerun command
-execute if score hit mermaidRay matches 0 if score distance mermaidRay matches ..59 positioned ^ ^ ^0.1 run function under_pack:mermaid_functions/mermaid_ray
+execute if score hit mermaidRay matches 0 if score distance mermaidRay matches ..80 positioned ^ ^ ^0.1 run function under_pack:mermaid_functions/mermaid_ray
