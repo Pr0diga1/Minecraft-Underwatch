@@ -16,6 +16,9 @@ execute as @s[team=uBlue,scores={wizardFireball=..0}] if entity @e[type=item,nbt
 #fireball
 execute as @s[team=uRed] as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",count:1,components:{"minecraft:custom_data":{wizardFire:1b}}}}] at @s on origin as @s[scores={wizardFireball=1..}] run function under_pack:wizard_functions/wizard_fireball_red
 execute as @s[team=uBlue] as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",count:1,components:{"minecraft:custom_data":{wizardFire:1b}}}}] at @s on origin as @s[scores={wizardFireball=1..}] run function under_pack:wizard_functions/wizard_fireball_blue
+#fireball
+execute as @s[team=uRed] as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",count:1,components:{"minecraft:custom_data":{wizardFire:1b}}}}] at @s on origin as @s[scores={wizardFireball=1..}] run function under_pack:wizard_functions/wizard_fireball_red
+execute as @s[team=uBlue] as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",count:1,components:{"minecraft:custom_data":{wizardFire:1b}}}}] at @s on origin as @s[scores={wizardFireball=1..}] run function under_pack:wizard_functions/wizard_fireball_blue
 execute as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",count:1,components:{"minecraft:custom_data":{wizardFire:1b}}}}] at @s on origin run give @s ender_eye[custom_name='{"bold":true,"color":"gold","italic":true,"text":"Become Fire"}',lore=['"\'fireball\' - Pitbull"'],custom_data={wizardFire:1b}] 1
 execute as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",count:1,components:{"minecraft:custom_data":{wizardFire:1b}}}}] run kill @s
 
@@ -27,8 +30,8 @@ execute as @s[nbt={Inventory:[{id:"minecraft:air"},{Slot:1b}]}] run item replace
 scoreboard players reset @s reset
 
 #fireball set its velo
-execute as @e[type=fireball,tag=!fireballMoved,tag=redWizardFireball] at @s rotated as @p[team=uRed] run function under_pack:wizard_functions/wizard_fireball_velo
-execute as @e[type=fireball,tag=!fireballMoved,tag=blueWizardFireball] at @s rotated as @p[team=uBlue] run function under_pack:wizard_functions/wizard_fireball_velo
+execute as @s[team=uRed] as @e[type=fireball,tag=!fireballMoved,tag=redWizardFireball] at @s rotated as @a[team=uRed,limit=1,sort=nearest,scores={class=10}] run function under_pack:wizard_functions/wizard_fireball_velo
+execute as @s[team=uBlue] as @e[type=fireball,tag=!fireballMoved,tag=blueWizardFireball] at @s rotated as @a[team=uBlue,limit=1,sort=nearest,scores={class=10}] run function under_pack:wizard_functions/wizard_fireball_velo
 
 #move the spells 3 times per tick
 execute as @s[team=uRed] as @e[type=marker,tag=redWizardSpell] at @s run function under_pack:wizard_functions/wizard_spell_big_tick

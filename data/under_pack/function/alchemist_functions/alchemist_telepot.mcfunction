@@ -1,4 +1,4 @@
-execute on origin run tp ~ ~ ~ 
+execute on origin rotated as @s run tp ~ ~ ~ 
 particle minecraft:dragon_breath ~ ~.3 ~ .3 .3 .3 .2 100 force @a
 
 # Remove tag

@@ -77,8 +77,8 @@ execute as @a[tag=gazebo,tag=gazebo_dead] run title @s actionbar ["",{"text":"Re
 #sets them to adventure
 execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 240.. run gamemode adventure @s
 #tp them to their spanws
-execute as @a[tag=gazebo,tag=gazebo_dead,team=uRed] if score @s deathTimer matches 240.. run tp @s 629 43 -9
-execute as @a[tag=gazebo,tag=gazebo_dead,team=uBlue] if score @s deathTimer matches 240.. run tp @s 522 43 -8
+execute as @a[tag=gazebo,tag=gazebo_dead,team=uRed] if score @s deathTimer matches 240.. run tp @s 658 43 -9
+execute as @a[tag=gazebo,tag=gazebo_dead,team=uBlue] if score @s deathTimer matches 240.. run tp @s 493 43 -8
 #tells them they respawned 
 execute as @a[tag=gazebo,tag=gazebo_dead] if score @s deathTimer matches 240.. run title @s actionbar {"text":"Respawned","color":"gold"}
 #run the general respawn

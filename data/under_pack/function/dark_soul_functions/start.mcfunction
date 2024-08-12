@@ -7,7 +7,9 @@ item replace entity @s hotbar.1 with dragon_head[custom_name='{"bold":true,"colo
 
 # Abilities
 scoreboard players set @s ability1 0
+scoreboard players set @s ability3 0
 scoreboard players set @s ultKills 0
+experience set @s 0 levels
 item replace entity @s hotbar.2 with ender_eye[custom_name='{"bold":true,"color":"gold","italic":false,"text":"Estus Flask"}',custom_model_data=6,custom_data={estus:1b}] 5
 
 # Armor
