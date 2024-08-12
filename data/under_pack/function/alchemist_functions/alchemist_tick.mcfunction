@@ -22,7 +22,7 @@ execute if entity @s[tag=reload_main] run scoreboard players remove @s ability1 
 execute if score @s ability1 matches ..1 unless entity @s[tag=!reload_main] run function under_pack:alchemist_functions/acid_cooldown
 # Reload heal's cooldown
 execute if entity @s[tag=reload_utility] run function under_pack:alchemist_functions/heal_cooldown_tick
-execute if score @s ability2 matches 121.. unless entity @s[tag=!reload_utility] run function under_pack:alchemist_functions/heal_cooldown_end
+execute if score @s ability2 matches 101.. unless entity @s[tag=!reload_utility] run function under_pack:alchemist_functions/heal_cooldown_end
 # Telepot's cooldown
 execute if entity @s[tag=telepot_cooldown] run function under_pack:alchemist_functions/telepot_cooldown_tick
 execute if score @s movement matches 101.. unless entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/telepot_cooldown_end

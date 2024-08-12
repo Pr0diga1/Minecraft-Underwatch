@@ -24,7 +24,7 @@ item replace entity @s[scores={ability7=0}] hotbar.6 with ender_eye[custom_name=
 execute if score @s engineerWallBuffer matches 1.. run scoreboard players remove @s engineerWallBuffer 1
 execute if score @s[team=uBlue] engineerWallBuffer matches 0 run kill @e[type=marker,tag=enginewall,tag=blue]
 execute if score @s[team=uRed] engineerWallBuffer matches 0 run kill @e[type=marker,tag=enginewall,tag=red]
-execute if score @s engineerWallBuffer matches 0 run scoreboard players set @s engineerWallEye 1
+execute if score @s engineerWallBuffer matches 0 run scoreboard players reset @s engineerWallEye 
 execute if score @s engineerWallBuffer matches 0 if score @s ability1 matches 0 run scoreboard players set @s ability1 121
 execute if score @s ability1 matches 1 run item replace entity @s hotbar.4 with ender_eye[custom_name='{"color":"gray","text":"Wall"}',custom_model_data=43,custom_data={enginewall:1b}] 2
 execute if score @s ability1 matches 1..121 run scoreboard players remove @s ability1 1
@@ -49,9 +49,14 @@ scoreboard players operation @s engineerViagraBuffer = @s engineerViagraTimer
 execute as @s[team=uRed] as @a[team=uRed,predicate=under_pack:engi_speed_check] at @s run particle dust{color:[1,0,0],scale:1} ~ ~1 ~ 0.3 0.6 0.3 0 12 force @s
 execute as @s[team=uBlue] as @a[team=uBlue,predicate=under_pack:engi_speed_check] at @s run particle dust{color:[1,0,0],scale:1} ~ ~1 ~ 0.3 0.6 0.3 0 12 force @s
 
+##magnet stuff
 #runs the magnet tick
 execute if entity @s[team=uRed] if entity @a[team=uBlue,tag=magneticred] if score red engineermagnet matches 2.. at @s run function under_pack:engineer_functions/engineer_magnet_tick_red
 execute if entity @s[team=uBlue] if entity @a[team=uRed,tag=magneticblue] if score blue engineermagnet matches 2.. at @s run function under_pack:engineer_functions/engineer_magnet_tick_blue
+
+#magnet timer
+execute as @a[scores={engineermagtimer=1}] run function under_pack:engineer_functions/timer_reset
+execute as @a[scores={engineermagtimer=1..}] run scoreboard players remove @s engineermagtimer 1
 
 #magnet reset detection
 execute if entity @s[nbt={Inventory:[{Slot:7b,components:{"minecraft:custom_data":{enginemag:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{enginemag:1b}}}},scores={reset=1..}] as @s run function under_pack:engineer_functions/engineer_magnet_reset

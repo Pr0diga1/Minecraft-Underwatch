@@ -9,6 +9,7 @@ scoreboard players set @s elementalFireTimer 0
 execute if score @s elementalWindTimer matches 1.. run scoreboard players remove @s elementalWindTimer 1
 execute if score @s elementalWindTimer matches 48 run effect clear @s levitation
 execute if score @s elementalWindTimer matches 1 run item replace entity @s armor.chest with air
+execute if score @s elementalWindTimer matches 1 run item modify entity @s hotbar.1 under_pack:elemental/startglitnt
 
 #buffer timing
 execute if score @s elementalBarTimer matches ..12 unless score @s elementalBarBuffer = @s elementalBar run scoreboard players set @s elementalBarTimer 13
@@ -25,3 +26,6 @@ function under_pack:elemental_functions/elemental_bar_update
 
 #bar buffer
 scoreboard players operation @s elementalBarBuffer = @s elementalBar
+
+execute if score fireheld buffer matches 1.. run scoreboard players remove fireheld buffer 1
+execute if score fireheld buffer matches ..1 run item modify entity @s hotbar.0 under_pack:elemental/endglint
