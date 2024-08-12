@@ -60,8 +60,8 @@ execute if score @s wizardCurse matches 1.. if score @s wizardCurseBuffer = @s w
 scoreboard players operation @s wizardCurseBuffer = @s wizardCurse
 
 #detect if players were hit by the curse!
-execute if entity @s[team=uRed] as @a[nbt={active_effects:[{id:"minecraft:levitation",amplifier:0b,duration:199}]},team=uBlue] run function under_pack:wizard_functions/wizard_homing_hit
-execute if entity @s[team=uBlue] as @a[nbt={active_effects:[{id:"minecraft:levitation",amplifier:0b,duration:199}]},team=uRed] run function under_pack:wizard_functions/wizard_homing_hit
+execute if entity @s[team=uRed] as @a[nbt={active_effects:[{id:"minecraft:levitation",amplifier:0b,duration:180}]},team=uBlue] run function under_pack:wizard_functions/wizard_homing_hit
+execute if entity @s[team=uBlue] as @a[nbt={active_effects:[{id:"minecraft:levitation",amplifier:0b,duration:160}]},team=uBlue] run function under_pack:wizard_functions/wizard_homing_hit
 
 #detect if ride was run for the final tick
 execute if score @s wizardRide matches 1 run function under_pack:wizard_functions/wizard_ride_stop
