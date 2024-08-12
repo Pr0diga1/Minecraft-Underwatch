@@ -18,7 +18,7 @@ execute if score @s elementalBarTimer matches 1.. run scoreboard players remove 
 execute if score @s elementalBarTimer matches 0 if score @s elementalBar matches ..735 run scoreboard players add @s elementalBar 5
 execute if score @s elementalBarTimer matches 0 if score @s elementalBar matches 736..739 run scoreboard players set @s elementalBar 740
 
-scoreboard players reset @s reset
+#scoreboard players reset @s reset
 
 #xp bar logic
 scoreboard players operation @s elementalBarBuffer -= @s elementalBar
