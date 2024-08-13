@@ -9,5 +9,5 @@ execute unless block ~ ~1.62 ~ #under_pack:non_solid run kill @s
 execute if score @s elementalDistance matches 560.. run kill @s
 
 #hits a player
-execute if entity @s[tag=redElementalEarth] positioned ~-.5 ~1.12 ~-.5 as @a[dx=0,team=uBlue] at @s run function under_pack:elemental_functions/elemental_earth_hit
-execute if entity @s[tag=blueElementalEarth] positioned ~-.5 ~1.12 ~-.5 as @a[dx=0,team=uRed] at @s run function under_pack:elemental_functions/elemental_earth_hit
+execute if entity @s[tag=redElementalEarth] positioned ~-.5 ~.12 ~-.5 as @a[dx=0,team=uBlue] at @s run function under_pack:elemental_functions/elemental_earth_hit
+execute if entity @s[tag=blueElementalEarth] positioned ~-.5 ~.12 ~-.5 as @a[dx=0,team=uRed] at @s run function under_pack:elemental_functions/elemental_earth_hit
