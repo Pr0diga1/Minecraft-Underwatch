@@ -3,6 +3,7 @@ scoreboard players set @s ability2 0
 scoreboard players set @s ability3 1
 scoreboard players set @s ability4 1
 scoreboard players set @s ability5 1
+scoreboard players set @s ability6 1
 scoreboard players set @s ability7 1
 
 tag @a remove graved

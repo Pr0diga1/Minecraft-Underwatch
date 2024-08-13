@@ -49,6 +49,10 @@ scoreboard players operation @s engineerViagraBuffer = @s engineerViagraTimer
 execute as @s[team=uRed] as @a[team=uRed,predicate=under_pack:engi_speed_check] at @s run particle dust{color:[1,0,0],scale:1} ~ ~1 ~ 0.3 0.6 0.3 0 12 force @s
 execute as @s[team=uBlue] as @a[team=uBlue,predicate=under_pack:engi_speed_check] at @s run particle dust{color:[1,0,0],scale:1} ~ ~1 ~ 0.3 0.6 0.3 0 12 force @s
 
+##wd-40
+execute if entity @s[nbt={Inventory:[{Slot:5b,components:{"minecraft:custom_data":{enginewd:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{enginewd:1b}}}},scores={reset=1..}] at @s run function under_pack:engineer_functions/engineer_wd
+execute as @a[nbt={active_effects:[{id:"minecraft:speed",amplifier:30b,duration:16}]}] run effect clear @s speed
+
 ##magnet stuff
 #runs the magnet tick
 execute if entity @s[team=uRed] if entity @a[team=uBlue,tag=magneticred] if score red engineermagnet matches 2.. at @s run function under_pack:engineer_functions/engineer_magnet_tick_red

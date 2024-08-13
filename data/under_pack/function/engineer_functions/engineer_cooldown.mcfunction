@@ -20,6 +20,11 @@ execute if score @s ability5 matches 200 run item replace entity @s hotbar.3 wit
 item modify entity @s hotbar.3 under_pack:engineer/viagra
 execute if score @s ability5 matches 1.. run scoreboard players remove @s ability5 1
 
+#wd ability6
+item modify entity @s hotbar.5 under_pack:engineer/wd
+execute if score @s ability6 matches 1 run item replace entity @s hotbar.5 with carrot_on_a_stick[custom_name='{"color":"blue","text":"WD-40"}',custom_model_data=43,custom_data={enginewd:1b}]
+execute if score @s ability6 matches 1.. run scoreboard players remove @s ability6 1
+
 #magnet ability4
 item modify entity @s hotbar.7 under_pack:engineer/manget
 execute if score @s ability4 matches 1 run item replace entity @s hotbar.7 with carrot_on_a_stick[custom_name='{"color":"red","text":"Magnet"}',custom_model_data=43,custom_data={enginemag:1b}]
