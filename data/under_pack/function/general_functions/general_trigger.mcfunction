@@ -9,6 +9,8 @@ execute as @a[scores={res=1..}] at @s run function under_pack:res_functions/res_
 scoreboard players enable @a res
 execute as @a[scores={city=1..}] at @s run function under_pack:city_functions/city_enter
 scoreboard players enable @a city
+execute as @a[scores={nylium=1..}] at @s run function under_pack:nylium_functions/nylium_enter
+scoreboard players enable @a nylium
 
 execute as @a[scores={Reset=1..}] at @s run function under_pack:general_functions/general_restart
 scoreboard players enable @a Reset

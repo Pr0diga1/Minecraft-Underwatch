@@ -141,6 +141,7 @@ scoreboard objectives add park trigger
 scoreboard objectives add ruin trigger
 scoreboard objectives add res trigger
 scoreboard objectives add city trigger
+scoreboard objectives add nylium trigger
 
 #adds trackers for abilities and ults
 scoreboard objectives add movement dummy
