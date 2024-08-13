@@ -2,8 +2,8 @@ clear @s
 
 #armor/knife
 item replace entity @s armor.feet with iron_boots[unbreakable={show_in_tooltip:false}]
-item replace entity @s armor.legs with iron_leggings[unbreakable={show_in_tooltip:false}]
-item replace entity @s armor.chest with iron_chestplate[unbreakable={show_in_tooltip:false}]
+item replace entity @s armor.legs with chainmail_leggings[unbreakable={show_in_tooltip:false}]
+item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false}]
 item replace entity @s hotbar.0 with iron_block[custom_name='{"bold":true,"color":"dark_gray","text":"Metal Hand"}',custom_data={Tags:["cyborgsword"]},attribute_modifiers=[{id:"damage",type:"generic.attack_damage",amount:3,operation:"add_value"},{id:"armor",type:"generic.attack_speed",amount:-2.8,operation:"add_value"}]] 1
 
 #xp
