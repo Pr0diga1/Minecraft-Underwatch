@@ -3,7 +3,7 @@
       "function": "minecraft:set_damage",
       "damage": {
         "type": "minecraft:constant",
-        "value": 0.016
+        "value": 0.019
       },
       "add": true
     }
