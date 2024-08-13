@@ -14,7 +14,7 @@ execute as @e[type=item,nbt={Item:{id:"minecraft:shears",count:1,components:{"mi
 execute unless entity @s[nbt={Inventory:[{Slot:0b,components:{"minecraft:custom_data":{archerheavy:1b}}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:0b}]}] run function under_pack:archer_functions/heavy_cooldown_start
 execute if score @s ability1 matches 1.. run function under_pack:archer_functions/archer_heavy_reload
 #heavy arrow damage
-execute as @e[nbt={item:{components:{"minecraft:custom_data":{archerheavy:1b}}}}] run data merge entity @s {damage:1.9d}
+execute as @e[nbt={item:{components:{"minecraft:custom_data":{archerheavy:1b}}}}] run data merge entity @s {damage:2.2d}
 
 #light arrow reload
 execute unless entity @s[nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_data":{archerlight:1b}}}]}] unless entity @s[nbt={Inventory:[{id:"minecraft:shears"},{Slot:1b}]}] run function under_pack:archer_functions/light_cooldown_start
