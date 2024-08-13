@@ -3,8 +3,8 @@ item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name='{"color":"da
 item replace entity @s hotbar.1 with ender_eye[custom_name='{"color":"dark_blue","text":"Nautical Mist"}',custom_data={mermaidmist:1b}] 1
 item replace entity @s hotbar.3 with carrot_on_a_stick[custom_name='{"color":"aqua","text":"Dive"}',unbreakable={show_in_tooltip:false},custom_model_data=0,custom_data={mermaiddive:1b}] 1
 
-execute if entity @s[team=uRed] run item replace entity @s hotbar.2 with lingering_potion[custom_name='{"color":"blue","text":"Tide Pool"}',custom_data={mermaidtide:1b},potion_contents={custom_color:3366143,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:1}]}] 1
-execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with lingering_potion[custom_name='{"color":"blue","text":"Tide Pool"}',custom_data={mermaidtide:1b},potion_contents={custom_color:3366144,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:1}]}] 1 
+execute if entity @s[team=uRed] run item replace entity @s hotbar.2 with lingering_potion[custom_name='{"color":"blue","text":"Tide Pool"}',custom_data={mermaidtide:1b},potion_contents={custom_color:3366143,custom_effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:1}]}] 1
+execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with lingering_potion[custom_name='{"color":"blue","text":"Tide Pool"}',custom_data={mermaidtide:1b},potion_contents={custom_color:3366144,custom_effects:[{id:"minecraft:fire_resistance",amplifier:0,duration:1}]}] 1 
 
 scoreboard players set @s ability1 0
 
