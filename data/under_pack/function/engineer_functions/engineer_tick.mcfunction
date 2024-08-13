@@ -31,8 +31,8 @@ execute if score @s ability1 matches 1..121 run scoreboard players remove @s abi
 
 #turret stuff
 #summon the turret
-execute if score @s[team=uRed,scores={engineerTurretEye=73..}] engineerTurretEye = @s engineerTurretEyeBuffer at @e[type=marker,tag=redEngineerTurret] run function under_pack:engineer_functions/engineer_turret_build
-execute if score @s[team=uBlue,scores={engineerTurretEye=73..}] engineerTurretEye = @s engineerTurretEyeBuffer at @e[type=marker,tag=blueEngineerTurret] run function under_pack:engineer_functions/engineer_turret_build
+execute if score @s[team=uRed,scores={engineerTurretEye=49..}] engineerTurretEye = @s engineerTurretEyeBuffer at @e[type=marker,tag=redEngineerTurret] run function under_pack:engineer_functions/engineer_turret_build
+execute if score @s[team=uBlue,scores={engineerTurretEye=49..}] engineerTurretEye = @s engineerTurretEyeBuffer at @e[type=marker,tag=blueEngineerTurret] run function under_pack:engineer_functions/engineer_turret_build
 
 #if the character stopped holding right click, reset the timer
 execute if score @s engineerTurretEye = @s engineerTurretEyeBuffer run function under_pack:engineer_functions/engineer_turret_reset
