@@ -8,3 +8,6 @@ execute if score @s elementalFireBuffer matches 0 at @s run playsound minecraft:
 
 #call the fire
 execute if score @s elementalBar matches 1.. at @s anchored eyes positioned ^ ^ ^ anchored feet run function under_pack:elemental_functions/elemental_fire
+
+item modify entity @s hotbar.0 under_pack:elemental/startglitnt
+scoreboard players set fireheld buffer 3

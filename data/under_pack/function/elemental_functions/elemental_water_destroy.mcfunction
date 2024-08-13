@@ -11,3 +11,4 @@ execute as @s[team=uRed] run effect clear @a[team=uRed] regeneration
 execute as @s[team=uBlue] run effect clear @a[team=uBlue] regeneration
 #reset reset
 scoreboard players reset @s reset
+item modify entity @s hotbar.2 under_pack:elemental/endglint

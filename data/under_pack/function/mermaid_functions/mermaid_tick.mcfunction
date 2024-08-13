@@ -25,11 +25,12 @@ execute if entity @s[team=uRed] if entity @e[tag=mermaidtide,tag=red] run functi
 execute if entity @s[team=uBlue] if entity @e[tag=mermaidtide,tag=blue] run function under_pack:mermaid_functions/mermaid_tide_blue
 
 #particles
-execute at @e[tag=mermaidtide] positioned ~ ~-.15 ~ run function under_pack:mermaid_functions/mermaid_particle
+execute as @s[team=uRed] at @e[tag=mermaidtide,tag=red] positioned ~ ~-.15 ~ run function under_pack:mermaid_functions/mermaid_particle
+execute as @s[team=uBlue] at @e[tag=mermaidtide,tag=blue] positioned ~ ~-.15 ~ run function under_pack:mermaid_functions/mermaid_particle
 
 #kills the area effect cloud becuase before it detects and spawns a marker this makes it replace
-execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366143}}] run kill @s
-execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366144}}] run kill @s
+execute as @s[team=uRed] as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366143}}] run kill @s
+execute as @s[team=uBlue] as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366144}}] run kill @s
 
 ##diving
 execute at @s if score @s mermaiddive matches 1 run function under_pack:mermaid_functions/mermaid_undive

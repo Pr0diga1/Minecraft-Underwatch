@@ -3,7 +3,8 @@ item replace entity @s[team=uRed] hotbar.0 with carrot_on_a_stick[custom_name='{
 item replace entity @s[team=uBlue] hotbar.0 with carrot_on_a_stick[custom_name='{"bold":true,"color":"light_purple","italic":true,"text":"Agicmay Andway"}',lore=['"Crafted from the tree of Lofaktar"'],custom_model_data=45,custom_data={wizardWand:1b,blue:1b}] 1
 
 #fireball
-item replace entity @s hotbar.1 with ender_eye[custom_name='{"bold":true,"color":"gold","italic":true,"text":"Become Fire"}',lore=['"\'fireball\' - Pitbull"'],custom_data={wizardFire:1b}] 1
+execute as @s[team=uRed] run item replace entity @s hotbar.1 with ender_eye[custom_name='{"bold":true,"color":"gold","italic":true,"text":"Become Fire"}',lore=['"\'fireball\' - Pitbull"'],custom_data={wizardFire:1b,red:1b}] 1
+execute as @s[team=uBlue] run item replace entity @s hotbar.1 with ender_eye[custom_name='{"bold":true,"color":"gold","italic":true,"text":"Become Fire"}',lore=['"\'fireball\' - Pitbull"'],custom_data={wizardFire:1b,blue:1b}] 1
 
 #evoker fang shot
 #the claws of rach'ivalishize

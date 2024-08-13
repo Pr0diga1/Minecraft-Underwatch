@@ -1,6 +1,6 @@
 #kill the armor stand
-execute at @s[team=uRed] run kill @e[type=armor_stand,limit=1,sort=nearest,tag=blueElementalEarth]
-execute at @s[team=uBlue] run kill @e[type=armor_stand,limit=1,sort=nearest,tag=redElementalEarth]
+execute at @s[team=uRed] run kill @e[type=block_display,limit=1,sort=nearest,tag=blueElementalEarth]
+execute at @s[team=uBlue] run kill @e[type=block_display,limit=1,sort=nearest,tag=redElementalEarth]
 #start the timer
 scoreboard players set @s elementalEarthTimer 9
 
