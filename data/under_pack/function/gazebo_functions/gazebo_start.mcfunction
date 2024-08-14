@@ -45,7 +45,7 @@ scoreboard players set true matchmake 0
 execute as @a[tag=gazebo] run function under_pack:trigger_functions/leave
 
 #set the deathbuffer
-scoreboard players set DeathBuffer constant 14
+scoreboard players set DeathBuffer constant 12
 
 #tps players to their spawns and sets their spawnpoints
 tp @a[tag=gazebo,team=uRed] 629 43 -9

@@ -11,6 +11,8 @@ execute as @a[scores={city=1..}] at @s run function under_pack:city_functions/ci
 scoreboard players enable @a city
 execute as @a[scores={nylium=1..}] at @s run function under_pack:nylium_functions/nylium_enter
 scoreboard players enable @a nylium
+execute as @a[scores={lake=1..}] at @s run function under_pack:lake_functions/lake_enter
+scoreboard players enable @a lake
 
 execute as @a[scores={Reset=1..}] at @s run function under_pack:general_functions/general_restart
 scoreboard players enable @a Reset
@@ -36,8 +38,6 @@ execute as @a[scores={lumberjack=1..}] at @s run function under_pack:lumberjack_
 scoreboard players enable @a lumberjack
 execute as @a[scores={ninja=1..}] at @s run function under_pack:ninja_functions/ninja_trigger
 scoreboard players enable @a ninja
-execute as @a[scores={bulwark=1..}] at @s run function under_pack:paladin_functions/paladin_trigger
-scoreboard players enable @a bulwark
 execute as @a[scores={rogue=1..}] at @s run function under_pack:rogue_functions/rogue_trigger
 scoreboard players enable @a rogue
 execute as @a[scores={scientist=1..}] at @s run function under_pack:scientist_functions/scientist_trigger
