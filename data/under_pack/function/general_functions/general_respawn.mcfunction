@@ -14,3 +14,4 @@ execute as @s[scores={class=13}] at @s run function under_pack:dark_soul_functio
 execute as @s[scores={class=14}] at @s run function under_pack:gun_man_functions/gun_respawn
 execute as @s[scores={class=15}] run function under_pack:cyborg_functions/cyborg_respawn
 execute as @s[scores={class=16}] run function under_pack:microwave_functions/respawn
+execute as @s[scores={class=17}] run function under_pack:occultist/respawn
