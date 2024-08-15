@@ -56,3 +56,5 @@ execute as @a[scores={cyborg=1..}] at @s run function under_pack:cyborg_function
 scoreboard players enable @a cyborg
 execute as @a[scores={microwave=1..}] at @s run function under_pack:microwave_functions/trigger
 scoreboard players enable @a microwave
+execute as @a[scores={occultist=1..}] at @s run function under_pack:occultist/trigger
+scoreboard players enable @a occultist

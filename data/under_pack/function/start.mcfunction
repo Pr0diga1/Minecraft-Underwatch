@@ -129,6 +129,7 @@ scoreboard objectives add dark_soul trigger
 scoreboard objectives add gun_man trigger
 scoreboard objectives add cyborg trigger
 scoreboard objectives add microwave trigger
+scoreboard objectives add occultist trigger
 
 #various triggers
 scoreboard objectives add red trigger
