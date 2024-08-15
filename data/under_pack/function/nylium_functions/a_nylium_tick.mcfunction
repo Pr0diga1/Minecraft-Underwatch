@@ -1,3 +1,5 @@
+#12 SECOND DEATH TIMER!!!
+
 #each player runs their class's tick function as long as they are not respawning or in their spawnpoint
 execute as @a[tag=lake] unless entity @s[tag=lake_dead] run function under_pack:general_functions/general_classloop
 

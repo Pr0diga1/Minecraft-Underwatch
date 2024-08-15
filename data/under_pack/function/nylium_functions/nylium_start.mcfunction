@@ -45,13 +45,13 @@ scoreboard players set true matchmake 0
 execute as @a[tag=nylium] run function under_pack:trigger_functions/leave
 
 #set the deathbuffer
-scoreboard players set DeathBuffer constant 15
+scoreboard players set DeathBuffer constant 12
 
 #tps players to their spawns and sets their spawnpoints
-tp @a[tag=nylium,team=uRed] -497 86 -575
-tp @a[tag=nylium,team=uBlue] -508 86 -457
-spawnpoint @a[tag=nylium,team=uRed] -497 86 -575
-spawnpoint @a[tag=nylium,team=uBlue] -508 86 -457
+tp @a[tag=nylium,team=uRed] -492 67 90
+tp @a[tag=nylium,team=uBlue] -617 67 91
+spawnpoint @a[tag=nylium,team=uRed] -492 67 90
+spawnpoint @a[tag=nylium,team=uBlue] -617 67 91
 
 #nylium swag stores if the game is active or not, so it can be known if the tick should be run
 scoreboard players set nylium swag 1
@@ -79,9 +79,9 @@ scoreboard players set nylium_overtime_toggle swag 0
 
 #fill barriers to lock teams in their spawns
 #blue
-fill -507 86 -474 -510 88 -474 barrier
+fill -613 67 92 -613 70 89 barrier
 #red
-fill -495 88 -557 -498 86 -557 barrier
+fill -496 67 89 -496 70 92 barrier
 
 #schedule the first grace tick
 schedule function under_pack:nylium_functions/nylium_grace 1t
@@ -101,7 +101,7 @@ bossbar set count:nylium_grace max 400
 bossbar set count:nylium_grace players @a[tag=nylium]
 bossbar set count:nylium_grace value 400
 #bossbar for the status of the point
-bossbar add count:nylium "nylium Point"
+bossbar add count:nylium "Nylium Point"
 bossbar set count:nylium color white
 bossbar set count:nylium style progress
 bossbar set count:nylium max 320

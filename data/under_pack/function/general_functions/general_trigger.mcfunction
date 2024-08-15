@@ -20,7 +20,7 @@ execute as @a[scores={red=1..}] at @s run function under_pack:trigger_functions/
 scoreboard players enable @a red
 execute as @a[scores={blue=1..}] at @s run function under_pack:trigger_functions/blue
 scoreboard players enable @a blue
-execute as @a[scores={leave=1..}] at @s run function under_pack:trigger_functions/leave
+execute as @a[scores={leave=1..}] at @s run function under_pack:trigger_functions/leave2
 scoreboard players enable @a leave
 execute as @a[scores={book=1..}] at @s run function under_pack:general_functions/general_getbook
 scoreboard players enable @a book

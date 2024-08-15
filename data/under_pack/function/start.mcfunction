@@ -54,6 +54,8 @@ scoreboard objectives add swag dummy
 scoreboard objectives add team dummy
 #add matchmake
 scoreboard objectives add matchmake dummy
+#add active
+scoreboard objectives add active dummy
 
 #kills
 scoreboard objectives add Kills playerKillCount
