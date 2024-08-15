@@ -97,6 +97,7 @@ scoreboard objectives add book trigger
 #teams triggers
 scoreboard objectives add red trigger
 scoreboard objectives add blue trigger
+scoreboard objectives add liberals trigger
 
 #adds constant and any needed multipliers
 scoreboard players set TickToSecond constant 20
@@ -146,6 +147,7 @@ scoreboard objectives add res trigger
 scoreboard objectives add city trigger
 scoreboard objectives add nylium trigger
 scoreboard objectives add lake trigger
+scoreboard objectives add cavern trigger
 
 #adds trackers for abilities and ults
 scoreboard objectives add movement dummy

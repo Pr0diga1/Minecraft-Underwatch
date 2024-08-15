@@ -13,6 +13,8 @@ execute as @a[scores={nylium=1..}] at @s run function under_pack:nylium_function
 scoreboard players enable @a nylium
 execute as @a[scores={lake=1..}] at @s run function under_pack:lake_functions/lake_enter
 scoreboard players enable @a lake
+execute as @a[scores={cavern=1..}] at @s run function under_pack:cavern_functions/cavern_enter
+scoreboard players enable @a cavern
 
 execute as @a[scores={Reset=1..}] at @s run function under_pack:general_functions/general_restart
 scoreboard players enable @a Reset
@@ -24,6 +26,8 @@ execute as @a[scores={leave=1..}] at @s run function under_pack:trigger_function
 scoreboard players enable @a leave
 execute as @a[scores={book=1..}] at @s run function under_pack:general_functions/general_getbook
 scoreboard players enable @a book
+execute as @a[scores={liberals=1..}] at @s run function under_pack:trigger_functions/liberals
+scoreboard players enable @a liberals
 
 #trigger commands for each of the classes
 execute as @a[scores={alchemist=1..}] at @s run function under_pack:alchemist_functions/alchemist_trigger
