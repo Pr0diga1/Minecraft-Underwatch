@@ -10,13 +10,13 @@ execute at @e[tag=mermaidtide,tag=blue] positioned ~ ~-.15 ~ run function under_
 #kills the area effect cloud becuase before it detects and spawns a marker this makes it replace
 execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366144}}] run kill @s
 
+#mist regen
+execute as @a[tag=mermaidhitbyheal,team=uBlue] run scoreboard players add @s mermaidheal 1
+execute as @a[nbt={active_effects:[{id:"minecraft:regeneration",duration:19}]},team=uBlue] run effect clear @s minecraft:regeneration
+effect give @a[tag=mermaidhitbyheal,scores={mermaidheal=4..},team=uBlue] regeneration 1 5 true
+execute as @a[tag=mermaidhitbyheal,scores={mermaidheal=4..},team=uBlue] run scoreboard players reset @s mermaidheal
+tag @a[tag=mermaidhitbyheal,team=uBlue] remove mermaiddontheal
+tag @a[tag=mermaidhitbyheal,team=uBlue] remove mermaidhitbyheal
+
 #detect when mist usage was stopped
-execute if score @s[team=uBlue] mermaidDetect matches 1 run scoreboard players set @a[team=uBlue] mermaidheal 1
-
-#give regen
-execute as @a[team=uBlue] run scoreboard players operation @s mermaidhealbuffer = @s mermaidheal
-execute as @a[team=uBlue] run scoreboard players operation @s mermaidhealbuffer %= mermaidHealingConstant constant
-
-#remove regen after one tick
-execute as @a[team=uBlue,scores={mermaidtoggle=0}] run effect clear @s regeneration
-execute as @a[team=uBlue,scores={mermaidtoggle=0..}] run scoreboard players remove @s mermaidtoggle 1
+execute if score @s[team=uBlue] mermaidDetect matches 1 run scoreboard players reset @a[team=uBlue] mermaidheal
