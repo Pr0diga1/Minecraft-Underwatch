@@ -10,6 +10,6 @@ damage @s[team=uBlue] 6.5 player_attack by @a[scores={class=12},team=uRed,limit=
 #summon the stun marker
 execute at @s run summon marker ~ ~ ~ {Tags:["elementalStun"]}
 #particles
-execute at @s run particle dust{color:[0.4,0.4,0.4],scale:1} ~ ~ ~ 0.4 1 0.4 0 500 force
+execute at @s run particle dust{color:[0.4,0.4,0.4],scale:1} ~ ~ ~ 0.4 1 0.4 0 100 force
 #title
 title @s title {"text": "Stunned!","color": "gray"}
