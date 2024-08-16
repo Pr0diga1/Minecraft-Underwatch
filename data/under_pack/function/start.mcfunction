@@ -54,6 +54,8 @@ scoreboard objectives add swag dummy
 scoreboard objectives add team dummy
 #add matchmake
 scoreboard objectives add matchmake dummy
+#add active
+scoreboard objectives add active dummy
 
 #kills
 scoreboard objectives add Kills playerKillCount
@@ -95,6 +97,7 @@ scoreboard objectives add book trigger
 #teams triggers
 scoreboard objectives add red trigger
 scoreboard objectives add blue trigger
+scoreboard objectives add liberals trigger
 
 #adds constant and any needed multipliers
 scoreboard players set TickToSecond constant 20
@@ -129,6 +132,7 @@ scoreboard objectives add dark_soul trigger
 scoreboard objectives add gun_man trigger
 scoreboard objectives add cyborg trigger
 scoreboard objectives add microwave trigger
+scoreboard objectives add occultist trigger
 
 #various triggers
 scoreboard objectives add red trigger
@@ -141,6 +145,9 @@ scoreboard objectives add park trigger
 scoreboard objectives add ruin trigger
 scoreboard objectives add res trigger
 scoreboard objectives add city trigger
+scoreboard objectives add nylium trigger
+scoreboard objectives add lake trigger
+scoreboard objectives add cavern trigger
 
 #adds trackers for abilities and ults
 scoreboard objectives add movement dummy
@@ -301,3 +308,5 @@ execute if score version_number1 buffer matches 10 run scoreboard players set ve
 execute if score version_number2 buffer matches 0 run scoreboard players set version_number2 buffer 0
 
 tellraw @a [{"text":"Version "},{"text":"1.","color":"yellow","bold":true},{"score":{"name":"version_number2","objective":"buffer"},"color":"yellow","bold":true},{"text":".","color":"yellow","bold":true},{"score":{"name":"version_number1","objective":"buffer"},"color":"yellow","bold":true},{"text":" of the best overwatch clone, has just been uploaded"}]
+
+scoreboard objectives add dogPoints dummy

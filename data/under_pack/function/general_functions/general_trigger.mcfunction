@@ -9,6 +9,12 @@ execute as @a[scores={res=1..}] at @s run function under_pack:res_functions/res_
 scoreboard players enable @a res
 execute as @a[scores={city=1..}] at @s run function under_pack:city_functions/city_enter
 scoreboard players enable @a city
+execute as @a[scores={nylium=1..}] at @s run function under_pack:nylium_functions/nylium_enter
+scoreboard players enable @a nylium
+execute as @a[scores={lake=1..}] at @s run function under_pack:lake_functions/lake_enter
+scoreboard players enable @a lake
+execute as @a[scores={cavern=1..}] at @s run function under_pack:cavern_functions/cavern_enter
+scoreboard players enable @a cavern
 
 execute as @a[scores={Reset=1..}] at @s run function under_pack:general_functions/general_restart
 scoreboard players enable @a Reset
@@ -16,10 +22,12 @@ execute as @a[scores={red=1..}] at @s run function under_pack:trigger_functions/
 scoreboard players enable @a red
 execute as @a[scores={blue=1..}] at @s run function under_pack:trigger_functions/blue
 scoreboard players enable @a blue
-execute as @a[scores={leave=1..}] at @s run function under_pack:trigger_functions/leave
+execute as @a[scores={leave=1..}] at @s run function under_pack:trigger_functions/leave2
 scoreboard players enable @a leave
 execute as @a[scores={book=1..}] at @s run function under_pack:general_functions/general_getbook
 scoreboard players enable @a book
+execute as @a[scores={liberals=1..}] at @s run function under_pack:trigger_functions/liberals
+scoreboard players enable @a liberals
 
 #trigger commands for each of the classes
 execute as @a[scores={alchemist=1..}] at @s run function under_pack:alchemist_functions/alchemist_trigger
@@ -34,8 +42,6 @@ execute as @a[scores={lumberjack=1..}] at @s run function under_pack:lumberjack_
 scoreboard players enable @a lumberjack
 execute as @a[scores={ninja=1..}] at @s run function under_pack:ninja_functions/ninja_trigger
 scoreboard players enable @a ninja
-execute as @a[scores={bulwark=1..}] at @s run function under_pack:paladin_functions/paladin_trigger
-scoreboard players enable @a bulwark
 execute as @a[scores={rogue=1..}] at @s run function under_pack:rogue_functions/rogue_trigger
 scoreboard players enable @a rogue
 execute as @a[scores={scientist=1..}] at @s run function under_pack:scientist_functions/scientist_trigger
@@ -54,3 +60,5 @@ execute as @a[scores={cyborg=1..}] at @s run function under_pack:cyborg_function
 scoreboard players enable @a cyborg
 execute as @a[scores={microwave=1..}] at @s run function under_pack:microwave_functions/trigger
 scoreboard players enable @a microwave
+execute as @a[scores={occultist=1..}] at @s run function under_pack:occultist/trigger
+scoreboard players enable @a occultist

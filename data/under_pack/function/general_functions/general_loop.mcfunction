@@ -5,7 +5,9 @@ execute if score ruin swag matches 1 run function under_pack:ruin_functions/ruin
 execute if score res swag matches 1 run function under_pack:res_functions/res_tick
 execute if score cityDM swag matches 1 run function under_pack:city_functions/city_dm/city_tick
 execute if score cityPOINT swag matches 1 run function under_pack:city_functions/city_point/city_tick
-
+execute if score nylium swag matches 1 run function under_pack:nylium_functions/nylium_tick
+execute if score lake swag matches 1 run function under_pack:lake_functions/lake_tick
+execute if score cavern swag matches 1 run function under_pack:cavern_functions/cavern_tick
 
 #number of players in a map stored for matchmaking
 execute store result score gazebo player_num if entity @a[tag=gazebo]
@@ -13,6 +15,9 @@ execute store result score park player_num if entity @a[tag=park]
 execute store result score ruin player_num if entity @a[tag=ruin]
 execute store result score res player_num if entity @a[tag=res]
 execute store result score city player_num if entity @a[tag=city]
+execute store result score nylium player_num if entity @a[tag=nylium]
+execute store result score lake player_num if entity @a[tag=lake]
+execute store result score cavern player_num if entity @a[tag=cavern]
 
 #if someone has a death, run the death function
 execute as @a if score @s uDeaths matches 1.. run function under_pack:general_functions/general_death
