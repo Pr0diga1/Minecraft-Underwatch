@@ -216,6 +216,7 @@ scoreboard objectives add lumberjack_ult_casts dummy
 scoreboard objectives add lumberjack_sweep dummy
 
 #ninja
+scoreboard objectives add ninjabuffer dummy
 scoreboard objectives add ninjaHyperventilate dummy
 scoreboard objectives add ninjaHyperventilateBuffer dummy
 scoreboard objectives add ninjaMotionX dummy
