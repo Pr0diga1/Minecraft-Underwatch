@@ -1,0 +1,54 @@
+[
+    {
+		"function": "minecraft:set_count",
+		"count": 4,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 79
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 3,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 59
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 2,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 39
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 1,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"ability2": 19
+				}
+			}
+		]
+	}
+]

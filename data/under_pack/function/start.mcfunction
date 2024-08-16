@@ -133,6 +133,7 @@ scoreboard objectives add gun_man trigger
 scoreboard objectives add cyborg trigger
 scoreboard objectives add microwave trigger
 scoreboard objectives add occultist trigger
+scoreboard objectives add coldsteel trigger
 
 #various triggers
 scoreboard objectives add red trigger
@@ -216,6 +217,7 @@ scoreboard objectives add lumberjack_ult_casts dummy
 scoreboard objectives add lumberjack_sweep dummy
 
 #ninja
+scoreboard objectives add ninjabuffer dummy
 scoreboard objectives add ninjaHyperventilate dummy
 scoreboard objectives add ninjaHyperventilateBuffer dummy
 scoreboard objectives add ninjaMotionX dummy
@@ -301,6 +303,9 @@ scoreboard objectives add cyborgsize dummy
 scoreboard objectives add slamTimer dummy
 scoreboard objectives add darkEye dummy
 scoreboard objectives add darkEyeBuffer dummy
+
+#coldsteel
+scoreboard objectives add coldpower dummy
 
 scoreboard players add version_number1 buffer 1
 execute if score version_number1 buffer matches 10 run scoreboard players add version_number2 buffer 1

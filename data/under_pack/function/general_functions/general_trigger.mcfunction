@@ -62,3 +62,5 @@ execute as @a[scores={microwave=1..}] at @s run function under_pack:microwave_fu
 scoreboard players enable @a microwave
 execute as @a[scores={occultist=1..}] at @s run function under_pack:occultist/trigger
 scoreboard players enable @a occultist
+execute as @a[scores={coldsteel=1..}] at @s run function under_pack:coldsteel_functions/trigger
+scoreboard players enable @a coldsteel

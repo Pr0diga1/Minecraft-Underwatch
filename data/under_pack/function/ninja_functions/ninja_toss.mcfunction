@@ -1,13 +1,13 @@
 
 #summon the arrows
 #red
-execute at @s[team=uRed] run summon minecraft:arrow ~ ~1.2 ~ {Tags:["ninjaArrow1","nared"],damage:2.4d}
-execute at @s[team=uRed] run summon minecraft:arrow ~ ~1.2 ~ {Tags:["ninjaArrow2","nared"],damage:2.4d}
-execute at @s[team=uRed] run summon minecraft:arrow ~ ~1.2 ~ {Tags:["ninjaArrow3","nared"],damage:2.4d}
+execute at @s[team=uRed] run summon minecraft:arrow ~ ~ ~ {Tags:["ninjaArrow1","nared"],damage:2.4d}
+execute at @s[team=uRed] run summon minecraft:arrow ~ ~ ~ {Tags:["ninjaArrow2","nared"],damage:2.4d}
+execute at @s[team=uRed] run summon minecraft:arrow ~ ~ ~ {Tags:["ninjaArrow3","nared"],damage:2.4d}
 #blue
-execute at @s[team=uBlue] run summon minecraft:arrow ~ ~1.2 ~ {Tags:["ninjaArrow1","nablue"],damage:2.4d}
-execute at @s[team=uBlue] run summon minecraft:arrow ~ ~1.2 ~ {Tags:["ninjaArrow2","nablue"],damage:2.4d}
-execute at @s[team=uBlue] run summon minecraft:arrow ~ ~1.2 ~ {Tags:["ninjaArrow3","nablue"],damage:2.4d}
+execute at @s[team=uBlue] run summon minecraft:arrow ~ ~ ~ {Tags:["ninjaArrow1","nablue"],damage:2.4d}
+execute at @s[team=uBlue] run summon minecraft:arrow ~ ~ ~ {Tags:["ninjaArrow2","nablue"],damage:2.4d}
+execute at @s[team=uBlue] run summon minecraft:arrow ~ ~ ~ {Tags:["ninjaArrow3","nablue"],damage:2.4d}
 
 #give the arrows owners
 execute at @s run data modify entity @e[type=arrow,limit=1,sort=nearest,tag=ninjaArrow1] Owner set from entity @s UUID
