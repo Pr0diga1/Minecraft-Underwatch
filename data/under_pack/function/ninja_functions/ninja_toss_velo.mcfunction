@@ -17,6 +17,10 @@ scoreboard players operation NinjaTossX2 ninjabuffer -= NinjaTossX1 ninjabuffer
 scoreboard players operation NinjaTossY2 ninjabuffer -= NinjaTossY1 ninjabuffer 
 scoreboard players operation NinjaTossZ2 ninjabuffer -= NinjaTossZ1 ninjabuffer 
 
+execute if entity @s[tag=nared] at @a[scores={class=6},team=uRed] run tp @s ~ ~1.5 ~
+execute if entity @s[tag=nablue] at @a[scores={class=6},team=uBlue] run tp @s ~ ~1.5 ~
+
+
 #set the new power (power is replaced with motion for parody with other entities
 execute store result entity @s Motion[0] double 0.0001 run scoreboard players get NinjaTossX2 ninjabuffer
 execute store result entity @s Motion[1] double 0.0001 run scoreboard players get NinjaTossY2 ninjabuffer
