@@ -19,6 +19,9 @@ scoreboard players operation Z2 coldbuffer -= Z1 coldbuffer
 execute if entity @s[team=uRed] store result entity @e[tag=red,tag=coldtp,limit=1,sort=nearest] Motion[0] double 0.0005 run scoreboard players get X2 coldbuffer
 execute if entity @s[team=uRed] store result entity @e[tag=red,tag=coldtp,limit=1,sort=nearest] Motion[1] double 0.0005 run scoreboard players get Y2 coldbuffer
 execute if entity @s[team=uRed] store result entity @e[tag=red,tag=coldtp,limit=1,sort=nearest] Motion[2] double 0.0005 run scoreboard players get Z2 coldbuffer
+execute if entity @s[team=uBlue] store result entity @e[tag=blue,tag=coldtp,limit=1,sort=nearest] Motion[0] double 0.0005 run scoreboard players get X2 coldbuffer
+execute if entity @s[team=uBlue] store result entity @e[tag=blue,tag=coldtp,limit=1,sort=nearest] Motion[1] double 0.0005 run scoreboard players get Y2 coldbuffer
+execute if entity @s[team=uBlue] store result entity @e[tag=blue,tag=coldtp,limit=1,sort=nearest] Motion[2] double 0.0005 run scoreboard players get Z2 coldbuffer
 
 kill @e[tag=coldtrack]
 

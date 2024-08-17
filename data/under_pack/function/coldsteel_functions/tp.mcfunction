@@ -3,7 +3,7 @@ execute at @s[team=uBlue] run summon minecraft:ender_pearl ~ ~1.5 ~ {Tags:["cold
 
 execute at @s run function under_pack:coldsteel_functions/tp_velo
 
-execute at @s run playsound minecraft:entity.villager.work_fletcher master @a ~ ~ ~ 5 2
+execute at @s run playsound minecraft:entity.ender_pearl.throw master @a ~ ~ ~ 5 1
 execute at @s[team=uRed] run data modify entity @e[limit=1,sort=nearest,tag=coldtp,tag=red] Owner set from entity @s UUID
 execute at @s[team=uBlue] run data modify entity @e[limit=1,sort=nearest,tag=coldtp,tag=blue] Owner set from entity @s UUID
 
