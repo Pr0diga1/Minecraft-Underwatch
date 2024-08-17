@@ -305,7 +305,7 @@ scoreboard objectives add darkEye dummy
 scoreboard objectives add darkEyeBuffer dummy
 
 #coldsteel
-scoreboard objectives add coldpower dummy
+scoreboard objectives add coldbuffer dummy
 
 scoreboard players add version_number1 buffer 1
 execute if score version_number1 buffer matches 10 run scoreboard players add version_number2 buffer 1

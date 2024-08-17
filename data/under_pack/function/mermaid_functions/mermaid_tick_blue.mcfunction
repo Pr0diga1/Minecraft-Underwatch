@@ -12,7 +12,7 @@ execute as @e[type=area_effect_cloud,nbt={potion_contents:{custom_color:3366144}
 
 #mist regen
 execute as @a[tag=mermaidhitbyheal,team=uBlue] run scoreboard players add @s mermaidheal 1
-execute as @a[nbt={active_effects:[{id:"minecraft:regeneration",duration:19}]},team=uBlue] run effect clear @s minecraft:regeneration
+execute as @a[nbt={active_effects:[{id:"minecraft:regeneration",amplifier:5b,duration:19}]},team=uBlue] run effect clear @s minecraft:regeneration
 effect give @a[tag=mermaidhitbyheal,scores={mermaidheal=4..},team=uBlue] regeneration 1 5 true
 execute as @a[tag=mermaidhitbyheal,scores={mermaidheal=4..},team=uBlue] run scoreboard players reset @s mermaidheal
 tag @a[tag=mermaidhitbyheal,team=uBlue] remove mermaiddontheal

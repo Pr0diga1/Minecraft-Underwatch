@@ -23,13 +23,6 @@ execute at @s if score @s mermaiddive matches 1.. run particle minecraft:rain ~ 
 
 ##mist stuffs 
 #detect when mist usage was stopped
-execute as @a[tag=mermaidhitbyheal] run scoreboard players add @s mermaidheal 1
-execute as @a[nbt={active_effects:[{id:"minecraft:regeneration",duration:19}]}] run effect clear @s minecraft:regeneration
-effect give @a[tag=mermaidhitbyheal,scores={mermaidheal=4..}] regeneration 1 5 true
-execute as @a[tag=mermaidhitbyheal,scores={mermaidheal=4..}] run scoreboard players reset @s mermaidheal
-tag @a[tag=mermaidhitbyheal] remove mermaiddontheal
-tag @a[tag=mermaidhitbyheal] remove mermaidhitbyheal
-
 execute if score @s mermaidDetect matches 1.. run scoreboard players remove @s mermaidDetect 1
 
 #sendpeople down
