@@ -1,11 +1,7 @@
-execute at @s[team=uRed] run summon minecraft:ender_pearl ~ ~1.5 ~ {Tags:["coldtp","red"]}
-execute at @s[team=uBlue] run summon minecraft:ender_pearl ~ ~1.5 ~ {Tags:["coldtp","blue"]}
-
-execute at @s run function under_pack:coldsteel_functions/tp_velo
+execute at @s[team=uRed] positioned ~ ~1.5 ~ summon ender_pearl run function under_pack:coldsteel_functions/tp_velo_red
+execute at @s[team=uBlue] positioned ~ ~1.5 ~ summon ender_pearl run function under_pack:coldsteel_functions/tp_velo_blue
 
 execute at @s run playsound minecraft:entity.ender_pearl.throw master @a ~ ~ ~ 5 1
-execute at @s[team=uRed] run data modify entity @e[limit=1,sort=nearest,tag=coldtp,tag=red] Owner set from entity @s UUID
-execute at @s[team=uBlue] run data modify entity @e[limit=1,sort=nearest,tag=coldtp,tag=blue] Owner set from entity @s UUID
 
 scoreboard players reset @s reset
 scoreboard players set @s ability2 80
