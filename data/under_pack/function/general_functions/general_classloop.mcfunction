@@ -16,3 +16,4 @@ execute as @s[scores={class=15}] run function under_pack:cyborg_functions/cyborg
 execute as @s[scores={class=16}] at @s run function under_pack:microwave_functions/tick
 execute as @s[scores={class=17}] at @s run function under_pack:occultist/tick
 execute as @s[scores={class=18}] at @s run function under_pack:coldsteel_functions/tick
+execute as @s[scores={class=19}] at @s run function under_pack:vamp_functions/tick

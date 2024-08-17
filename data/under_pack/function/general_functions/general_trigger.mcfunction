@@ -64,3 +64,5 @@ execute as @a[scores={occultist=1..}] at @s run function under_pack:occultist/tr
 scoreboard players enable @a occultist
 execute as @a[scores={coldsteel=1..}] at @s run function under_pack:coldsteel_functions/trigger
 scoreboard players enable @a coldsteel
+execute as @a[scores={hemomancer=1..}] at @s run function under_pack:vamp_functions/trigger
+scoreboard players enable @a hemomancer

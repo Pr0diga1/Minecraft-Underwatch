@@ -1,0 +1,2 @@
+particle dust{color:[1.000,0.000,0.000],scale:1} ~ ~1.7 ~ .3 .25 .3 1 5 normal
+execute if score @s[tag=taintedred] uDeaths matches 1.. as @a[team=uRed,scores={class=19},gamemode=!spectator] run function under_pack:vamp_functions/taint_death
