@@ -8,8 +8,12 @@ execute as @s[nbt={Inventory:[{Slot:2b,components:{"minecraft:custom_data":{ninj
 #reset reset
 scoreboard players set @s reset 0
 
-execute at @s as @e[type=arrow,tag=!tossMoved,tag=nared] rotated as @a[team=uRed,scores={class=6},limit=1,sort=nearest] anchored eyes run function under_pack:ninja_functions/ninja_toss_velo
-execute at @s as @e[type=arrow,tag=!tossMoved,tag=nablue] rotated as @a[team=uBlue,scores={class=6},limit=1,sort=nearest] anchored eyes run function under_pack:ninja_functions/ninja_toss_velo
+execute at @s[team=uRed] as @e[type=arrow,tag=!tossMoved,tag=nared] rotated as @a[team=uRed,scores={class=6},limit=1,sort=nearest] anchored eyes run function under_pack:ninja_functions/ninja_toss_velo
+execute at @s[team=uBlue] as @e[type=arrow,tag=!tossMoved,tag=nablue] rotated as @a[team=uBlue,scores={class=6},limit=1,sort=nearest] anchored eyes run function under_pack:ninja_functions/ninja_toss_velo
+
+#particles for arrows
+execute as @s[team=uRed] at @e[type=arrow,tag=nared] run particle witch ~ ~ ~
+execute as @s[team=uBlue] at @e[type=arrow,tag=nablue] run particle witch ~ ~ ~
 
 #hyperventilate ability1
 execute if score @s ninjaHyperventilate matches 1.. run function under_pack:ninja_functions/ninja_hyperventilate_tick
