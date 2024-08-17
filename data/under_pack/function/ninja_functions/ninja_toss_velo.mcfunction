@@ -4,8 +4,8 @@ execute store result score NinjaTossZ1 ninjabuffer run data get entity @s Pos[2]
 
 #tp to second pos
 tp @s[tag=ninjaArrow2] ^ ^ ^2
-tp @s[tag=ninjaArrow1] ^-.12 ^ ^2
-tp @s[tag=ninjaArrow3] ^.12 ^ ^2
+tp @s[tag=ninjaArrow1] ^-.28 ^ ^2
+tp @s[tag=ninjaArrow3] ^.28 ^ ^2
 
 #second bit of pos data
 execute store result score NinjaTossX2 ninjabuffer run data get entity @s Pos[0] 10000
@@ -22,9 +22,9 @@ execute if entity @s[tag=nablue] at @a[scores={class=6},team=uBlue] run tp @s ~ 
 
 
 #set the new power (power is replaced with motion for parody with other entities
-execute store result entity @s Motion[0] double 0.0001 run scoreboard players get NinjaTossX2 ninjabuffer
-execute store result entity @s Motion[1] double 0.0001 run scoreboard players get NinjaTossY2 ninjabuffer
-execute store result entity @s Motion[2] double 0.0001 run scoreboard players get NinjaTossZ2 ninjabuffer
+execute store result entity @s Motion[0] double 0.00009 run scoreboard players get NinjaTossX2 ninjabuffer
+execute store result entity @s Motion[1] double 0.00009 run scoreboard players get NinjaTossY2 ninjabuffer
+execute store result entity @s Motion[2] double 0.00009 run scoreboard players get NinjaTossZ2 ninjabuffer
 
 #only runs once
 tag @s add tossMoved
