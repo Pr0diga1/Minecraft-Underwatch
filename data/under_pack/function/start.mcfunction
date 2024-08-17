@@ -315,3 +315,6 @@ execute if score version_number2 buffer matches 0 run scoreboard players set ver
 tellraw @a [{"text":"Version "},{"text":"1.","color":"yellow","bold":true},{"score":{"name":"version_number2","objective":"buffer"},"color":"yellow","bold":true},{"text":".","color":"yellow","bold":true},{"score":{"name":"version_number1","objective":"buffer"},"color":"yellow","bold":true},{"text":" of the best overwatch clone, has just been uploaded"}]
 
 scoreboard objectives add dogPoints dummy
+
+
+say test
