@@ -2,8 +2,8 @@
 execute as @a[tag=cavern] unless entity @s[tag=cavern_dead] run function under_pack:general_functions/general_classloop
 
 #is a player on point
-execute as @a[tag=cavern] if entity @s[x=-9,y=79,z=-732,dx=5,dy=1,dz=6,tag=cavern,gamemode=adventure] run scoreboard players set @s onPoint 1
-execute as @a[tag=cavern] unless entity @s[x=-9,y=79,z=-732,dx=5,dy=1,dz=6,tag=cavern,gamemode=adventure] run scoreboard players set @s onPoint 0
+execute as @a[tag=cavern] if entity @s[x=-10,y=77,z=-733,dx=7,dy=2,dz=8,tag=cavern,gamemode=adventure] run scoreboard players set @s onPoint 1
+execute as @a[tag=cavern] unless entity @s[x=-10,y=77,z=-733,dx=7,dy=2,dz=8,tag=cavern,gamemode=adventure] run scoreboard players set @s onPoint 0
 
 #sets a buffer to whoever has control of the point
 scoreboard players operation cavernBuffer team = cavern team

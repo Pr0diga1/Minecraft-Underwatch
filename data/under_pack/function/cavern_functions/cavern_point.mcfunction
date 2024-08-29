@@ -1,6 +1,6 @@
 #finds the amount of players on the point for each team and stores it
-execute store result score on_point_cavern_red player_num if entity @a[x=-9,y=79,z=-732,dx=5,dy=1,dz=6,team=uRed,tag=cavern,gamemode=adventure,scores={cantCap=0}]
-execute store result score on_point_cavern_blue player_num if entity @a[x=-9,y=79,z=-732,dx=5,dy=1,dz=6,team=uBlue,tag=cavern,gamemode=adventure,scores={cantCap=0}]
+execute store result score on_point_cavern_red player_num if entity @a[x=-10,y=77,z=-733,dx=7,dy=2,dz=8,team=uRed,tag=cavern,gamemode=adventure,scores={cantCap=0}]
+execute store result score on_point_cavern_blue player_num if entity @a[x=-10,y=77,z=-733,dx=7,dy=2,dz=8,team=uBlue,tag=cavern,gamemode=adventure,scores={cantCap=0}]
 
 #if blue team is on the point and red team isn't, update the point's value
 #if a blue person, but not a red one is on the point and the point is at 1, just set it to zero
