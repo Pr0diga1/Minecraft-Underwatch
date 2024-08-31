@@ -20,4 +20,9 @@ execute if score @s vampblood matches 742.. run scoreboard players set @s vampbl
 #remove cant be tainted tag
 execute if score @s ability1 matches 1.. run tag @s[tag=vamp] remove vamp
 
+#ticky
+execute as @s[team=uRed] run function under_pack:vamp_functions/tick_red
+execute as @s[team=uBlue] run function under_pack:vamp_functions/tick_blue
+
+
 function under_pack:vamp_functions/cooldown

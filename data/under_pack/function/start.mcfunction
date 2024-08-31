@@ -312,6 +312,9 @@ scoreboard objectives add coldbuffer dummy
 #vampire
 scoreboard objectives add vampblood dummy
 scoreboard objectives add vamptaint dummy
+scoreboard objectives add vampsuck dummy
+scoreboard objectives add vampray dummy
+
 
 scoreboard players add version_number1 buffer 1
 execute if score version_number1 buffer matches 10 run scoreboard players add version_number2 buffer 1
