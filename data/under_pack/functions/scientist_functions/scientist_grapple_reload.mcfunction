@@ -1,0 +1,11 @@
+execute if score @s ability4 matches 20 run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 11
+execute if score @s ability4 matches 40 run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 10
+execute if score @s ability4 matches 60 run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 9
+execute if score @s ability4 matches 80 run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 8
+execute if score @s ability4 matches 100 run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 7
+execute if score @s ability4 matches 120 run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 6
+execute if score @s ability4 matches 140 run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 5
+execute if score @s ability4 matches 160 run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 4
+execute if score @s ability4 matches 180 run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 3
+execute if score @s ability4 matches 200 run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 2
+execute if score @s ability4 matches 220 run item replace entity @s hotbar.4 with lead{display:{Name:'{"text":"Grapple on Cooldown"}'}} 1

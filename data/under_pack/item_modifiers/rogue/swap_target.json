@@ -1,0 +1,10 @@
+[
+	{
+		"function": "minecraft:set_nbt",
+		"tag": "{swap:2b,CustomModelData:29}"
+	},
+	{
+		"function": "minecraft:set_name",
+		"name": "Teleport Swap"
+	}
+]
