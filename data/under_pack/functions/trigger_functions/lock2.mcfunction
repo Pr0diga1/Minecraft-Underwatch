@@ -1,1 +1,0 @@
-scoreboard players operation @s locked2 = @s class
