@@ -314,6 +314,9 @@ scoreboard objectives add vampblood dummy
 scoreboard objectives add vamptaint dummy
 scoreboard objectives add vampsuck dummy
 scoreboard objectives add vampray dummy
+scoreboard objectives add vampbatred dummy
+scoreboard objectives add vampbatred dummy
+scoreboard objectives add vampdetect dummy
 
 
 scoreboard players add version_number1 buffer 1
