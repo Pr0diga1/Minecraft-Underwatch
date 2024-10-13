@@ -111,6 +111,7 @@ scoreboard players set everyOther constant 1
 scoreboard players set minusOne constant -1
 scoreboard players set 1 constant 1
 scoreboard players set 2 constant 2
+scoreboard players set 3 constant 3
 scoreboard players set 5 constant 5
 scoreboard players set 8 constant 8
 scoreboard players set 4 num 4
