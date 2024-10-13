@@ -315,6 +315,9 @@ scoreboard objectives add vampblood dummy
 scoreboard objectives add vamptaint dummy
 scoreboard objectives add vampsuck dummy
 scoreboard objectives add vampray dummy
+scoreboard objectives add vampbatred dummy
+scoreboard objectives add vampbatred dummy
+scoreboard objectives add vampdetect dummy
 
 
 scoreboard players add version_number1 buffer 1
@@ -326,5 +329,43 @@ tellraw @a [{"text":"Version "},{"text":"1.","color":"yellow","bold":true},{"sco
 
 scoreboard objectives add dogPoints dummy
 
+scoreboard objectives add classTotal dummy
+scoreboard players set Alchemist classTotal 0
+scoreboard players set Archer classTotal 0
+scoreboard players set ColdSteel classTotal 0
+scoreboard players set Cyborg classTotal 0
+scoreboard players set DarkSoul classTotal 0
+scoreboard players set Elemental classTotal 0
+scoreboard players set Engineer classTotal 0
+scoreboard players set GunMan classTotal 0
+scoreboard players set Paladin classTotal 0
+scoreboard players set Lumberjack classTotal 0
+scoreboard players set Mermaid classTotal 0
+scoreboard players set Microwave classTotal 0
+scoreboard players set Ninja classTotal 0
+scoreboard players set Occultist classTotal 0
+scoreboard players set Rogue classTotal 0
+scoreboard players set Scientist classTotal 0
+scoreboard players set Vampire classTotal 0
+scoreboard players set Wizard classTotal 0
+
+scoreboard objectives add TallyAlch dummy
+scoreboard objectives add TallyArch dummy
+scoreboard objectives add TallyCold dummy
+scoreboard objectives add TallyCyborg dummy
+scoreboard objectives add TallyDark dummy
+scoreboard objectives add TallyElemental dummy
+scoreboard objectives add TallyEngi dummy
+scoreboard objectives add TallyGun dummy
+scoreboard objectives add TallyPal dummy
+scoreboard objectives add TallyLumb dummy
+scoreboard objectives add TallyMerm dummy
+scoreboard objectives add TallyMicro dummy
+scoreboard objectives add TallyNinja dummy
+scoreboard objectives add TallyCult dummy
+scoreboard objectives add TallyRogue dummy
+scoreboard objectives add TallySci dummy
+scoreboard objectives add TallyVamp dummy
+scoreboard objectives add TallyWiz dummy
 
 say test

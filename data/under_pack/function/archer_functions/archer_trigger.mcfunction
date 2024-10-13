@@ -3,3 +3,6 @@ execute as @s[team=uRed,tag=ungame] unless entity @a[team=uRed,tag=ungame,scores
 execute as @s[team=uBlue,tag=ungame] unless entity @a[team=uBlue,tag=ungame,scores={class=2}] unless entity @s[scores={locked1=2}] unless entity @s[scores={locked2=2}] run scoreboard players set @s class 2
 execute unless entity @s[scores={class=2}] run tellraw @s {"text":"Locked","color":"red"}
 execute if score @s class matches 2 run function under_pack:archer_functions/archer_start
+
+scoreboard players add Archer classTotal 1
+scoreboard players add @s TallyArch 1
