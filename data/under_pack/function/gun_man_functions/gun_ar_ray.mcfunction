@@ -1,8 +1,5 @@
-#does visual stuff
-playsound entity.firework_rocket.large_blast master @s ~ ~ ~
-execute at @s run tp @s ~ ~ ~ ~ ~-4
-scoreboard players set @s ability1 4 
-scoreboard players remove @s ability8 20
+
+
 
 #the marker has existed for another tick
 scoreboard players add gun_distance buffer 1
