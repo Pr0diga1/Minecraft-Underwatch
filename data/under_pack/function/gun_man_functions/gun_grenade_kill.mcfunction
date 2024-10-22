@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=gun_man_nade,limit=1,sort=nearest] run kill @s
