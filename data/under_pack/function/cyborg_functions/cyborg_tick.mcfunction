@@ -6,7 +6,7 @@ execute if score @s cyborgcap matches 100.. run scoreboard players set @s cyborg
 #carrot detection
 execute if entity @s[nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_data":{cyborgspeed:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{cyborgspeed:1b}}}},scores={reset=1..}] as @s run function under_pack:cyborg_functions/cyborg_speed
 execute if entity @s[nbt={Inventory:[{Slot:2b,components:{"minecraft:custom_data":{cyborgregen:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{cyborgregen:1b}}}},scores={reset=1..}] as @s run function under_pack:cyborg_functions/cyborg_regen
-execute if entity @s[nbt={Inventory:[{Slot:3b,components:{"minecraft:custom_data":{cyborgstrong:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{cyborgstrong:1b}}}},scores={reset=1..}] as @s run function under_pack:cyborg_functions/cyborg_strength
+execute if entity @s[nbt={Inventory:[{Slot:0b,components:{"minecraft:custom_data":{cyborgstrong:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{cyborgstrong:1b}}}},scores={reset=1..}] as @s run function under_pack:cyborg_functions/cyborg_strength
 
 #size stuffs
 execute if score @s cyborgsizebuffer matches 1.. run scoreboard players remove @s cyborgsizebuffer 1
@@ -14,7 +14,7 @@ execute if score @s cyborgsizebuffer matches 0 if score @s cyborgsize matches ..
 
 #haytchpeeings
 execute if score @s cyborghp matches 1 run attribute @s generic.attack_damage base set 1
-execute if score @s cyborghp matches 1 run item replace entity @s hotbar.3 with carrot_on_a_stick[custom_name='{"color":"red","text":"Stength Module"}',custom_model_data=27,custom_data={cyborgstrong:1b},enchantment_glint_override=false] 1
+execute if score @s cyborghp matches 1 run item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name='{"color":"red","text":"Stength Module"}',custom_model_data=27,custom_data={cyborgstrong:1b},enchantment_glint_override=false] 1
 execute if score @s cyborghp matches 1.. run scoreboard players remove @s cyborghp 1
 
 #lower caps
