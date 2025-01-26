@@ -13,7 +13,7 @@ item replace entity @s hotbar.1 with tipped_arrow[custom_name='{"color":"yellow"
 #lightning dart
 item replace entity @s hotbar.2 with tipped_arrow[custom_name='{"color":"white","text":"Electric Dart"}',custom_model_data=2,custom_data={scientistLightning:1b},potion_contents={custom_color:16777215,custom_effects:[{id:"minecraft:slowness",amplifier:255,duration:30},{id:"minecraft:jump_boost",amplifier:127,duration:30}]}] 1
 #Punch bow
-item replace entity @s hotbar.3 with tipped_arrow[custom_name='{"color":"light_purple","text":"Rocket Dart"}',custom_model_data=1,custom_data={scientistRocket:1b},potion_contents={custom_color:16711910,custom_effects:[{id:"minecraft:levitation",amplifier:4,duration:30}]}] 1
+#item replace entity @s hotbar.3 with tipped_arrow[custom_name='{"color":"light_purple","text":"Rocket Dart"}',custom_model_data=1,custom_data={scientistRocket:1b},potion_contents={custom_color:16711910,custom_effects:[{id:"minecraft:levitation",amplifier:4,duration:30}]}] 1
 
 #scientist
 item replace entity @s armor.feet with iron_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:protection":2,"minecraft:depth_strider":2}}] 1
