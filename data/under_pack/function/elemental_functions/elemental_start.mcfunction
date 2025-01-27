@@ -7,7 +7,7 @@ item replace entity @s hotbar.2 with carrot_on_a_stick[enchantment_glint_overrid
 item replace entity @s hotbar.3 with carrot_on_a_stick[enchantment_glint_override=false,custom_name='{"color":"gray","text":"Earth"}',custom_data={elementalEarth:1b},enchantments={levels:{"under_pack:earth":1}}] 1
 
 #armor
-item replace entity @s armor.feet with iron_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"generic.explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
+item replace entity @s armor.feet with iron_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
 item replace entity @s armor.legs with diamond_leggings[unbreakable={show_in_tooltip:false}]
 item replace entity @s armor.head with chainmail_helmet[unbreakable={show_in_tooltip:false}]
 

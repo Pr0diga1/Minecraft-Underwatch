@@ -10,7 +10,7 @@ item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_
 experience set @s 0 levels
 
 #carrots
-item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"color":"blue","text":"Speed Module"}',custom_model_data=27,custom_data={cyborgspeed:1b}] 1
-item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name='{"color":"light_purple","text":"Regeneration Module"}',custom_model_data=27,custom_data={cyborgregen:1b}] 1
-item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name='{"color":"red","text":"Stength Module"}',custom_model_data=27,custom_data={cyborgstrong:1b},attribute_modifiers=[{id:"damage",type:"generic.attack_damage",amount:2.8,operation:"add_value"},{id:"armor",type:"generic.attack_speed",amount:-2.9,operation:"add_value"}]] 1
-item replace entity @s hotbar.4 with ender_eye[custom_name='{"color":"dark_aqua","text":"Size Module"}',custom_model_data=27,custom_data={cyborgsize:1b}]
+item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"color":"blue","text":"Speed Module"}',custom_data={cyborgspeed:1b}] 1
+item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name='{"color":"light_purple","text":"Regeneration Module"}',custom_data={cyborgregen:1b}] 1
+item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name='{"color":"red","text":"Stength Module"}',custom_data={cyborgstrong:1b},attribute_modifiers=[{id:"damage",type:"attack_damage",amount:2.8,operation:"add_value"},{id:"armor",type:"attack_speed",amount:-2.9,operation:"add_value"}]] 1
+item replace entity @s hotbar.4 with ender_eye[custom_name='{"color":"dark_aqua","text":"Size Module"}',custom_data={cyborgsize:1b}]

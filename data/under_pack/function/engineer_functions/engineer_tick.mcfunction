@@ -12,13 +12,13 @@ experience set @s 100 levels
 
 #eyes
 #viagra
-item replace entity @s[scores={ability5=0}] hotbar.3 with ender_eye[custom_name='{"color":"dark_red","text":"Viagra"}',custom_model_data=43,custom_data={enginedrug:1b}] 2
+item replace entity @s[scores={ability5=0}] hotbar.3 with ender_eye[custom_name='{"color":"dark_red","text":"Viagra"}',custom_data={enginedrug:1b}] 2
 
 #wall
-item replace entity @s[scores={ability1=0}] hotbar.4 with ender_eye[custom_name='{"color":"gray","text":"Wall"}',custom_model_data=43,custom_data={enginewall:1b}] 2
+item replace entity @s[scores={ability1=0}] hotbar.4 with ender_eye[custom_name='{"color":"gray","text":"Wall"}',custom_data={enginewall:1b}] 2
 
 #turret
-item replace entity @s[scores={ability7=0}] hotbar.6 with ender_eye[custom_name='{"color":"dark_red","text":"Thingamabob"}',custom_model_data=43,custom_data={engineburst:1b}] 2
+item replace entity @s[scores={ability7=0}] hotbar.6 with ender_eye[custom_name='{"color":"dark_red","text":"Thingamabob"}',custom_data={engineburst:1b}] 2
 
 #wall stuff
 execute if score @s engineerWallBuffer matches 1.. run scoreboard players remove @s engineerWallBuffer 1
@@ -26,7 +26,7 @@ execute if score @s[team=uBlue] engineerWallBuffer matches 0 run kill @e[type=ma
 execute if score @s[team=uRed] engineerWallBuffer matches 0 run kill @e[type=marker,tag=enginewall,tag=red]
 execute if score @s engineerWallBuffer matches 0 run scoreboard players reset @s engineerWallEye 
 execute if score @s engineerWallBuffer matches 0 if score @s ability1 matches 0 run scoreboard players set @s ability1 121
-execute if score @s ability1 matches 1 run item replace entity @s hotbar.4 with ender_eye[custom_name='{"color":"gray","text":"Wall"}',custom_model_data=43,custom_data={enginewall:1b}] 2
+execute if score @s ability1 matches 1 run item replace entity @s hotbar.4 with ender_eye[custom_name='{"color":"gray","text":"Wall"}',custom_data={enginewall:1b}] 2
 execute if score @s ability1 matches 1..121 run scoreboard players remove @s ability1 1
 
 #turret stuff

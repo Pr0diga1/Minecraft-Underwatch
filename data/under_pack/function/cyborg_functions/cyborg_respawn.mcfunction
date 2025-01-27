@@ -3,4 +3,4 @@ scoreboard players set @s cyborgcap 0
 scoreboard players set @s cyborghp 1
 scoreboard players reset @s cyborgsize
 scoreboard players set @s cyborgsizebuffer 0
-attribute @s generic.scale base set 1
+attribute @s scale base set 1

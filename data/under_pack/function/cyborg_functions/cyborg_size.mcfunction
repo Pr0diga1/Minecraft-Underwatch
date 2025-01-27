@@ -1,6 +1,6 @@
 scoreboard players add @s cyborgcap 1
 experience add @s 1 levels
-execute store result score @s cyborgsize run attribute @s generic.scale base get 100
+execute store result score @s cyborgsize run attribute @s scale base get 100
 scoreboard players operation @s cyborgsize -= 3 constant
 scoreboard players set @s cyborgsizebuffer 80
 execute store result storage cyborg size.red double .01 run scoreboard players get @s[team=uRed] cyborgsize 

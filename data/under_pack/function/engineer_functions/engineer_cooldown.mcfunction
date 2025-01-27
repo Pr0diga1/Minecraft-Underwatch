@@ -4,8 +4,8 @@ item modify entity @s hotbar.4 under_pack:engineer/wall
 execute if score @s ability1 matches 1 run scoreboard players set @s engineerWallBuffer -1
 
 #healies ability2
-execute if score @s ability2 matches 1 if entity @s[team=uRed] run item replace entity @s hotbar.2 with snowball[custom_name='{"color":"blue","text":"5000mg of Ibuprofen"}',custom_model_data=3,custom_data={enginedrug:1b,red:1b}] 1
-execute if score @s ability2 matches 1 if entity @s[team=uBlue] run item replace entity @s hotbar.2 with snowball[custom_name='{"color":"blue","text":"5000mg of Ibuprofen"}',custom_model_data=3,custom_data={enginedrug:1b,blue:1b}] 1
+execute if score @s ability2 matches 1 if entity @s[team=uRed] run item replace entity @s hotbar.2 with snowball[custom_name='{"color":"blue","text":"5000mg of Ibuprofen"}',custom_data={enginedrug:1b,red:1b}] 1
+execute if score @s ability2 matches 1 if entity @s[team=uBlue] run item replace entity @s hotbar.2 with snowball[custom_name='{"color":"blue","text":"5000mg of Ibuprofen"}',custom_data={enginedrug:1b,blue:1b}] 1
 execute if score @s ability2 matches 1.. run experience add @s 12 points
 execute if score @s ability2 matches 1.. run scoreboard players remove @s ability2 1
 
@@ -22,12 +22,12 @@ execute if score @s ability5 matches 1.. run scoreboard players remove @s abilit
 
 #wd ability6
 item modify entity @s hotbar.5 under_pack:engineer/wd
-execute if score @s ability6 matches 1 run item replace entity @s hotbar.5 with carrot_on_a_stick[custom_name='{"color":"blue","text":"WD-40"}',custom_model_data=43,custom_data={enginewd:1b}]
+execute if score @s ability6 matches 1 run item replace entity @s hotbar.5 with carrot_on_a_stick[custom_name='{"color":"blue","text":"WD-40"}',custom_data={enginewd:1b}]
 execute if score @s ability6 matches 1.. run scoreboard players remove @s ability6 1
 
 #magnet ability4
 item modify entity @s hotbar.7 under_pack:engineer/manget
-execute if score @s ability4 matches 1 run item replace entity @s hotbar.7 with carrot_on_a_stick[custom_name='{"color":"red","text":"Magnet"}',custom_model_data=43,custom_data={enginemag:1b}]
+execute if score @s ability4 matches 1 run item replace entity @s hotbar.7 with carrot_on_a_stick[custom_name='{"color":"red","text":"Magnet"}',custom_data={enginemag:1b}]
 execute if score @s ability4 matches 1.. run scoreboard players remove @s ability4 1
 
 #turret ability7

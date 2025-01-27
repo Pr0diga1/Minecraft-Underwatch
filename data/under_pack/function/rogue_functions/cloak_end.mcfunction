@@ -12,4 +12,4 @@ scoreboard players set @s damageTaken 0
 
 # Start cooldown
 scoreboard players set @s ability1 101
-item replace entity @s hotbar.1 with barrier[custom_model_data=19]
+item replace entity @s hotbar.1 with barrier
