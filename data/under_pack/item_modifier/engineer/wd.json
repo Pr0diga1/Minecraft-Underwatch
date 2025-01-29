@@ -7,7 +7,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability1": 239
+					"ability6": 239
 				}
 			}
 		]
@@ -20,7 +20,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability1": 219
+					"ability6": 219
 				}
 			}
 		]
@@ -33,7 +33,7 @@
 				"condition": "minecraft:entity_scores",
 				"entity": "this",
 				"scores": {
-					"ability1": 199
+					"ability6": 199
 				}
 			}
 		]

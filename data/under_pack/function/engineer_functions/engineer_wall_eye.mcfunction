@@ -1,5 +1,5 @@
 #iterate the variable every tick the eye was held down
-scoreboard players add @s engineerWallEye 1
+scoreboard players add @s engineerWallEye 2
 scoreboard players set @s engineerWallBuffer 2
 #summon tracker markers
 execute if score @s[team=uBlue] engineerWallEye matches 2 at @s run summon marker ^ ^ ^2 {Tags:["enginewall","blue"]}

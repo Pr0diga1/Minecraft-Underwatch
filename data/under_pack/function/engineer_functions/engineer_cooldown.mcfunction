@@ -6,7 +6,7 @@ execute if score @s ability1 matches 1 run scoreboard players set @s engineerWal
 #healies ability2
 execute if score @s ability2 matches 1 if entity @s[team=uRed] run item replace entity @s hotbar.2 with snowball[custom_name='{"color":"blue","text":"5000mg of Ibuprofen"}',custom_data={enginedrug:1b,red:1b}] 1
 execute if score @s ability2 matches 1 if entity @s[team=uBlue] run item replace entity @s hotbar.2 with snowball[custom_name='{"color":"blue","text":"5000mg of Ibuprofen"}',custom_data={enginedrug:1b,blue:1b}] 1
-execute if score @s ability2 matches 1.. run experience add @s 12 points
+execute if score @s ability2 matches 1.. run experience add @s 15 points
 execute if score @s ability2 matches 1.. run scoreboard players remove @s ability2 1
 
 #wrench ability 3
@@ -31,6 +31,6 @@ execute if score @s ability4 matches 1 run item replace entity @s hotbar.7 with 
 execute if score @s ability4 matches 1.. run scoreboard players remove @s ability4 1
 
 #turret ability7
-execute if score @s ability7 matches 300 run item replace entity @s hotbar.6 with barrier 15
+execute if score @s ability7 matches 260 run item replace entity @s hotbar.6 with barrier 13
 item modify entity @s hotbar.6 under_pack:engineer/turret
 execute if score @s ability7 matches 1.. run scoreboard players remove @s ability7 1
