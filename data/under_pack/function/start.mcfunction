@@ -138,6 +138,7 @@ scoreboard objectives add microwave trigger
 scoreboard objectives add occultist trigger
 scoreboard objectives add coldsteel trigger
 scoreboard objectives add hemomancer trigger
+scoreboard objectives add celestial trigger
 
 #various triggers
 scoreboard objectives add red trigger

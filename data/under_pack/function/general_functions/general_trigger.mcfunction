@@ -66,3 +66,5 @@ execute as @a[scores={coldsteel=1..}] at @s run function under_pack:coldsteel_fu
 scoreboard players enable @a coldsteel
 execute as @a[scores={hemomancer=1..}] at @s run function under_pack:vamp_functions/trigger
 scoreboard players enable @a hemomancer
+execute as @a[scores={celestial=1..}] at @s run function under_pack:celestial_functions/trigger
+scoreboard players enable @a celestial
