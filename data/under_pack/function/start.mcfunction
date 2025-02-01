@@ -322,6 +322,9 @@ scoreboard objectives add vampbatred dummy
 scoreboard objectives add vampbatred dummy
 scoreboard objectives add vampdetect dummy
 
+#celestial
+scoreboard objectives add celestance dummy
+
 
 scoreboard players add version_number1 buffer 1
 execute if score version_number1 buffer matches 10 run scoreboard players add version_number2 buffer 1

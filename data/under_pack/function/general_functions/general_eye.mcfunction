@@ -13,3 +13,4 @@ execute as @s[scores={class=13},nbt={SelectedItem:{components:{"minecraft:custom
 execute as @s[scores={class=14}] if score @s ability1 matches 0 if score @s ability6 matches 0 run function under_pack:gun_man_functions/gun_ar
 execute as @s[scores={class=15}] run function under_pack:cyborg_functions/cyborg_size
 execute as @a[scores={class=19}] run function under_pack:vamp_functions/eye
+execute as @a[scores={class=20}] run function under_pack:celestial_functions/eye
