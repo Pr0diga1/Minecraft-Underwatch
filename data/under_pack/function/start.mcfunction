@@ -114,6 +114,7 @@ scoreboard players set 2 constant 2
 scoreboard players set 3 constant 3
 scoreboard players set 5 constant 5
 scoreboard players set 8 constant 8
+scoreboard players set 20 constant 20
 scoreboard players set 4 num 4
 scoreboard players set 40 num 40
 
@@ -137,6 +138,7 @@ scoreboard objectives add microwave trigger
 scoreboard objectives add occultist trigger
 scoreboard objectives add coldsteel trigger
 scoreboard objectives add hemomancer trigger
+scoreboard objectives add celestial trigger
 
 #various triggers
 scoreboard objectives add red trigger
@@ -309,6 +311,7 @@ scoreboard objectives add darkEyeBuffer dummy
 
 #coldsteel
 scoreboard objectives add coldbuffer dummy
+scoreboard objectives add coldblast dummy
 
 #vampire
 scoreboard objectives add vampblood dummy

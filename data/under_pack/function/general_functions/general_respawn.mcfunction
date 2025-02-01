@@ -17,3 +17,4 @@ execute as @s[scores={class=16}] run function under_pack:microwave_functions/res
 execute as @s[scores={class=17}] run function under_pack:occultist/respawn
 execute as @s[scores={class=18}] run function under_pack:coldsteel_functions/respawn
 execute as @s[scores={class=19}] run function under_pack:vamp_functions/respawn
+execute as @s[scores={class=20}] run function under_pack:celestial_functions/respawn

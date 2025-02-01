@@ -1,4 +1,4 @@
-damage @s 8 player_attack by @a[team=uBlue,scores={class=3},limit=1]
+damage @s 10 player_attack by @a[team=uBlue,scores={class=3},limit=1]
 tag @s remove magneticblue
 scoreboard players reset blue engineermagnet
 advancement revoke @s only under_pack:magnet
