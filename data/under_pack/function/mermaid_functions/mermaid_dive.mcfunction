@@ -1,6 +1,6 @@
-attribute @s generic.scale base set .2
-attribute @s generic.jump_strength base set 0
-attribute @s generic.attack_damage base set -10
+attribute @s scale base set .2
+attribute @s jump_strength base set 0
+attribute @s attack_damage base set -10
 effect give @s speed 3 1
 effect give @s resistance 3 255 true
 effect give @s invisibility 3 10 true

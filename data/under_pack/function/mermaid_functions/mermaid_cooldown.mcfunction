@@ -6,7 +6,7 @@ execute if entity @s[team=uBlue] if score @s ability1 matches 1 run item replace
 
 #dive
 item modify entity @s hotbar.3 under_pack:mermaid/dive
-execute if score @s ability4 matches 1 run item replace entity @s hotbar.3 with carrot_on_a_stick[custom_name='{"color":"aqua","text":"Dive"}',unbreakable={show_in_tooltip:false},custom_model_data=0,custom_data={mermaiddive:1b}] 1
+execute if score @s ability4 matches 1 run item replace entity @s hotbar.3 with carrot_on_a_stick[custom_name='{"color":"aqua","text":"Dive"}',unbreakable={show_in_tooltip:false},custom_data={mermaiddive:1b}] 1
 execute if score @s ability4 matches 1.. run scoreboard players remove @s ability4 1
 
 #burst

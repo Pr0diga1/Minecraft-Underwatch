@@ -8,7 +8,6 @@ item replace entity @s hotbar.1 with tipped_arrow[custom_name='{"color":"yellow"
 #lightning dart
 item replace entity @s hotbar.2 with tipped_arrow[custom_name='{"color":"white","text":"Electric Dart"}',custom_data={scientistLightning:1b},potion_contents={custom_color:16777215,custom_effects:[{id:"minecraft:slowness",amplifier:255,duration:30},{id:"minecraft:jump_boost",amplifier:127,duration:30}]}] 1
 #Punch bow
-item replace entity @s hotbar.3 with tipped_arrow[custom_name='{"color":"light_purple","text":"Rocket Dart"}',custom_data={scientistRocket:1b},potion_contents={custom_color:16711910,custom_effects:[{id:"minecraft:levitation",amplifier:4,duration:30}]}] 1
 
 
 #set things to 0
