@@ -12,7 +12,6 @@ kill @e[tag=enginehole]
 scoreboard players set @s engineerTurretDuration 0
 
 kill @e[tag=enginetrack] 
-kill @e[nbt={Item:{tag:{enginedrug:1b}}}]
 kill @e[type=snowball]
 
 execute if entity @s[team=uBlue] run kill @e[type=marker,tag=enginewall,tag=blue]

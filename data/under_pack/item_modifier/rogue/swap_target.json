@@ -2,8 +2,7 @@
 	{
 		"function": "minecraft:set_components",
 		"components": {
-			"minecraft:custom_data": "{swap:2b}",
-			"minecraft:custom_model_data": 29
+			"minecraft:custom_data": "{swap:2b}"
 		}
 	},
 	{
