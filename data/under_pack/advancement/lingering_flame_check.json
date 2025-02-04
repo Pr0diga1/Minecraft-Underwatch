@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"blaze powder": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"immolation": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:dark_soul_functions/lingering_flame"
+	}
+}
