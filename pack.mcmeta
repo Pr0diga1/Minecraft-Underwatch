@@ -1,6 +1,14 @@
-	{
-       "pack": {
-           "pack_format": 61,
-           "description": "Datapack for the underwatch server."
-       }
-   }
+{
+	"pack": {
+		"pack_format": 61,
+		"description": "Datapack for the underwatch server."
+	},
+	"overlays": {
+		"entries": [
+			{
+				"directory": "animated_java",
+				"formats": 61
+			}
+		]
+	}
+}
