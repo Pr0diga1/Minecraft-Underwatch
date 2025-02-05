@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "tick" : {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "rewards": {
+        "function": "under_pack:dark_soul_functions/swinging"
+    }
+}

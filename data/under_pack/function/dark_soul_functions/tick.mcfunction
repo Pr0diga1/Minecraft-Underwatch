@@ -1,6 +1,12 @@
-## Humanity
-# Gain Humanity
+## Ember
+# Gain Ember
 execute if score @s ultKills matches 1.. run function under_pack:dark_soul_functions/kill_got
+
+## Zweihander ability
+# Tp rig to player
+execute if entity @n[tag=aj.animations.root] run tp @n[tag=aj.animations.root] ~ ~1.4 ~ ~ ~
+# Check if has tag and advancement
+execute if entity @s[tag=swing_started,advancements={under_pack:swing_zwei=false}] run function under_pack:dark_soul_functions/swing_end
 
 ## Estus
 # Use estus
