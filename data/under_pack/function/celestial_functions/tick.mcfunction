@@ -1,0 +1,1 @@
+execute if score @s celestance matches 1 run function under_pack:celestial_functions/sun/tick
