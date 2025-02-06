@@ -1,6 +1,5 @@
 #the marker has existed for another tick
 scoreboard players add distance buffer 1
-say hi
 
 #kill the marker if its in a block or has existed for 4 seconds
 execute unless block ~ ~ ~ #under_pack:non_solid run scoreboard players set hit buffer 1
