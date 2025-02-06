@@ -1,4 +1,5 @@
 item replace entity @s hotbar.0 with golden_sword[attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:2.5,operation:"add_value"},{id:"attack_speed",type:"attack_speed",amount:-2.75,operation:"add_value"}],custom_data={celeswap:1b, celeshine:1b},custom_name='{"color":"yellow","text":"Shine"}',unbreakable={}] 1
+item replace entity @s hotbar.1 with carrot_on_a_stick[custom_data={celeswap:1b, celenova:1b},custom_name='{"color":"dark_purple","text":"Supernova"}',unbreakable={}] 1
 
 
 
