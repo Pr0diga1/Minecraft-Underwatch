@@ -8,6 +8,15 @@ execute if score @s celenova matches 1.. run function under_pack:celestial_funct
 execute if score @s celenova matches 1 store result storage celestial nova.x double .1 run scoreboard players get @s celetaken
 execute if score @s celenova matches 1 run function under_pack:celestial_functions/sun/novadamage with storage celestial nova
 
+#sunset
+execute if entity @s[nbt={Inventory:[{Slot:2b,components:{"minecraft:custom_data":{celeset:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{celeset:1b}}}},scores={reset=1..}] run function under_pack:celestial_functions/sun/sunset
+execute if score @s celeset matches 0.. if entity @s[team=uRed] store result storage celestial set.red double .05 run scoreboard players get @s celeset
+execute if score @s celeset matches ..0 if entity @s[team=uRed] store result storage celestial set.red double -.05 run scoreboard players get @s celeset
+function under_pack:celestial_functions/sun/sunsetsize with storage celestial set
+
+scoreboard players remove @s[scores={celeset=-19..}] celeset 1
+
 scoreboard players reset @s celedamage
 
+effect give @s slowness 1 0 true
 function under_pack:celestial_functions/sun/cooldown

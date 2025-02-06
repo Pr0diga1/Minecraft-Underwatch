@@ -334,9 +334,12 @@ scoreboard objectives add celeadjust minecraft.custom:minecraft.damage_absorbed
 data modify storage celestial shine.x set value 0
 data modify storage celestial nova.red set value 0.001 
 data modify storage celestial nova.blue set value 0.001
+data modify storage celestial set.red set value 1 
+data modify storage celestial set.blue set value 1
 scoreboard objectives add celetaken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add celenova dummy
 scoreboard objectives add celedust dummy
+scoreboard objectives add celeset dummy
 
 
 scoreboard players add version_number1 buffer 1
