@@ -4,6 +4,6 @@ item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_
 attribute @s scale base set 1
 attribute @s jump_strength base set .42
 attribute @s attack_damage base set 1
-item replace entity @s hotbar.3 with barrier[custom_name='{"text":"Dive on Cooldown"}'] 14
-scoreboard players set @s ability4 280
+item replace entity @s hotbar.2 with barrier[custom_name='{"text":"Dive on Cooldown"}'] 12
+scoreboard players set @s ability4 240
 playsound minecraft:ambient.underwater.exit master @a ~ ~ ~ 5 1

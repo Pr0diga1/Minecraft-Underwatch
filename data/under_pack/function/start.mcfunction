@@ -300,6 +300,8 @@ scoreboard objectives add mermaiddamage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add mermaidDetect dummy
 scoreboard objectives add mermaidburst dummy
 scoreboard objectives add mermaiddive dummy
+scoreboard objectives add mermaidperch dummy
+scoreboard objectives add mermaidperchbuffer dummy
 
 #cyborg
 scoreboard objectives add cyborgcap dummy
