@@ -4,3 +4,4 @@ execute unless entity @s[nbt={Inventory:[{Slot:3b,count:3}]}] run give @s blaze_
 
 effect clear @s absorption
 effect give @s absorption infinite 0
+scoreboard players reset @s ultKills
