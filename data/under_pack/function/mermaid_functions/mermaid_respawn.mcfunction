@@ -8,6 +8,8 @@ scoreboard players set @s ability1 2
 scoreboard players set @s ability4 1
 scoreboard players set @s mermaiddive 0
 scoreboard players set @s mermaidburst 0
+scoreboard players set @s mermaidperch -1
+scoreboard players set @s mermaidperchbuffer -1
 scoreboard players reset @s mermaidtide
 execute if entity @s[team=uRed] run kill @e[tag=mermaidtide,tag=red]
 execute if entity @s[team=uBlue] run kill @e[tag=mermaidtide,tag=blue]
