@@ -1,2 +1,2 @@
 #remove 1 from the perch
-scoreboard players remove @s mermaidperch 1
+execute unless score @s mermaiddive matches 1.. run scoreboard players remove @s mermaidperch 1
