@@ -329,6 +329,7 @@ scoreboard objectives add vampdetect dummy
 #celestial
 scoreboard objectives add celestance dummy
 scoreboard objectives add celedamage minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add celedamagehelper minecraft.custom:minecraft.damage_dealt_absorbed
 scoreboard objectives add celeshine dummy
 scoreboard objectives add celeadjust minecraft.custom:minecraft.damage_absorbed
 data modify storage celestial shine.x set value 0
