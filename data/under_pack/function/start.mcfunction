@@ -341,6 +341,7 @@ scoreboard objectives add celetaken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add celenova dummy
 scoreboard objectives add celedust dummy
 scoreboard objectives add celeset dummy
+scoreboard objectives add celetimer dummy
 
 
 scoreboard players add version_number1 buffer 1
