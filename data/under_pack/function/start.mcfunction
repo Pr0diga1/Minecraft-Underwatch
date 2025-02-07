@@ -113,10 +113,14 @@ scoreboard players set 1 constant 1
 scoreboard players set 2 constant 2
 scoreboard players set 3 constant 3
 scoreboard players set 5 constant 5
+scoreboard players set 6 constant 6
 scoreboard players set 8 constant 8
 scoreboard players set 20 constant 20
+scoreboard players set 10 constant 10
 scoreboard players set 4 num 4
 scoreboard players set 40 num 40
+scoreboard players set -1 constant -1
+scoreboard players set 7 constant 7
 
 #all of the triggers for the classes
 scoreboard objectives add alchemist trigger
@@ -326,6 +330,20 @@ scoreboard objectives add vampdetect dummy
 
 #celestial
 scoreboard objectives add celestance dummy
+scoreboard objectives add celedamage minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add celedamagehelper minecraft.custom:minecraft.damage_dealt_absorbed
+scoreboard objectives add celeshine dummy
+scoreboard objectives add celeadjust minecraft.custom:minecraft.damage_absorbed
+data modify storage celestial shine.x set value 0
+data modify storage celestial nova.red set value 0.001 
+data modify storage celestial nova.blue set value 0.001
+data modify storage celestial set.red set value 1 
+data modify storage celestial set.blue set value 1
+scoreboard objectives add celetaken minecraft.custom:minecraft.damage_taken
+scoreboard objectives add celenova dummy
+scoreboard objectives add celedust dummy
+scoreboard objectives add celeset dummy
+scoreboard objectives add celetimer dummy
 
 
 scoreboard players add version_number1 buffer 1

@@ -1,1 +1,14 @@
-item replace entity @s hotbar.0 with ender_eye[custom_name='{"color":"yellow","text":"Shine"}',custom_data={celsunshine:1b}] 1
+item replace entity @s hotbar.0 with golden_sword[attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:2,operation:"add_value"},{id:"attack_speed",type:"attack_speed",amount:-3,operation:"add_value"}],custom_data={celeswap:1b, celeshine:1b},custom_name='{"color":"yellow","text":"Shine"}',unbreakable={}] 1
+item replace entity @s hotbar.1 with carrot_on_a_stick[custom_data={celeswap:1b, celenova:1b},custom_name='{"color":"dark_purple","text":"Supernova"}',unbreakable={}] 1
+item replace entity @s hotbar.2 with carrot_on_a_stick[custom_data={celeswap:1b, celeset:1b},custom_name='{"color":"gold","text":"Sunset"}',unbreakable={}] 1
+
+item replace entity @s armor.head with leather_helmet[unbreakable={},dyed_color=16776960]
+item replace entity @s armor.chest with leather_chestplate[unbreakable={},dyed_color=16776960]
+item replace entity @s armor.legs with leather_leggings[unbreakable={},dyed_color=16776960]
+item replace entity @s armor.feet with diamond_boots[attribute_modifiers=[{id:"scale",type:"scale",amount:0.1,operation:"add_value"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}]
+
+
+scoreboard players set @s celestance 1
+
+execute as @s[team=uRed] run scoreboard players reset @a[team=uRed] celeadjust
+execute as @s[team=uBlue] run scoreboard players reset @a[team=uBlue] celeadjust

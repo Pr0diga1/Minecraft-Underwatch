@@ -10,3 +10,4 @@ scoreboard players set @s ability7 0
 scoreboard players set @s ability8 0
 function under_pack:celestial_functions/sun/start
 
+
