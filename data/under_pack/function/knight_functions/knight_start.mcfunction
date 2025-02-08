@@ -8,8 +8,8 @@ item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"color":"go
 
 #armor
 item replace entity @s armor.chest with chainmail_chestplate[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{id:"hp",type:"max_health",amount:10,operation:"add_value"},{id:"armor",type:"armor",amount:5,operation:"add_value"}]}] 1
-item replace entity @s armor.legs with iron_leggings[unbreakable={show_in_tooltip:false},attribute_modifiers=[{id:"scale",type:"scale",amount:0.3,operation:"add_value",slot:"any"},{id:"armor",type:"armor",amount:5,operation:"add_value"}]] 1
-item replace entity @s armor.feet with iron_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"},{id:"armor",type:"armor",amount:2,operation:"add_value"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
+item replace entity @s armor.legs with iron_leggings[unbreakable={show_in_tooltip:false},attribute_modifiers=[{id:"scale",type:"scale",amount:0.3,operation:"add_value",slot:"any"},{id:"armor_leg",type:"armor",amount:5,operation:"add_value"}]] 1
+item replace entity @s armor.feet with iron_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"},{id:"armor_boot",type:"armor",amount:2,operation:"add_value"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
 
 scoreboard players set @s movement 319
 scoreboard players set @s ability1 179
