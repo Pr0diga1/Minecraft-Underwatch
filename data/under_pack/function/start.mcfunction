@@ -210,6 +210,7 @@ scoreboard objectives add engineer_damage_taken minecraft.custom:minecraft.damag
 scoreboard objectives add engineermagnet dummy
 scoreboard objectives add engineerhealbuffer dummy
 scoreboard objectives add engineermagtimer dummy
+scoreboard objectives add engineermagnetcd dummy
 
 #knight
 scoreboard objectives add blockIsActive dummy
@@ -344,7 +345,8 @@ scoreboard objectives add celenova dummy
 scoreboard objectives add celedust dummy
 scoreboard objectives add celeset dummy
 scoreboard objectives add celetimer dummy
-
+scoreboard objectives add celefull dummy
+scoreboard objectives add celetidal dummy
 
 scoreboard players add version_number1 buffer 1
 execute if score version_number1 buffer matches 10 run scoreboard players add version_number2 buffer 1
