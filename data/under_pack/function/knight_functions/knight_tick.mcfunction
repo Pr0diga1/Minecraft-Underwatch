@@ -6,13 +6,6 @@ function under_pack:knight_functions/knight_cooldown
 execute if score @s movement matches 1 run item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"color":"gold","text":"Selfish Prayer"}',custom_data={knightheal:1b}] 1
 execute if score @s movement matches 1.. run scoreboard players remove @s movement 1
 
-#bomb!!!!!!!
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:wind_charge",count:1,components:{"minecraft:custom_data":{knightbomb:1b}}}}] run scoreboard players set @s ability1 180
-
-#bomb cooldown
-execute if score @s ability1 matches 1 run item replace entity @s hotbar.2 with wind_charge[custom_name='{"color":"dark_green","text":"Holy Hand Grenade"}',custom_data={knightbomb:1b}] 2
-execute if score @s ability1 matches 1.. run scoreboard players remove @s ability1 1
-
 #stopsounds for the block
 stopsound @a * minecraft:entity.ender_eye.launch
 stopsound @a * minecraft:entity.ender_eye.death

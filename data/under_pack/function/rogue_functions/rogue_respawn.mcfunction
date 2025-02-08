@@ -2,18 +2,16 @@
 scoreboard players reset @a uDeaths
 
 # Reset other scoreboards
-scoreboard players set @s ability1 0
-scoreboard players set @s ability2 0
-scoreboard players set @s ability3 0
+scoreboard players reset @s ability1
+scoreboard players reset @s ability2
+scoreboard players reset @s ability3
 
 # Reset tags
 tag @s remove cloak
 
 #clean swap tags
-execute as @s[team=uRed] run tag @s remove swap
-execute as @s[team=uRed] run tag @s remove target
-execute as @s[team=uBlue] run tag @s remove swap
-execute as @s[team=uBlue] run tag @s remove target
+tag @s remove swap
+tag @s remove target
 
 # Cloak
 item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"bold":true,"color":"#555755","italic":false,"text":"Invisibility Cloak"}',unbreakable={show_in_tooltip:false},custom_data={cloak:1b}] 1

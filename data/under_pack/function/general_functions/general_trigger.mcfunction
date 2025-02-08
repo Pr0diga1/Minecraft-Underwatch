@@ -60,8 +60,8 @@ execute as @a[scores={cyborg=1..}] at @s run function under_pack:cyborg_function
 scoreboard players enable @a cyborg
 execute as @a[scores={microwave=1..}] at @s run function under_pack:microwave_functions/trigger
 scoreboard players enable @a microwave
-execute as @a[scores={occultist=1..}] at @s run function under_pack:occultist/trigger
-scoreboard players enable @a occultist
+execute as @a[scores={bard_barian=1..}] at @s run function under_pack:bard_barian/trigger
+scoreboard players enable @a bard_barian
 execute as @a[scores={coldsteel=1..}] at @s run function under_pack:coldsteel_functions/trigger
 scoreboard players enable @a coldsteel
 execute as @a[scores={hemomancer=1..}] at @s run function under_pack:vamp_functions/trigger

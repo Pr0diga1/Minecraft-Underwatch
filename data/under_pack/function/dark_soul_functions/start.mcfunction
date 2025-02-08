@@ -2,14 +2,14 @@
 clear @s
 
 ## Main weapon
-item replace entity @s hotbar.0 with iron_sword[custom_name='{"bold":true,"color":"#FF4912","italic":false,"text":"Chaos Zweihänder","underlined":true}',unbreakable={},custom_data={zwei:true},attribute_modifiers={modifiers:[{id:"armor",type:"attack_damage",amount:5,operation:"add_value",slot:"mainhand"},{id:"attack_cooldown",type:"attack_speed",amount:-3,operation:"add_value",slot:"mainhand"},{id:"entity_interaction_range",type:"entity_interaction_range",amount:1.5,operation:"add_value",slot:"mainhand"}],show_in_tooltip:true},consumable={consume_seconds:10000,animation:"crossbow",has_consume_particles:true}] 1
+item replace entity @s hotbar.0 with iron_sword[custom_name='{"bold":true,"color":"#FF4912","italic":false,"text":"Chaos Zweihänder","underlined":true}',unbreakable={show_in_tooltip:false},custom_data={zwei:true},attribute_modifiers={modifiers:[{id:"armor",type:"attack_damage",amount:-1,operation:"add_value",slot:"mainhand"},{id:"attack_cooldown",type:"attack_speed",amount:-3,operation:"add_value",slot:"mainhand"},{id:"entity_interaction_range",type:"entity_interaction_range",amount:1.5,operation:"add_value",slot:"mainhand"}],show_in_tooltip:true},consumable={consume_seconds:10000,animation:"crossbow",has_consume_particles:true}] 1
 
 # Abilities
-scoreboard players set @s ability1 0
-scoreboard players set @s ability2 0
+scoreboard players reset @s ability1
+scoreboard players reset @s ability2
 scoreboard players set @s ability3 0
-scoreboard players set @s ability4 0
-scoreboard players set @s ultKills 0
+scoreboard players reset @s ability4
+scoreboard players reset @s ultKills
 
 item replace entity @s hotbar.1 with ender_eye[custom_name='{"bold":true,"color":"gold","italic":false,"text":"Estus Flask"}',custom_data={estus:1b}] 3
 item replace entity @s hotbar.2 with blaze_rod[consumable={consume_seconds:0,animation:"spear",sound:"block.blastfurnace.fire_crackle",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"entity.ender_dragon.flap"}]},custom_data={lingering:true},use_cooldown={seconds:2},custom_name='{"bold":true,"color":"#FF8519","italic":false,"text":"Lingering Flame"}'] 2

@@ -1,5 +1,3 @@
-#tide pool
-
 #dive
 item modify entity @s hotbar.2 under_pack:mermaid/dive
 execute if score @s ability4 matches 1 run item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name='{"color":"aqua","text":"Dive"}',unbreakable={show_in_tooltip:false},custom_data={mermaiddive:1b}] 1

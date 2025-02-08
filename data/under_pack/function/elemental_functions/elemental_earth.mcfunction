@@ -6,4 +6,3 @@ execute as @s[team=uBlue] positioned ~ ~-1 ~ run summon block_display ^ ^ ^1 {No
 #set the timer
 execute as @s[team=uRed] at @s run scoreboard players set @e[type=block_display,limit=1,sort=nearest,tag=redElementalEarth] elementalEarthTimer 11
 execute as @s[team=uBlue] at @s run scoreboard players set @e[type=block_display,limit=1,sort=nearest,tag=blueElementalEarth] elementalEarthTimer 11
-scoreboard players reset @s reset

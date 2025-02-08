@@ -1,5 +1,5 @@
 #change the state
-scoreboard players set @s elementalWaterState 0
+tag @s add elementalsetstate
 #kill the marker
 execute as @s[team=uRed] run kill @e[type=marker,tag=redElementalWater]
 execute as @s[team=uBlue] run kill @e[type=marker,tag=blueElementalWater]
@@ -9,6 +9,6 @@ execute as @s[team=uBlue] run scoreboard players set @a[team=uBlue] elementalWat
 #clear regen
 execute as @s[team=uRed] run effect clear @a[team=uRed] regeneration
 execute as @s[team=uBlue] run effect clear @a[team=uBlue] regeneration
-#reset reset
-scoreboard players reset @s reset
+#remove title
+title @s actionbar {"text":""}
 item modify entity @s hotbar.2 under_pack:elemental/endglint
