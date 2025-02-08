@@ -139,7 +139,7 @@ scoreboard objectives add dark_soul trigger
 scoreboard objectives add gun_man trigger
 scoreboard objectives add cyborg trigger
 scoreboard objectives add microwave trigger
-scoreboard objectives add occultist trigger
+scoreboard objectives add bard_barian trigger
 scoreboard objectives add coldsteel trigger
 scoreboard objectives add hemomancer trigger
 scoreboard objectives add celestial trigger
@@ -369,7 +369,7 @@ scoreboard players set Lumberjack classTotal 0
 scoreboard players set Mermaid classTotal 0
 scoreboard players set Microwave classTotal 0
 scoreboard players set Ninja classTotal 0
-scoreboard players set Occultist classTotal 0
+scoreboard players set Bard_Barian classTotal 0
 scoreboard players set Rogue classTotal 0
 scoreboard players set Scientist classTotal 0
 scoreboard players set Vampire classTotal 0
