@@ -1,5 +1,5 @@
 #damage when snowball hits
-execute at @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{celedrop:1b,blue:1b}}}}] positioned ~ ~-2 ~ as @a[team=uRed,distance=..1] run damage @s 5 player_attack by @a[team=uRed,scores={class=20},limit=1]
+execute at @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{celedrop:1b,blue:1b}}}}] positioned ~-.85 ~-1 ~-.85 as @a[team=uRed,dx=.4,dz=.4] run damage @s 5 player_attack by @a[team=uBlue,scores={class=20},limit=1]
 #if on cooldown and less than 2, subtract from cooldown
 execute if score @s ability3 matches 1.. unless entity @s[nbt={Inventory:[{id:"minecraft:snowball",count:2,Slot:0b,components:{"minecraft:custom_data":{celedrop:1b,blue:1b}}}]}] run scoreboard players remove @s ability3 1
 #if cooldown up and there is a snowball add one to amount
