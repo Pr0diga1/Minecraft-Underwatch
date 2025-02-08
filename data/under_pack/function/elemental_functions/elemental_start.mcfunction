@@ -41,6 +41,7 @@ execute as @s[team=uBlue] run kill @e[type=block_display,tag=blueElementalEarth]
 
 #run the class select
 function under_pack:general_functions/general_character_select
+tag @s remove elementalsetstate
 
 #xp
 experience set @s 100 levels
