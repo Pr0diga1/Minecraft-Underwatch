@@ -1,5 +1,5 @@
-scoreboard players set hit buffer 0
-scoreboard players set distance buffer 0
+scoreboard players reset hit buffer
+scoreboard players reset distance buffer
 
 tag @s add swap
 execute anchored eyes positioned ^ ^ ^ run function under_pack:rogue_functions/raycast
