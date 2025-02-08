@@ -5,8 +5,8 @@ particle minecraft:flame ~ ~1 ~ 2 2 2 0.2 20
 particle minecraft:campfire_cosy_smoke ~ ~1 ~ 3 3 3 0.1 30
 particle minecraft:explosion ~ ~1 ~ 1 1 1 0.5 10
 
-execute if entity @s[team=uBlue] positioned ~-1.5 ~-0.5 ~-1.5 as @a[dx=3,dy=3,dz=3,team=uRed] run damage @s 12 explosion by @p[tag=immolate]
-execute if entity @s[team=uRed] positioned ~-1.5 ~-0.5 ~-1.5 as @a[dx=3,dy=3,dz=3,team=uBlue] run damage @s 12 explosion by @p[tag=immolate]
+execute if entity @s[team=uBlue] positioned ~-1.5 ~-0.5 ~-1.5 as @a[dx=3,dy=3,dz=3,team=uRed] run damage @s 8 player_attack by @p[tag=immolate]
+execute if entity @s[team=uRed] positioned ~-1.5 ~-0.5 ~-1.5 as @a[dx=3,dy=3,dz=3,team=uBlue] run damage @s 8 player_attack by @p[tag=immolate]
 damage @s 12 minecraft:explosion
 tag @s remove immolate
 scoreboard players reset @s ability2
