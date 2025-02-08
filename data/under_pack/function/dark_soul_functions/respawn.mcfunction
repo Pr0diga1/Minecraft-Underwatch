@@ -9,7 +9,7 @@ item replace entity @s hotbar.0 with iron_sword[custom_name='{"bold":true,"color
 # Abilities
 scoreboard players reset @s ability1
 scoreboard players reset @s ability2
-scoreboard players reset @s ability3
+scoreboard players set @s ability3 0
 scoreboard players reset @s ability4
 scoreboard players reset @s ultKills
 
