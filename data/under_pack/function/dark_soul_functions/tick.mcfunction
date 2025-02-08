@@ -14,6 +14,8 @@ execute if score @s ability3 matches 1.. run scoreboard players remove @s abilit
 
 ## Immolation
 execute if entity @s[tag=immolate] run scoreboard players add @s ability2 1
+execute if entity @s[tag=immolate] run effect give @s slowness infinite
+execute if entity @s[tag=!immolate] run effect clear @s slowness
 execute if entity @s[tag=immolate,scores={ability2=90..}] run function under_pack:dark_soul_functions/explode_immolation
 
 ## Lingering Flame

@@ -8,15 +8,13 @@ item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"bold":true
 item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name='{"bold":true,"color":"dark_purple","italic":false,"text":"Friend Swap"}',unbreakable={show_in_tooltip:false},custom_data={swap:1b}] 1
 
 # Ability scores
-scoreboard players set @s ability1 0
-scoreboard players set @s ability2 0
-scoreboard players set @s ability3 0
+scoreboard players reset @s ability1
+scoreboard players reset @s ability2
+scoreboard players reset @s ability3
 
 #clean swap tags
-execute as @s[team=uRed] run tag @s remove swap
-execute as @s[team=uRed] run tag @s remove target
-execute as @s[team=uBlue] run tag @s remove swap
-execute as @s[team=uBlue] run tag @s remove target
+tag @s remove swap
+tag @s remove target
 
 #run the class select
 function under_pack:general_functions/general_character_select

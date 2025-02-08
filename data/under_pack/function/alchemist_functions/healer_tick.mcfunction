@@ -1,3 +1,6 @@
+# Kills once 5 seconds have passed
+execute if score @s ability3 matches 80.. run return run kill @s
+
 # Track how long its been out here
 scoreboard players add @s ability3 1
 
@@ -7,6 +10,3 @@ execute if entity @s[tag=uRed] run effect give @a[team=uRed,distance=..3,predica
 
 # Particle
 particle dust{color:[1.000,0.631,0.902],scale:1} ~ ~ ~ 1.5 0.1 1.5 0 5 force
-
-# Kills once 5 seconds have passed
-execute if score @s ability3 matches 80.. run kill @s
