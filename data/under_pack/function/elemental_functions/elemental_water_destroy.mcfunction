@@ -9,4 +9,6 @@ execute as @s[team=uBlue] run scoreboard players set @a[team=uBlue] elementalWat
 #clear regen
 execute as @s[team=uRed] run effect clear @a[team=uRed] regeneration
 execute as @s[team=uBlue] run effect clear @a[team=uBlue] regeneration
+#remove title
+title @s clear
 item modify entity @s hotbar.2 under_pack:elemental/endglint
