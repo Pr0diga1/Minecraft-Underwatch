@@ -347,6 +347,7 @@ scoreboard objectives add celeset dummy
 scoreboard objectives add celetimer dummy
 scoreboard objectives add celefull dummy
 scoreboard objectives add celetidal dummy
+scoreboard objectives add celeswap dummy
 
 scoreboard players add version_number1 buffer 1
 execute if score version_number1 buffer matches 10 run scoreboard players add version_number2 buffer 1

@@ -1,6 +1,10 @@
-item replace entity @s hotbar.0 with golden_sword[attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:2,operation:"add_value"},{id:"attack_speed",type:"attack_speed",amount:-3,operation:"add_value"}],custom_data={celeswap:1b, celeshine:1b},custom_name='{"color":"yellow","text":"Shine"}',unbreakable={}] 1
-item replace entity @s hotbar.1 with carrot_on_a_stick[custom_data={celeswap:1b, celenova:1b},custom_name='{"color":"dark_purple","text":"Supernova"}',unbreakable={}] 1
-item replace entity @s hotbar.2 with carrot_on_a_stick[custom_data={celeswap:1b, celeset:1b},custom_name='{"color":"gold","text":"Sunset"}',unbreakable={}] 1
+item replace entity @s[team=uRed] hotbar.0 with golden_sword[attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:2,operation:"add_value"},{id:"attack_speed",type:"attack_speed",amount:-3,operation:"add_value"}],custom_data={celeswap:1b, celeshine:1b,red:1b},custom_name='{"color":"yellow","text":"Shine"}',unbreakable={}] 1
+item replace entity @s[team=uRed] hotbar.1 with carrot_on_a_stick[custom_data={celeswap:1b, celenova:1b,red:1b},custom_name='{"color":"dark_purple","text":"Supernova"}',unbreakable={}] 1
+item replace entity @s[team=uRed] hotbar.2 with carrot_on_a_stick[custom_data={celeswap:1b, celeset:1b,red:1b},custom_name='{"color":"gold","text":"Sunset"}',unbreakable={}] 1
+
+item replace entity @s[team=uBlue] hotbar.0 with golden_sword[attribute_modifiers=[{id:"attack_damage",type:"attack_damage",amount:2,operation:"add_value"},{id:"attack_speed",type:"attack_speed",amount:-3,operation:"add_value"}],custom_data={celeswap:1b, celeshine:1b,blue:1b},custom_name='{"color":"yellow","text":"Shine"}',unbreakable={}] 1
+item replace entity @s[team=uBlue] hotbar.1 with carrot_on_a_stick[custom_data={celeswap:1b, celenova:1b,blue:1b},custom_name='{"color":"dark_purple","text":"Supernova"}',unbreakable={}] 1
+item replace entity @s[team=uBlue] hotbar.2 with carrot_on_a_stick[custom_data={celeswap:1b, celeset:1b,blue:1b},custom_name='{"color":"gold","text":"Sunset"}',unbreakable={}] 1
 
 item replace entity @s armor.head with leather_helmet[unbreakable={},dyed_color=16776960]
 item replace entity @s armor.chest with leather_chestplate[unbreakable={},dyed_color=16776960]
@@ -12,3 +16,6 @@ scoreboard players set @s celestance 1
 
 execute as @s[team=uRed] run scoreboard players reset @a[team=uRed] celeadjust
 execute as @s[team=uBlue] run scoreboard players reset @a[team=uBlue] celeadjust
+
+experience set @s 0 levels
+experience set @s 0 points

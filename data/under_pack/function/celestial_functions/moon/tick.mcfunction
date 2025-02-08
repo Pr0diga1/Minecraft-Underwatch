@@ -2,6 +2,10 @@
 execute as @s[team=uRed] run function under_pack:celestial_functions/moon/dropred
 execute as @s[team=uBlue] run function under_pack:celestial_functions/moon/dropblue
 
+#lunar drop xp
+execute if score @s ability3 matches 21 run experience set @s 0 points
+execute if score @s ability3 matches 2.. run experience add @s 37 points
+
 #full moon
 execute if entity @s[nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_data":{celefull:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{celefull:1b}}}},scores={reset=1..}] run function under_pack:celestial_functions/moon/fullmoon
 execute if score @s celefull matches 1.. run scoreboard players remove @s celefull 1
