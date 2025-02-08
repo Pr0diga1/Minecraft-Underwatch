@@ -4,7 +4,7 @@ clear @s
 scoreboard players reset @a uDeaths
 
 ## Main weapon
-item replace entity @s hotbar.0 with iron_sword[custom_name='{"bold":true,"color":"#FF4912","italic":false,"text":"Chaos Zweihänder","underlined":true}',unbreakable={},custom_data={zwei:true},attribute_modifiers={modifiers:[{id:"armor",type:"attack_damage",amount:-1,operation:"add_value",slot:"mainhand"},{id:"attack_cooldown",type:"attack_speed",amount:-3,operation:"add_value",slot:"mainhand"},{id:"entity_interaction_range",type:"entity_interaction_range",amount:1.5,operation:"add_value",slot:"mainhand"}],show_in_tooltip:true},consumable={consume_seconds:10000,animation:"none",has_consume_particles:true}] 1
+item replace entity @s hotbar.0 with iron_sword[custom_name='{"bold":true,"color":"#FF4912","italic":false,"text":"Chaos Zweihänder","underlined":true}',unbreakable={show_in_tooltip:false},custom_data={zwei:true},attribute_modifiers={modifiers:[{id:"armor",type:"attack_damage",amount:-1,operation:"add_value",slot:"mainhand"},{id:"attack_cooldown",type:"attack_speed",amount:-3,operation:"add_value",slot:"mainhand"},{id:"entity_interaction_range",type:"entity_interaction_range",amount:1.5,operation:"add_value",slot:"mainhand"}],show_in_tooltip:true},consumable={consume_seconds:10000,animation:"none",has_consume_particles:true}] 1
 
 # Abilities
 scoreboard players reset @s ability1
