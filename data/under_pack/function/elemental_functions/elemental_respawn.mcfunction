@@ -7,3 +7,5 @@ experience set @s 741 points
 scoreboard players set @s elementalBar 740
 scoreboard players set @s elementalBarBuffer 740
 scoreboard players set @s elementalWaterState 0
+
+tag @s remove elementalsetstate
