@@ -10,5 +10,5 @@ execute as @s[team=uBlue] run scoreboard players set @a[team=uBlue] elementalWat
 execute as @s[team=uRed] run effect clear @a[team=uRed] regeneration
 execute as @s[team=uBlue] run effect clear @a[team=uBlue] regeneration
 #remove title
-title @s clear
+title @s actionbar {"text":""}
 item modify entity @s hotbar.2 under_pack:elemental/endglint
