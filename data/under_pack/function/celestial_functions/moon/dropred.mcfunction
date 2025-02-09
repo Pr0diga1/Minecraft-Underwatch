@@ -1,5 +1,5 @@
 #damage when snowball hits
-execute at @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{celedrop:1b,red:1b}}}}] positioned ~ ~-1 ~ as @a[team=uBlue,distance=..2.2] run damage @s 5 player_attack by @a[team=uRed,scores={class=20},limit=1]
+execute at @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{celedrop:1b,red:1b}}}}] positioned ~ ~-1 ~ as @a[team=uBlue,distance=..2.2] run damage @s 3.5 player_attack by @a[team=uRed,scores={class=20},limit=1]
 #kill the snowball once damage occurs
 execute as @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{celedrop:1b,red:1b}}}}] at @s positioned ~ ~-1 ~ if entity @a[team=uBlue,distance=..2.2] run kill @s
 #if on cooldown and less than 2, subtract from cooldown
