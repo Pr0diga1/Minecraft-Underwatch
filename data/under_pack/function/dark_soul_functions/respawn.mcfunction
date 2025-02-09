@@ -22,6 +22,6 @@ item replace entity @s armor.feet with leather_boots[unbreakable={show_in_toolti
 item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:false},attribute_modifiers=[{id:"armor",type:"max_health",amount:4,operation:"add_value"}],dyed_color=15128132] 1
 item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},attribute_modifiers=[{id:"scale",type:"scale",amount:0.3,operation:"add_value",slot:"any"}],dyed_color=15128132] 1
 
-execute as @n[type=item_display,distance=..5] run function animated_java:animations/remove/this
+execute as @n[type=item_display,distance=..5] run function animated_java:animations/remove/all
 tag @s remove swing_started
 tag @s[tag=swinging] remove swinging
