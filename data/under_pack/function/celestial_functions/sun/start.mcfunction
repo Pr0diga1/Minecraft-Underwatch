@@ -6,9 +6,9 @@ item replace entity @s[team=uBlue] hotbar.0 with golden_sword[attribute_modifier
 item replace entity @s[team=uBlue] hotbar.1 with carrot_on_a_stick[custom_data={celeswap:1b, celenova:1b,blue:1b},custom_name='{"color":"dark_purple","text":"Supernova"}',unbreakable={}] 1
 item replace entity @s[team=uBlue] hotbar.2 with carrot_on_a_stick[custom_data={celeswap:1b, celeset:1b,blue:1b},custom_name='{"color":"gold","text":"Sunset"}',unbreakable={}] 1
 
-item replace entity @s armor.head with leather_helmet[unbreakable={},dyed_color=16776960]
-item replace entity @s armor.chest with leather_chestplate[unbreakable={},dyed_color=16776960]
-item replace entity @s armor.legs with leather_leggings[unbreakable={},dyed_color=16776960]
+item replace entity @s armor.head with golden_helmet[unbreakable={}]
+item replace entity @s armor.chest with golden_chestplate[unbreakable={}]
+item replace entity @s armor.legs with golden_leggings[unbreakable={}]
 item replace entity @s armor.feet with diamond_boots[attribute_modifiers=[{id:"scale",type:"scale",amount:0.1,operation:"add_value"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}]
 
 
