@@ -249,10 +249,6 @@ scoreboard objectives add paladinUltTiming dummy
 scoreboard objectives add paladinUltTimingBuffer dummy
 
 #rogue
-scoreboard objectives add rogueDamageTaken minecraft.custom:minecraft.damage_taken
-scoreboard objectives add rogueUltActive dummy
-scoreboard objectives add rogueUltTiming dummy
-scoreboard objectives add rogueUltTimingBuffer dummy
 
 #scientist
 scoreboard objectives add scientistDamageReload dummy
@@ -313,7 +309,6 @@ scoreboard objectives add cyborghp dummy
 scoreboard objectives add cyborgsize dummy
 
 #dark soul
-scoreboard objectives add slamTimer dummy
 scoreboard objectives add darkEye dummy
 scoreboard objectives add darkEyeBuffer dummy
 
@@ -349,6 +344,9 @@ scoreboard objectives add celetimer dummy
 scoreboard objectives add celefull dummy
 scoreboard objectives add celetidal dummy
 scoreboard objectives add celeswap dummy
+
+# Bard Barian
+scoreboard objectives add bardDamageTaken minecraft.custom:minecraft.damage_taken
 
 scoreboard players add version_number1 buffer 1
 execute if score version_number1 buffer matches 10 run scoreboard players add version_number2 buffer 1
