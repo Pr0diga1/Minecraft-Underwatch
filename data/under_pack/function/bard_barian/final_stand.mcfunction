@@ -1,1 +1,1 @@
-
+scoreboard players set @s ability3 3
