@@ -1,6 +1,6 @@
 # Checks for cloak end conditions
 execute if entity @s[scores={ultDamage=1..}] run return run function under_pack:rogue_functions/cloak_end
-execute if entity @s[scores={damageTaken=1..}] run return run function under_pack:rogue_functions/cloak_end
+execute if entity @s[scores={rogueDamageTaken=1..}] run return run function under_pack:rogue_functions/cloak_end
 
 # Gives effects
 effect give @s invisibility 5 0 true

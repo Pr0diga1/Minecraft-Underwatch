@@ -6,7 +6,7 @@ scoreboard players reset @s reset
 
 # Sets up forced exit scores
 scoreboard players set @s ultDamage 0
-scoreboard players set @s damageTaken 0
+scoreboard players set @s rogueDamageTaken 0
 
 # Sound and particles
 playsound minecraft:item.armor.equip_elytra master @s ~ ~ ~ 1 0
