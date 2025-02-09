@@ -9,7 +9,7 @@ item replace entity @s hotbar.0 with iron_axe[consumable={consume_seconds:10000,
 item replace entity @s hotbar.1 with hopper[consumable={consume_seconds:10000,animation:"toot_horn",sound:"ambient.basalt_deltas.mood",has_consume_particles:false},custom_data={megaphone:true},item_name='{"bold":true,"color":"light_purple","italic":false,"text":"Megaphone"}'] 1
 item replace entity @s hotbar.2 with written_book[item_name='[{"color":"#21FF29","text":"B"},{"color":"#20EA3C","text":"o"},{"color":"#20D550","text":"o"},{"color":"#1FC063","text":"k "},{"color":"#1EAB77","text":"o"},{"color":"#1D968A","text":"f "},{"color":"#1D829E","text":"S"},{"color":"#1C6DB1","text":"o"},{"color":"#1B58C5","text":"n"},{"color":"#1A43D8","text":"g"},{"color":"#1919FF","text":"s"}]',written_book_content={title:"",author:"",pages:['[{"text":"Marching Shanty\\n","color":"#147AFF","bold":true,"clickEvent":{"action":"run_command","value":"/function under_pack:bard_barian/marching"}},{"text":"One, two,\\nOut to battle,\\n\\nThree, Four\\nHerd them like cattle,\\n\\nFive, six,\\nHear the armor rattle,\\n\\nSeven, eight,\\nand off to war we go.","color":"black","bold":false}]','[{"text":"Lover\'s Lament\\n","color":"#FF0A0A","bold":true,"clickEvent":{"action":"run_command","value":"/function under_pack:bard_barian/lovers_lament"}}]','[{"text":"Ballad of The Final Stand\\n","color":"dark_red","bold":true,"clickEvent":{"action":"run_command","value":"/function under_pack:bard_barian/final_stand"}}]']}] 1
 
-scoreboard players set @s ability2 20
+scoreboard players set @s ability2 40
 scoreboard players set @s ability3 0
 
 # Armor
