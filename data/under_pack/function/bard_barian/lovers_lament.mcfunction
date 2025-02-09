@@ -1,0 +1,8 @@
+scoreboard players set @s ability3 1
+playsound music_disc.creator_music_box music @a ~ ~ ~ 1 1
+schedule function under_pack:bard_barian/lovers_lament_music 74s append
+
+execute if entity @s[team=uBlue] as @a[tag=marching,team=uBlue] run function under_pack:bard_barian/marching_stop
+execute if entity @s[team=uRed] as @a[tag=marching,team=uRed] run function under_pack:bard_barian/marching_stop
+execute if entity @s[team=uBlue] as @a[tag=final_stand,team=uBlue] run function under_pack:bard_barian/final_stand_stop
+execute if entity @s[team=uRed] as @a[tag=final_stand,team=uRed] run function under_pack:bard_barian/final_stand_stop

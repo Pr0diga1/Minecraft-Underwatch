@@ -8,3 +8,5 @@ execute if entity @s[team=uRed] as @e[tag=Note,tag=uRed] at @s run function unde
 
 # Tick if playing marching shanty
 execute if score @s ability3 matches 0 run function under_pack:bard_barian/marching_tick
+execute if score @s ability3 matches 1 run function under_pack:bard_barian/lovers_lament_tick
+execute if score @s ability3 matches 2 run function under_pack:bard_barian/final_stand_tick
