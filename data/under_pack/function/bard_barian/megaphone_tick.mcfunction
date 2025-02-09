@@ -6,3 +6,5 @@ execute if score @s ability3 matches 0 run return run function under_pack:bard_b
 execute if entity @s[team=uBlue] as @e[tag=NoteL,tag=uBlue] run return run function under_pack:bard_barian/lovers_lament_note_tick
 execute if entity @s[team=uRed] as @e[tag=NoteL,tag=uRed] run return run function under_pack:bard_barian/lovers_lament_note_tick
 execute if score @s ability3 matches 2 run function under_pack:bard_barian/final_stand_tick2
+
+advancement revoke @s only under_pack:use_megaphone
