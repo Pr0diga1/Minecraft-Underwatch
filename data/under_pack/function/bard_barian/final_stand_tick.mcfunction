@@ -3,4 +3,4 @@ execute if entity @s[team=uRed] positioned ~-5 ~-5 ~-5 as @a[tag=!final_stand,te
 
 execute as @a[tag=final_stand] run function under_pack:bard_barian/final_stand_ally_tick
 
-title @s actionbar ["Playing ",{"bold":true,"color":"#147AFF","text":"Ballad of The Final Stand"}]
+title @s actionbar ["Playing ",{"bold":true,"color":"dark_red","text":"Ballad of The Final Stand"}]

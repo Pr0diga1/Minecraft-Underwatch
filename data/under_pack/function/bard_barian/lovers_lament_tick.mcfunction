@@ -3,4 +3,4 @@ execute if score @s[team=uRed] damageTaken matches 60.. positioned ~-5 ~-5 ~-5 a
 execute if score @s damageTaken matches 60.. run scoreboard players reset @s damageTaken
 
 
-title @s actionbar ["Playing ",{"bold":true,"color":"#147AFF","text":"Lover's Lament"}]
+title @s actionbar ["Playing ",{"bold":true,"color":"#FF0A0A","text":"Lover's Lament"}]

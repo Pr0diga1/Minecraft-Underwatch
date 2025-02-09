@@ -169,6 +169,7 @@ scoreboard objectives add ability5 dummy
 scoreboard objectives add ability6 dummy
 scoreboard objectives add ability7 dummy
 scoreboard objectives add ability8 dummy
+scoreboard objectives add damageTaken minecraft.custom:minecraft.damage_taken
 
 #ray casting
 scoreboard objectives add ray_steps dummy
@@ -248,7 +249,7 @@ scoreboard objectives add paladinUltTiming dummy
 scoreboard objectives add paladinUltTimingBuffer dummy
 
 #rogue
-scoreboard objectives add damageTaken minecraft.custom:minecraft.damage_taken
+scoreboard objectives add rogueDamageTaken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add rogueUltActive dummy
 scoreboard objectives add rogueUltTiming dummy
 scoreboard objectives add rogueUltTimingBuffer dummy
