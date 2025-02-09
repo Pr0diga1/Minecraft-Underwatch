@@ -1,0 +1,34 @@
+{
+	"criteria": {
+		"blaze powder": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"player": {
+					"targeted_entity": {
+						"team": "uBlue",
+						"nbt": "{Tags:[\"lovers_lament\"]}"
+					}
+				}
+			}
+		},
+		"bard": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": {
+					"team": "uRed"
+				},
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"megaphone": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [],
+	"rewards": {
+		"function": "under_pack:bard_barian/lovers_lament_summon"
+	}
+}
