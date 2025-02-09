@@ -1,4 +1,4 @@
-scoreboard players set @s ability3 3
+scoreboard players set @s ability3 2
 playsound minecraft:music_disc.otherside music @a ~ ~ ~ 1 1
 schedule function under_pack:bard_barian/final_stand_music 195s append
 
