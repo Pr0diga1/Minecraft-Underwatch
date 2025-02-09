@@ -4,7 +4,7 @@ execute if entity @s[tag=playing_axe,scores={ability1=..0}] run function under_p
 
 # Check player is holding right click
 scoreboard players remove @s ability4 1
-execute if entity @s[tag=playing_megaphone,scores={ability1=..0}] run function under_pack:bard_barian/megaphone_stopped
+execute if entity @s[tag=playing_megaphone,scores={ability4=..0}] run function under_pack:bard_barian/megaphone_stopped
 
 # Tick as the notes
 execute if entity @s[team=uBlue] as @e[tag=Note,tag=uBlue] at @s run function under_pack:bard_barian/note_tick_blue
