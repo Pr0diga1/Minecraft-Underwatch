@@ -170,6 +170,7 @@ scoreboard objectives add ability5 dummy
 scoreboard objectives add ability6 dummy
 scoreboard objectives add ability7 dummy
 scoreboard objectives add ability8 dummy
+scoreboard objectives add damageTaken minecraft.custom:minecraft.damage_taken
 
 #ray casting
 scoreboard objectives add ray_steps dummy
@@ -211,6 +212,7 @@ scoreboard objectives add engineer_damage_taken minecraft.custom:minecraft.damag
 scoreboard objectives add engineermagnet dummy
 scoreboard objectives add engineerhealbuffer dummy
 scoreboard objectives add engineermagtimer dummy
+scoreboard objectives add engineermagnetcd dummy
 
 #knight
 scoreboard objectives add blockIsActive dummy
@@ -248,10 +250,6 @@ scoreboard objectives add paladinUltTiming dummy
 scoreboard objectives add paladinUltTimingBuffer dummy
 
 #rogue
-scoreboard objectives add damageTaken minecraft.custom:minecraft.damage_taken
-scoreboard objectives add rogueUltActive dummy
-scoreboard objectives add rogueUltTiming dummy
-scoreboard objectives add rogueUltTimingBuffer dummy
 
 #scientist
 scoreboard objectives add scientistDamageReload dummy
@@ -313,7 +311,6 @@ scoreboard objectives add cyborgsize dummy
 scoreboard objectives add cyborgzaptimer dummy
 
 #dark soul
-scoreboard objectives add slamTimer dummy
 scoreboard objectives add darkEye dummy
 scoreboard objectives add darkEyeBuffer dummy
 
@@ -346,7 +343,12 @@ scoreboard objectives add celenova dummy
 scoreboard objectives add celedust dummy
 scoreboard objectives add celeset dummy
 scoreboard objectives add celetimer dummy
+scoreboard objectives add celefull dummy
+scoreboard objectives add celetidal dummy
+scoreboard objectives add celeswap dummy
 
+# Bard Barian
+scoreboard objectives add bardDamageTaken minecraft.custom:minecraft.damage_taken
 
 scoreboard players add version_number1 buffer 1
 execute if score version_number1 buffer matches 10 run scoreboard players add version_number2 buffer 1
