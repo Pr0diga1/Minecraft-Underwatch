@@ -115,6 +115,7 @@ scoreboard players set 3 constant 3
 scoreboard players set 5 constant 5
 scoreboard players set 6 constant 6
 scoreboard players set 8 constant 8
+scoreboard players set 15 constant 15
 scoreboard players set 20 constant 20
 scoreboard players set 10 constant 10
 scoreboard players set 4 num 4
@@ -309,6 +310,7 @@ scoreboard objectives add cyborgtimer dummy
 scoreboard objectives add cyborgsizebuffer dummy
 scoreboard objectives add cyborghp dummy
 scoreboard objectives add cyborgsize dummy
+scoreboard objectives add cyborgzaptimer dummy
 
 #dark soul
 scoreboard objectives add slamTimer dummy

@@ -1,5 +1,5 @@
-scoreboard players add @s cyborgcap 1
-experience add @s 1 levels
+scoreboard players add @s cyborgcap 5
+experience add @s 5 points
 execute store result score @s cyborgsize run attribute @s scale base get 100
 scoreboard players operation @s cyborgsize -= 3 constant
 scoreboard players set @s cyborgsizebuffer 80
