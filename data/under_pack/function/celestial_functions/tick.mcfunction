@@ -15,3 +15,5 @@ scoreboard players operation @s celeswap /= 20 constant
 
 title @s actionbar [{"color":"gold","text":"Swap on Cooldown: "},{"color":"dark_aqua","score":{"name":"@s","objective":"celeswap"}}]
 execute if score @s ability6 matches 0 run title @s actionbar [""]
+
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{celeswap:1b}}}}] run data merge entity @s {PickupDelay:0}

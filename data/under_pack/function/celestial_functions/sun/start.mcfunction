@@ -11,7 +11,7 @@ item replace entity @s armor.chest with golden_chestplate[unbreakable={}]
 item replace entity @s armor.legs with golden_leggings[unbreakable={}]
 item replace entity @s armor.feet with diamond_boots[attribute_modifiers=[{id:"scale",type:"scale",amount:0.1,operation:"add_value"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}]
 
-
+scoreboard players reset @s celenova
 scoreboard players set @s celestance 1
 
 execute as @s[team=uRed] run scoreboard players reset @a[team=uRed] celeadjust

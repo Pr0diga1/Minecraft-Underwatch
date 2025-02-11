@@ -4,6 +4,7 @@ execute at @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_d
 execute as @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{celedrop:1b,red:1b}}}}] at @s positioned ~ ~-1 ~ if entity @a[team=uBlue,distance=..1.5] run kill @s
 #removes 1 from cooldown
 execute if score @s ability3 matches 1.. unless entity @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{celedrop:1b,red:1b}}}}] run scoreboard players remove @s ability3 1
+execute if score @s ability3 matches 1 if entity @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{celedrop:1b,red:1b}}}}] run scoreboard players remove @s ability3 1
 #sets cooldown when you throw
 execute if score @s ability3 matches 0 unless entity @s[nbt={Inventory:[{Slot:0b}]}] run scoreboard players set @s ability3 22
 #gives snowball at end of cooldown
