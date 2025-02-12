@@ -5,4 +5,5 @@ execute at @s rotated as @s anchored eyes as @e[tag=vampbatblue] run function un
 
 
 scoreboard players remove @s vampblood 1
+experience add @s -1
 scoreboard players set @s vampdetect 3
