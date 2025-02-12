@@ -27,7 +27,6 @@
 			}
 		}
 	},
-	"requirements": [],
 	"rewards": {
 		"function": "under_pack:bard_barian/lovers_lament_summon"
 	}
