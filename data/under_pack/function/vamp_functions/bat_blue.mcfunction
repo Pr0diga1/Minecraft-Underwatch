@@ -3,6 +3,7 @@ ride @s mount @e[tag=vampbatblue,limit=1,sort=nearest]
 
 execute at @s rotated as @s anchored eyes as @e[tag=vampbatblue] run function under_pack:vamp_functions/bat_velo
 
+attribute @s scale base set 0
 
 scoreboard players remove @s vampblood 4
 experience add @s -4

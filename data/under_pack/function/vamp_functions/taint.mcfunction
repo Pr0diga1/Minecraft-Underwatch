@@ -4,7 +4,6 @@ execute if entity @s[team=uBlue] run tag @a[dx=0,limit=1,sort=nearest,tag=!vamp]
 execute if entity @s[team=uRed] run scoreboard players set @a[tag=taintedred] vamptaint 200
 execute if entity @s[team=uBlue] run scoreboard players set @a[tag=taintedblue] vamptaint 200
 
-say hi
 
 scoreboard players set @s ability1 100
 scoreboard players set @s ability2 260
