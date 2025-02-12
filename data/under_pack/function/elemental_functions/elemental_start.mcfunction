@@ -12,8 +12,8 @@ item replace entity @s armor.legs with diamond_leggings[unbreakable={show_in_too
 item replace entity @s armor.head with chainmail_helmet[unbreakable={show_in_tooltip:false}]
 
 #variables
-scoreboard players set @s elementalBar 740
-scoreboard players set @s elementalBarBuffer 740
+scoreboard players set @s elementalBar 741
+scoreboard players set @s elementalBarBuffer 741
 scoreboard players set @s elementalWaterState 0
 execute as @s[team=uRed] run scoreboard players set @a[team=uBlue] elementalFireHit 0
 execute as @s[team=uBlue] run scoreboard players set @a[team=uRed] elementalFireHit 0

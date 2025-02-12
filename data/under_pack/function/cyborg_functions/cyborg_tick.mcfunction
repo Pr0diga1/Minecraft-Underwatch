@@ -16,12 +16,18 @@ execute if score @s cyborgsizebuffer matches 0 if score @s cyborgsize matches ..
 #zap stuff
 execute if score @s cyborgzaptimer matches 1.. run function under_pack:cyborg_functions/cyborg_zap_tick
 
+#preservation
+execute if score @s cyborgpreserve matches 1.. as @s[predicate=!under_pack:cyborg_res_check] run scoreboard players remove @s cyborgpreserve 1
+execute if score @s cyborgpreserve matches 1 run attribute @s max_health base reset
+
 #lower caps
 execute if score @s cyborgcap matches 1.. run scoreboard players remove @s cyborgcap 1
 execute if score @s cyborgcap matches 1.. run experience add @s -1 points
 execute if score @s cyborgcap matches 0 run experience set @s 0 points
 execute if score @s cyborgcap matches 0 run experience set @s 100 levels
 
-execute if score @s cyborgcap matches 590.. run title @s actionbar {"color":"red","text":"Warning: Overheating"}
+#warning
+execute if score @s cyborgcap matches 590.. unless score @s cyborgcapbuffer matches 590.. run title @s title {"color":"red","text":"Overheating"}
+scoreboard players operation @s cyborgcapbuffer = @s cyborgcap
 
 scoreboard players reset @s reset

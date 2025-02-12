@@ -35,6 +35,9 @@ effect give @a saturation 1 255 true
 #healing
 effect give @a[scores={class=0}] regeneration 1 15 true
 
+#item pickup
+execute as @e[type=item] run data merge entity @s {PickupDelay:1}
+
 #teams
 execute as @a[tag=t1,tag=!ungame] run team join redTemp
 execute as @a[tag=t2,tag=!ungame] run team join blueTemp

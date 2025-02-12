@@ -305,11 +305,13 @@ scoreboard objectives add mermaidperchbuffer dummy
 
 #cyborg
 scoreboard objectives add cyborgcap dummy
+scoreboard objectives add cyborgcapbuffer dummy
 scoreboard objectives add cyborgtimer dummy
 scoreboard objectives add cyborgsizebuffer dummy
 scoreboard objectives add cyborghp dummy
 scoreboard objectives add cyborgsize dummy
 scoreboard objectives add cyborgzaptimer dummy
+scoreboard objectives add cyborgpreserve dummy
 
 #dark soul
 scoreboard objectives add darkEye dummy

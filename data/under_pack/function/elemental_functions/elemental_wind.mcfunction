@@ -1,8 +1,7 @@
-#give the levitation
-effect give @s levitation 1 75
-#set the timer
-scoreboard players set @s elementalWindTimer 51
+#Summon wind charge
+execute at @s[team=uRed] anchored eyes run summon wind_charge ^ ^ ^0.5 {Tags:["redElementalWind"],acceleration_power:0.04d}
+execute at @s[team=uBlue] anchored eyes run summon wind_charge ^ ^ ^0.5 {Tags:["blueElementalWind"],acceleration_power:0.04d}
+
 #remove the bar value
-scoreboard players remove @s elementalBar 300
-#give the elytra
-item replace entity @s armor.chest with elytra[unbreakable={show_in_tooltip:false}] 1
+scoreboard players remove @s elementalBar 160
+experience add @s -160 points

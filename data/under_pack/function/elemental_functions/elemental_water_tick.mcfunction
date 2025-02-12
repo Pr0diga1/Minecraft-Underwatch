@@ -1,9 +1,13 @@
 #cost
 execute if score @s elementalBar matches 2.. run scoreboard players remove @s elementalBar 2
 execute if score @s elementalBar matches ..1 run scoreboard players set @s elementalBar 0
+execute if score @s elementalBar matches 2.. run experience add @s -2 points
+execute if score @s elementalBar matches ..1 run experience set @s 0 points
 
 execute as @s[team=uRed] run scoreboard players add @a[team=uRed,distance=..3] elementalWaterHit 1
 execute as @s[team=uBlue] run scoreboard players add @a[team=uBlue,distance=..3] elementalWaterHit 1
+
+title @s actionbar {"color":"blue","text":"Raincloud active"}
 
 #cloud
 particle cloud ~ ~8 ~ 1.5 .6 1.5 0 20 force
