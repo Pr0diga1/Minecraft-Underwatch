@@ -11,8 +11,8 @@ scoreboard players add distance vampray 1
 #particles
 #execute if block ~ ~ ~ #under_pack:non_solid run particle bubble_pop ^ ^-.8 ^ 0.15 0.05 0.15 0 1
 execute if block ~ ~ ~ #under_pack:non_solid run particle dust{color:[0.239,0.235,0.184],scale:.2} ^ ^-.5 ^ .2 .2 .2 5 1 normal
-execute if entity @s[team=uRed] if block ~ ~ ~ #under_pack:non_solid if entity @a[team=uBlue,tag=vampsucked] run particle dust{color:[0.831,0.000,0.000],scale:.4} ^ ^-.5 ^ 0 0 0 5 0 normal
-execute if entity @s[team=uBlue] if block ~ ~ ~ #under_pack:non_solid if entity @a[team=uRed,tag=vampsucked] run particle dust{color:[0.831,0.000,0.000],scale:.4} ^ ^-.5 ^ 0 0 0 5 0 normal
+execute if entity @s[team=uRed] if block ~ ~ ~ #under_pack:non_solid if entity @a[team=uBlue,tag=vampsucked] run particle dust{color:[0.831,0.000,0.000],scale:.4} ^ ^-.5 ^ .2 .2 .2 5 1 normal
+execute if entity @s[team=uBlue] if block ~ ~ ~ #under_pack:non_solid if entity @a[team=uRed,tag=vampsucked] run particle dust{color:[0.831,0.000,0.000],scale:.4} ^ ^-.5 ^ .2 .2 .2 5 1 normal
 
 
 #teleport
