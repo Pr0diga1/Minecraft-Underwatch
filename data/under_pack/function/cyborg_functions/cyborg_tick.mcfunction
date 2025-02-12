@@ -1,8 +1,5 @@
 #capacitence death
-execute if score @s cyborgcap matches 740.. run damage @s 100 explosion
-execute if score @s cyborgcap matches 740.. run experience set @s 100 levels
-execute if score @s cyborgcap matches 740.. run experience set @s 0 points
-execute if score @s cyborgcap matches 740.. run scoreboard players set @s cyborgcap 0
+execute if score @s cyborgcap matches 740.. run function under_pack:cyborg_functions/cyborg_die
 
 #carrot detection
 execute if entity @s[nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_data":{cyborgspeed:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{cyborgspeed:1b}}}},scores={reset=1..}] as @s run function under_pack:cyborg_functions/cyborg_speed
