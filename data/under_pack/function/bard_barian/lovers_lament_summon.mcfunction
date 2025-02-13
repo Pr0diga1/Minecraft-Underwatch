@@ -1,5 +1,7 @@
-advancement revoke @s only under_pack:blue_lament
-advancement revoke @s only under_pack:red_lament
+advancement revoke @s only under_pack:bard_barian/blue_lament
+advancement revoke @s only under_pack:bard_barian/red_lament
+
+say hi
 
 execute if entity @s[team=uBlue] as @p[team=uRed,scores={class=17}] at @s run summon marker ~ ~1 ~ {Tags:["NoteL","uRed"]}
 execute if entity @s[team=uBlue] at @p[team=uRed,scores={class=17}] store result score @n[tag=NoteL,tag=uRed] ability1 run return run scoreboard players get @s class

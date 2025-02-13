@@ -148,6 +148,7 @@ scoreboard objectives add bard_barian trigger
 scoreboard objectives add coldsteel trigger
 scoreboard objectives add hemomancer trigger
 scoreboard objectives add celestial trigger
+scoreboard objectives add occultist trigger
 
 #various triggers
 scoreboard objectives add red trigger
@@ -387,6 +388,7 @@ scoreboard players set Rogue classTotal 0
 scoreboard players set Scientist classTotal 0
 scoreboard players set Vampire classTotal 0
 scoreboard players set Wizard classTotal 0
+scoreboard players set Occultist classTotal 0
 
 scoreboard objectives add TallyAlch dummy
 scoreboard objectives add TallyArch dummy
@@ -401,6 +403,7 @@ scoreboard objectives add TallyLumb dummy
 scoreboard objectives add TallyMerm dummy
 scoreboard objectives add TallyMicro dummy
 scoreboard objectives add TallyNinja dummy
+scoreboard objectives add TallyBard dummy
 scoreboard objectives add TallyCult dummy
 scoreboard objectives add TallyRogue dummy
 scoreboard objectives add TallySci dummy

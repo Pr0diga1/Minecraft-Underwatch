@@ -4,24 +4,10 @@
 			"trigger": "minecraft:entity_hurt_player",
 			"conditions": {
 				"player": {
+					"team": "uBlue",
 					"targeted_entity": {
 						"team": "uRed",
-						"nbt": "{Tags:[\"lovers_lament\"]}"
-					}
-				}
-			}
-		},
-		"bard": {
-			"trigger": "minecraft:using_item",
-			"conditions": {
-				"player": {
-					"team": "uBlue"
-				},
-				"item": {
-					"predicates": {
-						"minecraft:custom_data": {
-							"megaphone": true
-						}
+						"nbt": "{Tags:[\"lovers_2\"]}"
 					}
 				}
 			}

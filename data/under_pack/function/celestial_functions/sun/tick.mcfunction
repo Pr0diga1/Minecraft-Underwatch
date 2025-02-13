@@ -1,8 +1,8 @@
 #shine
-execute if entity @s[team=uRed,nbt={OnGround:0b}] if score @s celedamage matches 1.. as @a[team=uRed, distance=..8] run function under_pack:celestial_functions/sun/shine
-execute if entity @s[team=uBlue,nbt={OnGround:0b}] if score @s celedamage matches 1.. as @a[team=uBlue, distance=..8] run function under_pack:celestial_functions/sun/shine
-execute if entity @s[team=uRed,nbt={OnGround:0b}] if score @s celedamagehelper matches 1.. as @a[team=uRed, distance=..8] run function under_pack:celestial_functions/sun/shine
-execute if entity @s[team=uBlue,nbt={OnGround:0b}] if score @s celedamagehelper matches 1.. as @a[team=uBlue, distance=..8] run function under_pack:celestial_functions/sun/shine
+execute if entity @s[team=uRed] if score @s celedamage matches 1.. as @a[team=uRed, distance=..8] run function under_pack:celestial_functions/sun/shine
+execute if entity @s[team=uBlue] if score @s celedamage matches 1.. as @a[team=uBlue, distance=..8] run function under_pack:celestial_functions/sun/shine
+execute if entity @s[team=uRed] if score @s celedamagehelper matches 1.. as @a[team=uRed, distance=..8] run function under_pack:celestial_functions/sun/shine
+execute if entity @s[team=uBlue] if score @s celedamagehelper matches 1.. as @a[team=uBlue, distance=..8] run function under_pack:celestial_functions/sun/shine
 
 #supernova
 execute if entity @s[nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_data":{celenova:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{celenova:1b}}}},scores={reset=1..}] run function under_pack:celestial_functions/sun/nova

@@ -5,7 +5,7 @@ execute store result score Z1 vampbatred run data get entity @s Pos[2] 10000
 #data merge entity @s {NoAI:0b}
 
 #tp to second pos
-execute positioned ~ ~-.7 ~ run summon marker ^ ^ ^1 {Tags:["vamptrackred"]}
+execute positioned ~ ~-1.25 ~ run summon marker ^ ^ ^1 {Tags:["vamptrackred"]}
 
 #second bit of pos data
 execute store result score X2 vampbatred run data get entity @e[tag=vamptrackred,limit=1,sort=nearest] Pos[0] 10000
