@@ -9,3 +9,6 @@ execute if score @s ability3 matches 1 if entity @e[type=minecraft:snowball,nbt=
 execute if score @s ability3 matches 0 unless entity @s[nbt={Inventory:[{Slot:0b}]}] run scoreboard players set @s ability3 22
 #gives snowball at end of cooldown
 execute if score @s ability3 matches 1 run item replace entity @s hotbar.0 with snowball[custom_data={celeswap:1b,celedrop:1b,blue:1b},custom_name='{"color":"dark_blue","text":"Lunar Drop"}']
+
+#replace empty with barrier
+execute if entity @e[type=minecraft:snowball,nbt={Item:{components:{"minecraft:custom_data":{celedrop:1b,blue:1b}}}}] run item replace entity @s hotbar.0 with barrier[custom_data={"celeswap":1b,"blue":1b}]

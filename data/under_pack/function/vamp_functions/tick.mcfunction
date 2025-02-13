@@ -29,7 +29,7 @@ execute if entity @s[nbt={XpLevel:99}] run experience set @s 100 levels
 #remove cant be tainted tag
 execute if score @s ability1 matches 1.. run tag @s[tag=vamp] remove vamp
 
-
+#speed
 
 #ticky
 execute as @s[team=uRed] run function under_pack:vamp_functions/tick_red
