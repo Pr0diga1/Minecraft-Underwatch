@@ -11,11 +11,22 @@ experience set @s 100 levels
 experience set @s 0 points
 
 #values
+scoreboard players set @s ability1 0
+scoreboard players set @s ability2 0
+scoreboard players set @s ability3 0
+scoreboard players set @s ability4 0
+scoreboard players set @s ability5 0
+scoreboard players set @s cyborgaccellevel 0
+scoreboard players set @s cyborgaccellevelbuffer 0
 scoreboard players set @s cyborgcap 0
 scoreboard players set @s cyborgzaptimer 0
 scoreboard players set @s cyborgpreserve 0
+scoreboard players set speedstep constant 15
+scoreboard players set attackstep constant 200
 
 attribute @s max_health base reset
+attribute @s minecraft:attack_speed base reset
+attribute @s movement_speed base reset
 
 #carrots
 item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"color":"blue","text":"Acceleration Module"}',custom_data={cyborgspeed:1b}] 1
@@ -23,3 +34,7 @@ item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name='{"color":"li
 item replace entity @s hotbar.3 with ender_eye[custom_name='{"color":"dark_aqua","text":"Miniaturization Module"}',custom_data={cyborgsize:1b}]
 item replace entity @s hotbar.4 with carrot_on_a_stick[custom_name='{"color":"yellow","text":"Overcharge Module"}',custom_data={cyborgzap:1b}] 1
 item replace entity @s hotbar.5 with ender_eye[custom_name='{"color":"gray","text":"Heatsinks"}',custom_data={cyborgvent:1b}]
+
+
+#run the class select
+function under_pack:general_functions/general_character_select

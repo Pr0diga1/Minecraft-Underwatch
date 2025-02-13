@@ -17,6 +17,26 @@ execute if score @s cyborgzaptimer matches 1.. run function under_pack:cyborg_fu
 execute if score @s cyborgpreserve matches 1.. as @s[predicate=!under_pack:cyborg_res_check] run scoreboard players remove @s cyborgpreserve 1
 execute if score @s cyborgpreserve matches 1 run attribute @s max_health base reset
 
+#acceleration
+execute if score @s ability1 matches 1.. run scoreboard players remove @s ability1 1
+execute if score @s ability2 matches 1.. run scoreboard players remove @s ability2 1
+execute if score @s ability3 matches 1.. run scoreboard players remove @s ability3 1
+execute if score @s ability4 matches 1.. run scoreboard players remove @s ability4 1
+execute if score @s ability5 matches 1.. run scoreboard players remove @s ability5 1
+#find current level
+scoreboard players set @s cyborgaccellevel 0
+execute if score @s ability1 matches 1.. run scoreboard players set @s cyborgaccellevel 1
+execute if score @s ability2 matches 1.. run scoreboard players set @s cyborgaccellevel 2
+execute if score @s ability3 matches 1.. run scoreboard players set @s cyborgaccellevel 3
+execute if score @s ability4 matches 1.. run scoreboard players set @s cyborgaccellevel 4
+execute if score @s ability5 matches 1.. run scoreboard players set @s cyborgaccellevel 5
+#buffer
+execute unless score @s cyborgaccellevel = @s cyborgaccellevelbuffer run function under_pack:cyborg_functions/cyborg_speed_update
+scoreboard players operation @s cyborgaccellevelbuffer = @s cyborgaccellevel
+
+#subtitle display
+title @s actionbar [{"text":""},{"text":"Acceleration level: ","color":"blue"},{"score":{"name":"@s","objective":"cyborgaccellevel"},"bold":true,"color":"red"}]
+
 #lower caps
 execute if score @s cyborgcap matches 1.. run scoreboard players remove @s cyborgcap 1
 execute if score @s cyborgcap matches 1.. run experience add @s -1 points

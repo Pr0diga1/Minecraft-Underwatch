@@ -123,6 +123,9 @@ scoreboard players set 4 num 4
 scoreboard players set 40 num 40
 scoreboard players set -1 constant -1
 scoreboard players set 7 constant 7
+scoreboard players set 100 constant 100
+scoreboard players set 4000 constant 4000
+scoreboard players set 150 constant 150
 
 #all of the triggers for the classes
 scoreboard objectives add alchemist trigger
@@ -312,6 +315,9 @@ scoreboard objectives add cyborghp dummy
 scoreboard objectives add cyborgsize dummy
 scoreboard objectives add cyborgzaptimer dummy
 scoreboard objectives add cyborgpreserve dummy
+scoreboard objectives add cyborgaccellevel dummy
+scoreboard objectives add cyborgaccellevelbuffer dummy
+
 
 #dark soul
 scoreboard objectives add darkEye dummy
