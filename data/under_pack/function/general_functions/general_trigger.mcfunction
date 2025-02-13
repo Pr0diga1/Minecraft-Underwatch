@@ -68,3 +68,5 @@ execute as @a[scores={hemomancer=1..}] at @s run function under_pack:vamp_functi
 scoreboard players enable @a hemomancer
 execute as @a[scores={celestial=1..}] at @s run function under_pack:celestial_functions/trigger
 scoreboard players enable @a celestial
+execute as @a[scores={occultist=1..}] at @s run function under_pack:occultist/trigger
+scoreboard players enable @a occultist

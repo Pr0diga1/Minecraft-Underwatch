@@ -18,3 +18,4 @@ execute as @s[scores={class=17}] at @s run function under_pack:bard_barian/tick
 execute as @s[scores={class=18}] at @s run function under_pack:coldsteel_functions/tick
 execute as @s[scores={class=19}] at @s run function under_pack:vamp_functions/tick
 execute as @s[scores={class=20}] at @s run function under_pack:celestial_functions/tick
+execute as @s[scores={class=21}] at @s run function under_pack:occultist/tick

@@ -5,4 +5,4 @@ execute unless entity @s[scores={class=17}] run tellraw @s {"text":"Locked","col
 execute if score @s class matches 17 at @s run function under_pack:bard_barian/start
 
 scoreboard players add Bard_Barian classTotal 1
-scoreboard players add @s TallyCult 1
+scoreboard players add @s TallyBard 1
