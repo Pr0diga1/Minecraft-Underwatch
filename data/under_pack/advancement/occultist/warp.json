@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"blaze powder": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"spacewarp": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:occultist/spatial_warp"
+	}
+}

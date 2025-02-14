@@ -1,5 +1,5 @@
-advancement revoke @s only under_pack:blue_lament
-advancement revoke @s only under_pack:red_lament
+advancement revoke @s only under_pack:bard_barian/blue_lament
+advancement revoke @s only under_pack:bard_barian/red_lament
 
 say hi
 

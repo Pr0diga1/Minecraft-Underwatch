@@ -3,6 +3,7 @@ execute if score @s elementalBar matches 2.. run scoreboard players remove @s el
 execute if score @s elementalBar matches ..1 run scoreboard players set @s elementalBar 0
 execute if score @s elementalBar matches 2.. run experience add @s -2 points
 execute if score @s elementalBar matches ..1 run experience set @s 0 points
+execute if score @s elementalBar matches ..1 run experience set @s 100 levels
 
 execute as @s[team=uRed] run scoreboard players add @a[team=uRed,distance=..3] elementalWaterHit 1
 execute as @s[team=uBlue] run scoreboard players add @a[team=uBlue,distance=..3] elementalWaterHit 1

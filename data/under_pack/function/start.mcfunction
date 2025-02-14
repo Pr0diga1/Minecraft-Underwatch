@@ -123,6 +123,9 @@ scoreboard players set 4 num 4
 scoreboard players set 40 num 40
 scoreboard players set -1 constant -1
 scoreboard players set 7 constant 7
+scoreboard players set 100 constant 100
+scoreboard players set 4000 constant 4000
+scoreboard players set 150 constant 150
 
 #all of the triggers for the classes
 scoreboard objectives add alchemist trigger
@@ -145,6 +148,7 @@ scoreboard objectives add bard_barian trigger
 scoreboard objectives add coldsteel trigger
 scoreboard objectives add hemomancer trigger
 scoreboard objectives add celestial trigger
+scoreboard objectives add occultist trigger
 
 #various triggers
 scoreboard objectives add red trigger
@@ -312,6 +316,9 @@ scoreboard objectives add cyborghp dummy
 scoreboard objectives add cyborgsize dummy
 scoreboard objectives add cyborgzaptimer dummy
 scoreboard objectives add cyborgpreserve dummy
+scoreboard objectives add cyborgaccellevel dummy
+scoreboard objectives add cyborgaccellevelbuffer dummy
+
 
 #dark soul
 scoreboard objectives add darkEye dummy
@@ -353,6 +360,9 @@ scoreboard objectives add celeswap dummy
 # Bard Barian
 scoreboard objectives add bardDamageTaken minecraft.custom:minecraft.damage_taken
 
+# Occultist
+scoreboard objectives add occultistDamageTaken minecraft.custom:minecraft.damage_taken
+
 scoreboard players add version_number1 buffer 1
 execute if score version_number1 buffer matches 10 run scoreboard players add version_number2 buffer 1
 execute if score version_number1 buffer matches 10 run scoreboard players set version_number1 buffer 0
@@ -381,6 +391,7 @@ scoreboard players set Rogue classTotal 0
 scoreboard players set Scientist classTotal 0
 scoreboard players set Vampire classTotal 0
 scoreboard players set Wizard classTotal 0
+scoreboard players set Occultist classTotal 0
 
 scoreboard objectives add TallyAlch dummy
 scoreboard objectives add TallyArch dummy
@@ -395,6 +406,7 @@ scoreboard objectives add TallyLumb dummy
 scoreboard objectives add TallyMerm dummy
 scoreboard objectives add TallyMicro dummy
 scoreboard objectives add TallyNinja dummy
+scoreboard objectives add TallyBard dummy
 scoreboard objectives add TallyCult dummy
 scoreboard objectives add TallyRogue dummy
 scoreboard objectives add TallySci dummy

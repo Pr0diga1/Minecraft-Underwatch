@@ -5,4 +5,4 @@ execute as @n[tag=aj.animations.root] run function animated_java:animations/anim
 scoreboard players set @s ability1 20
 
 # start swing tick advancement
-advancement revoke @s only under_pack:swing_cooldown
+advancement revoke @s only under_pack:dark_soul/swing_cooldown

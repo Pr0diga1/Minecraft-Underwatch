@@ -5,8 +5,8 @@ scoreboard players add distance buffer 1
 execute unless block ~ ~ ~ #under_pack:non_solid run return 0
 
 #hits a player
-execute if entity @s[team=uRed] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uRed,limit=1,sort=nearest,tag=!swap] run tag @s add target
-execute if entity @s[team=uBlue] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uBlue,limit=1,sort=nearest,tag=!swap] run tag @s add target
+execute if entity @s[team=uRed] positioned ~-1.5 ~-1.5 ~-1.5 as @p[dx=2,dy=2,dz=2,team=uRed,tag=!swap] run tag @s add target
+execute if entity @s[team=uBlue] positioned ~-1.5 ~-1.5 ~-1.5 as @p[dx=2,dy=2,dz=2,team=uBlue,tag=!swap] run tag @s add target
 
 # detect for this
 execute if entity @s[team=uBlue] if entity @a[tag=target,team=uBlue] run item modify entity @s hotbar.2 under_pack:rogue/swap_target

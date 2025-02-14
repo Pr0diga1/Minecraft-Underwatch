@@ -10,3 +10,4 @@ execute if score @s elementalBar matches 3.. run scoreboard players remove @s el
 execute if score @s elementalBar matches 3.. run experience add @s -3 points
 execute if score @s elementalBar matches ..2 run scoreboard players set @s elementalBar 0
 execute if score @s elementalBar matches ..2 run experience set @s 0 points
+execute if score @s elementalBar matches ..2 run experience set @s 100 levels
