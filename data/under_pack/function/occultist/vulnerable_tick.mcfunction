@@ -1,1 +1,1 @@
-execute anchored eyes positioned ^ ^ ^ run function under_pack:occultist/raycast
+execute anchored eyes positioned ^ ^ ^ run function under_pack:occultist/vulnerable_raycast
