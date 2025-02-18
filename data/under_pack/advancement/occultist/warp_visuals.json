@@ -6,7 +6,7 @@
 				"item": {
 					"predicates": {
 						"minecraft:custom_data": {
-							"vulner": true
+							"spacewarp": true
 						}
 					}
 				}
@@ -14,6 +14,6 @@
 		}
 	},
 	"rewards": {
-		"function": "under_pack:occultist/vulnerable_tick"
+		"function": "under_pack:occultist/spatial_warp_visuals"
 	}
 }
