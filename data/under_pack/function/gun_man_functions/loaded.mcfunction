@@ -1,0 +1,3 @@
+item replace entity @s hotbar.0 with stone_hoe[consumable={consume_seconds:100000000,animation:"block",sound:"block.note_block.bass",has_consume_particles:false},custom_name='{"color":"gold","text":"Rifle"}',lore=['"gun"'],custom_data={gunrifle: true, gunreload:true}] 1
+item replace entity @s hotbar.1 with iron_hoe[consumable={consume_seconds:100000000,animation:"block",sound:"block.note_block.bass",has_consume_particles:false},custom_name='{"color":"red","text":"Shotgun"}',lore=['"gun"'],custom_data={gunshot: true, gunreload:true}] 1
+execute at @s run playsound minecraft:entity.zombie.attack_wooden_door master @s ~ ~ ~ .55 2

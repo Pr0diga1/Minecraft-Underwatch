@@ -357,6 +357,13 @@ scoreboard objectives add celefull dummy
 scoreboard objectives add celetidal dummy
 scoreboard objectives add celeswap dummy
 
+#gun man
+scoreboard objectives add gunrifle dummy
+scoreboard objectives add gunammo dummy
+scoreboard objectives add riflebuffer dummy
+scoreboard objectives add gunshot dummy
+scoreboard objectives add gunshotbuffer dummy
+
 # Bard Barian
 scoreboard objectives add bardDamageTaken minecraft.custom:minecraft.damage_taken
 
