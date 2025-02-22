@@ -17,8 +17,11 @@ execute if score @s[team=uBlue] celefull matches 1.. as @e[limit=1,tag=blue,tag=
 execute if score @s[team=uBlue] celefull matches 0 as @e[limit=1,tag=blue,tag=celefull] run kill @s
 
 #tidal pull
-execute if entity @s[nbt={Inventory:[{Slot:2b,components:{"minecraft:custom_data":{celetidal:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{celetidal:1b}}}},scores={reset=1..}] run function under_pack:celestial_functions/moon/tidal
-
+execute if score @s ability7 matches 1.. run scoreboard players remove @s ability7 1
+execute if score @s[team=uRed] ability7 matches 0 if entity @a[tag=2bpr] run function under_pack:celestial_functions/moon/tidaltp
+execute if score @s[team=uBlue] ability7 matches 0 if entity @a[tag=2bpb] run function under_pack:celestial_functions/moon/tidaltp
+execute if entity @s[team=uRed] at @a[tag=2bpr] positioned ~ ~1.5 ~ run particle composter ~ ~ ~ .2 .2 .2 50 2
+execute if entity @s[team=uBlue] at @a[tag=2bpb] positioned ~ ~1.5 ~ run particle composter ~ ~ ~ .2 .2 .2 50 2
 
 scoreboard players reset @s reset
 function under_pack:celestial_functions/moon/cooldown
