@@ -6,10 +6,12 @@ scoreboard players set @s cyborgsizebuffer 0
 scoreboard players set @s cyborgzaptimer 0
 scoreboard players set @s cyborgpreserve 0
 attribute @s max_health base reset
-attribute @s scale base set 1
+attribute @s scale base reset
 attribute @s max_health base reset
 attribute @s minecraft:attack_speed base reset
 attribute @s movement_speed base reset
+attribute @s armor_toughness base reset
+attribute @s armor base reset
 
 scoreboard players set @s ability1 0
 scoreboard players set @s ability2 0
