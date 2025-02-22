@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"stone hoe": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"celetidal": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:celestial_functions/moon/tidal"
+	}
+}

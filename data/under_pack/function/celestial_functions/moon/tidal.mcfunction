@@ -1,12 +1,10 @@
 scoreboard players set @s celetidal 100
 tag @s add me
 
-scoreboard players set @s ability5 240
+execute if score @s ability7 matches 0 anchored eyes positioned ^ ^ ^ run function under_pack:celestial_functions/moon/tidalcast
 
-item replace entity @s[team=uRed] hotbar.2 with barrier[custom_data={"celeswap":1b,"red":1b}] 12
-item replace entity @s[team=uBlue] hotbar.2 with barrier[custom_data={"celeswap":1b,"blue":1b}] 12
+scoreboard players set @s ability7 3
 
-
-execute anchored eyes positioned ^ ^ ^ run function under_pack:celestial_functions/moon/tidalcast
+advancement revoke @s only under_pack:celestial/tidal
 
 tag @s remove me
