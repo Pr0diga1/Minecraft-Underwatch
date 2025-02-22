@@ -6,7 +6,7 @@ tag @s add nra
 execute if score @s gunshotbuffer matches 0 run scoreboard players remove @s ability1 2
 execute if score @s gunshotbuffer matches 0 run experience add @s -2 levels
 
-execute at @a rotated as @s anchored eyes positioned ^1 ^-1 ^.5 as @a[dx=1,dy=1,dz=1,tag=!nra] run say ghi
+execute at @s rotated as @s anchored eyes positioned ^1 ^-1 ^.5 as @a[dx=1,dy=1,dz=1,tag=!nra] run say ghi
 
 
 scoreboard players reset @s gunshot
