@@ -9,6 +9,7 @@ item replace entity @s armor.legs with iron_leggings[unbreakable={show_in_toolti
 item replace entity @s armor.feet with iron_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:depth_strider":2}}] 1
 
 scoreboard players set @s riflebuffer 0
+scoreboard players set @s gunshotbuffer 0
 
 function under_pack:general_functions/general_character_select
 
