@@ -10,7 +10,7 @@ execute if entity @s[team=uRed] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team
 execute if entity @s[team=uBlue] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uBlue,limit=1,sort=nearest,tag=!me] run scoreboard players reset @a[team=uBlue,scores={class=20}] celetidal
 execute if entity @s[team=uBlue] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uBlue,limit=1,sort=nearest,tag=!me] run tp @a[team=uBlue,scores={class=20}] @s
 
-particle wax_off ~ ~ ~ 0 0 0 1 1
+particle wax_off ~ ~ ~ 0 0 0 1 1 force @s
 
 #rerun command
 execute if score @s celetidal matches 1.. positioned ^ ^ ^.4 run function under_pack:celestial_functions/moon/tidalcast
