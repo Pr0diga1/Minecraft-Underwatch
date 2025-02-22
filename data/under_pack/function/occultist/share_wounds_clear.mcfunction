@@ -1,4 +1,7 @@
 scoreboard players reset @s ability2
+scoreboard players set @s ability3 60
+scoreboard players reset @s damageTaken
+
 execute if entity @s[tag=share_heal] run effect clear @s regeneration
 execute if entity @s[tag=share_heal] run return run tag @s remove share_heal
 

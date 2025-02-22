@@ -10,7 +10,7 @@ execute store result score @s ability2 run scoreboard players get @s heart
 scoreboard players operation @s ability2 -= @p[tag=sharing] heart
 
 execute if score @s ability2 matches 0 run return 0
-execute store result storage occultist share.amount double 1 run scoreboard players get @s ability1
+execute store result storage occultist share.amount double 1 run scoreboard players get @s ability2
 execute if score @s ability2 matches 1.. run return run function under_pack:occultist/share_wounds_player with storage occultist share
-execute store result storage occultist share.amount double 1 run scoreboard players operation @s ability1 *= -1 constant
+execute store result storage occultist share.amount double 1 run scoreboard players operation @s ability2 *= -1 constant
 function under_pack:occultist/share_wounds_teammate with storage occultist share
