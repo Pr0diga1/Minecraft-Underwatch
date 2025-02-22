@@ -1,0 +1,21 @@
+#Particles Generated with: Cloud Wolf's Particle Grapher
+particle flame ~0.000 ~0.500 ~6.000 0 0 0 50 1 force @a
+particle flame ~5.049 ~0.500 ~3.242 0 0 0 50 1 force @a
+particle flame ~5.456 ~0.500 ~-2.497 0 0 0 50 1 force @a
+particle flame ~0.847 ~0.500 ~-5.940 0 0 0 50 1 force @a
+particle flame ~-4.541 ~0.500 ~-3.922 0 0 0 50 1 force @a
+particle flame ~-5.754 ~0.500 ~1.702 0 0 0 50 1 force @a
+particle flame ~-1.676 ~0.500 ~5.761 0 0 0 50 1 force @a
+particle flame ~3.942 ~0.500 ~4.523 0 0 0 50 1 force @a
+particle flame ~5.936 ~0.500 ~-0.873 0 0 0 50 1 force @a
+particle flame ~2.473 ~0.500 ~-5.467 0 0 0 50 1 force @a
+particle flame ~-3.264 ~0.500 ~-5.034 0 0 0 50 1 force @a
+particle flame ~-6.000 ~0.500 ~0.027 0 0 0 50 1 force @a
+particle flame ~-3.219 ~0.500 ~5.063 0 0 0 50 1 force @a
+particle flame ~2.521 ~0.500 ~5.445 0 0 0 50 1 force @a
+particle flame ~5.944 ~0.500 ~0.820 0 0 0 50 1 force @a
+particle flame ~3.902 ~0.500 ~-4.558 0 0 0 50 1 force @a
+particle flame ~-1.727 ~0.500 ~-5.746 0 0 0 50 1 force @a
+particle flame ~-5.768 ~0.500 ~-1.651 0 0 0 50 1 force @a
+particle flame ~-4.506 ~0.500 ~3.962 0 0 0 50 1 force @a
+particle flame ~0.899 ~0.500 ~5.932 0 0 0 50 1 force @a

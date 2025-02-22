@@ -20,8 +20,8 @@ execute if score @s gunshotbuffer matches 0 anchored eyes positioned ^1.75 ^-.5 
 
 scoreboard players reset @s gunshot
 
-execute if score @s gunshotbuffer matches ..1 run item replace entity @s hotbar.1 with iron_hoe[damage=250,consumable={consume_seconds:100000000,animation:"block",sound:"block.note_block.bass",has_consume_particles:false},custom_name='{"color":"red","text":"Shotgun"}',lore=['"gun"'],custom_data={gunshot: true, gunreload:true}] 1
-execute if score @s gunshotbuffer matches ..1 run scoreboard players set @s gunshotbuffer 21
+execute if score @s gunshotbuffer matches 0 run item replace entity @s hotbar.1 with iron_hoe[damage=250,consumable={consume_seconds:100000000,animation:"block",sound:"block.note_block.bass",has_consume_particles:false},custom_name='{"color":"red","text":"Shotgun"}',lore=['"gun"'],custom_data={gunshot: true, gunreload:true}] 1
+execute if score @s gunshotbuffer matches 0 run scoreboard players set @s gunshotbuffer 31
 
 
 tag @s remove nra
