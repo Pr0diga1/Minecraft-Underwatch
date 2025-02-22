@@ -9,9 +9,11 @@ effect give @s regeneration 2 50 true
 
 attribute @s max_health base reset
 attribute @s scale base reset
-attribute @s max_health base reset
 attribute @s minecraft:attack_speed base reset
 attribute @s movement_speed base reset
+attribute @s armor base reset
+attribute @s max_absorption base reset
+attribute @s armor_toughness base reset
 
 #can cap on points
 scoreboard players set @s cantCap 0

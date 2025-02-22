@@ -19,7 +19,7 @@ scoreboard players set @s wizardFireball 3
 scoreboard players set @s ability1 299
 scoreboard players set @s ability2 1
 scoreboard players set @s ability3 50
-scoreboard players set @s ability4 59
+scoreboard players set @s ability4 39
 scoreboard players set @s ability5 0
 
 experience set @s 100 levels

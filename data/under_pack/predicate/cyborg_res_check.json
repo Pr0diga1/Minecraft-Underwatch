@@ -3,7 +3,7 @@
 	"entity": "this",
 	"predicate": {
 		"effects": {
-			"minecraft:resistance": {
+			"minecraft:hero_of_the_village": {
 				"amplifier": 0
 			}
 		}

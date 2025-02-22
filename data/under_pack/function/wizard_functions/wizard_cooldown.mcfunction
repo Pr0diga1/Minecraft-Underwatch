@@ -13,11 +13,10 @@ execute if score @s ability2 matches 1.. run scoreboard players remove @s abilit
 item modify entity @s hotbar.2 under_pack:wizard/fangs
 
 #curse
-execute if score @s ability4 matches ..59 run scoreboard players add @s ability4 1
-execute if score @s ability4 matches 60 run item replace entity @s hotbar.3 with ender_eye[custom_name='[{"bold":false,"color":"black","italic":false,"obfuscated":true,"strikethrough":false,"text":"fgh","underlined":false},{"bold":true,"color":"black","italic":true,"obfuscated":false,"strikethrough":false,"text":"Curse","underlined":false},{"bold":false,"italic":false,"obfuscated":true,"strikethrough":false,"text":"fgh"}]'] 1
-execute if score @s ability4 matches 0..1 run item replace entity @s hotbar.3 with carrot 3
-execute if score @s ability4 matches 20 run item replace entity @s hotbar.3 with carrot 2
-execute if score @s ability4 matches 40 run item replace entity @s hotbar.3 with carrot 1
+execute if score @s ability4 matches ..39 run scoreboard players add @s ability4 1
+execute if score @s ability4 matches 40 run item replace entity @s hotbar.3 with ender_eye[custom_name='[{"bold":false,"color":"black","italic":false,"obfuscated":true,"strikethrough":false,"text":"fgh","underlined":false},{"bold":true,"color":"black","italic":true,"obfuscated":false,"strikethrough":false,"text":"Curse","underlined":false},{"bold":false,"italic":false,"obfuscated":true,"strikethrough":false,"text":"fgh"}]'] 1
+execute if score @s ability4 matches 0..1 run item replace entity @s hotbar.3 with carrot 2
+execute if score @s ability4 matches 20 run item replace entity @s hotbar.3 with carrot 1
 
 #ability3
 execute as @s[team=uRed] if score @s ability3 matches ..49 unless entity @e[type=marker,tag=redWizardSpell] run scoreboard players add @s ability3 2
