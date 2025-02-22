@@ -6,7 +6,15 @@ tag @s add nra
 execute if score @s gunshotbuffer matches 0 run scoreboard players remove @s ability1 2
 execute if score @s gunshotbuffer matches 0 run experience add @s -2 levels
 
-execute at @s rotated as @s anchored eyes positioned ^1 ^-1 ^.5 as @a[dx=1,dy=1,dz=1,tag=!nra] run say ghi
+execute if score @s gunshotbuffer matches 0 anchored eyes positioned ^1.75 ^.5 ^.2 run function under_pack:gun_man_functions/shotcast
+execute if score @s gunshotbuffer matches 0 anchored eyes positioned ^1.75 ^.5 ^1.2 run function under_pack:gun_man_functions/shotcast
+execute if score @s gunshotbuffer matches 0 anchored eyes positioned ^1.75 ^.5 ^2.2 run function under_pack:gun_man_functions/shotcast
+execute if score @s gunshotbuffer matches 0 anchored eyes positioned ^1.75 ^.5 ^3.2 run function under_pack:gun_man_functions/shotcast
+
+execute if score @s gunshotbuffer matches 0 anchored eyes positioned ^1.75 ^-.5 ^.2 run function under_pack:gun_man_functions/shotcast
+execute if score @s gunshotbuffer matches 0 anchored eyes positioned ^1.75 ^-.5 ^1.2 run function under_pack:gun_man_functions/shotcast
+execute if score @s gunshotbuffer matches 0 anchored eyes positioned ^1.75 ^-.5 ^2.2 run function under_pack:gun_man_functions/shotcast
+execute if score @s gunshotbuffer matches 0 anchored eyes positioned ^1.75 ^-.5 ^3.2 run function under_pack:gun_man_functions/shotcast
 
 
 scoreboard players reset @s gunshot
