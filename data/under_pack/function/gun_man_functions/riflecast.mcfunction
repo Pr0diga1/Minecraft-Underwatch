@@ -5,9 +5,9 @@ scoreboard players remove @s gunrifle 1
 execute unless block ~ ~ ~ #under_pack:non_solid run scoreboard players reset @s gunrifle
 
 #hits a player
-execute if entity @s[team=uRed] positioned ~-0.42 ~-.8 ~-0.42 as @a[dx=0,team=uBlue,limit=1,sort=nearest,tag=!nra] run damage @s 3 under_pack:vulnerable
+execute if entity @s[team=uRed] positioned ~-0.42 ~-.8 ~-0.42 as @a[dx=0,team=uBlue,limit=1,sort=nearest,tag=!nra] run damage @s 3 cactus
 
-execute if entity @s[team=uBlue] positioned ~-0.42 ~-.8 ~-0.42 as @a[dx=0,team=uRed,limit=1,sort=nearest,tag=!nra] run damage @s 3 under_pack:vulnerable
+execute if entity @s[team=uBlue] positioned ~-0.42 ~-.8 ~-0.42 as @a[dx=0,team=uRed,limit=1,sort=nearest,tag=!nra] run damage @s 3 cactus
 
 particle crit ~ ~ ~ 0 0 0 .0000001 1
 
