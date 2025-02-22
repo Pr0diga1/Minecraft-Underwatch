@@ -1,6 +1,7 @@
 #bite
 title @s actionbar [{"color":"dark_red","text":"Bite Recharging: "},{"score":{"name":"@s","objective":"ability1"}}]
 execute if score @s ability1 matches 5.. run scoreboard players remove @s ability1 5
+execute if score @s ability1 matches ..4 run scoreboard players set @s ability1 0
 
 #taint
 item modify entity @s hotbar.1 under_pack:vamp/tainted
