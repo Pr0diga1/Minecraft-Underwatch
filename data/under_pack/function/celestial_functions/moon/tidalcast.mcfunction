@@ -10,7 +10,7 @@ execute if entity @s[team=uRed] unless entity @a[tag=2bpr] positioned ~-1 ~-1 ~-
 execute if entity @s[team=uBlue] unless entity @a[tag=2bpb] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uBlue,limit=1,sort=nearest,tag=!me] run tag @s add 2bpb
 execute if entity @s[team=uBlue] unless entity @a[tag=2bpb] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uBlue,limit=1,sort=nearest,tag=!me] run playsound entity.arrow.hit_player master @s
 
-particle wax_off ~ ~ ~ 0 0 0 1 1
+particle wax_off ~ ~ ~ 0 0 0 1 1 force @s
 
 #rerun command
 execute if score @s celetidal matches 1.. positioned ^ ^ ^.4 run function under_pack:celestial_functions/moon/tidalcast
