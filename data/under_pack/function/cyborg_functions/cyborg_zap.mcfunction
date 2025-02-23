@@ -3,4 +3,4 @@ scoreboard players add @s cyborgzaptimer 55
 scoreboard players add @s cyborgcap 400
 experience add @s 400 points
 
-execute at @s run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 0.15 1.98
+execute at @s run playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 0.23 1.98
