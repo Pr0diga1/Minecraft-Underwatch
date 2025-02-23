@@ -1,5 +1,5 @@
-execute if entity @s[team=uRed] run tp @s @a[tag=2brp,limit=1,sort=nearest]
-execute if entity @s[team=uBlue] run tp @s @a[tag=2brb,limit=1,sort=nearest]
+execute if entity @s[team=uRed] run tp @s @a[tag=2bpr,limit=1,sort=nearest]
+execute if entity @s[team=uBlue] run tp @s @a[tag=2bpb,limit=1,sort=nearest]
 
 scoreboard players reset @s ability7
 execute if entity @s[team=uRed] run tag @a remove 2bpr
