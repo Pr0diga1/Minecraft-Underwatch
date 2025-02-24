@@ -1,5 +1,4 @@
 scoreboard players set @s ability3 1
-playsound music_disc.creator_music_box music @a ~ ~ ~ 1 1
 
 execute if entity @s[team=uBlue] as @a[tag=marching,team=uBlue] run function under_pack:bard_barian/marching_stop
 execute if entity @s[team=uRed] as @a[tag=marching,team=uRed] run function under_pack:bard_barian/marching_stop

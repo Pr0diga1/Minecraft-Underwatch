@@ -13,7 +13,7 @@ scoreboard players set @s ability3 0
 scoreboard players reset @s ability4
 scoreboard players reset @s ultKills
 
-item replace entity @s hotbar.1 with ender_eye[custom_name='{"bold":true,"color":"gold","italic":false,"text":"Estus Flask"}',custom_data={estus:1b}] 3
+item replace entity @s hotbar.1 with honey_bottle[custom_name='{"bold":true,"color":"gold","italic":false,"text":"Estus Flask"}',custom_data={estus:true},consumable={consume_seconds:1,animation:"drink",sound:"ambient.underwater.loop",on_consume_effects:[{type:"minecraft:apply_effects",effects:[{id:"minecraft:regeneration",amplifier:3,duration:100,show_particles:1b,show_icon:1b,ambient:0b}]}]}] 3
 item replace entity @s hotbar.2 with blaze_rod[consumable={consume_seconds:0,animation:"spear",sound:"block.blastfurnace.fire_crackle",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"entity.ender_dragon.flap"}]},custom_data={lingering:true},use_cooldown={seconds:2},custom_name='{"bold":true,"color":"#FF8519","italic":false,"text":"Lingering Flame"}'] 2
 item replace entity @s hotbar.3 with blaze_powder[consumable={consume_seconds:1,animation:"bow",sound:"block.blastfurnace.fire_crackle",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"item.firecharge.use"}]},custom_data={immolation:true},use_cooldown={seconds:5},custom_name='{"bold":true,"color":"#FF8519","italic":false,"text":"Immolation"}'] 3
 
