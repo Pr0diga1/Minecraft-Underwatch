@@ -21,3 +21,6 @@ execute if entity @s[tag=immolate,scores={ability2=90..}] run function under_pac
 ## Lingering Flame
 execute if entity @s[team=uBlue] as @e[tag=FlameMarker,tag=uBlue] at @s run function under_pack:dark_soul_functions/linger_orb_tick
 execute if entity @s[team=uRed] as @e[tag=FlameMarker,tag=uRed] at @s run function under_pack:dark_soul_functions/linger_orb_tick
+
+
+clear @s glass_bottle
