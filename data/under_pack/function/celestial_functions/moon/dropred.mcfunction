@@ -1,9 +1,9 @@
 #detects when there is a snowball to summon the marker
-execute at @e[predicate=under_pack:celestial/lunardropred] unless entity @e[tag=red,tag=celetrack] run summon marker ~ ~ ~ {Tags:["red","celetrack"]}
+execute as @e[predicate=under_pack:celestial/lunardropred] at @s unless entity @e[tag=red,tag=celetrack] run summon marker ~ ~ ~ {Tags:["red","celetrack"]}
 #rides the marker on the snowball
-ride @e[tag=celetrack,tag=red,limit=1,sort=nearest] mount @e[predicate=under_pack:celestial/lunardropred,limit=1,sort=nearest]
+ride @n[tag=celetrack,tag=red] mount @n[predicate=under_pack:celestial/lunardropred]
 #damages when snowball is dead at the marker
-execute if entity @e[tag=celetrack,tag=red] unless entity @e[predicate=under_pack:celestial/lunardropred] as @a[team=uBlue,distance=..2.25] run damage @s 3.5 player_attack by @a[team=uRed,scores={class=20},limit=1]
+execute as @e[tag=celetrack,tag=red] at @s unless entity @e[predicate=under_pack:celestial/lunardropred] as @e[distance=..2.5] run damage @s 3.5 player_attack by @a[team=uRed,scores={class=20},limit=1]
 #kills the marker
 execute as @e[tag=celetrack,tag=red] unless entity @e[predicate=under_pack:celestial/lunardropred] run kill @s
 
