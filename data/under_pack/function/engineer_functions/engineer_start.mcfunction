@@ -1,7 +1,7 @@
 clear @s
 
 #pickaxe
-item replace entity @s hotbar.0 with iron_pickaxe[custom_name='{"bold":true,"color":"light_purple","text":"Squeeky Hammer"}',lore=['"Purchased for a very reasonable price"'],unbreakable={show_in_tooltip:false},custom_data={Tags:["enginepick"]},attribute_modifiers=[{id:"armor",type:"attack_damage",amount:2.25,operation:"add_value",slot:"mainhand"},{id:"armor",type:"attack_speed",amount:-3.1,operation:"add_value",slot:"mainhand"}]] 1
+item replace entity @s hotbar.0 with iron_pickaxe[custom_name='{"bold":true,"color":"light_purple","text":"Squeeky Hammer"}',lore=['"Purchased for a very reasonable price"'],unbreakable={show_in_tooltip:false},custom_data={Tags:["enginepick"]},attribute_modifiers=[{id:"armor",type:"attack_damage",amount:2.5,operation:"add_value",slot:"mainhand"},{id:"armor",type:"attack_speed",amount:-3.1,operation:"add_value",slot:"mainhand"}]] 1
 
 #wrench
 item replace entity @s hotbar.1 with shears[custom_name='{"bold":true,"color":"gray","text":"Wrench"}',custom_data={wrench:1b}] 1
