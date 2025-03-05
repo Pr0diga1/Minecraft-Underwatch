@@ -1,2 +1,2 @@
-effect give @s regeneration infinite 0
+tag @s add occult_regen
 scoreboard players reset @s ability3

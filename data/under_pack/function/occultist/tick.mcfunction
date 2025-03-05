@@ -1,5 +1,8 @@
 # Eye attack tick
 execute as @e[tag=EyeBeam] at @s run function under_pack:occultist/eye_tick
+execute as @e[tag=EyeBeam] at @s run function under_pack:occultist/eye_tick
+execute as @e[tag=EyeBeam] at @s run function under_pack:occultist/eye_tick
+execute as @e[tag=EyeBeam] at @s run function under_pack:occultist/eye_tick
 
 # Tick down eye cooldown
 execute if score @s ability1 matches 1.. run scoreboard players remove @s ability1 1
@@ -15,3 +18,5 @@ execute if score @s ability2 matches 0 run function under_pack:occultist/share_w
 execute if score @s damageTaken matches 1.. run function under_pack:occultist/damage_start_timer
 execute if score @s ability3 matches 1.. run scoreboard players remove @s ability3 1
 execute if score @s ability3 matches 0 run function under_pack:occultist/healing_start
+
+execute if entity @s[tag=occult_regen] run effect give @s regeneration 1 2
