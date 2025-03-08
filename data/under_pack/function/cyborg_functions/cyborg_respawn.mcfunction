@@ -12,6 +12,7 @@ attribute @s minecraft:attack_speed base reset
 attribute @s movement_speed base reset
 attribute @s armor_toughness base reset
 attribute @s armor base reset
+item replace entity @s armor.head with air
 
 scoreboard players set @s ability1 0
 scoreboard players set @s ability2 0

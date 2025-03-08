@@ -15,9 +15,7 @@ execute if score @s cyborgzaptimer matches 1.. run function under_pack:cyborg_fu
 
 #preservation
 execute if score @s cyborgpreserve matches 1.. as @s[predicate=!under_pack:cyborg_res_check] run scoreboard players remove @s cyborgpreserve 1
-execute if score @s cyborgpreserve matches 1 run attribute @s max_health base reset
-execute if score @s cyborgpreserve matches 1 run attribute @s armor base reset
-execute if score @s cyborgpreserve matches 1 run attribute @s armor_toughness base reset
+execute if score @s cyborgpreserve matches 1 run function under_pack:cyborg_functions/cyborg_regen_reset
 
 #acceleration
 execute if score @s ability1 matches 1.. run scoreboard players remove @s ability1 1
