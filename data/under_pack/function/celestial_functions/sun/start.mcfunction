@@ -14,10 +14,10 @@ item replace entity @s armor.feet with diamond_boots[attribute_modifiers=[{id:"s
 scoreboard players reset @s celenova
 scoreboard players set @s celestance 1
 
-effect give @s minecraft:instant_health 1 1
-
 execute as @s[team=uRed] run scoreboard players reset @a[team=uRed] celeadjust
 execute as @s[team=uBlue] run scoreboard players reset @a[team=uBlue] celeadjust
 
 experience set @s 0 levels
 experience set @s 0 points
+
+effect give @s minecraft:instant_health 1 2
