@@ -9,7 +9,5 @@ tag @a[tag=vampsucked,team=uRed] remove vampsucked
 
 #bat
 execute if score @s vampdetect matches 0.. run scoreboard players remove @s vampdetect 1
-execute if score @s vampdetect matches -1 run kill @e[tag=vampbatblue]
-execute if score @s vampdetect matches -1 run kill @e[tag=vamprideblue]
+execute if score @s vampdetect matches -1 run function under_pack:vamp_functions/bat_die_blue
 
-execute if score @s vampdetect matches -1 run attribute @s scale base set 1
