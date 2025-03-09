@@ -1,4 +1,4 @@
-scoreboard players set @s celefull 100
+scoreboard players set @s celefull 50
 execute at @s[team=uRed] run summon block_display ^-.5 ^1 ^ {Tags:["red","celefull"],block_state:{Name:"minecraft:sea_lantern"}}
 execute if entity @s[team=uRed] run data modify entity @e[limit=1,tag=red,tag=celefull] Rotation set from entity @s Rotation
 

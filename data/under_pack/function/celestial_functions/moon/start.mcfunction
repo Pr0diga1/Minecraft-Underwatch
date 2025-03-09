@@ -15,9 +15,11 @@ item replace entity @s armor.feet with golden_boots[attribute_modifiers=[{id:"sc
 
 attribute @s scale base set 1
 
-effect give @s minecraft:instant_health 1 1
 
 experience set @s 100 levels
 experience set @s 741 points
 scoreboard players set @s ability3 0
 scoreboard players set @s ability7 0
+
+
+effect give @s minecraft:instant_health 1 2

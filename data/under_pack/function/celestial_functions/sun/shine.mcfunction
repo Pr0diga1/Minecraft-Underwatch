@@ -1,5 +1,5 @@
 execute store result score @s celeshine run data get entity @s AbsorptionAmount 1
-scoreboard players operation @s celeshine += 1 constant
+scoreboard players operation @s celeshine += 2 constant
 
 execute store result storage celestial shine.x int 1 run scoreboard players get @s celeshine
 
