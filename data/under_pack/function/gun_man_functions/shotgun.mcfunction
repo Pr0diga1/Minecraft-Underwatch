@@ -18,7 +18,7 @@ execute if score @s ability4 matches 0 anchored eyes positioned ^1.75 ^-.5 ^3.2 
 
 scoreboard players reset @s gunshot
 
-execute if score @s ability4 matches 0 run item replace entity @s hotbar.1 with barrier 4
-execute if score @s ability4 matches 0 run scoreboard players set @s ability4 80
+execute if score @s ability4 matches 0 run item replace entity @s hotbar.1 with barrier 5
+execute if score @s ability4 matches 0 run scoreboard players set @s ability4 100
 
 tag @s remove nra
