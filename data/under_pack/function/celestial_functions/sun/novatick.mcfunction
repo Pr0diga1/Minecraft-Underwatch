@@ -1,5 +1,6 @@
 scoreboard players remove @s celenova 1
 scoreboard players operation @s celedust = @s celetaken
+scoreboard players operation @s celedust += @s celeadjust
 scoreboard players operation @s celedust /= 20 constant
 scoreboard players operation @s celedust *= -1 constant
 scoreboard players operation @s celedust += 10 constant

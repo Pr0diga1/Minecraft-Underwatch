@@ -20,4 +20,5 @@ execute as @s[team=uBlue] run scoreboard players reset @a[team=uBlue] celeadjust
 experience set @s 0 levels
 experience set @s 0 points
 
-effect give @s minecraft:instant_health 1 2
+effect give @s minecraft:instant_health 1 1
+effect give @s minecraft:instant_health 1 0
