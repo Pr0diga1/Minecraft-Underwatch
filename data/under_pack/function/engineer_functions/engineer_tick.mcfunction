@@ -59,6 +59,6 @@ execute if entity @s[nbt={Inventory:[{Slot:7b,components:{"minecraft:custom_data
 function under_pack:engineer_functions/engineer_cooldown
 
 #set arrow damage
-execute as @e[nbt={Color:16777001}] run data merge entity @s {damage:1.50d}
+#execute as @e[nbt={Color:16777001}] run data merge entity @s {damage:1.50d}
 
 scoreboard players reset @s reset
