@@ -6,8 +6,8 @@ execute store result storage celestial shine.x int 1 run scoreboard players get 
 
 function under_pack:celestial_functions/sun/shineabsorb with storage celestial shine
 effect clear @s absorption
-effect give @s absorption 5 1
+effect give @s absorption 6 1
 effect clear @s absorption
 
-scoreboard players set @s celetimer 200
+scoreboard players set @s celetimer 120
 

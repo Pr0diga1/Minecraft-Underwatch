@@ -3,7 +3,7 @@ execute at @e[predicate=under_pack:celestial/lunardropblue] unless entity @e[tag
 #rides the marker on the snowball
 ride @e[tag=celetrack,tag=blue,limit=1,sort=nearest] mount @e[predicate=under_pack:celestial/lunardropblue,limit=1,sort=nearest]
 #damages when snowball is dead at the marker
-execute as @e[tag=celetrack,tag=blue] at @s unless entity @e[predicate=under_pack:celestial/lunardropblue] as @a[team=uRed,distance=..2.5] run damage @s 3.5 player_attack by @a[team=uBlue,scores={class=20},limit=1]
+execute as @e[tag=celetrack,tag=blue] at @s unless entity @e[predicate=under_pack:celestial/lunardropblue] as @a[team=uRed,distance=..2.5] run damage @s 4.0 player_attack by @a[team=uBlue,scores={class=20},limit=1]
 #kills the marker
 execute as @e[tag=celetrack,tag=blue] unless entity @e[predicate=under_pack:celestial/lunardropblue] run kill @s
 
