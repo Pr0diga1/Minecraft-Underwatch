@@ -10,4 +10,3 @@ effect clear @s absorption
 
 scoreboard players set @s celetimer 200
 
-scoreboard players reset @s celeadjust

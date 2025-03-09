@@ -22,4 +22,4 @@ scoreboard players set @s ability3 0
 scoreboard players set @s ability7 0
 
 
-effect give @s minecraft:instant_health 1 2
+effect give @s minecraft:instant_health 1 1
