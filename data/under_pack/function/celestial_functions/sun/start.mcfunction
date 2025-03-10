@@ -21,4 +21,3 @@ experience set @s 0 levels
 experience set @s 0 points
 
 effect give @s minecraft:instant_health 1 1
-effect give @s minecraft:instant_health 1 0
