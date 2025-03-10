@@ -25,5 +25,5 @@ scoreboard players remove @s[scores={celeset=-19..}] celeset 1
 
 scoreboard players reset @s celedamage
 
-effect give @s slowness 1 0 true
+#effect give @s slowness 1 0 true
 function under_pack:celestial_functions/sun/cooldown
