@@ -8,8 +8,8 @@ execute unless block ~ ~ ~ #under_pack:non_solid run scoreboard players set hit 
 particle dust{color:[0.0,0.0,0.0],scale:1} ^ ^ ^2 0 0 0 0 1 force @s
 
 #hits a player
-execute if entity @s[team=uRed] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uBlue,limit=1,sort=nearest] run tag @s add redWizardTarget
-execute if entity @s[team=uBlue] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uRed,limit=1,sort=nearest] run tag @s add blueWizardTarget
+execute if entity @s[team=uRed] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uBlue,limit=1,sort=nearest,gamemode=adventure] run tag @s add redWizardTarget
+execute if entity @s[team=uBlue] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uRed,limit=1,sort=nearest,gamemode=adventure] run tag @s add blueWizardTarget
 
 #playsound
 execute as @s[team=uRed] if entity @a[tag=redWizardTarget] at @s run playsound entity.arrow.hit_player master @s
