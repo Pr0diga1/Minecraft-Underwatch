@@ -6,6 +6,8 @@ scoreboard players operation @s celedust *= -1 constant
 scoreboard players operation @s celedust += 10 constant
 execute if score @s celedust matches 10.. run scoreboard players set @s celedust 9
 
+scoreboard players reset @s celeadjust
+
 execute if entity @s[team=uRed] store result storage celestial nova.red double 0.1 run scoreboard players get @s celedust
 execute if entity @s[team=uBlue] store result storage celestial nova.blue double 0.1 run scoreboard players get @s celedust
 

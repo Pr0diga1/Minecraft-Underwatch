@@ -19,4 +19,4 @@ execute if score @s damageTaken matches 1.. run function under_pack:occultist/da
 execute if score @s ability3 matches 1.. run scoreboard players remove @s ability3 1
 execute if score @s ability3 matches 0 run function under_pack:occultist/healing_start
 
-execute if entity @s[tag=occult_regen,predicate=!under_pack:occultist_regen] run effect give @s regeneration 1 2
+execute if entity @s[tag=occult_regen,predicate=under_pack:alch_regen_check] run effect give @s regeneration 1 2
