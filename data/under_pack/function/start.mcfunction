@@ -363,6 +363,9 @@ scoreboard objectives add gunammo dummy
 scoreboard objectives add riflebuffer dummy
 scoreboard objectives add gunshot dummy
 scoreboard objectives add gunshotbuffer dummy
+scoreboard objectives add guntrack dummy
+scoreboard objectives add guncoinbuffer dummy
+scoreboard objectives add guncoin dummy
 
 # Bard Barian
 scoreboard objectives add bardDamageTaken minecraft.custom:minecraft.damage_taken
