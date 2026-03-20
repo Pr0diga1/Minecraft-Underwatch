@@ -1,6 +1,5 @@
 #if a game is active, run its tick function every tick
 execute if score gazebo swag matches 1 run function under_pack:gazebo_functions/gazebo_tick
-execute if score nylium swag matches 1 run function under_pack:nylium_functions/nylium_tick
 execute if score park swag matches 1 run function under_pack:park_functions/park_tick
 execute if score ruin swag matches 1 run function under_pack:ruin_functions/ruin_tick
 execute if score res swag matches 1 run function under_pack:res_functions/res_tick
