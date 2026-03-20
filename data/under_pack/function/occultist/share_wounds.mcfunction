@@ -1,5 +1,5 @@
 advancement revoke @s only under_pack:occultist/wounds
-item replace entity @s hotbar.2 with oak_boat
+item replace entity @s hotbar.1 with oak_boat
 item replace entity @s hotbar.2 with rib_armor_trim_smithing_template[consumable={consume_seconds:1,animation:"block",sound:"ambient.underwater.loop",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"entity.allay.death"}]},custom_data={sharewounds:true},custom_name='{"bold":true,"color":"dark_red","italic":false,"text":"Share Wounds"}',use_cooldown={seconds:5}] 1
 
 scoreboard players reset distance buffer
@@ -8,12 +8,12 @@ execute as @s[team=uBlue] unless entity @p[team=uBlue,tag=sharing] run return 0
 execute as @s[team=uRed] unless entity @p[team=uRed,tag=sharing] run return 0
 
 #playsound
-execute as @s[team=uRed] if entity @a[tag=sharing] at @s run playsound entity.allay.death master @s
-execute as @s[team=uBlue] if entity @a[tag=sharing] at @s run playsound entity.allay.death master @s
+execute as @s[team=uRed] as @a[tag=sharing,team=uRed] at @s run playsound entity.allay.death master @s
+execute as @s[team=uBlue] as @a[tag=sharing,team=uBlue] at @s run playsound entity.allay.death master @s
 
 #farticles
-execute as @s[team=uRed] at @a[tag=sharing,team=uRed] run particle dust{color:[0.0,0.0,1.0],scale:1} ~ ~1 ~ 0.3 0.6 0.3 0 50 force @s
-execute as @s[team=uBlue] at @a[tag=sharing,team=uBlue] run particle dust{color:[0.0,0.0,1.0],scale:1} ~ ~1 ~ 0.3 0.6 0.3 0 50 force @s
+execute as @s[team=uRed] at @a[tag=sharing,team=uRed] run particle minecraft:composter ~ ~1 ~ 0.3 0.6 0.3 0 150 force @a
+execute as @s[team=uBlue] at @a[tag=sharing,team=uBlue] run particle minecraft:composter ~ ~1 ~ 0.3 0.6 0.3 0 150 force @a
 
 execute store result score @s ability2 run scoreboard players get @s heart
 execute as @s[team=uBlue] run scoreboard players operation @s ability2 -= @p[team=uBlue,tag=sharing] heart

@@ -11,5 +11,5 @@ execute if entity @s[team=uBlue] positioned ~-1 ~-1 ~-1 as @p[dx=2,dy=2,dz=2,tea
 execute if entity @s[team=uRed] positioned ~-1 ~-1 ~-1 as @p[dx=2,dy=2,dz=2,team=uRed,tag=!sharing] unless score @s class matches 21 run return run tag @s add sharing
 
 #rerun command
-execute if entity @s[team=uBlue] unless entity @a[tag=sharing,team=uBlue] if score distance buffer matches ..180 positioned ^ ^ ^.5 run function under_pack:occultist/share_wounds_raycast
-execute if entity @s[team=uRed] unless entity @a[tag=sharing,team=uRed] if score distance buffer matches ..180 positioned ^ ^ ^.5 run function under_pack:occultist/share_wounds_raycast
+execute if entity @s[team=uBlue] unless entity @a[tag=sharing,team=uBlue] if score distance buffer matches ..40 positioned ^ ^ ^.5 run function under_pack:occultist/share_wounds_raycast
+execute if entity @s[team=uRed] unless entity @a[tag=sharing,team=uRed] if score distance buffer matches ..40 positioned ^ ^ ^.5 run function under_pack:occultist/share_wounds_raycast
