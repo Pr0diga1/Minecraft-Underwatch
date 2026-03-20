@@ -3,7 +3,9 @@ execute at @e[predicate=under_pack:celestial/lunardropblue] unless entity @e[tag
 #rides the marker on the snowball
 ride @n[tag=celetrack,tag=blue] mount @n[predicate=under_pack:celestial/lunardropblue]
 #damages when snowball is dead at the marker
-execute as @e[tag=celetrack,tag=blue] at @s unless entity @e[predicate=under_pack:celestial/lunardropblue] positioned ~ ~-.5 ~ as @a[team=uRed,distance=..3] run damage @s 4.0 player_attack by @a[team=uBlue,scores={class=20},limit=1]
+execute as @e[tag=celetrack,tag=blue] at @s unless entity @e[predicate=under_pack:celestial/lunardropblue] positioned ~ ~-.5 ~ as @a[team=uRed,distance=..2.5] run damage @s 4.0 player_attack by @a[team=uBlue,scores={class=20},limit=1]
+#self damage
+execute as @e[tag=celetrack,tag=blue] at @s unless entity @e[predicate=under_pack:celestial/lunardropblue] positioned ~ ~-.5 ~ as @a[team=uBlue,distance=..2.5,scores={class=20}] run damage @s 2.0 player_attack by @p[team=uRed]
 #particles
 execute as @e[tag=celetrack,tag=blue] at @s unless entity @e[predicate=under_pack:celestial/lunardropblue] positioned ~ ~-.5 ~ run function under_pack:celestial_functions/moon/dropparticle
 #kills the marker
