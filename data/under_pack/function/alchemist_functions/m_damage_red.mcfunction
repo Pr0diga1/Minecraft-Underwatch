@@ -1,1 +1,1 @@
-damage @s 3 magic by @a[scores={class=1},team=uRed,limit=1]
+damage @s 1.5 magic by @a[scores={class=1},team=uRed,limit=1]
