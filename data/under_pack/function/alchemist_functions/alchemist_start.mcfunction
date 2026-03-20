@@ -28,3 +28,5 @@ tag @s remove healing
 
 #run the class select
 function under_pack:general_functions/general_character_select
+experience set @s 100 levels
+
