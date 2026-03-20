@@ -11,7 +11,7 @@ execute as @e[type=area_effect_cloud] at @s run function under_pack:alchemist_fu
 
 # Healer marker tick
 execute as @e[tag=healing,type=marker] at @s run function under_pack:alchemist_functions/healer_tick
-execute as @e[tag=molitov,type=marker] at @s run function under_pack:alchemist_functions/healer_tick
+execute as @e[tag=molitov,type=marker] at @s run function under_pack:alchemist_functions/molotov_tick
 
 
 ## Cooldowns
