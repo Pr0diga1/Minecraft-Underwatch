@@ -3,5 +3,9 @@ execute positioned ~-2 ~-0.5 ~-2 as @a[team=uRed,dx=4,dy=4,dz=4] run damage @s 5
 
 # Summons marker
 summon marker ~ ~ ~ {Tags:["molitov","uBlue"]}
+playsound entity.generic.explode master @a ~ ~ ~ 1 1
+particle minecraft:flame ~ ~1 ~ 0 0 0 0.2 10
+particle minecraft:flame ~ ~1 ~ 2 2 2 0.2 20
+particle minecraft:explosion ~ ~1 ~ 1 1 1 0.5 10
 
 kill @s
