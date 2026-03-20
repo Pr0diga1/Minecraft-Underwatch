@@ -19,7 +19,7 @@ item replace entity @s hotbar.1 with lingering_potion[custom_name='{"bold":true,
 # Telepot
 item replace entity @s hotbar.2 with lingering_potion[custom_name='{"bold":true,"color":"#8753E0","italic":false,"text":"Telepot"}',custom_data={telepot:1b},potion_contents={custom_color:8328897,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:121,show_particles:0b,show_icon:0b}]}] 1
 # Molotov
-item replace entity @s hotbar.3 with lingering_potion[custom_name='{"bold":true,"color":"#E07F10","italic":false,"text":"Telepot"}',custom_data={molotov:1b},potion_contents={custom_color:14712592,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:124,show_particles:0b,show_icon:0b}]}] 1
+item replace entity @s hotbar.3 with lingering_potion[custom_name='{"bold":true,"color":"#E07F10","italic":false,"text":"Molotov Cocktail"}',custom_data={molotov:1b},potion_contents={custom_color:14712592,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:124,show_particles:0b,show_icon:0b}]}] 1
 
 # Armor
 item replace entity @s armor.feet with leather_boots[attribute_modifiers=[{id:"scale",type:"scale",amount:.2,operation:"add_value"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1

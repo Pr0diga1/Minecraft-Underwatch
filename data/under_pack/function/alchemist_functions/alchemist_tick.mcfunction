@@ -19,6 +19,7 @@ execute as @e[tag=molitov,type=marker] at @s run function under_pack:alchemist_f
 execute unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:lingering_potion",count:2}]}] if entity @s[tag=!reload_main] run function under_pack:alchemist_functions/alchemist_reload_main
 execute unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:lingering_potion"}]}] if entity @s[tag=!reload_utility] run function under_pack:alchemist_functions/alchemist_reload_utility
 execute unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:lingering_potion"}]}] if entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/alchemist_telepot_cooldown
+execute unless entity @s[nbt={Inventory:[{Slot:3b,id:"minecraft:lingering_potion"}]}] if entity @s[tag=!molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown
 # Reload main's cooldown
 execute if entity @s[tag=reload_main] run scoreboard players remove @s ability1 1
 execute if score @s ability1 matches ..1 unless entity @s[tag=!reload_main] run function under_pack:alchemist_functions/acid_cooldown
@@ -28,3 +29,6 @@ execute if score @s ability2 matches 101.. unless entity @s[tag=!reload_utility]
 # Telepot's cooldown
 execute if entity @s[tag=telepot_cooldown] run function under_pack:alchemist_functions/telepot_cooldown_tick
 execute if score @s movement matches 101.. unless entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/telepot_cooldown_end
+# Molotov's cooldown
+execute if entity @s[tag=molotov_cooldown] run scoreboard players add @s ability5 1
+execute if score @s ability5 matches 101.. unless entity @s[tag=!molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown_end
