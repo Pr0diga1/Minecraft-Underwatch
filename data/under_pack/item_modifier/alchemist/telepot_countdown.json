@@ -1,0 +1,262 @@
+[
+	{
+		"function": "minecraft:set_count",
+		"count": 20,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 399
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_count",
+		"count": 19,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 379
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_count",
+		"count": 18,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 359
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_count",
+		"count": 17,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 339
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_count",
+		"count": 16,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 319
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_count",
+		"count": 15,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 299
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_count",
+		"count": 14,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 279
+				}
+			}
+		]
+	},
+	{
+		"function": "minecraft:set_count",
+		"count": 13,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 259
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 12,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 239
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 11,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 219
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 10,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 199
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 9,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 179
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 8,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 159
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 7,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 139
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 6,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 119
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 5,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 99
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 4,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 79
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 3,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 59
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 2,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 39
+				}
+			}
+		]
+	},
+    {
+		"function": "minecraft:set_count",
+		"count": 1,
+		"conditions": [
+			{
+				"condition": "minecraft:entity_scores",
+				"entity": "this",
+				"scores": {
+					"movement": 19
+				}
+			}
+		]
+	}
+]
