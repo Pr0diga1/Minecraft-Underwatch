@@ -1,3 +1,4 @@
 execute if entity @s[nbt={potion_contents:{custom_effects:[{id:"minecraft:luck",duration:123}]}}] run return run function under_pack:alchemist_functions/alchemist_acid_red
 execute if entity @s[nbt={potion_contents:{custom_effects:[{id:"minecraft:luck",duration:122}]}}] run return run function under_pack:alchemist_functions/alchemist_heal_red
-execute if entity @s[nbt={potion_contents:{custom_effects:[{id:"minecraft:luck",duration:121}]}}] run function under_pack:alchemist_functions/alchemist_telepot
+execute if entity @s[nbt={potion_contents:{custom_effects:[{id:"minecraft:luck",duration:121}]}}] run return run function under_pack:alchemist_functions/alchemist_telepot
+execute if entity @s[nbt={potion_contents:{custom_effects:[{id:"minecraft:luck",duration:124}]}}] run function under_pack:alchemist_functions/molotov_red
