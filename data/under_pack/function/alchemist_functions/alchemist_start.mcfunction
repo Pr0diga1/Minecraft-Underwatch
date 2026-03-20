@@ -25,6 +25,7 @@ execute as @s[team=uRed] run kill @e[type=marker,tag=acid,tag=uRed]
 execute as @s[team=uBlue] run kill @e[type=marker,tag=acid,tag=uBlue]
 tag @s remove telepot
 tag @s remove healing
+experience set @s 100 levels
 
 #run the class select
 function under_pack:general_functions/general_character_select
