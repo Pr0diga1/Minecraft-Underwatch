@@ -14,6 +14,9 @@ execute as @a[tag=vulnerable] run function under_pack:occultist/vulnerable_enemy
 execute if score @s ability2 matches 1.. run scoreboard players remove @s ability2 1
 execute if score @s ability2 matches 0 run function under_pack:occultist/share_wounds_clear
 
+# Regen Application
+execute if entity @s[tag=occult_regen] run scoreboard players add @s occultistHealingTimer 1
+
 # Heal ability scoreboard checks
 execute if score @s damageTaken matches 1.. run function under_pack:occultist/damage_start_timer
 execute if score @s ability3 matches 1.. run scoreboard players remove @s ability3 1

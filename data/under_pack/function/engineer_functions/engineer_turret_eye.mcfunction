@@ -4,6 +4,10 @@ scoreboard players add @s engineerTurretEye 1
 #if it is the first tick, start the ray
 execute if score @s engineerTurretEye matches 1 at @s anchored eyes positioned ^ ^ ^ anchored feet run function under_pack:engineer_functions/engineer_turret_ray_start
 
+#damage cancels
+execute if score @s engineerTurretEye matches 1 run scoreboard players reset @s engineer_damage_taken
+execute if score @s engineer_damage_taken matches 1.. run function under_pack:engineer_functions/engineer_turret_reset
+execute if score @s engineer_damage_taken matches 1.. run scoreboard players set @s ability7 261
 
 # particles red
 execute if score @s[team=uRed] engineerTurretEye matches ..8 at @e[type=marker,tag=redEngineerTurret,limit=1,sort=nearest] run particle dust{color:[0.4,0.4,0.4],scale:1} ~.5 ~.2 ~.5 0 0 0 0 1 force @a

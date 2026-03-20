@@ -26,3 +26,7 @@ scoreboard players reset @s ability1
 scoreboard players reset @s ability2
 scoreboard players reset @s ability3
 scoreboard players reset @s damageTaken
+scoreboard players reset @s occultistHealingTimer
+
+#set healing
+scoreboard players set occultHeal constant 5
