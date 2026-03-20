@@ -16,10 +16,10 @@ execute if score @s ability2 matches 0 run function under_pack:occultist/share_w
 
 # Regen Application
 execute if entity @s[tag=occult_regen] run scoreboard players add @s occultistHealingTimer 1
-execute if entity @s[tag=!occult_regen] run scoreboard players set @s occultistHealingTimer 0
+execute if entity @s[tag=!occult_regen] run scoreboard players set @s occultistHealingTimer 20
 execute if score @s occultistHealingTimer > occultHeal constant run effect clear @s regeneration
 execute if score @s occultistHealingTimer > occultHeal constant run scoreboard players set @s occultistHealingTimer 0
-execute if score @s occultistHealingTimer = occultHeal constant run function under_pack:elemental_functions/elemental_water_heal
+execute if score @s occultistHealingTimer = occultHeal constant run function under_pack:occultist/healing_go
 
 
 # Heal ability scoreboard checks
