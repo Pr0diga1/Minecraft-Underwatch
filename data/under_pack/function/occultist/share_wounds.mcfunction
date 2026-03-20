@@ -4,10 +4,12 @@ item replace entity @s hotbar.2 with rib_armor_trim_smithing_template[consumable
 
 scoreboard players reset distance buffer
 execute anchored eyes positioned ^ ^ ^ run function under_pack:occultist/share_wounds_raycast
-execute unless entity @p[tag=sharing] run return 0
+execute as @s[team=uBlue] unless entity @p[team=uBlue,tag=sharing] run return 0
+execute as @s[team=uRed] unless entity @p[team=uRed,tag=sharing] run return 0
 
 execute store result score @s ability2 run scoreboard players get @s heart
-scoreboard players operation @s ability2 -= @p[tag=sharing] heart
+execute as @s[team=uBlue] run scoreboard players operation @s ability2 -= @p[team=uBlue,tag=sharing] heart
+execute as @s[team=uRed] run scoreboard players operation @s ability2 -= @p[team=uRed,tag=sharing] heart
 
 execute if score @s ability2 matches 0 run return 0
 execute store result storage occultist share.amount double 1 run scoreboard players get @s ability2
