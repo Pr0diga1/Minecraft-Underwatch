@@ -31,4 +31,4 @@ execute if entity @s[tag=telepot_cooldown] run function under_pack:alchemist_fun
 execute if score @s movement matches 101.. unless entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/telepot_cooldown_end
 # Molotov's cooldown
 execute if entity @s[tag=molotov_cooldown] run scoreboard players add @s ability5 1
-execute if score @s ability5 matches 101.. unless entity @s[tag=!molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown_end
+execute if score @s ability5 matches 301.. unless entity @s[tag=!molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown_end
