@@ -9,6 +9,7 @@ particle dust{color:[0.749,0.561,0.925],scale:1} ~ ~ ~ 0 0 0 0 3 force
 
 #kill the marker if its in a block or has existed for 4 seconds
 execute unless block ~ ~ ~ #under_pack:non_solid run kill @s
+execute if entity @e[type=falling_block,dx=0] at @s positioned ~-0.99 ~-0.99 ~-0.99 if entity @e[type=falling_block,dx=0] run kill @s
 execute if score @s wizardDistance matches 180.. run kill @s
 
 #hits a player
