@@ -372,6 +372,7 @@ scoreboard objectives add bardDamageTaken minecraft.custom:minecraft.damage_take
 
 # Occultist
 scoreboard objectives add occultistDamageTaken minecraft.custom:minecraft.damage_taken
+scoreboard objectives add occultistHealingTimer dummy
 
 scoreboard players add version_number1 buffer 1
 execute if score version_number1 buffer matches 10 run scoreboard players add version_number2 buffer 1
