@@ -21,7 +21,7 @@ execute unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:lingering_potion
 execute unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:lingering_potion"}]}] if entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/alchemist_telepot_cooldown
 execute unless entity @s[nbt={Inventory:[{Slot:3b,id:"minecraft:lingering_potion"}]}] if entity @s[tag=!molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown
 # Reload main's cooldown
-execute if entity @s[tag=reload_main] run scoreboard players remove @s ability1 1
+execute if entity @s[tag=reload_main] run function under_pack:alchemist_functions/acid_cooldown_tick
 execute if score @s ability1 matches ..1 unless entity @s[tag=!reload_main] run function under_pack:alchemist_functions/acid_cooldown
 # Reload heal's cooldown
 execute if entity @s[tag=reload_utility] run function under_pack:alchemist_functions/heal_cooldown_tick
