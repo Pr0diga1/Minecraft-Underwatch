@@ -11,7 +11,7 @@ item replace entity @s[team=uBlue] hotbar.2 with heart_of_the_sea[consumable={co
 item replace entity @s armor.head with leather_helmet[unbreakable={},dyed_color=16777215]
 item replace entity @s armor.chest with leather_chestplate[unbreakable={},dyed_color=16777215]
 item replace entity @s armor.legs with leather_leggings[unbreakable={},dyed_color=16777215]
-item replace entity @s armor.feet with golden_boots[attribute_modifiers=[{id:"scale",type:"scale",amount:-0.1,operation:"add_value"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}]
+item replace entity @s armor.feet with golden_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"},{id:"max_health",type:"max_health",amount:-2,operation:"add_value"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}]
 
 attribute @s scale base set 1
 
