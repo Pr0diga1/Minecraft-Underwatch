@@ -3,3 +3,5 @@ execute positioned ~-2 ~-0.5 ~-2 as @a[team=uRed,dx=4,dy=4,dz=4] run damage @s 5
 
 # Summons marker
 summon marker ~ ~ ~ {Tags:["molitov","uBlue"]}
+
+kill @s
