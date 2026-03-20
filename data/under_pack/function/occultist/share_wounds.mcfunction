@@ -7,6 +7,14 @@ execute anchored eyes positioned ^ ^ ^ run function under_pack:occultist/share_w
 execute as @s[team=uBlue] unless entity @p[team=uBlue,tag=sharing] run return 0
 execute as @s[team=uRed] unless entity @p[team=uRed,tag=sharing] run return 0
 
+#playsound
+execute as @s[team=uRed] if entity @a[tag=sharing] at @s run playsound entity.allay.death master @s
+execute as @s[team=uBlue] if entity @a[tag=sharing] at @s run playsound entity.allay.death master @s
+
+#farticles
+execute as @s[team=uRed] at @a[tag=sharing,team=uRed] run particle dust{color:[0.0,0.0,1.0],scale:1} ~ ~1 ~ 0.3 0.6 0.3 0 50 force @s
+execute as @s[team=uBlue] at @a[tag=sharing,team=uBlue] run particle dust{color:[0.0,0.0,1.0],scale:1} ~ ~1 ~ 0.3 0.6 0.3 0 50 force @s
+
 execute store result score @s ability2 run scoreboard players get @s heart
 execute as @s[team=uBlue] run scoreboard players operation @s ability2 -= @p[team=uBlue,tag=sharing] heart
 execute as @s[team=uRed] run scoreboard players operation @s ability2 -= @p[team=uRed,tag=sharing] heart
