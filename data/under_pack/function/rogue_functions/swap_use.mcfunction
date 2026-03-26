@@ -1,4 +1,4 @@
-# Mark rouge's pos
+# Mark rouges pos
 summon marker ~ ~ ~ {Tags:["teleport"]}
 tp @e[tag=teleport] ^ ^ ^
 

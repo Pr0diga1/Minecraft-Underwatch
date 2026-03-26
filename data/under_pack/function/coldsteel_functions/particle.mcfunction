@@ -1,4 +1,4 @@
-#Particles Generated with: Cloud Wolf's Particle Grapher
+#Particles Generated with: Cloud Wolfs Particle Grapher
 particle flame ~0.000 ~0.000 ~3.000 0 0 0 0 1 force @a
 particle flame ~0.342 ~0.000 ~2.980 0 0 0 0 1 force @a
 particle flame ~0.679 ~0.000 ~2.922 0 0 0 0 1 force @a

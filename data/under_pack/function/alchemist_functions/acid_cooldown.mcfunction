@@ -1,2 +1,2 @@
-execute unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:lingering_potion",count:2}]}] run give @s lingering_potion[max_stack_size=2,custom_name='{"bold":true,"color":"#8FC219","italic":false,"text":"Acid"}',custom_data={acid:1b},potion_contents={custom_color:10670895,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:123,show_particles:0b,show_icon:0b}]}] 1
+execute unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:lingering_potion",count:2}]}] run give @s lingering_potion[max_stack_size=2,custom_name={"bold":true,"color":"#8FC219","italic":false,"text":"Acid"},custom_data={acid:1b},potion_contents={custom_color:10670895,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:123,show_particles:0b,show_icon:0b}]}] 1
 tag @s remove reload_main

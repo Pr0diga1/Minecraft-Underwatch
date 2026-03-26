@@ -13,6 +13,6 @@ execute as @s[nbt={active_effects:[{id:"minecraft:levitation",amplifier:56b,dura
 
 #jump cooldown
 execute if score @s movement matches ..80 run scoreboard players add @s movement 1
-execute if score @s movement matches 80 run item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name='{"color":"blue","text":"Strong Jump"}',custom_data={lumberjump:1b}] 1
+execute if score @s movement matches 80 run item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name={"color":"blue","text":"Strong Jump"},custom_data={lumberjump:1b}] 1
 
 function under_pack:lumberjack_functions/lumberjack_cooldown

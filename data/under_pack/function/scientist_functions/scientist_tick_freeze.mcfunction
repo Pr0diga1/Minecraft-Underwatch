@@ -5,7 +5,7 @@ execute as @a[scores={hitByFreeze=25}] run title @s title {"text":"Electricuted!
 execute as @a[team=uRed,scores={hitByFreeze=25}] at @s run summon marker ~ ~ ~ {Tags:["sciFreeze","red"]}
 execute as @a[team=uBlue,scores={hitByFreeze=25}] at @s run summon marker ~ ~ ~ {Tags:["sciFreeze","blue"]}
 
-#players who are frozen get tp'd
+#players who are frozen get tpd
 execute as @a[team=uRed,scores={hitByFreeze=1..}] at @e[type=marker,tag=sciFreeze,tag=red,limit=1,sort=nearest] run tp @s ~ ~ ~
 execute as @a[team=uBlue,scores={hitByFreeze=1..}] at @e[type=marker,tag=sciFreeze,tag=blue,limit=1,sort=nearest] run tp @s ~ ~ ~
 

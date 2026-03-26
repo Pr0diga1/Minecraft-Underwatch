@@ -1,4 +1,4 @@
-#Particles Generated with: Cloud Wolf's Particle Grapher
+#Particles Generated with: Cloud Wolfs Particle Grapher
 particle composter ^0.000 ^0.000 ^7.000 0 0 0 0 1 force @a
 particle composter ^0.366 ^3.495 ^6.054 0 0 0 0 1 force @a
 particle composter ^0.732 ^6.029 ^3.481 0 0 0 0 1 force @a

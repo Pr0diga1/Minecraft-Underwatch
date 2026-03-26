@@ -10,7 +10,7 @@ execute if score @s mermaidmistbuffer matches 0 unless score @s mermaidmist matc
 execute if score @s mermaidmistbuffer matches 0 unless score @s mermaidmist matches 148.. run experience add @s 10
 execute if score @s mermaidmist matches 149.. run scoreboard players set @s mermaidmist 148
 execute if score @s mermaidmist matches 148 run experience set @s 741 points
-item replace entity @s hotbar.1 with ender_eye[custom_name='{"color":"dark_blue","text":"Nautical Mist"}',custom_data={mermaidmist:1b}] 1
+item replace entity @s hotbar.1 with ender_eye[custom_name={"color":"dark_blue","text":"Nautical Mist"},custom_data={mermaidmist:1b}] 1
 
 #perch stuff
 execute if score @s mermaidperch matches ..-2 run scoreboard players operation @s mermaidperch = mermaidPerchConstant constant
@@ -20,7 +20,7 @@ execute if score @s mermaidperch matches 0.. run scoreboard players set @s merma
 execute if score @s mermaidperch matches 0.. at @s run particle minecraft:composter ~ ~.7 ~ .3 .5 .3 .1 5 force @a
 execute if score @s mermaidperch matches 0.. if score @s mermaidperch = @s mermaidperchbuffer run scoreboard players set @s mermaidperch -1
 scoreboard players operation @s mermaidperchbuffer = @s mermaidperch
-item replace entity @s hotbar.3 with ender_eye[custom_name='{"color":"gray","text":"Rock Perch"}',custom_data={mermaidperch:1b}] 1
+item replace entity @s hotbar.3 with ender_eye[custom_name={"color":"gray","text":"Rock Perch"},custom_data={mermaidperch:1b}] 1
 
 #team ticks
 execute if entity @s[team=uRed] run function under_pack:mermaid_functions/mermaid_tick_red

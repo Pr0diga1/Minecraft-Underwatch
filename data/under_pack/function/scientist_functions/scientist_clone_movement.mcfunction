@@ -12,7 +12,7 @@ execute as @s on origin run tag @s add rocketPassenger
 #put owner on new arrow
 execute at @s run ride @a[tag=rocketPassenger,limit=1,sort=nearest] mount @e[type=arrow,tag=sciMove,limit=1,sort=nearest]
 
-#remove owner's tag
+#remove owners tag
 tag @a remove rocketPassenger
 
 #kill the old arrow

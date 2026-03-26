@@ -1,4 +1,4 @@
-#Particles Generated with: Cloud Wolf's Particle Grapher
+#Particles Generated with: Cloud Wolfs Particle Grapher
 particle dust{color:[1.0,0.851,0.0],scale:1} ~0.000 ~0.000 ~3.000 0 0 0 0 1 force @a
 particle dust{color:[1.0,0.851,0.0],scale:1} ~0.047 ~0.469 ~2.963 0 0 0 0 1 force @a
 particle dust{color:[1.0,0.851,0.0],scale:1} ~0.094 ~0.927 ~2.852 0 0 0 0 1 force @a
