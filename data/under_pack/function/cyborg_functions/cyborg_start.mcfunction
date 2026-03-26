@@ -1,9 +1,9 @@
 clear @s
 
 #armor/knife
-item replace entity @s armor.feet with iron_boots[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}},attribute_modifiers=[{id:"armor",type:"max_health",amount:-4,operation:"add_value",slot:"feet"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}]] 1
-item replace entity @s armor.legs with iron_leggings[unbreakable={show_in_tooltip:false}]
-item replace entity @s armor.chest with iron_chestplate[unbreakable={show_in_tooltip:false}]
+item replace entity @s armor.feet with iron_boots[unbreakable={},enchantments={"minecraft:blast_protection":8,"minecraft:depth_strider":2},attribute_modifiers=[{id:"armor",type:"max_health",amount:-4,operation:"add_value",slot:"feet"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}]] 1
+item replace entity @s armor.legs with iron_leggings[unbreakable={}]
+item replace entity @s armor.chest with iron_chestplate[unbreakable={}]
 item replace entity @s hotbar.0 with iron_block[custom_name='{"color":"white","text":"Iron Hand"}',attribute_modifiers=[{id:"damage",type:"attack_damage",amount:3.6,operation:"add_value"},{id:"armor",type:"attack_speed",amount:-3.25,operation:"add_value"}]] 1
 
 #xp

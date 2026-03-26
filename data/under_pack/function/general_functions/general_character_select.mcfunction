@@ -17,4 +17,3 @@ attribute @s armor_toughness base reset
 
 #can cap on points
 scoreboard players set @s cantCap 0
-execute if entity @n[tag=aj.animations.root,distance=..5] as @n[tag=aj.animations.root] run function animated_java:animations/remove/this

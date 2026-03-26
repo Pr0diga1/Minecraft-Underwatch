@@ -4,8 +4,8 @@ clear @s
 scoreboard players reset @a uDeaths
 
 #kill the telepot
-execute as @s[team=uRed] run kill @e[type=potion,tag=telepot,tag=uRed]
-execute as @s[team=uBlue] run kill @e[type=potion,tag=telepot,tag=uBlue]
+execute as @s[team=uRed] run kill @e[type=lingering_potion,tag=telepot,tag=uRed]
+execute as @s[team=uBlue] run kill @e[type=lingering_potion,tag=telepot,tag=uBlue]
 tag @s remove telepot
 tag @s remove healing
 execute as @e[nbt={potion_contents:{custom_effects:[{id:"minecraft:luck",duration:123}]}}] on origin if entity @s[gamemode=spectator] run kill @n[type=area_effect_cloud]
@@ -22,9 +22,9 @@ item replace entity @s hotbar.2 with lingering_potion[custom_name='{"bold":true,
 item replace entity @s hotbar.3 with lingering_potion[custom_name='{"bold":true,"color":"#E07F10","italic":false,"text":"Molotov Cocktail"}',custom_data={molotov:1b},potion_contents={custom_color:14712592,custom_effects:[{id:"minecraft:luck",amplifier:0,duration:124,show_particles:0b,show_icon:0b}]}] 1
 
 # Armor
-item replace entity @s armor.feet with leather_boots[attribute_modifiers=[{id:"scale",type:"scale",amount:.2,operation:"add_value"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}}] 1
-item replace entity @s armor.legs with chainmail_leggings[unbreakable={show_in_tooltip:false}] 1
-item replace entity @s armor.chest with chainmail_chestplate[unbreakable={show_in_tooltip:false}] 1
+item replace entity @s armor.feet with leather_boots[attribute_modifiers=[{id:"scale",type:"scale",amount:.2,operation:"add_value"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={},enchantments={"minecraft:blast_protection":8,"minecraft:depth_strider":2}] 1
+item replace entity @s armor.legs with chainmail_leggings[unbreakable={}] 1
+item replace entity @s armor.chest with chainmail_chestplate[unbreakable={}] 1
 
 scoreboard players set @s movement 141
 scoreboard players set @s ability1 41

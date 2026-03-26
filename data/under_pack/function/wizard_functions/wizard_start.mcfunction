@@ -16,9 +16,9 @@ item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name='{"color":"da
 item replace entity @s hotbar.3 with ender_eye[custom_name='[{"bold":false,"color":"black","italic":false,"obfuscated":true,"strikethrough":false,"text":"fgh","underlined":false},{"bold":true,"color":"black","italic":true,"obfuscated":false,"strikethrough":false,"text":"Curse","underlined":false},{"bold":false,"italic":false,"obfuscated":true,"strikethrough":false,"text":"fgh"}]'] 1
 
 #armor
-item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{id:"max_health",type:"max_health",amount:-2,operation:"add_value"}],show_in_tooltip:false},dyed_color=16777215] 1
-item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:false},dyed_color=16777215] 1
-item replace entity @s armor.feet with leather_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:blast_protection":8,"minecraft:depth_strider":2}},dyed_color=16777215] 1
+item replace entity @s armor.chest with leather_chestplate[unbreakable={},attribute_modifiers=[{id:"max_health",type:"max_health",amount:-2,operation:"add_value"}],dyed_color=16777215] 1
+item replace entity @s armor.legs with leather_leggings[unbreakable={},dyed_color=16777215] 1
+item replace entity @s armor.feet with leather_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={},enchantments={"minecraft:blast_protection":8,"minecraft:depth_strider":2},dyed_color=16777215] 1
 
 #clean arrows
 kill @e[type=arrow,tag=wizardSmallSpellArrow]

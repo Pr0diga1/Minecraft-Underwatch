@@ -8,7 +8,7 @@ execute if score @s wizardFireball matches 1 run title @s actionbar ["",{"score"
 execute unless score @s wizardFireball matches 1 run title @s actionbar ["",{"score":{"name":"@s","objective":"wizardFireball"}, "color":"red"},{"text":" Ignis Casts Charged  ","color": "gold"},{"score":{"name":"@s","objective":"movement"}, "color":"dark_blue"},{"text":"/100","color": "dark_green"}]
 
 #claws
-execute if score @s ability2 matches 1 run item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name='{"color":"dark_green","text":"The Claws of Rach\'ivalishize"}',unbreakable={show_in_tooltip:false},custom_data={wizardClaws:1b}] 1
+execute if score @s ability2 matches 1 run item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name='{"color":"dark_green","text":"The Claws of Rach\'ivalishize"}',unbreakable={},custom_data={wizardClaws:1b}] 1
 execute if score @s ability2 matches 1.. run scoreboard players remove @s ability2 1
 item modify entity @s hotbar.2 under_pack:wizard/fangs
 

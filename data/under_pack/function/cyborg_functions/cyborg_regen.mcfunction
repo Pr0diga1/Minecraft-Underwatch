@@ -6,4 +6,4 @@ scoreboard players set @s cyborgpreserve 2
 scoreboard players add @s cyborgcap 320
 experience add @s 320 points
 execute at @s run playsound minecraft:entity.armadillo.brush master @a ~ ~ ~ 1 0.5
-item replace entity @s armor.head with turtle_helmet[unbreakable={show_in_tooltip:false}]
+item replace entity @s armor.head with turtle_helmet[unbreakable={}]

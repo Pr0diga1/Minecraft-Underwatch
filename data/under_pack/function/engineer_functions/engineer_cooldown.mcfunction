@@ -12,7 +12,7 @@ execute if score @s ability2 matches 1.. run scoreboard players remove @s abilit
 #wrench ability 3
 execute if score @s ability3 matches 160 run item replace entity @s hotbar.1 with barrier[minecraft:custom_name='{"text":"Wrench on Cooldown"}'] 8
 item modify entity @s hotbar.1 under_pack:engineer/wrench
-execute if score @s ability3 matches 1 run item replace entity @s hotbar.1 with shears[enchantments={levels:{"minecraft:knockback":2}},custom_name='{"bold":true,"color":"gray","text":"Wrench"}',custom_data={wrench:1b}] 1
+execute if score @s ability3 matches 1 run item replace entity @s hotbar.1 with shears[enchantments={"minecraft:knockback":2},custom_name='{"bold":true,"color":"gray","text":"Wrench"}',custom_data={wrench:1b}] 1
 execute if score @s ability3 matches 1..161 run scoreboard players remove @s ability3 1
 
 #viagra ability5
