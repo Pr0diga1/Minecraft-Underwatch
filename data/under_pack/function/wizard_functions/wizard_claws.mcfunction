@@ -23,4 +23,4 @@ execute as @e[type=evoker_fangs,tag=red] at @s run data modify entity @s Owner s
 execute as @e[type=evoker_fangs,tag=blue] at @s run data modify entity @s Owner set from entity @a[team=uBlue,scores={class=10},limit=1,sort=nearest] UUID
 
 scoreboard players set @s ability2 300
-item replace entity @s hotbar.2 with barrier[custom_name='"Claws of Rach\'ivalishize on Cooldown"'] 15
+item replace entity @s hotbar.2 with barrier[custom_name="Claws of Rachivalishize on Cooldown"] 15

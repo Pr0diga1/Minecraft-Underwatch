@@ -23,9 +23,6 @@ execute if score @s ability2 matches 1.. run function under_pack:scientist_funct
 #execute if score @s ability3 matches 1.. run function under_pack:scientist_functions/scientist_reload_rocket
 
 
-#remove damage from damage arrows
-execute as @e[type=arrow,nbt={item:{components:{"minecraft:potion_contents":{custom_color:0}}}}] run data merge entity @s {damage:0.01d,crit:0b}
-
 #handles noting which players have luck
 execute as @a[team=uRed,nbt={active_effects:[{id:"minecraft:luck",amplifier:1b,duration:1}]}] run scoreboard players set @s hitByFreeze 25
 execute as @a[team=uBlue,nbt={active_effects:[{id:"minecraft:luck",amplifier:1b,duration:1}]}] run scoreboard players set @s hitByFreeze 25
@@ -36,6 +33,11 @@ execute if entity @a[scores={hitByFreeze=1..},limit=1] run schedule function und
 #clear the freeze armor stands
 execute unless entity @a[team=uRed,scores={hitByFreeze=1..}] run kill @e[type=marker,tag=sciFreeze,tag=red]
 execute unless entity @a[team=uBlue,scores={hitByFreeze=1..}] run kill @e[type=marker,tag=sciFreeze,tag=blue]
+
+#fix damage darts
+execute as @e[type=arrow,nbt={item:{components:{"minecraft:potion_contents":{custom_color:0}}}}] at @s if entity @a[distance=..4,scores={class=9,scientistBowFired2=1..},team=uRed] run tag @s add red
+execute as @e[type=arrow,nbt={item:{components:{"minecraft:potion_contents":{custom_color:0}}}}] at @s if entity @a[distance=..4,scores={class=9,scientistBowFired2=1..},team=uBlue] run tag @s add blue
+execute as @e[type=arrow,nbt={item:{components:{"minecraft:potion_contents":{custom_color:0}}}}] run function under_pack:scientist_functions/scientist_clone_damage
 
 #give healing arrows the correct team tags
 execute as @e[type=arrow,nbt={item:{components:{"minecraft:potion_contents":{custom_color:16768256}}}}] at @s if entity @a[distance=..4,scores={class=9,scientistBowFired2=1..},team=uRed] run tag @s add red
