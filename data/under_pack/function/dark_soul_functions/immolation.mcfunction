@@ -1,9 +1,0 @@
-tag @s add immolate
-
-schedule function under_pack:dark_soul_functions/immolation_particles 20t append
-schedule function under_pack:dark_soul_functions/immolation_particles 50t append
-schedule function under_pack:dark_soul_functions/immolation_particles 52t append 
-schedule function under_pack:dark_soul_functions/immolation_particles 80t append
-schedule function under_pack:dark_soul_functions/immolation_particles 84t append
-schedule function under_pack:dark_soul_functions/immolation_particles 88t append
-advancement revoke @s only under_pack:dark_soul/immolation_check

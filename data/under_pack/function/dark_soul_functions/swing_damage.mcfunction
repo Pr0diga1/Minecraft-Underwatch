@@ -1,2 +1,0 @@
-execute if entity @s[team=uBlue] positioned ^ ^1 ^1 run execute positioned ~-1.5 ~-0.5 ~-1.5 as @a[tag=!hit_darksoul,team=uRed,dx=2,dy=1,dz=2] run return run function under_pack:dark_soul_functions/swing_apply_damage
-execute if entity @s[team=uRed] positioned ^ ^1 ^1 run execute positioned ~-1.5 ~-0.5 ~-1.5 as @a[tag=!hit_darksoul,team=uBlue,dx=2,dy=1,dz=2] run return run function under_pack:dark_soul_functions/swing_apply_damage
