@@ -1,17 +1,202 @@
 {
-    "type": "minecraft:multi_action",
-    "title": {
-      "text": "Select Your Class!"
-    },
-    "actions": [
+  "type": "minecraft:multi_action",
+  "title": "Select Your Class!",
+  "can_close_with_escape": true,
+  "pause": false,
+  "actions": [
       {
-        "label": {
-          "text": "Alchemist",
-          "click_event": {
-            "action": "run_command",
-            "command": "trigger alchemist"
-          }
-        }
+      "label": {
+        "text": "Support",
+        "color": "dark_green"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger liberals"
       }
-    ]
-  }
+    },
+      {
+      "label": {
+        "text": "Damage",
+        "color": "dark_green"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger liberals"
+      }
+    },
+    {
+      "label": {
+        "text": "Alchemist",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger alchemist"
+      }
+    },
+        {
+      "label": {
+        "text": "Archer",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger archer"
+      }
+    },    {
+      "label": {
+        "text": "Bardbarian",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger bard_barian"
+      }
+    },       {
+     "label": {
+        "text": "Coldsteel",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger coldsteel"
+      }
+    }, 
+    {
+      "label": {
+        "text": "Celestial",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger celestial"
+      }
+    }, 
+       {
+      "label": {
+        "text": "Cyborg",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger cyborg"
+      }
+    },  
+     {
+      "label": {
+        "text": "Elemental",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger elemental"
+      }
+    },   
+      {
+      "label": {
+        "text": "Dark Soul",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger dark_soul"
+      }
+    },   
+     {
+     "label": {
+        "text": "Engineer",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger engineer"
+      }
+    },    {
+      "label": {
+        "text": "Lumberjack",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger lumberjack"
+      }
+    },    {
+      "label": {
+        "text": "Mermaid",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger mermaid"
+      }
+    },    {
+      "label": {
+        "text": "Ninja",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ninja"
+      }
+    },    {
+      "label": {
+        "text": "Occultist",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger occultist"
+      }
+    },  
+    {
+      "label": {
+        "text": "Paladin",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger paladin"
+      }
+    },  
+      {
+      "label": {
+        "text": "Scientist",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger scientist"
+      }
+    }, 
+      {
+   "label": {
+        "text": "Rogue",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger rogue"
+      }
+    },   
+    {
+      "label": {
+        "text": "",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger liberals"
+      }
+    },
+      {
+      "label": {
+        "text": "Wizard",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger wizard"
+      }
+    }
+  ]
+}

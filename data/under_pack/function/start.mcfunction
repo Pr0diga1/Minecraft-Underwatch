@@ -92,6 +92,7 @@ scoreboard objectives add reset minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add Reset trigger
 
 #book
+scoreboard objectives add menu trigger
 scoreboard objectives add book trigger
 
 #teams triggers
