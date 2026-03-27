@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:multi_action",
+    "title": {
+      "text": "Select Your Class!"
+    },
+    "actions": [
+      {
+        "label": {
+          "text": "Alchemist",
+          "click_event": {
+            "action": "run_command",
+            "command": "trigger alchemist"
+          }
+        }
+      }
+    ]
+  }
