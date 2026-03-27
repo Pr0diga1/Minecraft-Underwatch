@@ -1,6 +1,5 @@
-execute if entity @s[team=uBlue] run summon marker ~ ~ ~ {NoGravity:1b,Tags:["FlameMarker","uBlue"]}
-execute if entity @s[team=uRed] run summon marker ~ ~ ~ {NoGravity:1b,Tags:["FlameMarker","uRed"]}
-execute anchored eyes run tp @n[tag=FlameMarker] ~ ~1.62 ~ ~ ~
-execute as @n[tag=FlameMarker] run scoreboard players set @s ability1 100
+execute if score @s ability2 matches 250.. run function under_pack:dark_soul_functions/lingering_flame_create
 
+item replace entity @s hotbar.1 with oak_boat
+item replace entity @s hotbar.1 with blaze_rod[consumable={consume_seconds:1,animation:"spear",sound:"block.blastfurnace.fire_crackle",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"entity.ender_dragon.flap"}]},custom_data={lingering:true},custom_name={"bold":true,"color":"#FF8519","italic":false,"text":"Lingering Flame"}] 1
 advancement revoke @s only under_pack:dark_soul/lingering_flame_check
