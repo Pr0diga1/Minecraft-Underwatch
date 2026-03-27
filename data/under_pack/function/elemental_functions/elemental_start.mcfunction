@@ -30,7 +30,7 @@ execute as @s[team=uRed] run scoreboard players set @a[team=uRed] elementalEarth
 execute as @s[team=uBlue] run scoreboard players set @a[team=uBlue] elementalEarthTimer 0
 
 #constants
-scoreboard players set ElementalWaterTiming constant 7
+scoreboard players set ElementalWaterTiming constant 6
 scoreboard players set ElementalFireTiming constant 7
 
 #clean spare arrows
