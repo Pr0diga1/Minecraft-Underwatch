@@ -11,3 +11,6 @@ execute if score @s elementalBar matches 1.. at @s anchored eyes positioned ^ ^ 
 
 item modify entity @s hotbar.0 under_pack:elemental/startglitnt
 scoreboard players set fireheld buffer 3
+
+# make sure advancement is revoked
+advancement revoke @s only under_pack:elemental/fire

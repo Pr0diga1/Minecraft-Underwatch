@@ -1,2 +1,0 @@
-execute as @s[nbt={Inventory:[{Slot:3b,components:{"minecraft:custom_data":{elementalEarth:1b}}}]},scores={reset=1..}] if score @s elementalBar matches 220.. at @s run function under_pack:elemental_functions/elemental_earth
-scoreboard players reset @s reset

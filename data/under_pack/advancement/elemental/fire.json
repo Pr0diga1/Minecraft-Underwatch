@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"blaze powder": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"elementalFire": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:elemental_functions/elemental_fire_held"
+	}
+}
