@@ -9,26 +9,26 @@ effect give @s weakness 5 10 true
 # Find potions
 execute as @e[type=area_effect_cloud] at @s run function under_pack:alchemist_functions/effect_cloud_tick
 
-# Healer marker tick
+# Marker ticks
 execute as @e[tag=healing,type=marker] at @s run function under_pack:alchemist_functions/healer_tick
 execute as @e[tag=molitov,type=marker] at @s run function under_pack:alchemist_functions/molotov_tick
 
 
 ## Cooldowns
 # Cooldown checks
-execute unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:lingering_potion",count:2}]}] if entity @s[tag=!reload_main] run function under_pack:alchemist_functions/alchemist_reload_main
-execute unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:lingering_potion"}]}] if entity @s[tag=!reload_utility] run function under_pack:alchemist_functions/alchemist_reload_utility
-execute unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:lingering_potion"}]}] if entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/alchemist_telepot_cooldown
+execute unless entity @s[nbt={Inventory:[{Slot:0b,id:"minecraft:lingering_potion",count:2}]}] if entity @s[tag=!reload_main] run function under_pack:alchemist_functions/reload_main
+execute unless entity @s[nbt={Inventory:[{Slot:1b,id:"minecraft:lingering_potion"}]}] if entity @s[tag=!reload_utility] run function under_pack:alchemist_functions/reload_utility
+execute unless entity @s[nbt={Inventory:[{Slot:2b,id:"minecraft:lingering_potion"}]}] if entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/telepot_cooldown
 execute unless entity @s[nbt={Inventory:[{Slot:3b,id:"minecraft:lingering_potion"}]}] if entity @s[tag=!molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown
 # Reload mains cooldown
 execute if entity @s[tag=reload_main] run function under_pack:alchemist_functions/acid_cooldown_tick
-execute if score @s ability1 matches ..1 unless entity @s[tag=!reload_main] run function under_pack:alchemist_functions/acid_cooldown
+execute if score @s ability1 matches ..0 unless entity @s[tag=!reload_main] run function under_pack:alchemist_functions/acid_cooldown
 # Reload heals cooldown
 execute if entity @s[tag=reload_utility] run function under_pack:alchemist_functions/heal_cooldown_tick
-execute if score @s ability2 matches 101.. unless entity @s[tag=!reload_utility] run function under_pack:alchemist_functions/heal_cooldown_end
+execute if score @s ability2 matches ..0 unless entity @s[tag=!reload_utility] run function under_pack:alchemist_functions/heal_cooldown_end
 # Telepots cooldown
 execute if entity @s[tag=telepot_cooldown] run function under_pack:alchemist_functions/telepot_cooldown_tick
-execute if score @s movement matches 101.. unless entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/telepot_cooldown_end
+execute if score @s movement matches ..0 unless entity @s[tag=!telepot_cooldown] run function under_pack:alchemist_functions/telepot_cooldown_end
 # Molotovs cooldown
 execute if entity @s[tag=molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown_tick
-execute if score @s ability5 matches 301.. unless entity @s[tag=!molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown_end
+execute if score @s ability5 matches ..0 unless entity @s[tag=!molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown_end
