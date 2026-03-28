@@ -6,8 +6,8 @@ execute if entity @s[nbt={Inventory:[{Slot:2b,components:{"minecraft:custom_data
 
 #mist tick
 execute if score @s mermaidmistbuffer matches 1.. run scoreboard players remove @s mermaidmistbuffer 1
-execute if score @s mermaidmistbuffer matches 0 if score @s mermaidmist matches ..740 run experience add @s 10
-execute if score @s mermaidmistbuffer matches 0 if score @s mermaidmist matches ..730 run scoreboard players add @s mermaidmist 10
+execute if score @s mermaidmistbuffer matches 0 if score @s mermaidmist matches ..730 run experience add @s 10
+execute if score @s mermaidmistbuffer matches 0 if score @s mermaidmist matches ..740 run scoreboard players add @s mermaidmist 10
 execute if score @s mermaidmistbuffer matches 0 if score @s mermaidmist matches 741.. run scoreboard players set @s mermaidmist 741
 execute if score @s mermaidmistbuffer matches 0 if score @s mermaidmist matches 741.. run experience set @s 741 points
 
