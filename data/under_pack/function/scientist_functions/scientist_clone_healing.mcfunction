@@ -1,5 +1,5 @@
 #summon the new arrow
-execute at @s run summon arrow ~ ~ ~ {damage:0.1d,crit:0b,Tags:["SciHeal"],item:{id:"minecraft:potion",components:{"minecraft:potion_contents":{custom_color:16768257,custom_effects:[{id:"minecraft:regeneration",amplifier:3,duration:40,show_particles:0b}]}}}}
+execute at @s run summon arrow ~ ~ ~ {damage:0.1d,crit:0b,Tags:["SciHeal"],item:{id:"minecraft:potion",components:{"minecraft:potion_contents":{custom_color:16768257,custom_effects:[{id:"minecraft:regeneration",amplifier:4,duration:30,show_particles:0b}]}}}}
 #summon arrow ~ ~ ~ {crit:0b,Color:16768257,damage:0.01d,Tags:["SciHeal"],CustomPotionEffects:[{Id:10,Amplifier:4b,Duration:30,ShowParticles:0b}]}
 
 #give it motion

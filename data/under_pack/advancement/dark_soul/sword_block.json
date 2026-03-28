@@ -1,7 +1,7 @@
 {
 	"criteria": {
 		"blaze powder": {
-			"trigger": "minecraft:using_item",
+			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
 					"predicates": {
@@ -14,6 +14,6 @@
 		}
 	},
 	"rewards": {
-		"function": "under_pack:dark_soul_functions/swing_check"
+		"function": "under_pack:dark_soul_functions/parry_start"
 	}
 }

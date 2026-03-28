@@ -17,3 +17,7 @@ execute if score @s blockIsActive matches 0 run function under_pack:knight_funct
 
 execute if score @s blockIsActive matches -1..0 run item replace entity @s hotbar.0 with ender_eye[custom_name={"color":"white","text":"Reliquary Blade"},lore=["Only given to those worthy"],custom_data={knightsword:1b},attribute_modifiers=[{id:"armor",type:"attack_damage",amount:3,operation:"add_value",slot:"mainhand"},{id:"armor",type:"attack_speed",amount:-2.9,operation:"add_value",slot:"mainhand"}]] 1
 
+#block meter
+execute if score @s ability2 matches ..739 run experience add @s 2 points
+execute if score @s ability2 matches ..739 run scoreboard players add @s ability2 2
+
