@@ -180,12 +180,12 @@
     },   
     {
       "label": {
-        "text": "",
+        "text": "Bard-Barian",
         "color": "red"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger liberals"
+        "command": "trigger bard_barian"
       }
     },
       {
@@ -196,6 +196,26 @@
       "action": {
         "type": "minecraft:run_command",
         "command": "trigger wizard"
+      }
+    },
+        {
+      "label": {
+        "text": "",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger bard_barian"
+      }
+    },
+        {
+      "label": {
+        "text": "Hatsune Miku",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger miku"
       }
     }
   ]
