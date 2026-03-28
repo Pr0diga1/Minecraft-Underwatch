@@ -5,5 +5,5 @@ execute anchored eyes run tp @n[tag=FlameMarker] ~ ~1.62 ~ ~ ~
 
 execute as @n[tag=FlameMarker] run scoreboard players set @s ability1 100
 
-scoreboard players remove @s ability2 140
-experience add @s -140
+scoreboard players remove @s ability2 250
+experience add @s -250 points
