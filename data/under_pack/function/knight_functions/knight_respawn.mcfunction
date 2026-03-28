@@ -4,3 +4,4 @@ kill @e[tag=knightbomb]
 kill @e[tag=knighttrack]
 
 experience set @s 741 points
+scoreboard players set @s ability2 741
