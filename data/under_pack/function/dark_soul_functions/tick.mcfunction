@@ -10,3 +10,4 @@ execute if entity @s[team=uRed] as @e[tag=FlameMarker,tag=uRed] at @s run functi
 
 # Power within tick
 execute if score @s ability4 matches 1.. run function under_pack:dark_soul_functions/power_within_tick
+execute if score @s ability4 matches ..0 run function under_pack:dark_soul_functions/power_within_end

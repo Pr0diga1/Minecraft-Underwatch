@@ -13,6 +13,10 @@ item replace entity @s armor.chest with leather_chestplate[unbreakable={},dyed_c
 function under_pack:general_functions/general_character_select
 function under_pack:mermaid_functions/mermaid_respawn
 
+experience set @s 100 levels
+experience set @s 741 points
+scoreboard players set @s mermaidmist 741
+
 scoreboard players set mermaidHealingConstant constant 5
 scoreboard players set mermaidPerchConstant constant 11
 

@@ -1,9 +1,9 @@
 #trigger backstep
 execute as @e[type=item,nbt={Item:{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{custom_color:16711680}}}}] on origin as @s[scores={ability3=140..}] run function under_pack:archer_functions/archer_backstep
-execute as @e[type=item,nbt={Item:{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{custom_color:16711680}}}}] at @s on origin run give @s tipped_arrow[custom_name='{"text":"Heavy Arrow","color":"dark_red","bold":true}',custom_data={archerheavy:1b},potion_contents={custom_color:16711680}] 1
+execute as @e[type=item,nbt={Item:{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{custom_color:16711680}}}}] at @s on origin run give @s tipped_arrow[custom_name={"text":"Heavy Arrow","color":"dark_red","bold":true},custom_data={archerheavy:1b},potion_contents={custom_color:16711680}] 1
 execute as @e[type=item,nbt={Item:{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{custom_color:16711680}}}}] run kill @s
 execute as @e[type=item,nbt={Item:{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{custom_color:16719871}}}}] on origin as @s[scores={ability3=140..}] run function under_pack:archer_functions/archer_backstep
-execute as @e[type=item,nbt={Item:{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{custom_color:16719871}}}}] at @s on origin run give @s tipped_arrow[custom_name='{"text":"Light Arrow","color":"#FF1FFF","bold":true}',custom_data={archerlight:1b},potion_contents={custom_color:16719871}] 1
+execute as @e[type=item,nbt={Item:{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{custom_color:16719871}}}}] at @s on origin run give @s tipped_arrow[custom_name={"text":"Light Arrow","color":"#FF1FFF","bold":true},custom_data={archerlight:1b},potion_contents={custom_color:16719871}] 1
 execute as @e[type=item,nbt={Item:{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{custom_color:16719871}}}}] run kill @s
 
 execute as @e[type=item,nbt={Item:{id:"minecraft:shears",count:1,components:{"minecraft:custom_data":{archerReload:1b}}}}] at @s on origin as @s[scores={ability3=140..}] run function under_pack:archer_functions/archer_backstep

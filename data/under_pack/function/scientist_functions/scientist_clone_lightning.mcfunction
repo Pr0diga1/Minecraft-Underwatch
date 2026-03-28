@@ -10,6 +10,7 @@ execute at @s[tag=red] run summon arrow ~ ~ ~ {damage:0.7d,crit:0b,Tags:["sciBol
 execute as @e[type=arrow,tag=sciBolt] run data merge entity @s {Color:-1}
 #set its motion
 
+execute at @s run data modify entity @e[type=arrow,tag=sciBoltl,limit=1,sort=nearest] Rotation set from entity @s Rotation
 execute at @s run data modify entity @e[type=arrow,tag=sciBoltl,limit=1,sort=nearest] Motion set from entity @s Motion
 
 #set its owner

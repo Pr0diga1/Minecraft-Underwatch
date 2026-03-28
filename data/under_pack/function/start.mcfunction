@@ -142,7 +142,7 @@ scoreboard objectives add bulwark trigger
 scoreboard objectives add mermaid trigger
 scoreboard objectives add elemental trigger
 scoreboard objectives add dark_soul trigger
-scoreboard objectives add gun_man trigger
+scoreboard objectives add miku trigger
 scoreboard objectives add cyborg trigger
 scoreboard objectives add microwave trigger
 scoreboard objectives add bard_barian trigger
