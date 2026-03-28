@@ -13,6 +13,10 @@ item replace entity @s armor.feet with iron_boots[attribute_modifiers=[{id:"expl
 
 scoreboard players set @s movement 319
 scoreboard players set @s ability1 179
+scoreboard players set @s ability2 742
 
 #run the class select
 function under_pack:general_functions/general_character_select
+
+experience set @s 100 levels
+experience set @s 741 points
