@@ -5,7 +5,7 @@ item replace entity @s hotbar.0 with iron_sword[unbreakable={},minimum_attack_ch
 scoreboard players set @s damageTaken 0
 effect give @s resistance infinite 3 true
 
-#item replace entity @s armor.chest with chainmail_chestplate[unbreakable={},attribute_modifiers=[{id:"scale",type:"scale",amount:0.3,operation:"add_value",slot:"any"},{id:"armor",type:"armor",amount:100,operation:"add_value"}],dyed_color=15128132] 1
+item replace entity @s armor.chest with chainmail_chestplate[unbreakable={},attribute_modifiers=[{id:"scale",type:"scale",amount:0.3,operation:"add_value",slot:"any"}],dyed_color=15128132] 1
 tag @s add parrying
 
 advancement revoke @s only under_pack:dark_soul/sword_block
