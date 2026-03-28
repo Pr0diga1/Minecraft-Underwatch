@@ -1,5 +1,5 @@
-execute if entity @s[team=uBlue] run damage @s 3.5 cactus by @p[scores={class=21},team=uRed]
-execute if entity @s[team=uRed] run damage @s 3.5 cactus by @p[scores={class=21},team=uBlue]
+execute if entity @s[team=uBlue] run damage @s 3.76 cactus by @p[scores={class=21},team=uRed]
+execute if entity @s[team=uRed] run damage @s 3.76 cactus by @p[scores={class=21},team=uBlue]
 kill @n[type=item_display,tag=EyeBeam]
 
 playsound minecraft:entity.blaze.hurt player @a ~ ~ ~ 0.5 1.3
