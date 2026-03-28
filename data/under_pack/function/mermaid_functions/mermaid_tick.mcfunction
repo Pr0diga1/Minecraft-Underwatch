@@ -31,6 +31,7 @@ execute at @s if score @s mermaiddive matches 1 run function under_pack:mermaid_
 execute if score @s mermaiddive matches 1.. run item modify entity @s hotbar.2 under_pack:mermaid/diving
 execute if score @s mermaiddive matches 1.. run scoreboard players remove @s mermaiddive 1
 execute at @s if score @s mermaiddive matches 1.. run particle minecraft:rain ~ ~ ~ .5 .5 .5 5 30
+execute at @s if score @s mermaiddive matches 1.. run particle minecraft:bubble ~ ~ ~ .5 .5 .5 5 30
 
 ##mist stuffs 
 #detect when mist usage was stopped
