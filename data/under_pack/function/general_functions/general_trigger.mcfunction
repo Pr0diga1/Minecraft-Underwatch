@@ -24,6 +24,8 @@ execute as @a[scores={blue=1..}] at @s run function under_pack:trigger_functions
 scoreboard players enable @a blue
 execute as @a[scores={leave=1..}] at @s run function under_pack:trigger_functions/leave2
 scoreboard players enable @a leave
+execute as @a[scores={maps=1..}] at @s run function under_pack:general_functions/general_maps
+scoreboard players enable @a maps
 execute as @a[scores={menu=1..}] at @s run function under_pack:general_functions/general_menu
 scoreboard players enable @a menu
 execute as @a[scores={book=1..}] at @s run function under_pack:general_functions/general_getbook

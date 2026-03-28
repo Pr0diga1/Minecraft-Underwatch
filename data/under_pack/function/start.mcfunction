@@ -94,6 +94,7 @@ scoreboard objectives add Reset trigger
 #book
 scoreboard objectives add menu trigger
 scoreboard objectives add book trigger
+scoreboard objectives add maps trigger
 
 #teams triggers
 scoreboard objectives add red trigger

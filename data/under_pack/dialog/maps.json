@@ -1,0 +1,109 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Select Map!",
+  "can_close_with_escape": true,
+  "pause": false,
+  "actions": [
+      {
+      "label": {
+        "text": "Point Cap",
+        "color": "dark_green"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger liberals"
+      }
+    },
+      {
+      "label": {
+        "text": "Deathmatch",
+        "color": "dark_green"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger liberals"
+      }
+    },
+        {
+      "label": {
+        "text": "Cavern",
+        "color": "gold"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger cavern"
+      }
+    },
+         {
+      "label": {
+        "text": "Park",
+        "color": "dark_aqua"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger park"
+      }
+    },  
+    {
+      "label": {
+        "text": "Gazebo",
+        "color": "gold"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger gazebo"
+      }
+    },
+     {
+     "label": {
+        "text": "Resovoir",
+        "color": "dark_aqua"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger res"
+      }
+    }, 
+     {
+      "label": {
+        "text": "Lake",
+        "color": "gold"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger lake"
+      }
+    },      
+    {
+      "label": {
+        "text": "Ruin",
+        "color": "dark_aqua"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ruin"
+      }
+    },
+    {
+      "label": {
+        "text": "Nylium",
+        "color": "gold"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger nylium"
+      }
+    }, 
+
+           {
+      "label": {
+        "text": "",
+        "color": "dark_aqua"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger liberals"
+      }
+    }
+  ]
+}
