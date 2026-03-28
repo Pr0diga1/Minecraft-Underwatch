@@ -1,6 +1,7 @@
 clear @s
 
 # Abilities
+item replace entity @s hotbar.0 with iron_sword[unbreakable={},minimum_attack_charge=1.0,swing_animation={duration:12,type:"whack"},attack_range={min_reach:0.0,max_reach:2.5,min_creative_reach:0.0,max_creative_reach:5.0,hitbox_margin:0.5},attribute_modifiers=[{id:"dam",type:"attack_damage",amount:2,operation:"add_value"},{id:"speed",type:"attack_speed",amount:-2.5,operation:"add_value"}],consumable={consume_seconds:0,animation:"block",sound:"item.armor.equip_diamond",has_consume_particles:false},custom_data={zwei:true},custom_name={"bold":true,"color":"#8A8A8A","italic":false,"text":"Zweihänder","underlined":true},use_cooldown={seconds:5}] 1
 
 
 function under_pack:general_functions/general_character_select
