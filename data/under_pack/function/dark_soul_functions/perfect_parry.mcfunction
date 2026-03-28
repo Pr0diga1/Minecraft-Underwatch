@@ -6,3 +6,4 @@ particle minecraft:flame ~ ~1 ~ 0 0 0 0.5 50
 playsound minecraft:item.mace.smash_ground_heavy master @a ~ ~ ~ 0.5 0.5
 
 tag @s add parried
+scoreboard players set @s damageTaken 0
