@@ -56,8 +56,8 @@ execute as @a[scores={elemental=1..}] at @s run function under_pack:elemental_fu
 scoreboard players enable @a elemental
 execute as @a[scores={dark_soul=1..}] at @s run function under_pack:dark_soul_functions/trigger
 scoreboard players enable @a dark_soul
-execute as @a[scores={gun_man=1..}] at @s run function under_pack:miku/trigger
-scoreboard players enable @a gun_man
+execute as @a[scores={miku=1..}] at @s run function under_pack:miku/trigger
+scoreboard players enable @a miku
 execute as @a[scores={cyborg=1..}] at @s run function under_pack:cyborg_functions/cyborg_trigger
 scoreboard players enable @a cyborg
 execute as @a[scores={microwave=1..}] at @s run function under_pack:microwave_functions/trigger
