@@ -1,8 +1,6 @@
 # Eye attack tick
 execute as @e[tag=EyeBeam] at @s run function under_pack:occultist/eye_tick
 execute as @e[tag=EyeBeam] at @s run function under_pack:occultist/eye_tick
-execute as @e[tag=EyeBeam] at @s run function under_pack:occultist/eye_tick
-execute as @e[tag=EyeBeam] at @s run function under_pack:occultist/eye_tick
 
 
 # Tick as everyone hit by vulnerable
