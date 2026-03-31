@@ -6,3 +6,5 @@ scoreboard players set @s cyborgsizebuffer 105
 execute store result storage cyborg size.red double .01 run scoreboard players get @s[team=uRed] cyborgsize 
 execute store result storage cyborg size.blue double .01 run scoreboard players get @s[team=uBlue] cyborgsize
 execute unless score @s cyborgsize matches ..30 run function under_pack:cyborg_functions/cyborg_size_mod with storage cyborg size
+
+advancement revoke @s only under_pack:cyborg/size
