@@ -1,12 +1,8 @@
 #cant be tainted tag
 execute if score @s ability1 matches 0 run tag @s[tag=!vamp] add vamp
 
-#normal bite detect
-execute if entity @s[team=uRed,scores={ability1=0}] unless entity @s[nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_data":{vamptaint:1b}}}],SelectedItem:{id:"minecraft:ghast_tear",components:{"minecraft:custom_data":{vamptaint:1b}}}}] at @s anchored feet positioned ~-.4 ~ ~-.4 if entity @a[team=uBlue,dx=-.2,dy=.8,dz=-.2] run function under_pack:vamp_functions/bite_red
-execute if entity @s[team=uBlue,scores={ability1=0}] unless entity @s[nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_data":{vamptaint:1b}}}],SelectedItem:{id:"minecraft:ghast_tear",components:{"minecraft:custom_data":{vamptaint:1b}}}}] at @s anchored feet positioned ~-.4 ~ ~-.4 if entity @a[team=uRed,dx=-.2,dy=.8,dz=-.2] run function under_pack:vamp_functions/bite_blue
-
 #tainted bite detect
-execute at @s if score @s ability1 matches 0 if entity @s[nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_data":{vamptaint:1b}}}],SelectedItem:{id:"minecraft:ghast_tear",components:{"minecraft:custom_data":{vamptaint:1b}}}}] anchored feet positioned ~-.4 ~ ~-.4 if entity @a[dx=-.2,dy=.8,dz=-.2,tag=!vamp,limit=1,sort=nearest] run function under_pack:vamp_functions/taint
+#execute at @s if score @s ability1 matches 0 if entity @s[nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_data":{vamptaint:1b}}}],SelectedItem:{id:"minecraft:ghast_tear",components:{"minecraft:custom_data":{vamptaint:1b}}}}] anchored feet positioned ~-.4 ~ ~-.4 if entity @a[dx=-.2,dy=.8,dz=-.2,tag=!vamp,limit=1,sort=nearest] run function under_pack:vamp_functions/taint
 
 #tainted person tick
 execute if entity @s[team=uRed] as @a[tag=taintedred] at @s run function under_pack:vamp_functions/tainted_red
@@ -29,7 +25,9 @@ execute if entity @s[nbt={XpLevel:99}] run experience set @s 100 levels
 #remove cant be tainted tag
 execute if score @s ability1 matches 1.. run tag @s[tag=vamp] remove vamp
 
-#speed
+#attack buffer
+execute if score @s vampattack matches 1.. if score @s vampattack = @s vampattackbuffer run function under_pack:vamp_functions/attack_ended
+scoreboard players operation @s vampattackbuffer = @s vampattack
 
 #ticky
 execute as @s[team=uRed] run function under_pack:vamp_functions/tick_red

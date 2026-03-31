@@ -339,6 +339,9 @@ scoreboard objectives add vampbatred dummy
 scoreboard objectives add vampbatred dummy
 scoreboard objectives add vampdetect dummy
 
+scoreboard objectives add vampattack dummy
+scoreboard objectives add vampattackbuffer dummy
+
 #celestial
 scoreboard objectives add celestance dummy
 scoreboard objectives add celedamage minecraft.custom:minecraft.damage_dealt
