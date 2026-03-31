@@ -5,8 +5,7 @@ scoreboard players add @s movement 1
 execute unless block ~ ~ ~ #under_pack:non_solid run return fail
 
 #particle
-execute store result score @s ability2 run scoreboard players operation @s movement %= 3 constant
-execute if score @s ability2 matches 0 run particle crit ~ ~ ~ 0 0 0 0 1 force @a
+particle crit ~ ~ ~ 0 0 0 0 1 force @a
 
 #hits a player
 execute if entity @s[team=uRed] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uBlue,limit=1,sort=nearest,gamemode=adventure] run return run function under_pack:miku/rifle_damage
