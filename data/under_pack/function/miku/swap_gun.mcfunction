@@ -4,5 +4,6 @@ execute if score @s ability3 matches 1 run function under_pack:miku/give_beam
 execute if score @s ability3 matches 2 run function under_pack:miku/give_shotgun
 execute if score @s ability3 matches 3 run function under_pack:miku/give_rifle
 
-# kill item
+# kill item and clear other stuff
 kill @n[type=item,limit=1]
+clear @s arrow

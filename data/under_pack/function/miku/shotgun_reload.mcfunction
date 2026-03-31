@@ -1,0 +1,1 @@
+scoreboard players set @s ability4 0

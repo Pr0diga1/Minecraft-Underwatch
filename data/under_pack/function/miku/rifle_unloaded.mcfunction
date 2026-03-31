@@ -1,0 +1,2 @@
+item replace entity @s hotbar.0 with crossbow[custom_data={miku:true},custom_name={"bold":true,"color":"#F72D2D","italic":false,"text":"Teto Rifle"},item_model="minecraft:copper_hoe"] 1
+item replace entity @s inventory.0 with arrow
