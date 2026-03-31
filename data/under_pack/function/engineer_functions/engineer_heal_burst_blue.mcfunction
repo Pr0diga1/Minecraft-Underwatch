@@ -3,4 +3,4 @@ $execute positioned $(x) $(y) $(z) run effect give @a[team=uBlue,tag=!dontheal,d
 tag @s remove dontheal
 $execute positioned $(x) $(y) $(z) run effect give @s[distance=..3] regeneration 2 2 true 
 $execute positioned $(x) $(y) $(z) run function under_pack:engineer_functions/engineer_particle
-scoreboard players set @s ability2 49
+scoreboard players set @s ability2 43
