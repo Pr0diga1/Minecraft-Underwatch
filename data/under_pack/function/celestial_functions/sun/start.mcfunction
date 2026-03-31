@@ -20,4 +20,4 @@ execute as @s[team=uBlue] run scoreboard players reset @a[team=uBlue] celeadjust
 experience set @s 0 levels
 experience set @s 0 points
 
-effect give @s minecraft:regeneration 2 4 true
+effect give @s minecraft:regeneration 3 3 true

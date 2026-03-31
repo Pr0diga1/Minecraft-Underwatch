@@ -22,4 +22,4 @@ scoreboard players set @s ability3 0
 scoreboard players set @s ability7 0
 
 
-effect give @s minecraft:regeneration 2 4 true
+effect give @s minecraft:regeneration 3 3 true

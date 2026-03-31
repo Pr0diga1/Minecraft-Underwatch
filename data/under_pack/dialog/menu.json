@@ -111,16 +111,18 @@
         "type": "minecraft:run_command",
         "command": "trigger engineer"
       }
-    },    {
+    },  
+    {
       "label": {
-        "text": "Lumberjack",
+        "text": "Hatsune Miku",
         "color": "red"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger lumberjack"
+        "command": "trigger miku"
       }
-    },    {
+    },
+    {
       "label": {
         "text": "Mermaid",
         "color": "yellow"
@@ -129,16 +131,18 @@
         "type": "minecraft:run_command",
         "command": "trigger mermaid"
       }
-    },    {
+    },  
+      {
       "label": {
-        "text": "Ninja",
+        "text": "Lumberjack",
         "color": "red"
       },
       "action": {
         "type": "minecraft:run_command",
-        "command": "trigger ninja"
+        "command": "trigger lumberjack"
       }
-    },    {
+    },     
+     {
       "label": {
         "text": "Occultist",
         "color": "yellow"
@@ -148,6 +152,26 @@
         "command": "trigger occultist"
       }
     },  
+     {
+      "label": {
+        "text": "Ninja",
+        "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger ninja"
+      }
+    },   
+    {
+      "label": {
+        "text": "Scientist",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger scientist"
+      }
+    }, 
     {
       "label": {
         "text": "Paladin",
@@ -158,16 +182,7 @@
         "command": "trigger paladin"
       }
     },  
-      {
-      "label": {
-        "text": "Scientist",
-        "color": "yellow"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "trigger scientist"
-      }
-    }, 
+      
       {
    "label": {
         "text": "Rogue",
@@ -180,8 +195,30 @@
     },   
     {
       "label": {
-        "text": "Bard-Barian",
+        "text": "",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger bard_barian"
+      }
+    },
+    
+        {
+      "label": {
+        "text": "Vampire",
         "color": "red"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger hemomancer"
+      }
+    },
+    
+        {
+      "label": {
+        "text": "",
+        "color": "yellow"
       },
       "action": {
         "type": "minecraft:run_command",
@@ -196,26 +233,6 @@
       "action": {
         "type": "minecraft:run_command",
         "command": "trigger wizard"
-      }
-    },
-        {
-      "label": {
-        "text": "",
-        "color": "red"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "trigger bard_barian"
-      }
-    },
-        {
-      "label": {
-        "text": "Hatsune Miku",
-        "color": "red"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "trigger miku"
       }
     }
   ]

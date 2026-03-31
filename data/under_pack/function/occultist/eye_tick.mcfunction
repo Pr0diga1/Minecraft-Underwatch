@@ -7,7 +7,7 @@ scoreboard players add @s ability1 1
 
 
 particle minecraft:falling_obsidian_tear ~ ~ ~ 0.2 0.2 0.2 1 1
-particle minecraft:dragon_breath ~ ~ ~ 0.2 0.2 0.2 .02 3
+particle minecraft:dragon_breath ~ ~ ~ 0.2 0.2 0.2 .02 1
 
 
 tp ^ ^ ^0.5
