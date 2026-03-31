@@ -46,6 +46,8 @@ scoreboard objectives add buffer dummy
 
 #add points
 scoreboard objectives add points dummy
+#add points
+scoreboard objectives add pointscapped dummy
 #add timer
 scoreboard objectives add timer dummy
 #add swag

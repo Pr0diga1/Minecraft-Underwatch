@@ -2,6 +2,8 @@
 tp @a[tag=lake,team=uRed] -497 86 -575
 tp @a[tag=lake,team=uBlue] -508 86 -457
 
+execute as @a[tag=lake] run trigger menu
+
 #which teams has control of the point, and a buffer so I know when it changes
 scoreboard players set lake team -1
 scoreboard players set lakeBuffer team -1
