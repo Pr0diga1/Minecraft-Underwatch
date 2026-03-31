@@ -102,6 +102,8 @@ bossbar set count:park_unlock visible false
 #scoreboard
 scoreboard objectives setdisplay sidebar pointscapped
 
+execute as @a[tag=park] run trigger menu
+
 #the actual process of aborting the game if we need to do that
 execute if score cancel matchmake matches 1 as @a[tag=park] run tell @s monkey
 execute if score cancel matchmake matches 1 as @a[tag=park] run function under_pack:park_functions/park_restart

@@ -2,6 +2,8 @@
 tp @a[tag=nylium,team=uRed] -492 67 90
 tp @a[tag=nylium,team=uBlue] -617 67 91
 
+execute as @a[tag=nylium] run trigger menu
+
 #which teams has control of the point, and a buffer so I know when it changes
 scoreboard players set nylium team -1
 scoreboard players set nyliumBuffer team -1

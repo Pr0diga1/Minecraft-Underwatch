@@ -103,5 +103,7 @@ execute if score cancel matchmake matches 1 as @a[tag=ruin] run tell @s monkey
 execute if score cancel matchmake matches 1 as @a[tag=ruin] run function under_pack:ruin_functions/ruin_restart
 scoreboard players set cancel matchmake 0
 
+execute as @a[tag=ruin] run trigger menu
+
 #fill barriers to lock teams in their spawns
 schedule function under_pack:ruin_functions/ruin_start_fills 1t

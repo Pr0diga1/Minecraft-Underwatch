@@ -128,6 +128,7 @@ bossbar set count:nylium_blue visible false
 bossbar set count:nylium_red visible false
 bossbar set count:nylium_ot visible false
 
+execute as @a[tag=nylium] run trigger menu
 
 #the actual process of aborting the game if we need to do that
 execute if score cancel matchmake matches 1 as @a[tag=nylium] run tell @s monkey

@@ -2,6 +2,8 @@
 tp @a[tag=park,team=uRed] 629 43 -9
 tp @a[tag=park,team=uBlue] 522 43 -8
 
+execute as @a[tag=park] run trigger menu
+
 #which teams has control of the point, and a buffer so I know when it changes
 scoreboard players set park_winning team -1
 #what is the status of the point, used for how long it takes to uncap it

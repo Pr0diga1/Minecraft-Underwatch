@@ -2,6 +2,8 @@
 tp @a[tag=gazebo,team=uRed] 629 43 -9
 tp @a[tag=gazebo,team=uBlue] 522 43 -8
 
+execute as @a[tag=gazebo] run trigger menu
+
 #which teams has control of the point, and a buffer so I know when it changes
 scoreboard players set gazebo team -1
 scoreboard players set gazeboBuffer team -1

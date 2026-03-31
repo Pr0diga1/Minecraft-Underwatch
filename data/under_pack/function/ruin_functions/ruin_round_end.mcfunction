@@ -2,6 +2,8 @@
 tp @a[tag=ruin,team=uRed] 22 93 524
 tp @a[tag=ruin,team=uBlue] 22 93 578
 
+execute as @a[tag=ruin] run trigger menu
+
 #which teams has control of the point, and a buffer so I know when it changes
 scoreboard players set ruin_winning team -1
 #what is the status of the point, used for how long it takes to uncap it
