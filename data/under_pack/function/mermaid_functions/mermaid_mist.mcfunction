@@ -6,3 +6,5 @@ execute if score @s mermaidmist matches 9.. run scoreboard players remove @s mer
 
 
 scoreboard players set @s mermaidDetect 3
+
+advancement revoke @s only under_pack:mermaid/mist

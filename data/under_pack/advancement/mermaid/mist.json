@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"diamond sword": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"mermaidmist": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:mermaid_functions/mermaid_mist"
+	}
+}

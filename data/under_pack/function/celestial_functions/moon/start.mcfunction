@@ -10,8 +10,8 @@ item replace entity @s[team=uBlue] hotbar.2 with heart_of_the_sea[consumable={co
 
 item replace entity @s armor.head with leather_helmet[unbreakable={},dyed_color=16777215]
 item replace entity @s armor.chest with leather_chestplate[unbreakable={},dyed_color=16777215]
-item replace entity @s armor.legs with leather_leggings[unbreakable={},dyed_color=16777215]
-item replace entity @s armor.feet with golden_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"},{id:"max_health",type:"max_health",amount:-4,operation:"add_value"}],unbreakable={},enchantments={"minecraft:blast_protection":8,"minecraft:depth_strider":2}]
+item replace entity @s armor.legs with leather_leggings[unbreakable={},dyed_color=16777215,attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value"}]]
+item replace entity @s armor.feet with golden_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={},enchantments={"minecraft:blast_protection":8,"minecraft:depth_strider":2}]
 
 attribute @s scale base set 1
 
@@ -22,4 +22,4 @@ scoreboard players set @s ability3 0
 scoreboard players set @s ability7 0
 
 
-effect give @s minecraft:instant_health 1 1
+effect give @s minecraft:regeneration 2 4 true

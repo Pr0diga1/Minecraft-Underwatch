@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"dried ghast": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"mermaidperch": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:mermaid_functions/mermaid_perch"
+	}
+}
