@@ -2,14 +2,14 @@
 execute if score @s ability2 matches 1.. run scoreboard players remove @s ability2 1
 #intervals for the toss
 item modify entity @s hotbar.1 under_pack:ninja/throw
-execute if score @s ability2 matches 1 run item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name={"color":"blue","text":"Shuriken Throw"},custom_data={ninjaToss:1b}] 1
+execute if score @s ability2 matches 1 run item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name={"color":"blue","text":"Shuriken Throw"},custom_data={ninjaToss:1b},item_model="iron_nugget"] 1
 
 #tallying for the 1.8
 execute if score @s ability3 matches 1.. if score @s ninjaHyperventilate matches 0 run scoreboard players remove @s ability3 1
 
 #intervals for the 1.8
 item modify entity @s hotbar.2 under_pack:ninja/knuckles
-execute if score @s ability3 matches 1 run item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name={"color":"gold","text":"Brass Knuckles"},lore=["Right Click to hyperventilate"],custom_data={ninjaHyperventilate:1b},attribute_modifiers=[{id:"armor",type:"attack_damage",amount:2,operation:"add_value",slot:"mainhand"},{id:"armor",type:"attack_speed",amount:-2,operation:"add_value",slot:"mainhand"}]] 1
+execute if score @s ability3 matches 1 run item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name={"color":"gold","text":"Brass Knuckles"},lore=["Right Click to hyperventilate"],custom_data={ninjaHyperventilate:1b},attribute_modifiers=[{id:"armor",type:"attack_damage",amount:2,operation:"add_value",slot:"mainhand"},{id:"armor",type:"attack_speed",amount:-2,operation:"add_value",slot:"mainhand"}],item_model="wooden_shovel"] 1
 
 #tallying for the dash
 execute if score @s ability1 matches ..199 run scoreboard players add @s ability1 1

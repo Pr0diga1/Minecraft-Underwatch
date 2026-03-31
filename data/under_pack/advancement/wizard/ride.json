@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"blaze powder": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"wizardFire": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:wizard_functions/wizard_ride_check"
+	}
+}

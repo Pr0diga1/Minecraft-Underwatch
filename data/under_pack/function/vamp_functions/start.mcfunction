@@ -15,3 +15,5 @@ item replace entity @s hotbar.3 with ender_eye[custom_name='{"text":"Become Bat"
 item replace entity @s armor.chest with leather_chestplate[dyed_color=0,trim={material:"minecraft:redstone",pattern:"minecraft:vex"},unbreakable={},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value",slot:"any"}]] 1
 item replace entity @s armor.legs with leather_leggings[dyed_color=0,trim={material:"minecraft:redstone",pattern:"minecraft:vex"},unbreakable={}] 1
 item replace entity @s armor.feet with leather_boots[dyed_color=0,trim={material:"minecraft:redstone",pattern:"minecraft:vex"},attribute_modifiers=[{id:"armor",type:"armor",amount:9,operation:"add_value",slot:"any"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={},enchantments={"minecraft:blast_protection":8,"minecraft:depth_strider":2}] 1
+
+function under_pack:general_functions/general_character_select

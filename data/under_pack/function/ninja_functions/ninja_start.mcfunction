@@ -1,12 +1,12 @@
 clear @s
 #Sword
-item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name={"color":"dark_gray","text":"Katana"},lore=["Right Click to dash"],unbreakable={},custom_data={ninjaDash:1b},attribute_modifiers=[{id:"armor",type:"attack_damage",amount:4.5,operation:"add_value",slot:"mainhand"},{id:"armor",type:"attack_speed",amount:-2.7,operation:"add_value",slot:"mainhand"}]] 1
+item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name={"color":"dark_gray","text":"Katana"},lore=["Right Click to dash"],unbreakable={},custom_data={ninjaDash:1b},attribute_modifiers=[{id:"armor",type:"attack_damage",amount:4.5,operation:"add_value",slot:"mainhand"},{id:"armor",type:"attack_speed",amount:-2.7,operation:"add_value",slot:"mainhand"}],item_model="iron_sword"] 1
 
 #Toss
-item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name={"color":"blue","text":"Shuriken Throw"},custom_data={ninjaToss:1b}] 1
+item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name={"color":"blue","text":"Shuriken Throw"},custom_data={ninjaToss:1b},item_model="iron_nugget"] 1
 
 #Hyperventilate
-item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name={"color":"gold","text":"Brass Knuckles"},lore=["Right Click to hyperventilate"],custom_data={ninjaHyperventilate:1b},attribute_modifiers=[{id:"armor",type:"attack_damage",amount:2,operation:"add_value",slot:"mainhand"},{id:"armor",type:"attack_speed",amount:-2,operation:"add_value",slot:"mainhand"}]] 1
+item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name={"color":"gold","text":"Brass Knuckles"},lore=["Right Click to hyperventilate"],custom_data={ninjaHyperventilate:1b},attribute_modifiers=[{id:"armor",type:"attack_damage",amount:2,operation:"add_value",slot:"mainhand"},{id:"armor",type:"attack_speed",amount:-2,operation:"add_value",slot:"mainhand"}],item_model="wooden_shovel"] 1
 
 #armor
 item replace entity @s armor.legs with chainmail_leggings[unbreakable={}]

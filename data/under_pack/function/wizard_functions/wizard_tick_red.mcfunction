@@ -6,12 +6,12 @@ execute as @s[scores={wizardFireball=1..}] if entity @e[type=item,nbt={Item:{id:
 execute as @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_data":{wizardWand:1b,red:1b}}}}] run kill @s
 
 #fireball w/ eye
-execute as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",count:1,components:{"minecraft:custom_data":{wizardFire:1b,red:1b}}}}] at @s on origin as @s[scores={wizardFireball=1..}] run function under_pack:wizard_functions/wizard_fireball_red
-execute as @e[type=item,nbt={Item:{id:"minecraft:ender_eye",count:1,components:{"minecraft:custom_data":{wizardFire:1b,red:1b}}}}] run kill @s
+execute as @e[type=item,nbt={Item:{id:"minecraft:blaze_powder",count:1,components:{"minecraft:custom_data":{wizardFire:1b,red:1b}}}}] at @s on origin as @s[scores={wizardFireball=1..}] run function under_pack:wizard_functions/wizard_fireball_red
+execute as @e[type=item,nbt={Item:{id:"minecraft:blaze_powder",count:1,components:{"minecraft:custom_data":{wizardFire:1b,red:1b}}}}] run kill @s
 
 #give the wand and fireball back if they were dropped
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"},{Slot:0b}]}] run item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name={"bold":true,"color":"light_purple","italic":true,"text":"Agicmay Andway"},lore=["Crafted from the tree of Lofaktar"],custom_data={wizardWand:1b,red:1b}] 1
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:ender_eye"},{Slot:1b}]}] run item replace entity @s hotbar.1 with ender_eye[custom_name={"bold":true,"color":"gold","italic":true,"text":"Become Fire"},lore=["fireball - Pitbull"],custom_data={wizardFire:1b,red:1b}] 1
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick"},{Slot:0b}]}] run item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name={"bold":true,"color":"light_purple","italic":true,"text":"Agicmay Andway"},lore=["Crafted from the tree of Lofaktar"],custom_data={wizardWand:1b,red:1b},item_model="breeze_rod"] 1
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:blaze_powder"},{Slot:1b}]}] run item replace entity @s hotbar.1 with blaze_powder[consumable={consume_seconds:10000,animation:"spear"},custom_name={"bold":true,"color":"gold","italic":true,"text":"Become Fire"},lore=["'fireball'- Archmage Pitbull"],custom_data={wizardFire:1b,red:1b}] 1
 
 #fireball set its velo
 execute as @e[type=fireball,tag=!fireballMoved,tag=redWizardFireball] at @s rotated as @a[team=uRed,limit=1,sort=nearest,scores={class=10}] run function under_pack:wizard_functions/wizard_fireball_velo
