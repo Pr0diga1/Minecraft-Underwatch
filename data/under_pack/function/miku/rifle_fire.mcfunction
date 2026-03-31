@@ -11,7 +11,6 @@ playsound minecraft:item.flintandsteel.use master @a ~ ~ ~ 0.5 0.1
 #playsound minecraft:block.note_block.harp master @a ~ ~ ~ 1 2
 particle note ~ ~1 ~ 0.5 0.5 0.5 0.01 5
 
-say hi
 
 # Ammo reduced
 scoreboard players remove @s ability2 1
