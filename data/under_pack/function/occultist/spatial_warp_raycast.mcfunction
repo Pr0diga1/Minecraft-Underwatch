@@ -2,8 +2,8 @@
 scoreboard players add distance buffer 1
 
 #kill the marker if its in a block
-execute if entity @s[team=uBlue] unless block ~ ~ ~ #under_pack:non_solid run return run tp @n[type=marker,tag=warp_teleporter,tag=uBlue] ~ ~ ~
-execute if entity @s[team=uRed] unless block ~ ~ ~ #under_pack:non_solid run return run tp @n[type=marker,tag=warp_teleporter,tag=uRed] ~ ~ ~
+execute if entity @s[team=uBlue] unless block ^ ^ ^ #under_pack:non_solid run return run tp @n[type=marker,tag=warp_teleporter,tag=uBlue] ^ ^ ^-1
+execute if entity @s[team=uRed] unless block ^ ^ ^ #under_pack:non_solid run return run tp @n[type=marker,tag=warp_teleporter,tag=uRed] ^ ^ ^-1
 
 #particle campfire_signal_smoke ~ ~ ~ 0 0 0 0 1
 

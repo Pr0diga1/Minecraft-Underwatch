@@ -2,7 +2,7 @@
 clear @s
 
 ## Main Weapon
-item replace entity @s hotbar.0 with eye_armor_trim_smithing_template[consumable={consume_seconds:10000,animation:"bow"},custom_data={watcher:true},custom_name={"bold":true,"color":"dark_green","italic":false,"text":"Watcher\s Gaze"}] 1
+item replace entity @s hotbar.0 with eye_armor_trim_smithing_template[consumable={consume_seconds:10000,animation:"bow"},custom_data={watcher:true},custom_name={"bold":true,"color":"dark_green","italic":false,"text":"Watcher's Gaze"}] 1
 
 ## Abilities
 # Share Wounds
@@ -27,6 +27,10 @@ scoreboard players reset @s ability2
 scoreboard players reset @s ability3
 scoreboard players reset @s damageTaken
 scoreboard players reset @s occultistHealingTimer
+
+#sharing tag
+execute as @s[team=uBlue] run tag @a[team=uBlue] remove sharing
+execute as @s[team=uRed] run tag @a[team=uRed] remove sharing
 
 #set healing
 scoreboard players set occultHeal constant 5

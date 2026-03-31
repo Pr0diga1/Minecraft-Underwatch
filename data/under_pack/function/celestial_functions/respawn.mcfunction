@@ -12,3 +12,9 @@ execute if entity @s[team=uBlue] run tag @a remove 2bpb
 
 execute if entity @s[team=uRed] run kill @e[tag=celetrack,tag=red]
 execute if entity @s[team=uBlue] run kill @e[tag=celetrack,tag=blue]
+
+scoreboard players set @s ability1 1
+scoreboard players set @s ability2 1
+scoreboard players set @s ability3 1
+scoreboard players set @s ability4 1
+scoreboard players set @s ability5 1

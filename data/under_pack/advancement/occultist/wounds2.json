@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"blaze powder": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"sharewounds": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:occultist/share_wounds_tick"
+	}
+}

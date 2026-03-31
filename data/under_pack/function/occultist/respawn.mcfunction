@@ -24,3 +24,6 @@ item replace entity @s armor.chest with leather_chestplate[unbreakable={},dyed_c
 scoreboard players reset @s ability1
 scoreboard players reset @s ability3
 scoreboard players reset @s damageTaken
+
+execute as @s[team=uBlue] run tag @a[team=uBlue] remove sharing
+execute as @s[team=uRed] run tag @a[team=uRed] remove sharing
