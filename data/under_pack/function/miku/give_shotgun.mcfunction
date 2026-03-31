@@ -1,0 +1,1 @@
+item replace entity @s hotbar.0 with crossbow[custom_data={miku:true,shotty:true},custom_name={"bold":true,"color":"#218004","italic":false,"text":"Leek Shotgun"},consumable={consume_seconds:2,animation:"spyglass",sound:"block.beacon.ambient"},item_model="minecraft:bamboo"] 1
