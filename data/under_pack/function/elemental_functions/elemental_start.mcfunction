@@ -2,16 +2,16 @@ clear @s
 
 #elements
 # fire
-item replace entity @s hotbar.0 with blaze_powder[custom_name={"color":"gold","text":"Fire"},custom_data={elementalFire:true},consumable={consume_seconds:999999999,animation:"spear"}] 1
+item replace entity @s hotbar.0 with blaze_rod[custom_name={"color":"gold","text":"Fire"},custom_data={elementalFire:true},consumable={consume_seconds:999999999,animation:"block"}] 1
 
 # wind
-item replace entity @s hotbar.1 with breeze_rod[custom_name={"color":"white","text":"Wind"},custom_data={elementalWind:true},consumable={consume_seconds:999999999,animation:"spear",sound:"entity.breeze.whirl"}] 1
+item replace entity @s hotbar.1 with breeze_rod[custom_name={"color":"white","text":"Wind"},custom_data={elementalWind:true},consumable={consume_seconds:999999999,animation:"spear",sound:"entity.breeze.whirl"},item_model="wind_charge"] 1
 
 # water
 item replace entity @s hotbar.2 with heart_of_the_sea[custom_name={"color":"dark_aqua","text":"Water"},custom_data={elementalWater:true},consumable={consume_seconds:999999999,animation:"spear"}] 1
 
 # earth
-item replace entity @s hotbar.3 with pitcher_pod[custom_name={"color":"gray","text":"Earth"},custom_data={elementalEarth:true},consumable={consume_seconds:999999999,animation:"spear"}] 1
+item replace entity @s hotbar.3 with cobblestone[custom_name={"color":"gray","text":"Earth"},custom_data={elementalEarth:true},consumable={consume_seconds:999999999,animation:"spear"}] 1
 
 #armor
 item replace entity @s armor.feet with iron_boots[attribute_modifiers=[{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={},enchantments={"blast_protection":8,"depth_strider":2}] 1
