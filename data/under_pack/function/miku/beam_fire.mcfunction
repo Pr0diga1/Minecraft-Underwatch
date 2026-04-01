@@ -1,4 +1,4 @@
-function under_pack:miku/give_beam
+schedule function under_pack:miku/give_beam 2t
 advancement revoke @s only under_pack:miku/beam
 
 playsound minecraft:entity.ghast.scream master @a ~ ~ ~ 1 2
