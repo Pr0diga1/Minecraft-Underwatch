@@ -5,7 +5,7 @@ scoreboard players add @s movement 1
 execute unless block ~ ~ ~ #under_pack:non_solid run return fail
 
 #particle
-particle dust{color:[0.500,0.000,0.000],scale:1} ~ ~ ~ 0 0 0 0 0 normal
+particle dust{color:[0.500,0.000,0.000],scale:0.5} ~ ~ ~ 0 0 0 0 0 normal
 
 #hits a player
 #execute if entity @s[team=uRed] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uBlue,limit=1,sort=nearest,gamemode=adventure] run function under_pack:miku/rifle_damage
