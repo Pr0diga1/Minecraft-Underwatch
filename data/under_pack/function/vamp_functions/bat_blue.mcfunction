@@ -5,6 +5,4 @@ execute at @s rotated as @s anchored eyes as @e[tag=vampbatblue] run function un
 
 attribute @s scale base set 0
 
-scoreboard players remove @s vampblood 4
-experience add @s -4
 scoreboard players set @s vampdetect 3

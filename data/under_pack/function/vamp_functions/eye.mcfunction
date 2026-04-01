@@ -1,4 +1,0 @@
-advancement revoke @s only under_pack:eye
-execute if score @s vampblood matches 2.. if entity @s[nbt={Inventory:[{Slot:2b,components:{"minecraft:custom_data":{vampsuck:1b}}}],SelectedItem:{id:"minecraft:ender_eye",components:{"minecraft:custom_data":{vampsuck:1b}}}}] at @s run function under_pack:vamp_functions/suck
-execute if score @s[team=uRed] vampblood matches 2.. if entity @s[nbt={Inventory:[{Slot:3b,components:{"minecraft:custom_data":{vampbat:1b}}}],SelectedItem:{id:"minecraft:ender_eye",components:{"minecraft:custom_data":{vampbat:1b}}}}] at @s run function under_pack:vamp_functions/bat_red
-execute if score @s[team=uBlue] vampblood matches 2.. if entity @s[nbt={Inventory:[{Slot:3b,components:{"minecraft:custom_data":{vampbat:1b}}}],SelectedItem:{id:"minecraft:ender_eye",components:{"minecraft:custom_data":{vampbat:1b}}}}] at @s run function under_pack:vamp_functions/bat_blue

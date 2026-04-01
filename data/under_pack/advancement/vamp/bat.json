@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"bat": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"vampbat": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:vamp_functions/bat"
+	}
+}
