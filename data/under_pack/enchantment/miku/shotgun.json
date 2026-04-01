@@ -47,8 +47,8 @@
 							"type": "minecraft:apply_impulse",
 							"direction": [
 								0,
-								0.1,
-								-1.5
+								0.2,
+								-1.3
 							],
 							"coordinate_scale": [
 								1,

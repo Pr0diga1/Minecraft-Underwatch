@@ -5,11 +5,12 @@ scoreboard players add @s movement 1
 execute unless block ~ ~ ~ #under_pack:non_solid run return fail
 
 #particle
-particle crit ~ ~ ~ 0 0 0 0 1 force @a
+particle electric_spark ~ ~ ~ 0 0 0 1 1 force @a
+particle flash{color:[0.400,0.900,1.000,1.000]} ~ ~ ~ 0 0 0 0 1 force @a
 
 #hits a player
-execute if entity @s[team=uRed] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uBlue,limit=1,sort=nearest,gamemode=adventure] run return run function under_pack:miku/rifle_damage
-execute if entity @s[team=uBlue] positioned ~-1 ~-1 ~-1 as @a[dx=2,dy=2,dz=2,team=uRed,limit=1,sort=nearest,gamemode=adventure] run return run function under_pack:miku/rifle_damage
+execute as @s[team=uRed] positioned ~-.75 ~-.75 ~-.75 as @a[dx=0,team=uBlue,limit=1,sort=nearest,gamemode=adventure] positioned ~0.5 ~0.5 ~0.5 if entity @s[dx=0] run return run function under_pack:miku/beam_damage
+execute as @s[team=uBlue] positioned ~-.75 ~-.75 ~-.75 as @a[dx=0,team=uRed,limit=1,sort=nearest,gamemode=adventure] positioned ~0.5 ~0.5 ~0.5 if entity @s[dx=0] run return run function under_pack:miku/beam_damage
 
 #rerun command
-execute if score @s movement matches ..100 positioned ^ ^ ^.5 run function under_pack:miku/rifle_raycast
+execute if score @s movement matches ..100 positioned ^ ^ ^.5 run function under_pack:miku/beam_raycast_damage
