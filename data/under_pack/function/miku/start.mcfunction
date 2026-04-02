@@ -19,7 +19,7 @@ scoreboard players set @s ability4 0
 item replace entity @s armor.feet with netherite_boots[unbreakable={},enchantments={"blast_protection":8,"depth_strider":2},attribute_modifiers=[{id:"armor",type:"armor",amount:6,operation:"add_value"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],trim={material:"minecraft:diamond",pattern:"minecraft:snout"}] 1
 item replace entity @s armor.legs with netherite_leggings[unbreakable={},trim={material:"minecraft:diamond",pattern:"minecraft:host"}] 1
 item replace entity @s armor.chest with leather_chestplate[unbreakable={},dyed_color=16777215,trim={material:"minecraft:diamond",pattern:"minecraft:vex"}] 1
-item replace entity @s armor.feet with diamond_helmet[unbreakable={},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value"}]] 1
+item replace entity @s armor.head with diamond_helmet[unbreakable={},attribute_modifiers=[{id:"armor",type:"armor",amount:0,operation:"add_value"}]] 1
 
 function under_pack:general_functions/general_character_select
 
