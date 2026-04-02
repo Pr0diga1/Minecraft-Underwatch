@@ -3,6 +3,6 @@
 	"entity": "this",
 	"predicate": {
 		"type": "minecraft:player",
-		"nbt": "{Inventory:[{Slot:0b,components:{\"custom_data\":{miku:true}}}]}"
+		"nbt": "{Inventory:[{Slot:0b,components:{\"minecraft:custom_data\":{miku:true}}}]}"
 	}
 }
