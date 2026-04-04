@@ -8,3 +8,4 @@ execute as @s[team=uBlue] run function under_pack:vamp_functions/tick_blue
 
 
 execute if score @s ability1 matches 1.. run function under_pack:vamp_functions/bat_cooldown
+execute if score @s ability2 matches 1.. run function under_pack:vamp_functions/bomb_cooldown

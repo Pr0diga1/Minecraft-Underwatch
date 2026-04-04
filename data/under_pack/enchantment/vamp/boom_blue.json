@@ -1,0 +1,48 @@
+{
+  "description": "",
+  "supported_items": [],
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": ["feet"],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+               {
+              "type": "minecraft:explode",
+              "attribute_to_user": false,
+              "knockback_multiplier": 1.8,
+              "radius": 3,
+              "create_fire": false,
+              "block_interaction": "trigger",
+              "small_particle": {
+                "type": "minecraft:crimson_spore"
+              },
+              "large_particle": {
+                "type": "minecraft:dust",
+                "color": 16056320,
+                "scale": 1
+              },
+              "sound": "minecraft:entity.generic.explode"
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "under_pack:vamp_functions/bomb_blue_boom"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
