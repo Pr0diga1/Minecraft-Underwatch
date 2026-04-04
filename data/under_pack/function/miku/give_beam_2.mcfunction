@@ -1,1 +1,0 @@
-item replace entity @a[scores={class=14}] hotbar.0 with soul_torch[custom_data={miku:true,beam:true},custom_name={"bold":true,"color":"#40CFCF","italic":false,"text":"Miku (Miku) Beam","underlined":true},consumable={consume_seconds:2,animation:"spyglass",sound:"block.beacon.ambient",has_consume_particles:false},use_cooldown={seconds:5}] 1
