@@ -182,6 +182,16 @@
         "command": "trigger paladin"
       }
     },  
+     {
+      "label": {
+        "text": "",
+        "color": "yellow"
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger liberals"
+      }
+    },  
       
       {
    "label": {
