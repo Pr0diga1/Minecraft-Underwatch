@@ -5,7 +5,7 @@ scoreboard players add distance vampattack 1
 #execute unless block ~ ~ ~ #under_pack:non_solid run return fail
 
 #particle
-particle dust{color:[1,0,0],scale:0.9} ~ ~ ~ 0 0 0 0 1 force @a
+particle dust{color:[1,0,0],scale:1.3} ~ ~ ~ 0 0 0 0 1 force @a
 
 #hits a player
 execute if entity @s[team=uRed] as @a[dx=0,team=uBlue,limit=1,sort=nearest,gamemode=adventure] at @s positioned ~-0.99 ~-0.99 ~-0.99 if entity @s[dx=0] run function under_pack:vamp_functions/attack_ray_hit
