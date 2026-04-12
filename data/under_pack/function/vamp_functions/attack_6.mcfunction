@@ -1,5 +1,5 @@
 #sound
-execute if score @s vampattack matches 112 run playsound minecraft:entity.evoker_fangs.attack master @a ~ ~ ~ 0.8 0.8
+execute if score @s vampattack matches 87 run playsound minecraft:entity.evoker_fangs.attack master @a ~ ~ ~ 0.8 0.8
 
 #particles
 execute at @s run particle minecraft:dust{color:[1,0,0],scale:1} ~ ~.7 ~ .3 .6 .3 .001 20 force @a
