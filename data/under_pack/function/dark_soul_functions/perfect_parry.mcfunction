@@ -7,3 +7,5 @@ playsound minecraft:item.mace.smash_ground_heavy master @a ~ ~ ~ 0.5 0.5
 
 tag @s add parried
 scoreboard players set @s damageTaken 0
+
+function under_pack:dark_soul_functions/check_ember
