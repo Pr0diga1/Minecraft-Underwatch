@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"bricks": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"enginedrug": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:engineer_functions/engineer_drug_eye"
+	}
+}

@@ -23,3 +23,6 @@ scoreboard players operation @s elementalBarBuffer = @s elementalBar
 
 execute if score fireheld buffer matches 1.. run scoreboard players remove fireheld buffer 1
 execute if score fireheld buffer matches ..1 run item modify entity @s hotbar.0 under_pack:elemental/endglint
+#give jump back
+execute if score fireheld buffer matches 1 run attribute @s jump_strength base reset
+execute if score fireheld buffer matches 1 run attribute @s step_height base reset
