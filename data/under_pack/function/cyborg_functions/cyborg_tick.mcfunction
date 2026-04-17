@@ -17,6 +17,10 @@ execute if score @s cyborgzaptimer matches 1.. run function under_pack:cyborg_fu
 execute if score @s cyborgpreserve matches 1.. as @s[predicate=!under_pack:cyborg_res_check] run scoreboard players remove @s cyborgpreserve 1
 execute if score @s cyborgpreserve matches 1 run function under_pack:cyborg_functions/cyborg_regen_reset
 
+#vent tracking
+execute if score @s ability7 matches 0.. run scoreboard players remove @s ability7 1
+execute if score @s ability7 matches 0 run function under_pack:cyborg_functions/cyborg_vent_end
+
 #acceleration
 execute if score @s ability1 matches 1.. run scoreboard players remove @s ability1 1
 execute if score @s ability2 matches 1.. run scoreboard players remove @s ability2 1

@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"iron bars": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"cyborgvent": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:cyborg_functions/cyborg_vent_start"
+	}
+}

@@ -1,6 +1,6 @@
 #summon markers
-summon marker ^-2 ^ ^4.8 {Tags:["vamp","vampEnd"]}
-summon marker ^2 ^ ^1.6 {Tags:["vamp","vampStart"]}
+summon marker ^-2 ^ ^4.0 {Tags:["vamp","vampEnd"]}
+summon marker ^2 ^ ^0.4 {Tags:["vamp","vampStart"]}
 
 #playsound
 execute at @s run playsound minecraft:item.spear.lunge_1 master @a ~ ~ ~ 0.3 1.5

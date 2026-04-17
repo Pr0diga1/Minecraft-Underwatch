@@ -1,4 +1,5 @@
 data modify entity @s Owner set from entity @a[team=uBlue,limit=1,sort=nearest,scores={class=18}] UUID
+data merge entity @s {Item:{id:"minecraft:enderman_spawn_egg",count:1}}
 summon marker ^ ^ ^2 {Tags:["coldtrack"]}
 
 execute store result score X1 coldbuffer run data get entity @s Pos[0] 1000

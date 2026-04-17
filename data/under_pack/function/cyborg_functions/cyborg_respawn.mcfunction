@@ -7,7 +7,6 @@ scoreboard players set @s cyborgzaptimer 0
 scoreboard players set @s cyborgpreserve 0
 attribute @s max_health base reset
 attribute @s scale base reset
-attribute @s max_health base reset
 attribute @s minecraft:attack_speed base reset
 attribute @s movement_speed base reset
 attribute @s armor_toughness base reset
@@ -19,5 +18,9 @@ scoreboard players set @s ability2 0
 scoreboard players set @s ability3 0
 scoreboard players set @s ability4 0
 scoreboard players set @s ability5 0
+scoreboard players set @s ability7 -1
 scoreboard players set @s cyborgaccellevel 0
 scoreboard players set @s cyborgaccellevelbuffer 0
+
+attribute @s jump_strength base reset
+advancement revoke @s only under_pack:cyborg/vent2

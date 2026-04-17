@@ -1,4 +1,5 @@
 data modify entity @s Owner set from entity @a[team=uRed,limit=1,sort=nearest,scores={class=18}] UUID
+data merge entity @s {Item:{id:"minecraft:enderman_spawn_egg",count:1}}
 
 summon marker ^ ^ ^2 {Tags:["coldtrack"]}
 

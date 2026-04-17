@@ -7,8 +7,8 @@ item replace entity @s hotbar.0 with iron_pickaxe[custom_name={"bold":true,"colo
 item replace entity @s hotbar.1 with shears[enchantments={"minecraft:knockback":3},custom_name={"bold":true,"color":"gray","text":"Wrench"},custom_data={wrench:1b}] 1
 
 #healies
-execute if entity @s[team=uRed] run item replace entity @s hotbar.2 with snowball[custom_name={"color":"blue","text":"5000mg of Ibuprofen"},custom_data={enginedrug:1b,red:1b}] 1
-execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with snowball[custom_name={"color":"blue","text":"5000mg of Ibuprofen"},custom_data={enginedrug:1b,blue:1b}] 1
+execute if entity @s[team=uRed] run item replace entity @s hotbar.2 with snowball[custom_name={"color":"blue","text":"5000mg of Ibuprofen"},custom_data={enginedrug:1b,red:1b},item_model="blaze_spawn_egg"] 1
+execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with snowball[custom_name={"color":"blue","text":"5000mg of Ibuprofen"},custom_data={enginedrug:1b,blue:1b},item_model="blaze_spawn_egg"] 1
 
 #viagra
 item replace entity @s hotbar.3 with bricks[consumable={consume_seconds:10000,animation:"spear"},custom_name={"color":"dark_red","text":"Viagra"},custom_data={enginedrug:1b},item_model="ominous_bottle"] 1

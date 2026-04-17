@@ -1,0 +1,12 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:consumable": {
+      "consume_seconds": 0.2,
+      "animation": "eat",
+      "sound": "minecraft:ambient.underwater.loop",
+      "has_consume_particles": false,
+      "on_consume_effects": []
+    }
+  }
+}

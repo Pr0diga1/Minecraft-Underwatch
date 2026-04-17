@@ -17,7 +17,7 @@ execute if score @s ability3 matches 1 if entity @e[predicate=under_pack:celesti
 #sets cooldown when you throw
 execute if score @s ability3 matches 0 unless entity @s[nbt={Inventory:[{Slot:0b}]}] run scoreboard players set @s ability3 30
 #gives snowball at end of cooldown
-execute if score @s ability3 matches 1 run item replace entity @s hotbar.0 with snowball[custom_data={celeswap:1b,celedrop:1b,blue:1b},custom_name={"color":"dark_blue","text":"Lunar Drop"}]
+execute if score @s ability3 matches 1 run item replace entity @s hotbar.0 with snowball[custom_data={celeswap:1b,celedrop:1b,blue:1b},custom_name={"color":"dark_blue","text":"Lunar Drop"},item_model="allay_spawn_egg"]
 
 #replace empty with barrier
 execute if entity @e[predicate=under_pack:celestial/lunardropblue] run item replace entity @s hotbar.0 with barrier[custom_data={"celeswap":1b,"blue":1b}]
