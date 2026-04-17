@@ -1,5 +1,5 @@
-execute if entity @s[team=uBlue] run function under_pack:elemental_functions/blue_tick
-execute if entity @s[team=uRed] run function under_pack:elemental_functions/red_tick
+execute if entity @s[team=uBlue] run function under_pack:elemental_functions/elemental_tick_blue
+execute if entity @s[team=uRed] run function under_pack:elemental_functions/elemental_tick_red
 
 #fire tick stuff
 scoreboard players operation @s elementalFireBuffer = @s elementalFireTimer

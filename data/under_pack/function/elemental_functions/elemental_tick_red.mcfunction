@@ -1,6 +1,6 @@
 # Execute as teams
-execute as @a[team=uBlue] run function under_pack:elemental_functions/all_diff_red
-execute as @a[team=uRed] run function under_pack:elemental_functions/all_same_red
+execute as @a[team=uBlue] run function under_pack:elemental_functions/elemental_tick_all_diff_red
+execute as @a[team=uRed] run function under_pack:elemental_functions/elemental_tick_all_same_red
 
 # Water tick
 execute if score @s elementalWaterState matches 1 at @s at @e[type=marker,tag=redElementalWater,limit=1,sort=nearest] run function under_pack:elemental_functions/elemental_water_tick
