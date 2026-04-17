@@ -1,6 +1,6 @@
 {
 	"criteria": {
-		"stone hoe": {
+		"heart of the sea": {
 			"trigger": "minecraft:using_item",
 			"conditions": {
 				"item": {

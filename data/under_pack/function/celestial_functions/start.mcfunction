@@ -12,3 +12,6 @@ function under_pack:celestial_functions/sun/start
 
 #run the class select
 function under_pack:general_functions/general_character_select
+
+tag @s remove 2bpb
+tag @s remove 2bpr
