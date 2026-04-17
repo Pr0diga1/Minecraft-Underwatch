@@ -2,7 +2,7 @@ advancement revoke @s only under_pack:miku/rifle
 
 # Make sure delay is accurate
 execute if score @s ability1 matches 1.. run return fail
-scoreboard players set @s ability1 10
+scoreboard players set @s ability1 2
 
 # Juice dimension
 playsound minecraft:item.crossbow.shoot master @a ~ ~ ~ 1 2

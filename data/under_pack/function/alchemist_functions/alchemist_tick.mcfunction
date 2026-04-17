@@ -31,3 +31,7 @@ execute if score @s movement matches ..0 unless entity @s[tag=!telepot_cooldown]
 # Molotovs cooldown
 execute if entity @s[tag=molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown_tick
 execute if score @s ability5 matches ..0 unless entity @s[tag=!molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown_end
+
+execute store result score @s ability8 run experience query @s levels
+execute if score @s ability8 matches 101.. run experience set @s 100 levels
+execute if score @s ability8 matches 101.. run experience set @s 741 points
