@@ -25,17 +25,7 @@
 							"condition": "minecraft:entity_scores",
 							"entity": "this",
 							"scores": {
-								"ability4": 0
-							}
-						},
-						{
-							"condition": "minecraft:inverted",
-							"term": {
-								"condition": "minecraft:entity_properties",
-								"entity": "this",
-								"predicate": {
-									"nbt": "{Inventory:[{Slot:0b,components:{\"minecraft:charged_projectiles\":[{id:\"minecraft:arrow\"}]}}]}"
-								}
+								"ability3": 1
 							}
 						}
 					]

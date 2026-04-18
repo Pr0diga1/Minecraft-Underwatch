@@ -1,5 +1,6 @@
-schedule function under_pack:miku/give_beam 2t
+schedule function under_pack:miku/give_beam 1t
 advancement revoke @s only under_pack:miku/beam
+tag @s add beaming
 
 playsound minecraft:entity.ghast.scream master @a ~ ~ ~ 1 2
 playsound minecraft:block.beacon.power_select master @a ~ ~ ~ 1 2
