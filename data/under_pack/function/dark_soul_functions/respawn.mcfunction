@@ -19,7 +19,7 @@ scoreboard players reset @s ability3
 scoreboard players set @s damageTaken 0
 
 # Armor
-item replace entity @s armor.feet with leather_boots[unbreakable={},enchantments={"minecraft:blast_protection":8,"minecraft:depth_strider":2},attribute_modifiers=[{id:"armor",type:"armor",amount:8,operation:"add_value"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],dyed_color=15128132] 1
+item replace entity @s armor.feet with leather_boots[unbreakable={},enchantments={"minecraft:blast_protection":8,"minecraft:depth_strider":2},attribute_modifiers=[{id:"armor",type:"armor",amount:12,operation:"add_value"},{id:"hp",type:"max_health",amount:4,operation:"add_value"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],dyed_color=15128132] 1
 item replace entity @s armor.legs with leather_leggings[unbreakable={},dyed_color=15128132] 1
 item replace entity @s armor.chest with leather_chestplate[unbreakable={},attribute_modifiers=[{id:"scale",type:"scale",amount:0.3,operation:"add_value",slot:"any"}],dyed_color=15128132] 1
 
