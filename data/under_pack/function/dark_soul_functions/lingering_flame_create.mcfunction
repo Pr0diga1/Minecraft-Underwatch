@@ -3,7 +3,7 @@ execute if entity @s[team=uRed] run summon marker ~ ~ ~ {NoGravity:1b,Tags:["Fla
 
 execute anchored eyes run tp @n[tag=FlameMarker] ~ ~1.62 ~ ~ ~
 
-execute as @n[tag=FlameMarker] run scoreboard players set @s ability1 100
+execute as @n[tag=FlameMarker] run scoreboard players set @s ability1 80
 
 scoreboard players remove @s ability2 250
 experience add @s -250 points
