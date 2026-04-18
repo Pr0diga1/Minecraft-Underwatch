@@ -10,8 +10,6 @@ execute as @s[scores={heart=21..}] run effect give @s instant_damage 1 2
 effect give @s regeneration 2 50
 team join white @s
 scoreboard players set @s class 0
-#tp @s 57 147 7
-tp @s 77 31 1082
 scoreboard players set @s Reset 0
 scoreboard players set @s hitByFreeze 0
 function under_pack:trigger_functions/unlock
@@ -19,3 +17,7 @@ function under_pack:trigger_functions/unlock
 #removes xp
 experience set @s 0 levels
 experience set @s 0 points
+
+execute store result score @s constant run random value 1..10
+execute if score @s constant = 1 constant run return run tp @s 77 31 1082
+tp @s 57 147 7

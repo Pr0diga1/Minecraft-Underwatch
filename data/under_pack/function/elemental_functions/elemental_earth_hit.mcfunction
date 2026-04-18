@@ -8,10 +8,8 @@ damage @s[team=uRed] 6.5 player_attack by @a[scores={class=12},team=uBlue,limit=
 damage @s[team=uBlue] 6.5 player_attack by @a[scores={class=12},team=uRed,limit=1,sort=nearest]
 
 #refund mana
-#execute as @s[team=uRed] as @a[scores={class=12,elementalBar=..640},team=uBlue,limit=1,sort=nearest] run scoreboard players add @s elementalBar 100
-#execute as @s[team=uRed] as @a[scores={class=12,elementalBar=641..},team=uBlue,limit=1,sort=nearest] run scoreboard players set @s elementalBar 741
-#execute as @s[team=uBlue] as @a[scores={class=12,elementalBar=..640},team=uRed,limit=1,sort=nearest] run scoreboard players add @s elementalBar 100
-#execute as @s[team=uBlue] as @a[scores={class=12,elementalBar=641..},team=uRed,limit=1,sort=nearest] run scoreboard players set @s elementalBar 741
+execute as @s[team=uRed] as @a[scores={class=12},team=uBlue,limit=1,sort=nearest] run function under_pack:elemental_functions/elemental_earth_refund
+execute as @s[team=uBlue] as @a[scores={class=12},team=uRed,limit=1,sort=nearest] run function under_pack:elemental_functions/elemental_earth_refund
 
 #summon the stun marker
 execute at @s run summon marker ~ ~ ~ {Tags:["elementalStun"]}

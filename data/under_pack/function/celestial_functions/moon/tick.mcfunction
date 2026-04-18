@@ -17,7 +17,7 @@ execute if score @s[team=uBlue] celefull matches 1.. as @e[limit=1,tag=blue,tag=
 execute if score @s[team=uBlue] celefull matches 0 as @e[limit=1,tag=blue,tag=celefull] run kill @s
 
 #tidal pull
-execute if score @s ability7 matches 1.. run scoreboard players remove @s ability7 1
+execute if score @s ability7 matches 0.. run scoreboard players remove @s ability7 1
 execute if score @s[team=uRed] ability7 matches 0 if entity @a[tag=2bpr] run function under_pack:celestial_functions/moon/tidaltp
 execute if score @s[team=uBlue] ability7 matches 0 if entity @a[tag=2bpb] run function under_pack:celestial_functions/moon/tidaltp
 execute if entity @s[team=uRed] at @a[tag=2bpr] positioned ~ ~1.5 ~ run particle composter ~ ~ ~ .2 .2 .2 50 2

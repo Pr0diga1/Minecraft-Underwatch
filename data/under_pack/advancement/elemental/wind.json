@@ -14,6 +14,6 @@
 		}
 	},
 	"rewards": {
-		"function": "under_pack:elemental_functions/wind_run"
+		"function": "under_pack:elemental_functions/elemental_wind_run"
 	}
 }

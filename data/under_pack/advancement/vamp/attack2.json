@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"shears": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"vampAttacktemp": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:vamp_functions/attack_temp"
+	}
+}

@@ -5,6 +5,6 @@
 		}
 	},
 	"rewards": {
-		"function": "under_pack:elemental_functions/water_cooldown"
+		"function": "under_pack:elemental_functions/elemental_water_cooldown"
 	}
 }

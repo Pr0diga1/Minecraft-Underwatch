@@ -5,3 +5,5 @@ kill @e[tag=knighttrack]
 
 experience set @s 741 points
 scoreboard players set @s ability2 741
+
+advancement revoke @s only under_pack:dark_soul/paladin3

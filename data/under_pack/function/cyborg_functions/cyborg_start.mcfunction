@@ -24,16 +24,20 @@ scoreboard players set @s cyborgpreserve 0
 scoreboard players set speedstep constant 15
 scoreboard players set attackstep constant 200
 
+scoreboard players set @s ability7 -1
+
 attribute @s max_health base reset
 attribute @s minecraft:attack_speed base reset
 attribute @s movement_speed base reset
+attribute @s jump_strength base reset
+advancement revoke @s only under_pack:cyborg/vent2
 
 #carrots
 item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name={"color":"blue","text":"Acceleration Module"},custom_data={cyborgspeed:1b},item_model="pitcher_plant"] 1
 item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name={"color":"light_purple","text":"Preservation Module"},custom_data={cyborgregen:1b},item_model="turtle_scute"] 1
 item replace entity @s hotbar.3 with copper_nugget[consumable={consume_seconds:10000,animation:"spear"},custom_name={"color":"dark_aqua","text":"Miniaturization Module"},custom_data={cyborgsize:1b}]
 item replace entity @s hotbar.4 with carrot_on_a_stick[custom_name={"color":"yellow","text":"Overcharge Module"},custom_data={cyborgzap:1b},item_model="end_rod"] 1
-item replace entity @s hotbar.5 with iron_bars[consumable={consume_seconds:10000,animation:"block"},custom_name={"color":"gray","text":"Heatsinks"},custom_data={cyborgvent:1b},use_effects={speed_multiplier:0,can_sprint:false},attribute_modifiers=[{id:"jump_strength",type:"jump_strength",amount:-10,operation:"add_value",slot:"mainhand"}]] 1
+item replace entity @s hotbar.5 with iron_bars[consumable={consume_seconds:10000,animation:"block"},custom_name={"color":"gray","text":"Heatsinks"},custom_data={cyborgvent:1b},use_effects={speed_multiplier:0,can_sprint:false}] 1
 
 
 #run the class select

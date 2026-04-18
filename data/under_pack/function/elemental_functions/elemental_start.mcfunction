@@ -2,7 +2,7 @@ clear @s
 
 #elements
 # fire
-item replace entity @s hotbar.0 with blaze_rod[custom_name={"color":"gold","text":"Fire"},custom_data={elementalFire:true},consumable={consume_seconds:999999999,animation:"block"}] 1
+item replace entity @s hotbar.0 with blaze_rod[custom_name={"color":"gold","text":"Fire"},custom_data={elementalFire:true},consumable={consume_seconds:999999999,animation:"block"},use_effects={speed_multiplier:0.4}] 1
 
 # wind
 item replace entity @s hotbar.1 with breeze_rod[custom_name={"color":"white","text":"Wind"},custom_data={elementalWind:true},consumable={consume_seconds:999999999,animation:"spear",sound:"entity.breeze.whirl"},item_model="wind_charge"] 1
@@ -31,7 +31,7 @@ execute as @s[team=uBlue] run scoreboard players set @a[team=uBlue] elementalEar
 
 #constants
 scoreboard players set ElementalWaterTiming constant 6
-scoreboard players set ElementalFireTiming constant 6
+scoreboard players set ElementalFireTiming constant 11
 
 #clean spare arrows
 kill @e[type=arrow,tag=ElementalFireArrow]

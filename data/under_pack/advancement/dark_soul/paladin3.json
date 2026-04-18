@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"copper ingot": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"knightsword": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:knight_functions/knight_block_start"
+	}
+}

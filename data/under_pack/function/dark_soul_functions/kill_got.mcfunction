@@ -6,3 +6,5 @@ particle minecraft:sculk_soul ~ ~1 ~ 0.5 0.5 0.5 0.1 10
 playsound minecraft:entity.elder_guardian.curse master @s ~ ~ ~ 0.2 0.5
 
 scoreboard players reset @s ultKills
+
+function under_pack:dark_soul_functions/check_ember

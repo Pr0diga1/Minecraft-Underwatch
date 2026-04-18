@@ -10,4 +10,8 @@ scoreboard players set @s ability7 0
 scoreboard players set @s ability8 0
 function under_pack:celestial_functions/sun/start
 
+#run the class select
+function under_pack:general_functions/general_character_select
 
+tag @s remove 2bpb
+tag @s remove 2bpr

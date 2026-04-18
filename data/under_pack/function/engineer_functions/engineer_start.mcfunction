@@ -7,23 +7,23 @@ item replace entity @s hotbar.0 with iron_pickaxe[custom_name={"bold":true,"colo
 item replace entity @s hotbar.1 with shears[enchantments={"minecraft:knockback":3},custom_name={"bold":true,"color":"gray","text":"Wrench"},custom_data={wrench:1b}] 1
 
 #healies
-execute if entity @s[team=uRed] run item replace entity @s hotbar.2 with snowball[custom_name={"color":"blue","text":"5000mg of Ibuprofen"},custom_data={enginedrug:1b,red:1b}] 1
-execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with snowball[custom_name={"color":"blue","text":"5000mg of Ibuprofen"},custom_data={enginedrug:1b,blue:1b}] 1
+execute if entity @s[team=uRed] run item replace entity @s hotbar.2 with snowball[custom_name={"color":"blue","text":"5000mg of Ibuprofen"},custom_data={enginedrug:1b,red:1b},item_model="blaze_spawn_egg"] 1
+execute if entity @s[team=uBlue] run item replace entity @s hotbar.2 with snowball[custom_name={"color":"blue","text":"5000mg of Ibuprofen"},custom_data={enginedrug:1b,blue:1b},item_model="blaze_spawn_egg"] 1
 
 #viagra
-item replace entity @s hotbar.3 with ender_eye[custom_name={"color":"dark_red","text":"Viagra"},custom_data={enginedrug:1b}] 2
+item replace entity @s hotbar.3 with bricks[consumable={consume_seconds:10000,animation:"spear"},custom_name={"color":"dark_red","text":"Viagra"},custom_data={enginedrug:1b},item_model="ominous_bottle"] 1
 
 #wall
-item replace entity @s hotbar.4 with ender_eye[custom_name={"color":"gray","text":"Wall"},custom_data={enginewall:1b}] 2
+item replace entity @s hotbar.4 with bricks[consumable={consume_seconds:10000,animation:"brush"},custom_name={"color":"gray","text":"Wall"},custom_data={enginewall:1b}] 1
 
 #wd-40
-item replace entity @s hotbar.5 with carrot_on_a_stick[custom_name={"color":"blue","text":"WD-40"},custom_data={enginewd:1b}]
+item replace entity @s hotbar.5 with carrot_on_a_stick[custom_name={"color":"blue","text":"WD-40"},custom_data={enginewd:1b},item_model="slime_spawn_egg"]
 
 #turret
 item replace entity @s hotbar.6 with crossbow[charged_projectiles=[{id:"minecraft:arrow",count:1}],unbreakable={},custom_name={"color":"blue","text":"Nerf Gun"},enchantment_glint_override=false,enchantments={"under_pack:engi":1}] 1
 
 #magnet
-item replace entity @s hotbar.7 with carrot_on_a_stick[custom_name={"color":"red","text":"Magnet"},custom_data={enginemag:1b}]
+item replace entity @s hotbar.7 with carrot_on_a_stick[custom_name={"color":"red","text":"Magnet"},custom_data={enginemag:1b},item_model="iron_ingot"]
 
 #armor
 item replace entity @s armor.chest with leather_chestplate[unbreakable={},dyed_color=16777215] 1

@@ -23,7 +23,7 @@
             "condition": "minecraft:entity_scores",
             "entity": "this",
             "scores": {
-              "vampattack": 112
+              "vampattack": 87
             }
           }
         ],
@@ -40,6 +40,81 @@
             1
           ],
           "magnitude": 6
+        }
+      },
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "vampattack": 26
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            0.15,
+            1
+          ],
+          "coordinate_scale": [
+            1,
+            0.1,
+            1
+          ],
+          "magnitude": 1.25
+        }
+      },
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "vampattack": 56
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            0.15,
+            1
+          ],
+          "coordinate_scale": [
+            1,
+            0.1,
+            1
+          ],
+          "magnitude": 1.25
+        }
+      },
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "vampattack": 116
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:apply_impulse",
+          "direction": [
+            0,
+            0.15,
+            1
+          ],
+          "coordinate_scale": [
+            1,
+            0.1,
+            1
+          ],
+          "magnitude": 1.25
         }
       }
     ]

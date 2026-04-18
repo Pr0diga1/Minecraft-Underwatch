@@ -1,5 +1,5 @@
-execute if entity @s[team=uBlue] run function under_pack:elemental_functions/blue_tick
-execute if entity @s[team=uRed] run function under_pack:elemental_functions/red_tick
+execute if entity @s[team=uBlue] run function under_pack:elemental_functions/elemental_tick_blue
+execute if entity @s[team=uRed] run function under_pack:elemental_functions/elemental_tick_red
 
 #fire tick stuff
 scoreboard players operation @s elementalFireBuffer = @s elementalFireTimer
@@ -23,3 +23,6 @@ scoreboard players operation @s elementalBarBuffer = @s elementalBar
 
 execute if score fireheld buffer matches 1.. run scoreboard players remove fireheld buffer 1
 execute if score fireheld buffer matches ..1 run item modify entity @s hotbar.0 under_pack:elemental/endglint
+#give jump back
+execute if score fireheld buffer matches 1 run attribute @s jump_strength base reset
+execute if score fireheld buffer matches 1 run attribute @s step_height base reset

@@ -3,7 +3,6 @@ clear @s[tag=reload_util] splash_potion[custom_data={healing:1b}]
 clear @s[tag=telepot_cooldown] splash_potion[custom_data={telepot:1b}]
 
 # Gives perma speed and weakness
-effect give @s speed 5 0 true
 effect give @s weakness 5 10 true
 
 # Find potions
@@ -32,3 +31,7 @@ execute if score @s movement matches ..0 unless entity @s[tag=!telepot_cooldown]
 # Molotovs cooldown
 execute if entity @s[tag=molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown_tick
 execute if score @s ability5 matches ..0 unless entity @s[tag=!molotov_cooldown] run function under_pack:alchemist_functions/molotov_cooldown_end
+
+execute store result score @s ability8 run experience query @s levels
+execute if score @s ability8 matches 101.. run experience set @s 100 levels
+execute if score @s ability8 matches 101.. run experience set @s 741 points

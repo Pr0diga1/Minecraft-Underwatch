@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"breeze rod": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": {
+							"knightheal": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "under_pack:knight_functions/knight_heal"
+	}
+}
