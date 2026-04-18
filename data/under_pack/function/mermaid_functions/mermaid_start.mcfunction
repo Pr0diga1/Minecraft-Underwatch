@@ -1,5 +1,5 @@
 clear @s
-item replace entity @s hotbar.0 with carrot_on_a_stick[custom_name={"color":"dark_aqua","text":"Poseidon\s Back Scratcher"},unbreakable={},custom_data={mermaidburst:1b},attribute_modifiers=[{id:"speed",type:"attack_speed",amount:-2.3,operation:"add_value",slot:"mainhand"},{id:"damage",type:"attack_damage",amount:1.2,operation:"add_value",slot:"mainhand"}],item_model="trident"] 1
+item replace entity @s hotbar.0 with carrot_on_a_stick[minimum_attack_charge=1.0,custom_name={"color":"dark_aqua","text":"Poseidon\s Back Scratcher"},unbreakable={},custom_data={mermaidburst:1b},attribute_modifiers=[{id:"speed",type:"attack_speed",amount:-2.2,operation:"add_value",slot:"mainhand"},{id:"damage",type:"attack_damage",amount:1.2,operation:"add_value",slot:"mainhand"}],item_model="trident"] 1
 item replace entity @s hotbar.1 with breeze_rod[consumable={consume_seconds:10000,animation:"brush"},custom_name={"color":"dark_blue","text":"Nautical Mist"},custom_data={mermaidmist:1b}] 1
 item replace entity @s hotbar.2 with carrot_on_a_stick[custom_name={"color":"aqua","text":"Dive"},unbreakable={},custom_data={mermaiddive:1b},item_model="water_bucket"] 1
 item replace entity @s hotbar.3 with dried_ghast[consumable={consume_seconds:10000,animation:"spear"},custom_name={"color":"gray","text":"Rock Perch"},custom_data={mermaidperch:1b}] 1
