@@ -13,7 +13,7 @@ execute if score @s vampattack matches 0 run scoreboard players set @s vampgoodn
 
 execute if score @s vampgoodnight matches 2 run return run function under_pack:vamp_functions/attack_goodnight
 
-scoreboard players set @s vampattack 4
+scoreboard players set @s vampattack 5
 
 #attack
 execute at @s[tag=vampLeft] run function under_pack:vamp_functions/attack_2
