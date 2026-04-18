@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Book of Songs",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "One, two out to battle, \nThree, four herd them like cattle, \nFive, six hear the armor rattle, \nSeven, eight and off to war, \nNine, ten we win once more."
+    }
+  ],
+  "can_close_with_escape": true,
+  "actions": [
+    {
+      "label": "Marching \n Shanty"
+    }
+  ]
+}
