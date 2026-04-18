@@ -342,7 +342,8 @@ scoreboard objectives add vampbatred dummy
 scoreboard objectives add vampdetect dummy
 
 scoreboard objectives add vampattack dummy
-scoreboard objectives add vampattackbuffer dummy
+scoreboard objectives add vampgoodnight dummy
+scoreboard objectives add vampbite dummy
 
 #celestial
 scoreboard objectives add celestance dummy

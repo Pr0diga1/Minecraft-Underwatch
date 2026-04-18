@@ -1,29 +1,24 @@
-scoreboard players add @s vampattack 1
-
-# make sure advancement is revoked
 advancement revoke @s only under_pack:vamp/attack
 
-#new attributes
-execute if score @s vampattack matches 1 run item replace entity @s armor.chest with leather_chestplate[dyed_color=0,trim={material:"minecraft:redstone",pattern:"minecraft:vex"},unbreakable={},attribute_modifiers=[{id:"jump_strength",type:"jump_strength",amount:-10,operation:"add_value",slot:"chest"},{id:"step_height",type:"step_height",amount:1,operation:"add_value",slot:"chest"}]] 1
+#new shears
+item replace entity @s hotbar.0 with shears[attribute_modifiers=[{id:"attack_speed",type:"attack_speed",amount:999,operation:"add_value"}],piercing_weapon={deals_knockback:false,dismounts:false},swing_animation={type:"none"},attack_range={min_reach:0.0,max_reach:0,min_creative_reach:0.0,max_creative_reach:0,hitbox_margin:0},custom_name={"color":"dark_red","text":"Lacerate"},custom_data={vampAttack:true},consumable={consume_seconds:9999999,animation:"spear",sound:"ambient.underwater.loop",has_consume_particles:false},enchantments={"under_pack:vamp/lunge":1,"under_pack:vamp/leftclick":1},use_effects={speed_multiplier:1,can_sprint:true},enchantment_glint_override=false,item_model="mangrove_button"] 1
 
-#attack phase 1
-execute at @s[scores={vampattack=1..29}] run return run function under_pack:vamp_functions/attack_1
-#attack phase 2
-execute at @s[scores={vampattack=30}] run return run function under_pack:vamp_functions/attack_2
-#attack phase 3
-execute at @s[scores={vampattack=31..59}] run return run function under_pack:vamp_functions/attack_3
-#attack phase 4
-execute at @s[scores={vampattack=60}] run return run function under_pack:vamp_functions/attack_4
-#attack phase 5
-execute at @s[scores={vampattack=61..86}] run return run function under_pack:vamp_functions/attack_5
-#attack phase 6
-execute at @s[scores={vampattack=87..94}] run return run function under_pack:vamp_functions/attack_6
-#attack phase 7
-execute at @s[scores={vampattack=95..119}] run function under_pack:vamp_functions/attack_1
-execute at @s[scores={vampattack=95..119}] run return run function under_pack:vamp_functions/attack_3
-#attack phase 8
-execute at @s[scores={vampattack=120}] run function under_pack:vamp_functions/attack_2
-execute at @s[scores={vampattack=120}] run return run function under_pack:vamp_functions/attack_4
+#experience
+experience set @s 0 points
+scoreboard players set @s ability8 0
 
-#reset
-execute if score @s vampattack matches 121 run scoreboard players set @s vampattack 0
+#goodnight detection
+execute if score @s vampattack matches 1.. run scoreboard players add @s vampgoodnight 1
+execute if score @s vampattack matches 0 run scoreboard players set @s vampgoodnight 0
+
+execute if score @s vampgoodnight matches 2 run return run function under_pack:vamp_functions/attack_goodnight
+
+scoreboard players set @s vampattack 4
+
+#attack
+execute at @s[tag=vampLeft] run function under_pack:vamp_functions/attack_2
+
+execute at @s[tag=!vampLeft] run function under_pack:vamp_functions/attack_4
+
+execute as @s[tag=vampLeft] run return run tag @s remove vampLeft
+tag @s add vampLeft
