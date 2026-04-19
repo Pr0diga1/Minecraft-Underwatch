@@ -6,13 +6,13 @@ item replace entity @s hotbar.0 with copper_hoe[custom_data={miku:true,rifle:tru
 # Beam
 item replace entity @s hotbar.1 with soul_torch[custom_data={miku:true,beam:true},custom_name={"bold":true,"color":"#40CFCF","italic":false,"text":"Miku (Miku) Beam","underlined":true},consumable={consume_seconds:2,animation:"spyglass",sound:"block.beacon.ambient",has_consume_particles:false},use_cooldown={seconds:5}] 1
 # Shotgun
-item replace entity @s hotbar.2 with bamboo[unbreakable={},custom_data={miku:true,shotty:true},custom_name={"bold":true,"color":"#218004","italic":false,"text":"Leek Shotgun"},enchantments={"under_pack:miku/shotgun":1}] 1
+item replace entity @s hotbar.2 with bamboo[unbreakable={},custom_data={miku:true,shotty:true},custom_name={"bold":true,"color":"#218004","italic":false,"text":"Leek Shotgun"},item_model="minecraft:bamboo",enchantments={"under_pack:miku/shotgun":1},consumable={consume_seconds:9999999,animation:"crossbow",has_consume_particles:false}] 1
 
 
 # Rifle timing
 scoreboard players set @s ability1 0
 # Rifle Ammo
-scoreboard players set @a ability2 32
+scoreboard players set @a ability2 16
 
 # Current swapped item
 scoreboard players set @a ability3 0
@@ -28,5 +28,5 @@ item replace entity @s armor.head with diamond_helmet[unbreakable={},attribute_m
 
 function under_pack:general_functions/general_character_select
 
-experience set @s 32 levels
+experience set @s 16 levels
 

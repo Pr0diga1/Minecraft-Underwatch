@@ -1,12 +1,12 @@
 {
 	"criteria": {
-		"hopper": {
+		"blaze powder": {
 			"trigger": "minecraft:using_item",
 			"conditions": {
 				"item": {
 					"predicates": {
 						"minecraft:custom_data": {
-							"megaphone": true
+							"shotty": true
 						}
 					}
 				}
@@ -14,6 +14,6 @@
 		}
 	},
 	"rewards": {
-		"function": "under_pack:bard_barian/megaphone_tick"
+		"function": "under_pack:miku/shotgun_trigger"
 	}
 }

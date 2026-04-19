@@ -1,16 +1,112 @@
 {
   "type": "minecraft:multi_action",
-  "title": "Book of Songs",
+  "title": {
+    "text": "Book of Songs",
+    "color": "dark_purple",
+    "bold": true,
+    "underlined": true
+  },
   "body": [
     {
       "type": "minecraft:plain_message",
-      "contents": "One, two out to battle, \nThree, four herd them like cattle, \nFive, six hear the armor rattle, \nSeven, eight and off to war, \nNine, ten we win once more."
+      "contents": {
+        "text": "Marching Shanty",
+        "extra": [
+          {
+            "text": "\nOne, two out to battle, \n Three, four we herd them like cattle, \n Five, six the armor will rattle, \n Seven, eight, and off to war, \n Nine, ten we win once more.",
+            "color": "gray",
+            "bold": false,
+            "underlined": false,
+            "click_event": {
+              "action": "run_command",
+              "command": "trigger smarch"
+            }
+          }
+        ],
+        "color": "blue",
+        "bold": true,
+        "underlined": true,
+        "click_event": {
+          "action": "run_command",
+          "command": "trigger smarch"
+        }
+      },
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Lover's Lament",
+        "extra": [
+          {
+            "text": "\nIn battle you tremble in fear \n As bodies and corpses appear\n You find on the field\n A way to be healed\n The soldier who seems the most queer\n",
+            "color": "gray",
+            "bold": false,
+            "underlined": false,
+            "click_event": {
+              "action": "run_command",
+              "command": "trigger slover"
+            }
+          }
+        ],
+        "color": "light_purple",
+        "underlined": true,
+        "click_event": {
+          "action": "run_command",
+          "command": "trigger slover"
+        }
+      },
+      "width": 300
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Ballad of the Final Stand",
+        "extra": [
+          {
+            "text": "\nBoots march at the gate\n Achilles call seals our fate\n He shall meet us late\n Broken bodies block the door\n We shall fight forever more\n",
+            "color": "gray",
+            "bold": false,
+            "underlined": false,
+            "click_event": {
+              "action": "run_command",
+              "command": "trigger sstand"
+            }
+          }
+        ],
+        "color": "gold",
+        "bold": true,
+        "underlined": true,
+        "click_event": {
+          "action": "run_command",
+          "command": "trigger sstand"
+        }
+      },
+      "width": 300
     }
   ],
+  "inputs": [],
   "can_close_with_escape": true,
+  "exit_action": {
+    "label": "Written by: Blungnil the Bard Barian",
+    "width" : 200,
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "item replace entity @s hotbar.2 with book[enchantments={\"loyalty\":1},consumable={consume_seconds:0,animation:\"none\",sound:\"block.amethyst_cluster.place\",has_consume_particles:false},custom_data={bard_book:true},custom_name={\"bold\":true,\"color\":\"yellow\",\"text\":\"Book of Songs\"}] 1"
+    }
+  },
   "actions": [
     {
-      "label": "Marching \n Shanty"
+      "label": {
+        "text": "Current Song: ",
+        "extra": [
+          "this"
+        ]
+      },
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger liberals"
+      }
     }
   ]
 }

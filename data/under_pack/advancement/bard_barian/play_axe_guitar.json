@@ -14,6 +14,6 @@
 		}
 	},
 	"rewards": {
-		"function": "under_pack:bard_barian/axe_tick"
+		"function": "under_pack:bard_barian/axe/axe_tick"
 	}
 }

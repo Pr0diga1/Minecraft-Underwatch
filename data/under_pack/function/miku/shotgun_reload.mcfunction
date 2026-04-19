@@ -1,1 +1,1 @@
-scoreboard players set @s ability4 0
+item replace entity @s hotbar.2 with bamboo[unbreakable={},custom_data={miku:true,shotty:true},custom_name={"bold":true,"color":"#218004","italic":false,"text":"Leek Shotgun"},item_model="minecraft:bamboo",enchantments={"under_pack:miku/shotgun":1},consumable={consume_seconds:9999999,animation:"crossbow",has_consume_particles:false}] 1
