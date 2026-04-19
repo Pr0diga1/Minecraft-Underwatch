@@ -17,7 +17,10 @@ execute if score @s ability3 matches 2 run function under_pack:bard_barian/lover
 execute if score @s ability3 matches 3 run function under_pack:bard_barian/stand/stand_tick
 
 #trigger ticks
-execute if score @s smarch matches 1.. run function under_pack:bard_barian/march/march_select
-execute if score @s slover matches 1.. run function under_pack:bard_barian/lovers/lover_select
-execute if score @s sstand matches 1.. run function under_pack:bard_barian/stand/stand_select
+execute if score @s bard_barian_song matches 1 run function under_pack:bard_barian/march/march_select
+execute if score @s bard_barian_song matches 2 run function under_pack:bard_barian/lovers/lover_select
+execute if score @s bard_barian_song matches 3 run function under_pack:bard_barian/stand/stand_select
 
+#inrange
+execute if entity @s[team=uRed] as @a[team=uRed] if score @s bard_barian_inrange matches 1.. run scoreboard players remove @s bard_barian_inrange 1
+execute if entity @s[team=uBlue] as @a[team=uBlue] if score @s bard_barian_inrange matches 1.. run scoreboard players remove @s bard_barian_inrange 1
