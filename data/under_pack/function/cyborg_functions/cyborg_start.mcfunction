@@ -4,7 +4,7 @@ clear @s
 item replace entity @s armor.feet with iron_boots[trim={material:"minecraft:copper",pattern:"minecraft:eye"},unbreakable={},enchantments={"minecraft:blast_protection":8,"minecraft:depth_strider":2},attribute_modifiers=[{id:"armor",type:"max_health",amount:-4,operation:"add_value",slot:"feet"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}]] 1
 item replace entity @s armor.legs with iron_leggings[trim={material:"minecraft:copper",pattern:"minecraft:sentry"},unbreakable={}]
 item replace entity @s armor.chest with iron_chestplate[trim={material:"minecraft:copper",pattern:"minecraft:ward"},unbreakable={}]
-item replace entity @s hotbar.0 with iron_block[minimum_attack_charge=1.0,custom_name={"color":"white","text":"Iron Hand"},attribute_modifiers=[{id:"damage",type:"attack_damage",amount:3.6,operation:"add_value"},{id:"armor",type:"attack_speed",amount:-3.25,operation:"add_value"}]] 1
+item replace entity @s hotbar.0 with iron_block[minimum_attack_charge=0.5,custom_name={"color":"white","text":"Iron Hand"},attribute_modifiers=[{id:"damage",type:"attack_damage",amount:3.6,operation:"add_value"},{id:"armor",type:"attack_speed",amount:-3.25,operation:"add_value"}]] 1
 item replace entity @s armor.head with lightning_rod 1
 
 #xp
