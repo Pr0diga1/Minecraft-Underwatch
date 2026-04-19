@@ -1,7 +1,7 @@
 #cooldown
 function under_pack:mermaid_functions/mermaid_cooldown
 #carrot detection
-execute as @s if score @s mermaidburst matches 3.. if entity @s[nbt={Inventory:[{Slot:0b,components:{"minecraft:custom_data":{mermaidburst:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{mermaidburst:1b}}}},scores={reset=1..}] as @s run function under_pack:mermaid_functions/mermaid_burst
+execute as @s if score @s mermaidburst matches 3.. if entity @s[nbt={Inventory:[{Slot:0b,components:{"minecraft:custom_data":{mermaidburst:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{mermaidburst:1b}}}},scores={reset=1..}] at @s run function under_pack:mermaid_functions/mermaid_burst
 execute if entity @s[nbt={Inventory:[{Slot:2b,components:{"minecraft:custom_data":{mermaiddive:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{mermaiddive:1b}}}},scores={reset=1..}] as @s run function under_pack:mermaid_functions/mermaid_dive
 
 #mist tick
