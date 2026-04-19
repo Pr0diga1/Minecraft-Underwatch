@@ -433,4 +433,5 @@ scoreboard objectives add TallySci dummy
 scoreboard objectives add TallyVamp dummy
 scoreboard objectives add TallyWiz dummy
 
-say test
+
+forceload add -1 -1 1 1
