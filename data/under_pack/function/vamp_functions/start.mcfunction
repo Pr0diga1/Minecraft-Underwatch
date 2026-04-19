@@ -21,6 +21,8 @@ item replace entity @s armor.chest with leather_chestplate[dyed_color=0,trim={ma
 item replace entity @s armor.legs with leather_leggings[dyed_color=0,trim={material:"minecraft:redstone",pattern:"minecraft:vex"},unbreakable={}] 1
 item replace entity @s armor.feet with leather_boots[dyed_color=0,trim={material:"minecraft:redstone",pattern:"minecraft:vex"},attribute_modifiers=[{id:"armor",type:"armor",amount:2,operation:"add_value",slot:"feet"},{id:"explosion_knockback_resistance",type:"explosion_knockback_resistance",amount:-1.2,operation:"add_value",slot:"any"}],unbreakable={},enchantments={"minecraft:blast_protection":8,"minecraft:depth_strider":2}] 1
 
+execute as @s[team=uBlue] run tag @a[team=uRed] remove vampredimmune
+execute as @s[team=uRed] run tag @a[team=uBlue] remove vampblueimmune
 
 function under_pack:general_functions/general_character_select
 
