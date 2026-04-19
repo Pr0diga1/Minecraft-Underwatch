@@ -6,3 +6,5 @@ execute if entity @s[team=uRed] run kill @e[type=armor_stand,tag=lumberaxemove,t
 execute if entity @s[team=uRed] run kill @e[type=armor_stand,tag=lumberaxestill,tag=red]
 
 scoreboard players set @s ability1 199
+
+stopsound @a * item.elytra.flying
