@@ -1,4 +1,4 @@
-execute at @s unless block ~ ~-0.05 ~ #under_pack:non_solid run return fail
+execute at @s if entity @s[nbt={OnGround:1b}] run return fail
 execute if score @s ability3 matches ..239 run return fail
 
 #trigger dash

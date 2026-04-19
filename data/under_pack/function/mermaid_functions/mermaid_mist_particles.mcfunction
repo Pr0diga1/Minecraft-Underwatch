@@ -1,0 +1,17 @@
+particle minecraft:enchanted_hit ^ ^-0.5 ^ ^ ^ ^1000000 .0000041 0 force @a
+particle minecraft:enchanted_hit ^ ^-0.5 ^.15 ^ ^ ^1000000 .0000041 0 force @a
+particle minecraft:enchanted_hit ^ ^-0.5 ^.3 ^ ^ ^1000000 .0000041 0 force @a
+particle minecraft:enchanted_hit ^ ^-0.5 ^.45 ^ ^ ^1000000 .0000041 0 force @a
+particle minecraft:enchanted_hit ^ ^-0.5 ^.6 ^ ^ ^1000000 .0000041 0 force @a
+particle minecraft:enchanted_hit ^ ^-0.5 ^.75 ^ ^ ^1000000 .0000041 0 force @a
+particle minecraft:enchanted_hit ^ ^-0.5 ^.9 ^ ^ ^1000000 .0000041 0 force @a
+particle minecraft:bubble_pop ^ ^-0.5 ^ ^ ^ ^1000000 .0000017 0 force @a
+particle minecraft:bubble_pop ^ ^-0.5 ^.1 ^ ^ ^1000000 .0000017 0 force @a
+particle minecraft:bubble_pop ^ ^-0.5 ^.2 ^ ^ ^1000000 .0000017 0 force @a
+particle minecraft:bubble_pop ^ ^-0.5 ^.3 ^ ^ ^1000000 .0000017 0 force @a
+particle minecraft:bubble_pop ^ ^-0.5 ^.4 ^ ^ ^1000000 .0000017 0 force @a
+particle minecraft:bubble_pop ^ ^-0.5 ^.5 ^ ^ ^1000000 .0000017 0 force @a
+particle minecraft:bubble_pop ^ ^-0.5 ^.6 ^ ^ ^1000000 .0000017 0 force @a
+particle minecraft:bubble_pop ^ ^-0.5 ^.7 ^ ^ ^1000000 .0000017 0 force @a
+particle minecraft:bubble_pop ^ ^-0.5 ^.8 ^ ^ ^1000000 .0000017 0 force @a
+particle minecraft:bubble_pop ^ ^-0.5 ^.9 ^ ^ ^1000000 .0000017 0 force @a

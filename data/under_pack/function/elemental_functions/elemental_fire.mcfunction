@@ -5,6 +5,8 @@ scoreboard players set distance elementalFireTimer 0
 tag @a remove elementalHit
 #raycast
 function under_pack:elemental_functions/elemental_fire_ray
+#particle
+execute at @s anchored eyes positioned ^ ^ ^ run function under_pack:elemental_functions/elemental_fire_particle
 #cost
 execute if score @s elementalBar matches 3.. run scoreboard players remove @s elementalBar 3
 execute if score @s elementalBar matches 3.. run experience add @s -3 points

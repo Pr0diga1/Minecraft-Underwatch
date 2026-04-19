@@ -5,6 +5,8 @@ execute at @s run particle minecraft:infested ~ ~.7 ~ .3 .6 .3 0 15 force @a
 #hitbox
 execute at @s[team=uBlue] positioned ~-.7 ~ ~-.7 as @a[team=uRed,dx=0.4,dy=1,dz=0.4] run return run function under_pack:vamp_functions/attack_bitten
 execute at @s[team=uRed] positioned ~-.7 ~ ~-.7 as @a[team=uBlue,dx=0.4,dy=1,dz=0.4] run return run function under_pack:vamp_functions/attack_bitten
+execute at @s[team=uBlue] positioned ^ ^ ^1 positioned ~-.7 ~ ~-.7 as @a[team=uRed,dx=0.4,dy=1,dz=0.4] run return run function under_pack:vamp_functions/attack_bitten
+execute at @s[team=uRed] positioned ^ ^ ^1 positioned ~-.7 ~ ~-.7 as @a[team=uBlue,dx=0.4,dy=1,dz=0.4] run return run function under_pack:vamp_functions/attack_bitten
 
 #undo
-execute unless block ~ ~-0.01 ~ #under_pack:non_solid run tag @s remove vampdashing
+execute if entity @s[nbt={OnGround:1b}] run tag @s remove vampdashing

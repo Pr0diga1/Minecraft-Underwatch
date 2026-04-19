@@ -11,19 +11,13 @@ execute if score @s mermaidmistbuffer matches 0 if score @s mermaidmist matches 
 execute if score @s mermaidmistbuffer matches 0 if score @s mermaidmist matches 741.. run scoreboard players set @s mermaidmist 741
 execute if score @s mermaidmistbuffer matches 0 if score @s mermaidmist matches 741.. run experience set @s 741 points
 
-
-#perch stuff
-execute if score @s mermaidperch matches ..-2 run scoreboard players operation @s mermaidperch = mermaidPerchConstant constant
-execute if score @s mermaidperch matches 0 run effect give @s regeneration 1 5 true
-execute if score @s mermaidperch matches 0 run scoreboard players set @s mermaidperch -1
-execute if score @s mermaidperch matches 0.. run scoreboard players set @s mermaidmistbuffer 10
-execute if score @s mermaidperch matches 0.. at @s run particle minecraft:composter ~ ~.7 ~ .3 .5 .3 .1 5 force @a
-execute if score @s mermaidperch matches 0.. if score @s mermaidperch = @s mermaidperchbuffer run scoreboard players set @s mermaidperch -1
-scoreboard players operation @s mermaidperchbuffer = @s mermaidperch
-
 #team ticks
 execute if entity @s[team=uRed] run function under_pack:mermaid_functions/mermaid_tick_red
 execute if entity @s[team=uBlue] run function under_pack:mermaid_functions/mermaid_tick_blue
+
+#vent tracking
+execute if score @s ability7 matches 0.. run scoreboard players remove @s ability7 1
+execute if score @s ability7 matches 0 run function under_pack:mermaid_functions/mermaid_perch_end
 
 ##diving
 execute at @s if score @s mermaiddive matches 1 run function under_pack:mermaid_functions/mermaid_undive

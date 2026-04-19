@@ -12,3 +12,7 @@ playsound minecraft:ambient.underwater.enter master @a ~ ~ ~ 5 1
 item replace entity @s armor.legs with air
 item replace entity @s armor.feet with air
 item replace entity @s armor.chest with air
+
+#slow self-healing
+execute as @s[team=uBlue] run scoreboard players set mermaidBluePerchConstant constant 12
+execute as @s[team=uRed] run scoreboard players set mermaidRedPerchConstant constant 12

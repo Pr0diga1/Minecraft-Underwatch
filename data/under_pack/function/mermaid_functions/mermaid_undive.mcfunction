@@ -8,3 +8,7 @@ attribute @s step_height base set .6
 item replace entity @s hotbar.2 with barrier[custom_name={"text":"Dive on Cooldown"}] 11
 scoreboard players set @s ability4 220
 playsound minecraft:ambient.underwater.exit master @a ~ ~ ~ 5 1
+
+#speed self healing
+execute as @s[team=uBlue] run scoreboard players set mermaidBluePerchConstant constant 8
+execute as @s[team=uRed] run scoreboard players set mermaidRedPerchConstant constant 8
