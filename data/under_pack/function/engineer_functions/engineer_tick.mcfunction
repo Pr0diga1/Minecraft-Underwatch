@@ -20,8 +20,6 @@ item replace entity @s[scores={ability1=0}] hotbar.4 with bricks[consumable={con
 #nerf gun
 item replace entity @s[scores={ability7=0}] hotbar.6 with crossbow[charged_projectiles=[{id:"minecraft:arrow",count:1}],unbreakable={},custom_name={"color":"blue","text":"Nerf Gun"},enchantment_glint_override=false,enchantments={"under_pack:engi":1}] 1
 
-execute as @e[type=arrow,tag=!sb.finished,scores={engineercap=1..}] run function under_pack:engineer_functions/engineer_shot_tick
-
 #wall stuff
 execute if score @s engineerWallBuffer matches 1.. run scoreboard players remove @s engineerWallBuffer 1
 execute if score @s engineerWallBuffer matches 0 run scoreboard players reset @s engineerWallEye 

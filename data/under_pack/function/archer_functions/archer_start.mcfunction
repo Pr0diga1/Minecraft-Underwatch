@@ -1,5 +1,5 @@
 clear @s
-item replace entity @s weapon.offhand with bow[custom_name={"color":"blue","text":"Cool Bow"},lore=['"it\'s so cool!"'],unbreakable={}] 1
+item replace entity @s weapon.offhand with bow[custom_name={"color":"blue","text":"Cool Bow"},lore=['"it\'s so cool!"'],unbreakable={},enchantment_glint_override=false,enchantments={"under_pack:archer":1}] 1
 
 item replace entity @s hotbar.0 with tipped_arrow[custom_name={"text":"Heavy Arrow","color":"dark_red","bold":true},custom_data={archerheavy:1b},potion_contents={custom_color:16711680}] 5
 
