@@ -20,6 +20,8 @@ item replace entity @s[scores={ability1=0}] hotbar.4 with bricks[consumable={con
 #nerf gun
 item replace entity @s[scores={ability7=0}] hotbar.6 with crossbow[charged_projectiles=[{id:"minecraft:arrow",count:1}],unbreakable={},custom_name={"color":"blue","text":"Nerf Gun"},enchantment_glint_override=false,enchantments={"under_pack:engi":1}] 1
 
+execute as @e[type=arrow,tag=!sb.finished,scores={engineercap=1..}] run function under_pack:engineer_functions/engineer_shot_tick
+
 #wall stuff
 execute if score @s engineerWallBuffer matches 1.. run scoreboard players remove @s engineerWallBuffer 1
 execute if score @s engineerWallBuffer matches 0 run scoreboard players reset @s engineerWallEye 
@@ -27,14 +29,12 @@ execute if score @s engineerWallBuffer matches 0 if score @s ability1 matches 0 
 execute if score @s ability1 matches 1 run item replace entity @s hotbar.4 with bricks[consumable={consume_seconds:10000,animation:"brush"},custom_name={"color":"gray","text":"Wall"},custom_data={enginewall:1b}] 1
 execute if score @s ability1 matches 1..121 run scoreboard players remove @s ability1 1
 
-
 #Viagra stuff
 execute if score @s engineerViagraTimer = @s engineerViagraBuffer if score @s engineerViagraTimer matches 1.. run function under_pack:engineer_functions/engineer_drug_cast
 execute if score @s engineerViagraTimer = @s engineerViagraBuffer run scoreboard players set @s engineerViagraTimer 0
 scoreboard players operation @s engineerViagraBuffer = @s engineerViagraTimer
 
 #give red particles to people with viagra
-
 ##wd-40
 execute if entity @s[nbt={Inventory:[{Slot:5b,components:{"minecraft:custom_data":{enginewd:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{enginewd:1b}}}},scores={reset=1..}] at @s run function under_pack:engineer_functions/engineer_wd
 execute as @s[nbt={active_effects:[{id:"minecraft:speed",amplifier:30b,duration:16}]}] run effect clear @s speed

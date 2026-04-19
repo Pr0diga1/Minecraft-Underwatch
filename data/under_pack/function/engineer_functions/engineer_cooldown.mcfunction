@@ -31,6 +31,6 @@ execute if score @s ability4 matches 1 run item replace entity @s hotbar.7 with 
 execute if score @s ability4 matches 1.. run scoreboard players remove @s ability4 1
 
 #turret ability7
-execute if score @s ability7 matches 260 run item replace entity @s hotbar.6 with barrier 13
+execute if score @s ability7 matches 240 run item replace entity @s hotbar.6 with barrier 12
 item modify entity @s hotbar.6 under_pack:engineer/turret
 execute if score @s ability7 matches 1.. run scoreboard players remove @s ability7 1
