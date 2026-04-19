@@ -1,12 +1,12 @@
 {
 	"criteria": {
-		"shears": {
-			"trigger": "minecraft:consume_item",
+		"blaze powder": {
+			"trigger": "minecraft:using_item",
 			"conditions": {
 				"item": {
 					"predicates": {
 						"minecraft:custom_data": {
-							"vampAttacktemp": true
+							"shotty": true
 						}
 					}
 				}
@@ -14,6 +14,6 @@
 		}
 	},
 	"rewards": {
-		"function": "under_pack:vamp_functions/attack_temp"
+		"function": "under_pack:miku/shotgun_trigger"
 	}
 }

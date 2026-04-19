@@ -1,12 +1,6 @@
 clear @s
 
-#sword/block
-#item replace entity @s hotbar.0 with ender_eye[custom_name={"color":"white","text":"Reliquary Blade"},lore=["Only given to those worthy"],custom_data={knightsword:1b},attribute_modifiers=[{id:"damage",type:"attack_damage",amount:3,operation:"add_value",slot:"mainhand"},{id:"speed",type:"attack_speed",amount:-3.5,operation:"add_value",slot:"mainhand"}]] 1
 item replace entity @s hotbar.0 with copper_ingot[custom_name={"color":"white","text":"Reliquary Blade"},lore=["Only given to those worthy"],custom_data={knightsword:1b},attribute_modifiers=[{id:"damage",type:"attack_damage",amount:3,operation:"add_value",slot:"mainhand"},{id:"speed",type:"attack_speed",amount:-3.5,operation:"add_value",slot:"mainhand"}],item_model="copper_sword",consumable={consume_seconds:999999,animation:"block"}] 1
-
-
-#self heal
-#item replace entity @s hotbar.1 with carrot_on_a_stick[custom_name={"color":"gold","text":"Selfish Prayer"},custom_data={knightheal:1b}] 1
 
 item replace entity @s hotbar.1 with breeze_rod[consumable={consume_seconds:1.25,animation:"eat",sound:"ambient.underwater.loop",has_consume_particles:false},custom_name={"color":"gold","text":"Selfish Prayer"},custom_data={knightheal:1b},item_model="totem_of_undying",use_cooldown={seconds:17}] 1
 
