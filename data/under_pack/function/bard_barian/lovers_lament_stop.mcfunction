@@ -1,1 +1,0 @@
-stopsound @a music music_disc.creator_music_box

@@ -1,12 +1,12 @@
 {
 	"criteria": {
-		"hopper": {
-			"trigger": "minecraft:using_item",
+		"book": {
+			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
 					"predicates": {
 						"minecraft:custom_data": {
-							"megaphone": true
+							"bard_book": true
 						}
 					}
 				}
@@ -14,6 +14,6 @@
 		}
 	},
 	"rewards": {
-		"function": "under_pack:bard_barian/megaphone_tick"
+		"function": "under_pack:bard_barian/book"
 	}
 }

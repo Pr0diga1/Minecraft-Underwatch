@@ -1,5 +1,0 @@
-scoreboard players set @s ability3 2
-
-function under_pack:bard_barian/lovers_lament_stop
-execute if entity @s[team=uBlue] as @a[tag=marching,team=uBlue] run function under_pack:bard_barian/marching_stop
-execute if entity @s[team=uRed] as @a[tag=marching,team=uRed] run function under_pack:bard_barian/marching_stop
