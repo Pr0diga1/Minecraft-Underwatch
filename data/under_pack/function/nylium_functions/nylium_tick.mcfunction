@@ -4,8 +4,8 @@
 execute as @a[tag=nylium] unless entity @s[tag=nylium_dead] run function under_pack:general_functions/general_classloop
 
 #is a player on point
-execute as @a[tag=nylium] if entity @s[x=-559,y=63,z=87,dx=9,dy=3,dz=9,tag=nylium,gamemode=adventure] run scoreboard players set @s onPoint 1
-execute as @a[tag=nylium] unless entity @s[x=-559,y=63,z=87,dx=9,dy=3,dz=9,tag=nylium,gamemode=adventure] run scoreboard players set @s onPoint 0
+execute as @a[tag=nylium] if entity @s[x=-559,y=61,z=87,dx=9,dy=3,dz=9,tag=nylium,gamemode=adventure] run scoreboard players set @s onPoint 1
+execute as @a[tag=nylium] unless entity @s[x=-559,y=61,z=87,dx=9,dy=3,dz=9,tag=nylium,gamemode=adventure] run scoreboard players set @s onPoint 0
 
 #sets a buffer to whoever has control of the point
 scoreboard players operation nyliumBuffer team = nylium team
