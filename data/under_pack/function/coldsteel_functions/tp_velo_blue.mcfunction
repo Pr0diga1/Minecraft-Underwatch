@@ -18,11 +18,11 @@ scoreboard players operation Z2 coldbuffer -= Z1 coldbuffer
 
 
 #set the new power (power is replaced with motion for parody with other entities
-execute store result entity @s Motion[0] double 0.0005 run scoreboard players get X2 coldbuffer
-execute store result entity @s Motion[1] double 0.0005 run scoreboard players get Y2 coldbuffer
-execute store result entity @s Motion[2] double 0.0005 run scoreboard players get Z2 coldbuffer
+execute store result entity @s Motion[0] double 0.00055 run scoreboard players get X2 coldbuffer
+execute store result entity @s Motion[1] double 0.00055 run scoreboard players get Y2 coldbuffer
+execute store result entity @s Motion[2] double 0.00055 run scoreboard players get Z2 coldbuffer
 
-kill @e[tag=coldtrack]
+kill @e[type=marker,tag=coldtrack]
 
 tag @s add fix
 schedule function under_pack:coldsteel_functions/tp_fix 2t

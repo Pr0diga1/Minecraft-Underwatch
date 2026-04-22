@@ -331,6 +331,7 @@ scoreboard objectives add darkEyeBuffer dummy
 #coldsteel
 scoreboard objectives add coldbuffer dummy
 scoreboard objectives add coldblast dummy
+scoreboard objectives add coldsteellunge dummy
 
 #vampire
 scoreboard objectives add vampblood dummy
