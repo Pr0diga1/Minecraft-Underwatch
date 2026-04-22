@@ -8,5 +8,6 @@ scoreboard players add @s ability4 1
 execute if entity @s[tag=uBlue] as @a[team=uRed,distance=..3] run function under_pack:alchemist_functions/m_damage_blue
 execute if entity @s[tag=uRed] as @a[team=uBlue,distance=..3] run function under_pack:alchemist_functions/m_damage_red
 # Particle
-particle flame ~ ~ ~ 2 0.15 2 0 10 force
-particle smoke ~ ~ ~ 2 0.15 2 0 10 force
+particle flame ~ ~ ~ 2 0.15 2 0 12 force
+particle smoke ~ ~ ~ 2 0.15 2 0 12 force
+particle lava ~ ~ ~ 2 0.15 2 0 6 force
