@@ -4,6 +4,8 @@ scoreboard players add @s movement 1
 #kill the marker if its in a block or has existed for 4 seconds
 execute unless block ~ ~ ~ #under_pack:non_solid run return fail
 
+execute if entity @e[type=falling_block,dx=0] at @s positioned ~-0.99 ~-0.99 ~-0.99 if entity @e[type=falling_block,dx=0] run kill @s
+
 #particle
 particle crit ~ ~ ~ 0 0 0 0 1 force @a
 
