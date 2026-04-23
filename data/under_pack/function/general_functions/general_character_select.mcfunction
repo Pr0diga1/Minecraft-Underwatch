@@ -14,6 +14,8 @@ attribute @s movement_speed base reset
 attribute @s armor base reset
 attribute @s max_absorption base reset
 attribute @s armor_toughness base reset
+attribute @s jump_strength base reset
+attribute @s step_height base reset
 
 #can cap on points
 scoreboard players set @s cantCap 0

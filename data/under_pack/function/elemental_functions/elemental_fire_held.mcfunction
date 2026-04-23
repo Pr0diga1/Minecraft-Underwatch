@@ -7,12 +7,10 @@ execute if score @s[team=uBlue] elementalFireBuffer matches 0 run scoreboard pla
 execute if score @s elementalFireBuffer matches 0 at @s run playsound minecraft:item.firecharge.use master @a ~ ~ ~
 execute if score @s elementalFireBuffer matches 0 run attribute @s jump_strength base set -1
 execute if score @s elementalFireBuffer matches 0 run attribute @s step_height base set 1
+execute if score @s elementalFireBuffer matches 0 run item modify entity @s hotbar.0 under_pack:elemental/startglitnt
 
 #call the fire
 execute if score @s elementalBar matches 1.. at @s anchored eyes positioned ^ ^ ^ anchored feet run function under_pack:elemental_functions/elemental_fire
-
-item modify entity @s hotbar.0 under_pack:elemental/startglitnt
-scoreboard players set fireheld buffer 3
 
 # make sure advancement is revoked
 advancement revoke @s only under_pack:elemental/fire
