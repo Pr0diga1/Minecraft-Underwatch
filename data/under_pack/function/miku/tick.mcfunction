@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 # Can reload rifle
 function under_pack:miku/rifle_tick
 execute if score @s ability4 matches 1.. run function under_pack:miku/shotgun_tick
