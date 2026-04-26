@@ -194,6 +194,12 @@ scoreboard objectives add ultCharge dummy
 scoreboard objectives add ultPercent dummy
 scoreboard objectives add ultPercentBuffer dummy
 
+#regeneration stuffs
+scoreboard objectives add regen_track dummy
+scoreboard objectives add regen_timer dummy
+scoreboard objectives add regen_constant dummy
+function under_pack:regeneration/set_constants
+
 #class specific scoreboards
 #alc
 scoreboard objectives add alchemistUltActive dummy
