@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 ## Passive abilities
 #reset rogue capping for the tick
 scoreboard players set @s cantCap 0

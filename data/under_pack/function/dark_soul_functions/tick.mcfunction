@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 ## Ember
 # Gain Ember
 execute if score @s ultKills matches 1.. run function under_pack:dark_soul_functions/kill_got

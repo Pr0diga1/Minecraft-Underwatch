@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 #ticky
 execute as @s[team=uRed] run function under_pack:vamp_functions/tick_red
 execute as @s[team=uBlue] run function under_pack:vamp_functions/tick_blue

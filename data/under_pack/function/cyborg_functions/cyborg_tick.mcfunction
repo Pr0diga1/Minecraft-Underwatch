@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 #capacitence death
 execute if score @s cyborgcap matches 740.. run function under_pack:cyborg_functions/cyborg_die
 

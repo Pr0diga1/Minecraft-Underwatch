@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 # Keeps spare potions out of the inventory
 clear @s[tag=reload_util] splash_potion[custom_data={healing:1b}]
 clear @s[tag=telepot_cooldown] splash_potion[custom_data={telepot:1b}]
@@ -9,8 +11,8 @@ effect give @s weakness 5 10 true
 execute as @e[type=area_effect_cloud] at @s run function under_pack:alchemist_functions/effect_cloud_tick
 
 # Marker ticks
-execute as @e[tag=healing,type=marker] at @s run function under_pack:alchemist_functions/healer_tick
-execute as @e[tag=molitov,type=marker] at @s run function under_pack:alchemist_functions/molotov_tick
+execute as @e[type=marker,tag=healing] at @s run function under_pack:alchemist_functions/healer_tick
+execute as @e[type=marker,tag=molitov] at @s run function under_pack:alchemist_functions/molotov_tick
 
 
 ## Cooldowns

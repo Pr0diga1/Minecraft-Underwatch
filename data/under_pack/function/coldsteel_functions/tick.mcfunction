@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 #bnin carrots
 
 #ender pearl velocity

@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 #cooldown
 function under_pack:mermaid_functions/mermaid_cooldown
 #carrot detection

@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 execute as @s[tag=ninjaDashResist] run effect clear @s resistance
 
 #carror on a stick detection

@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 #trigger backstep
 execute as @e[type=item,nbt={Item:{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{custom_color:16711680}}}}] on origin as @s[scores={ability3=140..}] run function under_pack:archer_functions/archer_backstep
 execute as @e[type=item,nbt={Item:{id:"minecraft:tipped_arrow",count:1,components:{"minecraft:potion_contents":{custom_color:16711680}}}}] at @s on origin run give @s tipped_arrow[custom_name={"text":"Heavy Arrow","color":"dark_red","bold":true},custom_data={archerheavy:1b},potion_contents={custom_color:16711680}] 1
