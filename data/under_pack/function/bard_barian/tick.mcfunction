@@ -9,18 +9,23 @@ execute if entity @s[team=uRed] as @e[type=marker,tag=Note,tag=uRed] at @s run f
 #megaphone loop
 execute if score @s ability4 matches 8 run scoreboard players set @s ability4 0
 execute if score @s ability5 matches 1.. run scoreboard players remove @s ability5 1
-execute if score @s ability5 matches 1 run scoreboard players set @s ability4 0 
 
 # Tick if playing marching shanty
-execute if score @s ability3 matches 1 run function under_pack:bard_barian/march/march_tick
-execute if score @s ability3 matches 2 run function under_pack:bard_barian/lovers/lover_tick
-execute if score @s ability3 matches 3 run function under_pack:bard_barian/stand/stand_tick
+execute if score @s ability3 matches 1 if score @s ability5 matches 0 run function under_pack:bard_barian/march/march_tick
+execute if score @s ability3 matches 2 if score @s ability5 matches 0 run function under_pack:bard_barian/lovers/lover_tick
+execute if score @s ability3 matches 3 if score @s ability5 matches 0 run function under_pack:bard_barian/stand/stand_tick
 
 #trigger ticks
 execute if score @s bard_barian_song matches 1 run function under_pack:bard_barian/march/march_select
 execute if score @s bard_barian_song matches 2 run function under_pack:bard_barian/lovers/lover_select
 execute if score @s bard_barian_song matches 3 run function under_pack:bard_barian/stand/stand_select
+execute if score @s bard_barian_song matches 4 run function under_pack:bard_barian/exit_dialog
 
 #inrange
 execute if entity @s[team=uRed] as @a[team=uRed] if score @s bard_barian_inrange matches 1.. run scoreboard players remove @s bard_barian_inrange 1
 execute if entity @s[team=uBlue] as @a[team=uBlue] if score @s bard_barian_inrange matches 1.. run scoreboard players remove @s bard_barian_inrange 1
+
+#remove march boost if not playing
+execute if score @s ability5 matches 1 run function under_pack:bard_barian/megaphone_stopped
+execute if entity @s[team=uRed] as @a[team=uRed,scores={bard_barian_inrange=0}] run function under_pack:bard_barian/range_leave
+execute if entity @s[team=uBlue] as @a[team=uBlue,scores={bard_barian_inrange=0}] run function under_pack:bard_barian/range_leave

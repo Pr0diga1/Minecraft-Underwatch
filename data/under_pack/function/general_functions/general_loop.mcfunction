@@ -34,6 +34,8 @@ stopsound @a player entity.player.levelup
 effect give @a saturation 1 255 true
 #healing
 effect give @a[scores={class=0}] regeneration 1 15 true
+#regen system
+function under_pack:regeneration/tick
 
 #item pickup
 execute as @e[type=item] run data merge entity @s {PickupDelay:1}
