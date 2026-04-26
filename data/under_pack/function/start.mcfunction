@@ -385,6 +385,9 @@ scoreboard objectives add guncoin dummy
 # Bard Barian
 scoreboard objectives add bard_barian_song trigger
 scoreboard objectives add bard_barian_inrange dummy
+scoreboard objectives add bard_barian_spawn_x dummy
+scoreboard objectives add bard_barian_spawn_y dummy
+scoreboard objectives add bard_barian_spawn_z dummy
 
 # Occultist
 scoreboard objectives add occultistDamageTaken minecraft.custom:minecraft.damage_taken
