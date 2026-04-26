@@ -1,7 +1,6 @@
 #resets dead players
 gamemode adventure @a[tag=cavern]
 scoreboard players set @a[tag=cavern] deathTimer 0
-tag @a[tag=cavern] remove cavern_dead
 
 #resets the players' classes
 execute as @a[tag=cavern] run function under_pack:general_functions/general_reset

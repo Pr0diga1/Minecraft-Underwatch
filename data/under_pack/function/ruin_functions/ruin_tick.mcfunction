@@ -1,5 +1,5 @@
 #each player runs their class's tick function as long as they are not respawning or in their spawnpoint
-execute as @a[tag=ruin] unless entity @s[tag=ruin_dead] run function under_pack:general_functions/general_classloop
+execute as @a[tag=ruin] run function under_pack:general_functions/general_classloop
 
 #lower the unlock timer when the game is active
 execute if score ruin_grace timer matches ..0 if score ruin_unlock points matches ..999 run scoreboard players add ruin_unlock points 1
@@ -16,7 +16,7 @@ execute store result bossbar count:ruin_unlock value run scoreboard players get 
 execute if score ruin_unlock points matches 1000.. run function under_pack:ruin_functions/ruin_point
 
 #actionbar for telling players when they will respawn
-execute as @a[tag=ruin,tag=ruin_dead] run title @s actionbar {"text":"You died!","color":"gold"}
+execute as @a[tag=ruin,tag=uDead] run title @s actionbar {"text":"You died!","color":"gold"}
 
 #did a team win on kills this tick?
 execute unless entity @a[tag=ruin,team=uRed,gamemode=adventure] run scoreboard players set ruin_winning team 1

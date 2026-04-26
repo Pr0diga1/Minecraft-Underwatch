@@ -20,7 +20,7 @@ fill 534 43 -5 534 48 -12 barrier
 #resets dead players
 gamemode adventure @a[tag=park]
 scoreboard players set @a[tag=park] deathTimer 0
-tag @a[tag=park] remove park_dead
+tag @a[tag=park] remove uDead
 execute as @a[tag=park] run function under_pack:general_functions/general_respawn
 
 #heal everyone

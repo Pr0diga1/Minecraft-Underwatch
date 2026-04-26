@@ -1,7 +1,7 @@
 #12 SECOND DEATH TIMER!!!
 
 #each player runs their class's tick function as long as they are not respawning or in their spawnpoint
-execute as @a[tag=nylium] unless entity @s[tag=nylium_dead] run function under_pack:general_functions/general_classloop
+execute as @a[tag=nylium] run function under_pack:general_functions/general_classloop
 
 #is a player on point
 execute as @a[tag=nylium] if entity @s[x=-559,y=61,z=87,dx=9,dy=3,dz=9,tag=nylium,gamemode=adventure] run scoreboard players set @s onPoint 1
@@ -59,34 +59,34 @@ execute if score nylium_overtime timer matches 0 run scoreboard players set nyli
 scoreboard players add nylium timer 1
 
 #increases the death timer for dead players
-execute as @a[tag=nylium,tag=nylium_dead] run scoreboard players add @s deathTimer 1
+execute as @a[tag=nylium,tag=uDead] run scoreboard players add @s deathTimer 1
 
 #creates a buffer that stores seconds instead of TickToSecond
 #buffer = deathTimer
-execute as @a[tag=nylium,tag=nylium_dead] run scoreboard players operation @s deathTimerBuffer = @s deathTimer
+execute as @a[tag=nylium,tag=uDead] run scoreboard players operation @s deathTimerBuffer = @s deathTimer
 #buffer converted from ticks to seconds
-execute as @a[tag=nylium,tag=nylium_dead] run scoreboard players operation @s deathTimerBuffer /= TickToSecond constant
+execute as @a[tag=nylium,tag=uDead] run scoreboard players operation @s deathTimerBuffer /= TickToSecond constant
 #second buffer = first buffer
-execute as @a[tag=nylium,tag=nylium_dead] run scoreboard players operation @s deathTimerBufferBuffer = @s deathTimerBuffer 
+execute as @a[tag=nylium,tag=uDead] run scoreboard players operation @s deathTimerBufferBuffer = @s deathTimerBuffer 
 #first buffer is now 10
-execute as @a[tag=nylium,tag=nylium_dead] run scoreboard players operation @s deathTimerBuffer = DeathBuffer constant
+execute as @a[tag=nylium,tag=uDead] run scoreboard players operation @s deathTimerBuffer = DeathBuffer constant
 # 10 - the number of seconds that have past, gives you number of seconds left
-execute as @a[tag=nylium,tag=nylium_dead] run scoreboard players operation @s deathTimerBuffer -= @s deathTimerBufferBuffer
+execute as @a[tag=nylium,tag=uDead] run scoreboard players operation @s deathTimerBuffer -= @s deathTimerBufferBuffer
 #actionbar for telling players when they will respawn
-execute as @a[tag=nylium,tag=nylium_dead] run title @s actionbar ["",{"text":"Respawn in: ","color":"gold"},{"score":{"name":"@s","objective":"deathTimerBuffer"},"color":"red"},{"text":" seconds","color":"gold"}]
+execute as @a[tag=nylium,tag=uDead] run title @s actionbar ["",{"text":"Respawn in: ","color":"gold"},{"score":{"name":"@s","objective":"deathTimerBuffer"},"color":"red"},{"text":" seconds","color":"gold"}]
 
 #resets players when they have been dead for 10 seconds
 #sets them to adventure
-execute as @a[tag=nylium,tag=nylium_dead] if score @s deathTimer matches 300.. run gamemode adventure @s
+execute as @a[tag=nylium,tag=uDead] if score @s deathTimer matches 300.. run gamemode adventure @s
 #tp them to their spanws
-execute as @a[tag=nylium,tag=nylium_dead,team=uRed] if score @s deathTimer matches 300.. run tp @s -492 67 90
-execute as @a[tag=nylium,tag=nylium_dead,team=uBlue] if score @s deathTimer matches 300.. run tp @s -617 67 91
+execute as @a[tag=nylium,tag=uDead,team=uRed] if score @s deathTimer matches 300.. run tp @s -492 67 90
+execute as @a[tag=nylium,tag=uDead,team=uBlue] if score @s deathTimer matches 300.. run tp @s -617 67 91
 #tells them they respawned 
-execute as @a[tag=nylium,tag=nylium_dead] if score @s deathTimer matches 300.. run title @s actionbar {"text":"Respawned","color":"gold"}
+execute as @a[tag=nylium,tag=uDead] if score @s deathTimer matches 300.. run title @s actionbar {"text":"Respawned","color":"gold"}
 #run the general respawn
-execute as @a[tag=nylium,tag=nylium_dead] if score @s deathTimer matches 300.. run function under_pack:general_functions/general_respawn
+execute as @a[tag=nylium,tag=uDead] if score @s deathTimer matches 300.. run function under_pack:general_functions/general_respawn
 #remove dead tag
-execute as @a[tag=nylium,tag=nylium_dead] if score @s deathTimer matches 300.. run tag @s remove nylium_dead
+execute as @a[tag=nylium,tag=uDead] if score @s deathTimer matches 300.. run tag @s remove uDead
 #reset their deathtimer
 execute as @a[tag=nylium] if score @s deathTimer matches 300.. run scoreboard players set @s deathTimer 0
 

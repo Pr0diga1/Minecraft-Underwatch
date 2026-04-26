@@ -1,5 +1,5 @@
 #each player runs their class's tick function as long as they are not respawning or in their spawnpoint
-execute as @a[tag=city] unless entity @s[tag=city_dead] run function under_pack:general_functions/general_classloop
+execute as @a[tag=city] run function under_pack:general_functions/general_classloop
 
 #sets a buffer to whoever has control of the point
 scoreboard players operation cityBuffer team = city team
@@ -53,34 +53,34 @@ execute if score city_overtime timer matches 0 run scoreboard players set city t
 scoreboard players add city timer 1
 
 #increases the death timer for dead players
-execute as @a[tag=city,tag=city_dead] run scoreboard players add @s deathTimer 1
+execute as @a[tag=city,tag=uDead] run scoreboard players add @s deathTimer 1
 
 #creates a buffer that stores seconds instead of TickToSecond
 #buffer = deathTimer
-execute as @a[tag=city,tag=city_dead] run scoreboard players operation @s deathTimerBuffer = @s deathTimer
+execute as @a[tag=city,tag=uDead] run scoreboard players operation @s deathTimerBuffer = @s deathTimer
 #buffer converted from ticks to seconds
-execute as @a[tag=city,tag=city_dead] run scoreboard players operation @s deathTimerBuffer /= TickToSecond constant
+execute as @a[tag=city,tag=uDead] run scoreboard players operation @s deathTimerBuffer /= TickToSecond constant
 #second buffer = first buffer
-execute as @a[tag=city,tag=city_dead] run scoreboard players operation @s deathTimerBufferBuffer = @s deathTimerBuffer 
+execute as @a[tag=city,tag=uDead] run scoreboard players operation @s deathTimerBufferBuffer = @s deathTimerBuffer 
 #first buffer is now 10
-execute as @a[tag=city,tag=city_dead] run scoreboard players operation @s deathTimerBuffer = DeathBuffer constant
+execute as @a[tag=city,tag=uDead] run scoreboard players operation @s deathTimerBuffer = DeathBuffer constant
 # 10 - the number of seconds that have past, gives you number of seconds left
-execute as @a[tag=city,tag=city_dead] run scoreboard players operation @s deathTimerBuffer -= @s deathTimerBufferBuffer
+execute as @a[tag=city,tag=uDead] run scoreboard players operation @s deathTimerBuffer -= @s deathTimerBufferBuffer
 #actionbar for telling players when they will respawn
-execute as @a[tag=city,tag=city_dead] run title @s actionbar ["",{"text":"Respawn in: ","color":"gold"},{"score":{"name":"@s","objective":"deathTimerBuffer"},"color":"red"},{"text":" seconds","color":"gold"}]
+execute as @a[tag=city,tag=uDead] run title @s actionbar ["",{"text":"Respawn in: ","color":"gold"},{"score":{"name":"@s","objective":"deathTimerBuffer"},"color":"red"},{"text":" seconds","color":"gold"}]
 
 #resets players when they have been dead for 10 seconds
 #sets them to adventure
-execute as @a[tag=city,tag=city_dead] if score @s deathTimer matches 280.. run gamemode adventure @s
+execute as @a[tag=city,tag=uDead] if score @s deathTimer matches 280.. run gamemode adventure @s
 #tp them to their spanws
-execute as @a[tag=city,tag=city_dead,team=uRed] if score @s deathTimer matches 280.. run tp @s 15 54 -1036
-execute as @a[tag=city,tag=city_dead,team=uBlue] if score @s deathTimer matches 280.. run tp @s 77 55 -1118
+execute as @a[tag=city,tag=uDead,team=uRed] if score @s deathTimer matches 280.. run tp @s 15 54 -1036
+execute as @a[tag=city,tag=uDead,team=uBlue] if score @s deathTimer matches 280.. run tp @s 77 55 -1118
 #tells them they respawned 
-execute as @a[tag=city,tag=city_dead] if score @s deathTimer matches 280.. run title @s actionbar {"text":"Respawned","color":"gold"}
+execute as @a[tag=city,tag=uDead] if score @s deathTimer matches 280.. run title @s actionbar {"text":"Respawned","color":"gold"}
 #run the general respawn
-execute as @a[tag=city,tag=city_dead] if score @s deathTimer matches 280.. run function under_pack:general_functions/general_respawn
+execute as @a[tag=city,tag=uDead] if score @s deathTimer matches 280.. run function under_pack:general_functions/general_respawn
 #remove dead tag
-execute as @a[tag=city,tag=city_dead] if score @s deathTimer matches 280.. run tag @s remove city_dead
+execute as @a[tag=city,tag=uDead] if score @s deathTimer matches 280.. run tag @s remove uDead
 #reset their deathtimer
 execute as @a[tag=city] if score @s deathTimer matches 280.. run scoreboard players set @s deathTimer 0
 

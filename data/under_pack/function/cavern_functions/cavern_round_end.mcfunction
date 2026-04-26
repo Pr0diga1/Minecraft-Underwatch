@@ -27,7 +27,7 @@ fill 56 72 -737 56 90 -724 barrier replace air
 #resets dead players
 gamemode adventure @a[tag=cavern]
 scoreboard players set @a[tag=cavern] deathTimer 0
-tag @a[tag=cavern] remove cavern_dead
+tag @a[tag=cavern] remove uDead
 execute as @a[tag=cavern] run function under_pack:general_functions/general_respawn
 
 #heal everyone

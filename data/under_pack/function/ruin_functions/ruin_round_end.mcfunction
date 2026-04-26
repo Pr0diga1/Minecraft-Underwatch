@@ -19,7 +19,7 @@ function under_pack:ruin_functions/ruin_start_fills
 #resets dead players
 gamemode adventure @a[tag=ruin]
 scoreboard players set @a[tag=ruin] deathTimer 0
-tag @a[tag=ruin] remove ruin_dead
+tag @a[tag=ruin] remove uDead
 execute as @a[tag=ruin] run function under_pack:general_functions/general_respawn
 
 #heal everyone

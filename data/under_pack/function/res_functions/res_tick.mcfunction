@@ -1,5 +1,5 @@
 #each player runs their class's tick function as long as they are not respawning or in their spawnpoint
-execute as @a[tag=res] unless entity @s[tag=res_dead] run function under_pack:general_functions/general_classloop
+execute as @a[tag=res] run function under_pack:general_functions/general_classloop
 
 #lower the unlock timer when the game is active
 execute if score res_grace timer matches ..0 if score res_unlock points matches ..999 run scoreboard players add res_unlock points 1
@@ -16,7 +16,7 @@ execute store result bossbar count:res_unlock value run scoreboard players get r
 execute if score res_unlock points matches 1000.. run function under_pack:res_functions/res_point
 
 #actionbar for telling players when they will respawn
-execute as @a[tag=res,tag=res_dead] run title @s actionbar {"text":"You died!","color":"gold"}
+execute as @a[tag=res,tag=uDead] run title @s actionbar {"text":"You died!","color":"gold"}
 
 #did a team win on kills this tick?
 execute unless entity @a[tag=res,team=uRed,gamemode=adventure] run scoreboard players set res_winning team 1

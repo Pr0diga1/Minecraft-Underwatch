@@ -12,6 +12,7 @@ team join white @s
 scoreboard players set @s class 0
 scoreboard players set @s Reset 0
 scoreboard players set @s hitByFreeze 0
+tag @s remove uDead
 function under_pack:trigger_functions/unlock
 
 #removes xp
