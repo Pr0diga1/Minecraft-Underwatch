@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 # Check player is holding right click
 scoreboard players remove @s ability1 1
 execute if entity @s[tag=playing_axe,scores={ability1=..0}] run function under_pack:bard_barian/axe/axe_stopped_playing
