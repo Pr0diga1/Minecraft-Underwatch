@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 # Eye attack tick
 execute as @e[tag=EyeBeam] at @s run function under_pack:occultist/eye_tick
 execute as @e[tag=EyeBeam] at @s run function under_pack:occultist/eye_tick

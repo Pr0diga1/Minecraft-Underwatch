@@ -28,7 +28,7 @@ fill 534 43 -5 534 48 -12 barrier
 #resets dead players
 gamemode adventure @a[tag=gazebo]
 scoreboard players set @a[tag=gazebo] deathTimer 0
-tag @a[tag=gazebo] remove gazebo_dead
+tag @a[tag=gazebo] remove uDead
 execute as @a[tag=gazebo] run function under_pack:general_functions/general_respawn
 
 #heal everyone

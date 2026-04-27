@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 #carrot on a stick detection
 execute if entity @s[nbt={Inventory:[{Slot:1b,components:{"minecraft:custom_data":{lumberjump:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{lumberjump:1b}}}},scores={reset=1..}] as @s run function under_pack:lumberjack_functions/lumberjack_jump
 execute if entity @s[nbt={Inventory:[{Slot:0b,components:{"minecraft:custom_data":{lumberthrow:1b}}}],SelectedItem:{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{lumberthrow:1b}}}},scores={reset=1..}] as @s[scores={ability1=200..},nbt={OnGround:0b}] run function under_pack:lumberjack_functions/lumberjack_throw

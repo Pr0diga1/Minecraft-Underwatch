@@ -18,7 +18,7 @@ fill -566 85 -561 -569 87 -561 barrier replace air
 #resets dead players
 gamemode adventure @a[tag=res]
 scoreboard players set @a[tag=res] deathTimer 0
-tag @a[tag=res] remove res_dead
+tag @a[tag=res] remove uDead
 execute as @a[tag=res] run function under_pack:general_functions/general_respawn
 
 #heal everyone

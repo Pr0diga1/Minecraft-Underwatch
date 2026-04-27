@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 execute if score @s blockIsActive matches 0.. run scoreboard players remove @s blockIsActive 1
 execute if score @s blockIsActive matches 0 run function under_pack:knight_functions/knight_block_end
 

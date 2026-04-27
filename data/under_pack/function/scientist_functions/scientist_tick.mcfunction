@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 #reset reset
 scoreboard players reset @s reset
 

@@ -29,7 +29,7 @@ fill -495 88 -557 -498 86 -557 barrier
 #resets dead players
 gamemode adventure @a[tag=lake]
 scoreboard players set @a[tag=lake] deathTimer 0
-tag @a[tag=lake] remove lake_dead
+tag @a[tag=lake] remove uDead
 execute as @a[tag=lake] run function under_pack:general_functions/general_respawn
 
 #heal everyone

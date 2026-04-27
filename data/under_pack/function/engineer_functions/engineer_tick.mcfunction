@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 #run color ticks
 execute as @s[team=uRed] run function under_pack:engineer_functions/engineer_tick_red
 execute as @s[team=uBlue] run function under_pack:engineer_functions/engineer_tick_blue

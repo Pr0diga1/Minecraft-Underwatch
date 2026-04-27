@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 execute if score @s celestance matches 1 run function under_pack:celestial_functions/sun/tick
 execute if score @s celestance matches -1 run function under_pack:celestial_functions/moon/tick
 

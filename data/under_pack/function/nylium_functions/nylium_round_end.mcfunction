@@ -29,7 +29,7 @@ fill -496 67 89 -496 70 92 barrier
 #resets dead players
 gamemode adventure @a[tag=nylium]
 scoreboard players set @a[tag=nylium] deathTimer 0
-tag @a[tag=nylium] remove nylium_dead
+tag @a[tag=nylium] remove uDead
 execute as @a[tag=nylium] run function under_pack:general_functions/general_respawn
 
 #heal everyone

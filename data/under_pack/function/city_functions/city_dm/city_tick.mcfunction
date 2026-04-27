@@ -1,5 +1,5 @@
 #each player runs their class's tick function as long as they are not respawning or in their spawnpoint
-execute as @a[tag=city] unless entity @s[tag=city_dead] run function under_pack:general_functions/general_classloop
+execute as @a[tag=city] run function under_pack:general_functions/general_classloop
 
 #lower the unlock timer when the game is active
 execute if score city_grace timer matches ..0 if score city_unlock points matches ..999 run scoreboard players add city_unlock points 1
@@ -16,7 +16,7 @@ execute store result bossbar count:city_unlock value run scoreboard players get 
 execute if score city_unlock points matches 1000.. run function under_pack:city_functions/city_dm/city_point
 
 #actionbar for telling players when they will respawn
-execute as @a[tag=city,tag=city_dead] run title @s actionbar {"text":"You died!","color":"gold"}
+execute as @a[tag=city,tag=uDead] run title @s actionbar {"text":"You died!","color":"gold"}
 
 #did a team win on kills this tick?
 execute unless entity @a[tag=city,team=uRed,gamemode=adventure] run scoreboard players set city_winning team 1

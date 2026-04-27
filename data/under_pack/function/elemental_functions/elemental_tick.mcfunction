@@ -1,3 +1,5 @@
+execute as @s[tag=uDead] run return fail
+
 execute if entity @s[team=uBlue] run function under_pack:elemental_functions/elemental_tick_blue
 execute if entity @s[team=uRed] run function under_pack:elemental_functions/elemental_tick_red
 
