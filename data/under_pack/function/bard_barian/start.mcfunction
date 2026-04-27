@@ -15,7 +15,7 @@ scoreboard players set @s ability4 0
 scoreboard players set @s ability5 0
 
 # Armor
-item replace entity @s armor.legs with leather_leggings[trim={material:"minecraft:redstone",pattern:"minecraft:snout"},attribute_modifiers=[{id:"max_health",type:"max_health",amount:6,operation:"add_value"},{id:"water_movement_efficiency",type:"water_movement_efficiency",amount:0.67,operation:"add_value"}],enchantments={"minecraft:blast_protection":8,"minecraft:depth_strider":2},enchantment_glint_override=false,unbreakable={show_in_tooltip:false}] 1
+item replace entity @s armor.legs with leather_leggings[trim={material:"minecraft:redstone",pattern:"minecraft:snout"},attribute_modifiers=[{id:"max_health",type:"max_health",amount:6,operation:"add_value"},{id:"water_movement_efficiency",type:"water_movement_efficiency",amount:0.67,operation:"add_value"}],enchantments={"minecraft:blast_protection":8,"minecraft:depth_strider":2},enchantment_glint_override=false,unbreakable={}] 1
 
 #trigger stuffs
 scoreboard players enable @s bard_barian_song
