@@ -1,3 +1,6 @@
+#regen system
+function under_pack:regeneration/tick
+
 #if a game is active, run its tick function every tick
 execute if score gazebo swag matches 1 run function under_pack:gazebo_functions/gazebo_tick
 execute if score park swag matches 1 run function under_pack:park_functions/park_tick
@@ -34,8 +37,6 @@ stopsound @a player entity.player.levelup
 effect give @a saturation 1 255 true
 #healing
 effect give @a[scores={class=0}] regeneration 1 15 true
-#regen system
-function under_pack:regeneration/tick
 
 #item pickup
 execute as @e[type=item] run data merge entity @s {PickupDelay:1}
