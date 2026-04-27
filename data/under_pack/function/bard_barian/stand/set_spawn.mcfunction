@@ -1,0 +1,1 @@
+$spawnpoint @s $(x) $(y) $(z)

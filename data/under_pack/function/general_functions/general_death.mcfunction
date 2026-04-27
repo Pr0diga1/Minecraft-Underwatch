@@ -12,3 +12,6 @@ execute if score debug buffer matches 1 run function debug:ticks/death
 
 #set deaths back to 0 so this isn't run every tick
 scoreboard players set @s uDeaths 0
+
+execute if score @s class matches 17 run function under_pack:bard_barian/death
+execute if score @s bard_barian_inrange matches 1.. run function under_pack:bard_barian/stand/friend_death

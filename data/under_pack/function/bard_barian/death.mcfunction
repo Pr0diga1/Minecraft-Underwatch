@@ -1,0 +1,1 @@
+spawnpoint @s 50 200 -300

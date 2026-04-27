@@ -1,0 +1,1 @@
+function under_pack:bard_barian/stand/reset_spawn
