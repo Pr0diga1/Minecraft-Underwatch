@@ -1,6 +1,6 @@
 scoreboard players set @s mermaidburst 0
-execute if entity @s[team=uRed] at @s as @a[distance=..2.7,team=uBlue] run damage @s 6 player_attack by @a[team=uRed,limit=1,scores={class=11}]
-execute if entity @s[team=uBlue] at @s as @a[distance=..2.7,team=uRed] run damage @s 6 player_attack by @a[team=uBlue,limit=1,scores={class=11}]
+execute if entity @s[team=uRed] at @s as @a[distance=..2.7,team=uBlue] run function under_pack:mermaid_functions/mermaid_burst_damage
+execute if entity @s[team=uBlue] at @s as @a[distance=..2.7,team=uRed] run function under_pack:mermaid_functions/mermaid_burst_damage
 execute at @s run playsound minecraft:entity.player.splash.high_speed master @a[distance=..2] ~ ~ ~ 5 2
 
 #execute at @s run particle minecraft:dust{color:[0.0,0.35,1.0],scale:1} ~0.001 ~0.5 ~2.500 0 0 0 0 1 force @a
