@@ -388,6 +388,7 @@ scoreboard objectives add bard_barian_inrange dummy
 scoreboard objectives add bard_barian_spawn_x dummy
 scoreboard objectives add bard_barian_spawn_y dummy
 scoreboard objectives add bard_barian_spawn_z dummy
+scoreboard objectives add bard_barian_march_sound dummy
 
 # Occultist
 scoreboard objectives add occultistDamageTaken minecraft.custom:minecraft.damage_taken
