@@ -4,7 +4,7 @@ clear @s
 # Rifle
 item replace entity @s hotbar.0 with copper_hoe[custom_data={miku:true,rifle:true},custom_name={"bold":true,"color":"#F72D2D","italic":false,"text":"Teto Rifle"},consumable={consume_seconds:999999,animation:"bow"}] 1
 # Beam
-item replace entity @s hotbar.1 with soul_torch[custom_data={miku:true,beam:true},custom_name={"bold":true,"color":"#40CFCF","italic":false,"text":"Miku (Miku) Beam","underlined":true},consumable={consume_seconds:2,animation:"spyglass",sound:"block.beacon.ambient",has_consume_particles:false},use_cooldown={seconds:5}] 1
+item replace entity @s hotbar.1 with soul_torch[custom_data={miku:true,beam:true},custom_name={"bold":true,"color":"#40CFCF","italic":false,"text":"Miku (Miku) Beam","underlined":true},consumable={consume_seconds:1.5,animation:"spyglass",sound:"block.beacon.ambient",has_consume_particles:false},use_cooldown={seconds:5}] 1
 # Shotgun
 item replace entity @s hotbar.2 with bamboo[unbreakable={},custom_data={miku:true,shotty:true},custom_name={"bold":true,"color":"#218004","italic":false,"text":"Leek Shotgun"},item_model="minecraft:bamboo",enchantments={"under_pack:miku/shotgun":1},consumable={consume_seconds:9999999,animation:"crossbow",has_consume_particles:false}] 1
 

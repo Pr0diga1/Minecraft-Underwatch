@@ -13,3 +13,6 @@ execute as @a[team=uBlue,predicate=under_pack:engi_speed_check] at @s run partic
 execute if entity @a[team=uRed,tag=magneticblue] if score blue engineermagnet matches 2.. at @s run function under_pack:engineer_functions/engineer_magnet_tick_blue
 
 execute if entity @a[team=uRed,gamemode=spectator,tag=magneticblue] run function under_pack:engineer_functions/engineer_magnet_reset
+
+#wall delete blocks
+execute at @s as @e[type=falling_block,tag=blue,tag=enginewall,dx=0,dy=0.7,dz=0] positioned ~-0.8 ~ ~-0.8 as @s[dx=0,dy=0.7,dz=0] run kill @s
